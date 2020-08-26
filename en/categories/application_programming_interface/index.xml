@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Application_programming_interface on HEALIS</title>
+    <link>https://healis.eu/en/categories/application_programming_interface/</link>
+    <description>Recent content in Application_programming_interface on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Sat, 22 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/en/categories/application_programming_interface/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HyperMorph</title>
+      <link>https://healis.eu/en/project/hypermorph/</link>
+      <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/project/hypermorph/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#why-hypermorph&#34;&gt;Why HyperMorph&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#not-just-another-etl-tool&#34;&gt;Not just another ETL tool&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#not-only-a-data-storage-and-transformations-analytics-tool&#34;&gt;Not only a data storage and transformations-analytics tool&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#more-promising-than-data-virtualization-and-cloud-analytics-services&#34;&gt;More promising than data virtualization and cloud analytics services&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#speechless-hypermorph-screencast&#34;&gt;Speechless HyperMorph Screencast&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#hypermorph-speaks-for-itself&#34;&gt;Hypermorph speaks for itself&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#now-you-know-that-you-can-&#34;&gt;Now you know that you can &amp;hellip;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#installation---demo-test---documentation&#34;&gt;Installation - Demo Test - Documentation&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#step-by-step-instructions&#34;&gt;Step by step instructions&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#demo-guide-to-test-package&#34;&gt;Demo Guide to Test package&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#documentation&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;why-hypermorph&#34;&gt;Why HyperMorph&lt;/h2&gt;
+&lt;h3 id=&#34;not-just-another-etl-tool&#34;&gt;Not just another ETL tool&lt;/h3&gt;
+&lt;p&gt;There are many open-source tools written in Python for ETL or ELT process, &lt;a href=&#34;https://github.com/petl-developers/petl&#34;&gt;petl&lt;/a&gt;, &lt;a href=&#34;https://github.com/Stiivi/bubbles&#34;&gt;bubbles&lt;/a&gt;, &lt;a href=&#34;https://github.com/mara/mara-pipelines&#34;&gt;mara-pipelines&lt;/a&gt;, &lt;a href=&#34;https://github.com/mara/mara-schema&#34;&gt;mara-schema&lt;/a&gt;, &lt;a href=&#34;https://github.com/python-bonobo/bonobo&#34;&gt;bonobo&lt;/a&gt;, &lt;a href=&#34;https://github.com/spotify/luigi&#34;&gt;luigi&lt;/a&gt;, &lt;a href=&#34;https://github.com/blaze/odo&#34;&gt;odo&lt;/a&gt;, &lt;a href=&#34;https://github.com/seanharr11/etlalchemy&#34;&gt;etlalchemy&lt;/a&gt;, &lt;a href=&#34;https://github.com/ceumicrodata/mETL&#34;&gt;mETL&lt;/a&gt;, &lt;a href=&#34;https://github.com/nerevu/riko&#34;&gt;riko&lt;/a&gt;, &lt;a href=&#34;https://github.com/toaco/carry%5D&#34;&gt;carry&lt;/a&gt;, &lt;a href=&#34;https://github.com/capitalone/Data-Load-and-Copy-using-Python&#34;&gt;locopy&lt;/a&gt;, &lt;a href=&#34;https://github.com/ferventdesert/etlpy&#34;&gt;etlpy&lt;/a&gt;, &lt;a href=&#34;https://github.com/chrthomsen/pygrametl&#34;&gt;pygrametl&lt;/a&gt;. Authors in many of these tools realized that Python developers need a uniform interface based on object oriented abstractions for commonly used operations.&lt;/p&gt;
+&lt;h4 id=&#34;well-designed-powerful-oop-classes&#34;&gt;Well-designed powerful OOP classes&lt;/h4&gt;
+&lt;p&gt;HyperMorph offers interactive console programming and development with high-level OOP components tailored to cover all aspects of database management and analytics. HyperMorph is very rich in that aspect and provides &lt;code&gt;DataSet&lt;/code&gt;, &lt;code&gt;Table&lt;/code&gt; and &lt;code&gt;Field&lt;/code&gt; classes for data resources, &lt;code&gt;DataModel&lt;/code&gt;, &lt;code&gt;Entity&lt;/code&gt;, &lt;code&gt;Attribute&lt;/code&gt; classes for data models, &lt;code&gt;SchemaGraph&lt;/code&gt;, &lt;code&gt;SchemaNode&lt;/code&gt;, &lt;code&gt;SchemaLink&lt;/code&gt;, &lt;code&gt;SchemaPipe&lt;/code&gt; classes for metadata management, &lt;code&gt;DataGraph&lt;/code&gt;, &lt;code&gt;DataNode&lt;/code&gt;, &lt;code&gt;DataLink&lt;/code&gt;, &lt;code&gt;DataPipe&lt;/code&gt; for data management, &lt;code&gt;Connector&lt;/code&gt; class for python drivers/clients and at the highest level of management we have &lt;code&gt;ASET&lt;/code&gt; (Associative Entity Set is similar to Relation) and &lt;code&gt;HACOL&lt;/code&gt; (HyperAtom collection).&lt;/p&gt;
+&lt;h4 id=&#34;schema-and-data-as-objects-and-nodes-on-a-hypergraph&#34;&gt;Schema and data as objects and nodes on a hypergraph&lt;/h4&gt;
+&lt;p&gt;HyperMorph goes one step ahead of the OOP design principle. It creates objects with 3D numerical vector identities and links them as nodes on a hypergraph. That graph is powered by &lt;a href=&#34;https://git.skewed.de/count0/graph-tool&#34;&gt;graph-tool&lt;/a&gt; one of the best and fastest network analysis tools in Python. Hypermorph keeps separate schema information, i.e. metadata, from stuctured data (&lt;em&gt;tuples&lt;/em&gt;, &lt;em&gt;hierarchical&lt;/em&gt;, &lt;em&gt;graph&lt;/em&gt;, &lt;em&gt;table&lt;/em&gt;, etc). This unique feature offers the possibility to organize easily data resources and to build complex customised data models in order to digest data. Data integration (consolidation) requires to manage successfully the complexity of mapping data resources on a data model something that can be easily done when our objects are hypergraph enabled and have numerical key vectors to identify their exact location in the schema, data graph.&lt;/p&gt;
+&lt;h4 id=&#34;hypermorph-connectors&#34;&gt;HyperMorph Connectors&lt;/h4&gt;
+&lt;p&gt;Another fundamental difference of HyperMorph with ETL tools is on the Python DB Driver/Adapter side. The current release supports:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Clickhouse-Driver&lt;/li&gt;
+&lt;li&gt;MySQL-Connector&lt;/li&gt;
+&lt;li&gt;SQLAlchemy with the following three dialects
+&lt;ul&gt;
+&lt;li&gt;pymysql&lt;/li&gt;
+&lt;li&gt;clickhouse&lt;/li&gt;
+&lt;li&gt;sqlite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;On top of these drivers HyperMorph uses a &lt;code&gt;Connector&lt;/code&gt; class to abstract and unify SQL command execution &lt;code&gt;sql()&lt;/code&gt; in a functional way and wrap commands to extract metadata &lt;code&gt;get_tables_metadata()&lt;/code&gt;, &lt;code&gt;get_columns_metadata()&lt;/code&gt;. Transformation to &lt;strong&gt;tuples&lt;/strong&gt;, &lt;strong&gt;json rows&lt;/strong&gt;, &lt;strong&gt;tuples&lt;/strong&gt;, &lt;strong&gt;columns&lt;/strong&gt;, and &lt;strong&gt;pyarrow batch/table&lt;/strong&gt; is taking place at this level. At this stage performance is a critical factor. In our design and implementation of HyperMorph connectors we are seeking to minimise the time delay and data transferring speed. Therefore the protocol of communication that is used in the python database driver/adopter is highly important.&lt;/p&gt;
+&lt;h4 id=&#34;pipelines&#34;&gt;Pipelines&lt;/h4&gt;
+&lt;p&gt;This is a standard approach in ETL frameworks and a very useful one because in general &lt;code&gt;pipelines&lt;/code&gt; are flexible and intuitive in programming. Hypermorph is not an exception we tried to make a difference here by designing same pipeline operators for fetching either data or metadata. For example there is an &lt;code&gt;over()&lt;/code&gt; operator for projection and &lt;code&gt;to_dataframe()&lt;/code&gt; for transformation to Python Pandas dataframe. We have even wrapped functional commands on pipelines so that you can choose between OOP (chaining) or functional style of programming.&lt;/p&gt;
+&lt;h3 id=&#34;not-only-a-data-storage-and-transformations-analytics-tool&#34;&gt;Not only a data storage and transformations-analytics tool&lt;/h3&gt;
+&lt;p&gt;There is another category of tools related with data storage (in-memory, on-disk), transformations and analytics processing, such as &lt;a href=&#34;https://github.com/TileDB-Inc/TileDB&#34;&gt;TileDB&lt;/a&gt;, &lt;a href=&#34;https://github.com/pandas-dev/pandas&#34;&gt;datatable&lt;/a&gt;, &lt;a href=&#34;https://github.com/h2oai/datatable&#34;&gt;pandas&lt;/a&gt;, &lt;a href=&#34;https://github.com/petl-developers/petl&#34;&gt;petl&lt;/a&gt;, &lt;a href=&#34;https://github.com/vaexio/vaex&#34;&gt;vaex&lt;/a&gt;, &lt;a href=&#34;https://github.com/PyTables&#34;&gt;pytables&lt;/a&gt;, &lt;a href=&#34;https://github.com/ibis-project/ibis&#34;&gt;ibis&lt;/a&gt;, &lt;a href=&#34;https://github.com/numpy/numpy&#34;&gt;numpy&lt;/a&gt;, &lt;a href=&#34;https://github.com/dask/dask&#34;&gt;dask&lt;/a&gt;, &lt;a href=&#34;https://github.com/apache/arrow&#34;&gt;pyarrow&lt;/a&gt;, &lt;a href=&#34;https://arrow.apache.org/blog/2018/12/05/gandiva-donation/&#34;&gt;gandiva&lt;/a&gt;. Usually most of them construct a table data structure in-memory or on-disk and use either a column layout or row layout to process the data. Hence they resemble database engines. In fact previous prototypes of HyperMorph (see &lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt; project) were based on SQL database engines. This time the current, first, release of HyperMorph is powered by &lt;a href=&#34;https://arrow.apache.org/docs/python/index.html&#34;&gt;PyArrow&lt;/a&gt;. There are many reasons for that choice. Most important PyArrow is mature and provides a columnar memory format for flat and hierarchical data, organized for efficient analytic operations on modern hardware including GPUs. But regarding HyperMorph the killer feature of PyArrow package is &lt;a href=&#34;https://arrow.apache.org/docs/python/data.html#dictionary-arrays&#34;&gt;dictionary encoding&lt;/a&gt; which is utilized to implement associative filtering, part of our &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;associative semiotic hypergraph technology&lt;/a&gt;, in the style of &lt;a href=&#34;https://www.qlik.com/us/products/associative-difference&#34;&gt;Qlik&lt;/a&gt; analytics engine.&lt;/p&gt;
+&lt;h3 id=&#34;more-promising-than-data-virtualization-and-cloud-analytics-services&#34;&gt;More promising than data virtualization and cloud analytics services&lt;/h3&gt;
+&lt;p&gt;In recent years there is also another approach for data management and analytics aiming to skip the weary ETL process. Usually these are SaaS products on the cloud, such as &lt;a href=&#34;https://panoply.io/&#34;&gt;panoply&lt;/a&gt;, &lt;a href=&#34;https://www.dremio.com/&#34;&gt;dremio&lt;/a&gt;, &lt;a href=&#34;https://www.knowi.com/&#34;&gt;knowi&lt;/a&gt;, &lt;a href=&#34;https://www.denodo.com/en/data-virtualization/overview&#34;&gt;denodo&lt;/a&gt;, and many others. They provide GUIs and act as &lt;a href=&#34;https://en.wikipedia.org/wiki/Middleware&#34;&gt;middleware&lt;/a&gt; between DBMS and BI platforms. Naturally these are proprietary products and details on how they work under the hood are hidden. Developers or power users have to stick with menu-widget driven interfaces than having the ultimate flexibility of programming at the level of Python language. You may consider HyperMorph as an open-source API with the same role to fetch data for graph visualisation platforms. HyperMorph has three key differentiating points here data consolidation, user defined data modeling and interactive associative filtering for analytics with the option to visualize connected data on a graph. And because HyperMorph is open-source it is more promising that potentially our technology can be used from many software vendors for BI applications.&lt;/p&gt;
+&lt;h2 id=&#34;speechless-hypermorph-screencast&#34;&gt;Speechless HyperMorph Screencast&lt;/h2&gt;
+&lt;h3 id=&#34;hypermorph-speaks-for-itself&#34;&gt;Hypermorph speaks for itself&lt;/h3&gt;
+&lt;p&gt;Watch the demo, check youtube settings and make sure &lt;strong&gt;video quality is at 1080p&lt;/strong&gt; HD.
+You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to increase the time of executing commands.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZMjlkw6tw3o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;now-you-know-that-you-can-&#34;&gt;Now you know that you can &amp;hellip;&lt;/h3&gt;
+&lt;p&gt;and the only limit on what you can is your imagination.&lt;/p&gt;
+&lt;h2 id=&#34;installation---demo-test---documentation&#34;&gt;Installation - Demo Test - Documentation&lt;/h2&gt;
+&lt;h3 id=&#34;step-by-step-instructions&#34;&gt;Step by step instructions&lt;/h3&gt;
+&lt;p&gt;on how to &lt;a href=&#34;https://healis.eu/en/__hypermorph/#install&#34;&gt;install&lt;/a&gt; release.&lt;/p&gt;
+&lt;h3 id=&#34;demo-guide-to-test-package&#34;&gt;Demo Guide to Test package&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://healis.eu/en/__hypermorph/#demo_test&#34;&gt;Demonstration of HyperMorph functionality&lt;/a&gt; on data resources and demo scripts that are included in the distribution.&lt;/p&gt;
+&lt;h3 id=&#34;documentation&#34;&gt;Documentation&lt;/h3&gt;
+&lt;p&gt;A draft of the &lt;a href=&#34;https://hypermorph.healis.eu/docs&#34;&gt;documentation&lt;/a&gt; from comments in source code is generated automatically with Sphinx and it is hosted at GitHub.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TRIACLICK 2nd Release</title>
+      <link>https://healis.eu/en/post/20191025/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20191025/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;TRIADB is discontinued, page is maintained here for the history.&lt;/strong&gt;
+
+
+&lt;button class=&#34;btn  btn-danger&#34; type=&#34;button&#34;  onclick=&#34;location.href=&#39;\/en\/__hypermorph\/&#39;&#34; &gt; Visit HyperMorph the successor of this project &lt;/button&gt;
+
+
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;self-service-data-management--visual-interactive-analytics-framework&#34;&gt;Self-Service Data Management &amp;amp; Visual Interactive Analytics Framework&lt;/h2&gt;
+&lt;p&gt;This is a public announcement of the second open-source release of TRIADB, codename TRIACLICK. Repository of the project can be found at &lt;a href=&#34;https://github.com/healiseu/triadb&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can use TRIACLICK to manage your disparate data sources, create custom data models with an integrated, whole view of your business and get a business insight by building easily dashboard web applications that work with the associative selection/filtering of Triaclick engine.&lt;/p&gt;
+&lt;h3 id=&#34;tutorial-and-installation-guides&#34;&gt;Tutorial and Installation Guides&lt;/h3&gt;
+&lt;p&gt;Analytic instructions on how to install TRIADB are written on the &lt;a href=&#34;https://github.com/healiseu/triadb/blob/master/INSTALLATION.rst&#34;&gt;installation guide&lt;/a&gt;. If you decide to go deeper, read the &lt;a href=&#34;https://github.com/healiseu/triadb/blob/master/TUTORIAL.rst&#34;&gt;tutorial guide&lt;/a&gt; to get into the basics of programming with TRIADB.&lt;/p&gt;
+&lt;h2 id=&#34;screen-capture-demo&#34;&gt;Screen Capture Demo&lt;/h2&gt;
+&lt;p&gt;Watch a screencast demonstration of the main features of TRIADB in the current release with a focus on the key aspects highlighted and illustrated in the following section.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/QSk1ldfb7ow&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;at-a-glance&#34;&gt;At A Glance&lt;/h3&gt;
+&lt;p&gt;TRIADB is an innovative, multi-perspective development framework written in Python with the scope to assist power BI users and developers to build easily web applications and/or Jupyter notebooks, i.e. reports, that are based on interactive computing and exploratory, visual analysis. It’s main unique and valuable characteristics are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Interactive visual exploratory analytics&lt;/strong&gt; powered by TriaClick associative semiotic hypergraph engine. The technology is based on ClickHouse columnar DBMS and its output can be easily transformed to enable hypergraph traversal, associative selection and cross-filtering with states on coordinated visualizations.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;triaclick_animated_chart.gif&#34; alt=&#34;Coordinated update of GUI components based on associative selection and filtering&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;TRIACLICK Animated Chart&lt;/h4&gt;
+  &lt;p&gt;
+    Coordinated update of GUI components based on associative selection and filtering
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;hypergraph_paths.png&#34; alt=&#34;Visualization of hypergraph paths based on TRIACLICK associations&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;TRIACLICK Hypergraph&lt;/h4&gt;
+  &lt;p&gt;
+    Visualization of hypergraph paths based on TRIACLICK associations
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;User defined business models&lt;/strong&gt; in the form of a hypergraph. Data modeling plays a central role in TRIADB. Management of meta-data, loading and filtering processes are innately related, associated, with the business model you define.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;business_model.png&#34; alt=&#34;Business model based on Northwind database with Associative Entities in yellow&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;Business Model Graph&lt;/h4&gt;
+  &lt;p&gt;
+    Business model based on Northwind database with Associative Entities in yellow
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Interactive programming with high-level OOP components and methods&lt;/strong&gt; tailored to fit database management and analytics. TRIADB powerful transformations, including list items, tuples and associations enable the user to analyze data quickly and intuitively.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;associative_filtering.png&#34; alt=&#34;Examine visually how the domain set values of attributes are related&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;Associative Filtering&lt;/h4&gt;
+  &lt;p&gt;
+    Examine visually how the domain set values of attributes are related
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;barchart_from_aggregations.png&#34; alt=&#34;Aggregation in a filtered state and transformation to tuples and bar chart&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;Transformation of aggregation&lt;/h4&gt;
+  &lt;p&gt;
+    Aggregation in a filtered state and transformation to tuples and bar chart
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;what-problem-triadb-solves-and-how&#34;&gt;What problem TRIADB solves and how&lt;/h2&gt;
+&lt;p&gt;The project started long time ago from a personal need to integrate an electronic medical record database used in a neurosurgery clinic with several other specialized databases for neurosurgical disorders. &lt;code&gt;Integration&lt;/code&gt;, &lt;code&gt;correlation&lt;/code&gt;, &lt;code&gt;aggregation&lt;/code&gt; and &lt;code&gt;visual exploration&lt;/code&gt; will always be the holy grail of business analytics. Associative technology in general is a specific solution that has not been opened to the public until now although it is applied by one of the most successful BI companies for two decades. The implementation of associative semiotic hypergraph engine (TRIACLICK) in TRIADB project opens a path for other competitive, cost effective (not only RAM based), efficient solutions sharing the same principles in data modeling and database management.&lt;/p&gt;
+&lt;h2 id=&#34;future-plans&#34;&gt;Future Plans&lt;/h2&gt;
+&lt;p&gt;TRIADB is a middleware, one part is closely coupled with the physical layer of the data store engine and the other part is closer to the application layer. Therefore the project can be expanded in two directions, optimization and improvement of associative semiotic hypergraph engine on one hand, efficient and effective transformations and visual exploration on the other hand.&lt;/p&gt;
+&lt;p&gt;In spite of the growing development of TRIADB which requires urgently funding for resources, the critical factor for the success of this project is how exactly it is going to be applied to solve particular users’ problems. This step requires that users become aware of what are the advantages in using TRIADB and what they can achieve.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/triadb-v09-athanassios-hatzis/&#34;&gt;LinkedIn - 20191025 Pulse Article - TRIADB v0.9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TRIACLICK 1st Release</title>
+      <link>https://healis.eu/en/post/20190211/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20190211/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;TRIADB is discontinued, page is maintained here for the history.&lt;/strong&gt;
+
+
+&lt;button class=&#34;btn  btn-danger&#34; type=&#34;button&#34;  onclick=&#34;location.href=&#39;\/en\/__hypermorph\/&#39;&#34; &gt; Visit HyperMorph the successor of this project &lt;/button&gt;
+
+
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;TriaClick is my long standing effort to revitalize Relational and Topic Maps data model. &lt;code&gt;Associative filtering&lt;/code&gt;, similar to &lt;a href=&#34;https://www.qlik.com/us/products/associative-difference&#34;&gt;Qlik associative engine&lt;/a&gt;, has been &lt;strong&gt;implemented for the first time&lt;/strong&gt; with a fast columnar DBMS on non-volatile memory and tested with a relatively large file on commodity hardware.&lt;/p&gt;
+&lt;h2 id=&#34;screencast&#34;&gt;Screencast&lt;/h2&gt;
+&lt;p&gt;Screen Capture Demo of TriaClick, a python library that implements &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;associative, semiotic, hypergraph technology&lt;/a&gt; on top of &lt;a href=&#34;https://clickhouse.yandex/&#34;&gt;ClickHouse columnar DBMS&lt;/a&gt; and &lt;a href=&#34;https://mariadb.org/&#34;&gt;MariaDB&lt;/a&gt;. We show the execution of commands from two python console applications that are built with TriaClick library. The various operations (methods) of our &lt;code&gt;Chain Query Language (CQL)&lt;/code&gt; aim to make the processing pipeline of data integration, exploratory data analysis and visualization easier, faster, intuitive, and more efficient and accurate for the database/data analyst expert. Currently the focus is on management of data resources and data models, associative filtering, hypergraph exploration and aggregations.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WJh5o59aXOw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;
+&lt;p&gt;On my 10 years old Intel i3 core machine, TriaClick takes about a minute to load a 42 x 2.8M Physician records TSV flat file (856MB) on SSD and the average elapsed time for processing user selections, i.e. filters with an exploratory QlikView style, is 3 seconds. Output can be transformed and seen as associations, tuples, and columns with distinct values, frequencies and filtering states. The result set can also be driven to a hypergraph for further exploration.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/triaclick-demo-athanassios-hatzis-phd/&#34;&gt;LinkedIn - 20190211 Pulse Article - TriaClick Demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TRIADB</title>
+      <link>https://healis.eu/en/project/triadb/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/project/triadb/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#at-a-glance&#34;&gt;At A Glance&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#architectural-design&#34;&gt;Architectural Design&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#architectural-overview-white-paper&#34;&gt;Architectural Overview (White Paper)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#implementations&#34;&gt;Implementations&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#conference-presentations&#34;&gt;Conference Presentations&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#key-differentiating-factors&#34;&gt;Key Differentiating Factors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#business-strategy&#34;&gt;Business Strategy&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;TRIADB is discontinued, page is maintained here for the history.&lt;/strong&gt;
+
+
+&lt;button class=&#34;btn  btn-danger&#34; type=&#34;button&#34;  onclick=&#34;location.href=&#39;\/en\/__hypermorph\/&#39;&#34; &gt; Visit HyperMorph the successor of this project &lt;/button&gt;
+
+
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;at-a-glance&#34;&gt;At A Glance&lt;/h2&gt;
+&lt;p&gt;TRIADB is an innovative, multi-perspective database framework. It is a Python library that sits on top of suitable NoSQL/SQL data store engines and enables the users to perform easily &lt;strong&gt;integration, correlation, aggregation and hypergraph exploration of multiple data resources&lt;/strong&gt;. TRIADB is founded on the principles of &lt;a href=&#34;https://healis.eu/en/project/r3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;architectural-design&#34;&gt;Architectural Design&lt;/h2&gt;
+&lt;p&gt;In terms of the architectural design TRIADB is based on &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000107/&#34;&gt;&lt;strong&gt;associative&lt;/strong&gt;, &lt;strong&gt;semiotic&lt;/strong&gt;, &lt;strong&gt;hypergraph&lt;/strong&gt; technology&lt;/a&gt; pioneered by &lt;a href=&#34;https://healis.eu/en/about/#athanassios&#34;&gt;Dr. Athanassios I. Hatzis&lt;/a&gt;. Foundational principles, theoretical formalization and ontological dimensions of the framework and the data model are &lt;a href=&#34;https://healis.eu/en/project/r3dm/#cross-references&#34;&gt;dating back to the year 2012&lt;/a&gt;. Our technology shares certain similarities with &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000104/&#34;&gt;Qlik&lt;/a&gt; associative technology, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000002/&#34;&gt;AtomicDB and X10SYS&lt;/a&gt; associative technology, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000103/#associative-model&#34;&gt;Sentences&lt;/a&gt; associative data model, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000101/&#34;&gt;Topic Maps&lt;/a&gt; data model and &lt;a href=&#34;https://en.wikipedia.org/wiki/Correlation_database&#34;&gt;correlation database model&lt;/a&gt;. The &lt;span class=&#34;markup-quote&#34;&gt;main difference of our technology from other similar associative technologies&lt;/span&gt; is that it has a solid theoretical background, a unified data modeling architecture and at the same time it is distinct in its design and implementation.&lt;/p&gt;
+&lt;h2 id=&#34;architectural-overview-white-paper&#34;&gt;Architectural Overview (White Paper)&lt;/h2&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;https://healis.eu/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;https://healis.eu/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;implementations&#34;&gt;Implementations&lt;/h2&gt;
+&lt;p&gt;There are four TRIADB prototypes implemented:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;TRIADB on &lt;a href=&#34;https://healis.eu/en/talk/triadb_wolfram/&#34;&gt;OrientDB with Mathematica&lt;/a&gt; - 2016&lt;/li&gt;
+&lt;li&gt;TRIADB on &lt;a href=&#34;https://healis.eu/en/talk/triadb_connected_data/&#34;&gt;Intersystems Cache with Python&lt;/a&gt; - 2017&lt;/li&gt;
+&lt;li&gt;TRIADB on Redis with Python - 2018&lt;/li&gt;
+&lt;li&gt;TRIADB on &lt;a href=&#34;https://healis.eu/en/post/20191025/&#34;&gt;MariaDB and ClickHouse with Python&lt;/a&gt; - 2019&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In the last open-source release of TRIADB, MariaDB stores data dictionary information and ClickHouse data storage engines are used for processing and querying data. The associative, semiotic, hypergraph engine has a proprietary licence, although the sources are included in the release, and it is given the codename TriaClick.&lt;/p&gt;
+&lt;h2 id=&#34;conference-presentations&#34;&gt;Conference Presentations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;16/11/2017&lt;/strong&gt; - &lt;a href=&#34;https://healis.eu/en/talk/triadb_connected_data/&#34;&gt;Connected Data London Conference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;19/06/2017&lt;/strong&gt; - &lt;a href=&#34;https://healis.eu/en/talk/triadb_wolfram/&#34;&gt;European Wolfram Technology Conference in Amsterdam&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;key-differentiating-factors&#34;&gt;Key Differentiating Factors&lt;/h2&gt;
+&lt;p&gt;The following is a list of technical specifications and features in the design and implementation of TRIADB. This same list is what makes &lt;span class=&#34;markup-quote&#34;&gt;TRIADB a unique and valuable product&lt;/span&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Multi-Perspective Database Framework: tuples, domain sets, objects, hypergraph, hierarchical&lt;/li&gt;
+&lt;li&gt;Act both as an operational and data warehouse database with a 360 degree view&lt;/li&gt;
+&lt;li&gt;Automatic fixed, primary indexing schema instead of user-defined secondary indexing&lt;/li&gt;
+&lt;li&gt;Manage the references instead of data: relying on reference-based associations and logical identifiers&lt;/li&gt;
+&lt;li&gt;No duplicates: single value instance based on system defined primitive data types&lt;/li&gt;
+&lt;li&gt;Consolidation of multiple data resources and mapping on user-defined data models&lt;/li&gt;
+&lt;li&gt;Management of data resources, data models and metadata&lt;/li&gt;
+&lt;li&gt;Python Chain Query Language (CQL) that avoids namespace and impedance mismatch problem&lt;/li&gt;
+&lt;li&gt;Interactive, free-form, contextual queries&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;business-strategy&#34;&gt;Business Strategy&lt;/h2&gt;
+&lt;p&gt;We create strong partnerships with database vendors to implement and fine-tune TRIADB on top of their technology stack and we offer consulting services on how to apply Associative, Semiotic, Hypergraph technology. We are not selling licenses or software, we provide full stack solutions and add-on value for our own clients, or for the clients of the vendor, thus the system we build inherits the scaling, performance, availability and TCO of the vendor.&lt;/p&gt;
+&lt;p&gt;Our associative, semiotic, hypergraph technology is open-source. We are seeking for developer&amp;rsquo;s community consensus on the use of it and we strongly believe that our technology will be eventually adapted by major semantic and database technology players in the IT industry.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/triaclick-demo-athanassios-hatzis-phd/&#34;&gt;LinkedIn - 20190211 Pulse Article - TriaClick Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/triaclick-architectural-overview-white-paper-athanassios-hatzis-phd/&#34;&gt;LinkedIn - 20190319 TriaClick Architectural Overview White Paper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/triadb-v09-athanassios-hatzis/&#34;&gt;LinkedIn - 20191025 Pulse Article - TRIADB v0.9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cache Python ORM</title>
+      <link>https://healis.eu/en/project/cache_python/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/project/cache_python/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#source-code&#34;&gt;Source Code&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#about-the-project&#34;&gt;About the project&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#tests-and-demos&#34;&gt;Tests and Demos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;
+&lt;p&gt;The project&amp;rsquo;s &lt;a href=&#34;https://github.com/healiseu/IntersystemsCacheORM&#34;&gt;source code at GitHub&lt;/a&gt;, was originally written and used as a module of &lt;a href=&#34;https://healis.eu/en/talk/triadb_connected_data/&#34;&gt;TRIADB&lt;/a&gt; project.&lt;/p&gt;
+&lt;h2 id=&#34;about-the-project&#34;&gt;About the project&lt;/h2&gt;
+&lt;p&gt;CacheORM module is an enhanced OOP porting of &lt;a href=&#34;https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GBPY_using&#34;&gt;Intersystems Cache-Python binding&lt;/a&gt;. There are three classes implemented:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;CacheClient This is the super class of CachePython module. It wraps two functions from intersys.pythonbind module &lt;a href=&#34;https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GBPY_using#GBPY_using_basics&#34;&gt;pythonbind3.connection()&lt;/a&gt; and &lt;a href=&#34;https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GBPY_classes#GBPY_classes_database&#34;&gt;pythonbind3.database()&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CacheQuery A subclass of CacheClient that wraps methods and adds extra functionality in &lt;a href=&#34;https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GBPY_classes#GBPY_classes_database&#34;&gt;intersys.pythonbind.database&lt;/a&gt; and &lt;a href=&#34;https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GBPY_classes#GBPY_classes_queries&#34;&gt;intersys.pythonbind.query classes&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CacheClass A subclass of CacheClient, that wraps methods and adds extra functionality in &lt;a href=&#34;https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GBPY_classes#GBPY_classes_database&#34;&gt;intersys.pythonbind.database&lt;/a&gt; and &lt;a href=&#34;https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GBPY_classes#GBPY_classes_objects&#34;&gt;intersys.pythonbind.object&lt;/a&gt; classes&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;a href=&#34;https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GBPY&#34;&gt;intersys.pythonbind&lt;/a&gt; package is a Python C extension that provides Python application with transparent connectivity to the objects stored in the Caché database.&lt;/p&gt;
+&lt;h2 id=&#34;tests-and-demos&#34;&gt;Tests and Demos&lt;/h2&gt;
+&lt;p&gt;There are two folders in this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/healiseu/IntersystemsCacheORM/tree/master/testCacheORM&#34;&gt;testCacheORM&lt;/a&gt; contains python jupyter notebook files that demonstrate CacheQuery and CacheClass&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/healiseu/IntersystemsCacheORM/tree/master/testCacheBinding&#34;&gt;testCacheBinding&lt;/a&gt; are tests written for Intersystems Cache python binding&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One can simply compare tests with demos to appreciate the work in this project to leverage intersystems cache python binding.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/intersystems-cache-python-orm-athanassios-hatzis-phd/&#34;&gt;LinkedIn - 20180305 Pulse Article - HEALIS: Build valuable relations; establish effective communications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TRIADB at Connected Data London</title>
+      <link>https://healis.eu/en/talk/triadb_connected_data/</link>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/talk/triadb_connected_data/</guid>
+      <description>&lt;h2 id=&#34;video-recording-of-speech&#34;&gt;Video Recording of Speech&lt;/h2&gt;
+&lt;p&gt;The following video is from a presentation and demonstration of TRIADB at &lt;a href=&#34;https://connected-data.london/connected-data-london-2017/&#34;&gt;Connected Data London conference on the 16th of November 2017&lt;/a&gt;. The event brings together top class innovators, thought leaders and practitioners in the field of Artificial Intelligence and Semantic Technology.
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BiEAbpCOC1A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Unfortunately the light conditions were not ideal for the demonstration of our system. We recommend you visit the links at the right side of the following table to view Pandas notebooks in addition to the video above. You may also start the video at the corresponding time.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Time&lt;/th&gt;
+&lt;th&gt;Pandas Notebook&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://youtu.be/BiEAbpCOC1A?t=5m1s&#34;&gt;05:00&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://test.healis.eu/TRIADB20171116/Traversal.html&#34;&gt;Traversal and Hypergraph&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://youtu.be/BiEAbpCOC1A?t=9m1s&#34;&gt;09:00&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://test.healis.eu/TRIADB20171116/NodeObjects.html&#34;&gt;Hypernodes, Hyperedges and Tuples&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://youtu.be/BiEAbpCOC1A?t=11m45s&#34;&gt;11:45&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://test.healis.eu/TRIADB20171116/HyperCollections.html&#34;&gt;Hypercollections&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://youtu.be/BiEAbpCOC1A?t=13m1s&#34;&gt;13:00&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://test.healis.eu/TRIADB20171116/Data_Model.html&#34;&gt;Data Model&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://youtu.be/BiEAbpCOC1A?t=15m30s&#34;&gt;15:30&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://test.healis.eu/TRIADB20171116/Mapping.html&#34;&gt;Mapping&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;slides-of-the-talk&#34;&gt;Slides of the talk&lt;/h2&gt;
+&lt;iframe
+  style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
+  src=&#34;http://www.slideshare.net/slideshow/embed_code/82217659?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt;
+&lt;/iframe&gt;
+
+&lt;h2 id=&#34;screen-captures&#34;&gt;Screen Captures&lt;/h2&gt;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img1.png&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img1_hu9f2fbc5a7b2b6140b1e520132ee249ed_140448_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img2.png&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img2_hu4df91ef5ca4966b9794e52585d3f29da_130096_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img3.png&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img3_hu85db5d9239943d2756c8f2f354328790_81239_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img4.png&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img4_hu676c730d7a702c63cec8582f15e1e412_85147_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img5.png&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img5_hu5ff3b3f03d263e02c1ef7e7531bc07c3_77785_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img6.png&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img6_hu826266c34aa39368339914b8e817fd28_107259_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img7.png&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img7_hu7059e637d75a091a938cb26a84c93be7_150986_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img8.png&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img8_hu1a8d983db4a57324f4f553234fc6af27_95827_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img9.png&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/triadb_connected_data/screen_captures/img9_hu7a79b6d4577f08d747f8650a08aab1be_202333_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+&lt;p&gt;The &lt;strong&gt;first two images&lt;/strong&gt; of our collection portray a hypegraph of seven records, two on the left (Parts), three in the center (Catalog Entries) and another two on the right (Suppliers). The main difference is that in the first one nodes are shown with values and in the second one with 2D numerical references. Images are aligned so you can switch back and forth with the left and right arrow keys.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;third image&lt;/strong&gt; shows execution of TRIADB Python commands on a Jupyter notebook. This is a traversal query that fetches the tuples that make the neighbourhood of the two parts that we saw in the first two images.&lt;/p&gt;
+&lt;p&gt;In the &lt;strong&gt;fourth image&lt;/strong&gt; two records are drawn, they have common values for the weight and the name of the part. There is a red (partID=993) and a silver (partID=994) Acme Widget Washer but they do not share a common unit for the weight. This cleansing problem is solved in the &lt;strong&gt;fifth image&lt;/strong&gt; where the two parts share three common values.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;sixth image&lt;/strong&gt; visualizes the bipartite mapping solution. The fields on the left are mapped onto attributes on the right and the pandas 2D frame in the seventh image presents their names and key references.&lt;/p&gt;
+&lt;p&gt;Finally the &lt;strong&gt;last two images&lt;/strong&gt; display a hypergraph data model for movies and a movie instance with many participants. Again you can switch back and forth with the left and right arrow keys.&lt;/p&gt;
+&lt;h2 id=&#34;video-screen-capture-of-triadb&#34;&gt;Video Screen Capture of TRIADB&lt;/h2&gt;
+&lt;p&gt;Screencast of TRIADB on a toy problem dataset with a junction table (Catalog) that bridges the other two tables (Supplier and Part). Videos demonstrate in detail the python client API functional operations of TRIADB system such as add models, add resources and records, get operations to retrieve data and hypergraph traversal operations.&lt;/p&gt;
+&lt;p&gt;There are five videos in &lt;a href=&#34;https://www.youtube.com/playlist?list=PL_Z7O8S4ThCxqPZmqZiZTQx9pdMpt3dsj&#34;&gt;this playlist&lt;/a&gt; of HEALIS &lt;a href=&#34;https://www.youtube.com/channel/UCoCkNTkn1dAbtyr5EMvzc7w&#34;&gt;youtube channel&lt;/a&gt;. You may start watching the last video of this series to get an overall impression of TRIADB&lt;/p&gt;
+&lt;h3 id=&#34;part-15&#34;&gt;Part 1/5&lt;/h3&gt;
+&lt;p&gt;In this recording session we demonstrate the first Jupyter Notebook. We show how to use TRIADB functional commands to reset and rebuild the framework. And we explain a bit the associatve and semiotic architectural design of our framework.
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-yYGU99mi2s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;part-25&#34;&gt;Part 2/5&lt;/h3&gt;
+&lt;p&gt;In this video you will learn how to add a data model, how to search and retrieve information from the data model environment of TRIADB framework and how to visualize your data model.
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GIlECSJEx3k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;part-35&#34;&gt;Part 3/5&lt;/h3&gt;
+&lt;p&gt;In this video we continue with adding resources, mapping these resources to the data model and finally adding records into TRIADB.
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SpxHBmlHAZw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;part-45&#34;&gt;Part 4/5&lt;/h3&gt;
+&lt;p&gt;In this video we continue with GET operations on Supplier-Part-Catalog data set and we describe various environments according to S3DM/R3DM data model. These include the Data Types Environment (DTE), Data Values Environment (DVE), Data Resources Environment (DRE), Data Models Environment (DME) and Data Sets Environment (DSE).
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_-Ve7XZ8OT0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;part-55&#34;&gt;Part 5/5&lt;/h3&gt;
+&lt;p&gt;In this video, first we explain the hypergraph visual representation of our data model, then we compare it with relational data model and finally we traverse the hypergraph.
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/uTchBCyfyxI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;acknowledgement&#34;&gt;Acknowledgement&lt;/h2&gt;
+&lt;p&gt;We would like to thank Intersystems Cache for providing us with a license of Caché DBMS to test TRIADB.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/triadb-connected-data-london-athanassios-i-hatzis-phd/&#34;&gt;LinkedIn - 20180103 Pulse Article - TRIADB at Connected Data London&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PL_Z7O8S4ThCxqPZmqZiZTQx9pdMpt3dsj&#34;&gt;Youtube - HEALIS Channel Playlist - TRIADB Supplier Part Catalog (SPC)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://connected-data.london/connected-data-london-2017/&#34;&gt;Connected Data London - 2017 Event&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Associative Semiotic Hypergraph API in Mathematica for Next-Generation BI Systems</title>
+      <link>https://healis.eu/en/talk/triadb_wolfram/</link>
+      <pubDate>Mon, 19 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/talk/triadb_wolfram/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://healis.eu/en/project/r3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt; is a conceptual data model that attempts to unify existing data model standards by elevating n-ary relationships on a &lt;a href=&#34;https://en.wikipedia.org/wiki/Hypergraph&#34;&gt;hypergraph&lt;/a&gt;, a.k.a associations. In this framework semantics are defined and explained with three alternative paradigms (&lt;a href=&#34;https://en.wikipedia.org/wiki/Object-oriented_programming&#34;&gt;object-oriented&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)&#34;&gt;network graph&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Semiotics&#34;&gt;semiotics&lt;/a&gt;). It is the last one that gives birth to its name and this is also the cornerstone of its reference mechanism. R3DM/S3DM redefines RDBMS as a &lt;strong&gt;Reference Database Management System&lt;/strong&gt; with a set of functional operations that match those of SQL statements and are implemented in Wolfram Language.&lt;/p&gt;
+&lt;p&gt;Based on these operations we demonstrate interactively using Wolfram Notebook interface how we can create R3DM/S3DM environment on top of &lt;a href=&#34;https://orientdb.org/&#34;&gt;OrientDB Graph Database&lt;/a&gt; and how we can add a Domain Model or a Data Set. We also present R3DM/S3DM filtering mechanism for traversing and cleansing and we compare and review these command operations in &lt;a href=&#34;https://www.qlik.com/us/products/qlikview&#34;&gt;Qlikview&lt;/a&gt; graphical user environment.&lt;/p&gt;
+&lt;p&gt;The output of this interactive exploration of data modeling, processing and analysis and any result set can be returned in the form of a table using Wolfram Language constructs such as &lt;a href=&#34;https://reference.wolfram.com/language/ref/List.html&#34;&gt;List(s)&lt;/a&gt;, &lt;a href=&#34;https://reference.wolfram.com/language/ref/Rule.html&#34;&gt;Rule(s)&lt;/a&gt;, &lt;a href=&#34;https://reference.wolfram.com/language/ref/Association.html&#34;&gt;Association(s)&lt;/a&gt; and &lt;a href=&#34;https://reference.wolfram.com/language/ref/Dataset.html&#34;&gt;Dataset(s)&lt;/a&gt;. There is also the option of visualizing hypergraphs with the &lt;a href=&#34;https://reference.wolfram.com/language/ref/Graph.html&#34;&gt;Graph network&lt;/a&gt; function and attribute sets as column charts.&lt;/p&gt;
+&lt;p&gt;Finally we discuss our future business plan and we share with you our mantra:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;We build powerful meaningful relationships easily&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;recording-of-the-talk&#34;&gt;Recording of the talk&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BZleqH7iMng&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/feed/update/urn:li:activity:6289712416192372736/&#34;&gt;LinkedIn - 09/07/2017 Update about my youtube video presentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>From Declarative to Functional Database Operations</title>
+      <link>https://healis.eu/en/post/20160210/</link>
+      <pubDate>Wed, 10 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20160210/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This is a new release of OrientDB RESTful API in Mathematica, enhanced with new commands such as &lt;strong&gt;addIndex&lt;/strong&gt;, &lt;strong&gt;addInstance&lt;/strong&gt; and &lt;strong&gt;addEdge&lt;/strong&gt; used especially in Graph Database modeling. Most important the functional set of API commands is built in a concise and succinct way. Database operations are now grouped in four main categories, &lt;strong&gt;GET&lt;/strong&gt;, &lt;strong&gt;UPDATE&lt;/strong&gt;, &lt;strong&gt;DELETE&lt;/strong&gt;, and &lt;strong&gt;ADD&lt;/strong&gt;, a.k.a. (&lt;strong&gt;GUDA&lt;/strong&gt;), that resemble &lt;strong&gt;Create&lt;/strong&gt;, &lt;strong&gt;Read&lt;/strong&gt;, &lt;strong&gt;Update&lt;/strong&gt;, and &lt;strong&gt;Delete&lt;/strong&gt;, a.k.a. (&lt;strong&gt;CRUD&lt;/strong&gt;), major functions that are implemented in relational database applications. The number of functional arguments have been also significantly revised and classified as optional and mandatory depending on the command that they are applied.&lt;/p&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;http://test.healis.eu/dbapi/DocumentationPDF/GUDA.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;http://test.healis.eu/dbapi/DocumentationPDF/GUDA.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;http://test.healis.eu/dbapi/DocumentationPDF/GUDA.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+&lt;p&gt;The implementation of the package is based on the &lt;a href=&#34;https://orientdb.org/docs/3.0.x/misc/OrientDB-REST.html&#34;&gt;HTTP RESTful SQL commands of OrientDB&lt;/a&gt;. The &lt;a href=&#34;https://healis.eu/en/project/wolfram_apis/&#34;&gt;Mathematica API&lt;/a&gt; project, can be extended to cover also the programming operations of other DBMS, in an analogy of the functional patterns and operations of this package.&lt;/p&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;p&gt;These are a few &lt;strong&gt;CRUD&lt;/strong&gt; examples that are transformed to &lt;strong&gt;GUDA&lt;/strong&gt; in order to compare the functional with the declarative form of SQL operations.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; Create bidirectional linking&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; association
+CREATE EDGE isOwnerOf FROM 12&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;0 TO 16&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;0
+ODBapi&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;com&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;addEdge&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; class&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;isOwnerOf&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; from&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;12:0&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; to&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;16:0&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+
+&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; Read records with projection and filtering
+SELECT &lt;span style=&#34;color:#a6e22e&#34;&gt;@rid&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; DOB FROM Person WHERE lastName&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Smith&amp;#34;&lt;/span&gt;
+ODBapi&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;com&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;getRecords&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; prjkt&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@rid, DOB&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; class&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Person&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; propnam&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;lastName&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; propval&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Smith&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+
+&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; Update with restrictions
+UPDATE Person set age&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;57 WHERE age&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;60
+ODBapi&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;com&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;updValues&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; class&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Person&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; propnam&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;age&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; propval&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;57 where age&amp;lt;60&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+
+&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; Delete all the records of a &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;table&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; vertex&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; document&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;....)&lt;/span&gt;
+DELETE VERTEX Person
+ODBapi&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;com&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;delRecords&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; class&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Person&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; all&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;True&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; construct&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;VERTEX&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://healis.eu/en/project/wolfram_apis/&#34;&gt;DBAPI application project&lt;/a&gt; is open source and free. You are most welcome to contribute in the Github repository of the project that can be found &lt;a href=&#34;https://github.com/healiseu/dbapiProject&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Download the latest release of DBAPI from &lt;a href=&#34;https://test.healis.eu/dbapi/Release/dbapi-latest-release.zip&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download and run this &lt;a href=&#34;https://test.healis.eu/dbapi/Test/Installation.nb&#34;&gt;Mathematica Notebook code&lt;/a&gt; to test the installation of the package&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;testing&#34;&gt;Testing&lt;/h2&gt;
+&lt;p&gt;The OrientDB API Package can be tested with &lt;a href=&#34;https://test.healis.eu/dbapi/Test/OrientDB%20API%20Demo%201%20-%20Test%20API%20Commands.nb&#34;&gt;Demo 1-Test API Commands&lt;/a&gt; and &lt;a href=&#34;https://test.healis.eu/dbapi/Test/OrientDB%20API%20Demo%203%20-%20Schemaless%20vs%20Schemafull%20Operations.nb&#34;&gt;Demo 3-Schemaless vs Schemafull Operations&lt;/a&gt; Notebooks.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This functional RESTful API can be served as a prototype for a uniform, universal treatment of data language (&lt;strong&gt;UDL&lt;/strong&gt;) that will be independent of the DBMS implementation. Commands and parameters can become more efficient and execution can be simplified if we take on account the hierarchical relationship of &lt;strong&gt;Server&lt;/strong&gt;, &lt;strong&gt;Database&lt;/strong&gt;, &lt;strong&gt;Class&lt;/strong&gt;, &lt;strong&gt;Property&lt;/strong&gt; and &lt;strong&gt;Record&lt;/strong&gt; containers. We foresee that it will be far more intuitive, user-friendly, and easier to program with a functional style than the declarative commands of its SQL ancestor.&lt;/p&gt;
+&lt;h2 id=&#34;documentation-pages&#34;&gt;Documentation Pages&lt;/h2&gt;
+&lt;p&gt;If you have already installed the DBAPI project, then you can search Wolfram Mathematica documentation for &lt;code&gt;DBAPI&lt;/code&gt;. This is your starting point for browsing the documentation. For demonstration purposes, we have included here the following documentation pages in pdf format for the &lt;code&gt;ODBapi&lt;/code&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RESTful API in Mathematica</title>
+      <link>https://healis.eu/en/project/wolfram_apis/</link>
+      <pubDate>Thu, 31 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/project/wolfram_apis/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#features&#34;&gt;Features&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#installation&#34;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#testing&#34;&gt;Testing&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#documentation-pages&#34;&gt;Documentation Pages&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Packages in this project extend Wolfram Language with commands that are related to data management and especially generic database management. There is a basic &lt;code&gt;Utilities Package&lt;/code&gt; that is used in transformations between Wolfram Language constructs such as &lt;a href=&#34;https://reference.wolfram.com/language/ref/List.html&#34;&gt;List&lt;/a&gt;, &lt;a href=&#34;https://reference.wolfram.com/language/ref/Rule.html&#34;&gt;Rule&lt;/a&gt;, &lt;a href=&#34;https://reference.wolfram.com/language/ref/Association.html&#34;&gt;Association&lt;/a&gt;, and &lt;a href=&#34;https://reference.wolfram.com/language/ref/Dataset.html&#34;&gt;Dataset&lt;/a&gt;, and external serialization standards such as &lt;a href=&#34;https://json.org&#34;&gt;JSON&lt;/a&gt; and comma-separated values (CSV) files. On top of that package we are porting RESTful APIs from various web services through &lt;a href=&#34;https://reference.wolfram.com/language/ref/URLFetch.html&#34;&gt;URLFetch&lt;/a&gt; into Wolfram Language building commands with arguments that specify options with rules of the form name-&amp;gt;value. An example of such a RESTful API is the &lt;a href=&#34;https://orientdb.org/docs/3.0.x/misc/OrientDB-REST.html&#34;&gt;OrientDB HTTP API&lt;/a&gt; and the &lt;code&gt;OrientDB package&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./orientdb_logo.png&#34; alt=&#34;jpg&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Enhanced &lt;a href=&#34;https://orientdb.org/docs/3.0.x/misc/OrientDB-REST.html&#34;&gt;OrientDB HTTP RESTful API&lt;/a&gt; functionality with powerful new commands for Mathematica users&lt;/li&gt;
+&lt;li&gt;Fully documented functions and packages in the native documentation system of Wolfram Mathematica&lt;/li&gt;
+&lt;li&gt;Build interactive demos, powerful presentations and applications in the vast environment of Wolfram Language with nearly 5,000 built-in functions at a fraction of time it would require to build, test, and support these, in other programming languages.&lt;/li&gt;
+&lt;li&gt;Debug easily your applications by dynamic programming and interactive sessions&lt;/li&gt;
+&lt;li&gt;Deploy your application anywhere thanks to &lt;a href=&#34;https://www.wolfram.com/universal-deployment-system&#34;&gt;Wolfram Universal Deployment System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Create multiple visualization schemes, network topologies, data mining and search indexing algorithms powered by dynamically configured GUIs for the non-experienced user.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;You can download the latest release of DBAPI from &lt;a href=&#34;https://test.healis.eu/dbapi/Release/dbapi-latest-release.zip&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download and run this &lt;a href=&#34;https://test.healis.eu/dbapi/Test/Installation.nb&#34;&gt;Mathematica Notebook code&lt;/a&gt; to test the installation of the package&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;testing&#34;&gt;Testing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href=&#34;https://test.healis.eu/dbapi/Test/Transformations_on_Expressions.nb&#34;&gt;Transformations on Wolfram expressions&lt;/a&gt; Mathematica Notebook is a demonstration of functions in the Utilities package&lt;/li&gt;
+&lt;li&gt;The OrientDB API Package can be tested with &lt;a href=&#34;https://test.healis.eu/dbapi/Test/OrientDB%20API%20Demo%201%20-%20Test%20API%20Commands.nb&#34;&gt;Demo 1-Test API Commands&lt;/a&gt; and &lt;a href=&#34;https://test.healis.eu/dbapi/Test/OrientDB%20API%20Demo%203%20-%20Schemaless%20vs%20Schemafull%20Operations.nb&#34;&gt;Demo 3-Schemaless vs Schemafull Operations&lt;/a&gt; Notebooks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;documentation-pages&#34;&gt;Documentation Pages&lt;/h2&gt;
+&lt;p&gt;If you have already installed the DBAPI project, then you can search Wolfram Mathematica documentation for &lt;code&gt;DBAPI&lt;/code&gt;. This is your starting point for browsing the documentation.&lt;/p&gt;
+&lt;p&gt;For demonstration purposes, we have included here the following documentation pages in pdf format for the &lt;code&gt;ODBapi&lt;/code&gt; and &lt;code&gt;ODBgetFieldAttributes&lt;/code&gt; functions of the &lt;code&gt;OrientDB Package&lt;/code&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;http://test.healis.eu/dbapi/DocumentationPDF/ODBapi.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;http://test.healis.eu/dbapi/DocumentationPDF/ODBapi.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;http://test.healis.eu/dbapi/DocumentationPDF/ODBapi.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;http://test.healis.eu/dbapi/DocumentationPDF/ODBgetFieldAttributes.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;http://test.healis.eu/dbapi/DocumentationPDF/ODBgetFieldAttributes.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;http://test.healis.eu/dbapi/DocumentationPDF/ODBgetFieldAttributes.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OrientDB Mathematica Package</title>
+      <link>https://healis.eu/en/post/20151230/</link>
+      <pubDate>Wed, 30 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20151230/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The main function of this Mathematica package, &lt;code&gt;ODBapi&lt;/code&gt;, is built on top of the &lt;a href=&#34;https://reference.wolfram.com/language/ref/URLFetch.html&#34;&gt;URLFetch&lt;/a&gt; built-in function. &lt;a href=&#34;https://orientdb.org/docs/3.0.x/misc/OrientDB-REST.html&#34;&gt;OrientDB RESTful HTTP API&lt;/a&gt; commands are ported into Wolfram Language through &lt;a href=&#34;https://reference.wolfram.com/language/ref/URLFetch.html&#34;&gt;URLFetch&lt;/a&gt; and then &lt;code&gt;ODBapi&lt;/code&gt; commands are built with arguments that specify options with rules of the form &lt;code&gt;name -&amp;gt; value&lt;/code&gt;. This package has also other utility functions especially implemented for OrientDB. &lt;code&gt;OrientDB Package&lt;/code&gt; is part of the &lt;a href=&#34;https://healis.eu/en/project/wolfram_apis/&#34;&gt;Wolfram API application project&lt;/a&gt;. Visit the official page of the project for installation and testing instructions.&lt;/p&gt;
+&lt;h2 id=&#34;discussion&#34;&gt;Discussion&lt;/h2&gt;
+&lt;p&gt;OrientDB is a multi-model, NoSQL, DBMS based on 16 years of research. Orient Technologies, the company that supports the product, has published more than 60 releases and there is constant and frequent adaptation to user demand and the latest technology available. OrientDB is Open Source and FREE for any purpose. Good news are that this &lt;strong&gt;OrientDB Mathematica Package is also Open Source and Free&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;OrientDB is using an SQL-like programming language for managing data. We consider that this can be a turning point for innovation, adaptation, and extension of SQL language. Although SQL is widely used and familiar to many programmers, we argue that its use becomes complicated on graph data models. OrientDB SQL, i.e. &lt;strong&gt;OSQL&lt;/strong&gt;, has been extended to cover operations on Graph Model, but with the cost of adding extra SQL commands. This level of detail can be hidden from the user, and a more abstracted language can be built to cover both the Graph Model and the underlying Document Model.&lt;/p&gt;
+&lt;p&gt;Moreover, normally SQL consists of a &lt;strong&gt;Data Definition Language&lt;/strong&gt;, &lt;strong&gt;Data Manipulation Language&lt;/strong&gt; and &lt;strong&gt;Data Control Language&lt;/strong&gt;. In OrientDB there are 34 different commands divided into six categories. Four of them are related to the manipulation of data structure (Graph,Schema,Index,Database) and two of them concern operations (Create-Read-Update-Delete and Utility).&lt;/p&gt;
+&lt;p&gt;There is some analogy of &lt;strong&gt;OSQL&lt;/strong&gt; with the &lt;code&gt;ODBapi&lt;/code&gt; function of the &lt;code&gt;OrientDB Package&lt;/code&gt;. We are overloading the function with multiple definitions that are derived from the use of optional and mandatory arguments. This differentation is based on the commands (Add, Del, Get, Update, Import/Export, Login/Logout) and the various data structures (Server, Database, Class-Vertex-Edge, Property, Record, Document, Value). See the documentation page below for more information.&lt;/p&gt;
+&lt;p&gt;We argue that this effort to transform the OrientDB SQL set of commands to a function with parameters is a good start for a uniform, universal treatment of data language (&lt;strong&gt;UDL&lt;/strong&gt;). Most important in such a design are: the parameter for the basic operation (&lt;strong&gt;ADD, DEL, GET, UPD, LNK, IRT, LOG&lt;/strong&gt;), and the parameter for the type of construct e.g. &lt;strong&gt;Database, Class, Property, Record, and Value&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;With that guideline in mind, SELECT becomes &lt;strong&gt;GET&lt;/strong&gt;, INSERT and CREATE become &lt;strong&gt;ADD&lt;/strong&gt;, TRUNCATE AND DELETE become &lt;strong&gt;DEL&lt;/strong&gt;, UPDATE and ALTER become &lt;strong&gt;UPD&lt;/strong&gt;. The current OrientDB package needs more programming effort to reach the state we described. But we foresee that it will be far more intuitive, user-friendly and easy to program than its SQL ancestor.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Most of the functionality of &lt;a href=&#34;https://orientdb.org/docs/3.0.x/misc/OrientDB-REST.html&#34;&gt;OrientDB HTTP-JSON API&lt;/a&gt; is embedded in Mathematica.  The user is able to work with OrientDB database in the native Wolfram Language environment. &lt;a href=&#34;https://healis.eu/en/project/wolfram_apis/&#34;&gt;Wolfram API application project&lt;/a&gt; in general combines fundamental bult-in data structures, &lt;a href=&#34;https://reference.wolfram.com/language/ref/List.html&#34;&gt;List&lt;/a&gt;, &lt;a href=&#34;https://reference.wolfram.com/language/ref/Rule.html&#34;&gt;Rule&lt;/a&gt;, &lt;a href=&#34;https://reference.wolfram.com/language/ref/Association.html&#34;&gt;Association&lt;/a&gt; and &lt;a href=&#34;https://reference.wolfram.com/language/ref/Dataset.html&#34;&gt;Dataset&lt;/a&gt; of the Wolfram Language with the native JSON permanent storage, retrieval  and manipulation mechanism of OrientDB database. The project is open source and free, therefore it can be downloaded from those interested in building &lt;a href=&#34;https://reference.wolfram.com/workbench/index.jsp?topic=/com.wolfram.eclipse.help/html/tasks/applications/mathematicaapps.html&#34;&gt;Mathematica application projects&lt;/a&gt; and those interested in porting data from RESTful services and NoSQL databases into Mathematica.&lt;/p&gt;
+&lt;h2 id=&#34;documentation-pages&#34;&gt;Documentation Pages&lt;/h2&gt;
+&lt;p&gt;For demonstration purposes, we have included here the following documentation pages in pdf format for the &lt;code&gt;ODBapi&lt;/code&gt; and &lt;code&gt;ODBgetFieldAttributes&lt;/code&gt; functions of the &lt;code&gt;OrientDB Package&lt;/code&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;http://test.healis.eu/dbapi/DocumentationPDF/ODBapi.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;http://test.healis.eu/dbapi/DocumentationPDF/ODBapi.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;http://test.healis.eu/dbapi/DocumentationPDF/ODBapi.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;http://test.healis.eu/dbapi/DocumentationPDF/ODBgetFieldAttributes.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;http://test.healis.eu/dbapi/DocumentationPDF/ODBgetFieldAttributes.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;http://test.healis.eu/dbapi/DocumentationPDF/ODBgetFieldAttributes.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AtomicDB Mathematica AddOn (ADBM)</title>
+      <link>https://healis.eu/en/post/20151009/</link>
+      <pubDate>Fri, 09 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20151009/</guid>
+      <description>&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Enhanced AtomicDB current API functionality with powerful new commands for Mathematica users&lt;/li&gt;
+&lt;li&gt;Build interactive demos, powerful presentations and application in the vast environment of Wolfram Language with nearly 5,000 built-in functions at a fraction of time it would require to build, test, and support these, in other programming languages.&lt;/li&gt;
+&lt;li&gt;Debug easily your applications by dynamic programming and interactive sessions&lt;/li&gt;
+&lt;li&gt;Create multiple visualization schemes, network topologies, data mining and search indexing algorithms powered by dynamically configured GUIs for the non-experienced user.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;adbm-demo-version-installation&#34;&gt;ADBM Demo Version Installation&lt;/h2&gt;
+&lt;p&gt;Here is some &lt;a href=&#34;http://test.healis.eu/atomicdb/20150409-api-windows-x86-64/nb/demoVersion-installation.nb&#34;&gt;Mathematica Notebook code&lt;/a&gt; to test the installation of the package .dll&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://test.healis.eu/atomicdb/20150409-api-windows-x86-64/zip/adb-demo.zip&#34;&gt;Unzip .DLL file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Check &lt;!-- raw HTML omitted --&gt;$LibraryPath&lt;!-- raw HTML omitted --&gt; and find out the exact location of &lt;!-- raw HTML omitted --&gt;$UserBaseLibrary&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;Place the DLL file under &lt;!-- raw HTML omitted --&gt;$UserBaseLibrary&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;Execute the rest of the code above.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you succeed, a new window with the title &amp;ldquo;AtomicDB Output Window&amp;rdquo; will be opened. The API package has been loaded. You can close all the windows.&lt;/p&gt;
+&lt;h2 id=&#34;adbm-demo-version-testing&#34;&gt;ADBM Demo Version Testing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Download and Run &lt;a href=&#34;http://test.healis.eu/atomicdb/20150409-api-windows-x86-64/nb/demoVersion-test.nb&#34;&gt;Mathematica Notebook Demo Version of ADBM&lt;/a&gt; or view the file in a &lt;a href=&#34;http://test.healis.eu/atomicdb/20150409-api-windows-x86-64/pdf/demoVersion-test.pdf&#34;&gt;pdf format&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;That will open automatically another &lt;a href=&#34;http://test.healis.eu/atomicdb/20150409-api-windows-x86-64/nb/demoVersion-output.nb&#34;&gt;Mathematica Notebook file to output the result of computation&lt;/a&gt;. View the output file in a &lt;a href=&#34;http://test.healis.eu/atomicdb/20150409-api-windows-x86-64/pdf/demoVersion-output.pdf&#34;&gt;pdf format&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;adbm-professional-version-comparison&#34;&gt;ADBM Professional Version Comparison&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Compare Mathematica Notebook Demo version testing file with the &lt;a href=&#34;http://test.healis.eu/atomicdb/20150409-api-windows-x86-64/nb/proVersion-test.nb&#34;&gt;testing of ADBM professional version&lt;/a&gt;, view that file in a &lt;a href=&#34;http://test.healis.eu/atomicdb/20150409-api-windows-x86-64/pdf/proVersion-test.pdf&#34;&gt;pdf format&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Compare Mathematica Notebook Demo Output with that of &lt;a href=&#34;http://test.healis.eu/atomicdb/20150409-api-windows-x86-64/nb/proVersion-output.nb&#34;&gt;ADBM professional output&lt;/a&gt;, view that file in a &lt;a href=&#34;http://test.healis.eu/atomicdb/20150409-api-windows-x86-64/pdf/proVersion-output.pdf&#34;&gt;pdf format&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;AtomicDB AddOn Professional Version makes it a lot easier to get the same result; it boosts functionality and programmability !&lt;/p&gt;
+&lt;h2 id=&#34;adbm-pro-version-includes&#34;&gt;ADBM Pro Version Includes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Full Set of API Primitive Instructions&lt;/li&gt;
+&lt;li&gt;Powerful Enhanced Commands&lt;/li&gt;
+&lt;li&gt;Output Commands for any type of AtomicDB API objects&lt;/li&gt;
+&lt;li&gt;Transformation Commands for any type of AtomicDB API objects&lt;/li&gt;
+&lt;li&gt;Type Checking of Commands with new Mathematica Test Predicates&lt;/li&gt;
+&lt;li&gt;Get Data By Key or By Value from Native Mathematica Structures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Contact us to discuss your needs and learn more about the ADBM Pro version we use for our consultancy services and solutions we offer on top of this Add-On.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

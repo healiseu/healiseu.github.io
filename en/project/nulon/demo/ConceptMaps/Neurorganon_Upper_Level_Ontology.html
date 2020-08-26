@@ -1,0 +1,1600 @@
+<HTML>
+<HEAD>
+  <TITLE>Neurorganon_Upper_Level_Ontology.html</TITLE>
+  <meta NAME = "GENERATOR"          CONTENT = "IHMC CmapTools vr. 4.12 ">
+  <meta NAME = "KEYWORDS"           CONTENT = "Athanassios I. Hatzis, Concept Map, cmap, CmapTools, IHMC, Neurorganon_Upper_Level_Ontology,  Height Weight Length Size Density Temperature Depth Age Area Frequency Electric Power,  Effective,  Abstract (Non-extended in 4D) (No causal power),  Attribute (Qualities, characteristics, features, parameters, aspects),  Non-Physical,  State verbs with no continuous forms (situation) (Medical, Mental, Chemical, State of matter Program state),  Gradable (Adjective),  Having (8. Έχειν - to have),  Simple,  Magnitude,  Relational (Adjective) (4. προς τι - to what),  Human Cat Robot,  Perceptibility,  All Many Several Both Any A bit of Several A little A few Every Some Enough More Most Equal Much Little Plenty of A lot of,  Role,  Fourth Last Next,  Dead Empty Green Ellipsoid,  Form Charm Beauty Color Shape Use Happiness Motivation Laugter Friendship,  Effect (Result, Outcome, Target, Aim, Goal, Intention),  Contextual">
+  <meta NAME = "DESCRIPTION"        CONTENT = "This Concept Map, created with IHMC CmapTools, has information related to: Neurorganon_Upper_Level_Ontology, Parthood (Composition) has-a Divides into Part, Event(s) (The changing of attributes) divided into Dynamic, Cumulativity divides into Non-Cumulative, Animate e.g. Animal Person, State verbs with no continuous forms (situation) (Medical, Mental, Chemical, State of matter Program state) e.g. Program Running Equilibrium Stable Solid, Role is Relational (Adjective) (4. προς τι - to what), Information is a Abstract (Non-extended in 4D) (No causal power), Agentive (can act on its own and produce changes in the world) e.g. Human Cat Robot, Extensibility Devides Individual(s) (cannot be instantiated) (Who, What), Instantaneity is a Primitive Principle for (Faceted Classification), Complexity Divides into Complex, Generalization (inheritance) genls Divides into Subclass, Abstract Information Structure (AIS) e.g. Sentence Character String Diagram Graph ComputerDataStructure, Persistance [Lew 1986] divides into Occurent (having different temporal parts at different times), Physical (Verb) Aristotle Category Being-in-a-position (7. Κείσθαι, to lie), Verbal Context is a Primitive Principle for (Faceted Classification), Animateness divides into Animate, Verbal Context Divides into Context Free, Value is Quantitative (2. ποσόν - How much), Animateness is a Primitive Principle for (Faceted Classification)">
+  <meta NAME = "AUTHOR"             CONTENT = "IHMC CmapTools">
+  <meta HTTP-EQUIV = "Content-Type" CONTENT = "text/html; charset = UTF-8">
+  <script LANGUAGE="JavaScript1.2">
+  <!--
+    //  PopUp --
+    //  Institute for Human and Machine Cognition, http://www.ihmc.us/
+    //  CmapTools, Version 5.03, http://cmap.ihmc.us/
+    //  Support at http://cmapforum.ihmc.us/
+    //  Modify by: CmapTools Developers, cmapsupport AT ihmc DOT us
+    //  Date: 10/06/2009
+
+    var IE = 0;
+    var IE4PC = 0;
+    var NS = 0;
+    var GECKO = 0;
+
+    var openpopups = new Array();
+
+    if (document.all) {                 // Internet Explorer Detected
+	   IE = true;	
+    }
+    else if (document.layers) {         // Netscape Navigator Detected
+	   NS = true;	
+    }
+    else if (document.getElementById) { // Netscape 6 Detected
+       GECKO = true;
+    }
+    else {
+	   alert("Unrecognized Browser Detected::\nSorry, your browser is not compatible.");
+    }
+
+    if (IE)
+    {
+	   OS = navigator.platform;
+	   VER = new String(navigator.appVersion);
+	   VER = VER.substr (0, VER.indexOf(" "));
+	   if ((VER < 4.8) && (OS == "Win32")) 
+	   {
+	       IE4PC = 1;
+	   }
+    }
+
+    function handleResize() {
+	    location.reload();
+	    return false;
+    }
+
+
+    if ((NS) && (navigator.platform == "MacPPC")) {
+	   window.captureEvents (Event.RESIZE);
+	   window.onresize = handleResize;
+    }
+
+    function openResource(event, resourcePath, resourceName, resourceType)
+    {
+	   var newwindow;
+
+       // Resource MIMETypes are enumerated as follows: 
+       // cMap     = Undefined
+       // Image    = 0
+       // Video    = 1
+       // Text     = 2
+       // Audio    = 3
+
+       popDown();
+
+	   switch (resourceType) 
+	   {
+	    case 0:     //Image
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<center><img src=\"';
+                    text += resourcePath;
+                    text +='\"> </center>';
+             break;
+		
+	    case 1:  text   // Video
+		     newwindow = window.open (resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+                     var text ='<embed src=\"';
+                     text += resourcePath;
+                     text +='\" autostart=true> </embed> ';
+             break;
+
+	    case 2:      // Text or Unknown 
+		     newwindow = window.open(resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+              break;
+
+	    case 3:       // Audio
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<embed src=\"';
+                    text += resourcePath;
+                    text +='\" autoplay=true> </embed> ';
+             break;
+
+	    case 4:
+                    newwindow = window.open(resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+	     break;
+	    }
+        return;
+    }
+
+
+
+    function popUpEvt(event, popupName)
+    {
+	popDown();
+
+	if (GECKO)
+	{
+	    document.getElementById(popupName).style.left = event.pageX;
+	    document.getElementById(popupName).style.top = event.pageY;
+	    document.getElementById(popupName).style.background = "#B3B3B3";
+	    document.getElementById(popupName).style.visibility = "visible";
+	    openpopups.push(popupName);
+	}
+	else if (NS) 
+	{
+	    document.layers[popupName].moveTo (event.pageX, event.pageY);
+	    document.layers[popupName].bgColor = "#B3B3B3";
+	    document.layers[popupName].visibility = "show";
+	    openpopups.push(popupName);
+	}
+	else // if (IE)
+	{
+	    window.event.cancelBubble = true;
+	    if (!IE4PC) {
+		document.all[popupName].style.backgroundColor = "#B3B3B3";
+	    }	
+	    document.all[popupName].style.left = window.event.clientX + document.body.scrollLeft;
+	    document.all[popupName].style.top = window.event.clientY + document.body.scrollTop;
+	    document.all[popupName].style.visibility = "visible";
+	    openpopups[openpopups.length] = popupName;
+	}
+	return false;
+    }
+
+    function popDown()
+    {
+	var popupname;
+	
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+		document.getElementById(popupname).style.visibility = "hidden";
+	    }
+	    else if (NS) {
+		document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+		document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+	return;
+    }
+
+    function popDownNoGecko() 
+    {
+	var popupname;
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+           //  document.getElementById(popupname).style.visibility = "hidden"; 
+	        return;   // erased for test purposes
+	    }  
+	    else if (NS) {
+	        document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+	        document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+        return;
+    }
+  //-->
+  </script>
+</HEAD>
+<BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+<noscript>
+  <table width=90% cellpadding=10>
+    <tr>
+      <td bgcolor=ff4447>
+        <font color=000000 size=+1 face="helvetica">
+        <h1>WARNING:</h1>
+        <b>JavaScript is turned OFF.  None of the links on this concept map will <br>
+           work until it is reactivated.
+          <p>
+            <a href="http://cmap.ihmc.us/docs/EnablingJavaScript.html">
+                            If you need help turning JavaScript On, click here.
+            </a>
+          </p>
+        </b>
+      </td>
+    </tr>
+  </table>
+This Concept Map, created with IHMC CmapTools, has information related to: Neurorganon_Upper_Level_Ontology, Parthood (Composition) has-a Divides into Part, Event(s) (The changing of attributes) divided into Dynamic, Cumulativity divides into Non-Cumulative, Animate e.g. Animal Person, State verbs with no continuous forms (situation) (Medical, Mental, Chemical, State of matter Program state) e.g. Program Running Equilibrium Stable Solid, Role is Relational (Adjective) (4. προς τι - to what), Information is a Abstract (Non-extended in 4D) (No causal power), Agentive (can act on its own and produce changes in the world) e.g. Human Cat Robot, Extensibility Devides Individual(s) (cannot be instantiated) (Who, What), Instantaneity is a Primitive Principle for (Faceted Classification), Complexity Divides into Complex, Generalization (inheritance) genls Divides into Subclass, Abstract Information Structure (AIS) e.g. Sentence Character String Diagram Graph ComputerDataStructure, Persistance [Lew 1986] divides into Occurent (having different temporal parts at different times), Physical (Verb) Aristotle Category Being-in-a-position (7. Κείσθαι, to lie), Verbal Context is a Primitive Principle for (Faceted Classification), Animateness divides into Animate, Verbal Context Divides into Context Free, Value is Quantitative (2. ποσόν - How much), Animateness is a Primitive Principle for (Faceted Classification)
+
+</noscript>
+
+<map name="Neurorganon_Upper_Level_Ontology.html">
+  <area shape="rect"
+        href="1K5VG62M3I271D770I18ZItextIx-url"
+        onClick="popUpEvt(event,'1K5VG62M3I271D770I18ZItextIx-url'); return false;"
+        coords="1188,65,1206,83">
+  <area shape="rect"
+        href="1K5VG62M3I271D770I18ZItextIhtml"
+        onClick="popUpEvt(event,'1K5VG62M3I271D770I18ZItextIhtml'); return false;"
+        coords="1171,65,1189,83">
+  <area shape="rect"
+        href="1K5WJ2TQDI231V4HXI1D0KItextIhtml"
+        onClick="popUpEvt(event,'1K5WJ2TQDI231V4HXI1D0KItextIhtml'); return false;"
+        coords="192,2410,210,2428">
+  <area shape="rect"
+        href="1K5WHJ942I1CYTF3I1901ItextIx-url"
+        onClick="popUpEvt(event,'1K5WHJ942I1CYTF3I1901ItextIx-url'); return false;"
+        coords="772,2175,790,2193">
+  <area shape="rect"
+        href="1K5WHJ942I1CYTF3I1901ItextIhtml"
+        onClick="popUpEvt(event,'1K5WHJ942I1CYTF3I1901ItextIhtml'); return false;"
+        coords="755,2175,773,2193">
+  <area shape="rect"
+        href="1K5WJ2TQDI1GHM395I1D1FItextIhtml"
+        onClick="popUpEvt(event,'1K5WJ2TQDI1GHM395I1D1FItextIhtml'); return false;"
+        coords="599,2790,617,2808">
+  <area shape="rect"
+        href="1K5WFBNWQI2D9K8PBI13HJItextIhtml"
+        onClick="popUpEvt(event,'1K5WFBNWQI2D9K8PBI13HJItextIhtml'); return false;"
+        coords="1833,693,1851,711">
+  <area shape="rect"
+        href="1K5WGCFCCI1ZXKCHNI1570ItextIhtml"
+        onClick="popUpEvt(event,'1K5WGCFCCI1ZXKCHNI1570ItextIhtml'); return false;"
+        coords="314,1171,332,1189">
+  <area shape="rect"
+        href="1K5TTV22NIJTD57YINZQItextIhtml"
+        onClick="popUpEvt(event,'1K5TTV22NIJTD57YINZQItextIhtml'); return false;"
+        coords="927,717,945,735">
+  <area shape="rect"
+        href="1K5TTV22NIJTD57YINZQItextIplain"
+        onClick="popUpEvt(event,'1K5TTV22NIJTD57YINZQItextIplain'); return false;"
+        coords="944,717,962,735">
+  <area shape="rect"
+        href="1K5TTV22NIJTD57YINZQItextIx-url"
+        onClick="popUpEvt(event,'1K5TTV22NIJTD57YINZQItextIx-url'); return false;"
+        coords="961,717,979,735">
+  <area shape="rect"
+        href="1K5WHJ942I2B0LBMZI190RItextIhtml"
+        onClick="popUpEvt(event,'1K5WHJ942I2B0LBMZI190RItextIhtml'); return false;"
+        coords="1050,1742,1068,1760">
+  <area shape="rect"
+        href="1K5XHVQP0I29XQJ15I1HPWItextIhtml"
+        onClick="popUpEvt(event,'1K5XHVQP0I29XQJ15I1HPWItextIhtml'); return false;"
+        coords="1841,2052,1859,2070">
+  <area shape="rect"
+        href="1K7095T11I4LGJH5I3PTItextIx-url"
+        onClick="popUpEvt(event,'1K7095T11I4LGJH5I3PTItextIx-url'); return false;"
+        coords="803,213,821,231">
+  <area shape="rect"
+        href="1K5VMJ460I24P7XJKI7T6ItextIhtml"
+        onClick="popUpEvt(event,'1K5VMJ460I24P7XJKI7T6ItextIhtml'); return false;"
+        coords="1160,1662,1178,1680">
+  <area shape="rect"
+        href="1K5VLRL4GI7N7289I6JGIx-cmapIx-storable"
+        onClick="popUpEvt(event,'1K5VLRL4GI7N7289I6JGIx-cmapIx-storable'); return false;"
+        coords="1560,1414,1578,1432">
+  <area shape="rect"
+        href="1K5VLRL4GI7N7289I6JGItextIhtml"
+        onClick="popUpEvt(event,'1K5VLRL4GI7N7289I6JGItextIhtml'); return false;"
+        coords="1543,1414,1561,1432">
+  <area shape="rect"
+        href="1K5VKR41MI1N08W5SI4X9ItextIhtml"
+        onClick="popUpEvt(event,'1K5VKR41MI1N08W5SI4X9ItextIhtml'); return false;"
+        coords="1234,1143,1252,1161">
+  <area shape="rect"
+        href="1K5VMJCTXIJ0NM4NI7V5ItextIhtml"
+        onClick="popUpEvt(event,'1K5VMJCTXIJ0NM4NI7V5ItextIhtml'); return false;"
+        coords="1357,1661,1375,1679">
+  <area shape="rect"
+        href="1K5X4VZZYI18NV1MZIPWKItextIhtml"
+        onClick="popUpEvt(event,'1K5X4VZZYI18NV1MZIPWKItextIhtml'); return false;"
+        coords="1307,1823,1325,1841">
+  <area shape="rect"
+        href="1K5VVJZ5RI25L2R9FILXBItextIhtml"
+        onClick="popUpEvt(event,'1K5VVJZ5RI25L2R9FILXBItextIhtml'); return false;"
+        coords="248,476,266,494">
+  <area shape="rect"
+        href="1K5VVD3KXI1MN0YZVILN3ItextIhtml"
+        onClick="popUpEvt(event,'1K5VVD3KXI1MN0YZVILN3ItextIhtml'); return false;"
+        coords="536,588,554,606">
+  <area shape="rect"
+        href="1K5WKDQ36INH1YGZI1KJHItextIhtml"
+        onClick="popUpEvt(event,'1K5WKDQ36INH1YGZI1KJHItextIhtml'); return false;"
+        coords="1277,221,1295,239">
+  <area shape="rect"
+        href="1K5WJ2TQDI1Q9QY2JI1D4CItextIhtml"
+        onClick="popUpEvt(event,'1K5WJ2TQDI1Q9QY2JI1D4CItextIhtml'); return false;"
+        coords="1737,2699,1755,2717">
+  <area shape="rect"
+        href="1K5VKDKQGIDF06YCI4P7ItextIhtml"
+        onClick="popUpEvt(event,'1K5VKDKQGIDF06YCI4P7ItextIhtml'); return false;"
+        coords="1147,1100,1165,1118">
+  <area shape="rect"
+        href="1K5X9J9HCI2BC1Y92IY6CItextIhtml"
+        onClick="popUpEvt(event,'1K5X9J9HCI2BC1Y92IY6CItextIhtml'); return false;"
+        coords="934,1455,952,1473">
+  <area shape="rect"
+        href="1K5VLRWGSI274XQYZI6K6Ix-cmapIx-storable"
+        onClick="popUpEvt(event,'1K5VLRWGSI274XQYZI6K6Ix-cmapIx-storable'); return false;"
+        coords="1785,1426,1803,1444">
+  <area shape="rect"
+        href="1K5VLRWGSI274XQYZI6K6ItextIhtml"
+        onClick="popUpEvt(event,'1K5VLRWGSI274XQYZI6K6ItextIhtml'); return false;"
+        coords="1768,1426,1786,1444">
+  <area shape="rect"
+        href="1K5XHV01WI24Q9K07I1HNLItextIhtml"
+        onClick="popUpEvt(event,'1K5XHV01WI24Q9K07I1HNLItextIhtml'); return false;"
+        coords="1564,2120,1582,2138">
+  <area shape="rect"
+        href="1K5WHJ942I1WY61K6I18X0ItextIhtml"
+        onClick="popUpEvt(event,'1K5WHJ942I1WY61K6I18X0ItextIhtml'); return false;"
+        coords="1789,2408,1807,2426">
+  <area shape="rect"
+        href="1K5XB3P0MI17415BNIZ1KItextIhtml"
+        onClick="popUpEvt(event,'1K5XB3P0MI17415BNIZ1KItextIhtml'); return false;"
+        coords="1440,738,1458,756">
+  <area shape="rect"
+        href="1K5TTLDBQI4RT1LWINTQIx-cmapIx-storable"
+        onClick="popUpEvt(event,'1K5TTLDBQI4RT1LWINTQIx-cmapIx-storable'); return false;"
+        coords="70,164,88,182">
+  <area shape="rect"
+        href="1K5TTLDBQI4RT1LWINTQItextIhtml"
+        onClick="popUpEvt(event,'1K5TTLDBQI4RT1LWINTQItextIhtml'); return false;"
+        coords="36,164,54,182">
+  <area shape="rect"
+        href="1K5TTLDBQI4RT1LWINTQItextIx-url"
+        onClick="popUpEvt(event,'1K5TTLDBQI4RT1LWINTQItextIx-url'); return false;"
+        coords="53,164,71,182">
+  <area shape="rect"
+        href="1K5WJ2TQDI24VCRN3I1D2RItextIhtml"
+        onClick="popUpEvt(event,'1K5WJ2TQDI24VCRN3I1D2RItextIhtml'); return false;"
+        coords="1074,2682,1092,2700">
+  <area shape="rect"
+        href="1K5XH0KKVI8PRBHYI1GNDItextIhtml"
+        onClick="popUpEvt(event,'1K5XH0KKVI8PRBHYI1GNDItextIhtml'); return false;"
+        coords="717,807,735,825">
+  <area shape="rect"
+        href="1K5WGD02RI22ZMQ4BI1580ItextIhtml"
+        onClick="popUpEvt(event,'1K5WGD02RI22ZMQ4BI1580ItextIhtml'); return false;"
+        coords="423,1084,441,1102">
+  <area shape="rect"
+        href="1K5VLQ30JI18NPJ9SI6GTItextIhtml"
+        onClick="popUpEvt(event,'1K5VLQ30JI18NPJ9SI6GTItextIhtml'); return false;"
+        coords="1302,1422,1320,1440">
+  <area shape="rect"
+        href="1K5VLQ30JI18NPJ9SI6GTIx-cmapIx-storable"
+        onClick="popUpEvt(event,'1K5VLQ30JI18NPJ9SI6GTIx-cmapIx-storable'); return false;"
+        coords="1319,1422,1337,1440">
+  <area shape="rect"
+        href="1K5WM03VLI26R5NXYI1PJ1ItextIhtml"
+        onClick="popUpEvt(event,'1K5WM03VLI26R5NXYI1PJ1ItextIhtml'); return false;"
+        coords="1505,451,1523,469">
+  <area shape="rect"
+        href="1K5WHJ942I1HMRVNQI18VSItextIhtml"
+        onClick="popUpEvt(event,'1K5WHJ942I1HMRVNQI18VSItextIhtml'); return false;"
+        coords="1883,2333,1901,2351">
+  <area shape="rect"
+        href="1K5X587J2IS0R9KRIRK1ItextIhtml"
+        onClick="popUpEvt(event,'1K5X587J2IS0R9KRIRK1ItextIhtml'); return false;"
+        coords="1024,530,1042,548">
+  <area shape="rect"
+        href="1K5VKQGY4I19GKJRLI4WJItextIhtml"
+        onClick="popUpEvt(event,'1K5VKQGY4I19GKJRLI4WJItextIhtml'); return false;"
+        coords="1313,1032,1331,1050">
+  <area shape="rect"
+        href="1K708MYN0I12J2SCXI3FSItextIx-url"
+        onClick="popUpEvt(event,'1K708MYN0I12J2SCXI3FSItextIx-url'); return false;"
+        coords="1410,229,1428,247">
+  <area shape="rect"
+        href="1K5VVJZ5RI22Y2SQHILWWItextIhtml"
+        onClick="popUpEvt(event,'1K5VVJZ5RI22Y2SQHILWWItextIhtml'); return false;"
+        coords="69,471,87,489">
+  <area shape="rect"
+        href="1K5VFSZPMIJ41MYHIQ68ItextIhtml"
+        onClick="popUpEvt(event,'1K5VFSZPMIJ41MYHIQ68ItextIhtml'); return false;"
+        coords="914,78,932,96">
+  <area shape="rect"
+        href="1K5VFSZPMIJ41MYHIQ68ItextIx-url"
+        onClick="popUpEvt(event,'1K5VFSZPMIJ41MYHIQ68ItextIx-url'); return false;"
+        coords="931,78,949,96">
+  <area shape="rect"
+        href="1K5XDRRFMI97QB7MI169TItextIhtml"
+        onClick="popUpEvt(event,'1K5XDRRFMI97QB7MI169TItextIhtml'); return false;"
+        coords="1413,834,1431,852">
+  <area shape="rect"
+        href="1K5VXPSZKI1S6MYQBIRMYItextIhtml"
+        onClick="popUpEvt(event,'1K5VXPSZKI1S6MYQBIRMYItextIhtml'); return false;"
+        coords="469,1692,487,1710">
+  <area shape="rect"
+        href="1K5XGJHMJI2165QWBI1F25ItextIhtml"
+        onClick="popUpEvt(event,'1K5XGJHMJI2165QWBI1F25ItextIhtml'); return false;"
+        coords="160,2657,178,2675">
+  <area shape="rect"
+        href="1L0T71T9DI10XB8FHI259Ix-cmapIx-storable"
+        onClick="popUpEvt(event,'1L0T71T9DI10XB8FHI259Ix-cmapIx-storable'); return false;"
+        coords="576,124,594,142">
+  <area shape="rect"
+        href="1L0T71T9DI10XB8FHI259ItextIx-url"
+        onClick="popUpEvt(event,'1L0T71T9DI10XB8FHI259ItextIx-url'); return false;"
+        coords="559,124,577,142">
+  <area shape="rect"
+        href="1K5VGGC0PIP56JPRI1G4ItextIhtml"
+        onClick="popUpEvt(event,'1K5VGGC0PIP56JPRI1G4ItextIhtml'); return false;"
+        coords="1134,873,1152,891">
+  <area shape="rect"
+        href="1K5XH9CM1IR1QNQQI1GWKItextIhtml"
+        onClick="popUpEvt(event,'1K5XH9CM1IR1QNQQI1GWKItextIhtml'); return false;"
+        coords="1354,2555,1372,2573">
+  <area shape="rect"
+        href="1K5WHJ942I1YM9RS0I18XXItextIx-url"
+        onClick="popUpEvt(event,'1K5WHJ942I1YM9RS0I18XXItextIx-url'); return false;"
+        coords="782,1846,800,1864">
+  <area shape="rect"
+        href="1K5WHJ942I1YM9RS0I18XXItextIhtml"
+        onClick="popUpEvt(event,'1K5WHJ942I1YM9RS0I18XXItextIhtml'); return false;"
+        coords="765,1846,783,1864">
+  <area shape="rect"
+        href="1K5WHJ942ITFTFJ6I18W7ItextIhtml"
+        onClick="popUpEvt(event,'1K5WHJ942ITFTFJ6I18W7ItextIhtml'); return false;"
+        coords="1632,2060,1650,2078">
+  <area shape="rect"
+        href="1K5WGBZ2TIRGQVT7I1562ItextIhtml"
+        onClick="popUpEvt(event,'1K5WGBZ2TIRGQVT7I1562ItextIhtml'); return false;"
+        coords="216,1076,234,1094">
+  <area shape="rect"
+        href="1K5WK3959IT50H17I1KDVItextIhtml"
+        onClick="popUpEvt(event,'1K5WK3959IT50H17I1KDVItextIhtml'); return false;"
+        coords="1480,40,1498,58">
+  <area shape="rect"
+        href="1K7085Q5JIN3H23FI17XItextIx-url"
+        onClick="popUpEvt(event,'1K7085Q5JIN3H23FI17XItextIx-url'); return false;"
+        coords="1005,214,1023,232">
+  <area shape="rect"
+        href="1K5VVD3KXI22Q90JCILNKItextIhtml"
+        onClick="popUpEvt(event,'1K5VVD3KXI22Q90JCILNKItextIhtml'); return false;"
+        coords="517,880,535,898">
+  <area shape="rect"
+        href="1K5WHJ942IGVB12RI18YDItextIhtml"
+        onClick="popUpEvt(event,'1K5WHJ942IGVB12RI18YDItextIhtml'); return false;"
+        coords="1306,2035,1324,2053">
+  <area shape="rect"
+        href="1K5VTKWKZIB0V41GIKWCItextIx-url"
+        onClick="popUpEvt(event,'1K5VTKWKZIB0V41GIKWCItextIx-url'); return false;"
+        coords="1261,313,1279,331">
+  <area shape="rect"
+        href="1K5WHJ942I29VSSK4I18YPItextIhtml"
+        onClick="popUpEvt(event,'1K5WHJ942I29VSSK4I18YPItextIhtml'); return false;"
+        coords="1790,2488,1808,2506">
+  <area shape="rect"
+        href="1K5VXPD6WIVTC9PQIRLPItextIhtml"
+        onClick="popUpEvt(event,'1K5VXPD6WIVTC9PQIRLPItextIhtml'); return false;"
+        coords="126,1711,144,1729">
+  <area shape="rect"
+        href="1K5WHJ942IXTR6BMI18WQItextIhtml"
+        onClick="popUpEvt(event,'1K5WHJ942IXTR6BMI18WQItextIhtml'); return false;"
+        coords="1432,2058,1450,2076">
+  <area shape="rect"
+        href="1K5WNL3VSI236HKWCI1T4PItextIhtml"
+        onClick="popUpEvt(event,'1K5WNL3VSI236HKWCI1T4PItextIhtml'); return false;"
+        coords="1550,1026,1568,1044">
+  <area shape="rect"
+        href="1K5VL114LI7R6GHDI57FIx-cmapIx-storable"
+        onClick="popUpEvt(event,'1K5VL114LI7R6GHDI57FIx-cmapIx-storable'); return false;"
+        coords="1534,1224,1552,1242">
+  <area shape="rect"
+        href="1K5VWLJ8HI19Z2T7FIMW6ItextIhtml"
+        onClick="popUpEvt(event,'1K5VWLJ8HI19Z2T7FIMW6ItextIhtml'); return false;"
+        coords="266,142,284,160">
+  <area shape="rect"
+        href="1K5WK5376I1N0ZTX7I1KGQItextIhtml"
+        onClick="popUpEvt(event,'1K5WK5376I1N0ZTX7I1KGQItextIhtml'); return false;"
+        coords="1486,95,1504,113">
+  <area shape="rect"
+        href="1K5WK5376I1N0ZTX7I1KGQItextIx-url"
+        onClick="popUpEvt(event,'1K5WK5376I1N0ZTX7I1KGQItextIx-url'); return false;"
+        coords="1503,95,1521,113">
+  <area shape="rect"
+        href="1K5WKRKKNIPDGCHGI1M0CItextIhtml"
+        onClick="popUpEvt(event,'1K5WKRKKNIPDGCHGI1M0CItextIhtml'); return false;"
+        coords="553,1341,571,1359">
+  <area shape="rect"
+        href="1K5X963S2I2DY4H5NIWTTItextIhtml"
+        onClick="popUpEvt(event,'1K5X963S2I2DY4H5NIWTTItextIhtml'); return false;"
+        coords="1144,1213,1162,1231">
+  <area shape="rect"
+        href="1K5WHJ942I1YYM8NBI18Z3ItextIhtml"
+        onClick="popUpEvt(event,'1K5WHJ942I1YYM8NBI18Z3ItextIhtml'); return false;"
+        coords="1157,2105,1175,2123">
+  <area shape="rect"
+        href="1K5WDR025IBGHP0MI12H4ItextIhtml"
+        onClick="popUpEvt(event,'1K5WDR025IBGHP0MI12H4ItextIhtml'); return false;"
+        coords="865,391,883,409">
+  <area shape="rect"
+        href="1K5WKCWDBI1CRV1ZI1KHHItextIhtml"
+        onClick="popUpEvt(event,'1K5WKCWDBI1CRV1ZI1KHHItextIhtml'); return false;"
+        coords="1513,149,1531,167">
+  <area shape="rect"
+        href="1K5WKCWDBI1CRV1ZI1KHHItextIx-url"
+        onClick="popUpEvt(event,'1K5WKCWDBI1CRV1ZI1KHHItextIx-url'); return false;"
+        coords="1530,149,1548,167">
+</map>
+
+<center>
+  <table width=* height=* cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td valign=center align=center>
+        <img USEMAP="#Neurorganon_Upper_Level_Ontology.html"
+             SRC="Neurorganon_Upper_Level_Ontology.jpg"
+             ALIGN=middle
+             BORDER=0
+             onClick=popDown();>
+      </td>
+    </tr>
+    <tr>
+      <td VALIGN=top ALIGN=right>
+        <table>
+          <tr>
+            <td ALIGN=right VALIGN=middle>
+              <map NAME="CmapToolsTrademark">
+                <area SHAPE="rect"
+                      href="http://cmap.ihmc.us/"
+                      onClick="openResource(event,'http://cmap.ihmc.us/', 0, 2); return false;"
+                      coords="1,1,210,50">
+              </map>
+            </td>
+          </tr>
+          <tr>
+            <td  ALIGN=right VALIGN=middle>
+              <img USEMAP="#CmapToolsTrademark"
+                   SRC="CmapToolsTrademark.gif" 
+                   ALT="IHMC Cmap Tools Trademark" width="210" height="50"
+                   ALIGN=middle
+                   BORDER=0>
+            </td>
+            <td VALIGN=middle>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+</BODY>
+</HTML>
+<div id="1K5VG62M3I271D770I18ZItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://virtual.cvut.cz/kifb/en/concepts/_abstract.html "TITLE="">
+      Abstract_(sumo)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VG62M3I271D770I18ZItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Abstract_object "TITLE="">
+      Abstract_object
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WJ2TQDI231V4HXI1D0KItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Ontology_components#Attributes "TITLE="">
+      Attributes_(Ontology_components)
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Attribute_(research) "TITLE="">
+      Attribute_(research)
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Attribute_(computing) "TITLE="">
+      Attribute_(computing)
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wiktionary.org/wiki/characteristic "TITLE="">
+      characteristic
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WHJ942I1CYTF3I1901ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.thefreedictionary.com/situation "TITLE="">
+      situation
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WHJ942I1CYTF3I1901ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/State "TITLE="">
+      State
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WJ2TQDI1GHM395I1D1FItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Finitary_relation "TITLE="">
+      Finitary_relation
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WFBNWQI2D9K8PBI13HJItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Perception "TITLE="">
+      Perception
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WGCFCCI1ZXKCHNI1570ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Result "TITLE="">
+      Result
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5TTV22NIJTD57YINZQItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Categories_(Aristotle) "TITLE="The Categories (Lat. Categoriae, Greek Κατηγορίαι Katēgoriai) is a text from Aristotle's Organon that enumerates all the possible kinds of thing that can be the subject or the predicate of a proposition. They are "perhaps the single most heavily discussed of all Aristotelian notions".[1]
+The Categories places every object of human apprehension under one of ten categories (known to medieval writers as the praedicamenta). Aristotle intended them to enumerate everything that can be expressed without composition or structure, thus anything that can be either the subject or the predicate of a proposition.">
+      Categories_(Aristotle)
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Category_(Kant) "TITLE="In Kant's philosophy, a category is a pure concept of the understanding. A Kantian category is a characteristic of the appearance of any object in general, before it has been experienced.">
+      Category_(Kant)
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Entity "TITLE="">
+      Entity
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Upper_ontology_(information_science) "TITLE="">
+      Upper_ontology
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5TTV22NIJTD57YINZQItextIplain" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.onto-med.de/publications/2010/gfo-basic-principles.pdf "TITLE="">
+      General Formal Ontology (GFO) -  A Foundational Ontology for Conceptual Modelling
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://wonderweb.semanticweb.org/deliverables/documents/D18.pdf "TITLE="">
+      DOLCE - WonderWeb Deliverable D18 - Library of Foundational Ontologies
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.ifomis.org/bfo/documents/manual.pdf "TITLE="">
+      BFO Basic Formal Ontology : An introduction with Recommendations
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5TTV22NIJTD57YINZQItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://wordnet.princeton.edu/ "TITLE="">
+      WordNet
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://umbel.org/ "TITLE="">
+      UMBEL - Upper Mapping and Binding Exchange Layer
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://pi7.fernuni-hagen.de/forschung/multinet/multinet_en.html#1a "TITLE="">
+      MULTINET Ontology
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.cyc.com/doc/tut/ppoint/TopLevelCollections_files/v3_document.htm "TITLE="">
+      CYC - Top Level Categories
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.loa.istc.cnr.it/DOLCE.html "TITLE="">
+      DOLCE - Descriptive Ontology for Linguistic and Cognitive Engineering
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.ifomis.org/bfo "TITLE="">
+      BFO - Basic Formal Ontology
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.ontologyportal.org/ "TITLE="">
+      SUMO - Suggested Upper Merged Ontology
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.jfsowa.com/ontology/toplevel.htm "TITLE="">
+      CG - Conceptual Graph Top-Level Categories
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.onto-med.de/ontologies/gfo/index.jsp "TITLE="">
+      GFO - General Formal Ontology
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.mpi-inf.mpg.de/yago-naga/yago/ "TITLE="">
+      YAGO - Huge semantic knowledge base
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WHJ942I2B0LBMZI190RItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Circumstances_(concept) "TITLE="">
+      Circumstances_(concept)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5XHVQP0I29XQJ15I1HPWItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Observe "TITLE="">
+      Observe
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K7095T11I4LGJH5I3PTItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwClAZJwpEbGdrcN5Y29ycA "TITLE="">
+      ConceptualWork_(cyc)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VMJ460I24P7XJKI7T6ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://wonderweb.semanticweb.org/deliverables/documents/D18.pdf "TITLE="">
+      DOLCE - WonderWeb Deliverable D18 - Library of Foundational Ontologies
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VLRL4GI7N7289I6JGIx-cmapIx-storable" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="Abstraction_Principles.html "TITLE="">
+      Abstraction_Principles
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VLRL4GI7N7289I6JGItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Generalization "TITLE="">
+      Generalization
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VKR41MI1N08W5SI4X9ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Essence "TITLE="">
+      Essence
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VMJCTXIJ0NM4NI7V5ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://wonderweb.semanticweb.org/deliverables/documents/D18.pdf "TITLE="">
+      DOLCE - WonderWeb Deliverable D18 - Library of Foundational Ontologies
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5X4VZZYI18NV1MZIPWKItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Procedure_(term) "TITLE="">
+      Procedure_(term)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VVJZ5RI25L2R9FILXBItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Discrete "TITLE="">
+      Discrete
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VVD3KXI1MN0YZVILN3ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Time "TITLE="">
+      Time
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Temporality "TITLE="">
+      Temporality
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WKDQ36INH1YGZI1KJHItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Set_(mathematics) "TITLE="">
+      Set_(mathematics)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WJ2TQDI1Q9QY2JI1D4CItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Quality_(philosophy) "TITLE="">
+      Quality_(philosophy)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VKDKQGIDF06YCI4P7ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Categories_(Aristotle) "TITLE="The Categories (Lat. Categoriae, Greek Κατηγορίαι Katēgoriai) is a text from Aristotle's Organon that enumerates all the possible kinds of thing that can be the subject or the predicate of a proposition. They are "perhaps the single most heavily discussed of all Aristotelian notions".[1]
+The Categories places every object of human apprehension under one of ten categories (known to medieval writers as the praedicamenta). Aristotle intended them to enumerate everything that can be expressed without composition or structure, thus anything that can be either the subject or the predicate of a proposition.">
+      Categories_(Aristotle)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5X9J9HCI2BC1Y92IY6CItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Homogeneity_and_heterogeneity "TITLE="">
+      Homogeneity_and_heterogeneity
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VLRWGSI274XQYZI6K6Ix-cmapIx-storable" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="Abstraction_Principles.html "TITLE="">
+      Abstraction_Principles
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VLRWGSI274XQYZI6K6ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Mereology "TITLE="">
+      Parthood
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5XHV01WI24Q9K07I1HNLItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Experience "TITLE="">
+      Experience
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WHJ942I1WY61K6I18X0ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Categories_(Aristotle) "TITLE="The Categories (Lat. Categoriae, Greek Κατηγορίαι Katēgoriai) is a text from Aristotle's Organon that enumerates all the possible kinds of thing that can be the subject or the predicate of a proposition. They are "perhaps the single most heavily discussed of all Aristotelian notions".[1]
+The Categories places every object of human apprehension under one of ten categories (known to medieval writers as the praedicamenta). Aristotle intended them to enumerate everything that can be expressed without composition or structure, thus anything that can be either the subject or the predicate of a proposition.">
+      Categories_(Aristotle)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5XB3P0MI17415BNIZ1KItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Cumulativity "TITLE="">
+      Cumulativity
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5TTLDBQI4RT1LWINTQIx-cmapIx-storable" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="Neurorganon_Home.html "TITLE="">
+      Neurorganon_Home
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5TTLDBQI4RT1LWINTQItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://neurorganon.org/ "TITLE="">
+      Navigate to the Home Page
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5TTLDBQI4RT1LWINTQItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://neurorganon.org/NULO/ "TITLE="">
+      NULO-TopicMap
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WJ2TQDI24VCRN3I1D2RItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Quantity "TITLE="">
+      Quantity
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5XH0KKVI8PRBHYI1GNDItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Context_(language_use) "TITLE="">
+      Context_(language_use)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WGD02RI22ZMQ4BI1580ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Linguistic_modality "TITLE="">
+      Linguistic_modality
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Modal_verb "TITLE="">
+      Modal_verb
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VLQ30JI18NPJ9SI6GTItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Instantiation "TITLE="">
+      Instantiation
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VLQ30JI18NPJ9SI6GTIx-cmapIx-storable" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="Abstraction_Principles.html "TITLE="">
+      Abstraction_Principles
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WM03VLI26R5NXYI1PJ1ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Causality "TITLE="">
+      Causality
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Reason "TITLE="">
+      Reason
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WHJ942I1HMRVNQI18VSItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Categories_(Aristotle) "TITLE="The Categories (Lat. Categoriae, Greek Κατηγορίαι Katēgoriai) is a text from Aristotle's Organon that enumerates all the possible kinds of thing that can be the subject or the predicate of a proposition. They are "perhaps the single most heavily discussed of all Aristotelian notions".[1]
+The Categories places every object of human apprehension under one of ten categories (known to medieval writers as the praedicamenta). Aristotle intended them to enumerate everything that can be expressed without composition or structure, thus anything that can be either the subject or the predicate of a proposition.">
+      Categories_(Aristotle)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5X587J2IS0R9KRIRK1ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Complexity "TITLE="">
+      Complexity
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VKQGY4I19GKJRLI4WJItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Accident_(philosophy) "TITLE="">
+      Accident_(philosophy)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K708MYN0I12J2SCXI3FSItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwQGTzJwpEbGdrcN5Y29ycA "TITLE="">
+      AbstractInformationStructure_(cyc)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VVJZ5RI22Y2SQHILWWItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Substance_theory "TITLE="">
+      Substance_theory
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VFSZPMIJ41MYHIQ68ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Concrete_object "TITLE="">
+      Concrete_object
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VFSZPMIJ41MYHIQ68ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://virtual.cvut.cz/kifb/en/concepts/_physical.html "TITLE="">
+      Physical_(sumo)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5XDRRFMI97QB7MI169TItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Effectiveness "TITLE="">
+      Effectiveness
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VXPSZKI1S6MYQBIRMYItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvViq35wpEbGdrcN5Y29ycA "TITLE="">
+      TemporalObjectType_(cyc)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5XGJHMJI2165QWBI1F25ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Quality_(philosophy) "TITLE="">
+      Quality_(philosophy)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1L0T71T9DI10XB8FHI259Ix-cmapIx-storable" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="TMDM_NULO.html "TITLE="">
+      TMDM_NULO
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1L0T71T9DI10XB8FHI259ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://neurorganon.org/NULO/ "TITLE="">
+      NULO-TopicMap
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VGGC0PIP56JPRI1G4ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Essentialism "TITLE="">
+      Essentialism
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5XH9CM1IR1QNQQI1GWKItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Value_(mathematics) "TITLE="">
+      Value_(mathematics)
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Variable_(mathematics) "TITLE="">
+      Variable_(mathematics)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WHJ942I1YM9RS0I18XXItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://plato.stanford.edu/entries/events/ "TITLE="">
+      Event_(SEP)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WHJ942I1YM9RS0I18XXItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Event "TITLE="">
+      Event
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WHJ942ITFTFJ6I18W7ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Action_theory_(philosophy) "TITLE="">
+      Action_theory_(philosophy)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WGBZ2TIRGQVT7I1562ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Virtue "TITLE="">
+      Virtue
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WK3959IT50H17I1KDVItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Information "TITLE="">
+      Information
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K7085Q5JIN3H23FI17XItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvkNufpwpEbGdrcN5Y29ycA "TITLE="">
+      InformationBearingThing_(cyc)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VVD3KXI22Q90JCILNKItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Location_(geography) "TITLE="">
+      Location_(geography)
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Spatial_analysis "TITLE="">
+      Spatial_analysis
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WHJ942IGVB12RI18YDItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Category:Social_events "TITLE="">
+      Social_events_(category)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VTKWKZIB0V41GIKWCItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjaApwpEbGdrcN5Y29ycA "TITLE="">
+      Individual_(cyc)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WHJ942I29VSSK4I18YPItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Categories_(Aristotle) "TITLE="The Categories (Lat. Categoriae, Greek Κατηγορίαι Katēgoriai) is a text from Aristotle's Organon that enumerates all the possible kinds of thing that can be the subject or the predicate of a proposition. They are "perhaps the single most heavily discussed of all Aristotelian notions".[1]
+The Categories places every object of human apprehension under one of ten categories (known to medieval writers as the praedicamenta). Aristotle intended them to enumerate everything that can be expressed without composition or structure, thus anything that can be either the subject or the predicate of a proposition.">
+      Categories_(Aristotle)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VXPD6WIVTC9PQIRLPItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVitN5wpEbGdrcN5Y29ycA "TITLE="">
+      TemporalStuffType_(cyc)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WHJ942IXTR6BMI18WQItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Mental_event "TITLE="">
+      Mental_event
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WNL3VSI236HKWCI1T4PItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Intentionality "TITLE="">
+      Intentionality
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Intention "TITLE="">
+      Intention
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VL114LI7R6GHDI57FIx-cmapIx-storable" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="Abstraction_Principles.html "TITLE="">
+      Abstraction_Principles
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5VWLJ8HI19Z2T7FIMW6ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Five_Ws "TITLE="">
+      Five_Ws
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WK5376I1N0ZTX7I1KGQItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Proposition "TITLE="">
+      Proposition
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WK5376I1N0ZTX7I1KGQItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvViAqJwpEbGdrcN5Y29ycA "TITLE="">
+      PropositionalInformationThing_(cyc)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WKRKKNIPDGCHGI1M0CItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Classification_of_discontinuities "TITLE="">
+      Classification_of_discontinuities
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Discrete_time "TITLE="">
+      Discrete_time
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5X963S2I2DY4H5NIWTTItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Instantaneous "TITLE="">
+      Instant
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WHJ942I1YYM8NBI18Z3ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Process_(science) "TITLE="">
+      Process_(science)
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Phenomenon "TITLE="">
+      Phenomenon
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WDR025IBGHP0MI12H4ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Social_artifact "TITLE="">
+      Social_artifact
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVkH_ZwpEbGdrcN5Y29ycA "TITLE="">
+      Artifact_(cyc)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WKCWDBI1CRV1ZI1KHHItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Collection_(computing) "TITLE="">
+      Collection_(computing)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5WKCWDBI1CRV1ZI1KHHItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvViAzJwpEbGdrcN5Y29ycA "TITLE="">
+      Collection_(cyc)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+

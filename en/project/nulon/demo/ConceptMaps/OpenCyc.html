@@ -1,0 +1,1381 @@
+<HTML>
+<HEAD>
+  <TITLE>OpenCyc.html</TITLE>
+  <meta NAME = "GENERATOR"          CONTENT = "IHMC CmapTools vr. 4.12 ">
+  <meta NAME = "KEYWORDS"           CONTENT = "Athanassios I. Hatzis, Concept Map, cmap, CmapTools, IHMC, OpenCyc,  GraphicalStructure,  (elementOf THING SETORCOL),  NumericInterval,  Group of Individuals,  (meter 3),  NationalMonument (Collection),  ComputerFileCopy,  SpatialThing,  AbstractInformationStructure,  NATO (Individual),  Table-AIS,  ComputerFile-AIS,  TemporalThing,  GeographicalPlace,  Set-Mathematical,  Germany,  SomethingExisting,  Group,  EnduringThing-Localized,  instead of using Cyc genls predicate to generalize collections, in many examples we have explicitly written down the primitive principles that relate one collection with another (see also NULO concept map).">
+  <meta NAME = "DESCRIPTION"        CONTENT = "This Concept Map, created with IHMC CmapTools, has information related to: OpenCyc, AbstractStructure with vision modality AbstractVisualStructure, AbstractInformationStructure encoded in computer ComputerAIS, AspatialInformationStore represents content or meaning Information-Content, Toe (Collection) is a Group, (physicalParts WHOLE PART) WHOLE Automobile, Document stored in a computer ComputerFileCopy, Toe (Collection) part of Foot-AnimalBodyPart (Collection), AbstractStructure with data AbstractInformationStructure, Thing Concrete or Abstract Individual (Element, object, item, piece), Thing is a CycVocabulary Topic &#60math xmlns="http://www.w3.org/1998/Math/MathML"&#62 &#60mtext&#62 OpenCyc &#60/mtext&#62 &#60/math&#62, SetOrCollection intensional criterion for membership, elements are homogeneous in some respect Collection (abstract entities) (kinds, types, sorts), Paragraph is a GraphicalStructure, ComputerAIS encoded in files ComputerFile-AIS, Germany PART (groupMembers GROUP MEMBER), AbstractIndividual with relational property Relation, Hallux (Collection) is a Toe (Collection), SomethingExisting with spatiality EnduringThing-Localized, TupleOfIntervals in one-dimensional scale ScalarInterval, Thing with tangibility property Intangible (not made of or encoded in matter), AbstractIndividual with indexed, ordered components Tuple">
+  <meta NAME = "AUTHOR"             CONTENT = "IHMC CmapTools">
+  <meta HTTP-EQUIV = "Content-Type" CONTENT = "text/html; charset = UTF-8">
+  <script LANGUAGE="JavaScript1.2">
+  <!--
+    //  PopUp --
+    //  Institute for Human and Machine Cognition, http://www.ihmc.us/
+    //  CmapTools, Version 5.03, http://cmap.ihmc.us/
+    //  Support at http://cmapforum.ihmc.us/
+    //  Modify by: CmapTools Developers, cmapsupport AT ihmc DOT us
+    //  Date: 10/06/2009
+
+    var IE = 0;
+    var IE4PC = 0;
+    var NS = 0;
+    var GECKO = 0;
+
+    var openpopups = new Array();
+
+    if (document.all) {                 // Internet Explorer Detected
+	   IE = true;	
+    }
+    else if (document.layers) {         // Netscape Navigator Detected
+	   NS = true;	
+    }
+    else if (document.getElementById) { // Netscape 6 Detected
+       GECKO = true;
+    }
+    else {
+	   alert("Unrecognized Browser Detected::\nSorry, your browser is not compatible.");
+    }
+
+    if (IE)
+    {
+	   OS = navigator.platform;
+	   VER = new String(navigator.appVersion);
+	   VER = VER.substr (0, VER.indexOf(" "));
+	   if ((VER < 4.8) && (OS == "Win32")) 
+	   {
+	       IE4PC = 1;
+	   }
+    }
+
+    function handleResize() {
+	    location.reload();
+	    return false;
+    }
+
+
+    if ((NS) && (navigator.platform == "MacPPC")) {
+	   window.captureEvents (Event.RESIZE);
+	   window.onresize = handleResize;
+    }
+
+    function openResource(event, resourcePath, resourceName, resourceType)
+    {
+	   var newwindow;
+
+       // Resource MIMETypes are enumerated as follows: 
+       // cMap     = Undefined
+       // Image    = 0
+       // Video    = 1
+       // Text     = 2
+       // Audio    = 3
+
+       popDown();
+
+	   switch (resourceType) 
+	   {
+	    case 0:     //Image
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<center><img src=\"';
+                    text += resourcePath;
+                    text +='\"> </center>';
+             break;
+		
+	    case 1:  text   // Video
+		     newwindow = window.open (resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+                     var text ='<embed src=\"';
+                     text += resourcePath;
+                     text +='\" autostart=true> </embed> ';
+             break;
+
+	    case 2:      // Text or Unknown 
+		     newwindow = window.open(resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+              break;
+
+	    case 3:       // Audio
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<embed src=\"';
+                    text += resourcePath;
+                    text +='\" autoplay=true> </embed> ';
+             break;
+
+	    case 4:
+                    newwindow = window.open(resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+	     break;
+	    }
+        return;
+    }
+
+
+
+    function popUpEvt(event, popupName)
+    {
+	popDown();
+
+	if (GECKO)
+	{
+	    document.getElementById(popupName).style.left = event.pageX;
+	    document.getElementById(popupName).style.top = event.pageY;
+	    document.getElementById(popupName).style.background = "#B3B3B3";
+	    document.getElementById(popupName).style.visibility = "visible";
+	    openpopups.push(popupName);
+	}
+	else if (NS) 
+	{
+	    document.layers[popupName].moveTo (event.pageX, event.pageY);
+	    document.layers[popupName].bgColor = "#B3B3B3";
+	    document.layers[popupName].visibility = "show";
+	    openpopups.push(popupName);
+	}
+	else // if (IE)
+	{
+	    window.event.cancelBubble = true;
+	    if (!IE4PC) {
+		document.all[popupName].style.backgroundColor = "#B3B3B3";
+	    }	
+	    document.all[popupName].style.left = window.event.clientX + document.body.scrollLeft;
+	    document.all[popupName].style.top = window.event.clientY + document.body.scrollTop;
+	    document.all[popupName].style.visibility = "visible";
+	    openpopups[openpopups.length] = popupName;
+	}
+	return false;
+    }
+
+    function popDown()
+    {
+	var popupname;
+	
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+		document.getElementById(popupname).style.visibility = "hidden";
+	    }
+	    else if (NS) {
+		document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+		document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+	return;
+    }
+
+    function popDownNoGecko() 
+    {
+	var popupname;
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+           //  document.getElementById(popupname).style.visibility = "hidden"; 
+	        return;   // erased for test purposes
+	    }  
+	    else if (NS) {
+	        document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+	        document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+        return;
+    }
+  //-->
+  </script>
+</HEAD>
+<BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+<noscript>
+  <table width=90% cellpadding=10>
+    <tr>
+      <td bgcolor=ff4447>
+        <font color=000000 size=+1 face="helvetica">
+        <h1>WARNING:</h1>
+        <b>JavaScript is turned OFF.  None of the links on this concept map will <br>
+           work until it is reactivated.
+          <p>
+            <a href="http://cmap.ihmc.us/docs/EnablingJavaScript.html">
+                            If you need help turning JavaScript On, click here.
+            </a>
+          </p>
+        </b>
+      </td>
+    </tr>
+  </table>
+This Concept Map, created with IHMC CmapTools, has information related to: OpenCyc, AbstractStructure with vision modality AbstractVisualStructure, AbstractInformationStructure encoded in computer ComputerAIS, AspatialInformationStore represents content or meaning Information-Content, Toe (Collection) is a Group, (physicalParts WHOLE PART) WHOLE Automobile, Document stored in a computer ComputerFileCopy, Toe (Collection) part of Foot-AnimalBodyPart (Collection), AbstractStructure with data AbstractInformationStructure, Thing Concrete or Abstract Individual (Element, object, item, piece), Thing is a CycVocabulary Topic &#60math xmlns="http://www.w3.org/1998/Math/MathML"&#62 &#60mtext&#62 OpenCyc &#60/mtext&#62 &#60/math&#62, SetOrCollection intensional criterion for membership, elements are homogeneous in some respect Collection (abstract entities) (kinds, types, sorts), Paragraph is a GraphicalStructure, ComputerAIS encoded in files ComputerFile-AIS, Germany PART (groupMembers GROUP MEMBER), AbstractIndividual with relational property Relation, Hallux (Collection) is a Toe (Collection), SomethingExisting with spatiality EnduringThing-Localized, TupleOfIntervals in one-dimensional scale ScalarInterval, Thing with tangibility property Intangible (not made of or encoded in matter), AbstractIndividual with indexed, ordered components Tuple
+
+</noscript>
+
+<map name="OpenCyc.html">
+  <area shape="rect"
+        href="1KFQDMZNTI1BMC1QZI9H3ItextIx-url"
+        onClick="popUpEvt(event,'1KFQDMZNTI1BMC1QZI9H3ItextIx-url'); return false;"
+        coords="1027,1714,1045,1732">
+  <area shape="rect"
+        href="1KFQQDR4DI4WLPNQIP76ItextIx-url"
+        onClick="popUpEvt(event,'1KFQQDR4DI4WLPNQIP76ItextIx-url'); return false;"
+        coords="2040,740,2058,758">
+  <area shape="rect"
+        href="1KFQJ0H3PI7VNGTNIDRTItextIx-url"
+        onClick="popUpEvt(event,'1KFQJ0H3PI7VNGTNIDRTItextIx-url'); return false;"
+        coords="648,1739,666,1757">
+  <area shape="rect"
+        href="1KFZYXWWYIVC1NBTI1L8ItextIx-url"
+        onClick="popUpEvt(event,'1KFZYXWWYIVC1NBTI1L8ItextIx-url'); return false;"
+        coords="940,616,958,634">
+  <area shape="rect"
+        href="1KFZZVCJBIMGD9LQI331ItextIx-url"
+        onClick="popUpEvt(event,'1KFZZVCJBIMGD9LQI331ItextIx-url'); return false;"
+        coords="1025,76,1043,94">
+  <area shape="rect"
+        href="1KFQKM33MI1B8QJ8BIGPCItextIx-url"
+        onClick="popUpEvt(event,'1KFQKM33MI1B8QJ8BIGPCItextIx-url'); return false;"
+        coords="1422,1439,1440,1457">
+  <area shape="rect"
+        href="1KFQMG3JYI1H3GJ5XIJQPItextIx-url"
+        onClick="popUpEvt(event,'1KFQMG3JYI1H3GJ5XIJQPItextIx-url'); return false;"
+        coords="122,794,140,812">
+  <area shape="rect"
+        href="1KFQF9XGQIZ7DZT9IB18ItextIx-url"
+        onClick="popUpEvt(event,'1KFQF9XGQIZ7DZT9IB18ItextIx-url'); return false;"
+        coords="1366,1614,1384,1632">
+  <area shape="rect"
+        href="1KG025VJ2I1G81S7WI89FItextIx-url"
+        onClick="popUpEvt(event,'1KG025VJ2I1G81S7WI89FItextIx-url'); return false;"
+        coords="378,48,396,66">
+  <area shape="rect"
+        href="1KFQDQ81RI75H8NDI9M8ItextIx-url"
+        onClick="popUpEvt(event,'1KFQDQ81RI75H8NDI9M8ItextIx-url'); return false;"
+        coords="1064,1831,1082,1849">
+  <area shape="rect"
+        href="1KFQK3MB4I2BMJGNRIGDSItextIx-url"
+        onClick="popUpEvt(event,'1KFQK3MB4I2BMJGNRIGDSItextIx-url'); return false;"
+        coords="1215,1848,1233,1866">
+  <area shape="rect"
+        href="1KFQN3XRYI1TG5BQIKJ4ItextIx-url"
+        onClick="popUpEvt(event,'1KFQN3XRYI1TG5BQIKJ4ItextIx-url'); return false;"
+        coords="648,672,666,690">
+  <area shape="rect"
+        href="1KFQMVZ79I11RNNW8IKDLItextIx-url"
+        onClick="popUpEvt(event,'1KFQMVZ79I11RNNW8IKDLItextIx-url'); return false;"
+        coords="216,33,234,51">
+  <area shape="rect"
+        href="1KFQQ6H18ILH25TINGVItextIx-url"
+        onClick="popUpEvt(event,'1KFQQ6H18ILH25TINGVItextIx-url'); return false;"
+        coords="1821,527,1839,545">
+  <area shape="rect"
+        href="1KFQ0SHP3I1FCHC7PI64KItextIx-url"
+        onClick="popUpEvt(event,'1KFQ0SHP3I1FCHC7PI64KItextIx-url'); return false;"
+        coords="432,1367,450,1385">
+  <area shape="rect"
+        href="1KFQNBC5XI134RBBPIL4LItextIx-url"
+        onClick="popUpEvt(event,'1KFQNBC5XI134RBBPIL4LItextIx-url'); return false;"
+        coords="520,521,538,539">
+  <area shape="rect"
+        href="1KG01RK9VI10VYG7PI6DLItextIx-url"
+        onClick="popUpEvt(event,'1KG01RK9VI10VYG7PI6DLItextIx-url'); return false;"
+        coords="516,1463,534,1481">
+  <area shape="rect"
+        href="1KFQNRSZSIPDVCW1ILC9ItextIx-url"
+        onClick="popUpEvt(event,'1KFQNRSZSIPDVCW1ILC9ItextIx-url'); return false;"
+        coords="227,347,245,365">
+  <area shape="rect"
+        href="1KFQSL7RCI25Y2RVZIS1RIx-cmapIx-storable"
+        onClick="popUpEvt(event,'1KFQSL7RCI25Y2RVZIS1RIx-cmapIx-storable'); return false;"
+        coords="2039,433,2057,451">
+  <area shape="rect"
+        href="1KFQHDDDGI15M9J96ID6LItextIx-url"
+        onClick="popUpEvt(event,'1KFQHDDDGI15M9J96ID6LItextIx-url'); return false;"
+        coords="843,1535,861,1553">
+  <area shape="rect"
+        href="1KFZZDDBDI15TCZD0I1YVItextIx-url"
+        onClick="popUpEvt(event,'1KFZZDDBDI15TCZD0I1YVItextIx-url'); return false;"
+        coords="1024,467,1042,485">
+  <area shape="rect"
+        href="1KFZZ2V1XI2DGN904I1SJItextIhtml"
+        onClick="popUpEvt(event,'1KFZZ2V1XI2DGN904I1SJItextIhtml'); return false;"
+        coords="379,643,397,661">
+  <area shape="rect"
+        href="1KFQQLPD3IJSSPQMIPB7ItextIx-url"
+        onClick="popUpEvt(event,'1KFQQLPD3IJSSPQMIPB7ItextIx-url'); return false;"
+        coords="2086,907,2104,925">
+  <area shape="rect"
+        href="1KFPZ70TDIM817JHI4RFItextIx-url"
+        onClick="popUpEvt(event,'1KFPZ70TDIM817JHI4RFItextIx-url'); return false;"
+        coords="349,962,367,980">
+  <area shape="rect"
+        href="1KFQ0JDBRI1CCH9NKI5SWItextIx-url"
+        onClick="popUpEvt(event,'1KFQ0JDBRI1CCH9NKI5SWItextIx-url'); return false;"
+        coords="209,1358,227,1376">
+  <area shape="rect"
+        href="1KFQ0SHP3I1HTF2D7I647ItextIx-url"
+        onClick="popUpEvt(event,'1KFQ0SHP3I1HTF2D7I647ItextIx-url'); return false;"
+        coords="590,1365,608,1383">
+  <area shape="rect"
+        href="1KFPYB33PI22VJKQ5I4D5ItextIx-url"
+        onClick="popUpEvt(event,'1KFPYB33PI22VJKQ5I4D5ItextIx-url'); return false;"
+        coords="1591,933,1609,951">
+  <area shape="rect"
+        href="1KFQD6N37I15BBTKWI94MItextIx-url"
+        onClick="popUpEvt(event,'1KFQD6N37I15BBTKWI94MItextIx-url'); return false;"
+        coords="1088,1579,1106,1597">
+  <area shape="rect"
+        href="1KG00RGB9I1RNMGB4I44YItextIx-url"
+        onClick="popUpEvt(event,'1KG00RGB9I1RNMGB4I44YItextIx-url'); return false;"
+        coords="820,345,838,363">
+  <area shape="rect"
+        href="1KFQHK4YJID1GRTJIDB0ItextIx-url"
+        onClick="popUpEvt(event,'1KFQHK4YJID1GRTJIDB0ItextIx-url'); return false;"
+        coords="753,1635,771,1653">
+  <area shape="rect"
+        href="1KFQB4TBJI2YGBDTI79GItextIx-url"
+        onClick="popUpEvt(event,'1KFQB4TBJI2YGBDTI79GItextIx-url'); return false;"
+        coords="1140,839,1158,857">
+  <area shape="rect"
+        href="1KFQC2NZDI16LT9QGI7P6ItextIx-url"
+        onClick="popUpEvt(event,'1KFQC2NZDI16LT9QGI7P6ItextIx-url'); return false;"
+        coords="971,1429,989,1447">
+  <area shape="rect"
+        href="1KFQ0BT0SIMBLNJ8I5QRItextIx-url"
+        onClick="popUpEvt(event,'1KFQ0BT0SIMBLNJ8I5QRItextIx-url'); return false;"
+        coords="47,1356,65,1374">
+  <area shape="rect"
+        href="1KG01JYDJI4JSZF3I664ItextIx-url"
+        onClick="popUpEvt(event,'1KG01JYDJI4JSZF3I664ItextIx-url'); return false;"
+        coords="576,361,594,379">
+  <area shape="rect"
+        href="1KG00NL1NI2B252QSI42CItextIhtml"
+        onClick="popUpEvt(event,'1KG00NL1NI2B252QSI42CItextIhtml'); return false;"
+        coords="715,502,733,520">
+  <area shape="rect"
+        href="1KFQ20733ITY337ZI6RVItextIx-url"
+        onClick="popUpEvt(event,'1KFQ20733ITY337ZI6RVItextIx-url'); return false;"
+        coords="274,1779,292,1797">
+  <area shape="rect"
+        href="1KFQL3N7PI2D62C8XIH98ItextIx-url"
+        onClick="popUpEvt(event,'1KFQL3N7PI2D62C8XIH98ItextIx-url'); return false;"
+        coords="1814,1606,1832,1624">
+  <area shape="rect"
+        href="1KFZZRP7PI1J2FWYFI2XKItextIx-url"
+        onClick="popUpEvt(event,'1KFZZRP7PI1J2FWYFI2XKItextIx-url'); return false;"
+        coords="1023,208,1041,226">
+  <area shape="rect"
+        href="1KFQNZV3WI1J7QXPXIM2BItextIx-url"
+        onClick="popUpEvt(event,'1KFQNZV3WI1J7QXPXIM2BItextIx-url'); return false;"
+        coords="112,581,130,599">
+  <area shape="rect"
+        href="1KFQQ8KKSI274Y3JGIP3SItextIx-url"
+        onClick="popUpEvt(event,'1KFQQ8KKSI274Y3JGIP3SItextIx-url'); return false;"
+        coords="1394,705,1412,723">
+  <area shape="rect"
+        href="1KFQ1ZCG0I24VRG8DI6R9ItextIhtml"
+        onClick="popUpEvt(event,'1KFQ1ZCG0I24VRG8DI6R9ItextIhtml'); return false;"
+        coords="152,1539,170,1557">
+  <area shape="rect"
+        href="1K5JXRF5SI27H7XYBIJMSIx-cmapIx-storable"
+        onClick="popUpEvt(event,'1K5JXRF5SI27H7XYBIJMSIx-cmapIx-storable'); return false;"
+        coords="62,157,80,175">
+  <area shape="rect"
+        href="1K5JXRF5SI27H7XYBIJMSItextIhtml"
+        onClick="popUpEvt(event,'1K5JXRF5SI27H7XYBIJMSItextIhtml'); return false;"
+        coords="45,157,63,175">
+  <area shape="rect"
+        href="1KFQDP5W1I1FD345HI9KYItextIx-url"
+        onClick="popUpEvt(event,'1KFQDP5W1I1FD345HI9KYItextIx-url'); return false;"
+        coords="938,1826,956,1844">
+  <area shape="rect"
+        href="1KFQRJ7JMIJND7DWIQW6ItextIx-url"
+        onClick="popUpEvt(event,'1KFQRJ7JMIJND7DWIQW6ItextIx-url'); return false;"
+        coords="1981,1212,1999,1230">
+  <area shape="rect"
+        href="1K3H5K9QWI1RWL99NI16QItextIx-url"
+        onClick="popUpEvt(event,'1K3H5K9QWI1RWL99NI16QItextIx-url'); return false;"
+        coords="1308,295,1326,313">
+  <area shape="rect"
+        href="1K3H5K9QWI1RWL99NI16QIx-cmapIx-storable"
+        onClick="popUpEvt(event,'1K3H5K9QWI1RWL99NI16QIx-cmapIx-storable'); return false;"
+        coords="1325,295,1343,313">
+  <area shape="rect"
+        href="1K3H5K9QWI1RWL99NI16QItextIhtml"
+        onClick="popUpEvt(event,'1K3H5K9QWI1RWL99NI16QItextIhtml'); return false;"
+        coords="1291,295,1309,313">
+  <area shape="rect"
+        href="1KFPZCT14I89BNBZI4VBItextIx-url"
+        onClick="popUpEvt(event,'1KFPZCT14I89BNBZI4VBItextIx-url'); return false;"
+        coords="465,1212,483,1230">
+  <area shape="rect"
+        href="1KFQQR5XQI2B3HH91IPCYItextIx-url"
+        onClick="popUpEvt(event,'1KFQQR5XQI2B3HH91IPCYItextIx-url'); return false;"
+        coords="1672,352,1690,370">
+  <area shape="rect"
+        href="1KFZZL4JLIYWXJD8I2SNItextIx-url"
+        onClick="popUpEvt(event,'1KFZZL4JLIYWXJD8I2SNItextIx-url'); return false;"
+        coords="1023,330,1041,348">
+  <area shape="rect"
+        href="1KFQGHP4CIS6JSM0IC1RItextIx-url"
+        onClick="popUpEvt(event,'1KFQGHP4CIS6JSM0IC1RItextIx-url'); return false;"
+        coords="1103,996,1121,1014">
+  <area shape="rect"
+        href="1KG019NBZI2CK4CCNI57GItextIhtml"
+        onClick="popUpEvt(event,'1KG019NBZI2CK4CCNI57GItextIhtml'); return false;"
+        coords="814,70,832,88">
+  <area shape="rect"
+        href="1KFQLB5VFI10W4GR4IHYVItextIx-url"
+        onClick="popUpEvt(event,'1KFQLB5VFI10W4GR4IHYVItextIx-url'); return false;"
+        coords="1670,1530,1688,1548">
+  <area shape="rect"
+        href="1KFPZC5NBIYVTTY3I4TQItextIx-url"
+        onClick="popUpEvt(event,'1KFPZC5NBIYVTTY3I4TQItextIx-url'); return false;"
+        coords="113,1201,131,1219">
+  <area shape="rect"
+        href="1KG01R5Y1IWRKNZHI6CVItextIx-url"
+        onClick="popUpEvt(event,'1KG01R5Y1IWRKNZHI6CVItextIx-url'); return false;"
+        coords="516,1613,534,1631">
+  <area shape="rect"
+        href="1KFQ1P1KCI1519WG6I6PHItextIx-url"
+        onClick="popUpEvt(event,'1KFQ1P1KCI1519WG6I6PHItextIx-url'); return false;"
+        coords="56,1698,74,1716">
+  <area shape="rect"
+        href="1KFQC2XHRIBFP931I7PQItextIx-url"
+        onClick="popUpEvt(event,'1KFQC2XHRIBFP931I7PQItextIx-url'); return false;"
+        coords="1171,1405,1189,1423">
+  <area shape="rect"
+        href="1KFPXZPP7IGD8071I431ItextIx-url"
+        onClick="popUpEvt(event,'1KFPXZPP7IGD8071I431ItextIx-url'); return false;"
+        coords="1156,557,1174,575">
+  <area shape="rect"
+        href="1KG00RXVWISR0L3RI45KItextIhtml"
+        onClick="popUpEvt(event,'1KG00RXVWISR0L3RI45KItextIhtml'); return false;"
+        coords="815,199,833,217">
+  <area shape="rect"
+        href="1KFQK8MSPIH23ZXMIGJ8ItextIx-url"
+        onClick="popUpEvt(event,'1KFQK8MSPIH23ZXMIGJ8ItextIx-url'); return false;"
+        coords="1522,1756,1540,1774">
+  <area shape="rect"
+        href="1KFQFNN9RIT43TPTIB3QItextIx-url"
+        onClick="popUpEvt(event,'1KFQFNN9RIT43TPTIB3QItextIx-url'); return false;"
+        coords="1214,1752,1232,1770">
+  <area shape="rect"
+        href="1KFPY6LQTI1LLXXVPI48DItextIx-url"
+        onClick="popUpEvt(event,'1KFPY6LQTI1LLXXVPI48DItextIx-url'); return false;"
+        coords="705,844,723,862">
+  <area shape="rect"
+        href="1KG028L83I1VC1KX9I8BGItextIx-url"
+        onClick="popUpEvt(event,'1KG028L83I1VC1KX9I8BGItextIx-url'); return false;"
+        coords="669,52,687,70">
+  <area shape="rect"
+        href="1KFQL6FV5IJBFQLXIHDKItextIx-url"
+        onClick="popUpEvt(event,'1KFQL6FV5IJBFQLXIHDKItextIx-url'); return false;"
+        coords="1651,1296,1669,1314">
+  <area shape="rect"
+        href="1KG021ZNVI229GZ97I7F1ItextIx-url"
+        onClick="popUpEvt(event,'1KG021ZNVI229GZ97I7F1ItextIx-url'); return false;"
+        coords="506,243,524,261">
+  <area shape="rect"
+        href="1KG020PFDISWLC1WI7DKItextIx-url"
+        onClick="popUpEvt(event,'1KG020PFDISWLC1WI7DKItextIx-url'); return false;"
+        coords="453,145,471,163">
+  <area shape="rect"
+        href="1KFPZ3DBHI1Z0Q7GTI4NQItextIx-url"
+        onClick="popUpEvt(event,'1KFPZ3DBHI1Z0Q7GTI4NQItextIx-url'); return false;"
+        coords="836,1183,854,1201">
+  <area shape="rect"
+        href="1KFQMQMVZI12VZVMIKB1ItextIx-url"
+        onClick="popUpEvt(event,'1KFQMQMVZI12VZVMIKB1ItextIx-url'); return false;"
+        coords="222,210,240,228">
+  <area shape="rect"
+        href="1KFQC2DF8I2D2DK10I7NSItextIx-url"
+        onClick="popUpEvt(event,'1KFQC2DF8I2D2DK10I7NSItextIx-url'); return false;"
+        coords="779,1348,797,1366">
+  <area shape="rect"
+        href="1KFQJ1BM8I1QVP6KBIDT8ItextIx-url"
+        onClick="popUpEvt(event,'1KFQJ1BM8I1QVP6KBIDT8ItextIx-url'); return false;"
+        coords="824,1731,842,1749">
+  <area shape="rect"
+        href="1KFQKNB51I23XNYVRIGQYItextIx-url"
+        onClick="popUpEvt(event,'1KFQKNB51I23XNYVRIGQYItextIx-url'); return false;"
+        coords="1286,1323,1304,1341">
+  <area shape="rect"
+        href="1KFQG0L8TI28FBQ52IBJ9ItextIx-url"
+        onClick="popUpEvt(event,'1KFQG0L8TI28FBQ52IBJ9ItextIx-url'); return false;"
+        coords="1073,1165,1091,1183">
+</map>
+
+<center>
+  <table width=* height=* cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td valign=center align=center>
+        <img USEMAP="#OpenCyc.html"
+             SRC="OpenCyc.jpg"
+             ALIGN=middle
+             BORDER=0
+             onClick=popDown();>
+      </td>
+    </tr>
+    <tr>
+      <td VALIGN=top ALIGN=right>
+        <table>
+          <tr>
+            <td ALIGN=right VALIGN=middle>
+              <map NAME="CmapToolsTrademark">
+                <area SHAPE="rect"
+                      href="http://cmap.ihmc.us/"
+                      onClick="openResource(event,'http://cmap.ihmc.us/', 0, 2); return false;"
+                      coords="1,1,210,50">
+              </map>
+            </td>
+          </tr>
+          <tr>
+            <td  ALIGN=right VALIGN=middle>
+              <img USEMAP="#CmapToolsTrademark"
+                   SRC="CmapToolsTrademark.gif" 
+                   ALT="IHMC Cmap Tools Trademark" width="210" height="50"
+                   ALIGN=middle
+                   BORDER=0>
+            </td>
+            <td VALIGN=middle>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+</BODY>
+</HTML>
+<div id="1KFQDMZNTI1BMC1QZI9H3ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvafsxJwpEbGdrcN5Y29ycA "TITLE="">
+      GraphicalStructure
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQQDR4DI4WLPNQIP76ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwGWaK5wpEbGdrcN5Y29ycA "TITLE="">
+      elementOf
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQJ0H3PI7VNGTNIDRTItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rnVZQSiCmEdaAAACgyZzFrg "TITLE="">
+      NumericInterval
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFZYXWWYIVC1NBTI1L8ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjmoJwpEbGdrcN5Y29ycA "TITLE="">
+      Group
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFZZVCJBIMGD9LQI331ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwQB0dJwpEbGdrcN5Y29ycA "TITLE="">
+      NationalMonument
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQKM33MI1B8QJ8BIGPCItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvrgHFpwpEbGdrcN5Y29ycA "TITLE="">
+      ComputerFileCopy
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQMG3JYI1H3GJ5XIJQPItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjpUZwpEbGdrcN5Y29ycA "TITLE="">
+      SpatialThing
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQF9XGQIZ7DZT9IB18ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwQGTzJwpEbGdrcN5Y29ycA "TITLE="">
+      AbstractInformationStructure
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KG025VJ2I1G81S7WI89FItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjhTpwpEbGdrcN5Y29ycA "TITLE="">
+      NATO
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQDQ81RI75H8NDI9M8ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvrCIVZwpEbGdrcN5Y29ycA "TITLE="">
+      Table-AIS
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQK3MB4I2BMJGNRIGDSItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwFz9L5wpEbGdrcN5Y29ycA "TITLE="">
+      ComputerFile-AIS
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQN3XRYI1TG5BQIKJ4ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvViAxJwpEbGdrcN5Y29ycA "TITLE="">
+      TemporalThing
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQMVZ79I11RNNW8IKDLItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rq1nU_oEgQdmLwqEN7EWrNw "TITLE="">
+      GeographicalPlace
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQQ6H18ILH25TINGVItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvl2en5wpEbGdrcN5Y29ycA "TITLE="">
+      Set-Mathematical
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQ0SHP3I1FCHC7PI64KItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVj4PJwpEbGdrcN5Y29ycA "TITLE="">
+      Germany
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQNBC5XI134RBBPIL4LItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVi255wpEbGdrcN5Y29ycA "TITLE="">
+      SomethingExisting
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KG01RK9VI10VYG7PI6DLItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjmoJwpEbGdrcN5Y29ycA "TITLE="">
+      Group
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQNRSZSIPDVCW1ILC9ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4ro3lluGJHQdiVxrZReHS-jQ "TITLE="">
+      EnduringThing-Localised
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQSL7RCI25Y2RVZIS1RIx-cmapIx-storable" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="Neurorganon_Upper_Level_Ontology.html "TITLE="">
+      Neurorganon_Upper_Level_Ontology
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQHDDDGI15M9J96ID6LItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjsVZwpEbGdrcN5Y29ycA "TITLE="">
+      TupleOfIntervals
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFZZDDBDI15TCZD0I1YVItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwPzYH5wpEbGdrcN5Y29ycA "TITLE="">
+      SevenWondersOfTheAncientWorld
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFZZ2V1XI2DGN904I1SJItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVj27ZwpEbGdrcN5Y29ycA "TITLE="">
+      PartiallyTangible
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQQLPD3IJSSPQMIPB7ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvViBBJwpEbGdrcN5Y29ycA "TITLE="">
+      isa
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFPZ70TDIM817JHI4RFItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVj7bpwpEbGdrcN5Y29ycA "TITLE="">
+      parts
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQ0JDBRI1CCH9NKI5SWItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvViVwZwpEbGdrcN5Y29ycA "TITLE="">
+      Automobile
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQ0SHP3I1HTF2D7I647ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjhTpwpEbGdrcN5Y29ycA "TITLE="">
+      NATO
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFPYB33PI22VJKQ5I4D5ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvViAzJwpEbGdrcN5Y29ycA "TITLE="">
+      Collection
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQD6N37I15BBTKWI94MItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwA6D-JwpEbGdrcN5Y29ycA "TITLE="">
+      AbstractVisualStructure
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KG00RGB9I1RNMGB4I44YItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVj82pwpEbGdrcN5Y29ycA "TITLE="">
+      PoliticalParty
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQHK4YJID1GRTJIDB0ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvViAp5wpEbGdrcN5Y29ycA "TITLE="">
+      ScalarInterval
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQB4TBJI2YGBDTI79GItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjjo5wpEbGdrcN5Y29ycA "TITLE="">
+      Intangible
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQC2NZDI16LT9QGI7P6ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVj42JwpEbGdrcN5Y29ycA "TITLE="">
+      Tuple
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQ0BT0SIMBLNJ8I5QRItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVivK5wpEbGdrcN5Y29ycA "TITLE="">
+      Wheel
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KG01JYDJI4JSZF3I664ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvViJ55wpEbGdrcN5Y29ycA "TITLE="">
+      InternationalOrganization
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KG00NL1NI2B252QSI42CItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjVT5wpEbGdrcN5Y29ycA "TITLE="">
+      Organization
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQ20733ITY337ZI6RVItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVi-k5wpEbGdrcN5Y29ycA "TITLE="">
+      Foot-AnimalBodyPart
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQL3N7PI2D62C8XIH98ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvrXnQpwpEbGdrcN5Y29ycA "TITLE="">
+      Information-Content
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFZZRP7PI1J2FWYFI2XKItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwQw2fJwpEbGdrcN5Y29ycA "TITLE="">
+      EgyptianPyramid
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQNZV3WI1J7QXPXIM2BItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwS68M5wpEbGdrcN5Y29ycA "TITLE="">
+      SpatialThing-Localised
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQQ8KKSI274Y3JGIP3SItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjl_ZwpEbGdrcN5Y29ycA "TITLE="">
+      SetOrCollection
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQ1ZCG0I24VRG8DI6R9ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Hallux "TITLE="">
+      Hallux
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5JXRF5SI27H7XYBIJMSIx-cmapIx-storable" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="Neurorganon_Home.html "TITLE="">
+      Neurorganon_Home
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="Overview.html "TITLE="">
+      Overview
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5JXRF5SI27H7XYBIJMSItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://neurorganon.org/ "TITLE="">
+      Navigate to the Home Page
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQDP5W1I1FD345HI9KYItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rZ3gqxqpIEdaAAABQ2sS97g "TITLE="">
+      NLParagraph
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQRJ7JMIJND7DWIQW6ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvViBDpwpEbGdrcN5Y29ycA "TITLE="">
+      genls
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3H5K9QWI1RWL99NI16QItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.cyc.com/cyc/technology/whatiscyc "TITLE="">
+      What is Cyc
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://opencyc.org/ "TITLE="">
+      OpenCyc.org
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.opencyc.org/releases/doc "TITLE="">
+      OpenCyc Documentation
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/ "TITLE="">
+      Searching for OpenCyc Content
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3H5K9QWI1RWL99NI16QIx-cmapIx-storable" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="OpenCyc-Collection.html "TITLE="">
+      OpenCyc-Collection
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3H5K9QWI1RWL99NI16QItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Cyc "TITLE="">
+      Cyc
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFPZCT14I89BNBZI4VBItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVj-BJwpEbGdrcN5Y29ycA "TITLE="">
+      groupMembers
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQQR5XQI2B3HH91IPCYItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVj1MJwpEbGdrcN5Y29ycA "TITLE="">
+      partitionedInto
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFZZL4JLIYWXJD8I2SNItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwPzYFpwpEbGdrcN5Y29ycA "TITLE="">
+      PyramidOfCheops
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQGHP4CIS6JSM0IC1RItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwP17aJwpEbGdrcN5Y29ycA "TITLE="">
+      Tradition
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KG019NBZI2CK4CCNI57GItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Bj%C3%B6rn_S%C3%B6der "TITLE="">
+      Björn_Söder
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQLB5VFI10W4GR4IHYVItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwClAZJwpEbGdrcN5Y29ycA "TITLE="">
+      ConceptualWork
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFPZC5NBIYVTTY3I4TQItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVj5FpwpEbGdrcN5Y29ycA "TITLE="">
+      physicalParts
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KG01R5Y1IWRKNZHI6CVItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjCHZwpEbGdrcN5Y29ycA "TITLE="">
+      Toe
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQ1P1KCI1519WG6I6PHItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjCHZwpEbGdrcN5Y29ycA "TITLE="">
+      Toe
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQC2XHRIBFP931I7PQItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvntUR5wpEbGdrcN5Y29ycA "TITLE="">
+      AbstractStructure
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFPXZPP7IGD8071I431ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvViA9JwpEbGdrcN5Y29ycA "TITLE="">
+      Thing
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KG00RXVWISR0L3RI45KItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Sweden_Democrats "TITLE="">
+      Sweden_Democrats
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQK8MSPIH23ZXMIGJ8ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvzS_TZwpEbGdrcN5Y29ycA "TITLE="">
+      CWInfoStructure
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQFNN9RIT43TPTIB3QItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rwFn8s5wpEbGdrcN5Y29ycA "TITLE="">
+      ComputerAIS
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFPY6LQTI1LLXXVPI48DItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjaApwpEbGdrcN5Y29ycA "TITLE="">
+      Individual
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KG028L83I1VC1KX9I8BGItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVj4PJwpEbGdrcN5Y29ycA "TITLE="">
+      Germany
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQL6FV5IJBFQLXIHDKItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvf9sZJwpEbGdrcN5Y29ycA "TITLE="">
+      AspatialInformationStore
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KG021ZNVI229GZ97I7F1ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvcF1IpwpEbGdrcN5Y29ycA "TITLE="">
+      InternationalOrganizationOfCountries
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KG020PFDISWLC1WI7DKItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvkoMFZwpEbGdrcN5Y29ycA "TITLE="">
+      InternationalAlliance
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFPZ3DBHI1Z0Q7GTI4NQItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4r6iVgyruPQdefX9D0i1i7MQ "TITLE="">
+      AbstractIndividual
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQMQMVZI12VZVMIKB1ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvVjTtJwpEbGdrcN5Y29ycA "TITLE="">
+      Place
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQC2DF8I2D2DK10I7NSItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvViAzZwpEbGdrcN5Y29ycA "TITLE="">
+      Relation
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQJ1BM8I1QVP6KBIDT8ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rSGNLQK45EdqAAAACs6hRXg "TITLE="">
+      Quantity
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQKNB51I23XNYVRIGQYItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4r1VKBbji8Ed2AAAACs6hRXg "TITLE="">
+      Document
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KFQG0L8TI28FBQ52IBJ9ItextIx-url" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://sw.opencyc.org/concept/Mx4rvu__KJwpEbGdrcN5Y29ycA "TITLE="">
+      InformationStore
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+

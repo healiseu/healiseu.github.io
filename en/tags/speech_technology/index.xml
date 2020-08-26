@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Speech_technology on HEALIS</title>
+    <link>https://healis.eu/en/tags/speech_technology/</link>
+    <description>Recent content in Speech_technology on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Thu, 01 Jan 2004 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/en/tags/speech_technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>STAPTK</title>
+      <link>https://healis.eu/en/project/staptk/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/project/staptk/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#summary&#34;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#staptk-in-olp&#34;&gt;STAPTK in OLP&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#background&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#optacia-kinematic-maps&#34;&gt;OPTACIA Kinematic Maps&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#publication&#34;&gt;Publication&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#demonstration&#34;&gt;Demonstration&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#visual-feedback-main-characteristics&#34;&gt;Visual Feedback Main Characteristics&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#optacia-main-tasks&#34;&gt;OPTACIA Main Tasks&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#future-directions-and-problems-to-solve&#34;&gt;Future Directions and Problems to solve&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#technical-specifications&#34;&gt;Technical Specifications&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#credit&#34;&gt;Credit&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#publications&#34;&gt;Publications&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#abstract&#34;&gt;Abstract&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#presentation&#34;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://spandh.dcs.shef.ac.uk/projects/staptk/&#34;&gt;STAPTk software&lt;/a&gt; was developed in the Speech and Hearing group, at the department of Computer Science, University of Sheffield. It is the epitome of the research work of Athanassios Hatzis, nine years in total, during his &lt;a href=&#34;https://healis.eu/en/project/vahisom/&#34;&gt;MSc&lt;/a&gt;, &lt;a href=&#34;https://healis.eu/en/project/oltk/&#34;&gt;PhD&lt;/a&gt; and two funded research projects &lt;a href=&#34;https://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt;, NHS-NEAT 275K€ UK project, and OLP&lt;a href=&#34;https://healis.eu/en/project/staptk/&#34;&gt;12&lt;/a&gt;, FP5-Quality of Life 2.67M€ EC project.&lt;/p&gt;
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://healis.eu/img/research_timeline.gif&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Past Research Projects 1994-2004&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;Those days Athanassios was a central figure in the department, he has written most of the code for STARDUST and OLP and also acted as the initiator and a group leader of software development for the two funded projects.&lt;/p&gt;
+&lt;h2 id=&#34;staptk-in-olp&#34;&gt;STAPTK in OLP&lt;/h2&gt;
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+&lt;p&gt;One of the main components of the &lt;a href=&#34;http://www.xanthi.ilsp.gr/olp&#34;&gt;OLP system&lt;/a&gt; is the final release of STAPTK (OPTACIA). OPTACIA was first published in WISP 2001 conference and is strongly based on the software that Athanassios Hatzis developed during his PhD thesis as well as the software developed during the STARDUST project. This final version is linked to the other components of the OLP system by executing OPTACIA through a command-line interface.&lt;/p&gt;
+&lt;h3 id=&#34;optacia-kinematic-maps&#34;&gt;OPTACIA Kinematic Maps&lt;/h3&gt;
+&lt;p&gt;An OPTACIA Kinematic map uses a two-dimensional ANN-trained map as a visual metaphor for isolated sounds and simple utterances. We describe the map as &amp;ldquo;kinematic&amp;rdquo; (i.e. relating to movement) because its visualization technique correlates strongly with articulatory movement during speech production. Visualization of speech sounds is instantaneous, the client can vary the articulators in response to on-screen visual feedback. Speech therapy is based on the evaluation of the quality of speech production and accompanied characteristics i.e. consistency and intelligibility. OPTACIA is meant to assist speech therapists in that role.&lt;/p&gt;
+&lt;h3 id=&#34;publication&#34;&gt;Publication&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://healis.eu/documents/oster-fonetic-2003.pdf&#34;&gt;Testing a New Method for Training Fricatives using Visual Maps in the Ortho-Logo-Paedia Project (OLP)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This paper concentrates on therapy based on real-time audio-visual feedback of client’s speech and presents results from building and testing visual maps for training hearing-impaired clients using the OPTACIA component. OPTACIA was developed from the Optical Logo-Therapy OLT (Hatzis, 1999; Hatzis and Green, 2001). OPTACIA is based on three basic, well-founded treatment principles: visuomotor tracking, visual contrast, and visual reinforcement. Visuomotor tracking (Ziegler, Vogel, Teiwes, and Ahrndt, 1997) is a special case of biofeedback where some dynamic physical measure of performance is portrayed visually in real-time.&lt;/p&gt;
+&lt;h3 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Real-time audio visual animation with a sprite on the map
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BnlkKeng0p8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Real-time audio visual animation and Waveform display on wavesurfer
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/660siDY8alE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;visual-feedback-main-characteristics&#34;&gt;Visual Feedback Main Characteristics&lt;/h3&gt;
+&lt;p&gt;Speech Therapy requirements are translated to visual feedback requirements and therefore the computer-based speech training aid, in our case OPTACIA, has to demonstrate visual consistency (phonetic map areas, and speech trajectories), visual contrast of the target areas of the map, and visual accuracy on the production of speech. In OPTACIA we achieved this with target markers, each target-marker has an area associated around it that is used for scoring purposes. The target markers’ functionality make them very useful because speech therapist can set them to fine-tune OPTACIA map with intermediate targets and establish short-term and long-term speech production targets for patients with various speech disorders.&lt;/p&gt;
+&lt;h3 id=&#34;optacia-main-tasks&#34;&gt;OPTACIA Main Tasks&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Record speech data&lt;/li&gt;
+&lt;li&gt;Transcribe speech data&lt;/li&gt;
+&lt;li&gt;Build map
+&lt;ul&gt;
+&lt;li&gt;select speech data&lt;/li&gt;
+&lt;li&gt;design layout&lt;/li&gt;
+&lt;li&gt;train map&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Explore layout of the map&lt;/li&gt;
+&lt;li&gt;Monitor/Measure performance on the map&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;future-directions-and-problems-to-solve&#34;&gt;Future Directions and Problems to solve&lt;/h3&gt;
+&lt;p&gt;Researchers interested in the technique developed in OPTACIA should consider the following issues that have been tackled in the present software :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Acoustic to articulation mapping&lt;/li&gt;
+&lt;li&gt;Synchronizing real-time audio-visual playback and recording&lt;/li&gt;
+&lt;li&gt;Definition and statistical modeling of speech targets&lt;/li&gt;
+&lt;li&gt;Automation of segmentation/labelling problem&lt;/li&gt;
+&lt;li&gt;Automation of training maps&lt;/li&gt;
+&lt;li&gt;The silence/speech detection problem&lt;/li&gt;
+&lt;li&gt;Definition of metrics
+&lt;ul&gt;
+&lt;li&gt;Distance from target&lt;/li&gt;
+&lt;li&gt;Acceptance/Rejection&lt;/li&gt;
+&lt;li&gt;Consistency&lt;/li&gt;
+&lt;li&gt;Intelligibility&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Visualization of metrics&lt;/li&gt;
+&lt;li&gt;Mapping/Visualisation of unseen speech input&lt;/li&gt;
+&lt;li&gt;Mapping/Visualisation of non-continuous sounds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;technical-specifications&#34;&gt;Technical Specifications&lt;/h3&gt;
+&lt;p&gt;STAPTk is based on open-source software but unfortunately University of Sheffield decided not to make it public.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Front end GUI in Tcl/Tk and incr-Tcl/incr-Tk&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Back end speech and graphics processing in C&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Speech processing with Snack and Wavesurfer (Kåre Sjölander and Jonas Beskow, 2003)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Speech detection algorithms, MGR endpointer (Bruce T. Lowerre, Public domain, 1995)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Graphics processing MATLAB Run-Time-Libraries&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;credit&#34;&gt;Credit&lt;/h3&gt;
+&lt;p&gt;Credit is given to the following people that contributed in the development of STAPTk.&lt;/p&gt;
+&lt;h4 id=&#34;domain-expertise-contributors&#34;&gt;Domain expertise contributors&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Phil Green (Speech Technology)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mark Hawley (Assistive Technology)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pam Enderby (Speech Pathology)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sara Howard (Phonetics)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rebecca Palmer (Speech Therapy)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mark Parker (Speech Therapy)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kate Woods (Speech Therapy)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;David House (Speech Phonology)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Anne-Marie Öster (Speech Pathology)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;code-contributors&#34;&gt;Code contributors&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Vincent Wan (ANN training)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;James Carmichael (GUIs, STARDUST)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stuart Cunningham (STARDUST-Command Sequence Recognition, Speech Training)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kåre Sjölander (Synchronization of real-time audio-visual feedback with Snack-Wavesurfer)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;publications&#34;&gt;Publications&lt;/h2&gt;
+&lt;p&gt;The paper titled &lt;a href=&#34;https://healis.eu/documents/straptk-eurospeech-2003.pdf&#34;&gt;&amp;ldquo;An Integrated Toolkit Deploying Speech Technology for Computer Based Speech Training with Application to Dysarthric Speakers&amp;rdquo;&lt;/a&gt; summarizes the development and application of STAPTk.&lt;/p&gt;
+&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Computer based speech training systems aim to provide the client with customised tools for improving articulation based on audio-visual stimuli and feedback. They require the integration of various components of speech technology, such as speech recognition and transcription tools, and a database management system which supports multiple on-the-fly configurations of the speech training application. This paper describes the requirements and development of STAPTk from the point of view of developers, clinicians, and clients in the domain of speech training for severely dysarthric speakers. Preliminary results from an extended field trial are presented.&lt;/p&gt;
+&lt;h3 id=&#34;presentation&#34;&gt;Presentation&lt;/h3&gt;
+&lt;p&gt;Eurospeech 2003 – STAPTk (&lt;a href=&#34;https://healis.eu/documents/staptk-poster.ppsx&#34;&gt;ppsx&lt;/a&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>STARDUST</title>
+      <link>https://healis.eu/en/project/stardust/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/project/stardust/</guid>
+      <description>&lt;p&gt;Two funded research projects: &lt;a href=&#34;https://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;https://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&amp;rsquo; &lt;a href=&#34;https://healis.eu/en/project/oltk/&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://healis.eu/img/research_timeline.gif&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Past Research Projects 1994-2004&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;This is a review of the software STAPTK that was developed for the STARDUST project.&lt;/p&gt;
+&lt;h3 id=&#34;staptk-in-stardust&#34;&gt;STAPTK in STARDUST&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://spandh.dcs.shef.ac.uk/projects/stardust/&#34;&gt;STARDUST NHS project&lt;/a&gt; (2000-2003) integrates computer based visual-feedback for speech training to assist dysarthric speakers to improve the consistency of their utterances, and speech recognition of commands in sequence to control an environmental device.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In an attempt to reduce speech production inconsistency and hence enhance the success of voice-driven assistive technology, the ASR component in STAPTk is closely coupled with therapy - &lt;a href=&#34;https://healis.eu/documents/Sparse_Data_ES03.pdf&#34;&gt;Eurospeech 2003, Phil Green et al.&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;stardust-aims&#34;&gt;STARDUST Aims&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide visual training aids to help improve consistency and/or intelligibility of severely dysarthric speakers&lt;/li&gt;
+&lt;li&gt;Use training sessions to procude data for ASR&lt;/li&gt;
+&lt;li&gt;Build small vocabulary recognisers for dysarthric clients&lt;/li&gt;
+&lt;li&gt;Use the recognisers in assistive technology&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;dysarthric-asr-problems&#34;&gt;Dysarthric ASR Problems&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Small training corpus&lt;/li&gt;
+&lt;li&gt;Large deviance from normal&lt;/li&gt;
+&lt;li&gt;Fluency problems&lt;/li&gt;
+&lt;li&gt;Limited phonetic contrast&lt;/li&gt;
+&lt;li&gt;Inconsistent production&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;stardust-demonstration&#34;&gt;STARDUST Demonstration&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Command Sequence
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DBKtFOFi804&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Consistency Training
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/khSHBGwqE0E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;eurospeech-2003-presentation&#34;&gt;Eurospeech 2003 Presentation&lt;/h4&gt;
+&lt;p&gt;Eurospeech 2003 – Automatic Speech Recognition with Sparse Training Data for Dysarthric Speakers (&lt;a href=&#34;https://healis.eu/documents/Eurospeech2003_confusability.ppsx&#34;&gt;ppsx&lt;/a&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OLT</title>
+      <link>https://healis.eu/en/project/oltk/</link>
+      <pubDate>Wed, 01 Dec 1999 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/project/oltk/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#summary&#34;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#phd-thesis-summary&#34;&gt;PhD Thesis Summary&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#olt-therapy-sesssion&#34;&gt;OLT Therapy Sesssion&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#presentations&#34;&gt;Presentations&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#oltk-introduction&#34;&gt;OLTk Introduction&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#oltk-speech-training-principles&#34;&gt;OLTk Speech Training Principles&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#oltk-design-aspects&#34;&gt;OLTk Design Aspects&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#oltk-technical-specifications&#34;&gt;OLTk Technical Specifications&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#oltk-interface&#34;&gt;OLTk Interface&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Two funded research projects: &lt;a href=&#34;https://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;https://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&amp;rsquo; &lt;a href=&#34;https://healis.eu/documents/Hatzis1999.pdf&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://healis.eu/img/research_timeline.gif&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Past Research Projects 1994-2004&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;Here is a review of the OLTk software that was developed during his PhD.&lt;/p&gt;
+&lt;h2 id=&#34;phd-thesis-summary&#34;&gt;PhD Thesis Summary&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Optical Logo-Therapy (OLT)&lt;/strong&gt; is about a real-time computer-based audio-visual feedback method that can used in speech training. With this method speech acoustics are transformed into visual events on a two-dimensional display called a ‘phonetic map’. Phonetic maps are created by training a neural network to associate acoustic input vectors with points in a two-dimensional space. The target points on the map can be chosen by the teacher to reflect the relationship between articulatory gestures and acoustics. OLT thus helps the client to become aware of, and to correct, errors in articulation. Phonetic maps can be tailored to different training problems, and to the needs of individual clients. We formulate the theoretical principles and practical requirements for OLT and we describe the design and implementation of a software application, OLTk.  We report on the successful application of OLT in two areas: speech therapy and second language learning.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PhD Thesis &lt;a href=&#34;https://healis.eu/documents/Hatzis1999.pdf&#34;&gt;In Acrobat pdf format&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;olt-therapy-sesssion&#34;&gt;OLT Therapy Sesssion&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/blPmFzCHulg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;presentations&#34;&gt;Presentations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;1996 Insitute of Acoustics (IOA) &lt;a href=&#34;https://healis.eu/documents/IOA96-Poster.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;1999 Phonetics Teaching &amp;amp; Learning Conference (PTLC) &lt;a href=&#34;https://healis.eu/documents/ptlc-poster.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2001 Workshop on Innovation in Speech Processing (WISP) &lt;a href=&#34;https://healis.eu/documents/wisp2001-presentation.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GWWTLitvqlI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;oltk-introduction&#34;&gt;OLTk Introduction&lt;/h2&gt;
+&lt;p&gt;OLTk provides on-line, real time audio and visual feedback of articulation by performing acoustic signal analysis. It indicates how closely a speaker’s attempt approximates to the normal or target production of specific speech. The clinician can adjust settings to provide visual and/or auditory reinforcement of the client’s attempts to correctly produce the target. OLT has also several tools that the user can easily handle to study, and examine the articulation of a certain utterance or part of it.&lt;/p&gt;
+&lt;h3 id=&#34;oltk-speech-training-principles&#34;&gt;OLTk Speech Training Principles&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Visuomotor tracking&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visual contrast&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visual reinforcement&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;oltk-design-aspects&#34;&gt;OLTk Design Aspects&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Real time audio and visual animated feedback in the form of a game&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Qualitative and quantitative results&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rejection/Acceptance mechanisms to provide accurate feedback&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Speaker comparison and trial error correction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Simultaneous isolated sounds and utterance training&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Build maps based on best user training performance&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Specialised phonetic maps tailored to the needs of the client (speech disorder, age, nationality)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Real time recording/playback of speech utterances and also playback of speech frames&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;oltk-technical-specifications&#34;&gt;OLTk Technical Specifications&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Final Software Version Ver.3.19 – 20th September 1998&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Hardware/Software&lt;/th&gt;
+&lt;th&gt;Specifications&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Machine&lt;/td&gt;
+&lt;td&gt;Toshiba Tecra 500CS with Intel Pentium 120MHz, 48MB RAM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Operating System&lt;/td&gt;
+&lt;td&gt;Linux 2.0.3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Programming Language&lt;/td&gt;
+&lt;td&gt;GNU C++&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Graphics Library&lt;/td&gt;
+&lt;td&gt;EZWGL V1.39&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Data Types Library&lt;/td&gt;
+&lt;td&gt;LEDA 3.3.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Display Sound Files&lt;/td&gt;
+&lt;td&gt;SFS 3.0 and OGI Speech Tools&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sound processing&lt;/td&gt;
+&lt;td&gt;HTK V1.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    Those days real-time speech processing and visualization on a laptop was a challenging problem due to hardware limitations. The price of that laptop was 3000€ and my parents paid the invoice.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;oltk-interface&#34;&gt;OLTk Interface&lt;/h3&gt;
+&lt;p&gt;OLTk graphical user interface is split into three parts : the menu bar, the graphics canvas, and the status bar.&lt;/p&gt;
+&lt;p&gt;The phone classes and the sounds represented in the following map are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;i (violet) as in the word see&lt;/li&gt;
+&lt;li&gt;u (yellow) as in the word shoe&lt;/li&gt;
+&lt;li&gt;o (red) as in the word bought&lt;/li&gt;
+&lt;li&gt;sh (blue) as in the word shore&lt;/li&gt;
+&lt;li&gt;s (green) as in the word suit&lt;/li&gt;
+&lt;li&gt;z (white) as in the word zoo&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://healis.eu/img/olt_map.gif&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;OLTK GUI&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;Each map created consists of a number of 9D vectors. Each vector is the output of the cepstral analysis on a 10msec frame of speech. Each frame of speech is labeled according to the phone it represents. We can group phones according to the characteristic sound they represent on the basis of different place and manner of articulation. The different classes of phones can form two dimensional clusters of points depending on the method of mapping. The idea of this 2D sound mapping is to associate groups of similar sounds to neighboring areas on the map. Thus a map consists of a number of clusters and those in turn consist of a number of frames of speech each one associated with a phone label. These two groupings, the clusters and the phones, we call elements of the map and the map itself we call a phonetic map.&lt;/p&gt;
+&lt;p&gt;The above map has been created from 18 children, 9 male and 9 female, age 5-7, all English native speakers recording isolated sounds. The map has a total of 14400 samples and contains six different classes of phones, 3 vowels and 3 fricatives.&lt;/p&gt;
+&lt;h4 id=&#34;settings&#34;&gt;Settings&lt;/h4&gt;
+&lt;p&gt;The behavior and the control of the various components of OLT and everything that is an integral part of that program depends upon the &amp;ldquo;Settings&amp;rdquo; pull down menu. All of them are in the form of radio buttons style. By pressing any of these buttons with the mouse the user can either activate or deactivate a certain feature or display or hide other essential components and control windows of OLT.
+The settings appear in the pull down menu as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Show Cluster Labels&lt;/li&gt;
+&lt;li&gt;Recording/Playback Types&lt;/li&gt;
+&lt;li&gt;Recording/Playback Parameters&lt;/li&gt;
+&lt;li&gt;Select Samples&lt;/li&gt;
+&lt;li&gt;Animation Types&lt;/li&gt;
+&lt;li&gt;Activate Extracted Buffer&lt;/li&gt;
+&lt;li&gt;Mapping Techniques&lt;/li&gt;
+&lt;li&gt;Map Appearence&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;recordingplayback-parameters&#34;&gt;Recording/Playback Parameters&lt;/h5&gt;
+&lt;p&gt;This radio button can show or hide the recording/playback parameters window. The modification of these parameters is achieved through a set of sliding bars. These include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: The total duration of recording in secs. The radio button existing next to the label of the parameter has to be activated in order to apply a time limit. If the radio button is not checked then you can record for unlimited time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;: The context width or the number of frames ahead and behind a certain frame. One frame is equal to 10msec. This is used in conjuction with the Playback Frames Sequence tool to define the limits of the part of the utterance to be extracted.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Averaging&lt;/strong&gt;: Average the 2D positions every N number of frames. Set a relatively high value when trying isolated sounds and a relatively low value when trying small utterances. The higher the value the less the flickering and the smoother the animation of sprites.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Threshold&lt;/strong&gt;: Value to determine whether to accept or reject a certain frame of speech. The higher it is, the more similar a new sound should be with those that make up the phonetic map in order to be accepted. On the contrary, if we lower the threshold slide bar the less strict we become on the acceptance of a sound. The higher is the value the more it rejects the less it accepts, the lower is the value the more it accepts the less it rejects. This parameter is used in conjuction with the &amp;ldquo;-Threshold&amp;rdquo; field of the cluster information to tune the threshold of the specific phone cluster according to our needs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Parameters like &amp;ldquo;Averaging&amp;rdquo; and &amp;ldquo;Threshold&amp;rdquo; have been designed to work interactively with the &amp;ldquo;Real Time&amp;rdquo; recording and playback.&lt;/p&gt;
+&lt;h5 id=&#34;animation-types&#34;&gt;Animation Types&lt;/h5&gt;
+&lt;p&gt;These radio buttons define the various types of animation that are used to represent the appropriate visual feedback:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Animate Sprite&lt;/strong&gt;: This is the default setting for the animation type. A plane sprite is flying to positions that are related with specific sounds. If the sound produced is quite dissimilar of those existing on our phonetic map the plane disappears from the screen and the frowning of a clown’s face is used to indicate the rejection. In case of acceptance the plane is flying and the clown appears with a happy face. Silence state is also represented with a different plane image that shows it sleeping.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Draw Points&lt;/strong&gt;: If we activate that type of animation we can see the exact 2D positions for each frame of speech or for the average during our speech production. The hits are represented with black filled rectrangles.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Draw Trajectory&lt;/strong&gt;: This is the third type of animation we can select. A visual feedback representation of the sound can be obtained by plotting with filled rectangles and connecting with a line the 2D positions of successive speech frames. As new sounds are produced the old positions are deleted and the new positions are appended. This gives the impression of a moving snake.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;mapping-techniques&#34;&gt;Mapping Techniques&lt;/h5&gt;
+&lt;p&gt;These are the techniques we developed for the mapping of the sounds from 9D to 2D:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ND TO 2D&lt;/strong&gt;: A neural network (NN) has been trained to map all the frames of a particular sound to a certain fixed 2D position on our phonetic map. Similar sounds with those that our NN has been trained with are mapped to neighbooring positions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Central Force&lt;/strong&gt;: The classification results of a speech frame for each one of the phone classes together with the 2D distances from the fixed centroids of each phone cluster are used to determine the 2D position of the speech frame on the map.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://healis.eu/img/research_dcs_sheffield_university_419x480.jpg&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Athanassios at SPANDH lab with colleagues&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>VAHISOM</title>
+      <link>https://healis.eu/en/project/vahisom/</link>
+      <pubDate>Thu, 01 Jun 1995 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/project/vahisom/</guid>
+      <description>&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;This &lt;a href=&#34;http://www.dai.ed.ac.uk/papers/authors/athanh.html&#34;&gt;MSc project&lt;/a&gt; focuses on place of articulation for a hearing impaired person. Most of the work is based on building an efficient and attractive user interface to explore the use of Kohonen’s Self-Organising-Maps in visualising the phonemic trajectory. Several experiments were done with a hearing-impaired person and normal speakers and the results were analysed and visualised with the VAHISOM program.&lt;/p&gt;
+&lt;p&gt;In parallel with the objectives of that project the user of that software can also explore the use of Kohonen’s Self-Organising-Maps and measure how well they can fit to a similar problem. Thus this makes also VAHISOM a useful tutorial aid.&lt;/p&gt;
+&lt;h3 id=&#34;vahisom-software&#34;&gt;VAHISOM Software&lt;/h3&gt;
+&lt;p&gt;The VAHISOM program is a graphical user interface for the &lt;a href=&#34;http://www.cis.hut.fi/projects/somtoolbox/&#34;&gt;SOM_PAK&lt;/a&gt; software. It is  implemented in C programming language using a graphics library in C (libsx) and it runs on Unix systems.&lt;/p&gt;
+&lt;p&gt;The provided buttons and the design of the display area, see picture above, allow the user to handle efficiently the testing of an input on the map and visualize effectively the clustering and the phonemic trajectory (see picture below). The results from the classification are automatically produced from the program in a very analytical form and the user can derive important conclusions.&lt;/p&gt;
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://healis.eu/img/vahisom-compare.gif&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;VAHISOM comparison of two speech trajectories&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

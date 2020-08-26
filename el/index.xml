@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HEALIS</title>
+    <link>https://healis.eu/el/</link>
+    <description>Recent content on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>el</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Mon, 17 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/el/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tests</title>
+      <link>https://healis.eu/el/test/</link>
+      <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/el/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://healis.eu/el/about/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/el/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://healis.eu/el/contact/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/el/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ΟΡΟΙ ΧΡΗΣΗΣ</title>
+      <link>https://healis.eu/el/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/el/terms/</guid>
+      <description>&lt;p&gt;Ο παρών διαδικτυακός τόπος ανήκει στην HEALIS, η διαχείρισή του γίνεται από την HEALIS, αποτελεί πηγή πληροφοριών για τους επισκέπτες του και διέπεται από τους ακόλουθους όρους χρήσης. Ο χρήστης του παρόντος δικτυακού τόπου αποδέχεται τους κάτωθι όρους και δεσμεύεται από αυτούς.&lt;/p&gt;
+&lt;h2 id=&#34;επιπρόσθετοι-όροι&#34;&gt;Επιπρόσθετοι Όροι&lt;/h2&gt;
+&lt;p&gt;Τα προϊόντα ή/και οι υπηρεσίες ή/και η επωνυμία ή/και τα εμπορικά σήματα ή/και τα διακριτικά γνωρίσματα τρίτων που τυχόν εμφανίζονται ή εμφανισθούν στον διαδικτυακό τόπο αποτελούν πνευματική και βιομηχανική ιδιοκτησία των τρίτων. Η HEALIS δεν εγγυάται και δεν φέρει καμία ευθύνη για το περιεχόμενο άλλων ιστοσελίδων και διαδικτυακών τόπων των οποίων οι σύνδεσμοι περιέχονται στο διαδικτυακό τόπο.
+Περιορισμός ευθύνης&lt;/p&gt;
+&lt;h2 id=&#34;περιορισμός-ευθύνης&#34;&gt;Περιορισμός Ευθύνης&lt;/h2&gt;
+&lt;p&gt;Η HEALIS καταβάλλει κάθε προσπάθεια έτσι ώστε το περιεχόμενο και οι πληροφορίες που εμφανίζονται κάθε φορά στο διαδικτυακό τόπο να είναι κατά το δυνατόν ακριβή, αληθή και επίκαιρα, δεν φέρει όμως καμία ευθύνη. Η HEALIS παρέχει το περιεχόμενο του διαδικτυακού τόπου χωρίς κανενός είδους εγγύηση. Ακόμη εναπόκειται στη διακριτική ευχέρεια των επισκεπτών να αξιολογήσουν οποιαδήποτε παρότρυνση, συμβουλή ή προτροπή παρέχεται στον παρών διαδικτυακό τόπο της HEALIS για τη διενέργεια οποιαδήποτε πράξεώς τους και να ενεργήσουν βασιζόμενοι στην ιδιωτική τους βούληση, αποκλειομένης οποιασδήποτε δικής μας ευθύνης.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>https://healis.eu/el/post/</link>
+      <pubDate>Fri, 30 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/el/post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

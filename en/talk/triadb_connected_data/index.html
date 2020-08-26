@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.74.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Athanassios I. Hatzis, PhD">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="TRIADB associative, semiotic, hypergraph technology is an emerging unique and valuable technology in NoSQL database modelling and BI analytics. TRIADB prototype is founded on R3DM/S3DM conceptual model and it was implemented on top of Intersystems Cache database with a command line interface (CLI) in Python (Jupyter - Pandas).">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://healis.eu/en/talk/triadb_connected_data/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24920503-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://healis.eu/en/talk/triadb_connected_data/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@healiseu">
+  <meta property="twitter:creator" content="@healiseu">
+  
+  <meta property="og:site_name" content="HEALIS">
+  <meta property="og:url" content="https://healis.eu/en/talk/triadb_connected_data/">
+  <meta property="og:title" content="TRIADB at Connected Data London | HEALIS">
+  <meta property="og:description" content="TRIADB associative, semiotic, hypergraph technology is an emerging unique and valuable technology in NoSQL database modelling and BI analytics. TRIADB prototype is founded on R3DM/S3DM conceptual model and it was implemented on top of Intersystems Cache database with a command line interface (CLI) in Python (Jupyter - Pandas)."><meta property="og:image" content="https://healis.eu/en/talk/triadb_connected_data/featured.jpg">
+  <meta property="twitter:image" content="https://healis.eu/en/talk/triadb_connected_data/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2017-11-16T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2017-11-16T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>TRIADB at Connected Data London | HEALIS</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/en/"><img src="/img/healis-text-with-logo.png" alt="HEALIS"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#home"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/about/"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/__hypermorph/"><span>HyperMorph</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/__r3dm/"><span>S3DM</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/post/"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/en/talk/"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/terms/"><span>Terms</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/contact/"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <div class="pub py-5" itemscope itemtype="http://schema.org/Event">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/en/talk/triadb_connected_data/featured_hub38079d2ef2173cf558d6bf582fb26cb_297629_680x500_fill_q90_lanczos_smart1.jpg" itemprop="image" alt="">
+        
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">TRIADB at Connected Data London</h1>
+
+      
+
+      
+
+
+
+<meta content="2017-11-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2017-11-16 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/en/authors/admin/">Athanassios I. Hatzis, PhD</a></span>
+
+  </div>
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/en/talk/triadb_connected_data/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/en/categories/application_programming_interface/">Application_programming_interface</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://healis.eu/en/talk/triadb_connected_data/&amp;text=TRIADB%20at%20Connected%20Data%20London" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://healis.eu/en/talk/triadb_connected_data/&amp;t=TRIADB%20at%20Connected%20Data%20London" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=TRIADB%20at%20Connected%20Data%20London&amp;body=https://healis.eu/en/talk/triadb_connected_data/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://healis.eu/en/talk/triadb_connected_data/&amp;title=TRIADB%20at%20Connected%20Data%20London" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=TRIADB%20at%20Connected%20Data%20London%20https://healis.eu/en/talk/triadb_connected_data/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://healis.eu/en/talk/triadb_connected_data/&amp;title=TRIADB%20at%20Connected%20Data%20London" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/en/project/triadb/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    
+      <h3>Abstract</h3>
+      <p class="pub-abstract" itemprop="text">TRIADB associative, semiotic, hypergraph technology is an emerging unique and valuable technology in NoSQL database modelling and BI analytics. TRIADB prototype is founded on R3DM/S3DM conceptual model and it was implemented on top of Intersystems Cache database with a command line interface (CLI) in Python (Jupyter - Pandas).</p>
+    
+
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Date</div>
+          <div class="col-12 col-md-9" itemprop="datePublished">
+            
+            2017-11-16
+            <div class="talk-time">
+              
+                12:00 AM
+                
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-md-none space-below"></div>
+
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Event</div>
+          <div class="col-12 col-md-9">
+            <a href="https://connected-data.london/connected-data-london-2017/" target="_blank" rel="noopener">
+            Connected Data London Conference
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-md-none space-below"></div>
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Location</div>
+          <div class="col-12 col-md-9">London, UK</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style">
+      <h2 id="video-recording-of-speech">Video Recording of Speech</h2>
+<p>The following video is from a presentation and demonstration of TRIADB at <a href="https://connected-data.london/connected-data-london-2017/">Connected Data London conference on the 16th of November 2017</a>. The event brings together top class innovators, thought leaders and practitioners in the field of Artificial Intelligence and Semantic Technology.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/BiEAbpCOC1A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<p>Unfortunately the light conditions were not ideal for the demonstration of our system. We recommend you visit the links at the right side of the following table to view Pandas notebooks in addition to the video above. You may also start the video at the corresponding time.</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Pandas Notebook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://youtu.be/BiEAbpCOC1A?t=5m1s">05:00</a></td>
+<td><a href="https://test.healis.eu/TRIADB20171116/Traversal.html">Traversal and Hypergraph</a></td>
+</tr>
+<tr>
+<td><a href="https://youtu.be/BiEAbpCOC1A?t=9m1s">09:00</a></td>
+<td><a href="https://test.healis.eu/TRIADB20171116/NodeObjects.html">Hypernodes, Hyperedges and Tuples</a></td>
+</tr>
+<tr>
+<td><a href="https://youtu.be/BiEAbpCOC1A?t=11m45s">11:45</a></td>
+<td><a href="https://test.healis.eu/TRIADB20171116/HyperCollections.html">Hypercollections</a></td>
+</tr>
+<tr>
+<td><a href="https://youtu.be/BiEAbpCOC1A?t=13m1s">13:00</a></td>
+<td><a href="https://test.healis.eu/TRIADB20171116/Data_Model.html">Data Model</a></td>
+</tr>
+<tr>
+<td><a href="https://youtu.be/BiEAbpCOC1A?t=15m30s">15:30</a></td>
+<td><a href="https://test.healis.eu/TRIADB20171116/Mapping.html">Mapping</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="slides-of-the-talk">Slides of the talk</h2>
+<iframe
+  style="width: 100%; height: 500px;" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
+  src="http://www.slideshare.net/slideshow/embed_code/82217659?rel=0" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+</iframe>
+
+<h2 id="screen-captures">Screen Captures</h2>
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="gallery">
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-screen_captures" href="/en/talk/triadb_connected_data/screen_captures/img1.png" >
+  <img src="/en/talk/triadb_connected_data/screen_captures/img1_hu9f2fbc5a7b2b6140b1e520132ee249ed_140448_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-screen_captures" href="/en/talk/triadb_connected_data/screen_captures/img2.png" >
+  <img src="/en/talk/triadb_connected_data/screen_captures/img2_hu4df91ef5ca4966b9794e52585d3f29da_130096_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-screen_captures" href="/en/talk/triadb_connected_data/screen_captures/img3.png" >
+  <img src="/en/talk/triadb_connected_data/screen_captures/img3_hu85db5d9239943d2756c8f2f354328790_81239_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-screen_captures" href="/en/talk/triadb_connected_data/screen_captures/img4.png" >
+  <img src="/en/talk/triadb_connected_data/screen_captures/img4_hu676c730d7a702c63cec8582f15e1e412_85147_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-screen_captures" href="/en/talk/triadb_connected_data/screen_captures/img5.png" >
+  <img src="/en/talk/triadb_connected_data/screen_captures/img5_hu5ff3b3f03d263e02c1ef7e7531bc07c3_77785_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-screen_captures" href="/en/talk/triadb_connected_data/screen_captures/img6.png" >
+  <img src="/en/talk/triadb_connected_data/screen_captures/img6_hu826266c34aa39368339914b8e817fd28_107259_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-screen_captures" href="/en/talk/triadb_connected_data/screen_captures/img7.png" >
+  <img src="/en/talk/triadb_connected_data/screen_captures/img7_hu7059e637d75a091a938cb26a84c93be7_150986_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-screen_captures" href="/en/talk/triadb_connected_data/screen_captures/img8.png" >
+  <img src="/en/talk/triadb_connected_data/screen_captures/img8_hu1a8d983db4a57324f4f553234fc6af27_95827_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-screen_captures" href="/en/talk/triadb_connected_data/screen_captures/img9.png" >
+  <img src="/en/talk/triadb_connected_data/screen_captures/img9_hu7a79b6d4577f08d747f8650a08aab1be_202333_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+
+  
+</div>
+<p>The <strong>first two images</strong> of our collection portray a hypegraph of seven records, two on the left (Parts), three in the center (Catalog Entries) and another two on the right (Suppliers). The main difference is that in the first one nodes are shown with values and in the second one with 2D numerical references. Images are aligned so you can switch back and forth with the left and right arrow keys.</p>
+<p>The <strong>third image</strong> shows execution of TRIADB Python commands on a Jupyter notebook. This is a traversal query that fetches the tuples that make the neighbourhood of the two parts that we saw in the first two images.</p>
+<p>In the <strong>fourth image</strong> two records are drawn, they have common values for the weight and the name of the part. There is a red (partID=993) and a silver (partID=994) Acme Widget Washer but they do not share a common unit for the weight. This cleansing problem is solved in the <strong>fifth image</strong> where the two parts share three common values.</p>
+<p>The <strong>sixth image</strong> visualizes the bipartite mapping solution. The fields on the left are mapped onto attributes on the right and the pandas 2D frame in the seventh image presents their names and key references.</p>
+<p>Finally the <strong>last two images</strong> display a hypergraph data model for movies and a movie instance with many participants. Again you can switch back and forth with the left and right arrow keys.</p>
+<h2 id="video-screen-capture-of-triadb">Video Screen Capture of TRIADB</h2>
+<p>Screencast of TRIADB on a toy problem dataset with a junction table (Catalog) that bridges the other two tables (Supplier and Part). Videos demonstrate in detail the python client API functional operations of TRIADB system such as add models, add resources and records, get operations to retrieve data and hypergraph traversal operations.</p>
+<p>There are five videos in <a href="https://www.youtube.com/playlist?list=PL_Z7O8S4ThCxqPZmqZiZTQx9pdMpt3dsj">this playlist</a> of HEALIS <a href="https://www.youtube.com/channel/UCoCkNTkn1dAbtyr5EMvzc7w">youtube channel</a>. You may start watching the last video of this series to get an overall impression of TRIADB</p>
+<h3 id="part-15">Part 1/5</h3>
+<p>In this recording session we demonstrate the first Jupyter Notebook. We show how to use TRIADB functional commands to reset and rebuild the framework. And we explain a bit the associatve and semiotic architectural design of our framework.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/-yYGU99mi2s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<h3 id="part-25">Part 2/5</h3>
+<p>In this video you will learn how to add a data model, how to search and retrieve information from the data model environment of TRIADB framework and how to visualize your data model.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/GIlECSJEx3k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<h3 id="part-35">Part 3/5</h3>
+<p>In this video we continue with adding resources, mapping these resources to the data model and finally adding records into TRIADB.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/SpxHBmlHAZw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<h3 id="part-45">Part 4/5</h3>
+<p>In this video we continue with GET operations on Supplier-Part-Catalog data set and we describe various environments according to S3DM/R3DM data model. These include the Data Types Environment (DTE), Data Values Environment (DVE), Data Resources Environment (DRE), Data Models Environment (DME) and Data Sets Environment (DSE).
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/_-Ve7XZ8OT0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<h3 id="part-55">Part 5/5</h3>
+<p>In this video, first we explain the hypergraph visual representation of our data model, then we compare it with relational data model and finally we traverse the hypergraph.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/uTchBCyfyxI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<h2 id="acknowledgement">Acknowledgement</h2>
+<p>We would like to thank Intersystems Cache for providing us with a license of Caché DBMS to test TRIADB.</p>
+<h2 id="cross-references">Cross-References</h2>
+<ul>
+<li><a href="https://www.linkedin.com/pulse/triadb-connected-data-london-athanassios-i-hatzis-phd/">LinkedIn - 20180103 Pulse Article - TRIADB at Connected Data London</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_Z7O8S4ThCxqPZmqZiZTQx9pdMpt3dsj">Youtube - HEALIS Channel Playlist - TRIADB Supplier Part Catalog (SPC)</a></li>
+<li><a href="http://connected-data.london/connected-data-london-2017/">Connected Data London - 2017 Event</a></li>
+</ul>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tags/programming/">Programming</a>
+  
+  <a class="badge badge-light" href="/en/tags/software/">Software</a>
+  
+  <a class="badge badge-light" href="/en/tags/application_programming_interface/">Application_programming_interface</a>
+  
+  <a class="badge badge-light" href="/en/tags/database/">Database</a>
+  
+  <a class="badge badge-light" href="/en/tags/database_management_system/">Database_management_system</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_semiotic_hypergraph/">associative_semiotic_hypergraph</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
+  
+  <a class="badge badge-light" href="/en/tags/topic_map/">Topic_map</a>
+  
+  <a class="badge badge-light" href="/en/tags/correlation_database/">Correlation_database</a>
+  
+  <a class="badge badge-light" href="/en/tags/database_model/">Database_model</a>
+  
+  <a class="badge badge-light" href="/en/tags/intersystems_cache/">InterSystems_Caché</a>
+  
+</div>
+
+
+    
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:athanassios@healis.eu" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/ahatzis" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/athanhat" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-quora"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://vimeo.com/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-vimeo"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://stackoverflow.com/users/5364935/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//healiseu.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/en/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          Powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/healiseu/" target="_blank" rel="noopener" title="Star Me"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/healiseu" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCoCkNTkn1dAbtyr5EMvzc7w/videos" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener" title="Connect with Me"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener" title="Contact Me"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:athanassios.hatzis?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener" title="Ping Me"><i class="fab fa-quora" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://disqus.com/home/forums/healiseu/" target="_blank" rel="noopener" title="Discuss on Disqus"><i class="fas fa-comments" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1013 @@
+<HTML>
+<HEAD>
+  <TITLE>Computer_Science.html</TITLE>
+  <meta NAME = "GENERATOR"          CONTENT = "IHMC CmapTools vr. 4.12 ">
+  <meta NAME = "KEYWORDS"           CONTENT = "Athanassios I. Hatzis, Concept Map, cmap, CmapTools, IHMC, Computer_Science,  Computational Linguistics,  Health Information Systems (Health Informatics),  Information Retrieval,  Cognitive Science,  Information Systems,  Database,  Data Management,  Computer Graphics,  Robotics,  Data Mining,  Linguistics,  Expert Systems,  Information Technology,  Operating Systems,  Computer Vision,  Software Engineering,  Sociology,  Programming Paradigms,  Theory of Computation,  Parallel Computing">
+  <meta NAME = "DESCRIPTION"        CONTENT = "This Concept Map, created with IHMC CmapTools, has information related to: Computer_Science, Health Information Systems (Health Informatics) is a field of Information Systems, Information Systems is a branch of Computer Science, Program Semantics is a field of Programming Languages, Multimedia is a field of Information Science, Computational Neuroscience is a field of Neuroscience, Human-Computer Interaction is a branch of Computer Science, Expert Systems is a field of Artificial Intelligence, Computer Graphics is a branch of Computer Science, Management Information Systems is a field of Information Systems, Automated Reasoning is a field of Cognitive Science, Information Retrieval is a field of Information Science, Computational Sociology is a field of Sociology, Computational Linguistics is a field of Computer Science, Computational Linguistics is a field of Linguistics, Machine Learning is a field of Cognitive Science, Database is a field of Information Science, Speech Recognition is a field of Cognitive Science, Computational Sociology is a field of Computer Science, Computer Networks is a branch of Computer Science, Data Mining is a field of Information Science">
+  <meta NAME = "AUTHOR"             CONTENT = "IHMC CmapTools">
+  <meta HTTP-EQUIV = "Content-Type" CONTENT = "text/html; charset = UTF-8">
+  <script LANGUAGE="JavaScript1.2">
+  <!--
+    //  PopUp --
+    //  Institute for Human and Machine Cognition, http://www.ihmc.us/
+    //  CmapTools, Version 5.03, http://cmap.ihmc.us/
+    //  Support at http://cmapforum.ihmc.us/
+    //  Modify by: CmapTools Developers, cmapsupport AT ihmc DOT us
+    //  Date: 10/06/2009
+
+    var IE = 0;
+    var IE4PC = 0;
+    var NS = 0;
+    var GECKO = 0;
+
+    var openpopups = new Array();
+
+    if (document.all) {                 // Internet Explorer Detected
+	   IE = true;	
+    }
+    else if (document.layers) {         // Netscape Navigator Detected
+	   NS = true;	
+    }
+    else if (document.getElementById) { // Netscape 6 Detected
+       GECKO = true;
+    }
+    else {
+	   alert("Unrecognized Browser Detected::\nSorry, your browser is not compatible.");
+    }
+
+    if (IE)
+    {
+	   OS = navigator.platform;
+	   VER = new String(navigator.appVersion);
+	   VER = VER.substr (0, VER.indexOf(" "));
+	   if ((VER < 4.8) && (OS == "Win32")) 
+	   {
+	       IE4PC = 1;
+	   }
+    }
+
+    function handleResize() {
+	    location.reload();
+	    return false;
+    }
+
+
+    if ((NS) && (navigator.platform == "MacPPC")) {
+	   window.captureEvents (Event.RESIZE);
+	   window.onresize = handleResize;
+    }
+
+    function openResource(event, resourcePath, resourceName, resourceType)
+    {
+	   var newwindow;
+
+       // Resource MIMETypes are enumerated as follows: 
+       // cMap     = Undefined
+       // Image    = 0
+       // Video    = 1
+       // Text     = 2
+       // Audio    = 3
+
+       popDown();
+
+	   switch (resourceType) 
+	   {
+	    case 0:     //Image
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<center><img src=\"';
+                    text += resourcePath;
+                    text +='\"> </center>';
+             break;
+		
+	    case 1:  text   // Video
+		     newwindow = window.open (resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+                     var text ='<embed src=\"';
+                     text += resourcePath;
+                     text +='\" autostart=true> </embed> ';
+             break;
+
+	    case 2:      // Text or Unknown 
+		     newwindow = window.open(resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+              break;
+
+	    case 3:       // Audio
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<embed src=\"';
+                    text += resourcePath;
+                    text +='\" autoplay=true> </embed> ';
+             break;
+
+	    case 4:
+                    newwindow = window.open(resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+	     break;
+	    }
+        return;
+    }
+
+
+
+    function popUpEvt(event, popupName)
+    {
+	popDown();
+
+	if (GECKO)
+	{
+	    document.getElementById(popupName).style.left = event.pageX;
+	    document.getElementById(popupName).style.top = event.pageY;
+	    document.getElementById(popupName).style.background = "#B3B3B3";
+	    document.getElementById(popupName).style.visibility = "visible";
+	    openpopups.push(popupName);
+	}
+	else if (NS) 
+	{
+	    document.layers[popupName].moveTo (event.pageX, event.pageY);
+	    document.layers[popupName].bgColor = "#B3B3B3";
+	    document.layers[popupName].visibility = "show";
+	    openpopups.push(popupName);
+	}
+	else // if (IE)
+	{
+	    window.event.cancelBubble = true;
+	    if (!IE4PC) {
+		document.all[popupName].style.backgroundColor = "#B3B3B3";
+	    }	
+	    document.all[popupName].style.left = window.event.clientX + document.body.scrollLeft;
+	    document.all[popupName].style.top = window.event.clientY + document.body.scrollTop;
+	    document.all[popupName].style.visibility = "visible";
+	    openpopups[openpopups.length] = popupName;
+	}
+	return false;
+    }
+
+    function popDown()
+    {
+	var popupname;
+	
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+		document.getElementById(popupname).style.visibility = "hidden";
+	    }
+	    else if (NS) {
+		document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+		document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+	return;
+    }
+
+    function popDownNoGecko() 
+    {
+	var popupname;
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+           //  document.getElementById(popupname).style.visibility = "hidden"; 
+	        return;   // erased for test purposes
+	    }  
+	    else if (NS) {
+	        document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+	        document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+        return;
+    }
+  //-->
+  </script>
+</HEAD>
+<BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+<noscript>
+  <table width=90% cellpadding=10>
+    <tr>
+      <td bgcolor=ff4447>
+        <font color=000000 size=+1 face="helvetica">
+        <h1>WARNING:</h1>
+        <b>JavaScript is turned OFF.  None of the links on this concept map will <br>
+           work until it is reactivated.
+          <p>
+            <a href="http://cmap.ihmc.us/docs/EnablingJavaScript.html">
+                            If you need help turning JavaScript On, click here.
+            </a>
+          </p>
+        </b>
+      </td>
+    </tr>
+  </table>
+This Concept Map, created with IHMC CmapTools, has information related to: Computer_Science, Health Information Systems (Health Informatics) is a field of Information Systems, Information Systems is a branch of Computer Science, Program Semantics is a field of Programming Languages, Multimedia is a field of Information Science, Computational Neuroscience is a field of Neuroscience, Human-Computer Interaction is a branch of Computer Science, Expert Systems is a field of Artificial Intelligence, Computer Graphics is a branch of Computer Science, Management Information Systems is a field of Information Systems, Automated Reasoning is a field of Cognitive Science, Information Retrieval is a field of Information Science, Computational Sociology is a field of Sociology, Computational Linguistics is a field of Computer Science, Computational Linguistics is a field of Linguistics, Machine Learning is a field of Cognitive Science, Database is a field of Information Science, Speech Recognition is a field of Cognitive Science, Computational Sociology is a field of Computer Science, Computer Networks is a branch of Computer Science, Data Mining is a field of Information Science
+
+</noscript>
+
+<map name="Computer_Science.html">
+  <area shape="rect"
+        href="1KC2NP2K8I17JGBWWI91ZItextIhtml"
+        onClick="popUpEvt(event,'1KC2NP2K8I17JGBWWI91ZItextIhtml'); return false;"
+        coords="574,1051,592,1069">
+  <area shape="rect"
+        href="1KC2FDYNHIRPVQNFI2RBItextIhtml"
+        onClick="popUpEvt(event,'1KC2FDYNHIRPVQNFI2RBItextIhtml'); return false;"
+        coords="1247,289,1265,307">
+  <area shape="rect"
+        href="1KC2GLDD5I28S9WGPI48VItextIhtml"
+        onClick="popUpEvt(event,'1KC2GLDD5I28S9WGPI48VItextIhtml'); return false;"
+        coords="82,967,100,985">
+  <area shape="rect"
+        href="1KC2G5LQ9I1G8JBT5I3MBItextIhtml"
+        onClick="popUpEvt(event,'1KC2G5LQ9I1G8JBT5I3MBItextIhtml'); return false;"
+        coords="1102,877,1120,895">
+  <area shape="rect"
+        href="1KC2D7913I1YY8Y69I1VBItextIhtml"
+        onClick="popUpEvt(event,'1KC2D7913I1YY8Y69I1VBItextIhtml'); return false;"
+        coords="876,213,894,231">
+  <area shape="rect"
+        href="1KC2GL58XI1FFXWZNI48DItextIhtml"
+        onClick="popUpEvt(event,'1KC2GL58XI1FFXWZNI48DItextIhtml'); return false;"
+        coords="72,900,90,918">
+  <area shape="rect"
+        href="1KC2GKFH8ICSFM0MI474ItextIhtml"
+        onClick="popUpEvt(event,'1KC2GKFH8ICSFM0MI474ItextIhtml'); return false;"
+        coords="76,726,94,744">
+  <area shape="rect"
+        href="1KC2DQFZNI1RBG5KBI26YItextIhtml"
+        onClick="popUpEvt(event,'1KC2DQFZNI1RBG5KBI26YItextIhtml'); return false;"
+        coords="521,117,539,135">
+  <area shape="rect"
+        href="1KC2G6SVHI18ZCH9CI3NYItextIhtml"
+        onClick="popUpEvt(event,'1KC2G6SVHI18ZCH9CI3NYItextIhtml'); return false;"
+        coords="1356,778,1374,796">
+  <area shape="rect"
+        href="1KC2GKZRJI1LJ4PHTI47WItextIhtml"
+        onClick="popUpEvt(event,'1KC2GKZRJI1LJ4PHTI47WItextIhtml'); return false;"
+        coords="57,820,75,838">
+  <area shape="rect"
+        href="1KC2M97RZIJLPZHYI8NPItextIhtml"
+        onClick="popUpEvt(event,'1KC2M97RZIJLPZHYI8NPItextIhtml'); return false;"
+        coords="504,1262,522,1280">
+  <area shape="rect"
+        href="1KC2G6HGPI63GC9SI3N9ItextIhtml"
+        onClick="popUpEvt(event,'1KC2G6HGPI63GC9SI3N9ItextIhtml'); return false;"
+        coords="1291,834,1309,852">
+  <area shape="rect"
+        href="1KC2FD7H0IRNC0XGI2P9ItextIhtml"
+        onClick="popUpEvt(event,'1KC2FD7H0IRNC0XGI2P9ItextIhtml'); return false;"
+        coords="1013,45,1031,63">
+  <area shape="rect"
+        href="1KC2DC4MSI2CT41RXI20PItextIhtml"
+        onClick="popUpEvt(event,'1KC2DC4MSI2CT41RXI20PItextIhtml'); return false;"
+        coords="84,343,102,361">
+  <area shape="rect"
+        href="1KC2GHDDMI268Q7P5I461ItextIhtml"
+        onClick="popUpEvt(event,'1KC2GHDDMI268Q7P5I461ItextIhtml'); return false;"
+        coords="1404,1099,1422,1117">
+  <area shape="rect"
+        href="1KC2D6HLKI1D853J2I1SPItextIhtml"
+        onClick="popUpEvt(event,'1KC2D6HLKI1D853J2I1SPItextIhtml'); return false;"
+        coords="1040,471,1058,489">
+  <area shape="rect"
+        href="1KC2M9S51IV991W3I8PRItextIhtml"
+        onClick="popUpEvt(event,'1KC2M9S51IV991W3I8PRItextIhtml'); return false;"
+        coords="883,1191,901,1209">
+  <area shape="rect"
+        href="1KC2FX30XI1WPDJRTI3CKItextIhtml"
+        onClick="popUpEvt(event,'1KC2FX30XI1WPDJRTI3CKItextIhtml'); return false;"
+        coords="1410,601,1428,619">
+  <area shape="rect"
+        href="1KBWDCMM0I1QPN28WI24YItextIhtml"
+        onClick="popUpEvt(event,'1KBWDCMM0I1QPN28WI24YItextIhtml'); return false;"
+        coords="172,637,190,655">
+  <area shape="rect"
+        href="1KC2DNG0SI2BG6DI257ItextIhtml"
+        onClick="popUpEvt(event,'1KC2DNG0SI2BG6DI257ItextIhtml'); return false;"
+        coords="232,191,250,209">
+  <area shape="rect"
+        href="1KC2D45V8IY1GF09I1S5ItextIhtml"
+        onClick="popUpEvt(event,'1KC2D45V8IY1GF09I1S5ItextIhtml'); return false;"
+        coords="107,262,125,280">
+  <area shape="rect"
+        href="1KC2GGWCMI16MP8DDI456ItextIhtml"
+        onClick="popUpEvt(event,'1KC2GGWCMI16MP8DDI456ItextIhtml'); return false;"
+        coords="1268,1123,1286,1141">
+  <area shape="rect"
+        href="1KC2P12LBI85N55WI9VDItextIhtml"
+        onClick="popUpEvt(event,'1KC2P12LBI85N55WI9VDItextIhtml'); return false;"
+        coords="1440,126,1458,144">
+  <area shape="rect"
+        href="1KC2D80H5I282TBWJI1W3ItextIhtml"
+        onClick="popUpEvt(event,'1KC2D80H5I282TBWJI1W3ItextIhtml'); return false;"
+        coords="426,684,444,702">
+  <area shape="rect"
+        href="1KC2GC249I215FN8QI426ItextIhtml"
+        onClick="popUpEvt(event,'1KC2GC249I215FN8QI426ItextIhtml'); return false;"
+        coords="1145,1135,1163,1153">
+  <area shape="rect"
+        href="1KC2D6T0DIBPB1T8I1THItextIhtml"
+        onClick="popUpEvt(event,'1KC2D6T0DIBPB1T8I1THItextIhtml'); return false;"
+        coords="1035,599,1053,617">
+  <area shape="rect"
+        href="1KC2M9KGCI15FWC4VI8P6ItextIhtml"
+        onClick="popUpEvt(event,'1KC2M9KGCI15FWC4VI8P6ItextIhtml'); return false;"
+        coords="723,1233,741,1251">
+  <area shape="rect"
+        href="1KC2DDNBCIS9Z4XWI22RItextIhtml"
+        onClick="popUpEvt(event,'1KC2DDNBCIS9Z4XWI22RItextIhtml'); return false;"
+        coords="936,301,954,319">
+  <area shape="rect"
+        href="1KC2GM8NFI3G2WCVI4BYItextIhtml"
+        onClick="popUpEvt(event,'1KC2GM8NFI3G2WCVI4BYItextIhtml'); return false;"
+        coords="313,1026,331,1044">
+  <area shape="rect"
+        href="1KC2D0X92I27VJ4M7I1PLItextIhtml"
+        onClick="popUpEvt(event,'1KC2D0X92I27VJ4M7I1PLItextIhtml'); return false;"
+        coords="342,113,360,131">
+  <area shape="rect"
+        href="1KC2DLN5YIYND3CGI249ItextIhtml"
+        onClick="popUpEvt(event,'1KC2DLN5YIYND3CGI249ItextIhtml'); return false;"
+        coords="121,453,139,471">
+  <area shape="rect"
+        href="1KC2FXFGHIH9BTR7I3DNItextIhtml"
+        onClick="popUpEvt(event,'1KC2FXFGHIH9BTR7I3DNItextIhtml'); return false;"
+        coords="1406,682,1424,700">
+  <area shape="rect"
+        href="1KC2GLS32I18JDCY4I49ZItextIhtml"
+        onClick="popUpEvt(event,'1KC2GLS32I18JDCY4I49ZItextIhtml'); return false;"
+        coords="111,1071,129,1089">
+  <area shape="rect"
+        href="1KC2DCFPJIYP5XPWI21DItextIhtml"
+        onClick="popUpEvt(event,'1KC2DCFPJIYP5XPWI21DItextIhtml'); return false;"
+        coords="116,549,134,567">
+  <area shape="rect"
+        href="1KC2GBBVSIQZM53QI405ItextIhtml"
+        onClick="popUpEvt(event,'1KC2GBBVSIQZM53QI405ItextIhtml'); return false;"
+        coords="1023,1134,1041,1152">
+  <area shape="rect"
+        href="1KC2D8DVRI798RPJI1WWItextIhtml"
+        onClick="popUpEvt(event,'1KC2D8DVRI798RPJI1WWItextIhtml'); return false;"
+        coords="904,697,922,715">
+  <area shape="rect"
+        href="1K5JXRF5SI27H7XYBIJMSIx-cmapIx-storable"
+        onClick="popUpEvt(event,'1K5JXRF5SI27H7XYBIJMSIx-cmapIx-storable'); return false;"
+        coords="66,160,84,178">
+  <area shape="rect"
+        href="1K5JXRF5SI27H7XYBIJMSItextIhtml"
+        onClick="popUpEvt(event,'1K5JXRF5SI27H7XYBIJMSItextIhtml'); return false;"
+        coords="49,160,67,178">
+  <area shape="rect"
+        href="1KC2GT8D0I1SY1QZBI4D5ItextIhtml"
+        onClick="popUpEvt(event,'1KC2GT8D0I1SY1QZBI4D5ItextIhtml'); return false;"
+        coords="431,961,449,979">
+  <area shape="rect"
+        href="1KC2GDS2YI1VQCQP6I441ItextIhtml"
+        onClick="popUpEvt(event,'1KC2GDS2YI1VQCQP6I441ItextIhtml'); return false;"
+        coords="1435,997,1453,1015">
+  <area shape="rect"
+        href="1KC2FWHZYI196JN3KI3BQItextIhtml"
+        onClick="popUpEvt(event,'1KC2FWHZYI196JN3KI3BQItextIhtml'); return false;"
+        coords="1394,510,1412,528">
+  <area shape="rect"
+        href="1KC2NR0S6I10T666I94SItextIhtml"
+        onClick="popUpEvt(event,'1KC2NR0S6I10T666I94SItextIhtml'); return false;"
+        coords="923,940,941,958">
+  <area shape="rect"
+        href="1KC2D1D89I27QG3QQI1Q3ItextIhtml"
+        onClick="popUpEvt(event,'1KC2D1D89I27QG3QQI1Q3ItextIhtml'); return false;"
+        coords="965,400,983,418">
+  <area shape="rect"
+        href="1KC2FDGMSI13Y82M9I2Q5ItextIhtml"
+        onClick="popUpEvt(event,'1KC2FDGMSI13Y82M9I2Q5ItextIhtml'); return false;"
+        coords="1229,105,1247,123">
+  <area shape="rect"
+        href="1KC2D9XQCI2DBSC6WI1ZLItextIhtml"
+        onClick="popUpEvt(event,'1KC2D9XQCI2DBSC6WI1ZLItextIhtml'); return false;"
+        coords="731,156,749,174">
+  <area shape="rect"
+        href="1KC2NPFWLI9CD8G7I930ItextIhtml"
+        onClick="popUpEvt(event,'1KC2NPFWLI9CD8G7I930ItextIhtml'); return false;"
+        coords="771,1003,789,1021">
+  <area shape="rect"
+        href="1KBWD9M91IH51L1WI1WNItextIhtml"
+        onClick="popUpEvt(event,'1KBWD9M91IH51L1WI1WNItextIhtml'); return false;"
+        coords="530,451,548,469">
+  <area shape="rect"
+        href="1K3H5K9QWI1RWL99NI16QItextIhtml"
+        onClick="popUpEvt(event,'1K3H5K9QWI1RWL99NI16QItextIhtml'); return false;"
+        coords="514,57,532,75">
+</map>
+
+<center>
+  <table width=* height=* cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td valign=center align=center>
+        <img USEMAP="#Computer_Science.html"
+             SRC="Computer_Science.jpg"
+             ALIGN=middle
+             BORDER=0
+             onClick=popDown();>
+      </td>
+    </tr>
+    <tr>
+      <td VALIGN=top ALIGN=right>
+        <table>
+          <tr>
+            <td ALIGN=right VALIGN=middle>
+              <map NAME="CmapToolsTrademark">
+                <area SHAPE="rect"
+                      href="http://cmap.ihmc.us/"
+                      onClick="openResource(event,'http://cmap.ihmc.us/', 0, 2); return false;"
+                      coords="1,1,210,50">
+              </map>
+            </td>
+          </tr>
+          <tr>
+            <td  ALIGN=right VALIGN=middle>
+              <img USEMAP="#CmapToolsTrademark"
+                   SRC="CmapToolsTrademark.gif" 
+                   ALT="IHMC Cmap Tools Trademark" width="210" height="50"
+                   ALIGN=middle
+                   BORDER=0>
+            </td>
+            <td VALIGN=middle>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+</BODY>
+</HTML>
+<div id="1KC2NP2K8I17JGBWWI91ZItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Computational_linguistics "TITLE="">
+      Computational_linguistics
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2FDYNHIRPVQNFI2RBItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Health_informatics "TITLE="">
+      Health_informatics
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2GLDD5I28S9WGPI48VItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Information_retrieval "TITLE="">
+      Information_retrieval
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2G5LQ9I1G8JBT5I3MBItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Cognitive_science "TITLE="">
+      Cognitive_science
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2D7913I1YY8Y69I1VBItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Information_systems "TITLE="">
+      Information_systems
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2GL58XI1FFXWZNI48DItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Database "TITLE="">
+      Database
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2GKFH8ICSFM0MI474ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Data_management "TITLE="">
+      Data_management
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2DQFZNI1RBG5KBI26YItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Computer_graphics "TITLE="">
+      Computer_graphics
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2G6SVHI18ZCH9CI3NYItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Robotics "TITLE="">
+      Robotics
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2GKZRJI1LJ4PHTI47WItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Data_mining "TITLE="">
+      Data_mining
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2M97RZIJLPZHYI8NPItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Linguistics "TITLE="">
+      Linguistics
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Portal:Linguistics "TITLE="">
+      Linguistics-Portal
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2G6HGPI63GC9SI3N9ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Expert_systems "TITLE="">
+      Expert_systems
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2FD7H0IRNC0XGI2P9ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Information_technology "TITLE="">
+      Information_technology
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2DC4MSI2CT41RXI20PItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Operating_systems "TITLE="">
+      Operating_systems
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2GHDDMI268Q7P5I461ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Computer_vision "TITLE="">
+      Computer_vision
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2D6HLKI1D853J2I1SPItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Software_engineering "TITLE="">
+      Software_engineering
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2M9S51IV991W3I8PRItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Sociology "TITLE="">
+      Sociology
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Portal:Sociology "TITLE="">
+      Sociology-Portal
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2FX30XI1WPDJRTI3CKItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Programming_paradigms "TITLE="">
+      Programming_paradigms
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KBWDCMM0I1QPN28WI24YItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Theory_of_computation "TITLE="">
+      Theory_of_computation
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2DNG0SI2BG6DI257ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Parallel_computing "TITLE="">
+      Parallel_computing
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2D45V8IY1GF09I1S5ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Computer_networking "TITLE="">
+      Computer_networking
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2GGWCMI16MP8DDI456ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Speech_recognition "TITLE="">
+      Speech_recognition
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2P12LBI85N55WI9VDItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Health_care "TITLE="">
+      Health_care
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2D80H5I282TBWJI1W3ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Information_science "TITLE="">
+      Information_science
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Portal:Library_and_information_science "TITLE="">
+      Information_science-portal
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2GC249I215FN8QI426ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Machine_learning "TITLE="">
+      Machine_learning
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2D6T0DIBPB1T8I1THItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Programming_languages "TITLE="">
+      Programming_languages
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2M9KGCI15FWC4VI8P6ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Neuroscience "TITLE="">
+      Neuroscience
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Portal:Neuroscience "TITLE="">
+      Neuroscience-Portal
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2DDNBCIS9Z4XWI22RItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Distributed_computing "TITLE="">
+      Distributed_computing
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2GM8NFI3G2WCVI4BYItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Knowledge_management "TITLE="">
+      Knowledge_management
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2D0X92I27VJ4M7I1PLItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Algorithm "TITLE="">
+      Algorithm
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2DLN5YIYND3CGI249ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Computer_architecture "TITLE="">
+      Computer_architecture
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2FXFGHIH9BTR7I3DNItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Compilers "TITLE="">
+      Compilers
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2GLS32I18JDCY4I49ZItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Information_management "TITLE="">
+      Information_management
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2DCFPJIYP5XPWI21DItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Computer_security "TITLE="">
+      Computer_security
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2GBBVSIQZM53QI405ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Automated_reasoning "TITLE="">
+      Automated_reasoning
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2D8DVRI798RPJI1WWItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Artificial_intelligence "TITLE="">
+      Artificial_intelligence
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5JXRF5SI27H7XYBIJMSIx-cmapIx-storable" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="Neurorganon_Home.html "TITLE="">
+      Neurorganon_Home
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5JXRF5SI27H7XYBIJMSItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://neurorganon.org/ "TITLE="">
+      Navigate to the Home Page
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2GT8D0I1SY1QZBI4D5ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Multimedia "TITLE="">
+      Multimedia
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2GDS2YI1VQCQP6I441ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Natural_language_processing "TITLE="">
+      Natural_language_processing
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2FWHZYI196JN3KI3BQItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Program_semantics "TITLE="">
+      Program_semantics
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2NR0S6I10T666I94SItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Computational_sociology "TITLE="">
+      Computational_sociology
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2D1D89I27QG3QQI1Q3ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Data_structures "TITLE="">
+      Data_structures
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2FDGMSI13Y82M9I2Q5ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Management_information_systems "TITLE="">
+      Management_information_systems
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2D9XQCI2DBSC6WI1ZLItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Human-computer_interaction "TITLE="">
+      Human-computer_interaction
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KC2NPFWLI9CD8G7I930ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Computational_neuroscience "TITLE="">
+      Computational_neuroscience
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1KBWD9M91IH51L1WI1WNItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Computer_sciences "TITLE="">
+      Computer_sciences
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Portal:Computer_Science "TITLE="">
+      Computer_Science-Portal
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3H5K9QWI1RWL99NI16QItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/List_of_academic_disciplines#Computer_sciences "TITLE="">
+      List_of_academic_disciplines-Computer_sciences
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+

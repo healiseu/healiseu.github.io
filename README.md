@@ -1,2 +1,4 @@
-# healiseu.github.io
-Repository for the web site https://healis.eu
+# HEALIS
+## Healthy Information Systems/Services
+
+Official repository for the site https://healis.eu

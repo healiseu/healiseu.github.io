@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software_license on HEALIS</title>
+    <link>https://healis.eu/en/tags/software_license/</link>
+    <description>Recent content in Software_license on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Tue, 10 Aug 2010 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/en/tags/software_license/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Open Data vs Open Source Software</title>
+      <link>https://healis.eu/en/post/20100810/</link>
+      <pubDate>Tue, 10 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20100810/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;./featured.jpg&#34; alt=&#34;jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This is a summary from a post that I wrote for &lt;a href=&#34;http://comments.gmane.org/gmane.org.misc.open-knowledge-foundation.general/1485&#34;&gt;Open Knowledge Foundation discussion list&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;{&amp;lt; toc &amp;gt;}&lt;/p&gt;
+&lt;h2 id=&#34;definitions&#34;&gt;Definitions&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Open_Data&#34;&gt;Wikipedia Open Data&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Open_Source&#34;&gt;Wikipedia Open Source&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Open Source licenses control the use of computer programs (software) while open data licenses such as &lt;a href=&#34;http://www.opendatacommons.org/licenses/odbl/&#34;&gt;Open Database License (ODbL)&lt;/a&gt; concern primarily the use of databases and their content. Nevertheless a database often constitutes part of the software. Therefore there is some overlap between the two. The following questions and answers demonstrate a real life scenario that is based on &lt;a href=&#34;https://healis.eu/en/project/medilig/&#34;&gt;MEDILIG project&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;qa-session&#34;&gt;Q&amp;amp;A Session&lt;/h2&gt;
+&lt;h3 id=&#34;why-do-you-apply-two-licenses-odbl-and-gpl-for-the-medilig-project-&#34;&gt;Why do you apply two licenses ODbL and GPL for the MEDILIG project ?&lt;/h3&gt;
+&lt;p&gt;MEDILIG project is a software product/service and it also includes a database. The &lt;!-- raw HTML omitted --&gt;use of the database&lt;!-- raw HTML omitted --&gt; cannot be covered with a GPL license.&lt;/p&gt;
+&lt;h3 id=&#34;software-is-normally-covered-by-software-licenses-why-did-not-you-apply-only-gpl-license-&#34;&gt;Software is normally covered by software licenses. Why did not you apply only GPL license ?&lt;/h3&gt;
+&lt;p&gt;GPL does not tell you anything about who controls the database and what are the rights of the user on the database. For example consider the deployment scenario where the software is open but the database is locked.  Does the user have the right to unlock the database, does he have the right to export or import his data from/to the database and in what extent? Can he create a derivative database or use the existing one collectively as part of other system developed? Software developers and/or vendors often use databases as leverage to lock users into support contracts and licenses. ODbL grant rights to the user and prevents this behaviour. It is section 3.0 and 4.0 of the full license text .&lt;/p&gt;
+&lt;h3 id=&#34;what-parts-of-the-database-you-cover-with-odbl-&#34;&gt;What parts of the database you cover with OdBL ?&lt;/h3&gt;
+&lt;p&gt;Section 2.2a of ODbL license says that it is likely to cover database model or schema. This is true, you may cover the general design, but you cannot cover  specific details of the database schema, e.g. Microsoft SQL Server implementation. You can do that only by GPL because it is coding. Another useful distinction between ODbL and GNU GPL.&lt;/p&gt;
+&lt;h3 id=&#34;what-about-the-contents-of-the-database-&#34;&gt;What about the contents of the database ?&lt;/h3&gt;
+&lt;p&gt;There is the content of look-up tables which is usually static, it hardly ever changes, and the content of main tables where you expect to find all sort of information that is added dynamically or exists, such as factual data, images, etc. In my opinion there should be a distinction of the two because look-up data is part of the design and/or customisation of the database. On the contrary content data that the user added on an empty database delivered by the developer have a separate copyright.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Healthcare Software on Proprietary OS</title>
+      <link>https://healis.eu/en/post/20100412/</link>
+      <pubDate>Mon, 12 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20100412/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;./featured.jpg&#34; alt=&#34;jpg&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;extract-from-a-post-to-gnusolidario-forum-of-luis-falcon&#34;&gt;Extract from a post to gnusolidario forum of Luis Falcon&lt;/h2&gt;
+&lt;p&gt;Recently I released to the public MEDILIG project v1.0 (MEDILIG Source at Sourceforge) under a combination of two licenses GPL and ODbL.&lt;/p&gt;
+&lt;p&gt;The current implementation is based on a combination of Microsoft SQL Server and Microsoft Access and there is minimal coding. Therefore a quick conclusion would be that this is a health software under a proprietary operating system. But that limits completely the horizon for this project. Let me throw here a few critical MEDILIG features for discussion.&lt;/p&gt;
+&lt;p&gt;I chose to implement the system under Microsoft Technology for two reasons&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Microsoft Technology is still very popular and there are millions of users that use a Windows PC.&lt;/li&gt;
+&lt;li&gt;Microsoft SQL Server and Microsoft Access are also extremely popular. It is easy to maintain the server, it is easy to build a complex application in Access in days if not in a few weeks time! Leave aside all the toolkits for Microsoft Access and the great connectivity with other Microsoft Office applications. Since EMR/EHR applications need a lot of tuning and customization to cover the specific needs of the professional, I believe that this combination wins in speed as it concerns Rapid Application Development.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion:&lt;/strong&gt; The main financial burden for the user is not the cost to run you application on a proprietary system; this may come free or with a very low cost for the user (e.g. included in the hardware price). It has to do with the the resources spent on building, modifying, updating, maintaining, expanding an application, and it also has to do with connectivity and interoperability issues.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Now I will attempt to touch the last bit. Technical interoperability in HIT is only part of the problem. There is the semantics problem and the process/workflow dimension. You mentioned MEDICAL running in many different architectures. I consider the main point to be the architecture inside MEDICAL. If MEDICAL is based in a platform independent architecture, then that is the key issue for success. This is the main driving force behind MEDILIG&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;MEDILIG is using an extensive database schema for continuous health care that follow standard clinical practice terms with an easy nomenclature for developers. This is the main asset of MEDILIG, this is where most of my effort was concentrated on. I will be glad if others start comparing MEDILIG schema with any other open EMR/EHR software schema to realize the differences in the domain architecture. By the way, I started this project because I could hardly see any extensive relational database schema for continuous care. The domain schema in many projects is either too complex to understand, or it is hidden, etc. Why have we abandoned so easily relational databases for an object oriented approach? Aren’t there so many legacy and proprietary systems that are based on RDBMS. How easily migration can be achieved?&lt;/li&gt;
+&lt;li&gt;I am an ambassador of open architecture techniques and not open software or open OS. I want to solve a domain problem as quickly as possible and as cheap as possible. MEDILIG supports complete separation of the database schema from the presentation layer. I strongly support the independent development for the database layer. Has there been any agreement worldwide on a minimal database ER schema for XHR (EHR, EMR, CCR, PHR,….) ? Have they discussed extensively how important is for a health professional to keep his data on a privately own database?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Finally a few lines about the presentation layer, I am skipping the business layer. The modern approach is that there is an integrated environment that provides you the GUI tools to build it and there is some way to connect your form/GUI with the database layer. MEDILIG is using Access only for demonstration purposes, you will see that the code is minimal. I believe that open health IT community of developers/user should head for open services. I have been inspired also from the Infopath Technology, particularly the idea that you can use the form with a set of data independent of the database server. I believe the most successful XHR application would be the one that offers the user the same flexibility as a word processor document or a spreadsheet. Many health professionals are still stuck with pen and paper. Perhaps the easy transition to the e-health era is to use electronic forms and documents on a tablet or on a PDA.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
