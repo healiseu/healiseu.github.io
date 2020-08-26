@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" 		href="menu_assets/styles.css" type="text/css">
+      <link rel="stylesheet" 		href="home.css" type="text/css">
+
+      <meta charset="UTF-8">
+      <meta name="description" 		content="NULO is an Upper Level Ontology and a resource description framework to link data based on Topic Maps technology">
+      <meta name="robots" 		content="index, follow">
+      <meta name="keywords" 		content="ontology, topic map, concept map, upper level ontology, semantic web, linked data, directed graph">
+      <meta name="author" 		content="http://www.linkedin.com/in/athanassios">
+
+      <title> Neurorganon Upper Level Ontology (NULON) - Key Concepts </title>
+
+  </head>
+
+  <body>
+
+      <div id='cssmenu'>
+
+      <ul>
+         <li> <a href="../index.html">
+                  <img src="healis-favicon-260x260.png"
+                      width="63" height="64" alt="HEALIS LOGO" title="HEALIS LOGO"> </a>
+         </li>
+         <li class='has-sub'><a href='index.html'><span>NULON</span></a>
+            <ul>
+                <li><a href='../index.html'><span>HEALIS Project</span></a>
+                <li><a href='toc.htm'><span>HTML Browsing</span></a></li>
+            </ul>
+         </li>
+         <li class='active '><a href='#'>
+                                <span>Examples</span></a>
+            <ul>
+                <li><a href='key_concepts.htm'>
+                        <span>Key Concepts</span></a></li>
+            </ul>
+         </li>
+         <li><a href='#'><span>Concept Maps</span></a>
+            <ul>
+              <li><a href='ConceptMaps/Overview.html'>
+                      <span>Overview</span></a></li>
+              <li><a href='ConceptMaps/Information_Resource.html'>
+                      <span>Information Representation</span></a></li>
+              <li><a href='ConceptMaps/TMDM_NULO.html'>
+                      <span>Metadata Modeling</span></a></li>
+              <li><a href='ConceptMaps/Neurorganon_Upper_Level_Ontology.html'>
+                      <span>Neurorganon Categories</span></a></li>
+              <li><a href='ConceptMaps/20120302-Presentation.html'>
+                      <span>Web Evolution 1</span></a></li>
+              <li><a href='ConceptMaps/20120302-Presentation-Web3.html'>
+                      <span>Web Evolution 2</span></a></li>
+              <li><a href='ConceptMaps/Abstraction_Principles.html'>
+                      <span>Abstraction Principles</span></a></li>
+              <li><a href='ConceptMaps/House.html'>
+                      <span>House</span></a></li>
+              <li><a href='ConceptMaps/VisiCalc.html'>
+                      <span>VisiCalc</span></a></li>
+              <li><a href='ConceptMaps/Linguistics.html'>
+                      <span>Linguistics</span></a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+
+    <header>
+	    <h1> NULO Key Concepts </h1>
+    </header>
+
+    <div id="main_content">
+
+      <p>
+
+      <em>TMAP-TIR</em>:An example in Linear Topic Map notation: <br>
+      <code>[AHatzis = "Athanassios I. Hatzis" @"http://athanassios.gr"]</code> <br>
+      Topic with ID=AHatzis represents a person.</p>
+
+      <p>
+      <em>TMAP-BIR</em>:An example in Linear Topic Map notation: <br>
+      <code>[athanassios.gr = "athanassios.gr" %"http://athanassios.gr"]</code> <br>
+      Topic with ID=athanassios.gr represents a web page. It is a personal web page of that person.
+      </p>
+
+
+      <p>More examples:<br>
+
+      <code>[Microsoft-Access = "The Microsoft Access Relational Database" <br> @"http://en.wikipedia.org/wiki/Microsoft_Access"]<code><br><br>
+
+      <code>[myCarDB = "My personal Car database built in Microsoft Access" <br>%"file://home/athanassios/cars.accdb"]<code><br>
+      <br><br>
+      <code>[EDI  ="Electronic_data_interchange" <br>@"http://en.wikipedia.org/wiki/Electronic_data_interchange"]<code><br><br>
+
+      <code>[EDI_Tutorial ="EDI Tutorial 1: Before You Begin the Tutorial" <br>%"http://msdn.microsoft.com/en-us/biztalk/gg153503.aspx"]<code><br>
+      </p>
+
+
+      <p>A topic may represent an n-ary relation, in Topic Maps terminology it is named association,
+      among other topics. For example, a quarternary relation (AGNT-act-annotate) that takes four arguments
+      (AHatzis,comment123,Wikipedia,var145)</p>
+
+      <p>Example in Linear Topic Map notation:</p>
+
+      <pre><code>AGNT-act-annotate  (AHatzis :AGNT-generic,
+		    comment123 :INF-CONT-annotation,
+		    Wikipedia  :TMAP-Topic,
+		    var145 :INF-SDATA-time)</code></pre>
+
+      <p>Topic may represent a role in the n-ary relation. AGNT-generic, INF-CONT-annotation, TMAP-Topic,
+      and INF-SDATA-time are the roles that the four arguments of the AGNT-act-annotate
+      play in the example above</p><br>
+
+      <p>A Topic may also represent an attribute that can be linked to other topics as occurrence type
+      or as an association argument. In the first scenario, this is the well-known
+      EAV(entity, attribute, value) model. Attributes in topic maps terminology are called occurrences.
+      It is like you define a special type of association between the topic and the attribute.
+      The value of the attribute is  maintained internally and it is not exposed to other topics.
+      A rule of a thumb is to use occurrence when you want to link a piece of data, an attribute,
+      to a Topic that is not dependent from other Topics. For example, we can use occurrences to relate
+      time stamps for events, e.g. create, modify.
+      Example:</p>
+
+      <code>{TopicX, INF-CONT-created_on, "11/8/2012 8:11:56 pm"} /INF-SDATA-dateTime</code><br>
+
+
+      <p>In the second case we use attributes as arguments in a relation. A typical example of a sentence model
+      can be the following: "Athanassios was 1m high at the age of four". In NULO we introduce the
+      Variable topic as an enhancement to the existing Topic Map data model.
+      Be aware of the distinction between attributes (occurrences) and relations (associations)
+      because this is another great cause of semantic confusion.
+      In LTM notation we have the following ascertion:</p>
+
+      <code>hasProperty(Athanassios:Agent, varinst223:Height, varinst554:Age)</code><br>
+      <p>
+      Where varinst223 is of type Topic-VAR and takes a value e.g. "was 1m high".<br>
+      Where varinst553 is of type Topic-VAR and takes a value e.g. "at the age of four"<br></p>
+
+      <p>Finally a rather difficult concept to grasp in topic maps that is not related to any usual
+      concept in other software data models is that of scope.  A topic may represent a scope e.g.
+      a natural language or a definition according to some other ontology. Example :</p>
+
+      <code>{AHatzis, NAM-H-first, "Αθανάσιος"} /LANG-GR</code>
+      </div>
+
+      <footer>
+      <h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US">
+          <img alt="Creative Commons License" style="border-width:0 ; margin:0px auto;display:block"
+               src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a>
+      </h3>
+      Neurorganon Upper Level Ontology (<a href="http://neurorganon.org/NULO">NULON</a>) by
+      <a href="http://www.linkedin.com/in/athanassios"> Dr. Athanassios I. Hatzis</a> <br> is licensed under a
+      <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US">
+        Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.<br>
+
+       Version : 1.0, Date Published : 2012-12-04, last change: 2012-12-04 16:00:00 EEST <br>
+            <a href="http://en.wikipedia.org/wiki/Palaio_Faliro">
+                    Palaio Faliro </a>, Athens, Greece
+    </footer>
+  </body>
+</html>

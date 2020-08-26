@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abstraction_(software_engineering) on HEALIS</title>
+    <link>https://healis.eu/en/tags/abstraction_software_engineering/</link>
+    <description>Recent content in Abstraction_(software_engineering) on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Sat, 23 May 2015 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/en/tags/abstraction_software_engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Plerophoria vs Information</title>
+      <link>https://healis.eu/en/post/20150523/</link>
+      <pubDate>Sat, 23 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20150523/</guid>
+      <description>&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;p&gt;The origin of the word information reveals its use. Inform comes from the Latin verb informare, which literally means to give form, or to form an idea. Form is the mold, the container, that is used to give shape, to molten the content. When computer scientists were designing and constructing the first digital computer, at the same time digital information was given birth and shape. Modern computers operate with memory chips and those are mere containers of storing sequences of 0s and 1s.&lt;/p&gt;
+&lt;h2 id=&#34;plērophoria&#34;&gt;Plērophoria&lt;/h2&gt;
+&lt;p&gt;The above interpretation and use of the word information is typical of western culture way of thinking. Although it is convenvient to keep things in boxes, Eastern philosophers used to think differently. The ancient and modern Greek word for information is &lt;code&gt;πληροφορία&lt;/code&gt;, which transliterates (plērophoria) from πλήρης (plērēs) “fully” and φέρω (phorein) frequentative of (pherein) to carry through.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;It literally means &amp;ldquo;bears fully&amp;rdquo; or &amp;ldquo;conveys fully&amp;rdquo;. In modern Greek the word Πληροφορία is still in daily use and has the same meaning as the word information in English&lt;/strong&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This contrasting use and interpretation of the word plerophoria traces its roots back to Socrates, Plato, and Aristotle’s theory of semiosis. In this regard every word plays the role of a symbol, i.e. sign that can be interpreted to communicate information to the one decoding that specific type of sign. There is an intimate and inseperable connection of the signified, i.e. the concept whose meaning the interpretant attempts to decode, with the signifier, i.e. sign’s physical form such as the sound of a word.&lt;/p&gt;
+&lt;p&gt;Every bit of digital information, i.e. 0 or 1 assimilates this triadic relationship. Bits are symbols signified as true or false taking the form of input voltage (signifier). The infinite combination of sequences of such symbols gives us the power to represent anything digitally. Their meaning depends on how we interpret these sequences, as numbers, letters, sounds, color, or anything else that can be encoded. The form of the signifier is not limited to that of a mere container that stores a sequence of 0s and 1s. It is a fully functional level of abstraction connected to higher and lower levels by applying recursively the theory of semiosis until we reach CPU’s binary level.&lt;/p&gt;
+&lt;h2 id=&#34;the-turing-machine&#34;&gt;The Turing Machine&lt;/h2&gt;
+&lt;p&gt;One-tape Turing machine according to Hopcroft and Ullman can be formally defined as a 7-tuple. Elements of this tuple are members of three distinct sets. A non-empty set of tape alphabet symbols, e.g. {0, 1}, a non-empty set of states, e.g. {A, B, C, HALT} and a set of state transitions e.g. {L, R}. Turing machine reads the tape symbols and executes a sequence of instructions according to a state table. Although this is not the space and time to adapt the theory of semiosis on the Turing machine we can clearly see an analogy. The tape symbol plays the role of a sign, the signified instruction is executed according to the interpretation given by the state table, and there is the physical form it takes as a printed text symbol on a white square of a paper tape. You can apply the same logic to the set of states and the set of transitions because these are symbols (signs) too; they can be interpreted and realized in some other physical or non-physical form.&lt;/p&gt;
+&lt;h2 id=&#34;r3dms3dm-abstraction-mechanism&#34;&gt;R3DM/S3DM Abstraction Mechanism&lt;/h2&gt;
+&lt;p&gt;In digital representation of information we can define a chain of interpretations, representations and realizations that are built in a consecutive order. This chain of semiosis reveals the mechanism that we can use to build higher levels of abstraction. At each step the symbol that is used to link together the signifier with the signified can become a fundamental unit, i.e. signifier to build the next level of abstraction. Thus we can move in two directions, we can generalize or we can specialize.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/6514034/6514034-5883270314305028098&#34;&gt;LinkedIn - 20140613 Computational Semiotics - Information vs Plerophoria&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/plerophoria-vs-information-athanassios-i-hatzis-phd/&#34;&gt;LinkedIn - 20150523 Article - Plerophoria vs Information&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Wikipedia, the &lt;a href=&#34;https://en.wikipedia.org/wiki/Information#Etymology&#34;&gt;Etymology section&lt;/a&gt; of the term Information was updated by user Healis with the quoted text above on the 13th of June 2014 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NULON</title>
+      <link>https://healis.eu/en/project/nulon/</link>
+      <pubDate>Tue, 04 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/project/nulon/</guid>
+      <description>&lt;h1 id=&#34;visit-demo-site1&#34;&gt;Visit &lt;a href=&#34;https://healis.eu/en/project/nulon/demo/&#34;&gt;Demo Site&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Neurorganon Upper Level Ontology (NULON) is a top-level ontology also known as a foundation ontology. It includes a list of very general terms grouped in ontological distinct categories , such as &lt;code&gt;address&lt;/code&gt; , &lt;code&gt;agent&lt;/code&gt;, &lt;code&gt;artifact&lt;/code&gt;, &lt;code&gt;device&lt;/code&gt;, &lt;code&gt;document&lt;/code&gt;, &lt;code&gt;space&lt;/code&gt;, &lt;code&gt;time&lt;/code&gt; and many others. These categories determine the most fundamental and the broadest classes of information resources. In NULON members of each class, i.e. vocabulary terms, preserve the same meaning across more specific knowledge domains and other reference work. In that aspect it is similar to a thesaurus because it groups together terms in disjoint collections of mostly similar concepts and it is like a dictionary because it can also include multiple, multi-lingual definitions. It is also an ontology because it defines relations and properties that describe how the terms can be linked together or bind them to web, computerized information resources. NULON recent version, numbers more than 500 core vocabulary terms grouped in 47 maximally disjoint categories. All these terms have been consistently mapped to standard definitions from at least two major reference works in the realm of semantically linked data; OpenCyc and Wikipedia. Respectively their information resources are used as identifiers and references for NULON terms. Most important, at this stage of architectural design what makes NULON really different from other Upper-Level Ontologies is the kind of grouping of the terms and the categories included and described in the οntology. This is the result of a big effort, the whole year, from a single person, to discover and organize efficiently most terms related to information technology, including abstraction, management, computer programming, data storage, metadata, data modeling, identity, reference, design patterns, web use, digital resources and devices to name a few of them.&lt;/p&gt;
+&lt;h2 id=&#34;from-neuron-to-nulon&#34;&gt;From NEURON to NULON&lt;/h2&gt;
+&lt;iframe
+  style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
+  src=&#34;http://www.slideshare.net/slideshow/embed_code/15688664?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt;
+&lt;/iframe&gt;
+
+&lt;p&gt;A computer is a general purpose, programmable electronic device, for storing and processing data. From the era of personal computers to the age of mobile devices, we are storing data into files and web pages. We are processing electronic documents with myriads of formats. We organize our file collections into hierarchies with folders. We use them to share information. So far the digital document is the main vehicle of information exchange and at the same time the obstacle for effective management of information and interconnection of information systems. Information technology industry is still waiting for the promised revolution in terms of web software and services.&lt;/p&gt;
+&lt;p&gt;This partly happened with Web 2.0, the social collaborative user environment that made the need to escape from the document centric computing more urgent. The published content has to be independent of the container so that it can be viewed in many alternative ways and combined easily in many forms. In all these years of computing evolution, there is very little that has been achieved to bridge the gap that exists between the presentation of information to the user and the storage of information on the computer.&lt;/p&gt;
+&lt;p&gt;But what if we could unify and standardize the processing of information from the lowest level of storing data up to the highest level of consuming the data as interconnected pipeline services. Then the flow of information, the interoperability of services and the communication among users can be achieved by defining a new kind of data abstraction that will enhance and gradually replace the electronic document. This is the information resource/reference (IR) a term that is so confused and obscure in Semantic Web technologies.&lt;/p&gt;
+&lt;p&gt;You can now start drawing the analogy from computer networks to neural networks. IR is the fundamental unit of processing similar to “neuron”, and the Neurorganon project has already implemented IR in NULON (Neurorganon Upper Level Ontology), a solid theoretical framework that is the foundation for linking concepts together and attaching binary information resources (BIRs). With NULON we can model any kind of data as a graph with nodes (IRs) and edges (associations) and store permanently the network of information in state of the art database management systems that are also based in graphs, the perfect marriage for data modeling.&lt;/p&gt;
+&lt;p&gt;Most important, with NULON it is now possible to reuse, redesign, repurpose, recombine and interconnect existing software tools for extraction, integration, transformation and visualization of information. Tools will be commercialized, or offered for free, as services and will be used to connect NULON to Web Browser Applications and Graph databases. Eventually we foresee the empowerment of a user with a decentralized network of services that will place him or his community group in charge of a personalized, specialized knowledge graph that will be tailored to his needs.&lt;/p&gt;
+&lt;p&gt;Finally, with respect to organized information, new browsing methods will appear on the web. These will be present in the form of linked autonomous networks of concepts that will be either automatically created or semi-automatically designed by the expert user again with the help of software as a service. There has to be control for the level of detail and the depth of information, as well as a highly interactive environment to experiment with the visualization of data and the various templates that will assist in the dissemination of information from and to the user.&lt;/p&gt;
+&lt;p&gt;Arguably the most challenging aspect on this kind of megaproject is to make the user to feel in a natural and comfortable way as it is most often the case when he is browsing the internet or when he sends an email to a friend. One has to experience the new environment and the services in relation to other internet users and tasks that he/she is already accustomed to accomplishing.&lt;/p&gt;
+&lt;p&gt;The team behind the Neurorganon/NULO project will be aligned with that scope in mind, and the experience and skills of the members involved will eventually guarantee a mature and viable technology and methodology that will lead the development of new generation products and services in the information technology industry.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

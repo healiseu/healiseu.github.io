@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on HEALIS</title>
+    <link>https://healis.eu/en/categories/</link>
+    <description>Recent content in Categories on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Sat, 22 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Application_programming_interface</title>
+      <link>https://healis.eu/en/categories/application_programming_interface/</link>
+      <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/categories/application_programming_interface/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semantic_Web</title>
+      <link>https://healis.eu/en/categories/semantic_web/</link>
+      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/categories/semantic_web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Health_information_technology</title>
+      <link>https://healis.eu/en/categories/health_information_technology/</link>
+      <pubDate>Mon, 13 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/categories/health_information_technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Augmentative_and_alternative_communication</title>
+      <link>https://healis.eu/en/categories/augmentative_and_alternative_communication/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/categories/augmentative_and_alternative_communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assistive_technology</title>
+      <link>https://healis.eu/en/categories/assistive_technology/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/categories/assistive_technology/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

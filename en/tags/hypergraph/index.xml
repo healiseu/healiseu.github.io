@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hypergraph on HEALIS</title>
+    <link>https://healis.eu/en/tags/hypergraph/</link>
+    <description>Recent content in Hypergraph on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/en/tags/hypergraph/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TRIACLICK 2nd Release</title>
+      <link>https://healis.eu/en/post/20191025/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20191025/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;TRIADB is discontinued, page is maintained here for the history.&lt;/strong&gt;
+
+
+&lt;button class=&#34;btn  btn-danger&#34; type=&#34;button&#34;  onclick=&#34;location.href=&#39;\/en\/hmorph\/&#39;&#34; &gt; Visit HyperMorph the successor of this project &lt;/button&gt;
+
+
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;self-service-data-management--visual-interactive-analytics-framework&#34;&gt;Self-Service Data Management &amp;amp; Visual Interactive Analytics Framework&lt;/h2&gt;
+&lt;p&gt;This is a public announcement of the second open-source release of TRIADB, codename TRIACLICK. Repository of the project can be found at &lt;a href=&#34;https://github.com/healiseu/triadb&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can use TRIACLICK to manage your disparate data sources, create custom data models with an integrated, whole view of your business and get a business insight by building easily dashboard web applications that work with the associative selection/filtering of Triaclick engine.&lt;/p&gt;
+&lt;h3 id=&#34;tutorial-and-installation-guides&#34;&gt;Tutorial and Installation Guides&lt;/h3&gt;
+&lt;p&gt;Analytic instructions on how to install TRIADB are written on the &lt;a href=&#34;https://github.com/healiseu/triadb/blob/master/INSTALLATION.rst&#34;&gt;installation guide&lt;/a&gt;. If you decide to go deeper, read the &lt;a href=&#34;https://github.com/healiseu/triadb/blob/master/TUTORIAL.rst&#34;&gt;tutorial guide&lt;/a&gt; to get into the basics of programming with TRIADB.&lt;/p&gt;
+&lt;h2 id=&#34;screen-capture-demo&#34;&gt;Screen Capture Demo&lt;/h2&gt;
+&lt;p&gt;Watch a screencast demonstration of the main features of TRIADB in the current release with a focus on the key aspects highlighted and illustrated in the following section.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/QSk1ldfb7ow&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;at-a-glance&#34;&gt;At A Glance&lt;/h3&gt;
+&lt;p&gt;TRIADB is an innovative, multi-perspective development framework written in Python with the scope to assist power BI users and developers to build easily web applications and/or Jupyter notebooks, i.e. reports, that are based on interactive computing and exploratory, visual analysis. It’s main unique and valuable characteristics are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Interactive visual exploratory analytics&lt;/strong&gt; powered by TriaClick associative semiotic hypergraph engine. The technology is based on ClickHouse columnar DBMS and its output can be easily transformed to enable hypergraph traversal, associative selection and cross-filtering with states on coordinated visualizations.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;triaclick_animated_chart.gif&#34; alt=&#34;Coordinated update of GUI components based on associative selection and filtering&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;TRIACLICK Animated Chart&lt;/h4&gt;
+  &lt;p&gt;
+    Coordinated update of GUI components based on associative selection and filtering
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;hypergraph_paths.png&#34; alt=&#34;Visualization of hypergraph paths based on TRIACLICK associations&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;TRIACLICK Hypergraph&lt;/h4&gt;
+  &lt;p&gt;
+    Visualization of hypergraph paths based on TRIACLICK associations
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;User defined business models&lt;/strong&gt; in the form of a hypergraph. Data modeling plays a central role in TRIADB. Management of meta-data, loading and filtering processes are innately related, associated, with the business model you define.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;business_model.png&#34; alt=&#34;Business model based on Northwind database with Associative Entities in yellow&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;Business Model Graph&lt;/h4&gt;
+  &lt;p&gt;
+    Business model based on Northwind database with Associative Entities in yellow
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Interactive programming with high-level OOP components and methods&lt;/strong&gt; tailored to fit database management and analytics. TRIADB powerful transformations, including list items, tuples and associations enable the user to analyze data quickly and intuitively.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;associative_filtering.png&#34; alt=&#34;Examine visually how the domain set values of attributes are related&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;Associative Filtering&lt;/h4&gt;
+  &lt;p&gt;
+    Examine visually how the domain set values of attributes are related
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;barchart_from_aggregations.png&#34; alt=&#34;Aggregation in a filtered state and transformation to tuples and bar chart&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;Transformation of aggregation&lt;/h4&gt;
+  &lt;p&gt;
+    Aggregation in a filtered state and transformation to tuples and bar chart
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;what-problem-triadb-solves-and-how&#34;&gt;What problem TRIADB solves and how&lt;/h2&gt;
+&lt;p&gt;The project started long time ago from a personal need to integrate an electronic medical record database used in a neurosurgery clinic with several other specialized databases for neurosurgical disorders. &lt;code&gt;Integration&lt;/code&gt;, &lt;code&gt;correlation&lt;/code&gt;, &lt;code&gt;aggregation&lt;/code&gt; and &lt;code&gt;visual exploration&lt;/code&gt; will always be the holy grail of business analytics. Associative technology in general is a specific solution that has not been opened to the public until now although it is applied by one of the most successful BI companies for two decades. The implementation of associative semiotic hypergraph engine (TRIACLICK) in TRIADB project opens a path for other competitive, cost effective (not only RAM based), efficient solutions sharing the same principles in data modeling and database management.&lt;/p&gt;
+&lt;h2 id=&#34;future-plans&#34;&gt;Future Plans&lt;/h2&gt;
+&lt;p&gt;TRIADB is a middleware, one part is closely coupled with the physical layer of the data store engine and the other part is closer to the application layer. Therefore the project can be expanded in two directions, optimization and improvement of associative semiotic hypergraph engine on one hand, efficient and effective transformations and visual exploration on the other hand.&lt;/p&gt;
+&lt;p&gt;In spite of the growing development of TRIADB which requires urgently funding for resources, the critical factor for the success of this project is how exactly it is going to be applied to solve particular users’ problems. This step requires that users become aware of what are the advantages in using TRIADB and what they can achieve.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/triadb-v09-athanassios-hatzis/&#34;&gt;LinkedIn - 20191025 Pulse Article - TRIADB v0.9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TRIACLICK 1st Release</title>
+      <link>https://healis.eu/en/post/20190211/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20190211/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;TRIADB is discontinued, page is maintained here for the history.&lt;/strong&gt;
+
+
+&lt;button class=&#34;btn  btn-danger&#34; type=&#34;button&#34;  onclick=&#34;location.href=&#39;\/en\/hmorph\/&#39;&#34; &gt; Visit HyperMorph the successor of this project &lt;/button&gt;
+
+
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;TriaClick is my long standing effort to revitalize Relational and Topic Maps data model. &lt;code&gt;Associative filtering&lt;/code&gt;, similar to &lt;a href=&#34;https://www.qlik.com/us/products/associative-difference&#34;&gt;Qlik associative engine&lt;/a&gt;, has been &lt;strong&gt;implemented for the first time&lt;/strong&gt; with a fast columnar DBMS on non-volatile memory and tested with a relatively large file on commodity hardware.&lt;/p&gt;
+&lt;h2 id=&#34;screencast&#34;&gt;Screencast&lt;/h2&gt;
+&lt;p&gt;Screen Capture Demo of TriaClick, a python library that implements &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;associative, semiotic, hypergraph technology&lt;/a&gt; on top of &lt;a href=&#34;https://clickhouse.yandex/&#34;&gt;ClickHouse columnar DBMS&lt;/a&gt; and &lt;a href=&#34;https://mariadb.org/&#34;&gt;MariaDB&lt;/a&gt;. We show the execution of commands from two python console applications that are built with TriaClick library. The various operations (methods) of our &lt;code&gt;Chain Query Language (CQL)&lt;/code&gt; aim to make the processing pipeline of data integration, exploratory data analysis and visualization easier, faster, intuitive, and more efficient and accurate for the database/data analyst expert. Currently the focus is on management of data resources and data models, associative filtering, hypergraph exploration and aggregations.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WJh5o59aXOw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;
+&lt;p&gt;On my 10 years old Intel i3 core machine, TriaClick takes about a minute to load a 42 x 2.8M Physician records TSV flat file (856MB) on SSD and the average elapsed time for processing user selections, i.e. filters with an exploratory QlikView style, is 3 seconds. Output can be transformed and seen as associations, tuples, and columns with distinct values, frequencies and filtering states. The result set can also be driven to a hypergraph for further exploration.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/triaclick-demo-athanassios-hatzis-phd/&#34;&gt;LinkedIn - 20190211 Pulse Article - TriaClick Demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TRIADB</title>
+      <link>https://healis.eu/en/project/triadb/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/project/triadb/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#at-a-glance&#34;&gt;At A Glance&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#architectural-design&#34;&gt;Architectural Design&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#architectural-overview-white-paper&#34;&gt;Architectural Overview (White Paper)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#implementations&#34;&gt;Implementations&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#conference-presentations&#34;&gt;Conference Presentations&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#key-differentiating-factors&#34;&gt;Key Differentiating Factors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#business-strategy&#34;&gt;Business Strategy&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;TRIADB is discontinued, page is maintained here for the history.&lt;/strong&gt;
+
+
+&lt;button class=&#34;btn  btn-danger&#34; type=&#34;button&#34;  onclick=&#34;location.href=&#39;\/en\/hmorph\/&#39;&#34; &gt; Visit HyperMorph the successor of this project &lt;/button&gt;
+
+
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;at-a-glance&#34;&gt;At A Glance&lt;/h2&gt;
+&lt;p&gt;TRIADB is an innovative, multi-perspective database framework. It is a Python library that sits on top of suitable NoSQL/SQL data store engines and enables the users to perform easily &lt;strong&gt;integration, correlation, aggregation and hypergraph exploration of multiple data resources&lt;/strong&gt;. TRIADB is founded on the principles of &lt;a href=&#34;https://healis.eu/en/project/r3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;architectural-design&#34;&gt;Architectural Design&lt;/h2&gt;
+&lt;p&gt;In terms of the architectural design TRIADB is based on &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000107/&#34;&gt;&lt;strong&gt;associative&lt;/strong&gt;, &lt;strong&gt;semiotic&lt;/strong&gt;, &lt;strong&gt;hypergraph&lt;/strong&gt; technology&lt;/a&gt; pioneered by &lt;a href=&#34;https://healis.eu/en/about/#athanassios&#34;&gt;Dr. Athanassios I. Hatzis&lt;/a&gt;. Foundational principles, theoretical formalization and ontological dimensions of the framework and the data model are &lt;a href=&#34;https://healis.eu/en/project/r3dm/#cross-references&#34;&gt;dating back to the year 2012&lt;/a&gt;. Our technology shares certain similarities with &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000104/&#34;&gt;Qlik&lt;/a&gt; associative technology, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000002/&#34;&gt;AtomicDB and X10SYS&lt;/a&gt; associative technology, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000103/#associative-model&#34;&gt;Sentences&lt;/a&gt; associative data model, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000101/&#34;&gt;Topic Maps&lt;/a&gt; data model and &lt;a href=&#34;https://en.wikipedia.org/wiki/Correlation_database&#34;&gt;correlation database model&lt;/a&gt;. The &lt;span class=&#34;markup-quote&#34;&gt;main difference of our technology from other similar associative technologies&lt;/span&gt; is that it has a solid theoretical background, a unified data modeling architecture and at the same time it is distinct in its design and implementation.&lt;/p&gt;
+&lt;h2 id=&#34;architectural-overview-white-paper&#34;&gt;Architectural Overview (White Paper)&lt;/h2&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;https://healis.eu/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;https://healis.eu/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;implementations&#34;&gt;Implementations&lt;/h2&gt;
+&lt;p&gt;There are four TRIADB prototypes implemented:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;TRIADB on &lt;a href=&#34;https://healis.eu/en/talk/triadb_wolfram/&#34;&gt;OrientDB with Mathematica&lt;/a&gt; - 2016&lt;/li&gt;
+&lt;li&gt;TRIADB on &lt;a href=&#34;https://healis.eu/en/talk/triadb_connected_data/&#34;&gt;Intersystems Cache with Python&lt;/a&gt; - 2017&lt;/li&gt;
+&lt;li&gt;TRIADB on Redis with Python - 2018&lt;/li&gt;
+&lt;li&gt;TRIADB on &lt;a href=&#34;https://healis.eu/en/post/20191025/&#34;&gt;MariaDB and ClickHouse with Python&lt;/a&gt; - 2019&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In the last open-source release of TRIADB, MariaDB stores data dictionary information and ClickHouse data storage engines are used for processing and querying data. The associative, semiotic, hypergraph engine has a proprietary licence, although the sources are included in the release, and it is given the codename TriaClick.&lt;/p&gt;
+&lt;h2 id=&#34;conference-presentations&#34;&gt;Conference Presentations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;16/11/2017&lt;/strong&gt; - &lt;a href=&#34;https://healis.eu/en/talk/triadb_connected_data/&#34;&gt;Connected Data London Conference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;19/06/2017&lt;/strong&gt; - &lt;a href=&#34;https://healis.eu/en/talk/triadb_wolfram/&#34;&gt;European Wolfram Technology Conference in Amsterdam&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;key-differentiating-factors&#34;&gt;Key Differentiating Factors&lt;/h2&gt;
+&lt;p&gt;The following is a list of technical specifications and features in the design and implementation of TRIADB. This same list is what makes &lt;span class=&#34;markup-quote&#34;&gt;TRIADB a unique and valuable product&lt;/span&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Multi-Perspective Database Framework: tuples, domain sets, objects, hypergraph, hierarchical&lt;/li&gt;
+&lt;li&gt;Act both as an operational and data warehouse database with a 360 degree view&lt;/li&gt;
+&lt;li&gt;Automatic fixed, primary indexing schema instead of user-defined secondary indexing&lt;/li&gt;
+&lt;li&gt;Manage the references instead of data: relying on reference-based associations and logical identifiers&lt;/li&gt;
+&lt;li&gt;No duplicates: single value instance based on system defined primitive data types&lt;/li&gt;
+&lt;li&gt;Consolidation of multiple data resources and mapping on user-defined data models&lt;/li&gt;
+&lt;li&gt;Management of data resources, data models and metadata&lt;/li&gt;
+&lt;li&gt;Python Chain Query Language (CQL) that avoids namespace and impedance mismatch problem&lt;/li&gt;
+&lt;li&gt;Interactive, free-form, contextual queries&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;business-strategy&#34;&gt;Business Strategy&lt;/h2&gt;
+&lt;p&gt;We create strong partnerships with database vendors to implement and fine-tune TRIADB on top of their technology stack and we offer consulting services on how to apply Associative, Semiotic, Hypergraph technology. We are not selling licenses or software, we provide full stack solutions and add-on value for our own clients, or for the clients of the vendor, thus the system we build inherits the scaling, performance, availability and TCO of the vendor.&lt;/p&gt;
+&lt;p&gt;Our associative, semiotic, hypergraph technology is open-source. We are seeking for developer&amp;rsquo;s community consensus on the use of it and we strongly believe that our technology will be eventually adapted by major semantic and database technology players in the IT industry.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/triaclick-demo-athanassios-hatzis-phd/&#34;&gt;LinkedIn - 20190211 Pulse Article - TriaClick Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/triaclick-architectural-overview-white-paper-athanassios-hatzis-phd/&#34;&gt;LinkedIn - 20190319 TriaClick Architectural Overview White Paper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/triadb-v09-athanassios-hatzis/&#34;&gt;LinkedIn - 20191025 Pulse Article - TRIADB v0.9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,625 @@
+<HTML>
+<HEAD>
+  <TITLE>Implementation_Layer.html</TITLE>
+  <meta NAME = "GENERATOR"          CONTENT = "IHMC CmapTools vr. 4.12 ">
+  <meta NAME = "KEYWORDS"           CONTENT = "Athanassios I. Hatzis, Concept Map, cmap, CmapTools, IHMC, Implementation_Layer,  simplicity,  preconditions,  system resources,  component elements,  Abstract Data Type,  operations,  Architect,  Graph Many-to-Many,  integrity constraints,  modular,  string "cat",  Developer,  simple (atomic values),  user requirements (interface),  Linear One-to-One,  result,  Specifications,  pointers,  User,  structure/ associations">
+  <meta NAME = "DESCRIPTION"        CONTENT = "This Concept Map, created with IHMC CmapTools, has information related to: Implementation_Layer, Specifications lead to Representation i.e. Data Type, Developer meets Specifications, operations require result, simple (atomic values) e.g. char 'a', 1, Abstract Data Type has simplicity, Implementation depends on system resources, Implementation depends on human resources, Domain of component elements, Domain of allowed values, User interface (contract between) Developer, Architect provides Specifications, Specifications includes structure/ associations, Representation i.e. Data Type is a Domain, Abstract Data Type is independent of Implementation, Implementation often includes Serialization, integrity constraints with preconditions, Abstract Data Type is modular, structured (composite values) complex e.g. string "cat", Architect & Developer, User provides Specifications">
+  <meta NAME = "AUTHOR"             CONTENT = "IHMC CmapTools">
+  <meta HTTP-EQUIV = "Content-Type" CONTENT = "text/html; charset = UTF-8">
+  <script LANGUAGE="JavaScript1.2">
+  <!--
+    //  PopUp --
+    //  Institute for Human and Machine Cognition, http://www.ihmc.us/
+    //  CmapTools, Version 5.03, http://cmap.ihmc.us/
+    //  Support at http://cmapforum.ihmc.us/
+    //  Modify by: CmapTools Developers, cmapsupport AT ihmc DOT us
+    //  Date: 10/06/2009
+
+    var IE = 0;
+    var IE4PC = 0;
+    var NS = 0;
+    var GECKO = 0;
+
+    var openpopups = new Array();
+
+    if (document.all) {                 // Internet Explorer Detected
+	   IE = true;	
+    }
+    else if (document.layers) {         // Netscape Navigator Detected
+	   NS = true;	
+    }
+    else if (document.getElementById) { // Netscape 6 Detected
+       GECKO = true;
+    }
+    else {
+	   alert("Unrecognized Browser Detected::\nSorry, your browser is not compatible.");
+    }
+
+    if (IE)
+    {
+	   OS = navigator.platform;
+	   VER = new String(navigator.appVersion);
+	   VER = VER.substr (0, VER.indexOf(" "));
+	   if ((VER < 4.8) && (OS == "Win32")) 
+	   {
+	       IE4PC = 1;
+	   }
+    }
+
+    function handleResize() {
+	    location.reload();
+	    return false;
+    }
+
+
+    if ((NS) && (navigator.platform == "MacPPC")) {
+	   window.captureEvents (Event.RESIZE);
+	   window.onresize = handleResize;
+    }
+
+    function openResource(event, resourcePath, resourceName, resourceType)
+    {
+	   var newwindow;
+
+       // Resource MIMETypes are enumerated as follows: 
+       // cMap     = Undefined
+       // Image    = 0
+       // Video    = 1
+       // Text     = 2
+       // Audio    = 3
+
+       popDown();
+
+	   switch (resourceType) 
+	   {
+	    case 0:     //Image
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<center><img src=\"';
+                    text += resourcePath;
+                    text +='\"> </center>';
+             break;
+		
+	    case 1:  text   // Video
+		     newwindow = window.open (resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+                     var text ='<embed src=\"';
+                     text += resourcePath;
+                     text +='\" autostart=true> </embed> ';
+             break;
+
+	    case 2:      // Text or Unknown 
+		     newwindow = window.open(resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+              break;
+
+	    case 3:       // Audio
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<embed src=\"';
+                    text += resourcePath;
+                    text +='\" autoplay=true> </embed> ';
+             break;
+
+	    case 4:
+                    newwindow = window.open(resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+	     break;
+	    }
+        return;
+    }
+
+
+
+    function popUpEvt(event, popupName)
+    {
+	popDown();
+
+	if (GECKO)
+	{
+	    document.getElementById(popupName).style.left = event.pageX;
+	    document.getElementById(popupName).style.top = event.pageY;
+	    document.getElementById(popupName).style.background = "#B3B3B3";
+	    document.getElementById(popupName).style.visibility = "visible";
+	    openpopups.push(popupName);
+	}
+	else if (NS) 
+	{
+	    document.layers[popupName].moveTo (event.pageX, event.pageY);
+	    document.layers[popupName].bgColor = "#B3B3B3";
+	    document.layers[popupName].visibility = "show";
+	    openpopups.push(popupName);
+	}
+	else // if (IE)
+	{
+	    window.event.cancelBubble = true;
+	    if (!IE4PC) {
+		document.all[popupName].style.backgroundColor = "#B3B3B3";
+	    }	
+	    document.all[popupName].style.left = window.event.clientX + document.body.scrollLeft;
+	    document.all[popupName].style.top = window.event.clientY + document.body.scrollTop;
+	    document.all[popupName].style.visibility = "visible";
+	    openpopups[openpopups.length] = popupName;
+	}
+	return false;
+    }
+
+    function popDown()
+    {
+	var popupname;
+	
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+		document.getElementById(popupname).style.visibility = "hidden";
+	    }
+	    else if (NS) {
+		document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+		document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+	return;
+    }
+
+    function popDownNoGecko() 
+    {
+	var popupname;
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+           //  document.getElementById(popupname).style.visibility = "hidden"; 
+	        return;   // erased for test purposes
+	    }  
+	    else if (NS) {
+	        document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+	        document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+        return;
+    }
+  //-->
+  </script>
+</HEAD>
+<BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+<noscript>
+  <table width=90% cellpadding=10>
+    <tr>
+      <td bgcolor=ff4447>
+        <font color=000000 size=+1 face="helvetica">
+        <h1>WARNING:</h1>
+        <b>JavaScript is turned OFF.  None of the links on this concept map will <br>
+           work until it is reactivated.
+          <p>
+            <a href="http://cmap.ihmc.us/docs/EnablingJavaScript.html">
+                            If you need help turning JavaScript On, click here.
+            </a>
+          </p>
+        </b>
+      </td>
+    </tr>
+  </table>
+This Concept Map, created with IHMC CmapTools, has information related to: Implementation_Layer, Specifications lead to Representation i.e. Data Type, Developer meets Specifications, operations require result, simple (atomic values) e.g. char 'a', 1, Abstract Data Type has simplicity, Implementation depends on system resources, Implementation depends on human resources, Domain of component elements, Domain of allowed values, User interface (contract between) Developer, Architect provides Specifications, Specifications includes structure/ associations, Representation i.e. Data Type is a Domain, Abstract Data Type is independent of Implementation, Implementation often includes Serialization, integrity constraints with preconditions, Abstract Data Type is modular, structured (composite values) complex e.g. string "cat", Architect & Developer, User provides Specifications
+
+</noscript>
+
+<map name="Implementation_Layer.html">
+  <area shape="rect"
+        href="1K3L5YDKQI28VNF1QI9JLItextIhtml"
+        onClick="popUpEvt(event,'1K3L5YDKQI28VNF1QI9JLItextIhtml'); return false;"
+        coords="989,201,1007,219">
+  <area shape="rect"
+        href="1K3L0DCKNI10PRR1QI4ZHItextIhtml"
+        onClick="popUpEvt(event,'1K3L0DCKNI10PRR1QI4ZHItextIhtml'); return false;"
+        coords="325,53,343,71">
+  <area shape="rect"
+        href="1K3P1MF5BI1RB42Q7I8YBItextIhtml"
+        onClick="popUpEvt(event,'1K3P1MF5BI1RB42Q7I8YBItextIhtml'); return false;"
+        coords="158,303,176,321">
+  <area shape="rect"
+        href="1K3L6TJM9I248S04KIBTSItextIhtml"
+        onClick="popUpEvt(event,'1K3L6TJM9I248S04KIBTSItextIhtml'); return false;"
+        coords="500,592,518,610">
+  <area shape="rect"
+        href="1K3L0RD8DIB8MZ3HI5JCItextIhtml"
+        onClick="popUpEvt(event,'1K3L0RD8DIB8MZ3HI5JCItextIhtml'); return false;"
+        coords="694,111,712,129">
+  <area shape="rect"
+        href="1K3L0MHPHI2D47592I5C8ItextIhtml"
+        onClick="popUpEvt(event,'1K3L0MHPHI2D47592I5C8ItextIhtml'); return false;"
+        coords="224,179,242,197">
+  <area shape="rect"
+        href="1K3L3ZFY3IV04JSGI7N0ItextIhtml"
+        onClick="popUpEvt(event,'1K3L3ZFY3IV04JSGI7N0ItextIhtml'); return false;"
+        coords="310,303,328,321">
+  <area shape="rect"
+        href="1K3L61XZCI13W8LDHI9MYItextIhtml"
+        onClick="popUpEvt(event,'1K3L61XZCI13W8LDHI9MYItextIhtml'); return false;"
+        coords="984,306,1002,324">
+  <area shape="rect"
+        href="1K3L32XP0I18SGNPYI6Q4ItextIhtml"
+        onClick="popUpEvt(event,'1K3L32XP0I18SGNPYI6Q4ItextIhtml'); return false;"
+        coords="490,443,508,461">
+  <area shape="rect"
+        href="1K3L0LG5XI11K5VD7I59VItextIhtml"
+        onClick="popUpEvt(event,'1K3L0LG5XI11K5VD7I59VItextIhtml'); return false;"
+        coords="75,417,93,435">
+  <area shape="rect"
+        href="1K3L3Y1LVIJT3KM5I7L8ItextIhtml"
+        onClick="popUpEvt(event,'1K3L3Y1LVIJT3KM5I7L8ItextIhtml'); return false;"
+        coords="20,303,38,321">
+  <area shape="rect"
+        href="1K3L1C69ZI8GLYTSI646ItextIhtml"
+        onClick="popUpEvt(event,'1K3L1C69ZI8GLYTSI646ItextIhtml'); return false;"
+        coords="271,436,289,454">
+  <area shape="rect"
+        href="1K3L46PQVI1TJWXTRI7S3ItextIhtml"
+        onClick="popUpEvt(event,'1K3L46PQVI1TJWXTRI7S3ItextIhtml'); return false;"
+        coords="684,184,702,202">
+  <area shape="rect"
+        href="1K3L5ZL6BIQ9GBLTI9LGItextIhtml"
+        onClick="popUpEvt(event,'1K3L5ZL6BIQ9GBLTI9LGItextIhtml'); return false;"
+        coords="986,242,1004,260">
+  <area shape="rect"
+        href="1K422ZGCBI1ZDSLH7IK6TItextIhtml"
+        onClick="popUpEvt(event,'1K422ZGCBI1ZDSLH7IK6TItextIhtml'); return false;"
+        coords="649,379,667,397">
+  <area shape="rect"
+        href="1K5JXDMYWIPKM2K1IDN3Ix-cmapIx-storable"
+        onClick="popUpEvt(event,'1K5JXDMYWIPKM2K1IDN3Ix-cmapIx-storable'); return false;"
+        coords="61,157,79,175">
+  <area shape="rect"
+        href="1K5JXDMYWIPKM2K1IDN3ItextIhtml"
+        onClick="popUpEvt(event,'1K5JXDMYWIPKM2K1IDN3ItextIhtml'); return false;"
+        coords="44,157,62,175">
+  <area shape="rect"
+        href="1K3L158HXIY4YZFTI5TJItextIhtml"
+        onClick="popUpEvt(event,'1K3L158HXIY4YZFTI5TJItextIhtml'); return false;"
+        coords="598,465,616,483">
+  <area shape="rect"
+        href="1K422W7T4I270J390IK19ItextIhtml"
+        onClick="popUpEvt(event,'1K422W7T4I270J390IK19ItextIhtml'); return false;"
+        coords="684,295,702,313">
+  <area shape="rect"
+        href="1K3L0NM10I200ZFBFI5DFItextIhtml"
+        onClick="popUpEvt(event,'1K3L0NM10I200ZFBFI5DFItextIhtml'); return false;"
+        coords="370,224,388,242">
+  <area shape="rect"
+        href="1K3L1M5GSI93Z0RGI6CMItextIhtml"
+        onClick="popUpEvt(event,'1K3L1M5GSI93Z0RGI6CMItextIhtml'); return false;"
+        coords="901,555,919,573">
+  <area shape="rect"
+        href="1K3L17LQTI1HWT16DI5X8ItextIhtml"
+        onClick="popUpEvt(event,'1K3L17LQTI1HWT16DI5X8ItextIhtml'); return false;"
+        coords="529,330,547,348">
+  <area shape="rect"
+        href="1K3L6QWDXIBLLD8YIBQ1ItextIhtml"
+        onClick="popUpEvt(event,'1K3L6QWDXIBLLD8YIBQ1ItextIhtml'); return false;"
+        coords="494,514,512,532">
+  <area shape="rect"
+        href="1K422ZT30I1W9P6VVIK7YItextIhtml"
+        onClick="popUpEvt(event,'1K422ZT30I1W9P6VVIK7YItextIhtml'); return false;"
+        coords="730,395,748,413">
+</map>
+
+<center>
+  <table width=* height=* cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td valign=center align=center>
+        <img USEMAP="#Implementation_Layer.html"
+             SRC="Implementation_Layer.jpg"
+             ALIGN=middle
+             BORDER=0
+             onClick=popDown();>
+      </td>
+    </tr>
+    <tr>
+      <td VALIGN=top ALIGN=right>
+        <table>
+          <tr>
+            <td ALIGN=right VALIGN=middle>
+              <map NAME="CmapToolsTrademark">
+                <area SHAPE="rect"
+                      href="http://cmap.ihmc.us/"
+                      onClick="openResource(event,'http://cmap.ihmc.us/', 0, 2); return false;"
+                      coords="1,1,210,50">
+              </map>
+            </td>
+          </tr>
+          <tr>
+            <td  ALIGN=right VALIGN=middle>
+              <img USEMAP="#CmapToolsTrademark"
+                   SRC="CmapToolsTrademark.gif" 
+                   ALT="IHMC Cmap Tools Trademark" width="210" height="50"
+                   ALIGN=middle
+                   BORDER=0>
+            </td>
+            <td VALIGN=middle>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+</BODY>
+</HTML>
+<div id="1K3L5YDKQI28VNF1QI9JLItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Resource_(computer_science) "TITLE="">
+      Resource_(computer_science)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L0DCKNI10PRR1QI4ZHItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Abstract_data_type "TITLE="">
+      Abstract_data_type
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3P1MF5BI1RB42Q7I8YBItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Software_engineer "TITLE="">
+      Software_engineer
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L6TJM9I248S04KIBTSItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Graph_(data_structure) "TITLE="">
+      Graph_(data_structure)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L0RD8DIB8MZ3HI5JCItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Integrity_constraints "TITLE="">
+      Integrity_constraints
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L0MHPHI2D47592I5C8ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Modular_programming "TITLE="">
+      Modular_programming
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L3ZFY3IV04JSGI7N0ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Software_developer "TITLE="">
+      Software_developer
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L61XZCI13W8LDHI9MYItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Requirements_analysis "TITLE="">
+      Requirements_analysis
+      </a>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Interface_(computing) "TITLE="">
+      Interface_(computing)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L32XP0I18SGNPYI6Q4ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Array_data_structure "TITLE="">
+      Array_data_structure
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L0LG5XI11K5VD7I59VItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Functional_specification "TITLE="">
+      Functional_specification
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L3Y1LVIJT3KM5I7L8ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/User_(computing) "TITLE="">
+      User_(computing)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L1C69ZI8GLYTSI646ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/List_of_data_structures "TITLE="">
+      List_of_data_structures
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L46PQVI1TJWXTRI7S3ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Computer_programming "TITLE="">
+      Computer_programming
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L5ZL6BIQ9GBLTI9LGItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Human_resources "TITLE="">
+      Human_resources
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K422ZGCBI1ZDSLH7IK6TItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/JSON "TITLE="">
+      JSON
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5JXDMYWIPKM2K1IDN3Ix-cmapIx-storable" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="Neurorganon_Home.html "TITLE="">
+      Neurorganon_Home
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K5JXDMYWIPKM2K1IDN3ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://neurorganon.org/ "TITLE="">
+      Navigate to the Home Page
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L158HXIY4YZFTI5TJItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Data_domain "TITLE="">
+      Data_domain
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K422W7T4I270J390IK19ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Serialization "TITLE="">
+      Serialization
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L0NM10I200ZFBFI5DFItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Encapsulation_(object-oriented_programming) "TITLE="">
+      Encapsulation_(object-oriented_programming)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L1M5GSI93Z0RGI6CMItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Composite_type "TITLE="">
+      Composite_type
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L17LQTI1HWT16DI5X8ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Data_type "TITLE="">
+      Data_type
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K3L6QWDXIBLLD8YIBQ1ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/Tree_(data_structure) "TITLE="">
+      Tree_(data_structure)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1K422ZT30I1W9P6VVIK7YItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://en.wikipedia.org/wiki/XML "TITLE="">
+      XML
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+

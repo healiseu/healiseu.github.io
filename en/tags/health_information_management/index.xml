@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Health_information_management on HEALIS</title>
+    <link>https://healis.eu/en/tags/health_information_management/</link>
+    <description>Recent content in Health_information_management on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Mon, 13 Sep 2010 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/en/tags/health_information_management/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MEDILIG</title>
+      <link>https://healis.eu/en/project/medilig/</link>
+      <pubDate>Mon, 13 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/project/medilig/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#definition&#34;&gt;Definition&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#at-a-glance&#34;&gt;At A Glance&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#target-group&#34;&gt;Target Group&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#clinical-features&#34;&gt;Clinical Features&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#technical-features&#34;&gt;Technical Features&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#advantages&#34;&gt;Advantages&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#screen-captures&#34;&gt;Screen Captures&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#documentation&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#neurohealis-vs-medilig&#34;&gt;NeuroHEALIS vs MEDILIG&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;MEDILIG – Medical Life Guard: An Electronic Health Record (EHR) / Electronic Medical Record (EMR) cross-platform software for the design, implementation, and use of autonomous, open, database models for multilingual medical knowledge management systems from primary care to continuing care.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;at-a-glance&#34;&gt;At A Glance&lt;/h2&gt;
+&lt;p&gt;Fully tested, fully operational open-platform EHR/EMR software for health professionals and IT developers. The main feature of the project is the extensive continuous health care record schema of the database built into popular and robust relational database management systems, Microsoft SQL Server and MySQL server, with multilingual, international health coding standards. Create entry forms, catalogues, and reports with a minimal effort from rapid application development environments such as Microsoft Office – Access and OpenOffice – Base. Connect to web hosting services and/or use email to exchange and share medical information with others.&lt;/p&gt;
+&lt;h2 id=&#34;target-group&#34;&gt;Target Group&lt;/h2&gt;
+&lt;p&gt;MEDILIG can be easily adopted to the workflow of a clinic or the practise of a physician. It may also customised as a personal health record to include all the data from patient encounters.&lt;/p&gt;
+&lt;h2 id=&#34;clinical-features&#34;&gt;Clinical Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Supports the management of patient’s administrative and clinical data including:
+&lt;ul&gt;
+&lt;li&gt;admissions&lt;/li&gt;
+&lt;li&gt;visits&lt;/li&gt;
+&lt;li&gt;demographics&lt;/li&gt;
+&lt;li&gt;history&lt;/li&gt;
+&lt;li&gt;operations&lt;/li&gt;
+&lt;li&gt;labs&lt;/li&gt;
+&lt;li&gt;imaging&lt;/li&gt;
+&lt;li&gt;medical transcription&lt;/li&gt;
+&lt;li&gt;multimedia documents&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fully tested and operational on the neurosurgery domain with a lot of data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technical-features&#34;&gt;Technical Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;It can be tailored quickly to cover precisely the needs of any medical specialty or physician&lt;/li&gt;
+&lt;li&gt;It can be linked easily to other databases&lt;/li&gt;
+&lt;li&gt;An extensive database schema for continuous health care that follow standard clinical practice terms with an easy nomenclature for developers&lt;/li&gt;
+&lt;li&gt;Complete separation of the database schema from the presentation layer, independent development of the database layer&lt;/li&gt;
+&lt;li&gt;Visualization of MEDILIG schema as an ontology in Protege or as a graph in DBVisualizer&lt;/li&gt;
+&lt;li&gt;Multilingual look-up tables with international health care coding standards (ICD10, OPCS44, NHS, LOINC, SNOMED) for the encoding of information&lt;/li&gt;
+&lt;li&gt;Microsoft Technology platform version based on popular SQL Server and Access products&lt;/li&gt;
+&lt;li&gt;Linux open software platform version based on MySQL Server and OpenOffice Base products&lt;/li&gt;
+&lt;li&gt;Truly rapid application development thanks to the powerful integrated environment of SQL Server – Access and/or MySQL – OpenOffice&lt;/li&gt;
+&lt;li&gt;No coding for creation of catalogues, reports, entry forms and navigation through them&lt;/li&gt;
+&lt;li&gt;Secure and easy database administration with Microsoft SQL Server or MySQL server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;advantages&#34;&gt;Advantages&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;MEDILIG is open software therefore it has all the advantages of open software such as non-exclusive support from a community of technical users and developers. HEALIS is coordinating MEDILIG support, development and dissemination of information to the users&lt;/li&gt;
+&lt;li&gt;MEDILIG is distributed freely without any charge&lt;/li&gt;
+&lt;li&gt;MEDILIG is a collaborative software tool and it can be part of a collaborative software platform for health professionals&lt;/li&gt;
+&lt;li&gt;MEDILIG is ideal for research and education thanks to the open database architecture&lt;/li&gt;
+&lt;li&gt;MEDILIG maintenance is a relatively easy task and can be automated for the non-expert, non-technical user&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;screen-captures&#34;&gt;Screen Captures&lt;/h2&gt;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-01.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-01_hu4438e4dc417a1cd9954908855bce152a_188755_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-02.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-02_hu273c3b26bbef24f517b79f646b84a0c4_176767_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-03.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-03_hu3c46a67e35ddbccb51715b60605da06a_152086_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-04.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-04_hue04219d8a4a746bc6053744ed4e39852_156678_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-05.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-05_hu75e786171791f48e81dc4a3c9dfd9fc9_114707_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-06.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-06_huad2032b0edb63e9af909a849718f5bfb_225900_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-07.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-07_huea88bb6778c2617c8aec617eb0679e1e_155492_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-08.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-08_hu1edca84a6788111f62aeb0084681c856_247007_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-09.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-09_hufb4f5b2fa9d1f5cb10d94852535e6e2d_159796_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-10.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-10_hu9070e55f81114b4921c5d2e9d9112556_147415_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-11.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-11_hu51842c46c792ba419779655e8b92efb2_108245_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-12.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-12_hu0f37a34b36357d97fb7af47e47094ad0_142033_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+&lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;The full documentation of the project can be accessed on [this post][19].&lt;/p&gt;
+&lt;h2 id=&#34;neurohealis-vs-medilig&#34;&gt;NeuroHEALIS vs MEDILIG&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://healis.eu/en/project/neurohealis/&#34;&gt;NeuroHEALIS&lt;/a&gt; was the precursor of MEDILIG, a health information system that was developed for the &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Department of Neurosurgery in the University of Athens&lt;/a&gt; situated at “Evangelismos” General Hospital. NeuroHEALIS was fully operational during the period from 2006 to 2009 with several publications, presentations and pilot studies that were based on its use.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/projects/medilig/&#34;&gt;SourceForge – MEDILIG Project Official Repository&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.crunchbase.com/product/medilig-medical-life-guard#/entity&#34;&gt;Crunchbase - MEDILIG - Medical Life Guard - HEALIS Product&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://medilig.codeplex.com/&#34;&gt;Microsoft CodePlex Open Source Community – MEDILIG Project registered&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.medfloss.org/node/335&#34;&gt;Medical Free/Libre and Open Source Software (MEDFLOSS) – MEDILIG Project registered&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.medfloss.org/node/271&#34;&gt;Medical Free/Libre and Open Source Software (MEDFLOSS) - MEDILIG listed and ranked by popularity&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.foss-for-health.org/portal/ehealthapps&#34;&gt;Free and Open Source Software for Health - MEDILIG Listed in eHealth Applications&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.greekmeds.gr/forum/topic/28944-medilig-open-databasesource-project/&#34;&gt;Greekmeds - Post about MEDILIG Project&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://groups.google.com/forum/#!topic/efmi-lifoss-wg/P8wM3QU2Y-A&#34;&gt;Thomas Karopka EFMI LIFOSS WG at Google - MEDILIG Project&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.healthinformaticsforum.com/forum/topics/most-popular-emr-systems?commentId=2068976%3AComment%3A53022&#34;&gt;Health Informatics Forum - Comment about MEDILIG&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.herblainchbury.com/2010/10/open-data-vs-open-source.html&#34;&gt;Herb Lainchbury Blog - Open Data vs Open Source - Comment about MEDILIG&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://linuxmednews.com/1290180247/index_html&#34;&gt;LinuxMedNews - MEDILIG Project Posted&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.datamation.com/osrc/article.php/12068_3909906_2/50-Awesome-Open-Source-Apps-Youve-Probably-Never-Heard-Of.htm&#34;&gt;50 Awesome Open Source Apps You&amp;rsquo;ve (Probably) Never Heard Of - MEDILIG Listed&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://comments.gmane.org/gmane.org.misc.open-knowledge-foundation.general/1485&#34;&gt;Re: MEDILIG project with OdBL + GPL License -	Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MEDILIG Second Release</title>
+      <link>https://healis.eu/en/post/20100913/</link>
+      <pubDate>Mon, 13 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20100913/</guid>
+      <description>&lt;h2 id=&#34;changes-on-this-release&#34;&gt;Changes on This Release&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;New file system structure and documentation&lt;/li&gt;
+&lt;li&gt;Use of MEDILIG database with MySQL and OpenOffice&lt;/li&gt;
+&lt;li&gt;Automation of installation and setup procedure of MEDILIG database and Microsoft Access front end&lt;/li&gt;
+&lt;li&gt;Visualization of MEDILIG schema as an ontology with Protégé software tool&lt;/li&gt;
+&lt;li&gt;Visualization of MEDILIG schema as a graph and database management with DBVisualizer software tool&lt;/li&gt;
+&lt;li&gt;Web analytics from SourceForge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;/documents/20100910-medilig-recent_changes.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;https://healis.eu/documents/20100910-medilig-recent_changes.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;https://healis.eu/documents/20100910-medilig-recent_changes.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;download-statistics&#34;&gt;Download Statistics&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./medilig-downloads-at-sourceforge-2010-2015.jpg&#34; alt=&#34;jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The graph shows the number of downloads for a period of five years. MEDILIG main distribution file (.zip) has been downloaded on an average about 60 times/month and the average download rate for any file of the distribution is equal to 170 times/month.&lt;/p&gt;
+&lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;
+&lt;h3 id=&#34;readme-first&#34;&gt;Readme First&lt;/h3&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;/documents/20100910-medilig-readme_first.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;https://healis.eu/documents/20100910-medilig-readme_first.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;https://healis.eu/documents/20100910-medilig-readme_first.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;/documents/20100910-medilig-introduction.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;https://healis.eu/documents/20100910-medilig-introduction.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;https://healis.eu/documents/20100910-medilig-introduction.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;microsoft-access-front-end&#34;&gt;Microsoft Access Front-End&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/documents/20100910-MEDILIGFE-MSAccess-Installation.pdf&#34;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/documents/20100910-MEDILIGFE-MSAccess-UserGuide.pdf&#34;&gt;User Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;microsoft-msql-server-back-end&#34;&gt;Microsoft MSQL Server Back-End&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/documents/20100910-MEDILIGMSQL-INSTALLATION.pdf&#34;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/documents/20100910-MEDILIGMSQL-UserGuide.pdf&#34;&gt;User Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Open Data vs Open Source Software</title>
+      <link>https://healis.eu/en/post/20100810/</link>
+      <pubDate>Tue, 10 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20100810/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;./featured.jpg&#34; alt=&#34;jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This is a summary from a post that I wrote for &lt;a href=&#34;http://comments.gmane.org/gmane.org.misc.open-knowledge-foundation.general/1485&#34;&gt;Open Knowledge Foundation discussion list&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;{&amp;lt; toc &amp;gt;}&lt;/p&gt;
+&lt;h2 id=&#34;definitions&#34;&gt;Definitions&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Open_Data&#34;&gt;Wikipedia Open Data&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Open_Source&#34;&gt;Wikipedia Open Source&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Open Source licenses control the use of computer programs (software) while open data licenses such as &lt;a href=&#34;http://www.opendatacommons.org/licenses/odbl/&#34;&gt;Open Database License (ODbL)&lt;/a&gt; concern primarily the use of databases and their content. Nevertheless a database often constitutes part of the software. Therefore there is some overlap between the two. The following questions and answers demonstrate a real life scenario that is based on &lt;a href=&#34;https://healis.eu/en/project/medilig/&#34;&gt;MEDILIG project&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;qa-session&#34;&gt;Q&amp;amp;A Session&lt;/h2&gt;
+&lt;h3 id=&#34;why-do-you-apply-two-licenses-odbl-and-gpl-for-the-medilig-project-&#34;&gt;Why do you apply two licenses ODbL and GPL for the MEDILIG project ?&lt;/h3&gt;
+&lt;p&gt;MEDILIG project is a software product/service and it also includes a database. The &lt;!-- raw HTML omitted --&gt;use of the database&lt;!-- raw HTML omitted --&gt; cannot be covered with a GPL license.&lt;/p&gt;
+&lt;h3 id=&#34;software-is-normally-covered-by-software-licenses-why-did-not-you-apply-only-gpl-license-&#34;&gt;Software is normally covered by software licenses. Why did not you apply only GPL license ?&lt;/h3&gt;
+&lt;p&gt;GPL does not tell you anything about who controls the database and what are the rights of the user on the database. For example consider the deployment scenario where the software is open but the database is locked.  Does the user have the right to unlock the database, does he have the right to export or import his data from/to the database and in what extent? Can he create a derivative database or use the existing one collectively as part of other system developed? Software developers and/or vendors often use databases as leverage to lock users into support contracts and licenses. ODbL grant rights to the user and prevents this behaviour. It is section 3.0 and 4.0 of the full license text .&lt;/p&gt;
+&lt;h3 id=&#34;what-parts-of-the-database-you-cover-with-odbl-&#34;&gt;What parts of the database you cover with OdBL ?&lt;/h3&gt;
+&lt;p&gt;Section 2.2a of ODbL license says that it is likely to cover database model or schema. This is true, you may cover the general design, but you cannot cover  specific details of the database schema, e.g. Microsoft SQL Server implementation. You can do that only by GPL because it is coding. Another useful distinction between ODbL and GNU GPL.&lt;/p&gt;
+&lt;h3 id=&#34;what-about-the-contents-of-the-database-&#34;&gt;What about the contents of the database ?&lt;/h3&gt;
+&lt;p&gt;There is the content of look-up tables which is usually static, it hardly ever changes, and the content of main tables where you expect to find all sort of information that is added dynamically or exists, such as factual data, images, etc. In my opinion there should be a distinction of the two because look-up data is part of the design and/or customisation of the database. On the contrary content data that the user added on an empty database delivered by the developer have a separate copyright.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Healthcare Software on Proprietary OS</title>
+      <link>https://healis.eu/en/post/20100412/</link>
+      <pubDate>Mon, 12 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20100412/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;./featured.jpg&#34; alt=&#34;jpg&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;extract-from-a-post-to-gnusolidario-forum-of-luis-falcon&#34;&gt;Extract from a post to gnusolidario forum of Luis Falcon&lt;/h2&gt;
+&lt;p&gt;Recently I released to the public MEDILIG project v1.0 (MEDILIG Source at Sourceforge) under a combination of two licenses GPL and ODbL.&lt;/p&gt;
+&lt;p&gt;The current implementation is based on a combination of Microsoft SQL Server and Microsoft Access and there is minimal coding. Therefore a quick conclusion would be that this is a health software under a proprietary operating system. But that limits completely the horizon for this project. Let me throw here a few critical MEDILIG features for discussion.&lt;/p&gt;
+&lt;p&gt;I chose to implement the system under Microsoft Technology for two reasons&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Microsoft Technology is still very popular and there are millions of users that use a Windows PC.&lt;/li&gt;
+&lt;li&gt;Microsoft SQL Server and Microsoft Access are also extremely popular. It is easy to maintain the server, it is easy to build a complex application in Access in days if not in a few weeks time! Leave aside all the toolkits for Microsoft Access and the great connectivity with other Microsoft Office applications. Since EMR/EHR applications need a lot of tuning and customization to cover the specific needs of the professional, I believe that this combination wins in speed as it concerns Rapid Application Development.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion:&lt;/strong&gt; The main financial burden for the user is not the cost to run you application on a proprietary system; this may come free or with a very low cost for the user (e.g. included in the hardware price). It has to do with the the resources spent on building, modifying, updating, maintaining, expanding an application, and it also has to do with connectivity and interoperability issues.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Now I will attempt to touch the last bit. Technical interoperability in HIT is only part of the problem. There is the semantics problem and the process/workflow dimension. You mentioned MEDICAL running in many different architectures. I consider the main point to be the architecture inside MEDICAL. If MEDICAL is based in a platform independent architecture, then that is the key issue for success. This is the main driving force behind MEDILIG&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;MEDILIG is using an extensive database schema for continuous health care that follow standard clinical practice terms with an easy nomenclature for developers. This is the main asset of MEDILIG, this is where most of my effort was concentrated on. I will be glad if others start comparing MEDILIG schema with any other open EMR/EHR software schema to realize the differences in the domain architecture. By the way, I started this project because I could hardly see any extensive relational database schema for continuous care. The domain schema in many projects is either too complex to understand, or it is hidden, etc. Why have we abandoned so easily relational databases for an object oriented approach? Aren’t there so many legacy and proprietary systems that are based on RDBMS. How easily migration can be achieved?&lt;/li&gt;
+&lt;li&gt;I am an ambassador of open architecture techniques and not open software or open OS. I want to solve a domain problem as quickly as possible and as cheap as possible. MEDILIG supports complete separation of the database schema from the presentation layer. I strongly support the independent development for the database layer. Has there been any agreement worldwide on a minimal database ER schema for XHR (EHR, EMR, CCR, PHR,….) ? Have they discussed extensively how important is for a health professional to keep his data on a privately own database?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Finally a few lines about the presentation layer, I am skipping the business layer. The modern approach is that there is an integrated environment that provides you the GUI tools to build it and there is some way to connect your form/GUI with the database layer. MEDILIG is using Access only for demonstration purposes, you will see that the code is minimal. I believe that open health IT community of developers/user should head for open services. I have been inspired also from the Infopath Technology, particularly the idea that you can use the form with a set of data independent of the database server. I believe the most successful XHR application would be the one that offers the user the same flexibility as a word processor document or a spreadsheet. Many health professionals are still stuck with pen and paper. Perhaps the easy transition to the e-health era is to use electronic forms and documents on a tablet or on a PDA.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MEDILIG First Release</title>
+      <link>https://healis.eu/en/post/20100325/</link>
+      <pubDate>Thu, 25 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20100325/</guid>
+      <description>&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;
+&lt;p&gt;MEDILIG – Medical Life Guard: An EHR/EMR cross-platform software for the design, implementation, and use of autonomous, open, database models for multilingual medical knowledge management systems from primary care to continuing care.&lt;/p&gt;
+&lt;h2 id=&#34;at-a-glance&#34;&gt;At A Glance&lt;/h2&gt;
+&lt;p&gt;Fully tested, fully operational open-platform EHR/EMR software for health professionals and IT developers. The main feature of the project is the extensive continuous health care record schema of the database built into popular and robust relational database management systems, Microsoft SQL Server and MySQL server, with multilingual, international health coding standards. Create entry forms, catalogues, and reports with a minimal effort from rapid application development environments such as Microsoft Office – Access and OpenOffice – Base. Connect to web hosting services and/or use email to exchange and share medical information with others.&lt;/p&gt;
+&lt;h2 id=&#34;download-now&#34;&gt;Download Now&lt;/h2&gt;
+&lt;p&gt;Latest version from &lt;a href=&#34;http://sourceforge.net/projects/medilig/files/MEDILIG_20100913.ZIP/download&#34;&gt;SourceForge&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Neurosurgical Health Information System for Integration of Clinical Research and Clinical Care</title>
+      <link>https://healis.eu/en/talk/neurohealis-20090716/</link>
+      <pubDate>Sun, 26 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/talk/neurohealis-20090716/</guid>
+      <description>&lt;h3 id=&#34;7th-international-conference-on-information-communication-technologies-in-health-samos-july-26-2009&#34;&gt;7th International Conference on Information Communication Technologies in Health, Samos, July 26 2009&lt;/h3&gt;
+&lt;p&gt;Athanassios Hatzis, George Stranjalis, Stergios Gatzonis, Marios Themistokleous, Lampis Stavrinou, Vassiliki Konofaou, Damianos Sakas&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Download the presentation (&lt;a href=&#34;https://healis.eu/documents/20090716-neurohealis-icicth.pptx&#34;&gt;.pptx&lt;/a&gt;) file&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe
+  style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
+  src=&#34;http://www.slideshare.net/slideshow/embed_code/4878957?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt;
+&lt;/iframe&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>A Modern Neuro-Surgical Operating Room at Evangelismos General Hospital</title>
+      <link>https://healis.eu/en/talk/neurohealis-20090508/</link>
+      <pubDate>Fri, 08 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/talk/neurohealis-20090508/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;A Modern Neuro-Surgical Operating Room at Evangelismos General Hospital
+George Stranjalis&lt;!-- raw HTML omitted --&gt;1,2&lt;!-- raw HTML omitted --&gt;, Lampis Stavrinou&lt;!-- raw HTML omitted --&gt;1&lt;!-- raw HTML omitted --&gt;, Athanassios Hatzis&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;, Damianos Sakas&lt;!-- raw HTML omitted --&gt;1,2&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Dept. of Neurosurgery, University of Athens, «Evangelismos» Hospital, Athens, Greece&lt;/li&gt;
+&lt;li&gt;Hellenic Neurosurgical Research Centre, «Prof. Petros S. Kokkalis», Athens, Greece&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;video-presentation&#34;&gt;Video Presentation&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/jHgGm_6Y-g8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;paper&#34;&gt;Paper&lt;/h2&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;/documents/20090508-DMINBIO-paper.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;https://healis.eu/documents/20090508-DMINBIO-paper.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;https://healis.eu/documents/20090508-DMINBIO-paper.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;about-neurohealis-software&#34;&gt;About NeuroHEALIS software&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://healis.eu/en/project/neurohealis/&#34;&gt;NeuroHEALIS&lt;/a&gt; was the precursor of &lt;a href=&#34;https://healis.eu/en/project/medilig/&#34;&gt;MEDILIG&lt;/a&gt;, a health information management system that was developed for the &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Department of Neurosurgery in the University of Athens&lt;/a&gt; situated at “Evangelismos” General Hospital. NeuroHEALIS was fully operational during the period from 2006 to 2009 with several publications, presentations and pilot studies that were based on its use. NeuroHEALIS was also functional inside the operating room to capture video and to record operative details.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NEUROHEALIS - Ειδική Βάση Σπαστικότητας</title>
+      <link>https://healis.eu/en/post/20090123/</link>
+      <pubDate>Fri, 23 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20090123/</guid>
+      <description>&lt;h2 id=&#34;διαγράμματα-προόδου-2008-2009&#34;&gt;Διαγράμματα Προόδου 2008-2009&lt;/h2&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;/documents/20090123-neuroinformatics-report.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;https://healis.eu/documents/20090123-neuroinformatics-report.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;https://healis.eu/documents/20090123-neuroinformatics-report.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Advanced Training Courses in Neurosurgery</title>
+      <link>https://healis.eu/en/talk/neurohealis-20080710/</link>
+      <pubDate>Thu, 10 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/talk/neurohealis-20080710/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Based on the modern operating room at &amp;quot;Evangelismos&amp;quot; General Hospital, Department of Neurosurgery organized two advanced training courses in the year 2008, &amp;quot;Stereotactic Techniques and Deep Brain Stimulation&amp;quot; and &amp;quot;Computer-guided Neurosurgical Navigation&amp;quot; to train European neurosurgeons. The minister of public health Dimitris Avramopoulos congratulated Prof. Sakas and his team for the successful outcome of their efforts.&lt;/p&gt;
+&lt;h2 id=&#34;video&#34;&gt;Video&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/PA4NeOXEeRg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;photos&#34;&gt;Photos&lt;/h2&gt;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-photos&#34; href=&#34;https://healis.eu/en/talk/neurohealis-20080710/photos/enxe22nd-7.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/neurohealis-20080710/photos/enxe22nd-7_hubf432948bb65ed8cbed5a1fe81f001b2_101405_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-photos&#34; href=&#34;https://healis.eu/en/talk/neurohealis-20080710/photos/enxe22nd-8.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/neurohealis-20080710/photos/enxe22nd-8_hu157332f2c1d1760e68f37712eca50305_105499_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-photos&#34; href=&#34;https://healis.eu/en/talk/neurohealis-20080710/photos/enxe22nd-9.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/neurohealis-20080710/photos/enxe22nd-9_huf5c00d69726f30276eddfa9b3903751c_91610_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+&lt;h2 id=&#34;about-neurohealis-software&#34;&gt;About NeuroHEALIS software&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://healis.eu/en/project/neurohealis/&#34;&gt;NeuroHEALIS&lt;/a&gt; was the precursor of &lt;a href=&#34;https://healis.eu/en/project/medilig/&#34;&gt;MEDILIG&lt;/a&gt;, a health information management system that was developed for the &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Department of Neurosurgery in the University of Athens&lt;/a&gt; situated at “Evangelismos” General Hospital. NeuroHEALIS was fully operational during the period from 2006 to 2009 with several publications, presentations and pilot studies that were based on its use. NeuroHEALIS was also functional inside the operating room to capture video and to record operative details.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Η Συμβολή των Πολυμέσων στην Νευροχειρουργική Εκπαίδευση</title>
+      <link>https://healis.eu/en/talk/enxe_22nd/</link>
+      <pubDate>Wed, 11 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/talk/enxe_22nd/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#ελεύθερη-ανακοίνωση&#34;&gt;Ελεύθερη Ανακοίνωση&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#α-σκοπός-της-μελέτης&#34;&gt;&lt;strong&gt;Α. Σκοπός της μελέτης&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#β-υλικό-και-μέθοδοι&#34;&gt;&lt;strong&gt;Β. Υλικό και μέθοδοι&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#γ-αποτελέσματα&#34;&gt;&lt;strong&gt;Γ. Αποτελέσματα&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#δ-συμπεράσματα&#34;&gt;&lt;strong&gt;Δ. Συμπεράσματα&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#videos&#34;&gt;Videos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#photos&#34;&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#about-neurohealis-software&#34;&gt;About NeuroHEALIS software&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;ελεύθερη-ανακοίνωση&#34;&gt;Ελεύθερη Ανακοίνωση&lt;/h2&gt;
+&lt;p&gt;Η Συμβολή των Πολυμέσων στην Νευροχειρουργική Εκπαίδευση
+Α. Χατζής, Γ. Στράντζαλης, Θ. Φλάσκας, Σ. Παπάζογλου, Ε. Μποβιάτσης, Δ. Σακάς&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Ελληνικό Κέντρο Νευροχειρουργικής Έρευνας «Καθηγητής Πέτρος Σ. Κόκκαλης»&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Νευροχειρουργική Κλινική Πανεπιστημίου Αθηνών&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Θεραπευτήριο &amp;ldquo;Ο Ευαγγελισμός&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;α-σκοπός-της-μελέτης&#34;&gt;&lt;strong&gt;Α. Σκοπός της μελέτης&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Δημιουργία κατάλληλης υποδομής για την καταγραφή και ψηφιοποίηση της χειρουργικής επέμβασης, μετάδοση σε πραγματικό χρόνο και αρχειοθέτηση τμήματος αυτής σε ειδική βάση πολυμέσων.&lt;/p&gt;
+&lt;h3 id=&#34;β-υλικό-και-μέθοδοι&#34;&gt;&lt;strong&gt;Β. Υλικό και μέθοδοι&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Εφαρμόσαμε δύο μεθόδους για τη μετάδοση της επέμβασης. Πρώτον, με απευθείας σύνδεση από τη χειρουργική αίθουσα σε άλλη κατάλληλα διαμορφωμένη αίθουσα με αμφίδρομη μετάδοση εικόνας και ήχου και δεύτερον μέσω τοπικού δικτύου υπολογιστών με μετάδοση εικονοροής από το χειρουργείο σε άλλο σημείο του δικτύου. Βασικό τμήμα του εξοπλισμού είναι οι κονσόλες/μίκτες των σημάτων εικόνας και ήχου οι οποίες συνθέτουν την εικόνα και διαμορφώνουν τον ήχο από τις πηγές προς τους αποδέκτες. Οι συσκευές αυτές συνδέονται με ηλεκτρονικούς υπολογιστές που διαθέτουν ειδικές κάρτες Audio/Video και στους οποίους υπάρχει η βάση των πολυμέσων και το αρχείο ασθενούς.&lt;/p&gt;
+&lt;h3 id=&#34;γ-αποτελέσματα&#34;&gt;&lt;strong&gt;Γ. Αποτελέσματα&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Η μετάδοση σε πραγματικό χρόνο της επέμβασης του ασθενούς από το χειρουργείο στους συνέδρους και το προσωπικό της κλινικής με τη δυνατότητα επεξηγηματικής αφήγησης των τεκταινομένων από τους νευροχειρουργούς και τους συνεργάτες τους, καθώς και σύναψη αμφίδρομης επικοινωνίας με τη μορφή ερωτήσεων και απαντήσεων την ώρα της επέμβασης. Παράλληλα γίνεται η ψηφιοποίηση και η καταγραφή της επέμβασης σε βάση πολυμέσων που συνδέεται με τον φάκελο του ασθενούς.&lt;/p&gt;
+&lt;h3 id=&#34;δ-συμπεράσματα&#34;&gt;&lt;strong&gt;Δ. Συμπεράσματα&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Η εφαρμογή των πολυμέσων και των βάσεων δεδομένων για την εποπτική ενημέρωση-διδασκαλία και εκπαίδευση του προσωπικού και άλλων ενδιαφερομένων αποτελεί κριτήριο επιλογής της κλινικής μας ως εκπαιδευτικού κέντρου για την διεξαγωγή σεμιναρίων σε ξένους επιστήμονες. Συμβάλει δε σημαντικά στην επιμόρφωση των ειδικευομένων νευροχειρουργών.&lt;/p&gt;
+&lt;h2 id=&#34;videos&#34;&gt;Videos&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/jHgGm_6Y-g8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/PA4NeOXEeRg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;photos&#34;&gt;Photos&lt;/h2&gt;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-photos&#34; href=&#34;https://healis.eu/en/talk/enxe_22nd/photos/enxe22nd-1.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/enxe_22nd/photos/enxe22nd-1_hu92787e929251ca9d4025983703761249_92144_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-photos&#34; href=&#34;https://healis.eu/en/talk/enxe_22nd/photos/enxe22nd-2.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/enxe_22nd/photos/enxe22nd-2_hucc8379f730cab86fd4ae29ec7a9542ea_107861_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-photos&#34; href=&#34;https://healis.eu/en/talk/enxe_22nd/photos/enxe22nd-3.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/enxe_22nd/photos/enxe22nd-3_hub8a02bf0d1d750c4b6be263abce14be6_100002_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-photos&#34; href=&#34;https://healis.eu/en/talk/enxe_22nd/photos/enxe22nd-4.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/enxe_22nd/photos/enxe22nd-4_hu4aedc028f9ffe66ffadb64492ab32c5d_161950_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-photos&#34; href=&#34;https://healis.eu/en/talk/enxe_22nd/photos/enxe22nd-5.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/enxe_22nd/photos/enxe22nd-5_hu5ace705d70ecfef39008467a08c27e6f_145519_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-photos&#34; href=&#34;https://healis.eu/en/talk/enxe_22nd/photos/enxe22nd-6.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/enxe_22nd/photos/enxe22nd-6_hu7a6dccf8597b5b2675a0221c6230488e_146378_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+&lt;h2 id=&#34;about-neurohealis-software&#34;&gt;About NeuroHEALIS software&lt;/h2&gt;
+&lt;p&gt;Το πληροφοριακό σύστημα NeuroHEALIS υλοποιήθηκε στην &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Νευροχειρουργική κλινική του Πανεπιστημίου Αθηνών&lt;/a&gt; στο θεραπευτήριο &amp;ldquo;Ο Ευαγγελισμός&amp;rdquo; κατά τα έτη 2006-2009. Ο ηλεκτρονικός φάκελος ασθενούς που λειτούργησε στην περιόδο αυτή, ήταν ένα από τα υποσυστήματα του NeuroHEALIS. Αξίζει να σημειωθεί ότι το NeuroHEALIS ήταν ίσως το πρώτο πληροφοριακό σύστημα στο νοσοκομείο με πλήρη ιατρικό φάκελο ασθενούς που σχεδιάστηκε σε συνεργασία με ιατρούς και που εντάχτηκε πλήρως στην ροή λειτουργίας της κλινικής. Άλλα υποσυστήματα του NeuroHEALIS ήταν οι ειδικές βάσεις δεδομένων για ασθένειες όπως το Parkinson και η Σπαστικότητα. Βασισμένο στο NeuroHEALIS είναι το &lt;a href=&#34;https://healis.eu/en/project/medilig/&#34;&gt;MEDILIG&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://healis.eu/en/project/neurohealis/&#34;&gt;NeuroHEALIS&lt;/a&gt; was the precursor of &lt;a href=&#34;https://healis.eu/en/project/medilig/&#34;&gt;MEDILIG&lt;/a&gt;, a health information management system that was developed for the &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Department of Neurosurgery in the University of Athens&lt;/a&gt; situated at “Evangelismos” General Hospital. NeuroHEALIS was fully operational during the period from 2006 to 2009 with several publications, presentations and pilot studies that were based on its use. NeuroHEALIS was also functional inside the operating room to capture video and to record operative details.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Οι Νέες Τεχνολογίες στην Υπηρεσία των Ελλήνων Νευροχειρουργών</title>
+      <link>https://healis.eu/en/publication/20171130/</link>
+      <pubDate>Fri, 30 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/publication/20171130/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#αποσπάσματα&#34;&gt;Αποσπάσματα&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#το-άρθρο-στην-εφημερίδα-το-βημα&#34;&gt;Το Άρθρο στην Εφημερίδα το ΒΗΜΑ&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#about-neurohealis-software&#34;&gt;About NeuroHEALIS software&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;αποσπάσματα&#34;&gt;Αποσπάσματα&lt;/h2&gt;
+&lt;p&gt;Πριν από 70 έτη ο διορατικός τότε καθηγητής Ιατρικής Πέτρος Κόκκαλης είχε «οσμιστεί» τη ραγδαία άνθηση που θα είχε ο τομέας της νευροχειρουργικής. Για αυτόν τον λόγο πιθανότατα κατέγραφε με κάθε λεπτομέρεια τα πεπραγμένα από τις πρωτοποριακές νευροχειρουργικές επεμβάσεις που διενεργούσε για την εποχή του με τα πενιχρά μέσα που διέθετε, μολύβι και χαρτί, δημιουργώντας έτσι την &lt;span class=&#34;markup-quote&#34;&gt;πρώτη «βάση δεδομένων» στον τομέα της νευροχειρουργικής στην Ελλάδα&lt;/span&gt;. Σήμερα, επτά δεκαετίες αργότερα, οι έλληνες νευροχειρουργοί του θεραπευτηρίου Ευαγγελισμός έχουν τη δυνατότητα- με τη χείρα βοηθείας της πιο προηγμένης τεχνολογίας- να αντικαθιστούν αυτές τις χειρόγραφες σημειώσεις με ψηφιακά δεδομένα τα οποία δομούν αναλυτικές, ηλεκτρονικές βάσεις που «χαρτογραφούν» τις νευρολογικές παθήσεις στη χώρα μας. Η πολύτιμη αυτή «χαρτογράφηση» είναι μία από τις ποικίλες δραστηριότητες του Ελληνικού Κέντρου Νευροχειρουργικής Ερευνας (ΕΚΝΕ) «Πέτρος Σ. Κόκκαλης», το οποίο εγκαινιάστηκε χθες το βράδυ επισήμως κατά τη διάρκεια ειδικής εκδήλωσης στο Μέγαρο Μουσικής Αθηνών.&lt;/p&gt;
+&lt;p&gt;Το Κέντρο δραστηριοποιείται σε διαφορετικούς τομείς. Ο ένας εξ αυτών αφορά τη δημιουργία και τη λειτουργία προηγμένων βάσεων δεδομένων, όπου καταχωρίζονται αναλυτικά τα στοιχεία των ιατρικών φακέλων των ασθενών που εισάγονται στη Νευροχειρουργική Κλινική του Ευαγγελισμού. &lt;span class=&#34;markup-quote&#34;&gt;Το όλο σύστημα λειτουργεί «on line», όπως εξήγησε στο «Βήμα» ο υπεύθυνος Ιατρικής Πληροφορικής του Κέντρου κ. Αθ. Χατζής.&lt;/span&gt; Οσα συμβαίνουν στο χειρουργείο, στους θαλάμους ασθενών ή στις Μονάδες Εντατικής Θεραπείας, αποστέλλονται και εισάγονται κατευθείαν στη βάση με τα στοιχεία του κάθε ασθενούς. Σε πραγματικό χρόνο έχουν όμως τη δυνατότητα και ειδικευόμενοι ή ειδικευμένοι γιατροί να παρακολουθούν από το κτίριο της Πλουτάρχου επεμβάσεις που διενεργούνται από τους ειδικούς της Νευροχειρουργικής Κλινικής του Ευαγγελισμού. Προς γνώσιν και&amp;hellip; συμμόρφωσιν με τις νέες εξελιγμένες τεχνικές και τα δεδομένα.&lt;/p&gt;
+&lt;p&gt;Εκτός από αυτή τη γενική βάση δεδομένων υπάρχουν όμως και εξειδικευμένες που αφορούν διαφορετικές παθήσεις και συγκεκριμένα την επιληψία, τη νόσο του Πάρκινσον, τις δυστονίες, τη σπαστικότητα και τον χρόνιο πόνο. Σύμφωνα μάλιστα με τον κ. Σακά, η ειδική βάση για την επιληψία που ονομάζεται ΕΡΙLDΑ- είναι μία από τις πιο εξελιγμένες διεθνώς-, η οποία έχει δημιουργηθεί σε συνεργασία με το Τμήμα Βιοϊατρικής του Εθνικού Μετσόβιου Πολυτεχνείου, φέρνει τους έλληνες ειδικούς στην πρωτοπορία σε ό,τι αφορά μια πάθηση που «πλήττει» χιλιάδες Ελληνες. Η αναλυτική αυτή καταγραφή των νευρολογικών παθήσεων επιτρέπει όχι μόνο την καλύτερη αντιμετώπιση του κάθε ασθενούς με θεραπείες «κομμένες και ραμμένες» στα μέτρα του, αλλά την ίδια στιγμή παρέχει πλούσιο υλικό που μπορεί να διαμορφώσει μια ολοκληρωμένη, για πρώτη φορά, εικόνα σχετικά με τις συγκεκριμένες ασθένειες στη χώρα μας.&lt;/p&gt;
+&lt;h2 id=&#34;το-άρθρο-στην-εφημερίδα-το-βημα&#34;&gt;Το Άρθρο στην Εφημερίδα το ΒΗΜΑ&lt;/h2&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;/documents/20071130-BHMA.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;https://healis.eu/documents/20071130-BHMA.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;https://healis.eu/documents/20071130-BHMA.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;about-neurohealis-software&#34;&gt;About NeuroHEALIS software&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://healis.eu/en/project/neurohealis/&#34;&gt;NeuroHEALIS&lt;/a&gt; was the precursor of &lt;a href=&#34;https://healis.eu/en/project/medilig/&#34;&gt;MEDILIG&lt;/a&gt;, a health information management system that was developed for the &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Department of Neurosurgery in the University of Athens&lt;/a&gt; situated at “Evangelismos” General Hospital. NeuroHEALIS was fully operational during the period from 2006 to 2009 with several publications, presentations and pilot studies that were based on its use. NeuroHEALIS was also functional inside the operating room to capture video and to record operative details.&lt;/p&gt;
+&lt;p&gt;Το πληροφοριακό σύστημα NeuroHEALIS υλοποιήθηκε στην &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Νευροχειρουργική κλινική του Πανεπιστημίου Αθηνών&lt;/a&gt; στο θεραπευτήριο &amp;ldquo;Ο Ευαγγελισμός&amp;rdquo; κατά τα έτη 2006-2009. Ο ηλεκτρονικός φάκελος ασθενούς που λειτούργησε στην περιόδο αυτή, ήταν ένα από τα υποσυστήματα του NeuroHEALIS. Αξίζει να σημειωθεί ότι το NeuroHEALIS ήταν ίσως το πρώτο πληροφοριακό σύστημα στο νοσοκομείο με πλήρη ιατρικό φάκελο ασθενούς που σχεδιάστηκε σε συνεργασία με ιατρούς και που εντάχτηκε πλήρως στην ροή λειτουργίας της κλινικής. Άλλα υποσυστήματα του NeuroHEALIS ήταν οι ειδικές βάσεις δεδομένων για ασθένειες όπως το Parkinson και η Σπαστικότητα. Βασισμένο στο NeuroHEALIS είναι το &lt;a href=&#34;https://healis.eu/en/project/medilig/&#34;&gt;MEDILIG&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NEUROHEALIS</title>
+      <link>https://healis.eu/en/project/neurohealis/</link>
+      <pubDate>Wed, 16 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/project/neurohealis/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#summary&#34;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#brochure&#34;&gt;Brochure&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#system-architecture-and-components&#34;&gt;System Architecture and Components&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#electronic-medical-record&#34;&gt;Electronic Medical Record&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#spasticity-database&#34;&gt;Spasticity Database&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#parkinson-database&#34;&gt;Parkinson Database&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#dystonia-database&#34;&gt;Dystonia Database&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#system-performance&#34;&gt;System Performance&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#publications--presentations&#34;&gt;Publications &amp;amp; Presentations&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#in-english&#34;&gt;In English&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#in-greek&#34;&gt;In Greek&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#screen-capture-demo&#34;&gt;Screen-capture Demo&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#part-1&#34;&gt;Part 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#part-2&#34;&gt;Part 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#part-3&#34;&gt;Part 3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#part-4&#34;&gt;Part 4&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;NeuroHEALIS was the precursor of &lt;a href=&#34;https://healis.eu/en/project/medilig/&#34;&gt;MEDILIG&lt;/a&gt;, a health information system that was developed for the &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Department of Neurosurgery in the University of Athens&lt;/a&gt; situated at “Evangelismos” General Hospital. NeuroHEALIS was fully operational during the period from 2006 to 2009 with several publications, presentations and pilot studies that were based on its use.&lt;/p&gt;
+&lt;h2 id=&#34;brochure&#34;&gt;Brochure&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Download the brochure (&lt;a href=&#34;https://healis.eu/documents/20090602-neurohealis_brochure.pptx&#34;&gt;.pptx&lt;/a&gt;) file&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe
+  style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
+  src=&#34;http://www.slideshare.net/slideshow/embed_code/4878795?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt;
+&lt;/iframe&gt;
+
+&lt;h2 id=&#34;system-architecture-and-components&#34;&gt;System Architecture and Components&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Software Design and Development - Athanassios I. Hatzis&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The components of NeuroHEALIS system are:&lt;/p&gt;
+&lt;h3 id=&#34;electronic-medical-record&#34;&gt;Electronic Medical Record&lt;/h3&gt;
+&lt;p&gt;Scientific content and Business Logic Design -  Prof. George Stranjalis (MD)
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-01.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-01_hu26ce4c05c0d65005dab515205ecae8a7_87659_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-02.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-02_hub2599e399f6dee62fa8191c6777878f6_167226_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-03.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-03_hu66876c80ada8c4c1a6d9c0ccdbfa3035_39784_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-04.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-04_hub0a53991a1f6cb7ad3368cfeb763260c_115276_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-05.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-05_hu2a71bdf8fd33406231e458d1ff2921c6_64227_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-06.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-06_huc7ab58324e3b4cafb90eed0cc3327b29_82743_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-07.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-07_hu8576cdc34df1ded7710a79b2fa4ed218_161592_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-08.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-08_hu961b86443825e67fd38ca54afdf992ab_169309_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-09.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-09_hu8bd07371e04a727db2e98d866b8ea54a_179504_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-10.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-10_hu559c31805dd54ad301fd8b168a266744_73923_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;spasticity-database&#34;&gt;Spasticity Database&lt;/h3&gt;
+&lt;p&gt;Scientific content and Business Logic Design -  Vassiliki Konofaou, (MD)
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_spasticity&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-01.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-01_hub51a35bb2651215b778e042662f92d23_169360_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_spasticity&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-02.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-02_hua091f4c62f6ca7e50a494bd9d2475881_99386_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_spasticity&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-03.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-03_huab119e8f161e52cc879fc3a7192da789_148414_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;parkinson-database&#34;&gt;Parkinson Database&lt;/h3&gt;
+&lt;p&gt;Scientific content and Business Logic Design -  Marios Themistokleous, (MD)
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-01.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-01_hudab8ebeccac066d00cb91de7d6e14063_93107_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-02.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-02_hu632b2adce1d4c72d98d27c3d8627d2e0_139289_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-03.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-03_hu1e91bdea73f79840fd9d1b728a32e5bb_136864_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-04.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-04_hu462ffc11169e52b0d8e701df8c2faed8_119134_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-05.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-05_hu01a8058cb31e5a518205a0608cd85a97_56691_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;dystonia-database&#34;&gt;Dystonia Database&lt;/h3&gt;
+&lt;p&gt;Scientific content and Business Logic Design -  Lampis Stavrinou, (MD)
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-01.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-01_hu0a6e316b99931076cd1afd9b2b83e074_120278_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-02.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-02_hud039b73ccbe585468c5341d225eafb80_109887_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-03.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-03_hu51c4010ef9c6653292d78c3eeb6cc320_66904_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-04.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-04_huc6e44d478b27bb7fe86492b1f9b4e87b_66599_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-05.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-05_hu59abcca9d386a61a603e2d76df5b8c3b_131124_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-06.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-06_hu14ade045bcb283c3f2312971f5eb166f_156064_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;&lt;/p&gt;
+&lt;h2 id=&#34;system-performance&#34;&gt;System Performance&lt;/h2&gt;
+&lt;p&gt;During NeuroHEALIS pilot study, 2007-2008, we monitored closely the data entry procedure. In the case of stasticity database we observed a 200% increase on data completion and quality. This was achieved thanks to automation of reports and measurement of several indexes such as percentage of completion on database fields, percentage of data entered by each user, and frequence and duration of follow-up measurements (see &lt;a href=&#34;https://healis.eu/en/post/20090123/&#34;&gt;spasticity study&lt;/a&gt;). Results were presented on the 7th International Conference on Information Communication Technologies in Health, (&lt;a href=&#34;https://healis.eu/en/talk/neurohealis-20090716/&#34;&gt;ICICTH 2009&lt;/a&gt;).&lt;/p&gt;
+
+
+
+  
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://healis.eu/img/patient_increase_diagram.jpg&#34; &gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;publications--presentations&#34;&gt;Publications &amp;amp; Presentations&lt;/h2&gt;
+&lt;h3 id=&#34;in-english&#34;&gt;In English&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A presentation entitled &lt;a href=&#34;https://healis.eu/en/talk/neurohealis-20090716/&#34;&gt;&amp;ldquo;NeuroHEALIS - A Neurosurgical Health Information System for Integration of Clinical Research and Clinical Care&amp;rdquo;&lt;/a&gt; presented on the 7th ICICTH Conference held at Samos, July 26 2009&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A paper entitled &lt;a href=&#34;https://healis.eu/en/talk/neurohealis-20090508/&#34;&gt;&amp;ldquo;A Modern Neuro-Surgical Operating Room at Evangelismos Hospital&amp;rdquo;&lt;/a&gt; was presented on the &amp;ldquo;Data Mining in BioMedicine 2009 Conference - DMINBIO 2009&amp;rdquo; held in Athens Information Technology (AIT) at Paiania, Athens, May 7-8 2009&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Based on the modern operating room at &amp;ldquo;Evangelismos&amp;rdquo; General Hospital &lt;a href=&#34;https://healis.eu/en/talk/neurohealis-20080710/&#34;&gt;Department of Neurosurgery organized two advanced training courses&lt;/a&gt; in the year 2008, &amp;ldquo;Stereotactic Techniques and Deep Brain Stimulation&amp;rdquo; and &amp;ldquo;Computer-guided Neurosurgical Navigation&amp;rdquo; to train European neurosurgeons. The minister of public health Dimitris Avramopoulos congratulated Prof. Sakas and his team for the successful outcome of their efforts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;in-greek&#34;&gt;In Greek&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ελεύθερη ανακοίνωση με τίτλο &lt;a href=&#34;https://healis.eu/en/talk/enxe_22nd/&#34;&gt;&amp;ldquo;Η συμβολή των Πολυμέσων στην Νευροχειρουργική Εκπαίδευση&amp;rdquo;&lt;/a&gt; που παρουσιάστηκε στο 22ο Πανελλήνιο Συνέδριο Νευροχειρουργικής στην Αθήνα το 2008. Η παρουσίαση δείχνει την υλοποίηση και εφαρμογή κατάλληλης υλικοτεχνικής υποδομής για την καταγραφή και ψηφιοποίηση της χειρουργικής επέμβασης, μετάδοση σε πραγματικό χρόνο και αρχειοθέτηση τμήματος αυτής σε ειδική βάση πολυμέσων.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ελεύθερη ανακοίνωση με τίτλο &lt;a href=&#34;https://healis.eu/en/talk/enxe_21st/&#34;&gt;&amp;ldquo;Η συμβολή της Ιατρικής Πληροφορικής στην Νευροχειρουργική&amp;rdquo;&lt;/a&gt; που παρουσιάστηκε στο 21ο Πανελλήνιο Συνέδριο Νευροχειρουργικής στη Ρόδο το 2007. Το δημοσίευμα αυτό είναι το πρώτο με εκτενή αναφορά στο έργο της Ιατρικής Πληροφορικής που επιτελέστηκε στην Νευροχειρουργική Κλινική στο Θεραπευτήριο &amp;ldquo;Ο Ευαγγελισμός&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Αποσπάσματα από το άρθρο &lt;a href=&#34;https://healis.eu/en/publication/20171130&#34;&gt;&amp;ldquo;Οι νέες τεχνολογίες στην υπηρεσία των Ελλήνων νευροχειρουργών&amp;rdquo;&lt;/a&gt; της δημοσιογράφου Θεοδώρας Τσώλη στο Βήμα, Παρασκευή 30 Νοεμβρίου 2007.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;screen-capture-demo&#34;&gt;Screen-capture Demo&lt;/h2&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/dhAQB44QQZg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;part-1&#34;&gt;Part 1&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0zqYT7C7OXI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;part-2&#34;&gt;Part 2&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/kewwVdJpzSY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;part-3&#34;&gt;Part 3&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LbAwuEZNNms&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;part-4&#34;&gt;Part 4&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7qWokWCfqdo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Η Συμβολή της Ιατρικής Πληροφορικής στην Νευροχειρουργική</title>
+      <link>https://healis.eu/en/talk/enxe_21st/</link>
+      <pubDate>Wed, 16 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/talk/enxe_21st/</guid>
+      <description>&lt;h2 id=&#34;ελεύθερη-ανακοίνωση&#34;&gt;Ελεύθερη Ανακοίνωση&lt;/h2&gt;
+&lt;p&gt;Η Συμβολή της Ιατρικής Πληροφορικής στην Νευροχειρουργική&lt;/p&gt;
+&lt;p&gt;Χατζής Α. (1), Στράντζαλης Γ. (1,2), Μποβιάτσης Ε. (1,2), Γκατζώνης Σ. (2), Σδρόλιας Π. (2), Λουφαρδάκη Μ. (1), Γιαννακάκης Γ. (3), Τσιρογιάννης Γ. (3), Νικήτα Κ. (3), Σακάς Δ.Ε. (1,2)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ελληνικό Κέντρο Νευροχειρουργικής Έρευνας «Καθηγητής Πέτρος Σ. Κόκκαλης»&lt;/li&gt;
+&lt;li&gt;Νευροχειρουργική Κλινική, Πανεπιστήμιο Αθηνών, Θεραπευτήριο «Ο Ευαγγελισμός»&lt;/li&gt;
+&lt;li&gt;Εργαστήριο Βιοϊατρικής Προσομοίωσης, Εθνικό Μετσόβειο Πολυτεχνείο&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;α-σκοπός-της-μελέτης&#34;&gt;Α. Σκοπός της μελέτης&lt;/h3&gt;
+&lt;p&gt;Περιγράφουμε την εφαρμογή λογισμικού για την συλλογή, διαχείριση, τυποποίηση και ανάλυση κλινικών δεδομένων της νευροχειρουργικής ειδικότητας με την υποστήριξη κατάλληλης υλικοτεχνικής υποδομής. Ο σχεδιασμός του λογισμικού έγινε σε στενή συνεργασία με νευροχειρουργούς και νευρολόγους και είχε ως σκοπό πέραν από την εύκολη χρήση του ως πρόγραμμα την ταυτόχρονη επεξεργασία ή πρόσβαση σε δεδομένα του ασθενούς από πολλούς χρήστες και από πολλά σημεία.&lt;/p&gt;
+&lt;h3 id=&#34;β-υλικό---μέθοδος&#34;&gt;Β. Υλικό - Μέθοδος&lt;/h3&gt;
+&lt;p&gt;Η εισαγωγή των δεδομένων έγινε από χειρόγραφα και από άλλα έντυπα σε ηλεκτρονική μορφή με αυτόματη, ημιαυτόματη και χειρονακτική μέθοδο και αφορούσε όλες τις εισαγωγές από 1-1-1998. Εκτός από κείμενο σε ηλεκτρονική μορφή αποθηκεύσαμε απεικονιστικές εξετάσεις καθώς και φωτογραφίες και video από επέμβαση ασθενούς (σε επιλεγμένα περιστατικά). Ένα από τα κύρια θέματα στην καταχώρηση των στοιχείων ήταν και η αντιμετώπιση θεμάτων ασφάλειας των δεδομένων με κύριους άξονες την διαθεσιμότητα, την πιστοποίηση, την πρόσβαση σε λειτουργίες του προγράμματος καθώς και τη τροποποίηση, την εμπιστευτικότητα, και την ακεραιότητα των στοιχείων.&lt;/p&gt;
+&lt;h3 id=&#34;γ-αποτελέσματα&#34;&gt;Γ. Αποτελέσματα&lt;/h3&gt;
+&lt;p&gt;Η παρούσα προσπάθεια περιλαμβάνει την ηλεκτρονική αρχειοθέτηση 12000 εισαγωγών και 6500 επεμβάσεων καθώς και τη λειτουργία ειδικών βάσεων 70 ασθενών με επιληψία, 83 ασθενών με νόσο Parkinson και 110 ασθενών με σπαστικότητα.&lt;/p&gt;
+&lt;h3 id=&#34;δ-συμπεράσματα&#34;&gt;Δ. Συμπεράσματα&lt;/h3&gt;
+&lt;p&gt;Η οργάνωση της πληροφορίας που συλλέγουμε για τον ασθενή και την πάθησή του, συμβάλλει στην ταχύτητα ανάκτησης, στην ακρίβεια ενημέρωσης, στον έλεγχο ορθότητάς και στη δυνατότητα συλλογικής επεξεργασίας των στοιχείων.&lt;/p&gt;
+&lt;h3 id=&#34;παρουσίαση&#34;&gt;Παρουσίαση&lt;/h3&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+	&lt;object data=&#34;/documents/20070516-enxe21st-paper.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+		&lt;embed src=&#34;https://healis.eu/documents/20070516-enxe21st-paper.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;https://healis.eu/documents/20070516-enxe21st-paper.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+			instead. Thanks!&lt;/em&gt;
+	&lt;/object&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;video&#34;&gt;Video&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1xAPXaYaTKU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;about-neurohealis-software&#34;&gt;About NeuroHEALIS software&lt;/h2&gt;
+&lt;p&gt;Το πληροφοριακό σύστημα NeuroHEALIS υλοποιήθηκε στην &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Νευροχειρουργική κλινική του Πανεπιστημίου Αθηνών&lt;/a&gt; στο θεραπευτήριο &amp;ldquo;Ο Ευαγγελισμός&amp;rdquo; κατά τα έτη 2006-2009. Ο ηλεκτρονικός φάκελος ασθενούς που λειτούργησε στην περιόδο αυτή, ήταν ένα από τα υποσυστήματα του NeuroHEALIS. Αξίζει να σημειωθεί ότι το NeuroHEALIS ήταν ίσως το πρώτο πληροφοριακό σύστημα στο νοσοκομείο με πλήρη ιατρικό φάκελο ασθενούς που σχεδιάστηκε σε συνεργασία με ιατρούς και που εντάχτηκε πλήρως στην ροή λειτουργίας της κλινικής. Άλλα υποσυστήματα του NeuroHEALIS ήταν οι ειδικές βάσεις δεδομένων για ασθένειες όπως το Parkinson και η Σπαστικότητα. Βασισμένο στο NeuroHEALIS είναι το &lt;a href=&#34;https://healis.eu/en/project/medilig/&#34;&gt;MEDILIG&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://healis.eu/en/project/neurohealis/&#34;&gt;NeuroHEALIS&lt;/a&gt; was the precursor of &lt;a href=&#34;https://healis.eu/en/project/medilig/&#34;&gt;MEDILIG&lt;/a&gt;, a health information management system that was developed for the &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Department of Neurosurgery in the University of Athens&lt;/a&gt; situated at “Evangelismos” General Hospital. NeuroHEALIS was fully operational during the period from 2006 to 2009 with several publications, presentations and pilot studies that were based on its use. NeuroHEALIS was also functional inside the operating room to capture video and to record operative details.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
