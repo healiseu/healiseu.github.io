@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.74.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Athanassios I. Hatzis, PhD">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Part 5/6 of the series Associative Data Modelling Demystified">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://healis.eu/en/post/20170211/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24920503-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://healis.eu/en/post/20170211/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@healiseu">
+  <meta property="twitter:creator" content="@healiseu">
+  
+  <meta property="og:site_name" content="HEALIS">
+  <meta property="og:url" content="https://healis.eu/en/post/20170211/">
+  <meta property="og:title" content="Qlik Associative Model | HEALIS">
+  <meta property="og:description" content="Part 5/6 of the series Associative Data Modelling Demystified"><meta property="og:image" content="https://healis.eu/en/post/20170211/featured.jpg">
+  <meta property="twitter:image" content="https://healis.eu/en/post/20170211/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2017-02-11T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2017-02-11T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Qlik Associative Model | HEALIS</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/en/"><img src="/img/healis-text-with-logo.png" alt="HEALIS"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#home"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/about/"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/hmorph/"><span>HyperMorph</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/s3dm/"><span>S3DM</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/en/post/"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/talk/"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/terms/"><span>Terms</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/contact/"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    
+    
+    <div class="article-container py-3">
+      <h1 itemprop="name">Qlik Associative Model</h1>
+
+      
+      <p class="page-subtitle">Part 5/6 of the series Associative Data Modelling Demystified</p>
+      
+
+      
+      
+
+
+
+<meta content="2017-02-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2017-02-11 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/en/authors/admin/">Athanassios I. Hatzis, PhD</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2017-02-11</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    10 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/en/post/20170211/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/en/categories/semantic_web/">Semantic_Web</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://healis.eu/en/post/20170211/&amp;text=Qlik%20Associative%20Model" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://healis.eu/en/post/20170211/&amp;t=Qlik%20Associative%20Model" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Qlik%20Associative%20Model&amp;body=https://healis.eu/en/post/20170211/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://healis.eu/en/post/20170211/&amp;title=Qlik%20Associative%20Model" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Qlik%20Associative%20Model%20https://healis.eu/en/post/20170211/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://healis.eu/en/post/20170211/&amp;title=Qlik%20Associative%20Model" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/en/project/r3dm/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+      
+      
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction-to-qliks-associative-model">Introduction to Qlik&rsquo;s Associative Model</a></li>
+    <li><a href="#qliks-in-memory-associative-architecture">Qlik&rsquo;s In-Memory Associative Architecture</a>
+      <ul>
+        <li><a href="#loading-the-data">Loading the data</a></li>
+        <li><a href="#explorefilter-data-via-selections">Explore/Filter Data via Selections</a></li>
+      </ul>
+    </li>
+    <li><a href="#r3dm-hypergraph-representation">R3DM Hypergraph Representation</a>
+      <ul>
+        <li><a href="#air-units">AIR Units</a></li>
+      </ul>
+    </li>
+    <li><a href="#future-plans">Future Plans</a></li>
+    <li><a href="#cross-references">Cross-References</a></li>
+  </ul>
+</nav>
+
+<h2 id="introduction-to-qliks-associative-model">Introduction to Qlik&rsquo;s Associative Model</h2>
+<p>In the <a href="/en/post/20161220/#discussion">discussion session</a> of the previous post of our series we mentioned two basic reasons that make <a href="https://en.wikipedia.org/wiki/Resource_Description_Framework">RDF</a> data modeling and consequently <a href="https://www.w3.org/TR/rdf-sparql-query/">SPARQL</a> query mechanism disadvantageous with an interactive and associative data exploration and data integration as that of <a href="http://www.qlik.com/us/products/qlikview">QlikView</a>/<a href="http://www.qlik.com/us/products/qlik-sense">Qliksense</a>. These are the naming of predicate terms that connect resources and literals and the unidirectional architectural design of the edges. We have already demonstrated this issue with the <a href="/en/post/20161220/#associative-model">associative model schema design</a> of a Movies domain in Freebase, <a href="/en/post/20161220/#fig10"><strong>Fig.10</strong></a>, and the modeling of our Supplier-Parts-Catalogue toy example in Sentences, <a href="/en/post/20161220/#fig15"><strong>Fig.15</strong></a>, <a href="/en/post/20161220/#fig16"><strong>Fig.16</strong></a> and OrientDB Property Graph, <a href="/en/post/20160913/#fig4"><strong>Fig.4</strong></a>. In this post we continue our journey with Qlik&rsquo;s associative data model.</p>
+<h2 id="qliks-in-memory-associative-architecture">Qlik&rsquo;s In-Memory Associative Architecture</h2>
+<p>Qlik&rsquo;s competitive advantage over other BI tools is that it manages associations in memory at the engine level and not at the application level [(English,2010)]<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. This management of data, is deep down to an atomic level of data (<a href="http://www.businessdictionary.com/definition/granularity.html">Granularity</a>), i.e. <strong>every data point in every field of a table is associated with every other data point anywhere in the entire schema</strong> [(English,2010)]<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. We will follow Qlik&rsquo;x QIX engine stepwise approach with the goal of performing an interactive data exploration [(Ferguson,2015,p.10)]<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> of our Suppliers-Parts-Catalogue data set.</p>
+<h3 id="loading-the-data">Loading the data</h3>
+<p>The first step is to bring data into memory. A multi-table <strong>read-only</strong>, in-memory, compressed, binary, columnar data model is created. Data from each source data table is converted into two types of in memory data structure : [(Ferguson,2015,p.12)]<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<ul>
+<li>A set of columns that contain binary values, i.e. references, <strong>for each distinct original value</strong>.</li>
+<li>A compressed binary data table by <strong>replacing each row/column cell value with a binary reference</strong>.</li>
+</ul>
+<p>For example, the following statements, [QlikView script syntax, p.242]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, load data from the <a href="https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/tsv/Parts.tsv">Parts</a> and <a href="https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/tsv/Suppliers.tsv">Suppliers</a> tables that are stored in Excel files and reconstruct eleven unique columns and two read-only binary representation of these tables in memory.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">LOAD</span> <span style="color:#a6e22e">prtID</span>, <span style="color:#a6e22e">prtName</span>, <span style="color:#a6e22e">prtColor</span>, <span style="color:#a6e22e">prtWeight</span>, <span style="color:#a6e22e">prtUnit</span>
+<span style="color:#a6e22e">FROM</span> [<span style="color:#a6e22e">F</span><span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">tmp</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SupplierPartCatalogue</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SuppliersPartsCatalogue</span>.<span style="color:#a6e22e">xlsx</span>]
+(<span style="color:#a6e22e">ooxml</span>, <span style="color:#a6e22e">embedded</span> <span style="color:#a6e22e">labels</span>, <span style="color:#a6e22e">table</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">Part</span>);
+
+<span style="color:#a6e22e">LOAD</span> <span style="color:#a6e22e">supID</span>, <span style="color:#a6e22e">supName</span>, <span style="color:#a6e22e">supAddress</span>, <span style="color:#a6e22e">supCity</span>, <span style="color:#a6e22e">supCountry</span>, <span style="color:#a6e22e">supStatus</span>
+<span style="color:#a6e22e">FROM</span> [<span style="color:#a6e22e">F</span><span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">tmp</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SupplierPartCatalogue</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SuppliersPartsCatalogue</span>.<span style="color:#a6e22e">xlsx</span>]
+(<span style="color:#a6e22e">ooxml</span>, <span style="color:#a6e22e">embedded</span> <span style="color:#a6e22e">labels</span>, <span style="color:#a6e22e">table</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">Supplier</span>);
+</code></pre></div><p>If two fields have the same name in two different tables (i.e. a relationship) then they have the same columnar binary representation. In order to resolve ambiguities and to associate over fields that have the same name, unique column naming is required. This is the case for our third associative, i.e. bridge, junction table. Field names <code>catSID</code> and <code>catPID</code> have already been loaded and represented with the columns <code>supID</code> and <code>prtID</code>. The next <code>LOAD</code> statement is using the alias operator (<code>as</code>) to handle unique column naming.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">LOAD</span> <span style="color:#a6e22e">catSID</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">supID</span>, <span style="color:#a6e22e">catPID</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">prtID</span>, <span style="color:#a6e22e">catPrice</span>, <span style="color:#a6e22e">catTotal</span>, <span style="color:#a6e22e">catDate</span>, <span style="color:#a6e22e">catChk</span>
+<span style="color:#a6e22e">FROM</span> [<span style="color:#a6e22e">F</span><span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">tmp</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SupplierPartCatalogue</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SuppliersPartsCatalogue</span>.<span style="color:#a6e22e">xlsx</span>]
+(<span style="color:#a6e22e">ooxml</span>, <span style="color:#a6e22e">embedded</span> <span style="color:#a6e22e">labels</span>, <span style="color:#a6e22e">table</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">Catalogue</span>);
+</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="qlikview-spc-TableView-390x360.jpg" >
+
+<img src="qlikview-spc-TableView-390x360.jpg" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4>QlikView Internal/Source Table View</h4>
+  
+</figcaption>
+
+</figure>
+</p>
+<p>Once the script is executed we can review the data table structure, <a href="#fig1"><strong>Fig. 1</strong></a>, with the Table Viewer. The three tables are associated with two connectors that bidirectionally link them through their common fields. This layout is quite similar with the Entity-Relationship diagram of Microsoft Access database schema, <a href="/en/post/20160825/#fig5"><strong>Fig.5</strong></a>. A QlikView association resembles a SQL natural outer join. However, an outer join in SQL is unidirectional. An association always results in a full (bidirectional) linkage. In practice we have two completely different approaches. In a typical SQL join query we repeatedly search the index because of the join condition.</p>
+<blockquote>
+<p><strong>QlikView associative engine (QIX) knows how every data point is associated, therefore it can effectively determine (infers) and flag all distinct column values and all rows in each data table upon user&rsquo;s selection</strong> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+</blockquote>
+<h4 id="the-blind-spot">The Blind Spot</h4>
+<p>Depending only on memory, QlikView can load many whole tables without joins, instead of a limited view from the main dataset. Other query-based BI tools usually aggregate an extracted subset of data and return it in the form of a result set. This result set is completely divorced from the original data set and this very act of extraction breaks associations. For example, find out how a piece of data contained in a query relates to another piece of data outside the query [(QlikView Whitepaper, October 2010, p.3)]<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. You may think also of an internal combustion engine analogy . With the query-based paradigm, we would look at individual parts of the engine in isolation, (see the header image of our post). Using QlikView associative technology, we have access to a digital model of a complete working engine and we can tweak any part to see how that affects other parts and the engine on the whole.</p>
+<h3 id="explorefilter-data-via-selections">Explore/Filter Data via Selections</h3>
+<p>In this section we will examine QlikView associative aspect from the user&rsquo;s experience point of view. &ldquo;<em>Central to QlikView is the concept of a user-defined selection state. As users click around in a QlikView document, they indicate which subsets of data they are interested in analyzing and which subsets should be ignored</em>, [(QlikView Whitepaper, September 2011, p.10)]<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. To demonstrate the visual effect of associations, i.e. the relationship between a value in one field and a value in another, we arranged a number of [Sheet Objects, p.457]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> in our Main worksheet. We chose [Table Boxes, p.507]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to present rows of data from our Tables and [List Boxes, p.459]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to display a list of all possible values of a specific field. We have also added a [Current Selections Box, p.519]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to list user&rsquo;s selected field values and a [Search Object, p.569]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> for searching for information anywhere in the document, <a href="#fig2"><strong>Fig.2</strong></a>.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="qlikview-spc-NoneSelected-2138x741.jpg" data-caption="QlikView Sheet Object in an unselected state with Table Boxes, Current Selections, and a Search Box on the left side and a Container with List Boxes for Fields representation on the right side">
+
+<img src="qlikview-spc-NoneSelected-2138x741.jpg" alt="QlikView Sheet Object in an unselected state with Table Boxes, Current Selections, and a Search Box on the left side and a Container with List Boxes for Fields representation on the right side" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    QlikView Sheet Object in an unselected state with Table Boxes, Current Selections, and a Search Box on the left side and a Container with List Boxes for Fields representation on the right side
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>Now you can see visually what is associated and is not associated with any particular selection. For instance, [<strong>Fig.3</strong>]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> displays the state of our Worksheet when the user selected the Part item with ID value equal to <code>998</code>. The <code>List Box</code> of the field (<strong>prtID</strong>) with the value <code>998</code> appears in green and it has also been added to the <code>Current Selections</code> list. In other <code>List Boxes</code>, unrelated values in all other fields appear in gray and those that are related appear in white. At the same time, when the user interacts with this particular <code>List Box</code> all the rows of <code>Table Boxes</code> are instantly filtered to reflect this new context.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="qlikview-spc-PartSelected-2138x741.jpg" data-caption="Table Boxes on the left side are filtered and values of the List Boxes on the right appear in white or gray according to the current selection (green)">
+
+<img src="qlikview-spc-PartSelected-2138x741.jpg" alt="Table Boxes on the left side are filtered and values of the List Boxes on the right appear in white or gray according to the current selection (green)" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Table Boxes on the left side are filtered and values of the List Boxes on the right appear in white or gray according to the current selection (green)
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>So far we have seen how we can get the resulting data after user&rsquo;s selection in two possible formats, a list of values (<code>List Box</code>) for each field of the data Table, <a href="#fig5"><strong>Fig.5</strong></a>, and a grid (<code>Table Box</code>) with tuples (records), <a href="#fig4"><strong>Fig.4</strong></a>. You may also notice in our visual setup that we have a <code>Derived Relation</code> red grid with selected fields from all three Tables of our data set. This grid is automatically constructed with those tuples that appear in the other three grids (<code>Catalogue Table Box</code>, <code>Part Table Box</code> and <code>Supplier Table Box</code>). We should make it clear that the update of this <code>Derived Relation</code> under the hood is not performing any kind of <a href="https://en.wikipedia.org/wiki/Join_(SQL)">Join (SQL)</a> operation. The effect of tuples filtering and shading of list values is demonstrated with <strong>animated gif images</strong> in three states. There is the <strong>Unselected State</strong>, then there is the <strong>Part with ID value <code>998</code></strong> selected state, and from those <code>Catalog</code> entries for this specific <code>Part</code>, (4 entries, one for each <code>Supplier</code>), we <strong>select the <code>Supplier</code> with the minimum <code>Catalog</code> price</strong> and that is our third state.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="tables.gif" data-caption="Animated Grids of Tuples">
+
+<img src="tables.gif" alt="Animated Grids of Tuples" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Animated Grids of Tuples
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="columns.gif" data-caption="Animated Lists of Values from Table Fields">
+
+<img src="columns.gif" alt="Animated Lists of Values from Table Fields" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Animated Lists of Values from Table Fields
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<h2 id="r3dm-hypergraph-representation">R3DM Hypergraph Representation</h2>
+<p>With the Associative Data Modeling there can be a third way to present data. This is the one that engages the user with the visualization of network graphs. In the previous post of our series, we have drawn an R3DM Hypergraph, <a href="/en/post/20161220/#fig14"><strong>Fig. 14</strong></a>, and we described associations according to R3DM terminology. We have used exactly the same data of this case study example, i.e. find the **Supplier** with the minimum <strong>Catalog** price for <strong>Part** with <code>prtID</code> value <code>998</code>, to draw <a href="#fig2"><strong>Fig.2</strong> </a>, <a href="#fig3"><strong>Fig.3</strong> </a>, <a href="#fig4"><strong>Fig.4</strong> </a> and <a href="#fig5"><strong>Fig.5</strong> </a>. This time we have redrawn hypergraph of <a href="/en/post/20161220/#fig14"><strong>Fig. 14</strong></a> with the help of <a href="http://orientdb.com/docs/last/Graph-Editor.html">OrientDB Graph Editor</a>, <a href="#fig6"><strong>Fig.6</strong></a>. Every string label and numerical value of <a href="/en/post/20161220/#fig14"><strong>Fig. 14</strong></a> has been replaced with a unique OrientDB record identifier, </strong>(RID - clusterID : clusterPosition)</strong><a href="http://orientdb.com/docs/last/Tutorial-Record-ID.html"></a>. In effect, this is how we implemented R3DM/S3DM <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000002/#signified-sign-signifier-alternative-paradigm"><code>Sign</code> layer</a>. Each data item becomes an Atomic Information Resource <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000002/#atomicdb-computational-semiotic-analysis-in-r3dm">(AIR) unit</a> with a symbolic representation of a 2D vector <strong>(Entity/Attribute Type : Instance)</strong>.</p>
+<h3 id="air-units">AIR Units</h3>
+<p><strong>From Data Items in any structure (Table/Entity/Triple/JSON/XML) to data model reconstruction with Information Atoms</strong></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<span class="markup-quote">AIR units can represent in a uniform way anything, i.e. Entities, Attributes, Values, Types, Databases, etc. Their vector form can be indexed, linked, retrieved, stored efficiently, and we can use AIR units to build associations and assimilate composite information structures such as records (tuples).</span></p>
+<p>To visualize R3DM associations using AIR units we have color coded the graph and we added a legend at the left side, <a href="#fig6"><strong>Fig.6</strong></a>. Entities are distinguished from attributes by the size of the disk and grouping of entities and attributes is depicted with different shades of a color (green for Suppliers, brown for Parts, purple for Catalog items). We can easily see four <code>Catalog</code> items (#70:7, #70:11, #70:12, #70:16) associations with the four <code>Suppliers</code> (#68:0, #68:1, #68:2, #68:3) and the <code>Part</code> (#69:7) with ID value <code>998</code> (#77:7) that is drawn in the center of the graph with the black disk around it. USA suppliers (#68:0, #68:1) share the value of their common <code>supCountry</code> attribute (#75:0). One of them (#68:1) has a Catalog entry (#70:11) with the minimum catalog price,<code>catPrice</code>, (#82:9). We can also see the formation of tuples for Supplier (4), Catalog (4) and Part (1).</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="OrientDB-GraphCanvas-Part998-1312x723.png" data-caption="R3DM Color Coded Associations with AIR units">
+
+<img src="OrientDB-GraphCanvas-Part998-1312x723.png" alt="R3DM Color Coded Associations with AIR units" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    R3DM Color Coded Associations with AIR units
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>Regarding to the immense advantage of using AIR units to reconstruct hierarchical, table, or graph structures, we can also refer to the following QlikTech patent. In the &ldquo;<em>Summary of the Invention</em>&rdquo; section we read:</p>
+<blockquote>
+<p><strong>each different data element value of each data element type is assigned a binary code and the data records are stored in binary-coded form. On account of the binary coding, very rapid searches can be conducted in the tables</strong>. - Qliktech International AB Patent, May 2001<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
+</blockquote>
+<h2 id="future-plans">Future Plans</h2>
+<p>It is rather unfortunate that the basis of QlikView&rsquo;s evolutionary associative technology has been confined to the market of proprietary software products. In HEALIS we have made the difference by opening up these database design key principles for discussion with experts of the field and we have made them part of our R3DM/S3DM conceptual framework.</p>
+<p>We have gone a step further to implement our framework on top of OrientDB and Intersystems Cache DBMS and instead of writing SQL queries, we have abstracted the programming of a set of functional operations that match the selection and filtering of data. We plan to continue with the last part of this post series in order to fully demonstrate how we build our system and how we test it with the Suppliers-Parts-Catalogue data set.</p>
+<h2 id="cross-references">Cross-References</h2>
+<ul>
+<li><a href="https://www.linkedin.com/pulse/associative-data-modeling-demystified-part-5-hatzis-phd">LinkedIn - Published Posts</a></li>
+<li><a href="https://www.linkedin.com/groups/129217/129217-6236167845613568004">LinkedIn - Semantic Web Research Group</a></li>
+<li><a href="https://www.linkedin.com/groups/2552968/2552968-6236180969989251073">LinkedIn - Graph Databases Group</a></li>
+<li><a href="https://www.linkedin.com/groups/108904/108904-6236172407980326916">LinkedIn - Data Warehouse &amp; Business Intelligence Architects</a></li>
+<li><a href="https://www.linkedin.com/groups/6514034/6514034-6236177589032099844">LinkedIn - Computational Semiotics</a></li>
+<li><a href="https://www.linkedin.com/groups/138726/138726-6236177288338251780">LinkedIn - Semantic Technologies</a></li>
+<li><a href="https://www.linkedin.com/groups/4737538/4737538-6236176794991624196">LinkedIn - Data Visualization</a></li>
+<li><a href="https://www.linkedin.com/groups/3750024/3750024-6236179423113154563">LinkedIn - Database &amp; Data Store Professionals ★ NoSQL ★ NewSQL ★ Relational</a></li>
+<li><a href="https://www.linkedin.com/groups/73235/73235-6236176889279582212">LinkedIn - Database Developers and Architects Group</a></li>
+<li><a href="https://www.linkedin.com/groups/60636/60636-6236177288338251779">LinkedIn - Linked Data Web</a></li>
+<li><a href="https://www.linkedin.com/hp/update/6236171505877815296">LinkedIn - Update</a></li>
+<li><a href="https://www.linkedin.com/groups/45183/45183-6236177294906523652">LinkedIn - Database Experts</a></li>
+<li><a href="https://www.linkedin.com/groups/72977/72977-6238347871217942530">LinkedIn - QlikView</a></li>
+<li><a href="https://community.qlik.com/groups/german-user-group/blog/2017/02/12/qlikview-associative-model-explained-a-perspective-on-r3dm-hypergraph">Qlik Community - German User Group - Post</a></li>
+<li><a href="https://community.qlik.com/thread/249547">Qlik Community - Discussion</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>D. English, &ldquo;White Paper: Understanding QlikView&rsquo;s Associative Architecture&rdquo;, QlikTech International AB, May 2010 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>M. Ferguson, &ldquo;White Paper: Interactive Data Exploration With An In-Memory Analytics Engine&rdquo;, QlikTech International AB, May 2015 <a href="https://www.google.gr/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjm1aKMne_RAhUCtBoKHWqZBKsQFggkMAA&amp;url=http%3A%2F%2Fglobal.qlik.com%2Fuk%2F~%2Fmedia%2FFiles%2Fresource-library%2Fglobal-us%2Fregister%2Fwhitepapers%2FWP-Interactive-Data-Exploration-and-Analysis-EN.ashx&amp;usg=AFQjCNHPdA7lr1ztLjYmx8Vgv7Qxkbx65g&amp;bvm=bv.145822982,d.d2s">(pdf)</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>&ldquo;QlikView Reference Manual v11.20 SR2&rdquo;, QlikTech International AB, Lund, Sweden, 2013 <a href="http://semanticommunity.info/@api/deki/files/24990/QlikView_Reference_Manual.pdf">(pdf)</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>&ldquo;The Associative Experience QlikView&rsquo;s Overwhelming Advantage&rdquo;, QlikTech International AB, October 2010 <a href="https://www.google.gr/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;ved=0ahUKEwidjr_8rvHRAhXKuBoKHVDgBJsQFggtMAE&amp;url=http%3A%2F%2Fwww.hyperintel.com%2Fwp-content%2Fuploads%2FQV-10-AssocExp_Whitepaper_A4.pdf&amp;usg=AFQjCNE-Ttjtu2qH-fGZry_rn9WA9kOVcQ&amp;sig2=ns6WuIBNLd_S2-LYYtE9gg">(pdf)</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>&ldquo;QlikView Architectural Overview&rdquo;, QlikTech International AB, September 2011 <a href="https://community.qlik.com/servlet/JiveServlet/downloadBody/7673-102-1-10318/WP-QlikView-Architectural-Overview-EN.pdf">(pdf)</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>&ldquo;<a href="https://www.google.com/patents/US6236986">Method and Device for Extracting Information from a Database</a>&rdquo;, QlikTech International AB, May 2001 <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tags/semantic_web/">Semantic_Web</a>
+  
+  <a class="badge badge-light" href="/en/tags/topic_map/">Topic_map</a>
+  
+  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  
+  <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
+  
+  <a class="badge badge-light" href="/en/tags/signified_and_signifier/">Signified_and_signifier</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
+  
+  <a class="badge badge-light" href="/en/tags/data_model/">Data_model</a>
+  
+  <a class="badge badge-light" href="/en/tags/semantics/">Semantics</a>
+  
+  <a class="badge badge-light" href="/en/tags/database/">Database</a>
+  
+  <a class="badge badge-light" href="/en/tags/database_management_system/">Database_management_system</a>
+  
+  <a class="badge badge-light" href="/en/tags/graph_database/">Graph_database</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_semiotic_hypergraph/">associative_semiotic_hypergraph</a>
+  
+  <a class="badge badge-light" href="/en/tags/computational_semiotics/">Computational_semiotics</a>
+  
+  <a class="badge badge-light" href="/en/tags/qlik/">Qlik</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_entity/">Associative_entity</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:athanassios@healis.eu" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/ahatzis" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/athanhat" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-quora"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://vimeo.com/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-vimeo"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://stackoverflow.com/users/5364935/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/en/post/20161220/">Association in RDF Data Model</a></li>
+          
+          <li><a href="/en/post/20160913/">Association in Property Graph Data Model</a></li>
+          
+          <li><a href="/en/post/20160902/">Association in Topic Map Data Model</a></li>
+          
+          <li><a href="/en/post/20160825/">Relation, Relationship and Association</a></li>
+          
+          <li><a href="/en/project/r3dm/">S3DM/R3DM</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/en/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          Powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/healiseu/" target="_blank" rel="noopener" title="Star Me"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/healiseu" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCoCkNTkn1dAbtyr5EMvzc7w/videos" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener" title="Connect with Me"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener" title="Contact Me"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:athanassios.hatzis?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener" title="Ping Me"><i class="fab fa-quora" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://disqus.com/home/forums/healiseu/" target="_blank" rel="noopener" title="Discuss on Disqus"><i class="fas fa-comments" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

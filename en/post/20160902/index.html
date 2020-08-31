@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.74.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Athanassios I. Hatzis, PhD">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Part 2/6 of the series Associative Data Modelling Demystified">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://healis.eu/en/post/20160902/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24920503-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://healis.eu/en/post/20160902/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@healiseu">
+  <meta property="twitter:creator" content="@healiseu">
+  
+  <meta property="og:site_name" content="HEALIS">
+  <meta property="og:url" content="https://healis.eu/en/post/20160902/">
+  <meta property="og:title" content="Association in Topic Map Data Model | HEALIS">
+  <meta property="og:description" content="Part 2/6 of the series Associative Data Modelling Demystified"><meta property="og:image" content="https://healis.eu/en/post/20160902/featured.jpg">
+  <meta property="twitter:image" content="https://healis.eu/en/post/20160902/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2016-09-02T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2016-09-02T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Association in Topic Map Data Model | HEALIS</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/en/"><img src="/img/healis-text-with-logo.png" alt="HEALIS"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#home"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/about/"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/hmorph/"><span>HyperMorph</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/s3dm/"><span>S3DM</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/en/post/"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/talk/"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/terms/"><span>Terms</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/contact/"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    
+    
+    <div class="article-container py-3">
+      <h1 itemprop="name">Association in Topic Map Data Model</h1>
+
+      
+      <p class="page-subtitle">Part 2/6 of the series Associative Data Modelling Demystified</p>
+      
+
+      
+      
+
+
+
+<meta content="2016-09-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2016-09-02 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/en/authors/admin/">Athanassios I. Hatzis, PhD</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2016-09-02</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    8 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/en/post/20160902/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/en/categories/semantic_web/">Semantic_Web</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://healis.eu/en/post/20160902/&amp;text=Association%20in%20Topic%20Map%20Data%20Model" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://healis.eu/en/post/20160902/&amp;t=Association%20in%20Topic%20Map%20Data%20Model" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Association%20in%20Topic%20Map%20Data%20Model&amp;body=https://healis.eu/en/post/20160902/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://healis.eu/en/post/20160902/&amp;title=Association%20in%20Topic%20Map%20Data%20Model" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Association%20in%20Topic%20Map%20Data%20Model%20https://healis.eu/en/post/20160902/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://healis.eu/en/post/20160902/&amp;title=Association%20in%20Topic%20Map%20Data%20Model" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/en/project/r3dm/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+      
+      
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#associations-in-topic-map-data-model">Associations in Topic Map Data Model</a>
+      <ul>
+        <li><a href="#tuples-to-associations">Tuples to Associations</a></li>
+        <li><a href="#sql-to-topic-map-filtering">SQL to Topic Map Filtering</a></li>
+        <li><a href="#topic-map-serialization">Topic Map Serialization</a></li>
+        <li><a href="#r3dm-type-system-in-wandora">R3DM Type System in Wandora</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#cross-references">Cross-References</a></li>
+  </ul>
+</nav>
+
+<h2 id="introduction">Introduction</h2>
+<p>In the <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000100/">previous article</a> of this series we examined the association construct from the perspective of Entity-Relationship data model. In this post we demonstrate how Topic Map data model represents associations. In order to link the two we continue with another SQL query from our <a href="https://github.com/healiseu/healiseu.github.io/tree/master/media/SupplierPartCatalogue/accdb">relational database</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> suppliers.sid,
+       suppliers.sname,
+       suppliers.scountry,
+       <span style="color:#66d9ef">catalog</span>.catcost,
+       <span style="color:#66d9ef">catalog</span>.catqnt,
+       parts.pid,
+       parts.pname,
+       parts.pcolor
+<span style="color:#66d9ef">FROM</span>   suppliers
+       <span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> (parts
+                   <span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> [<span style="color:#66d9ef">catalog</span>]
+                           <span style="color:#66d9ef">ON</span> parts.pid <span style="color:#f92672">=</span> <span style="color:#66d9ef">catalog</span>.catpid)
+               <span style="color:#66d9ef">ON</span> suppliers.sid <span style="color:#f92672">=</span> <span style="color:#66d9ef">catalog</span>.catsid
+<span style="color:#66d9ef">WHERE</span>  (( ( parts.pid ) <span style="color:#f92672">=</span> <span style="color:#ae81ff">998</span> ))
+<span style="color:#66d9ef">ORDER</span>  <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">catalog</span>.catcost;
+</code></pre></div>
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="cost_of_red_fire_hydrant_cap.jpg" >
+
+<img src="cost_of_red_fire_hydrant_cap.jpg" >
+</a>
+
+</figure>
+
+<p>This will fetch all the rows of a result set where we are looking for the <em>minimum catalogue price of a Red Fire Hydrant Cap</em> and who is the supplier that manufactures this part. The reader will notice that apart from the deficiensy of the nested JOINs, <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000100/#structured-query-language-sql">(see here)</a>, we had to formalize our search in SQL language in order to get back our result. Wouldn&rsquo;t be nice if we could engage the user in a codeless style of search, independent of the business case. Let us see the difference with the Topic Map data model first.</p>
+<h2 id="associations-in-topic-map-data-model">Associations in Topic Map Data Model</h2>
+<p>Perhaps there is not a better software tool out there to introduce you to Topic Maps than <a href="http://wandora.org">Wandora</a> information management application, see how.</p>
+<h3 id="tuples-to-associations">Tuples to Associations</h3>
+<p>Our first step is to build a Topic Map data model from the SQL result set above. With Wandora this is easy thanks to its powerful set of extractors. Here we use an <a href="http://wandora.org/wiki/Excel_extractors#Excel_adjacency_list_extractor">Excel adjacency list extractor</a> to convert each spreadsheet row of this <a href="https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/xlsx/vwRedHydrantCap.xlsx">Excel file</a> to a Topic Map <code>Association</code>.</p>
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="wandora-tuples-cells.jpg" data-caption="Tuples of a Relation - Wandora Associations">
+
+<img src="wandora-tuples-cells.jpg" alt="Tuples of a Relation - Wandora Associations" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Tuples of a Relation - Wandora Associations
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+
+<p>In the right panel of the screen capture, you may see that we have four associations of type <code>Tuple</code>. They are all sorted by the <code>catcost</code> column. This is the role that cells of this column play in the Tuple association. In our example each Tuple is an instance of the <code>Excel</code> class with a maximum of 8 members and <strong>each member plays a role in the association</strong>. You may agree that this Topic Map model view of data looks already very familiar to the user that is accustomed with tables.</p>
+<p>But behind the scenes Topic Map associations are notably different from the n-ary tuples of the relational model. In the left panel of our screen capture you can see all the data that are extracted from the spreadsheet. Notice that no data value is repeated. Each association is constructed from <strong>single instance values</strong> and this also means that associations are sharing values among them. We can visualize the network of associations by switching to Wandora&rsquo;s <a href="http://wandora.org/wiki/Graph_topic_panel">Graph topic panel</a>. From the left panel, we select the minimum price of the part, which is <code>11.7</code> and then we expand this node on the <code>Graph topic panel</code>. This way the first association will be drawn that includes as members all the other values that this cell is associated with. One of them is <code>USA</code> and plays the <code>scountry</code> role. We can right click on the value and expand again the nodes (associated members). Two associations are displayed now on the graph that share four common values between them.</p>
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="wandora-graph-panel-with-two-associations.jpg" data-caption="Two Associations in the Graph Topic Panel of Wandora. Brown labels indicate the type (Tuple) of association and the role (sname) of one of its members">
+
+<img src="wandora-graph-panel-with-two-associations.jpg" alt="Two Associations in the Graph Topic Panel of Wandora. Brown labels indicate the type (Tuple) of association and the role (sname) of one of its members" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Two Associations in the Graph Topic Panel of Wandora. Brown labels indicate the type (Tuple) of association and the role (sname) of one of its members
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+
+<h3 id="sql-to-topic-map-filtering">SQL to Topic Map Filtering</h3>
+<p>Another important observation we should make at this point is that instead of writing any query to fetch those suppliers that are located in <code>USA</code> we simply filtered the table based on this value. We are able to do this, because <strong>Topic Map data model works with single instance values that are linked bidirectionally</strong>. Accordingly, data is always normalized and the main operations of the relational algebra such as set operations, selection and projection, can be performed. For instance, filtering associations that have <code>USA</code> member is equivalent to selecting rows from SQL. Moreover, the user can traverse interactively the graph starting from any value without writing a single line of code.</p>
+<h3 id="topic-map-serialization">Topic Map Serialization</h3>
+<p>To understand better the underlying structure of data in the previous example, we have serialized a Topic Map in <a href="https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/ltm/suppliers-parts-catalogue-Part998Associations.ltm">LTM format</a>. Dropping this LTM file into an empty topic panel, we invoke the <a href="http://wandora.org/wiki/How_to_import_existing_topic_map_to_Wandora">import function of Wandora</a>. Then we expand the <a href="http://wandora.org/wiki/Working_with_topic_trees">topic tree</a> and double click on the <code>998</code> cell. The following screen capture looks pretty much the same as the one we have generated from extracting the Excel spreadsheet above. The main difference is that now we have two association types, one for Catalogue tuples and another for Part tuples. Part <code>998</code> participates in five associations (tuples) in total, four of them are from <a href="https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/tsv/Catalog.tsv">Catalogue table</a> and one from <a href="https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/tsv/Parts.tsv">Part table</a>. We have also taken a minimum number of members, i.e. fields (columns), for our associations to keep it simple.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
+<span style="color:#75715e">/* 1 Association of catalog part no 998 with &#34;Red&#34; and &#34;Fire Hydrant Cap&#34; */</span>
+<span style="color:#a6e22e">Prt</span>( <span style="color:#a6e22e">prtName08</span><span style="color:#f92672">:</span><span style="color:#a6e22e">pname</span>, <span style="color:#a6e22e">prtID08</span><span style="color:#f92672">:</span><span style="color:#a6e22e">pid</span>, <span style="color:#a6e22e">prtColorRed</span><span style="color:#f92672">:</span><span style="color:#a6e22e">pcolor</span> )
+
+<span style="color:#75715e">/* 4 Associations of catalog part no 998 with supplier Ids and catalog prices */</span>
+<span style="color:#a6e22e">Cat</span>( <span style="color:#a6e22e">prtID08</span><span style="color:#f92672">:</span><span style="color:#a6e22e">catpid</span>, <span style="color:#a6e22e">supPrice18</span><span style="color:#f92672">:</span><span style="color:#a6e22e">catcost</span>, <span style="color:#a6e22e">supID18</span><span style="color:#f92672">:</span><span style="color:#a6e22e">catsid</span> )
+<span style="color:#a6e22e">Cat</span>( <span style="color:#a6e22e">prtID08</span><span style="color:#f92672">:</span><span style="color:#a6e22e">catpid</span>, <span style="color:#a6e22e">supPrice14</span><span style="color:#f92672">:</span><span style="color:#a6e22e">catcost</span>, <span style="color:#a6e22e">supID14</span><span style="color:#f92672">:</span><span style="color:#a6e22e">catsid</span> )
+<span style="color:#a6e22e">Cat</span>( <span style="color:#a6e22e">prtID08</span><span style="color:#f92672">:</span><span style="color:#a6e22e">catpid</span>, <span style="color:#a6e22e">supPrice16</span><span style="color:#f92672">:</span><span style="color:#a6e22e">catcost</span>, <span style="color:#a6e22e">supID16</span><span style="color:#f92672">:</span><span style="color:#a6e22e">catsid</span> )
+<span style="color:#a6e22e">Cat</span>( <span style="color:#a6e22e">prtID08</span><span style="color:#f92672">:</span><span style="color:#a6e22e">catpid</span>, <span style="color:#a6e22e">supPrice12</span><span style="color:#f92672">:</span><span style="color:#a6e22e">catcost</span>, <span style="color:#a6e22e">supID12</span><span style="color:#f92672">:</span><span style="color:#a6e22e">catsid</span> )
+
+</code></pre></div>
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="wandora-part998-ltm-example-842x491.jpg" data-caption="Associations of part no. 998">
+
+<img src="wandora-part998-ltm-example-842x491.jpg" alt="Associations of part no. 998" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Associations of part no. 998
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+
+<p>Because of the single instance feature of Topic Maps, If we switch to Wandora&rsquo;s Graph topic panel we can visualize these associations.
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="wandora-part998-ltm-example-graph-650x500.jpg" data-caption="Associations of part no. 998">
+
+<img src="wandora-part998-ltm-example-graph-650x500.jpg" alt="Associations of part no. 998" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Associations of part no. 998
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<h3 id="r3dm-type-system-in-wandora">R3DM Type System in Wandora</h3>
+<p>We expand our previous example with tuples from three tables and a rich type system, also known as <a href="https://en.wikipedia.org/wiki/Ontology_(information_science)">Ontology</a> or <a href="https://en.wikipedia.org/wiki/Database_schema">database schema</a>.</p>
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="wandora-graph-panel-prt998-catalogue-and-suppliers.jpg" data-caption="Associations of part no. 998, Supplier Associations and Symmetric Binary Predicates">
+
+<img src="wandora-graph-panel-prt998-catalogue-and-suppliers.jpg" alt="Associations of part no. 998, Supplier Associations and Symmetric Binary Predicates" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Associations of part no. 998, Supplier Associations and Symmetric Binary Predicates
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+
+<p>We start again our exploration from the data item with the value <code>998</code>. There is one association, labeled <code>Part8</code>, representing a tuple from Part table <strong>(998, &ldquo;Fire Hydrant Cap&rdquo;, Red, 7.2, lb)</strong> and four of them, labeled <code>Cat08</code>, <code>Cat12</code>, <code>Cat13</code>, <code>Cat17</code>, representing tuples from the Catalogue table (see result set above). Further on, <code>USA</code> suppliers are expanded with two more associations, labeled <code>Supplier1</code> and <code>Supplier2</code>. The two previous graphs are combined in a single one. We can also observe other associations with only two members, we call these symmetric binary predicates <strong>(SBP)</strong>. SBPs are used to define a prototype for our R3DM type system. For example, the member value <code>7.2</code> of association <code>Part8</code> is of type <code>Part Weight</code> (Instantiation Predicate) and <code>Part Weight</code> is hyponym of <code>Weight</code> (HyperHypo Predicate). The reader may compare this graph with this <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000100/#structured-query-language-sql">Entity-Relationship diagram</a> and realize that we have both instances (values) and classes, i.e. Entities and Attribues, on the same graphics diagram. Not only that, but most important our type system is generic and we are able to merge and classify data from multiple datasets. Alternatively, Wandora&rsquo;s Topics tree panel on the left part of the image displays a hierarchical structure for types and instances. Those that are expanded can also be seen on the graph panel.</p>
+<p>This is a good place to introduce our <strong>R3DM type system</strong>. It is presented here for the first time and it will be fully analyzed in a forthcoming post of this series. In the next graph we have expanded several nodes of our hierarchical type system. For instance, <code>Catalogue</code>, <code>Catalogue Part</code>, <code>Catalog Supplier</code> are represented as groups (<code>Grouping Predicate</code>) of <code>Wandora</code> class which is the Root of the Topic Tree. Each of these groups is also a type (<code>Instantiation Predicate</code>) for a set of instances that represent associations. We have Cat01-16 for Catalogue associations, Part1-9 for Part associations, and Supplier1-4 for Supplier associations.</p>
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="wandora-graph-panel-type-system.jpg" >
+
+<img src="wandora-graph-panel-type-system.jpg" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4>R3DM Type System in Wandora</h4>
+  
+</figcaption>
+
+</figure>
+
+<p>We have defined six SBPs in total, these are grouped under the <code>Symmetric Binary Predicates</code> group. Five of them have been configured with special symbols to be used in Wandora&rsquo;s Topic tree. Each one of them is expanded on Wandora&rsquo;s graph panel to show the pair of its association members. The <code>Holonomy-Meronomy Predicate</code> has been used to connect association members to association type.</p>
+<p>Wandora class has also five group members, we have already seen four of them. The fifth one is a Variable Type group and it has four sub-categories, <code>Categorical Variable Types</code>, <code>Meta Variable Types</code>, <code>Numeric Variable Types</code> and <code>Time Variable Types</code>. Each of these specialized types has instances and each instance can be further specialized. For example, starting from bottom to top :</p>
+<p><code>gr</code> <strong>isInstanceOf</strong> <code>Part Unit</code> <strong>isHyponymOf</strong> <code>Unit</code> <strong>isInstanceOf</strong> <code>Categorical Variable Type</code> <strong>isHyponymOf</strong> <code>Variable Type</code> <strong>isMemberOf</strong> <code>Wandora class</code></p>
+<p>In this way all values are single instances of some type and they are hyperlinked to build associations (hyperedges). Each association is also an instance of some type.</p>
+<h2 id="summary">Summary</h2>
+<p>We conclude our discussion of <code>Association</code> in Topic Map data model. Topic map data model is profound and at the same time powerful and simple to start building higher constructs to model real things. <code>Association</code> in Topic Map is a first class citizen. Here is a list of interesting features we discussed in this post :</p>
+<ol>
+<li>
+<p>We can define single instance Topics (and/or values) and then associate them.</p>
+</li>
+<li>
+<p><code>Association</code> is a bidirectional n-ary relation with <code>Type</code> and <code>Roles</code> embedded.</p>
+</li>
+<li>
+<p>Because of 1. and 2. we can traverse the graph from any point to any other point simply by filtering nodes and edges.</p>
+</li>
+<li>
+<p>We can display both <code>Topic</code>/<code>Association</code> types and instances on the same graph</p>
+</li>
+<li>
+<p>Data from multiple data sets cab be merged with R3DM type system that is based on symmetric binary associations.</p>
+</li>
+</ol>
+<p>There are other powerful features of Topic Maps related to associations such as <a href="http://www.wandora.org/wiki/Introduction_to_Layered_Topic_Maps">merging</a> and information resources that are attached to topics, i.e. <a href="http://wandora.org/wiki/Refining_occurrences">occurrences</a>, we reserve time and space to highlight them in a forthcoming article.</p>
+<p>We will continue our demonstration with the Catalogue-Part-Supplier example. This time we will examine how associations can be represented on the <a href="http://orientdb.com/docs/last/Tutorial-Document-and-graph-model.html">Graph Model</a> of OrientDB DBMS.</p>
+<h2 id="cross-references">Cross-References</h2>
+<ul>
+<li><a href="https://www.linkedin.com/pulse/associative-data-modeling-demystified-part1-hatzis-phd-1">LinkedIn Published Posts</a></li>
+<li><a href="https://www.linkedin.com/groups/129217/129217-6177536264963661827">LinkedIn Semantic Web Research Group</a></li>
+<li><a href="https://www.linkedin.com/groups/109285/109285-6177532954038792196">LinkedIn Topic Maps Community</a></li>
+<li><a href="http://www.datasciencecentral.com/m/blogpost?id=6448529%3ABlogPost%3A465093">Data Science Central</a></li>
+<li><a href="https://dzone.com/articles/associative-data-modeling-demystified-part-2">DZone - Database Section</a></li>
+</ul>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tags/semantic_web/">Semantic_Web</a>
+  
+  <a class="badge badge-light" href="/en/tags/topic_map/">Topic_map</a>
+  
+  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  
+  <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
+  
+  <a class="badge badge-light" href="/en/tags/signified_and_signifier/">Signified_and_signifier</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
+  
+  <a class="badge badge-light" href="/en/tags/data_model/">Data_model</a>
+  
+  <a class="badge badge-light" href="/en/tags/semantics/">Semantics</a>
+  
+  <a class="badge badge-light" href="/en/tags/database/">Database</a>
+  
+  <a class="badge badge-light" href="/en/tags/database_management_system/">Database_management_system</a>
+  
+  <a class="badge badge-light" href="/en/tags/graph_database/">Graph_database</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_semiotic_hypergraph/">associative_semiotic_hypergraph</a>
+  
+  <a class="badge badge-light" href="/en/tags/computational_semiotics/">Computational_semiotics</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_entity/">Associative_entity</a>
+  
+  <a class="badge badge-light" href="/en/tags/ontology_information_science/">Ontology_(information_science)</a>
+  
+  <a class="badge badge-light" href="/en/tags/topic_maps/">Topic_Maps</a>
+  
+  <a class="badge badge-light" href="/en/tags/serialization/">Serialization</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:athanassios@healis.eu" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/ahatzis" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/athanhat" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-quora"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://vimeo.com/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-vimeo"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://stackoverflow.com/users/5364935/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/en/post/20160825/">Relation, Relationship and Association</a></li>
+          
+          <li><a href="/en/project/r3dm/">S3DM/R3DM</a></li>
+          
+          <li><a href="/en/post/20131105/">S3DM/R3DM vs RDF</a></li>
+          
+          <li><a href="/en/post/20131002/">S3DM/R3DM in TMDM</a></li>
+          
+          <li><a href="/en/post/20131001/">S3DM/R3DM Q&amp;A</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/en/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          Powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/healiseu/" target="_blank" rel="noopener" title="Star Me"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/healiseu" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCoCkNTkn1dAbtyr5EMvzc7w/videos" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener" title="Connect with Me"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener" title="Contact Me"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:athanassios.hatzis?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener" title="Ping Me"><i class="fab fa-quora" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://disqus.com/home/forums/healiseu/" target="_blank" rel="noopener" title="Discuss on Disqus"><i class="fas fa-comments" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

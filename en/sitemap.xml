@@ -313,18 +313,23 @@
   </url>
   
   <url>
-    <loc>https://healis.eu/en/post/20170412/</loc>
-    <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+    <loc>https://healis.eu/en/tags/associative_entity/</loc>
+    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://healis.eu/en/tags/data_model/</loc>
-    <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://healis.eu/en/tags/graph_database/</loc>
-    <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/post/20170211/</loc>
+    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -339,22 +344,82 @@
   
   <url>
     <loc>https://healis.eu/en/tags/semantics/</loc>
-    <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://healis.eu/en/tags/sign_semiotics/</loc>
-    <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://healis.eu/en/tags/signified_and_signifier/</loc>
-    <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://healis.eu/en/tags/triangle_of_reference/</loc>
-    <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/post/20161220/</loc>
+    <lastmod>2016-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/association_object-oriented_programming/</loc>
+    <lastmod>2016-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/resource_description_framework/</loc>
+    <lastmod>2016-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/post/20160913/</loc>
+    <lastmod>2016-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/post/20160902/</loc>
+    <lastmod>2016-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/ontology_information_science/</loc>
+    <lastmod>2016-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/topic_maps/</loc>
+    <lastmod>2016-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/associative_array/</loc>
+    <lastmod>2016-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/entityrelationship_model/</loc>
+    <lastmod>2016-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/post/20160825/</loc>
+    <lastmod>2016-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/relational_database/</loc>
+    <lastmod>2016-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/relational_model/</loc>
+    <lastmod>2016-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -665,6 +730,10 @@
   <url>
     <loc>https://healis.eu/en/project/vahisom/</loc>
     <lastmod>1995-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/post/20170412/</loc>
   </url>
   
 </urlset>

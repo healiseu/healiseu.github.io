@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.74.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Athanassios I. Hatzis, PhD">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Part 1/6 of the series Associative Data Modelling Demystified">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://healis.eu/en/post/20160825/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24920503-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://healis.eu/en/post/20160825/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@healiseu">
+  <meta property="twitter:creator" content="@healiseu">
+  
+  <meta property="og:site_name" content="HEALIS">
+  <meta property="og:url" content="https://healis.eu/en/post/20160825/">
+  <meta property="og:title" content="Relation, Relationship and Association | HEALIS">
+  <meta property="og:description" content="Part 1/6 of the series Associative Data Modelling Demystified"><meta property="og:image" content="https://healis.eu/en/post/20160825/featured.jpg">
+  <meta property="twitter:image" content="https://healis.eu/en/post/20160825/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2016-08-25T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2016-08-25T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Relation, Relationship and Association | HEALIS</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/en/"><img src="/img/healis-text-with-logo.png" alt="HEALIS"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#home"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/about/"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/hmorph/"><span>HyperMorph</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/s3dm/"><span>S3DM</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/en/post/"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/talk/"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/terms/"><span>Terms</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/contact/"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    
+    
+    <div class="article-container py-3">
+      <h1 itemprop="name">Relation, Relationship and Association</h1>
+
+      
+      <p class="page-subtitle">Part 1/6 of the series Associative Data Modelling Demystified</p>
+      
+
+      
+      
+
+
+
+<meta content="2016-08-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2016-08-25 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/en/authors/admin/">Athanassios I. Hatzis, PhD</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2016-08-25</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    10 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/en/post/20160825/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/en/categories/semantic_web/">Semantic_Web</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://healis.eu/en/post/20160825/&amp;text=Relation,%20Relationship%20and%20Association" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://healis.eu/en/post/20160825/&amp;t=Relation,%20Relationship%20and%20Association" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Relation,%20Relationship%20and%20Association&amp;body=https://healis.eu/en/post/20160825/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://healis.eu/en/post/20160825/&amp;title=Relation,%20Relationship%20and%20Association" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Relation,%20Relationship%20and%20Association%20https://healis.eu/en/post/20160825/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://healis.eu/en/post/20160825/&amp;title=Relation,%20Relationship%20and%20Association" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/en/project/r3dm/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+      
+      
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#supplier-part-catalogue-dataset">Supplier-Part-Catalogue Dataset</a></li>
+    <li><a href="#the-er-data-model">The ER Data Model</a>
+      <ul>
+        <li><a href="#association-and-associative-array">Association and Associative Array</a></li>
+        <li><a href="#wolfram-language---association">Wolfram Language - Association</a></li>
+        <li><a href="#json-serialization">JSON Serialization</a></li>
+        <li><a href="#association-vs-relation">Association vs Relation</a></li>
+        <li><a href="#wolfram-language---relation">Wolfram Language - Relation</a></li>
+        <li><a href="#data-redundancy">Data Redundancy</a></li>
+        <li><a href="#structured-query-language-sql">Structured Query Language (SQL)</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#cross-references">Cross-References</a></li>
+  </ul>
+</nav>
+
+<h2 id="introduction">Introduction</h2>
+<p>In early 2009 an increasing number of non-relational DBMS started to appear on the scene. They were based on data models such as Column, Document, Key-Value, Graph and Multi-Model. At about the same time, big corporations in IT industry were concerned with data processing of large and complex data sets. Big data movement was a major driving force to re-examine whether current DBMS were sufficient to cope with the new requirements on data processing. More specifically the <a href="http://www.ibmbigdatahub.com/infographic/four-vs-big-data">four V&rsquo;s of Big Data</a>, i.e. volume, variety, velocity and veracity, put an increasing demand in major companies and organizations. This had as a result a reinvestigation on what DBMS technology to apply. Many started realizing that physical representation of data on the disk or in memory and data modeling are key factors on how you build or integrate parts of your IT solution.</p>
+<p>While most players in the IT sector adopted Graph or Document databases and Hadoop based solutions, Hadoop is an enabler of <a href="https://en.wikipedia.org/wiki/Apache_HBase">HBase</a> column store, it went almost unnoticed that several new DBMS, <a href="http://www.atomicdb.ch/x10sys.html">AtomicDB</a> previous database engine of <a href="https://www.aisys.us/">X10SYS</a>, and <a href="http://www.sentences.com/sentences.htm">Sentences</a>, based on associative technology appeared on the scene. We have introduced and discussed about the <a href="https://www.linkedin.com/pulse/towards-new-data-modelling-architecture-part-2-hatzis-phd">data modelling architecture</a> and the atomic information resource unit <a href="https://www.linkedin.com/pulse/air-atomic-information-resource-athanassios-i-hatzis-phd">(AIR)</a> of AtomicDB. Similar technology has been the engine power of <a href="http://www.qlik.com/us/">Qlikview</a>, a very popular software in Business Intelligence and Analytics, since 1993. Perhaps it is less known to the reader that the association construct is a first class citizen in <a href="https://en.wikipedia.org/wiki/Topic_Maps">Topic Map</a> semantic web standard and it is translated to <a href="https://en.wikipedia.org/wiki/Resource_Description_Framework">(RDF)</a>, the other semantic web standard. In other posts of this series we can see how it is possible to implement Associative Technology in multi-model graph databases such as <a href="http://orientdb.com/orientdb/">OrientDB</a>, in object-relational DBMS such as <a href="http://www.intersystems.com/our-products/cache/cache-overview/">Intersystems Cache</a> and <a href="https://docs.oracle.com/database/121/ADOBJ/toc.htm">Oracle</a> or build the engine for in-memory processing with Wolfram <a href="https://www.wolfram.com/mathematica/">Mathematica</a>. In this article, we introduce the concept of association from the perspective of Entity-Relationship <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">(ER)</a> data model and illustrate it with the modelling of a toy dataset.</p>
+<h2 id="supplier-part-catalogue-dataset">Supplier-Part-Catalogue Dataset</h2>
+<p>Our dataset is a collection of three related database tables. Two of the tables, Supplier ( <a href="https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/tsv/Suppliers.tsv">TSV</a>, <a href="https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/xlsx/SuppliersPartsCatalogue.xlsx">XLSX</a> ) and Part ( <a href="https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/tsv/Parts.tsv">TSV</a>, <a href="https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/xlsx/SuppliersPartsCatalogue.xlsx">XLSX</a> ), represent and describe Entity Types, i.e. Relations. The third one, Catalogue ( <a href="https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/tsv/Catalog.tsv">TSV</a>, <a href="https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/xlsx/SuppliersPartsCatalogue.xlsx">XLSX</a> ) is the associative entity, a.k.a. bridge table, junction table, join table, etc. The typical case where data for the bridge table is captured is from a business inventory where each item is recorded with its unit price and a quantity in stock. Such  information is stored in our Catalogue table, together with a date the item record was modified and a flag that indicates inspection of the stock.</p>
+<h2 id="the-er-data-model">The ER Data Model</h2>
+<p>Quite often (ER) Data Model is confused with the <a href="https://en.wikipedia.org/wiki/Relational_model">Relational Data Model</a>. The reader should become familiar with the following equivalent terminology.</p>
+<table>
+<thead>
+<tr>
+<th>ER Data Model</th>
+<th>Relational Data Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entity Type (Set)</td>
+<td>Relation (Table, Base relvar)</td>
+</tr>
+<tr>
+<td></td>
+<td>Heading - ordered set of attributes</td>
+</tr>
+<tr>
+<td></td>
+<td>Body - set of n-tuples, extension of a predicate</td>
+</tr>
+<tr>
+<td>Entity	(instance, member)</td>
+<td>Tuple (ordered set of attribute values)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Value Set</td>
+<td>Type name (data type)</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Attribute value</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Relationship set</td>
+<td>View (Result set or Derived relvar)</td>
+</tr>
+<tr>
+<td>Relationship (association)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Attribute (function)</td>
+<td>Free variable of a predicate</td>
+</tr>
+<tr>
+<td>mapping of Entity Set or</td>
+<td>Attribute name of the relation (column)</td>
+</tr>
+<tr>
+<td>Relationship Set to Value Set</td>
+<td>ordered pair of attribute name and type name</td>
+</tr>
+</tbody>
+</table>
+<p>In this classic paper, <a href="http://dl.acm.org/citation.cfm?id=320440">&ldquo;The Entity-Relationship Model - Toward a Unified View of Data&rdquo;</a> <strong>Peter Chen defines relationship as an association among entities</strong>. In the same paper <strong>entity and relationship are illustrated as hypergraphs</strong>. In particular, <em><a href="#fig2">Fig. 2</a></em> at page 13 and <em><a href="#fig3">Fig. 3</a></em> at page 14 show how an instance from an Entity/Relationship set is linked to either values or other entities. Although Peter Chen did not describe these fundamental constructs of his data model with Hypegraph terms, it can be easily seen in these captured figures that a specific entity or relationship form hyperedges with other entities or values that play the role of hypernodes.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="peter_chen_ER_model_fig2.jpg" data-caption="(Emploee):Ei at Fig.2 and (PROJECT-WORKER):Ri at Fig.3 form hyperedges">
+
+<img src="peter_chen_ER_model_fig2.jpg" alt="(Emploee):Ei at Fig.2 and (PROJECT-WORKER):Ri at Fig.3 form hyperedges" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    (Emploee):Ei at Fig.2 and (PROJECT-WORKER):Ri at Fig.3 form hyperedges
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="peter_chen_ER_model_fig3.jpg" data-caption="(Emploee):Ei at Fig.2 and (PROJECT-WORKER):Ri at Fig.3 form hyperedges">
+
+<img src="peter_chen_ER_model_fig3.jpg" alt="(Emploee):Ei at Fig.2 and (PROJECT-WORKER):Ri at Fig.3 form hyperedges" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    (Emploee):Ei at Fig.2 and (PROJECT-WORKER):Ri at Fig.3 form hyperedges
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<h3 id="association-and-associative-array">Association and Associative Array</h3>
+<p>We extend the definition of association in the (ER) data model to cover both Entities and Relationships. In the aforementioned paper, Chen formally defines attribute as a function which maps a given entity to a single value (or a single tuple of values). He also mentions that relationships have their own attributes whose meaning depends on the associated entities. The (key,value) pair of an <a href="https://en.wikipedia.org/wiki/Associative_array">Associative array</a>, a.k.a. map, symbol table, or dictionary, captures this functional operation of attribute.</p>
+<h3 id="wolfram-language---association">Wolfram Language - Association</h3>
+<p>Wolfram Language is using <code>Association</code> fundamental construct to represent an associative array. The following three <a href="https://reference.wolfram.com/language/guide/Associations.html">Wolfram Language associations</a> represent a relationship of a Catalog instance with a Supplier instance and some Part instance from our toy dataset.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Supplier</span> <span style="color:#66d9ef">Association</span> <span style="color:#f92672">*</span>)
+<span style="color:#f92672">&lt;|</span>supID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1081</span>, supName<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Acme Widget Suppliers&#34;</span>, supAddress<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;1 Grub St., Potemkin Village, IL 61801&#34;</span>, supCity<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;ILLINOIS&#34;</span>, supCountry<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;USA&#34;</span>, supStatus<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">10</span><span style="color:#f92672">|&gt;</span>
+
+(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Part</span> <span style="color:#66d9ef">Association</span> <span style="color:#f92672">*</span>)
+<span style="color:#f92672">&lt;|</span>prtID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">998</span>, prtName<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>, prtColor<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Red&#34;</span>, prtWeight<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span>, prtUnit<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;gr&#34;</span><span style="color:#f92672">|&gt;</span>
+
+(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Catalogue</span> <span style="color:#66d9ef">Association</span> <span style="color:#f92672">*</span>)
+<span style="color:#f92672">&lt;|</span>supID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1081</span>, prtID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">998</span>, catPrice<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">11</span><span style="color:#f92672">.</span><span style="color:#ae81ff">7</span>, catQuantity<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">400</span>, catDate<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Wed 10 Sep 2014&#34;</span>, catCheck<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">|&gt;</span>
+</code></pre></div><p>What we are missing in this representation are the hyperedges, i.e. the nexuses that link together hypernodes. According to hypergraph terminology, the edge that connects a hyperedge to a hypernode is called hyperlink or connector. You may think of these hyperlinks/connectors as hash fields but we need another identifier for the hash key, i.e. an identifier for the instance. We could have used supID, prtID or a combination of these two but we prefer to define new identifiers for hyperedges. <strong>The main reason for this is that in principle we want to design a uniform way of addressing and identifying both hyperedge and hypernode instances at a low-dimensional, e.g. (2D,3D,4D), space</strong>. If we encode this way, it is possible to avoid namespace problems. In this post we use names to compare the graph with figures from Peter Chen&rsquo;s paper.</p>
+<p><img src="./three_associations.jpg" alt="Three Associations in a Named-Row Dataset"></p>
+<p>We may also connect hyperedges, e.g. we can add a &ldquo;type&rdquo; hyperlink that maps instances to classes, a &ldquo;vendor&rdquo; hyperlink that maps a Catalog instance to its Supplier instance and a &ldquo;stockItem&rdquo; hyperlink that connects Catalog instance to Part instance. In Wolfram Language it is relatively easy to make a graph of these Associations. We colorized the graph according to the different data types we have, i.e. hyperedges, strings, doubles, integers, dates, and booleans, <a href="#fig4"><strong>Fig.4</strong></a>.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="association-relation-relationship.jpg" data-caption="Hyperedges are displayed in red, strings are in grey, doubles in lightblue, integers in green, dates in lightgreen and boolean in black">
+
+<img src="association-relation-relationship.jpg" alt="Hyperedges are displayed in red, strings are in grey, doubles in lightblue, integers in green, dates in lightgreen and boolean in black" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Hyperedges are displayed in red, strings are in grey, doubles in lightblue, integers in green, dates in lightgreen and boolean in black
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<h3 id="json-serialization">JSON Serialization</h3>
+<p>Another very popular representation for Association is JSON Serialization. Those associations we described above can be serialized with the following format.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;$PartI&#34;</span>: {
+    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;$Item&#34;</span>,
+    <span style="color:#f92672">&#34;prtID&#34;</span>: <span style="color:#ae81ff">998</span>,
+    <span style="color:#f92672">&#34;prtName&#34;</span>: <span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>,
+    <span style="color:#f92672">&#34;prtColor&#34;</span>: <span style="color:#e6db74">&#34;Red&#34;</span>,
+    <span style="color:#f92672">&#34;prtWeight&#34;</span>: <span style="color:#ae81ff">7.2</span>,
+    <span style="color:#f92672">&#34;prtUnit&#34;</span>: <span style="color:#e6db74">&#34;gr&#34;</span>
+  },
+  <span style="color:#f92672">&#34;$SupplierJ&#34;</span>: {
+    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;$Organization&#34;</span>,
+    <span style="color:#f92672">&#34;supID&#34;</span>: <span style="color:#ae81ff">1081</span>,
+    <span style="color:#f92672">&#34;supName&#34;</span>: <span style="color:#e6db74">&#34;Acme Widget Suppliers&#34;</span>,
+    <span style="color:#f92672">&#34;supAddress&#34;</span>: <span style="color:#e6db74">&#34;1 Grub St., Potemkin Village, IL 61801&#34;</span>,
+    <span style="color:#f92672">&#34;supCity&#34;</span>: <span style="color:#e6db74">&#34;ILLINOIS&#34;</span>,
+    <span style="color:#f92672">&#34;supCountry&#34;</span>: <span style="color:#e6db74">&#34;USA&#34;</span>,
+    <span style="color:#f92672">&#34;supStatus&#34;</span>: <span style="color:#ae81ff">10</span>
+  },
+  <span style="color:#f92672">&#34;$CatalogK&#34;</span>: {
+    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;$Inventory&#34;</span>,
+    <span style="color:#f92672">&#34;supID&#34;</span>: <span style="color:#ae81ff">1081</span>,
+    <span style="color:#f92672">&#34;prtID&#34;</span>: <span style="color:#ae81ff">998</span>,
+    <span style="color:#f92672">&#34;catPrice&#34;</span>: <span style="color:#ae81ff">11.7</span>,
+    <span style="color:#f92672">&#34;catQuantity&#34;</span>: <span style="color:#ae81ff">400</span>,
+    <span style="color:#f92672">&#34;catDate&#34;</span>: <span style="color:#e6db74">&#34;2014-09-10&#34;</span>,
+    <span style="color:#f92672">&#34;catCheck&#34;</span>: <span style="color:#66d9ef">true</span>
+  }
+}
+</code></pre></div><p>Catalogue, Parts and Suppliers tables are also available in <a href="https://github.com/healiseu/healiseu.github.io/tree/master/media/SupplierPartCatalogue/json">JSON</a> format.</p>
+<h3 id="association-vs-relation">Association vs Relation</h3>
+<p>Although the logical view of Chen&rsquo;s (ER) data model and his popular diagrammatic technique incorporates Entities, Relationships, Attributes and Values, at the physical layer of any relational DBMS we find records, i.e. Entities or Relationships are ordered tuples. A set of these ordered tuples that have the same heading, is called body. This header is another ordered tuple with attribute names. Theoretically speaking the body and the header of a table make the Relation. In practise the header is separated from the body and located at the database catalog together with other metadata for the schema of the database. SQL standard specifies a uniform mean to access this catalog.</p>
+<h3 id="wolfram-language---relation">Wolfram Language - Relation</h3>
+<p>The <a href="https://reference.wolfram.com/language/ref/List.html"><code>List</code> fundamental construct of Wolfram Language</a> can be used to represent a Relation. An extensive analysis of various representations and transformations on the constructs of the Relational data model in Wolfram Language can be found <a href="https://www.linkedin.com/pulse/towards-new-data-modelling-architecture-part-1-hatzis-phd">here</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Part</span> <span style="color:#66d9ef">Relation</span> with a header <span style="color:#f92672">and</span> three tuples (body) <span style="color:#f92672">*</span>)
+{
+  {<span style="color:#e6db74">&#34;pid&#34;</span>, <span style="color:#e6db74">&#34;pname&#34;</span>, <span style="color:#e6db74">&#34;pcolor&#34;</span>, <span style="color:#e6db74">&#34;pweight&#34;</span>, <span style="color:#e6db74">&#34;punit&#34;</span>},
+  {<span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#e6db74">&#34;Red&#34;</span>, <span style="color:#ae81ff">15</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>, <span style="color:#e6db74">&#34;lb&#34;</span>},
+  {<span style="color:#ae81ff">992</span>, <span style="color:#e6db74">&#34;Smoke Shifter End&#34;</span>, <span style="color:#e6db74">&#34;Black&#34;</span>, <span style="color:#ae81ff">3</span><span style="color:#f92672">.</span><span style="color:#ae81ff">75</span>, <span style="color:#e6db74">&#34;lb&#34;</span>},
+  {<span style="color:#ae81ff">993</span>, <span style="color:#e6db74">&#34;Acme Widget Washer&#34;</span>, <span style="color:#e6db74">&#34;Red&#34;</span>, <span style="color:#ae81ff">142</span><span style="color:#f92672">.</span><span style="color:#ae81ff">88</span>, <span style="color:#e6db74">&#34;kg&#34;</span>}
+}
+</code></pre></div><p>The reader will notice that in both Associative array and Relation representations, the cell of a table, i.e. the value of an attribute, is always functionally dependent on the description of Attribute and Entity/Relationship. It cannot stand on its own without these semantic references. Moreover, for the Relation representation, the exact order of values has to be maintained together with any missing (NULL) values.</p>
+<h3 id="data-redundancy">Data Redundancy</h3>
+<p>Relational databases are usually normalized to eliminate duplication of information and ensure referential integrity. This is especially recommended in one-to-many relationships. <a href="https://en.wikipedia.org/wiki/Database_normalization">Normalization</a> involves arranging attributes in tables, nevertheless in a relational database we cannot escape from data redundancy completely. For example if we take the unit attribute of the normalized Part table above we can see that values are still repeated. Most important the schema of a relational database is too rigid and cannot be easily modified without breaking normalization and compromising referential integrity.</p>
+<h3 id="structured-query-language-sql">Structured Query Language (SQL)</h3>
+<p>Performing queries of data in a relational database is highly dependent on these two factors we briefly mentioned above, the physical representation of data on the disk and the normalization procedure. One of the main bottlenecks with SQL is the natural join relational operator, counterpart of logical AND. An <a href="https://en.wikipedia.org/wiki/Join_(SQL)">SQL Join</a> is a means for constructing a result set combining columns from two (or more) tables by using values common to each. The more tables you join and the bigger the size of each table the more time it takes to consolidate the data of the view. On the contrary in many graph databases, connected nodes, i.e. record instances, are directly linked to each other. Each node, contains a list of pointers of its edges, therefore avoiding look-ups. In fact you are not searching for records, you are traversing connections instead. This may dramatically reduce the speed of constructing the result set of a query.</p>
+<p>For demonstration and comparison purposes we provide such a JOIN sql query for our toy database together with an ER diagram of the database schema,<a href="#fig5"><strong>Fig.5</strong></a> and the result set on a Microsoft Access table view, <a href="#fig6"><strong>Fig.6</strong></a>.</p>
+<p>You may also download a Microsoft Access, <a href="https://github.com/healiseu/healiseu.github.io/tree/master/media/SupplierPartCatalogue/accdb">accdb</a> file format, database to experiment with.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="SupplierPartCatalogue-ERModel-MSAccess.jpg" data-caption="Image illustrates the ER diagram of database schema">
+
+<img src="SupplierPartCatalogue-ERModel-MSAccess.jpg" alt="Image illustrates the ER diagram of database schema" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Image illustrates the ER diagram of database schema
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="SupplierPartCatalogue-ERModel-MSAccess-JOINresultSet.jpg" data-caption="Image illustrates the ER diagram of database schema">
+
+<img src="SupplierPartCatalogue-ERModel-MSAccess-JOINresultSet.jpg" alt="Image illustrates the ER diagram of database schema" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Image illustrates the ER diagram of database schema
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span>  <span style="color:#66d9ef">Catalog</span> . catsid ,
+        <span style="color:#66d9ef">Catalog</span> . catpid ,
+        Suppliers . sname ,
+        Parts . pname ,
+        <span style="color:#66d9ef">Catalog</span> . catcost ,
+        <span style="color:#66d9ef">Catalog</span> . catqnt ,
+        <span style="color:#66d9ef">Catalog</span> . catdate ,
+        <span style="color:#66d9ef">Catalog</span> . catchk
+<span style="color:#66d9ef">FROM</span>    Suppliers
+        <span style="color:#66d9ef">INNER</span>  <span style="color:#66d9ef">JOIN</span>  ( Parts
+                    <span style="color:#66d9ef">INNER</span>  <span style="color:#66d9ef">JOIN</span>  [<span style="color:#66d9ef">Catalog</span>]
+                            <span style="color:#66d9ef">ON</span>  Parts . pid  <span style="color:#f92672">=</span>  <span style="color:#66d9ef">Catalog</span> . catpid )
+                <span style="color:#66d9ef">ON</span>  Suppliers . sid  <span style="color:#f92672">=</span>  <span style="color:#66d9ef">Catalog</span> . catsid
+<span style="color:#66d9ef">ORDER</span>   <span style="color:#66d9ef">BY</span>  Suppliers . sname  <span style="color:#66d9ef">DESC</span> ,
+           <span style="color:#66d9ef">Catalog</span> . catcost  <span style="color:#66d9ef">DESC</span> ;
+</code></pre></div><p>One can immediately notice the complexity of SQL query language on the nested SQL Join constructs.</p>
+<h2 id="summary">Summary</h2>
+<p>In this article we described several limitations of the ER model that we wish to overcome, in brief these are:</p>
+<ul>
+<li>Functional dependence of values</li>
+<li>Data redundancy</li>
+<li>Join operations</li>
+</ul>
+<p>In the next article of our series we continue with an international industry standard for information management and interchange, the <a href="https://en.wikipedia.org/wiki/Topic_Maps">Topic Maps Data Model</a> (TMDM). Associations in TMDM are similar to tuples but they have types. Each member of an association plays a role that is defined explicitly. In fact this is in full agreement with Chen&rsquo;s Entity-Relationship diagrams (see Fig.1 and Fig.2 above). Chen discusses the role of an entity in a relationship and the role of an attribute in a relation and he considers distinct constrains on allowable values for a value set and constraints on permitted values for a certain attribute.</p>
+<p>TMDM view is edifying because it divides information space in two layers. At the conceptual level we have topics that can be associated and represent any subject that can be conceived by a human being. At the occurrence level we have addressable information resources that describe those subjects.</p>
+<h2 id="cross-references">Cross-References</h2>
+<ul>
+<li><a href="https://www.linkedin.com/pulse/associative-data-modeling-demystified-part1-hatzis-phd">LinkedIn Published Posts</a></li>
+<li><a href="https://www.linkedin.com/hp/update/6178589225793916928">LinkedIn Update</a></li>
+<li><a href="http://www.datasciencecentral.com/profiles/blogs/associative-data-modeling-demystified-part1">Data Science Central</a></li>
+<li><a href="https://dzone.com/articles/associative-data-modeling-demystified-part1">DZone - Database Section</a></li>
+</ul>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tags/semantic_web/">Semantic_Web</a>
+  
+  <a class="badge badge-light" href="/en/tags/topic_map/">Topic_map</a>
+  
+  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  
+  <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
+  
+  <a class="badge badge-light" href="/en/tags/signified_and_signifier/">Signified_and_signifier</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
+  
+  <a class="badge badge-light" href="/en/tags/data_model/">Data_model</a>
+  
+  <a class="badge badge-light" href="/en/tags/semantics/">Semantics</a>
+  
+  <a class="badge badge-light" href="/en/tags/database/">Database</a>
+  
+  <a class="badge badge-light" href="/en/tags/database_management_system/">Database_management_system</a>
+  
+  <a class="badge badge-light" href="/en/tags/graph_database/">Graph_database</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_semiotic_hypergraph/">associative_semiotic_hypergraph</a>
+  
+  <a class="badge badge-light" href="/en/tags/computational_semiotics/">Computational_semiotics</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_entity/">Associative_entity</a>
+  
+  <a class="badge badge-light" href="/en/tags/entityrelationship_model/">Entity–relationship_model</a>
+  
+  <a class="badge badge-light" href="/en/tags/serialization/">Serialization</a>
+  
+  <a class="badge badge-light" href="/en/tags/relational_model/">Relational_model</a>
+  
+  <a class="badge badge-light" href="/en/tags/association_object-oriented_programming/">Association_(object-oriented_programming)</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_array/">Associative_array</a>
+  
+  <a class="badge badge-light" href="/en/tags/relational_database/">Relational_database</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:athanassios@healis.eu" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/ahatzis" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/athanhat" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-quora"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://vimeo.com/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-vimeo"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://stackoverflow.com/users/5364935/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/en/project/r3dm/">S3DM/R3DM</a></li>
+          
+          <li><a href="/en/post/20131105/">S3DM/R3DM vs RDF</a></li>
+          
+          <li><a href="/en/post/20131002/">S3DM/R3DM in TMDM</a></li>
+          
+          <li><a href="/en/post/20131001/">S3DM/R3DM Q&amp;A</a></li>
+          
+          <li><a href="/en/post/20130403/">Origins of a new theoretical framework on information representation</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/en/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          Powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/healiseu/" target="_blank" rel="noopener" title="Star Me"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/healiseu" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCoCkNTkn1dAbtyr5EMvzc7w/videos" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener" title="Connect with Me"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener" title="Contact Me"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:athanassios.hatzis?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener" title="Ping Me"><i class="fab fa-quora" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://disqus.com/home/forums/healiseu/" target="_blank" rel="noopener" title="Discuss on Disqus"><i class="fas fa-comments" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

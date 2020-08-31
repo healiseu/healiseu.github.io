@@ -1,0 +1,281 @@
+[
+  {
+    "@id": "http://example.org/Part/991",
+    "@type": [
+      "http://schema.org/item"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#label": [
+      {
+        "@value": "Left Handed Bacon Stretcher Cover",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/color": [
+      {
+        "@value": "Red",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/weight": [
+      {
+        "@value": 15.5
+      }
+    ],
+    "http://schema.org/unitText": [
+      {
+        "@value": "lb",
+        "@language": "en"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+      {
+        "@value": "991",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/992",
+    "@type": [
+      "http://schema.org/item"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#label": [
+      {
+        "@value": "Smoke Shifter End",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/color": [
+      {
+        "@value": "Black",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/weight": [
+      {
+        "@value": 3.75
+      }
+    ],
+    "http://schema.org/unitText": [
+      {
+        "@value": "lb",
+        "@language": "en"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+      {
+        "@value": "992",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/993",
+    "@type": [
+      "http://schema.org/item"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#label": [
+      {
+        "@value": "Acme Widget Washer",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/color": [
+      {
+        "@value": "Red",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/weight": [
+      {
+        "@value": 142.88
+      }
+    ],
+    "http://schema.org/unitText": [
+      {
+        "@value": "kg",
+        "@language": "en"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+      {
+        "@value": "993",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/994",
+    "@type": [
+      "http://schema.org/item"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#label": [
+      {
+        "@value": "Acme Widget Washer",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/color": [
+      {
+        "@value": "Silver",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/weight": [
+      {
+        "@value": 142.88
+      }
+    ],
+    "http://schema.org/unitText": [
+      {
+        "@value": "kb",
+        "@language": "en"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+      {
+        "@value": "994",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/995",
+    "@type": [
+      "http://schema.org/item"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#label": [
+      {
+        "@value": "I Brake for Crop Circles Sticker",
+        "@language": "en"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+      {
+        "@value": "995",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/996",
+    "@type": [
+      "http://schema.org/item"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#label": [
+      {
+        "@value": "Anti-Gravity Turbine Generator",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/color": [
+      {
+        "@value": "Cyan",
+        "@language": "en"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+      {
+        "@value": "996",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/997",
+    "@type": [
+      "http://schema.org/item"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#label": [
+      {
+        "@value": "Anti-Gravity Turbine Generator",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/color": [
+      {
+        "@value": "Magenta",
+        "@language": "en"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+      {
+        "@value": "997",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/998",
+    "@type": [
+      "http://schema.org/item"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#label": [
+      {
+        "@value": "Fire Hydrant Cap",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/color": [
+      {
+        "@value": "Red",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/weight": [
+      {
+        "@value": 7.2
+      }
+    ],
+    "http://schema.org/unitText": [
+      {
+        "@value": "lb",
+        "@language": "en"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+      {
+        "@value": "998",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/999",
+    "@type": [
+      "http://schema.org/item"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#label": [
+      {
+        "@value": "7 Segment Display",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/color": [
+      {
+        "@value": "Green",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/weight": [
+      {
+        "@value": 2.1
+      }
+    ],
+    "http://schema.org/unitText": [
+      {
+        "@value": "gr",
+        "@language": "en"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+      {
+        "@value": "999",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://schema.org/item"
+  }
+]

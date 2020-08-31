@@ -128,8 +128,10 @@
 
 &lt;figure class=&#34;alignleft&#34;&gt;
 
-&lt;img src=&#34;healis_vine.png&#34; alt=&#34;this is the caption&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;healis_vine.png&#34; data-caption=&#34;this is the caption&#34;&gt;
 
+&lt;img src=&#34;healis_vine.png&#34; alt=&#34;this is the caption&#34; &gt;
+&lt;/a&gt;
 
 
 &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
@@ -156,8 +158,10 @@
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://healis.eu/img/medilig_admissions_catalog.jpg&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://healis.eu/img/medilig_admissions_catalog.jpg&#34; &gt;
 
+&lt;img src=&#34;https://healis.eu/img/medilig_admissions_catalog.jpg&#34; &gt;
+&lt;/a&gt;
 
 
 &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
@@ -176,8 +180,10 @@
 
 &lt;figure&gt;
 
-&lt;img src=&#34;icon.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;icon.png&#34; &gt;
 
+&lt;img src=&#34;icon.png&#34; &gt;
+&lt;/a&gt;
 
 
 &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;

@@ -1,0 +1,47 @@
+<http://example.org/spc/Part/991> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/item> .
+<http://example.org/spc/Part/991> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Left Handed Bacon Stretcher Cover"@en .
+<http://example.org/spc/Part/991> <http://schema.org/color> "Red"@en .
+<http://example.org/spc/Part/991> <http://schema.org/weight> "15.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://example.org/spc/Part/991> <http://schema.org/unitText> "lb"@en .
+<http://example.org/spc/Part/991> <http://purl.org/dc/elements/1.1/identifier> "991"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Part/992> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/item> .
+<http://example.org/spc/Part/992> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Smoke Shifter End"@en .
+<http://example.org/spc/Part/992> <http://schema.org/color> "Black"@en .
+<http://example.org/spc/Part/992> <http://schema.org/weight> "3.75"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://example.org/spc/Part/992> <http://schema.org/unitText> "lb"@en .
+<http://example.org/spc/Part/992> <http://purl.org/dc/elements/1.1/identifier> "992"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Part/993> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/item> .
+<http://example.org/spc/Part/993> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Acme Widget Washer"@en .
+<http://example.org/spc/Part/993> <http://schema.org/color> "Red"@en .
+<http://example.org/spc/Part/993> <http://schema.org/weight> "142.88"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://example.org/spc/Part/993> <http://schema.org/unitText> "kg"@en .
+<http://example.org/spc/Part/993> <http://purl.org/dc/elements/1.1/identifier> "993"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Part/994> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/item> .
+<http://example.org/spc/Part/994> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Acme Widget Washer"@en .
+<http://example.org/spc/Part/994> <http://schema.org/color> "Silver"@en .
+<http://example.org/spc/Part/994> <http://schema.org/weight> "142.88"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://example.org/spc/Part/994> <http://schema.org/unitText> "kb"@en .
+<http://example.org/spc/Part/994> <http://purl.org/dc/elements/1.1/identifier> "994"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Part/995> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/item> .
+<http://example.org/spc/Part/995> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "I Brake for Crop Circles Sticker"@en .
+<http://example.org/spc/Part/995> <http://purl.org/dc/elements/1.1/identifier> "995"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Part/996> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/item> .
+<http://example.org/spc/Part/996> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Anti-Gravity Turbine Generator"@en .
+<http://example.org/spc/Part/996> <http://schema.org/color> "Cyan"@en .
+<http://example.org/spc/Part/996> <http://purl.org/dc/elements/1.1/identifier> "996"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Part/997> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/item> .
+<http://example.org/spc/Part/997> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Anti-Gravity Turbine Generator"@en .
+<http://example.org/spc/Part/997> <http://schema.org/color> "Magenta"@en .
+<http://example.org/spc/Part/997> <http://purl.org/dc/elements/1.1/identifier> "997"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Part/998> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/item> .
+<http://example.org/spc/Part/998> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Fire Hydrant Cap"@en .
+<http://example.org/spc/Part/998> <http://schema.org/color> "Red"@en .
+<http://example.org/spc/Part/998> <http://schema.org/weight> "7.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://example.org/spc/Part/998> <http://schema.org/unitText> "lb"@en .
+<http://example.org/spc/Part/998> <http://purl.org/dc/elements/1.1/identifier> "998"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Part/999> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/item> .
+<http://example.org/spc/Part/999> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "7 Segment Display"@en .
+<http://example.org/spc/Part/999> <http://schema.org/color> "Green"@en .
+<http://example.org/spc/Part/999> <http://schema.org/weight> "2.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://example.org/spc/Part/999> <http://schema.org/unitText> "gr"@en .
+<http://example.org/spc/Part/999> <http://purl.org/dc/elements/1.1/identifier> "999"^^<http://www.w3.org/2001/XMLSchema#int> .

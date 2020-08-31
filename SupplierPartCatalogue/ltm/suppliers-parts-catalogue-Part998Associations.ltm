@@ -1,0 +1,94 @@
+@"utf-8"
+/* =======================================
+    Linear Topic Map Notation for Wandora
+   ======================================= */
+
+/* ----------------- Wandora Core Topic Types --------------- */
+[WNDR	    = "Wandora class" 	@"http://wandora.org/si/core/wandora-class"]
+
+/* ----------------- Topic Types --------------- */
+[ExcelType  = "Excel" 		@"http://wandora.org/si/excel"]
+[CellType   = "Cell" 	    	@"http://wandora.org/si/excel/cell"]
+[RowType    = "Row" 	    	@"http://wandora.org/si/excel/row"]
+
+/* ----------------- Topic Instances -------------------- */
+[prtID08     = "998" 			@"http://wandora.org/si/excel/cell/998"]
+[prtName08   = "Fire Hydrant Cap" 	@"http://wandora.org/si/excel/cell/Fire+Hydrant+Cap" ]
+[prtColorRed = "Red" 			@"http://wandora.org/si/excel/cell/Red" ]
+
+[supID12    = "1081" 		@"http://wandora.org/si/excel/cell/1081" ]
+[supPrice12 = "11.7" 		@"http://wandora.org/si/excel/cell/11.7" ]
+
+[supID14    = "1082" 		@"http://wandora.org/si/excel/cell/1082" ]
+[supPrice14 = "7.95" 		@"http://wandora.org/si/excel/cell/7.95" ]
+
+[supID16    = "1083" 		@"http://wandora.org/si/excel/cell/1083" ]
+[supPrice16 = "12.5" 		@"http://wandora.org/si/excel/cell/12.5" ]
+
+[supID18    = "1084" 		@"http://wandora.org/si/excel/cell/1084" ]
+[supPrice18 = "48.6" 		@"http://wandora.org/si/excel/cell/48.6" ]
+
+
+/* ----------------- Association Types --------- */
+[isa  = "Instantiation Predicate"       @"http://neuro.gr/0001"]
+
+[holmer = "Holonymy-Meronymy Predicate"   @"http://neuro.gr/0016"]
+
+[Cat  = "CatTuple"  @"http://wandora.org/si/excel/catrow" ]
+[Prt  = "PrtTuple"  @"http://wandora.org/si/excel/prtrow" ]
+
+
+/* ----------------- Association Role Types ---------------- */
+[pname   ="pname" 	@"http://wandora.org/si/excel/cell/pname" ]
+[pcolor  ="pcolor" 	@"http://wandora.org/si/excel/cell/pcolor" ]
+[pid     ="pid" 	@"http://wandora.org/si/excel/cell/pid" ]
+
+[catpid  ="catpid" 	@"http://wandora.org/si/excel/cell/catpid" ]
+[catsid  ="catsid" 	@"http://wandora.org/si/excel/cell/catsid" ]
+[catcost ="catcost" 	@"http://wandora.org/si/excel/cell/catcost" ]
+
+[whole  = "isWholeOf"   @"http://neuro.gr/0017"]
+[part   = "isPartOf"    @"http://neuro.gr/0018"]
+
+[type = "isTypeOf"      @"http://neuro.gr/0002"]
+[inst = "isInstanceOf"  @"http://neuro.gr/0003"]
+
+
+/* ------------- Topic Types Hierarchy ---------------- */
+isa(RowType: type, Cat: inst)
+isa(RowType: type, Prt: inst)
+
+holmer(ExcelType: whole, RowType: part)
+holmer(ExcelType: whole, CellType: part)
+
+holmer(WNDR: whole, ExcelType: part)
+
+
+/* --------------- Cell Instances ---------------- */
+isa(CellType: type, supPrice12: inst)
+isa(CellType: type, supPrice14: inst)
+isa(CellType: type, supPrice16: inst)
+isa(CellType: type, supPrice18: inst)
+
+isa(CellType: type, supID12: inst)
+isa(CellType: type, supID14: inst)
+isa(CellType: type, supID16: inst)
+isa(CellType: type, supID18: inst)
+
+isa(CellType: type, prtID08: inst)
+isa(CellType: type, prtName08: inst)
+isa(CellType: type, prtColorRed: inst)
+
+
+/* ----------------- Raw Instances (Associations) -------------- */
+
+/* 1 Association of catalog part no 998 with "Red" and "Fire Hydrant Cap" */
+Prt( prtName08:pname, prtID08:pid, prtColorRed:pcolor )
+
+/* 4 Associations of catalog part no 998 with supplier Ids and catalog prices */
+Cat( prtID08:catpid, supPrice18:catcost, supID18:catsid )
+Cat( prtID08:catpid, supPrice14:catcost, supID14:catsid )
+Cat( prtID08:catpid, supPrice16:catcost, supID16:catsid )
+Cat( prtID08:catpid, supPrice12:catcost, supID12:catsid )
+
+

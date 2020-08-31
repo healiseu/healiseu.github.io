@@ -1,0 +1,4 @@
+select distinct ?class where 
+{
+  ?resource a ?class
+}

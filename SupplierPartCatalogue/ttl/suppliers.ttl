@@ -1,0 +1,42 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix Supplier: <http://example.org/spc/Supplier/> .
+
+
+Supplier:1081 a foaf:Organization ;
+	rdf:label "Acme Widget Suppliers"@en ;
+	schema:address "1 Grub St., Potemkin Village, IL 61801"@en ;
+	schema:city "ILLINOIS"@en ;
+	schema:country "USA"@en ;
+	schema:status "10"^^xsd:int ;
+	dc:identifier "1081"^^xsd:int .
+
+Supplier:1082 a foaf:Organization ;
+	rdf:label "Big Red Tool and Die"@en ;
+	schema:address "4 My Way, Bermuda Shorts, OR 90305"@en ;
+	schema:city "OREGON"@en ;
+	schema:country "USA"@en ;
+	schema:status "20"^^xsd:int ;
+	dc:identifier "1082"^^xsd:int .
+
+Supplier:1083 a foaf:Organization ;
+	rdf:label "Perfunctory Parts"@en ;
+	schema:address "99 Short Pier, Terra Del Fuego, TX 41299"@en ;
+	schema:city "MADRID"@en ;
+	schema:country "SPAIN"@en ;
+	schema:status "30"^^xsd:int ;
+	dc:identifier "1083"^^xsd:int .
+
+Supplier:1084 a foaf:Organization ;
+	rdf:label "Alien Aircaft Inc."@en ;
+	schema:address "2 Groom Lake, Rachel, NV 51902"@en ;
+	schema:city "NOTTINGHAM"@en ;
+	schema:country "UK"@en ;
+	schema:status "10"^^xsd:int ;
+	dc:identifier "1084"^^xsd:int .

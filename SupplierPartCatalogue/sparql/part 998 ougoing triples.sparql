@@ -1,0 +1,8 @@
+# Get all outgoing triples for a specific part
+PREFIX Part: <http://example.org/spc/Part/>
+
+select ?prt ?p ?o where
+{ 
+    BIND(Part:998 AS ?prt)
+    ?prt ?p ?o .
+}

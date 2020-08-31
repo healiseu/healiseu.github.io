@@ -1,0 +1,28 @@
+<http://example.org/spc/Supplier/1081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://example.org/spc/Supplier/1081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Acme Widget Suppliers"@en .
+<http://example.org/spc/Supplier/1081> <http://schema.org/address> "1 Grub St., Potemkin Village, IL 61801"@en .
+<http://example.org/spc/Supplier/1081> <http://schema.org/city> "ILLINOIS"@en .
+<http://example.org/spc/Supplier/1081> <http://schema.org/country> "USA"@en .
+<http://example.org/spc/Supplier/1081> <http://schema.org/status> "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Supplier/1081> <http://purl.org/dc/elements/1.1/identifier> "1081"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Supplier/1082> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://example.org/spc/Supplier/1082> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Big Red Tool and Die"@en .
+<http://example.org/spc/Supplier/1082> <http://schema.org/address> "4 My Way, Bermuda Shorts, OR 90305"@en .
+<http://example.org/spc/Supplier/1082> <http://schema.org/city> "OREGON"@en .
+<http://example.org/spc/Supplier/1082> <http://schema.org/country> "USA"@en .
+<http://example.org/spc/Supplier/1082> <http://schema.org/status> "20"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Supplier/1082> <http://purl.org/dc/elements/1.1/identifier> "1082"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Supplier/1083> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://example.org/spc/Supplier/1083> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Perfunctory Parts"@en .
+<http://example.org/spc/Supplier/1083> <http://schema.org/address> "99 Short Pier, Terra Del Fuego, TX 41299"@en .
+<http://example.org/spc/Supplier/1083> <http://schema.org/city> "MADRID"@en .
+<http://example.org/spc/Supplier/1083> <http://schema.org/country> "SPAIN"@en .
+<http://example.org/spc/Supplier/1083> <http://schema.org/status> "30"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Supplier/1083> <http://purl.org/dc/elements/1.1/identifier> "1083"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Supplier/1084> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://example.org/spc/Supplier/1084> <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> "Alien Aircaft Inc."@en .
+<http://example.org/spc/Supplier/1084> <http://schema.org/address> "2 Groom Lake, Rachel, NV 51902"@en .
+<http://example.org/spc/Supplier/1084> <http://schema.org/city> "NOTTINGHAM"@en .
+<http://example.org/spc/Supplier/1084> <http://schema.org/country> "UK"@en .
+<http://example.org/spc/Supplier/1084> <http://schema.org/status> "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.org/spc/Supplier/1084> <http://purl.org/dc/elements/1.1/identifier> "1084"^^<http://www.w3.org/2001/XMLSchema#int> .

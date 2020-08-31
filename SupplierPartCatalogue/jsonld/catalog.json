@@ -1,0 +1,734 @@
+[
+  {
+    "@id": "http://example.org/Catalog/0",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 36.1
+      }
+    ],
+    "http://schema.org/quantity": [
+      {
+        "@value": "300",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://schema.org/date": [
+      {
+        "@value": "2014-12-20",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/991"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/1",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 42.3
+      }
+    ],
+    "http://schema.org/quantity": [
+      {
+        "@value": "400",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://schema.org/date": [
+      {
+        "@value": "2014-12-20",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/992"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/10",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 0.55
+      }
+    ],
+    "http://schema.org/quantity": [
+      {
+        "@value": "100",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://schema.org/date": [
+      {
+        "@value": "2014-09-10",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/997"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1082"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/11",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 7.95
+      }
+    ],
+    "http://schema.org/quantity": [
+      {
+        "@value": "200",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://schema.org/date": [
+      {
+        "@value": "2014-03-03",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/998"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1082"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/12",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 12.5
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/998"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1083"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/13",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/999"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1083"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/14",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 57.3
+      }
+    ],
+    "http://schema.org/quantity": [
+      {
+        "@value": "100",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://schema.org/date": [
+      {
+        "@value": "2014-12-20",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/994"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1084"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/15",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 22.2
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/995"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1084"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/16",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 48.6
+      }
+    ],
+    "http://schema.org/quantity": [
+      {
+        "@value": "200",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://schema.org/date": [
+      {
+        "@value": "2014-12-20",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/998"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1084"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/2",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 15.3
+      }
+    ],
+    "http://schema.org/quantity": [
+      {
+        "@value": "200",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://schema.org/date": [
+      {
+        "@value": "2014-03-03",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/993"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/3",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 20.5
+      }
+    ],
+    "http://schema.org/quantity": [
+      {
+        "@value": "100",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://schema.org/date": [
+      {
+        "@value": "2014-03-03",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/994"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/4",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 20.5
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/995"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/5",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 124.23
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/996"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/6",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 124.23
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/997"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/7",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 11.7
+      }
+    ],
+    "http://schema.org/quantity": [
+      {
+        "@value": "400",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://schema.org/date": [
+      {
+        "@value": "2014-09-10",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/998"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/8",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 75.2
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/999"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Catalog/9",
+    "@type": [
+      "http://www.wikidata.org/property/Inventory"
+    ],
+    "http://schema.org/cost": [
+      {
+        "@value": 16.5
+      }
+    ],
+    "http://schema.org/quantity": [
+      {
+        "@value": "200",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://schema.org/date": [
+      {
+        "@value": "2014-09-10",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://schema.org/check": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/991"
+      }
+    ],
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1082"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/991",
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      },
+      {
+        "@id": "http://example.org/Supplier/1082"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/992",
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/993",
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/994",
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      },
+      {
+        "@id": "http://example.org/Supplier/1084"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/995",
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      },
+      {
+        "@id": "http://example.org/Supplier/1084"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/996",
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/997",
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      },
+      {
+        "@id": "http://example.org/Supplier/1082"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/998",
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      },
+      {
+        "@id": "http://example.org/Supplier/1082"
+      },
+      {
+        "@id": "http://example.org/Supplier/1083"
+      },
+      {
+        "@id": "http://example.org/Supplier/1084"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Part/999",
+    "http://www.wikidata.org/property/hasVendor": [
+      {
+        "@id": "http://example.org/Supplier/1081"
+      },
+      {
+        "@id": "http://example.org/Supplier/1083"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Supplier/1081",
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/991"
+      },
+      {
+        "@id": "http://example.org/Part/992"
+      },
+      {
+        "@id": "http://example.org/Part/993"
+      },
+      {
+        "@id": "http://example.org/Part/994"
+      },
+      {
+        "@id": "http://example.org/Part/995"
+      },
+      {
+        "@id": "http://example.org/Part/996"
+      },
+      {
+        "@id": "http://example.org/Part/997"
+      },
+      {
+        "@id": "http://example.org/Part/998"
+      },
+      {
+        "@id": "http://example.org/Part/999"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Supplier/1082",
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/991"
+      },
+      {
+        "@id": "http://example.org/Part/997"
+      },
+      {
+        "@id": "http://example.org/Part/998"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Supplier/1083",
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/998"
+      },
+      {
+        "@id": "http://example.org/Part/999"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Supplier/1084",
+    "http://www.wikidata.org/property/hasPart": [
+      {
+        "@id": "http://example.org/Part/994"
+      },
+      {
+        "@id": "http://example.org/Part/995"
+      },
+      {
+        "@id": "http://example.org/Part/998"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.wikidata.org/property/Inventory"
+  }
+] 

@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.74.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Athanassios I. Hatzis, PhD">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Part 3/6 of the series Associative Data Modelling Demystified">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://healis.eu/en/post/20160913/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24920503-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://healis.eu/en/post/20160913/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@healiseu">
+  <meta property="twitter:creator" content="@healiseu">
+  
+  <meta property="og:site_name" content="HEALIS">
+  <meta property="og:url" content="https://healis.eu/en/post/20160913/">
+  <meta property="og:title" content="Association in Property Graph Data Model | HEALIS">
+  <meta property="og:description" content="Part 3/6 of the series Associative Data Modelling Demystified"><meta property="og:image" content="https://healis.eu/en/post/20160913/featured.jpg">
+  <meta property="twitter:image" content="https://healis.eu/en/post/20160913/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2016-09-13T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2016-09-13T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Association in Property Graph Data Model | HEALIS</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/en/"><img src="/img/healis-text-with-logo.png" alt="HEALIS"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#home"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/about/"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/hmorph/"><span>HyperMorph</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/s3dm/"><span>S3DM</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/en/post/"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/talk/"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/terms/"><span>Terms</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/contact/"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    
+    
+    <div class="article-container py-3">
+      <h1 itemprop="name">Association in Property Graph Data Model</h1>
+
+      
+      <p class="page-subtitle">Part 3/6 of the series Associative Data Modelling Demystified</p>
+      
+
+      
+      
+
+
+
+<meta content="2016-09-13 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2016-09-13 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/en/authors/admin/">Athanassios I. Hatzis, PhD</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2016-09-13</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    15 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/en/post/20160913/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/en/categories/semantic_web/">Semantic_Web</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://healis.eu/en/post/20160913/&amp;text=Association%20in%20Property%20Graph%20Data%20Model" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://healis.eu/en/post/20160913/&amp;t=Association%20in%20Property%20Graph%20Data%20Model" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Association%20in%20Property%20Graph%20Data%20Model&amp;body=https://healis.eu/en/post/20160913/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://healis.eu/en/post/20160913/&amp;title=Association%20in%20Property%20Graph%20Data%20Model" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Association%20in%20Property%20Graph%20Data%20Model%20https://healis.eu/en/post/20160913/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://healis.eu/en/post/20160913/&amp;title=Association%20in%20Property%20Graph%20Data%20Model" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/en/project/r3dm/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+      
+      
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#wolfram-language-entitypropertyassociation">Wolfram Language EntityPropertyAssociation</a>
+      <ul>
+        <li><a href="#r3dm-hypergraph-terminology">R3DM Hypergraph Terminology</a></li>
+      </ul>
+    </li>
+    <li><a href="#property-graph">Property Graph</a>
+      <ul>
+        <li><a href="#property-graph-nodes">Property Graph Nodes</a></li>
+        <li><a href="#property-graph-with-directed-edges">Property Graph with Directed Edges</a></li>
+        <li><a href="#property-graph-with-bidirectional-links">Property Graph with Bidirectional Links</a></li>
+        <li><a href="#property-graph-and-object-oriented-database">Property Graph and Object-Oriented database</a></li>
+      </ul>
+    </li>
+    <li><a href="#association-vs-edge">Association vs Edge</a></li>
+    <li><a href="#join-vs-edge">Join vs Edge</a></li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#cross-references">Cross-References</a></li>
+  </ul>
+</nav>
+
+<h2 id="introduction">Introduction</h2>
+<p>In previous posts of this series, (<a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000100/">Part-1</a>, <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000101/">Part-2</a>), we have seen several representations of the association construct. In this article we continue our investigation with the Graph Data model. Despite its mere representation as nodes and edges, the <a href="https://en.wikipedia.org/wiki/Graph_(abstract_data_type)">structure of this model</a> and its implementation details varies a lot in <a href="https://en.wikipedia.org/wiki/Graph_database">Graph Databases</a>. There is still a strong controversy and perhaps confusion on <a href="https://www.arangodb.com/2016/04/index-free-adjacency-hybrid-indexes-graph-databases/">what makes a database, a Graph database</a> and many are not fully aware that there exist other types of Graph Databases apart from Property Graph Database. Things get more complicated because the engine of a <a href="http://tinkerpop.apache.org/docs/current/reference/#intro">Property Graph Database</a> is not the same kind of engine with either an <a href="https://en.wikipedia.org/wiki/Triplestore">RDF store</a> or engines based on <a href="http://www.isotopicmaps.org/sam/sam-model/">Topic Maps</a> or <a href="https://en.wikipedia.org/wiki/Relational_model">Relational</a> data model. Property Graph data model is neither close to <a href="https://en.wikipedia.org/wiki/Object_model">Object Model</a>, a data model that is found in <a href="https://en.wikipedia.org/wiki/Object_database">Object-oriented database management systems</a>. There are <strong>significant differences of the Property Graph data model at both the logical and the physical level with all other models and it has not been established yet as a standard</strong>. Which brings us to the question whether there is indeed a necessity for another data model standard based on the association construct to fill the space of Property Graph databases and bridge also the gap with other Semantic Web technologies, especially <a href="http://json-ld.org/">JSON for Linking Data</a>. This question will not be answered in this post, we will make an attempt instead to give a formal definition of the association construct using the mighty Wolfram Language and compare it with RDF and Property Graph components and this will prepare also the ground for introducing our R3DM data model later on.</p>
+<h2 id="wolfram-language-entitypropertyassociation">Wolfram Language EntityPropertyAssociation</h2>
+<p>Real-world entities are another kind of symbolic expression that exists in latest versions of the Wolfram Language. You can get the values of specific properties for an <a href="http://reference.wolfram.com/language/ref/Entity.html"><code>Entity</code></a>, if it exists in <a href="https://www.wolfram.com/knowledgebase/"><code>Wolfram Knowledgebase</code></a>, world&rsquo;s largest and broadest repository of computable information according to Wolfram. But you do not write a query to fetch the data, you use a functional approach instead. The network delay for a first time search on specific values of <a href="http://reference.wolfram.com/language/ref/EntityProperties.html">EntityProperties</a> is minimal. For example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">Socrates</span><span style="color:#f92672">=</span><span style="color:#66d9ef">Entity</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;Person&#34;</span>,<span style="color:#e6db74">&#34;Socrates::dnz7w&#34;</span><span style="color:#f92672">]</span>;
+<span style="color:#66d9ef">EntityValue</span><span style="color:#f92672">[</span>
+  {<span style="color:#66d9ef">Socrates</span>},
+  {gender,date of birth,place of birth,parents,children},
+  <span style="color:#e6db74">&#34;EntityPropertyAssociation&#34;</span><span style="color:#f92672">]</span>
+</code></pre></div><p>Notice the third argument of the <a href="http://reference.wolfram.com/language/ref/EntityValue.html">EntityValue</a> function here, <code>EntityPropertyAssociation</code> will format the output, <a href="#fig1"><strong>Fig. 1</strong></a>, of this calculation as an association in which the specified entity is the key, and value is another nested association of properties and <code>EntityProperties</code> values.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="socrates_EntityPropertyAssociation-817x90.jpg" data-caption="Wolfram Language EntityPropertyAssociation">
+
+<img src="socrates_EntityPropertyAssociation-817x90.jpg" alt="Wolfram Language EntityPropertyAssociation" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Wolfram Language EntityPropertyAssociation
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>A boxed word is the symbolic Wolfram Language <a href="http://reference.wolfram.com/language/guide/KnowledgeRepresentationAndAccess.html"><code>Knowledge Representation</code></a> of a named entity of any type, (e.g. Person, City, Property), that is used as a handler to access records of information about that <code>Entity</code> that are stored in <code>Wolfram Knowledgebase</code>. The reader should realize how important this symbolic representation is in data modeling. Although the developer/user may compute a solution with a boxed <code>CommonName</code>, e.g. Socrates, behind the scenes a canonical name, e.g. <strong>Socrates::dnz7w</strong>, is used as the unique identifier for the <code>Entity</code> to disambiguate and to interpret user&rsquo;s instructions.</p>
+<p>This <code>EntityPropertyAssociation</code> representation extends Wolfram Language fundamental <a href="http://reference.wolfram.com/language/guide/Associations.html"><code>Association</code></a> construct, and it is in accordance with Topic Map Association serialization that we discussed in the <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000101/#topic-map-serialization">second part of our series</a>. The following figure, <a href="#fig2"><strong>Fig. 2</strong></a>, is from a previous example that is included in <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000100/#wolfram-language---association">Part 1</a> of our series and depicts three associations of this kind in a <a href="http://reference.wolfram.com/language/ref/Dataset.html">Wolfram Dataset</a>. Each association represents an Entity type instance (<strong>$PartI</strong>, <strong>$SupplierJ</strong> and <strong>$CatalogK</strong>) and for each instance the entity type (<strong>$Item</strong>, <strong>$Organization</strong>, <strong>$Inventory</strong>) is embedded as a key value pair together with other <code>EntityProperties</code> key-value pairs.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="three_associations.jpg" data-caption="Three Associations in a Named-Row Dataset">
+
+<img src="three_associations.jpg" alt="Three Associations in a Named-Row Dataset" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Three Associations in a Named-Row Dataset
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>Contrast this with mere tuples from the three tables of our relational database, <strong>Supplier</strong>, <strong>Part</strong>, <strong>Catalog</strong>. Semantically speaking, the three tuples cannot stand alone without the header of the relation body and their relation type. In addition to that observation, each value of either an <code>EntityPropertyAssociation</code> or member of a  tuple, is always dependent on their sibling nodes. <strong>Therefore values cannot be handled in isolation</strong>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">{ {<span style="color:#ae81ff">998</span>, <span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>, <span style="color:#e6db74">&#34;Red&#34;</span>, <span style="color:#ae81ff">7</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;gr&#34;</span>},
+  {<span style="color:#ae81ff">1081</span>, <span style="color:#e6db74">&#34;Acme Widget Suppliers&#34;</span>, <span style="color:#e6db74">&#34;1 Grub St., Potemkin Village, IL 61801&#34;</span>, <span style="color:#e6db74">&#34;ILLINOIS&#34;</span>, <span style="color:#e6db74">&#34;USA&#34;</span>, <span style="color:#ae81ff">10</span>},
+  {<span style="color:#ae81ff">1081</span>, <span style="color:#ae81ff">998</span>, <span style="color:#ae81ff">11</span><span style="color:#f92672">.</span><span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">400</span>, <span style="color:#e6db74">&#34;2014-9-10&#34;</span>, <span style="color:#66d9ef">True</span>} }
+</code></pre></div><h3 id="r3dm-hypergraph-terminology">R3DM Hypergraph Terminology</h3>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="partNo998-EntityPropertyAssociation-420x300.jpg" data-caption="A Hyperbond hyperlinked to HyperAtoms">
+
+<img src="partNo998-EntityPropertyAssociation-420x300.jpg" alt="A Hyperbond hyperlinked to HyperAtoms" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    A Hyperbond hyperlinked to HyperAtoms
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>The figure on the left, <a href="#fig3"><strong>Fig. 3</strong></a>, illustrates a single <code>EntityPropertyAssociation</code> of <strong>Part no. 998</strong> with its properties and values. According to Hypergraph theory, red nodes are hypernodes and the green node is the hyperedge where here connects a set of hypernodes. In R3DM we use the following definitions and terminology.</p>
+<p>An <code>EntityPropertyAssociation</code> can be defined as an <code>Association</code> of entity&rsquo;s attributes (properties) with values. Each attribute-value pair is represented on the hypergraph by a <code>hyperatom</code>. Therefore the general form of a <code>hyperatom</code> is a key-value pair. Each <code>hyperatom</code> is <strong>always connected bidirectionally</strong> to a <code>hyperbond</code> with a <code>hyperlink</code>. Normally <code>hyperlinks</code> do not have labels or direction. A <code>hyperbond</code> represents a complex structure, such as a tuple of a relation or instance of a class. The role of a <code>hyperbond</code> is to connect a set of <code>hyperatoms</code>. A <code>hyperbond</code> to <code>hyperbond</code> connection is also possible.</p>
+<p>Two important observations:</p>
+<ul>
+<li>
+<p>You can easily spot similarities between R3DM hypergraph paradigm and JSON documents. A JSON object can be represented with a <code>hyperbond</code> and a field-value pair (property) can be represented with a <code>hyperatom</code>.</p>
+</li>
+<li>
+<p>Entities, attributes (variables), and values each has its own type system in R3DM. These type systems will be analyzed methodically in another post but you can get a taste of what they look like <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000101/#r3dm-type-system-in-wandora">here</a>.</p>
+</li>
+</ul>
+<h2 id="property-graph">Property Graph</h2>
+<p>We defined <code>EntityPropertyAssociation</code> and we got familiar with the terminology of R3DM hypergraph. We can now proceed to examine the analogy with the Property Graph data model.</p>
+<p>Recall that a property graph has vertices and edges where :</p>
+<ol>
+<li>
+<p>each vertex has</p>
+<ul>
+<li>a set of outgoing edges.</li>
+<li>a set of incoming edges.</li>
+</ul>
+</li>
+<li>
+<p>each edge has</p>
+<ul>
+<li>an outgoing tail vertex.</li>
+<li>an incoming head vertex.</li>
+<li>a label that denotes the type of relationship between its two vertices.</li>
+</ul>
+</li>
+<li>
+<p>vertex and edge have</p>
+<ul>
+<li>a unique identifier</li>
+<li>a collection of properties defined by a map from key to value.</li>
+</ul>
+</li>
+</ol>
+<p>We built a property graph data model for our <strong>Supplier</strong>-<strong>Part</strong>-<strong>Catalog</strong> example in <a href="http://orientdb.com/">OrientDB</a>, a very popular, open-source, and free multi-model database.</p>
+<h3 id="property-graph-nodes">Property Graph Nodes</h3>
+<p>OrientDB allows both schema-full and schema-less creation of classes. Each class represents either a type of nodes or a type of edges on the graph. In the manner of a relational schema, we can add properties of a class with OrientDB SQL commands.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">CLASS</span> Part EXTENDS V;
+<span style="color:#66d9ef">CREATE</span> PROPERTY Part.pid INTEGER;
+<span style="color:#66d9ef">CREATE</span> PROPERTY Part.pname STRING;
+<span style="color:#66d9ef">CREATE</span> PROPERTY Part.pcolor STRING;
+<span style="color:#66d9ef">CREATE</span> PROPERTY Part.pweight DOUBLE;
+<span style="color:#66d9ef">CREATE</span> PROPERTY Part.punit STRING;
+<span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">CLASS</span> Part SHORTNAME P;
+</code></pre></div><p>Then we can populate the class with records, e.g. create a vertex (an instance of type <strong>Part</strong>) that represents <strong>Part no. 998</strong> (Red Fire Hydrant Cap)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> VERTEX Part CONTENT
+<span style="color:#960050;background-color:#1e0010">{</span><span style="color:#e6db74">&#34;pid&#34;</span>:<span style="color:#ae81ff">998</span>,<span style="color:#e6db74">&#34;pname&#34;</span>:<span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>,<span style="color:#e6db74">&#34;pcolor&#34;</span>:<span style="color:#e6db74">&#34;Red&#34;</span>,<span style="color:#e6db74">&#34;pweight&#34;</span>:<span style="color:#ae81ff">7</span>.<span style="color:#ae81ff">2</span>,<span style="color:#e6db74">&#34;punit&#34;</span>:<span style="color:#e6db74">&#34;lb&#34;</span><span style="color:#960050;background-color:#1e0010">}</span>
+</code></pre></div><h3 id="property-graph-with-directed-edges">Property Graph with Directed Edges</h3>
+<p>Now comes the tricky part, we want to associate <strong>Suppliers</strong> with <strong>Parts</strong>. Notice that in Property Graph data model there is not an <a href="https://en.wikipedia.org/wiki/Associative_entity">associative entity</a> to resolve a many-to-many relationship. We only have the concept of a directed edge that links one vertex with another vertex. Let us define the type of edge first.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">CLASS</span> inCatalog EXTENDS E;
+<span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catsid INTEGER;
+<span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catpid INTEGER;
+<span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catprice DOUBLE;
+<span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catqnt INTEGER;
+<span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catdate DATETIME;
+<span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catchk BOOLEAN;
+<span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">CLASS</span> inCatalog SHORTNAME <span style="color:#66d9ef">C</span>;
+</code></pre></div><p>In this OrientDB DDL <code>inCatalog.catsid</code> and <code>inCatalog.catpid</code> are superfluous, we added them for comparison purposes with the relational model. Records of edge type <code>inCatalog</code> contain record identifiers for the outgoing tail vertex and the incoming head vertex <a href="#fig11"><strong>Fig. 11</strong></a>. Secondly, it is not specified in the schema that this type of edge, <code>inCatalog</code>, connects <strong>Suppliers</strong> with <strong>Parts</strong>, neither is specified any direction on how to link these two types. These are defined during the creation of an edge.</p>
+<p>One way of creating <code>inCatalog</code> instances is to read each <strong>Catalog</strong> record from the table, get OrientDB record identifiers (<a href="http://orientdb.com/docs/2.2/Tutorial-Record-ID.html">RIDs</a>) for the specific <strong>Supplier</strong> and <strong>Part</strong> and then execute OrientDB <code>CREATE EDGE</code> SQL command to create a bidirectional edge. For example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> EDGE inCatalog <span style="color:#66d9ef">FROM</span> <span style="color:#f92672">#</span><span style="color:#ae81ff">19</span>:<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">TO</span> <span style="color:#f92672">#</span><span style="color:#ae81ff">18</span>:<span style="color:#ae81ff">7</span> CONTENT
+ <span style="color:#960050;background-color:#1e0010">{</span><span style="color:#e6db74">&#34;catsid&#34;</span>:<span style="color:#ae81ff">1081</span>,<span style="color:#e6db74">&#34;catpid&#34;</span>:<span style="color:#ae81ff">998</span>,<span style="color:#e6db74">&#34;catprice&#34;</span>:<span style="color:#ae81ff">11</span>.<span style="color:#ae81ff">7</span>,<span style="color:#e6db74">&#34;catqnt&#34;</span>:<span style="color:#ae81ff">400</span>,<span style="color:#e6db74">&#34;catdate&#34;</span>:<span style="color:#e6db74">&#34;2014-09-10&#34;</span>,<span style="color:#e6db74">&#34;catchk&#34;</span>:<span style="color:#66d9ef">true</span><span style="color:#960050;background-color:#1e0010">}</span>
+</code></pre></div><p>Newcomers can easily get confused with Property Graph edges. This is because although the outgoing tail and the incoming head of the edge implies a directed graph, in practice <strong>we can traverse the graph bidirectionally</strong>, i.e. start from any node to reach another node independent of the direction of the edge.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="SPCPGraph-4suppliers-3parts-800x400.jpg" data-caption="A Many to Many Relationship on a Property Graph">
+
+<img src="SPCPGraph-4suppliers-3parts-800x400.jpg" alt="A Many to Many Relationship on a Property Graph" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    A Many to Many Relationship on a Property Graph
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>In this screen capture, <a href="#fig4"><strong>Fig. 4</strong></a>, of OrientDB graph canvas one <strong>Supplier</strong> is associated with three <strong>Parts</strong> and one <strong>Part</strong> is associated with three <strong>Suppliers</strong>. We observe that <code>inCatalog</code> edges are always from a <strong>Supplier</strong> to a <strong>Part</strong>. This is because we created edges this way, we could have created them equally in the opposite direction. Semantically speaking, both <strong>Supplier</strong> and <strong>Part</strong> participate in a <strong>Catalog</strong> association and their binary relation is not directed. In such a case Property Graph edges look like <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000101/#topic-map-serialization">Topic Map binary associations</a>. The label of the edge is the type and the roles of its members are played by the outgoing head (<code>out</code>) and incoming tail (<code>in</code>), <a href="#fig5"><strong>Fig. 5</strong></a>.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="SPCPGraph-bidirectional-edge-814x162.jpg" data-caption="Directed Bidirectional Edge">
+
+<img src="SPCPGraph-bidirectional-edge-814x162.jpg" alt="Directed Bidirectional Edge" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Directed Bidirectional Edge
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<h3 id="property-graph-with-bidirectional-links">Property Graph with Bidirectional Links</h3>
+<p>Hence the bidirectional nature of the edge can be seen in two ways.</p>
+<p>Firstly the <code>out</code> and <code>in</code> links can be considered as one-to-one relationship of an edge with vertices. One <strong>Supplier</strong>/<strong>Part</strong> is referenced by Many <strong>Catalog</strong> items. The fields that are linked are the RID of <strong>Catalog</strong> with the RID of <strong>Part</strong> or <strong>Supplier</strong>, <a href="#fig11"><strong>Fig. 11</strong></a>. This type of direct linking is similar to the many-to-many relationship with a join-table, <a href="#fig6"><strong>Fig. 6</strong></a>.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="one-to-many.jpg" data-caption="Many-to-Many relationship with direct links on Associative Entity (edge)">
+
+<img src="one-to-many.jpg" alt="Many-to-Many relationship with direct links on Associative Entity (edge)" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Many-to-Many relationship with direct links on Associative Entity (edge)
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>Secondly, on the <code>one</code> side of the relationship, i.e. on the vertex we have the link set of outgoing/incoming edges, <a href="#fig8"><strong>Fig. 8</strong></a> and <a href="#fig9"><strong>Fig. 9</strong></a>. For example, many <strong>Catalog</strong> items (<a href="http://orientdb.com/docs/2.2/Types.html">LinkSet</a>) have One <strong>Supplier</strong>/<strong>Part</strong>, <a href="#fig7"><strong>Fig. 7</strong></a>.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="many-to-one.jpg" data-caption="Many-to-Many relationship with sets of direct links">
+
+<img src="many-to-one.jpg" alt="Many-to-Many relationship with sets of direct links" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Many-to-Many relationship with sets of direct links
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>The following query returns a list of both the outgoing edges for <code>Big Red Tool and Die</code> <strong>Supplier</strong>, see <a href="#fig4"><strong>Fig. 4</strong></a>, and the list of associated <strong>Parts</strong>, <a href="#fig8"><strong>Fig. 8</strong></a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#f92672">@</span>rid <span style="color:#66d9ef">As</span> Supplier,
+       out_inCatalog <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">Catalog</span>, <span style="color:#66d9ef">out</span>() <span style="color:#66d9ef">As</span> Part,
+       sid <span style="color:#66d9ef">As</span> supplierID, <span style="color:#66d9ef">out</span>().pid <span style="color:#66d9ef">As</span> partID,
+       scountry, scity
+<span style="color:#66d9ef">from</span> <span style="color:#ae81ff">19</span>:<span style="color:#ae81ff">1</span>
+</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="SPCPGraph-Supplier-LinkSet.jpg" data-caption="Set of Outgoing Edges for Supplier">
+
+<img src="SPCPGraph-Supplier-LinkSet.jpg" alt="Set of Outgoing Edges for Supplier" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Set of Outgoing Edges for Supplier
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>In a similar fashion, we can ask for the list of incoming edges to <strong>Part no. 998</strong>, see <a href="#fig4"><strong>Fig. 4</strong></a>, and the list of <strong>Suppliers</strong> that provide that <strong>Part</strong>, <a href="#fig9"><strong>Fig. 9</strong></a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#f92672">@</span>rid <span style="color:#66d9ef">As</span> Part,
+       in_inCatalog <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">Catalog</span>, <span style="color:#66d9ef">in</span>() <span style="color:#66d9ef">As</span> Supplier,
+       pid <span style="color:#66d9ef">As</span> partID, <span style="color:#66d9ef">in</span>().sid <span style="color:#66d9ef">As</span> supplierID,
+       pname, pcolor
+<span style="color:#66d9ef">from</span> <span style="color:#ae81ff">18</span>:<span style="color:#ae81ff">7</span>
+</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="SPCPGraph-Part-LinkSet.jpg" data-caption="Set of Incoming Edges for Part">
+
+<img src="SPCPGraph-Part-LinkSet.jpg" alt="Set of Incoming Edges for Part" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Set of Incoming Edges for Part
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>The set of outgoing edges from the <strong>Supplier</strong> and the set of incoming edges to <strong>Part no. 998</strong> have a common edge, <code>17:11</code>, that connects this <strong>Supplier</strong> with this <strong>Part</strong>, see <a href="#fig4"><strong>Fig. 4</strong></a>.</p>
+<h3 id="property-graph-and-object-oriented-database">Property Graph and Object-Oriented database</h3>
+<p>We could have implemented bidirectional edges on top of OrientDB <a href="http://orientdb.com/docs/2.2/Tutorial-Document-and-graph-model.html">Document</a> data model using Link, Link list, Link set data structures and the <a href="http://orientdb.com/docs/2.2/SQL-Create-Link.html"><code>CREATE LINK</code></a> SQL command. If you take also into account its class <a href="http://orientdb.com/docs/2.2/Inheritance.html">inheritance</a>, <a href="http://orientdb.com/docs/2.2/Graph-Schema.html">schema-full</a>, and <a href="http://orientdb.com/docs/2.2/SQL-Methods.html">SQL methods</a> features, that brings us pretty close to the <a href="https://en.wikipedia.org/wiki/Object_database">object-oriented database</a> model. Objects, in turn, may reference one another and therefore form a network graph. A relationship, in particular, is an association between two persistent objects, each of a specific type. In Intersystems Cache, <a href="http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GOBJ_relationships">relationships</a> are binary, i.e. defined between two classes and bidirectional, i.e. both sides of a relationship must be defined by creating a pair of complementary relationship properties, one in each class. Two-way reference property in both classes, <a href="http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GOBJ_propcoll">collection</a> in &ldquo;one&rdquo; side and simple reference in &ldquo;many&rdquo; side are analogous to the link set of outgoing/incoming edges in a vertex and the <code>out</code>/<code>in</code> links in edge of Property Graph data model, <a href="#fig8"><strong>Fig. 8</strong></a>, <a href="#fig9"><strong>Fig. 9</strong></a>, <a href="#fig11"><strong>Fig. 11</strong></a>.</p>
+<h2 id="association-vs-edge">Association vs Edge</h2>
+<p>If we take these &ldquo;Three Associations in a Named-Row Dataset&rdquo;, <a href="#fig2"><strong>Fig. 2</strong></a>, and create a graph with analogy to the Property Graph data model, we can see that <strong>$PartI</strong> (green node), <strong>$CatalogK</strong> (red edge), and <strong>$SupplierJ</strong> (blue node) are <code>hyperbonds</code>, i.e. they are <code>EntityProperty</code> associations and they are connected with <code>hyperlinks</code> i.e. undirected bidirectional links, [<strong>Fig. 10</strong>].</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="binary-association-630x120.jpg" data-caption="Three Hyperbonds connected with Hyperlinks">
+
+<img src="binary-association-630x120.jpg" alt="Three Hyperbonds connected with Hyperlinks" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Three Hyperbonds connected with Hyperlinks
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>There are three main advantages using R3DM hypergraph instead of a Property Graph:</p>
+<ol>
+<li>
+<p>There is a uniform treatment of records for both entities (nodes) and associative entities (edges). In R3DM these are <strong>symbolically represented</strong> by <code>hyperbonds</code>. Hyperlinking <code>hyperatoms</code> or <code>hyperbonds</code> is not the same as connecting property nodes with property edges.</p>
+</li>
+<li>
+<p>Entities, attributes and values are completely separable. There is not an Entity-Attribute neither an Entity-Attribute-Value &lsquo;Silo&rsquo; structure. This will become clear at a later post on the associative characteristics of R3DM. Here it is enough to say that the collection of properties defined by a map from key to value are enclosed in the structure of property graph node/edge. On the contrary in data models such as RDF, Topic Map and our R3DM hypergraph each key-value pair (<code>hyperatom</code>) can be a single instance and the same value can be linked to more than one classes (<code>hyperbonds</code>) or instances of the same class, see the discussion <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000101/#tuples-to-associations">here</a></p>
+</li>
+<li>
+<p>Under the hood, in a Property Graph each regular edge between two nodes creates another record. You cannot link one node record directly to another node record, you must always cross the edge record either from its tail or from the head. But with a <code>hyperlink</code> things are different, you do not need to load any edge record to resolve the other part of the relationship, no edge document is created. Thankfully, OrientDB provides such a data structure, it is the <a href="http://orientdb.com/docs/2.2/Lightweight-Edges.html">Lightweight Edge</a>. We have implemented R3DM in OrientDB using Lightweight Edges and it will be fully described in an upcoming post.</p>
+</li>
+</ol>
+<h2 id="join-vs-edge">Join vs Edge</h2>
+<p>Now, examine this relational database sql query <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000101/#introduction">here</a> with the following comparable OrientDB Property Graph query:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">/* Suppliers of a Red Fire Hydrant Cap sorted by their Catalog price */</span>
+
+<span style="color:#66d9ef">select</span> <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">as</span> supRID,
+       <span style="color:#66d9ef">out</span>.sname <span style="color:#66d9ef">as</span> supName,
+       <span style="color:#66d9ef">out</span>.scountry <span style="color:#66d9ef">as</span> supCountry,       
+       catprice <span style="color:#66d9ef">as</span> catPrice,
+       catqnt <span style="color:#66d9ef">as</span> catQuantity,       
+       <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">as</span> prtRID,
+       <span style="color:#66d9ef">in</span>.pname <span style="color:#66d9ef">as</span> prtName,
+       <span style="color:#66d9ef">in</span>.pcolor <span style="color:#66d9ef">as</span> prtColor,       
+       <span style="color:#f92672">@</span>rid <span style="color:#66d9ef">as</span> catRID       
+<span style="color:#66d9ef">from</span> inCatalog
+<span style="color:#66d9ef">where</span> <span style="color:#66d9ef">in</span>.pid<span style="color:#f92672">=</span><span style="color:#ae81ff">998</span>
+<span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> catPrice
+</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="partNo999-Suppliers-dataset-879x165.jpg" data-caption="Suppliers of a Red Fire Hydrant Cap">
+
+<img src="partNo999-Suppliers-dataset-879x165.jpg" alt="Suppliers of a Red Fire Hydrant Cap" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Suppliers of a Red Fire Hydrant Cap
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="partNo998-Suppliers-graph-403x261.jpg" data-caption="Suppliers of a Red Fire Hydrant Cap on OrientDB Graph Canvas">
+
+<img src="partNo998-Suppliers-graph-403x261.jpg" alt="Suppliers of a Red Fire Hydrant Cap on OrientDB Graph Canvas" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Suppliers of a Red Fire Hydrant Cap on OrientDB Graph Canvas
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>This OrientDB SQL query is clearly more compact and with a faster performance, because there are no JOIN operations anymore. We can get back the result set represented with a Wolfram Dataset structure, <a href="#fig11"><strong>Fig. 11</strong></a>. Instead of having supplier IDs and part IDs, these are now replaced with OrientDB record IDs (<a href="http://orientdb.com/docs/2.2/Tutorial-Record-ID.html">RIDs</a>). We have also added another column at the end which is the RID of the edge record, i.e. <strong>Catalog</strong> record.</p>
+<p>Check also this <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000101/#topic-map-serialization">Topic Map graph representation</a>. The main difference is that these <strong>Catalog</strong> relationships and the <strong>Part</strong> tuple are drawn explicitly on the Topic Map and all values of properties are visible on the same graph. In this Property Graph, <a href="#fig12"><strong>Fig. 12</strong></a>, only one of the enclosed properties of any node or edge type is displayed.</p>
+<h2 id="summary">Summary</h2>
+<p>We can summarize the critical points of our investigation in Property Graph data model:</p>
+<ol>
+<li>We introduced R3DM Hypergraph as the harbinger of R3DM associations. R3DM hypergraph is based on Wolfram <code>EntityPropertyAssociations</code> and extends Property Graph with <code>hyperbonds</code> that represent in a uniform way <code>nodes</code> and <code>edges</code>; while <code>hyperatoms</code> are <code>hyperlinked</code> to <code>hyperbonds</code> and are analogous to a property-value pair. From this perspective:</li>
+</ol>
+<ul>
+<li>There is not an Entity-Attribute or Entity-Attribute-Value &lsquo;Silo&rsquo; structure.</li>
+<li>Hypelink, i.e. bidirectional edge <strong>without</strong> a record, can link directly <code>hyperatoms</code> to <code>hyperbonds</code> and <code>hyperbond</code> to <code>hyperbond</code></li>
+</ul>
+<ol start="2">
+<li>
+<p>In all the data models we have described so far in our series, every value is accessible only by knowing its context. Thus far, values are either dependent on a relation variable and attribute in a <strong>Relational model</strong>, or they come as field-value pairs in the object of a <strong>Document model</strong> / <strong>Object-Oriented model</strong>, or you have Topic Type and Topic Roles in Associations of <strong>Topic Map model</strong>, or they form property-value pairs that are enclosed in the node structure of <strong>Property Graph model</strong>. Even in the triplets of <strong>RDF model</strong>, that we will examine in the next article, you have an entity-property-value context.</p>
+</li>
+<li>
+<p>Generally speaking, in Property Graph data model schema specifications for Node and Edge types are weak and it is not easy to define referential integrity and handling of many-to-many relationships. OrientDB object-oriented features alleviate that problem.</p>
+</li>
+<li>
+<p>In a Property Graph data model edges are always directed but we can traverse them in both ways, i.e. they link bidirectionally nodes of the graph. In this sense, the label of the edge is comparable to the Topic type of a binary association in Topic Map data model; whereas, the labels <code>out</code> and <code>in</code> that signify the outgoing head and incoming tail are the roles of its members.</p>
+</li>
+<li>
+<p>In object-oriented database model, it is possible to represent Property Graph edge with a two-way reference property in both classes, collection in &ldquo;one&rdquo; side and simple reference in &ldquo;many&rdquo; side.</p>
+</li>
+<li>
+<p>There are no JOIN operations in Property Graph data model. The edge record associates each half of the relationship with direct links.</p>
+</li>
+</ol>
+<p>We will examine separately RDF data model, one of the W3C standards for the Semantic Web. From our perspective, RDF and Property Graph are in conflict for reasons that we will discuss in the next article of our series. It seems the rivalry of these two data models is in succession of an older one between RDF and Topic Map.</p>
+<h2 id="cross-references">Cross-References</h2>
+<ul>
+<li><a href="https://dzone.com/articles/associative-data-modeling-demystified-part-iii">DZone Article</a></li>
+<li><a href="https://www.linkedin.com/pulse/associative-data-modeling-demystified-part-3-hatzis-phd">LinkedIn Published Posts</a></li>
+<li><a href="https://www.linkedin.com/groups/109285/109285-6181790749382713344">LinkedIn Topic Maps Community Group</a></li>
+<li><a href="https://www.linkedin.com/groups/2552968/2552968-6181590335416737795">LinkedIn Graph Databases Group</a></li>
+<li><a href="https://www.linkedin.com/groups/3750024/3750024-6181588327662133251">LinkedIn Database &amp; Data Store Professionals Group</a></li>
+<li><a href="https://www.linkedin.com/groups/1969109">LinkedIn MUMPS and Cache Development Group</a></li>
+<li><a href="https://www.linkedin.com/groups/62614/62614-6181585290390441986">LinkedIn Mathematica Users Group</a></li>
+<li><a href="https://www.linkedin.com/groups/4344857/4344857-6181586484169052161">LinkedIn OrientDB Users Group</a></li>
+<li><a href="https://www.linkedin.com/groups/129217/129217-6181582020477489152">LinkedIn Semantic Web Research Group</a></li>
+</ul>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tags/semantic_web/">Semantic_Web</a>
+  
+  <a class="badge badge-light" href="/en/tags/topic_map/">Topic_map</a>
+  
+  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  
+  <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
+  
+  <a class="badge badge-light" href="/en/tags/signified_and_signifier/">Signified_and_signifier</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
+  
+  <a class="badge badge-light" href="/en/tags/data_model/">Data_model</a>
+  
+  <a class="badge badge-light" href="/en/tags/semantics/">Semantics</a>
+  
+  <a class="badge badge-light" href="/en/tags/database/">Database</a>
+  
+  <a class="badge badge-light" href="/en/tags/database_management_system/">Database_management_system</a>
+  
+  <a class="badge badge-light" href="/en/tags/graph_database/">Graph_database</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_semiotic_hypergraph/">associative_semiotic_hypergraph</a>
+  
+  <a class="badge badge-light" href="/en/tags/computational_semiotics/">Computational_semiotics</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_entity/">Associative_entity</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:athanassios@healis.eu" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/ahatzis" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/athanhat" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-quora"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://vimeo.com/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-vimeo"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://stackoverflow.com/users/5364935/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/en/post/20160902/">Association in Topic Map Data Model</a></li>
+          
+          <li><a href="/en/post/20160825/">Relation, Relationship and Association</a></li>
+          
+          <li><a href="/en/project/r3dm/">S3DM/R3DM</a></li>
+          
+          <li><a href="/en/post/20131105/">S3DM/R3DM vs RDF</a></li>
+          
+          <li><a href="/en/post/20131002/">S3DM/R3DM in TMDM</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/en/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          Powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/healiseu/" target="_blank" rel="noopener" title="Star Me"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/healiseu" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCoCkNTkn1dAbtyr5EMvzc7w/videos" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener" title="Connect with Me"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener" title="Contact Me"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:athanassios.hatzis?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener" title="Ping Me"><i class="fab fa-quora" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://disqus.com/home/forums/healiseu/" target="_blank" rel="noopener" title="Discuss on Disqus"><i class="fas fa-comments" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

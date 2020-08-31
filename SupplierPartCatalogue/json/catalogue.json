@@ -1,0 +1,19 @@
+[
+	{"catsid": 1081, "catpid": 991, "catprice": 36.1, "catqnt": 300, "catdate": "2014-12-20", "catchk": true},
+	{"catsid": 1081, "catpid": 992, "catprice": 42.3, "catqnt": 400, "catdate": "2014-12-20", "catchk": true},
+	{"catsid": 1081, "catpid": 993, "catprice": 15.3, "catqnt": 200, "catdate": "2014-03-03", "catchk": false},
+	{"catsid": 1081, "catpid": 994, "catprice": 20.5, "catqnt": 100, "catdate": "2014-03-03", "catchk": false},
+	{"catsid": 1081, "catpid": 995, "catprice": 20.5, 					  "catchk": false},
+	{"catsid": 1081, "catpid": 996, "catprice": 124.23, 					  "catchk": false},
+	{"catsid": 1081, "catpid": 997, "catprice": 124.23, 					  "catchk": false},
+	{"catsid": 1081, "catpid": 998, "catprice": 11.7, "catqnt": 400, "catdate": "2014-09-10", "catchk": true},
+	{"catsid": 1081, "catpid": 999, "catprice": 75.2, 					  "catchk": false},
+	{"catsid": 1082, "catpid": 991, "catprice": 16.5, "catqnt": 200, "catdate": "2014-09-10", "catchk": true},
+	{"catsid": 1082, "catpid": 997, "catprice": 0.55, "catqnt": 100, "catdate": "2014-09-10", "catchk": true},
+	{"catsid": 1082, "catpid": 998, "catprice": 7.95, "catqnt": 200, "catdate": "2014-03-03", "catchk": false},
+	{"catsid": 1083, "catpid": 998, "catprice": 12.5, 					  "catchk": false},
+	{"catsid": 1083, "catpid": 999, "catprice": 1.0, 					  "catchk": false},
+	{"catsid": 1084, "catpid": 994, "catprice": 57.3, "catqnt": 100, "catdate": "2014-12-20", "catchk": true},
+	{"catsid": 1084, "catpid": 995, "catprice": 22.2, 					  "catchk": false},
+	{"catsid": 1084, "catpid": 998, "catprice": 48.6, "catqnt": 200, "catdate": "2014-12-20", "catchk": true}
+]

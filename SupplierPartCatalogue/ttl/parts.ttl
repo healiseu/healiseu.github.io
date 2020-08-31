@@ -1,0 +1,65 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix Part: <http://example.org/spc/Part/> .
+
+
+Part:991 a schema:item ;
+	rdf:label "Left Handed Bacon Stretcher Cover"@en ;
+	schema:color "Red"@en ;
+	schema:weight "15.5"^^xsd:double ;
+	schema:unitText "lb"@en ;
+	dc:identifier "991"^^xsd:int .
+
+Part:992 a schema:item ;
+	rdf:label "Smoke Shifter End"@en ;
+	schema:color "Black"@en ;
+	schema:weight "3.75"^^xsd:double ;
+	schema:unitText "lb"@en ;
+	dc:identifier "992"^^xsd:int .
+
+Part:993 a schema:item ;
+	rdf:label "Acme Widget Washer"@en ;
+	schema:color "Red"@en ;
+	schema:weight "142.88"^^xsd:double ;
+	schema:unitText "kg"@en ;
+	dc:identifier "993"^^xsd:int .
+
+Part:994 a schema:item ;
+	rdf:label "Acme Widget Washer"@en ;
+	schema:color "Silver"@en ;
+	schema:weight "142.88"^^xsd:double ;
+	schema:unitText "kb"@en ;
+	dc:identifier "994"^^xsd:int .
+
+Part:995 a schema:item ;
+	rdf:label "I Brake for Crop Circles Sticker"@en ;
+	dc:identifier "995"^^xsd:int .
+
+Part:996 a schema:item ;
+	rdf:label "Anti-Gravity Turbine Generator"@en ;
+	schema:color "Cyan"@en ;
+	dc:identifier "996"^^xsd:int .
+
+Part:997 a schema:item ;
+	rdf:label "Anti-Gravity Turbine Generator"@en ;
+	schema:color "Magenta"@en ;
+	dc:identifier "997"^^xsd:int .
+
+Part:998 a schema:item ;
+	rdf:label "Fire Hydrant Cap"@en ;
+	schema:color "Red"@en ;
+	schema:weight "7.2"^^xsd:double ;
+	schema:unitText "lb"@en ;
+	dc:identifier "998"^^xsd:int .
+
+Part:999 a schema:item ;
+	rdf:label "7 Segment Display"@en ;
+	schema:color "Green"@en ;
+	schema:weight "2.1"^^xsd:double ;
+	schema:unitText "gr"@en ;
+	dc:identifier "999"^^xsd:int .

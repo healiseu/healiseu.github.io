@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.74.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Athanassios I. Hatzis, PhD">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Part 4/6 of the series Associative Data Modelling Demystified">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://healis.eu/en/post/20161220/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24920503-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://healis.eu/en/post/20161220/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@healiseu">
+  <meta property="twitter:creator" content="@healiseu">
+  
+  <meta property="og:site_name" content="HEALIS">
+  <meta property="og:url" content="https://healis.eu/en/post/20161220/">
+  <meta property="og:title" content="Association in RDF Data Model | HEALIS">
+  <meta property="og:description" content="Part 4/6 of the series Associative Data Modelling Demystified"><meta property="og:image" content="https://healis.eu/en/post/20161220/featured.jpg">
+  <meta property="twitter:image" content="https://healis.eu/en/post/20161220/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2016-12-20T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2016-12-20T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Association in RDF Data Model | HEALIS</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/en/"><img src="/img/healis-text-with-logo.png" alt="HEALIS"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#home"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/about/"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/hmorph/"><span>HyperMorph</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/s3dm/"><span>S3DM</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/en/post/"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/talk/"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/terms/"><span>Terms</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/contact/"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    
+    
+    <div class="article-container py-3">
+      <h1 itemprop="name">Association in RDF Data Model</h1>
+
+      
+      <p class="page-subtitle">Part 4/6 of the series Associative Data Modelling Demystified</p>
+      
+
+      
+      
+
+
+
+<meta content="2016-12-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2016-12-20 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/en/authors/admin/">Athanassios I. Hatzis, PhD</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2016-12-20</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    14 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/en/post/20161220/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/en/categories/semantic_web/">Semantic_Web</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://healis.eu/en/post/20161220/&amp;text=Association%20in%20RDF%20Data%20Model" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://healis.eu/en/post/20161220/&amp;t=Association%20in%20RDF%20Data%20Model" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Association%20in%20RDF%20Data%20Model&amp;body=https://healis.eu/en/post/20161220/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://healis.eu/en/post/20161220/&amp;title=Association%20in%20RDF%20Data%20Model" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Association%20in%20RDF%20Data%20Model%20https://healis.eu/en/post/20161220/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://healis.eu/en/post/20161220/&amp;title=Association%20in%20RDF%20Data%20Model" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/en/project/r3dm/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+      
+      
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction-to-rdf">Introduction to RDF</a></li>
+    <li><a href="#rdf-and-linked-data">RDF and Linked Data</a></li>
+    <li><a href="#association-in-rdf">Association in RDF</a></li>
+    <li><a href="#associative-model">Associative Model</a></li>
+    <li><a href="#association-in-r3dm">Association in R3DM</a></li>
+    <li><a href="#discussion">Discussion</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#cross-references">Cross-References</a></li>
+  </ul>
+</nav>
+
+<h2 id="introduction-to-rdf">Introduction to RDF</h2>
+<p>In the previous post, <a href="/en/post/20160913/">Part-3</a>, of this series we explored the Property Graph data model. It is now time to write about another Graph data model with a long history behind it, the Resource-Description-Framework (<a href="https://en.wikipedia.org/wiki/Resource_Description_Framework">RDF</a>). We will see how we can define an association in RDF and what are the differences with other data models that we analyzed in previous posts of our series.</p>
+<p>RDF is a graph-based data model that has been designed to represent information as a <strong>labeled directed graph</strong>. In RDF, a description of a resource, i.e. any type of thing, is represented as a number of triples. Each triple has a subject, predicate, and object. Alternatively if you want to think in terms of <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">Entity-Relationship</a> model, these three parts of the triple become the Entity-Attribute-Value. This is also known as the <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model">EAV</a> model. For instance the Entity subject <code>Part:998</code> of our <a href="/SupplierPartCatalogue/tsv/Parts.tsv">Parts</a> table in the <a href="/SupplierPartCatalogue">example data set</a> of our series can be <a href="/SupplierPartCatalogue/ttl/parts.ttl">serialized</a> in Turtle syntax as :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Part:998 rdf<span style="color:#f92672">:</span>label        <span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span><span style="color:#a6e22e">@en</span> <span style="color:#f92672">;</span>
+         schema<span style="color:#f92672">:</span>color     <span style="color:#e6db74">&#34;Red&#34;</span><span style="color:#a6e22e">@en</span> <span style="color:#f92672">;</span>
+         schema<span style="color:#f92672">:</span>weight    <span style="color:#e6db74">&#34;7.2&#34;</span><span style="color:#f92672">^^</span>xsd<span style="color:#f92672">:</span><span style="color:#66d9ef">double</span> <span style="color:#f92672">;</span>
+         schema<span style="color:#f92672">:</span>unitText  <span style="color:#e6db74">&#34;lb&#34;</span><span style="color:#a6e22e">@en</span> <span style="color:#f92672">;</span>
+         dc<span style="color:#f92672">:</span>identifier    <span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">^^</span>xsd<span style="color:#f92672">:</span><span style="color:#66d9ef">int</span> <span style="color:#f92672">.</span>
+</code></pre></div><p>These <code>rdf:label</code>, <code>schema:color</code>, <code>schema:weight</code>, <code>schema:unitText</code>, <code>dc:identifier</code> are attributes of this Entity instance and &ldquo;Fire Hydrant Cap&rdquo;, &ldquo;Red&rdquo;, &ldquo;7.2&rdquo;, &ldquo;lb&rdquo; and &ldquo;998&rdquo; are atomic values with an accompanied data type, see also <a href="#fig7"><strong>Fig. 7</strong></a>.</p>
+<h2 id="rdf-and-linked-data">RDF and Linked Data</h2>
+<p>But RDF is not like any other data model, it has been selected from <a href="https://en.wikipedia.org/wiki/World_Wide_Web_Consortium">W3C</a> as one of the Web technologies, together with <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> and <a href="https://en.wikipedia.org/wiki/Uniform_resource_identifier">URIs</a>, to <strong>extend the hyperlinking of documents to a set of best practices for publishing and interlinking structured data on global scale</strong>. Today the term <a href="https://en.wikipedia.org/wiki/Linked_data">Linked Data</a> refers to these standards, and the extension of the Web is also known as the <a href="https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a>. The predecessor of RDF, the <a href="https://en.wikipedia.org/wiki/Semantic_network">Semantic Network Model</a>, was formed in the early 1960s. The main difference is that arcs and nodes in RDF are identified using HTTP URIs and dereferenced (i.e., looked up) over the HTTP protocol. If we use <a href="https://en.wikipedia.org/wiki/N-Triples">N-Triples</a> syntax to serialize the same resource <code>Part:998</code> we take:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#label&gt;  &#34;Fire Hydrant Cap&#34;@en .
+</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://schema.org/color&gt;                           &#34;Red&#34;@en .
+</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://schema.org/weight&gt;                          &#34;7.2&#34;^^&lt;http://www.w3.org/2001/XMLSchema#double&gt; .
+</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://schema.org/unitText&gt;                        &#34;lb&#34;@en .
+</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://purl.org/dc/elements/1.1/identifier&gt;        &#34;998&#34;^^&lt;http://www.w3.org/2001/XMLSchema#int&gt; .
+</span></code></pre></div><p>Notice that the <code>object</code> part of the triple is an <a href="https://www.w3.org/TR/rdf11-concepts/#section-Datatypes">RDF literal</a> and datatypes are used to represent values such as strings, numbers and dates. These triples are called <strong>Literal triples</strong> and describe the properties of resources. In our example these <code>literal triples</code> describe five properties of the <code>Part:998</code> resource. This type of RDF triples is distinguished from the other type which is <strong>RDF Links</strong> and describe the relationship between two resources. For example if we want to express with the same syntax all the vendors of <code>Part:998</code> we will form these triples:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.wikidata.org/property/hasVendor&gt;  &lt;http://example.org/spc/Supplier/1081&gt; .
+</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.wikidata.org/property/hasVendor&gt;  &lt;http://example.org/spc/Supplier/1082&gt; .
+</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.wikidata.org/property/hasVendor&gt;  &lt;http://example.org/spc/Supplier/1083&gt; .
+</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.wikidata.org/property/hasVendor&gt;  &lt;http://example.org/spc/Supplier/1084&gt; .
+</span></code></pre></div><p>This is also the equivalent result set at <a href="#fig1"><strong>Fig. 1</strong></a> presented in a compact form from the following <a href="https://www.w3.org/TR/rdf-sparql-query/">SPARQL</a> query:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">#</span>Suppliers <span style="color:#66d9ef">of</span> Part <span style="color:#ae81ff">998</span>
+
+<span style="color:#66d9ef">PREFIX</span> Supplier: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>example.org<span style="color:#f92672">/</span>spc<span style="color:#f92672">/</span>Supplier<span style="color:#f92672">/&gt;</span>
+<span style="color:#66d9ef">PREFIX</span> Part: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>example.org<span style="color:#f92672">/</span>spc<span style="color:#f92672">/</span>Part<span style="color:#f92672">/&gt;</span>
+<span style="color:#66d9ef">PREFIX</span> xsd: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.w3.org<span style="color:#f92672">/</span><span style="color:#ae81ff">2001</span><span style="color:#f92672">/</span>XMLSchema<span style="color:#f92672">#&gt;</span>
+<span style="color:#66d9ef">PREFIX</span> wd: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.wikidata.org<span style="color:#f92672">/</span>property<span style="color:#f92672">/&gt;</span>
+<span style="color:#66d9ef">PREFIX</span> dc: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>purl.org<span style="color:#f92672">/</span>dc<span style="color:#f92672">/</span>elements<span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">1</span><span style="color:#f92672">/&gt;</span>
+
+<span style="color:#66d9ef">select</span> <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>p <span style="color:#f92672">?</span>sup <span style="color:#66d9ef">where</span>
+<span style="color:#960050;background-color:#1e0010">{</span>
+	BIND(wd:hasVendor <span style="color:#66d9ef">AS</span> <span style="color:#f92672">?</span>p)    
+
+    <span style="color:#f92672">#</span> <span style="color:#66d9ef">Start</span> <span style="color:#66d9ef">with</span> a <span style="color:#f92672">?</span>prt that has id<span style="color:#f92672">=</span><span style="color:#ae81ff">998</span>
+    <span style="color:#f92672">?</span>prt dc:identifier <span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">^^</span>xsd:int .
+
+    <span style="color:#f92672">#</span> Find <span style="color:#66d9ef">all</span> <span style="color:#66d9ef">catalog</span> items (<span style="color:#f92672">?</span>cat) <span style="color:#66d9ef">with</span> a reference <span style="color:#66d9ef">to</span> <span style="color:#f92672">?</span>prt
+    <span style="color:#f92672">?</span>cat wd:hasPart <span style="color:#f92672">?</span>prt .
+
+    <span style="color:#f92672">#</span> <span style="color:#66d9ef">For</span> <span style="color:#66d9ef">any</span> <span style="color:#66d9ef">catalog</span> item (<span style="color:#f92672">?</span>cat) find the vendor that supplies <span style="color:#f92672">?</span>prt
+    <span style="color:#f92672">?</span>cat <span style="color:#f92672">?</span>p <span style="color:#f92672">?</span>sup .
+<span style="color:#960050;background-color:#1e0010">}</span>
+</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="part998-suppliers-result-set.jpg" data-caption="Result set from SPARQL query to find the suppliers of Part:98">
+
+<img src="part998-suppliers-result-set.jpg" alt="Result set from SPARQL query to find the suppliers of Part:98" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Result set from SPARQL query to find the suppliers of Part:98
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>In <a href="#fig1"><strong>Fig. 1</strong></a> The URI with <a href="https://en.wikipedia.org/wiki/QName">QName</a> <code>wd:hasVendor</code>,  in the <code>predicate</code> position defines the type of relationship between a <code>subject</code> with QName <code>Part:998</code> and an <code>object</code> with any of these QNames (<code>Supplier:1081</code>, <code>Supplier:1082</code>, <code>Supplier:1083</code>, <code>Supplier:1084</code>). Both subject and object URIs are in the same namespace (<code>http://example.org/spc/</code>), these are called <strong>Internal RDF links</strong>.</p>
+<p>One way to think these <strong>RDF links</strong> is as a <strong>labeled directed graph</strong>. Each triple is a directed arc that connects a subject, e.g. <code>Part:998</code>, with an object, e.g. <code>Supplier:1084</code>,  and the predicate is the label of the arc, <code>wd:hasVendor</code>. For example the previous result set can be represented with the following graph in <a href="#fig2"><strong>Fig. 2</strong></a>:</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="gruff-part998-suppliers.jpg" data-caption="Suppliers of Part:998">
+
+<img src="gruff-part998-suppliers.jpg" alt="Suppliers of Part:998" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Suppliers of Part:998
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>But the graph for the data model of our example is slightly more complicated because there are intermediate nodes, i.e. inventory items that represent records from the <a href="/SupplierPartCatalogue/tsv/Catalog.tsv">Catalog</a> table, that <a href="https://en.wikipedia.org/wiki/Associative_entity"><strong>associate</strong></a>, bridge <strong>Suppliers</strong> with <strong>Parts</strong> <a href="#fig3"><strong>Fig. 3</strong></a>.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="gruff-part998-suppliers-and-inventory-items.jpg" data-caption="Suppliers of Part:998 with intermediate Inventory Items nodes">
+
+<img src="gruff-part998-suppliers-and-inventory-items.jpg" alt="Suppliers of Part:998 with intermediate Inventory Items nodes" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Suppliers of Part:998 with intermediate Inventory Items nodes
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>Another distinction of <strong>RDF links</strong> to <strong>Outgoing</strong> and <strong>Incoming</strong> can be seen in <a href="#fig3"><strong>Fig. 3</strong></a>. For example <code>Part:998</code> has four incoming <strong>RDF links</strong> of type <code>wd:hasPart</code> and <code>Item:7</code> has two outgoing <strong>RDF links</strong> of type <code>wd:hasPart</code> and <code>wd:hasVendor</code> respectively.</p>
+<p>In fact the SPARQL query above has been written taking in consideration this graph. In order to traverse the nodes you must know both the type of <strong>RDF link</strong> and its direction. <strong>In RDF graph data model edges are unidirectional</strong>. In order to define bidirectional edges we have to define both outgoing and incoming  <strong>RDF links</strong> for each node, i.e. two predicates <a href="#fig4"><strong>Fig. 4</strong></a>.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="gruff-part998-suppliers-bidirectional.jpg" data-caption="RDF bidirectional">
+
+<img src="gruff-part998-suppliers-bidirectional.jpg" alt="RDF bidirectional" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    RDF bidirectional
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<h2 id="association-in-rdf">Association in RDF</h2>
+<p>We can now compare these <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000101/#topic-map-serialization">five associations</a> of <code>Part:998</code> with <strong>RDF links</strong> of the graph in <a href="#fig6"><strong>Fig. 6</strong></a>.  One of them is composed with all outgoing triples of <code>Part:998</code>, i.e. <code>Part:998</code> is the subject of the triple <a href="#fig5"><strong>Fig. 5</strong></a>. These <code>literal triples</code> describe five properties of <code>Part:998</code> resource, yellow boxes of <a href="#fig6"><strong>Fig. 6</strong></a>, and another RDF link is for the type of resource, i.e. <code>Item</code> (grey box).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">#</span> <span style="color:#66d9ef">Get</span> <span style="color:#66d9ef">all</span> outgoing triples <span style="color:#66d9ef">for</span> a <span style="color:#66d9ef">specific</span> part
+<span style="color:#66d9ef">PREFIX</span> Part: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>example.org<span style="color:#f92672">/</span>spc<span style="color:#f92672">/</span>Part<span style="color:#f92672">/&gt;</span>
+
+<span style="color:#66d9ef">select</span> <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>p <span style="color:#f92672">?</span>o <span style="color:#66d9ef">where</span>
+<span style="color:#960050;background-color:#1e0010">{</span>
+    BIND(Part:<span style="color:#ae81ff">998</span> <span style="color:#66d9ef">AS</span> <span style="color:#f92672">?</span>prt)
+    <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>p <span style="color:#f92672">?</span>o .
+<span style="color:#960050;background-color:#1e0010">}</span>
+</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="part998-outgoing-triples-result-set.jpg" data-caption="Result set of all outgoing triples for Part:998">
+
+<img src="part998-outgoing-triples-result-set.jpg" alt="Result set of all outgoing triples for `Part:998`" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Result set of all outgoing triples for <code>Part:998</code>
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>The resource <code>Part:998</code> participates in four associations with <a href="https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/ttl/catalog.ttl"><strong>Inventory</strong> resources</a>,  as the object of a triple. These are the four incoming <strong>RDF links</strong> of <code>Part:998</code> in <a href="#fig3"><strong>Fig. 3</strong></a>, <a href="#fig6"><strong>Fig. 6</strong></a> and <a href="#fig8"><strong>Fig. 8</strong></a>.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="gruff-part998.jpg" data-caption="Five associations of Part:998, four with the green boxes and one with the yellow boxes">
+
+<img src="gruff-part998.jpg" alt="Five associations of `Part:998`, four with the green boxes and one with the yellow boxes" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Five associations of <code>Part:998</code>, four with the green boxes and one with the yellow boxes
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>We can write the following SPARQL query to ask for all the suppliers of <code>Part:998</code> sorted by their catalog price.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">#</span>Suppliers <span style="color:#66d9ef">of</span> Part <span style="color:#ae81ff">998</span> (Red Fire Hydrant Cap) sorted <span style="color:#66d9ef">by</span> their <span style="color:#66d9ef">catalog</span> price
+
+<span style="color:#66d9ef">PREFIX</span> xsd: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.w3.org<span style="color:#f92672">/</span><span style="color:#ae81ff">2001</span><span style="color:#f92672">/</span>XMLSchema<span style="color:#f92672">#&gt;</span>
+<span style="color:#66d9ef">PREFIX</span> wd: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.wikidata.org<span style="color:#f92672">/</span>property<span style="color:#f92672">/&gt;</span>
+<span style="color:#66d9ef">PREFIX</span> <span style="color:#66d9ef">schema</span>: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span><span style="color:#66d9ef">schema</span>.org<span style="color:#f92672">/&gt;</span>
+<span style="color:#66d9ef">PREFIX</span> rdf: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.w3.org<span style="color:#f92672">/</span><span style="color:#ae81ff">1999</span><span style="color:#f92672">/</span><span style="color:#ae81ff">02</span><span style="color:#f92672">/</span><span style="color:#ae81ff">22</span><span style="color:#f92672">-</span>rdf<span style="color:#f92672">-</span>syntax<span style="color:#f92672">-</span>ns<span style="color:#f92672">#&gt;</span>
+<span style="color:#66d9ef">PREFIX</span> dc: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>purl.org<span style="color:#f92672">/</span>dc<span style="color:#f92672">/</span>elements<span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">1</span><span style="color:#f92672">/&gt;</span>
+
+<span style="color:#66d9ef">select</span> <span style="color:#f92672">?</span>sup <span style="color:#f92672">?</span>supName <span style="color:#f92672">?</span>supCountry <span style="color:#f92672">?</span>catPrice <span style="color:#f92672">?</span>catQuantity <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>prtName <span style="color:#f92672">?</span>prtColor <span style="color:#f92672">?</span>cat <span style="color:#66d9ef">where</span>
+<span style="color:#960050;background-color:#1e0010">{</span>
+    <span style="color:#f92672">#</span> <span style="color:#66d9ef">Start</span> <span style="color:#66d9ef">with</span> a <span style="color:#f92672">?</span>prt that has id<span style="color:#f92672">=</span><span style="color:#ae81ff">998</span> <span style="color:#66d9ef">get</span> its name <span style="color:#66d9ef">and</span> color <span style="color:#66d9ef">values</span>
+    <span style="color:#f92672">?</span>prt dc:identifier <span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">^^</span>xsd:int .
+    <span style="color:#f92672">?</span>prt rdf:label <span style="color:#f92672">?</span>prtName .
+    <span style="color:#f92672">?</span>prt <span style="color:#66d9ef">schema</span>:color <span style="color:#f92672">?</span>prtColor .            
+
+    <span style="color:#f92672">#</span> Find <span style="color:#66d9ef">all</span> <span style="color:#66d9ef">catalog</span> items (<span style="color:#f92672">?</span>cat) <span style="color:#66d9ef">with</span> a reference <span style="color:#66d9ef">to</span> <span style="color:#f92672">?</span>prt <span style="color:#66d9ef">get</span> their price <span style="color:#66d9ef">and</span> quantity <span style="color:#66d9ef">values</span>
+    <span style="color:#f92672">?</span>cat wd:hasPart <span style="color:#f92672">?</span>prt .
+    <span style="color:#f92672">?</span>cat <span style="color:#66d9ef">schema</span>:cost <span style="color:#f92672">?</span>catPrice
+    OPTIONAL <span style="color:#960050;background-color:#1e0010">{</span><span style="color:#f92672">?</span>cat <span style="color:#66d9ef">schema</span>:quantity <span style="color:#f92672">?</span>catQuantity .<span style="color:#960050;background-color:#1e0010">}</span>
+
+    <span style="color:#f92672">#</span> <span style="color:#66d9ef">For</span> <span style="color:#66d9ef">any</span> <span style="color:#66d9ef">catalog</span> item (<span style="color:#f92672">?</span>cat) find the vendor that supplies <span style="color:#f92672">?</span>prt <span style="color:#66d9ef">get</span> their name <span style="color:#66d9ef">and</span> the country <span style="color:#66d9ef">of</span> origin
+    <span style="color:#f92672">?</span>cat wd:hasVendor <span style="color:#f92672">?</span>sup .
+    <span style="color:#f92672">?</span>sup rdf:label <span style="color:#f92672">?</span>supName .
+    <span style="color:#f92672">?</span>sup <span style="color:#66d9ef">schema</span>:country <span style="color:#f92672">?</span>supCountry
+<span style="color:#960050;background-color:#1e0010">}</span>
+<span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">ASC</span>(<span style="color:#f92672">?</span>catPrice)
+</code></pre></div><p>You may consider the analogy between this query and the result set at <a href="#fig7"><strong>Fig. 7</strong></a> and the equivalent <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000102/#join-vs-edge">OrientDB SQL query and the result set from a <strong>Property Graph</strong> data model</a>. The main differences are that in <strong>Property Graph</strong> data model you can traverse edges in both directions, (incoming, outcoming), the filtering part (<code>where</code>) in SPARQL is significantly longer, and the starting point is represented in a different manner (edge vs link).</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="graphdb-part998-sup-catprices-1137x178.jpg" data-caption="Suppliers of Part 998 (Red Fire Hydrant Cap) sorted by their catalog price">
+
+<img src="graphdb-part998-sup-catprices-1137x178.jpg" alt="Suppliers of Part 998 (Red Fire Hydrant Cap) sorted by their catalog price" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Suppliers of Part 998 (Red Fire Hydrant Cap) sorted by their catalog price
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="gruff-part998-suppliers-catprices-1210x710.jpg" data-caption="Associations of Part:998 with Suppliers and their Catalog prices">
+
+<img src="gruff-part998-suppliers-catprices-1210x710.jpg" alt="Associations of `Part:998` with Suppliers and their Catalog prices" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Associations of <code>Part:998</code> with Suppliers and their Catalog prices
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>We can view a graph representation, <a href="#fig8"><strong>Fig. 8</strong></a>, of this SPARQL query and its result data set <a href="#fig7"><strong>Fig. 7</strong></a>. In the same screen capture, <a href="#fig8"><strong>Fig. 8</strong></a>, a many-to-many relationship is modeled with RDF triples. <code>Supplier:1082</code> is associated with three parts (<code>Part:991</code>, <code>Part:997</code> and <code>Part:998</code>) and <code>Part998</code> is associated with four suppliers (<code>Supplier:1081</code>, <code>Supplier:1082</code>, <code>Supplier:1083</code>, <code>Supplier:1084</code>), see also <a href="#fig9"><strong>Fig. 9</strong></a>. From a semantic point of view, Parts and Suppliers participate in associations with Inventory items (green boxes - <code>Catalog:7</code>, <code>Catalog:9</code>, <code>Catalog:10</code>, <code>Catalog:11</code>, <code>Catalog:12</code> and <code>Catalog:16</code>). In contrast with the binary relations between Suppliers and Parts represented with directed edges in a <strong>Property Graph</strong>, <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000102/#property-graph-with-directed-edges">see here</a>, instead of an <strong>edge type</strong> we have explicit intermediate (bridge) nodes and instead of outgoing head (out) and incoming tail (in) we have two outgoing directional links (<code>wd:hasPart</code> and <code>wd:hasVendor</code>) from this intermediate node, e.g. Catalog/Inventory item to Supplier and Part. In such as case these outgoing directional links (<code>wd:hasPart</code> and <code>wd:hasVendor</code>) look like <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000101/#topic-map-serialization">roles in a Topic Map binary association</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/* 4 Associations of catalog part no 998 with supplier Ids and catalog prices */</span>
+<span style="color:#a6e22e">Catalog07</span>( <span style="color:#a6e22e">Part998</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasPart</span>, <span style="color:#a6e22e">Supplier1081</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasVendor</span>, <span style="color:#ae81ff">11.7</span><span style="color:#f92672">:</span><span style="color:#a6e22e">Cost</span> )
+<span style="color:#a6e22e">Catalog11</span>( <span style="color:#a6e22e">Part998</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasPart</span>, <span style="color:#a6e22e">Supplier1082</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasVendor</span>, <span style="color:#ae81ff">7.95</span><span style="color:#f92672">:</span><span style="color:#a6e22e">Cost</span> )
+<span style="color:#a6e22e">Catalog12</span>( <span style="color:#a6e22e">Part998</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasPart</span>, <span style="color:#a6e22e">Supplier1083</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasVendor</span>, <span style="color:#ae81ff">12.5</span><span style="color:#f92672">:</span><span style="color:#a6e22e">Cost</span> )
+<span style="color:#a6e22e">Catalog16</span>( <span style="color:#a6e22e">Part998</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasPart</span>, <span style="color:#a6e22e">Supplier1084</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasVendor</span>, <span style="color:#ae81ff">48.6</span><span style="color:#f92672">:</span><span style="color:#a6e22e">Cost</span> )
+</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="gruff-4suppliers-3parts-1227x457.jpg" data-caption="A Many-to-Many Relationship between Suppliers and Parts modeled with RDF triples">
+
+<img src="gruff-4suppliers-3parts-1227x457.jpg" alt="A Many-to-Many Relationship between Suppliers and Parts modeled with RDF triples" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    A Many-to-Many Relationship between Suppliers and Parts modeled with RDF triples
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<h2 id="associative-model">Associative Model</h2>
+<p>Although it has not become mainstream, we see <a href="https://en.wikipedia.org/wiki/Associative_model_of_data">associative model of data</a> as an effort to enhance RDF data model in a new kind of DBMS. The logical layer of <a href="http://www.sentences.com/sentences.htm">Sentences</a> associative database management system may be regarded as comprising of only two tables: one for <code>Items</code> that represent <code>Entities</code>, <code>Entity Types</code>, <code>Values</code> and <code>Value Types</code> and one for <code>Links</code> that represent among other things <code>Associations</code> and <code>Association Types</code> (<strong>[Fig. 15]</strong>, <strong>[Fig. 16]</strong>). Both <code>Items</code> and <code>Links</code> also represent meta-types and instances, which perform various functions in the database. Thanks to this simple consistent form of <code>Items</code> and <code>Links</code>, it is easy to write generic code that is capable of working with every type of data. Recording schema changes and transactions, a type system <strong>[Fig. 15]</strong>, associative queries in the form of a request tree, business rules, data provenance, automated default data entry forms <strong>[Fig. 16]</strong> and many other features of Sentences DBMS were designed and implemented based on this generic metacode programming.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="SentencesDB_SPC_Types.jpg" data-caption="Types, Association Instances and their Properties">
+
+<img src="SentencesDB_SPC_Types.jpg" alt="Types, Association Instances and their Properties" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Types, Association Instances and their Properties
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+
+<!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="SentencesDB_SPC_DataEntryForms.jpg" data-caption="Types, Entity Instances and Data Entry Forms">
+
+<img src="SentencesDB_SPC_DataEntryForms.jpg" alt="Types, Entity Instances and Data Entry Forms" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Types, Entity Instances and Data Entry Forms
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>In fact along similar principles <a href="https://en.wikipedia.org/wiki/Freebase">Freebase</a> collaborative knowledge base, now known as Google&rsquo;s <a href="https://en.wikipedia.org/wiki/Knowledge_Graph">Knowledge Graph</a>, was serving its users.</p>
+<p>Both Freebase and Sentences added also reverse edges to their model. In Freebase notation, <strong>[Fig. 10]</strong> we can see that <code>/film/film</code> is <code>/directed_by</code> a <code>/film/director</code> and a <code>/film/director</code> has directed (<code>/film</code>) a <code>/film/film</code>.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="freebase-film.jpg" data-caption="Movies Data Model in Freebase">
+
+<img src="freebase-film.jpg" alt="Movies Data Model in Freebase" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    Movies Data Model in Freebase
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>Bidirectional links allow a 360° view of every data item in the database. Directed edges in <strong>Property Graph</strong> share the same concept, <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000102/#property-graph-with-directed-edges">see here</a>. In the following three figures (<a href="#fig11"><strong>Fig. 11</strong></a>, <a href="#fig12"><strong>Fig. 12</strong></a>, <a href="#fig13"><strong>Fig. 13</strong></a>) we present three alternative schema views for our Supplier-Part-Catalog database that we built on Sentences DBMS. <a href="#fig11"><strong>Fig. 11</strong></a> illustrates that it is possible to add attributes on the link. <a href="#fig12"><strong>Fig. 12</strong></a> shows that <code>Supplier</code>, <code>Catalog</code> and <code>Part</code> entities are sharing common attributes while in <a href="#fig13"><strong>Fig. 13</strong></a> they are directly connected with bidirectional links.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<!-- raw HTML omitted --><!-- raw HTML omitted -->
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="gallery">
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-screen_captures" href="/en/post/20161220/screen_captures/SPC-bidirectional_edges_associations_directconnections.jpg" >
+  <img src="/en/post/20161220/screen_captures/SPC-bidirectional_edges_associations_directconnections_hu2f5ba3506c67aca4d5953246be86fb8c_118507_0x190_resize_q90_lanczos.jpg" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-screen_captures" href="/en/post/20161220/screen_captures/SPC-bidirectional_edges_associations_indirectconnections.jpg" >
+  <img src="/en/post/20161220/screen_captures/_huf9a85b6d31db297a90a7e332a9e02929_142663_2be83408ec7f9a57b41252a8ecdc2a14.jpg" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-screen_captures" href="/en/post/20161220/screen_captures/SPC-bidirectional_edges_associations_propertygraph.jpg" >
+  <img src="/en/post/20161220/screen_captures/SPC-bidirectional_edges_associations_propertygraph_hu854a3e7bd7fe75e3520da486490b9b8f_93442_0x190_resize_q90_lanczos.jpg" alt="">
+  </a>
+  
+
+  
+</div>
+<h2 id="association-in-r3dm">Association in R3DM</h2>
+<p>According to <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000102/#r3dm-hypergraph-terminology">R3DM Hypergaph Terminology</a>, the objects of <code>RDF literal</code> triples, i.e. values, are  <strong>HyperAtoms</strong> and the resources of <strong>RDF links</strong> are <strong>HyperBonds</strong>. Thus the RDF graph of <a href="#fig8"><strong>Fig. 8</strong></a> can be redrawn as a hypergraph with <!-- raw HTML omitted --> red <!-- raw HTML omitted --> nodes that play the role of <strong>HyperAtoms</strong> and <!-- raw HTML omitted --> green <!-- raw HTML omitted --> nodes that play the role of <strong>HyperBonds</strong>, see <a href="#fig14"><strong>Fig. 14</strong></a>.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="part998-R3DM_hypergraph.png" data-caption="R3DM Hypergraph">
+
+<img src="part998-R3DM_hypergraph.png" alt="R3DM Hypergraph" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4></h4>
+  <p>
+    R3DM Hypergraph
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+</p>
+<p>This R3DM hypergraph figure above, <a href="#fig14"><strong>Fig. 14</strong></a>, has been created from the execution of the following Wolfram Language code. You will notice that <strong>HyperAtom</strong> sets such as <strong>ha2-(catcost)</strong> and <strong>ha5-(catqnt)</strong> are attribute sets with value members that take part in the formation of <strong>Catalog</strong> records with instances that are drawn from <strong>hb2 set</strong>. <strong>Supplier</strong> instances are drawn from the other <strong>HyperBond</strong> set (<strong>hb3</strong>) and <strong>ha3-(sname)</strong>, <strong>ha4-(scountry)</strong> are attribute sets with value members that describe the <strong>Suppliers</strong>. Instances from these <strong>HyperBond</strong> sets may share common values or associated with the same <strong>HyperBond</strong>. For example we have two suppliers, <strong>Supplier:1082</strong> and <strong>Supplier:1081</strong> that are located in <strong>USA</strong> or <strong>Catalog:11</strong> and <strong>Catalog:16</strong> entries that are associated with <strong>Part:998</strong> and they both have the same quantity, i.e. <strong>200</strong> pieces of this part.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">ha1<span style="color:#f92672">=</span>{<span style="color:#ae81ff">998</span>,<span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>,<span style="color:#e6db74">&#34;Red&#34;</span>,<span style="color:#ae81ff">7</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span><span style="color:#e6db74">`,&#34;lb&#34;};
+</span><span style="color:#e6db74">ha2={11.7,7.95,12.5,48.6};
+</span><span style="color:#e6db74">ha3={&#34;Acme Widget Suppliers&#34;,&#34;Big Red Tool and Die&#34;,&#34;Perfunctory Parts&#34;,&#34;Alien Aircaft Inc.&#34;};
+</span><span style="color:#e6db74">ha4={&#34;USA&#34;,&#34;USA&#34;,&#34;SPAIN&#34;,&#34;UK&#34;};
+</span><span style="color:#e6db74">ha5={&#34;400&#34;,&#34;200&#34;,&#34;200&#34;};
+</span><span style="color:#e6db74">hb1={&#34;Part:998&#34;,&#34;schema:item&#34;};
+</span><span style="color:#e6db74">hb2={&#34;Catalog:7&#34;,&#34;Catalog:11&#34;,&#34;Catalog:12&#34;,&#34;Catalog:16&#34;};
+</span><span style="color:#e6db74">hb3={&#34;Supplier:1081&#34;,&#34;Supplier:1082&#34;,&#34;Supplier:1083&#34;,&#34;Supplier:1084&#34;};
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">vstyle=Join[Thread[Join[ha1,ha2, ha3,ha4,ha5]-&gt;Red],Thread[Join[hb1,hb2,hb3]-&gt;Green]];
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">data=Join[
+</span><span style="color:#e6db74">  {&#34;Part:998&#34;-&gt;&#34;schema:item&#34;},
+</span><span style="color:#e6db74">  Thread[&#34;Part:998&#34;-&gt;ha1],Thread[hb2-&gt;ha2],
+</span><span style="color:#e6db74">  Thread[hb2-&gt;hb3],Thread[hb3-&gt;ha3],
+</span><span style="color:#e6db74">  Thread[hb3-&gt;ha4],Thread[hb2-&gt;&#34;Part:998&#34;],  
+</span><span style="color:#e6db74">  Thread[{&#34;Catalog:7&#34;,&#34;Catalog:11&#34;,&#34;Catalog:16&#34;}-&gt;ha5]];
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">Graph[
+</span><span style="color:#e6db74">  data,
+</span><span style="color:#e6db74">  VertexLabels-&gt;&#34;Name&#34;,
+</span><span style="color:#e6db74">  VertexSize-&gt;{{&#34;Nearest&#34;,0.15}},
+</span><span style="color:#e6db74">  VertexStyle-&gt;vstyle,
+</span><span style="color:#e6db74">  EdgeShapeFunction-&gt;GraphElementData[{&#34;CarvedArrow&#34;,&#34;ArrowSize&#34;-&gt;.02}],
+</span><span style="color:#e6db74">  EdgeStyle-&gt;Thick,
+</span><span style="color:#e6db74">  GraphLayout-&gt;&#34;SpringEmbedding&#34;,
+</span><span style="color:#e6db74">  ImageSize-&gt;{400.,Automatic}
+</span><span style="color:#e6db74">]
+</span></code></pre></div><p>We can rewrite now the following four associations :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/* 4 Associations of catalog part no 998 with supplier Ids and catalog prices */</span>
+<span style="color:#a6e22e">CatalogID</span>( <span style="color:#a6e22e">catpid</span>,  <span style="color:#a6e22e">catsid</span>,       <span style="color:#a6e22e">catqnt</span>, <span style="color:#a6e22e">catcost</span>)
+
+<span style="color:#a6e22e">Catalog07</span>( <span style="color:#a6e22e">Part998</span>, <span style="color:#a6e22e">Supplier1081</span>, <span style="color:#ae81ff">400</span>,    <span style="color:#ae81ff">11.70</span>  )
+<span style="color:#a6e22e">Catalog11</span>( <span style="color:#a6e22e">Part998</span>, <span style="color:#a6e22e">Supplier1082</span>, <span style="color:#ae81ff">200</span>,     <span style="color:#ae81ff">7.95</span>  )
+<span style="color:#a6e22e">Catalog12</span>( <span style="color:#a6e22e">Part998</span>, <span style="color:#a6e22e">Supplier1083</span>,         <span style="color:#ae81ff">12.50</span>  )
+<span style="color:#a6e22e">Catalog16</span>( <span style="color:#a6e22e">Part998</span>, <span style="color:#a6e22e">Supplier1084</span>, <span style="color:#ae81ff">200</span>,    <span style="color:#ae81ff">48.60</span>  )
+</code></pre></div><p>Associations in this form greatly resemble tuples of <strong>Catalog</strong> relation, see <a href="/SupplierPartCatalogue/tsv/Catalog.tsv">TSV</a> format, where the <strong>heading</strong> of this relation is usually stored in a <a href="https://en.wikipedia.org/wiki/Data_dictionary">data dictionary</a> and <strong>Null</strong> marker indicates that a data value is absent from the tuple. On the contrary in case of <strong>RDF literal</strong> triples the predicate position signifies the object part of the triple and in <strong>RDF links</strong> Instances/Type of resources at subject and object positions are also signified by predicates such as (<code>rdf:type</code>). But in <strong>R3DM associations</strong> there is not any label on the edge that connects <strong>HyperAtoms</strong> or <strong>HyperBonds</strong>. Therefore the denotation of resources and literals, i.e. what they stand for, cannot be seen on this graph, <a href="#fig14"><strong>Fig. 14</strong></a>. For example in <code>Catalog12</code> association instance we have to know that the literal meaning of the value <code>12.5</code> is the <strong>Catalog Cost</strong>. Generally speaking, this is the <strong>granularity of data</strong> problem. How we represent a piece of information at atomic level and how we construct higher structures. <strong>R3DM/S3DM unifies three perspectives, semantics at the conceptual layer, representation at the symbol layer and encoding at the physical layer</strong>, in such a way that they are separable. R3DM/S3DM conceptual framework is based on the natural process of semiosis where <strong>the signified, i.e. concept, entity, attribute and the signifier, i.e. value, <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000002/#signified-sign-signifier-alternative-paradigm">are referenced through symbols</a>, i.e. signs, at discrete layers</strong>. The main difference with RDF data model is that these references are not in the form of <a href="https://en.wikipedia.org/wiki/Uniform_resource_identifier">URIs</a> but they resemble <a href="https://en.wikipedia.org/wiki/IP_address">IPs</a>. For example the value <code>12.50</code> can be referenced by a 4D vector of the form <code>{2, 8, 262, 1}</code> where the first dimension is the database, the second dimension is the table (Entity), the third dimension is the field (Attribute) and the last dimension is a member of an attribute set.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Although this is not the space or the time to elaborate more on <strong>R3DM/S3DM associations</strong> it is important to mention that it is possible to escape from the predicate logic (<code>owl#sameAs</code>) on how to identify that two URI aliases refer to the same entity. Moreover the alternative paradigm of <strong>R3DM/S3DM</strong> offers a more attractive and efficient approach on data integration and heterogeneous data representation than bridging between RDF vocabularies with mapping predicates such as <code>owl:equivalentClass</code>  and <code>owl:equivalentProperty</code>.</p>
+<p>We foresee that the Internet of things will use a protocol with numerical reference vectors for data communication in a similar fashion to IP addresses that are used for connecting devices in a computer network. Hopefully one day it will become clear that the predicate part of RDF data model is causing more harm than good in the semantic interpretation and information representation.</p>
+<p>Last but not least, SPARQL query mechanism is heavily dependent on namespace vocabulary terms, especially predicate terms that connect resources and literals. To answer such queries, care must be taken to devise a suitable mechanism of indexes (e.g. spo, sop, pso, pos, osp, ops) to support RDF triple structure. Besides indexing, RDF edges by default are not bidirectional, therefore 360 degrees view and nodes navigation is problematic. In contrast with RDF, in R3DM/S3DM everything is bidirectionally linked and referenced with 4D numerical vectors and these are naturally used for indexing purposes. Instead of writing queries there is a functional way, i.e. you learn a single command with a standard number of optional or mandatory parameters, to filter the data space and retrieve any piece of information.</p>
+<p>Interactive and associative data exploration is the key, unique feature of <a href="http://www.qlik.com/us/products/qlikview">Qlikview</a>/<a href="http://www.qlik.com/us/products/qlik-sense">Qliksense</a>, one of the best data visualization and business intelligence software in the market today. Behind the scenes, columnar, binary indexing capability is the foundation for <strong>QIX Associative Data Indexing Engine</strong>. In the next part of our series we will apply Qlik associative technology on our toy dataset and we will demonstrate how we build the domain model and how we filter our data.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>We have serialized our <a href="/SupplierPartCatalogue">Supplier-Part-Catalogue example</a> in <a href="/SupplierPartCatalogue/ttl/">Turtle</a> and <a href="/SupplierPartCatalogue/n3/">N-Triples</a> syntax. Then we used <a href="https://en.wikipedia.org/wiki/AllegroGraph">AllegroGraph</a> and <a href="http://graphdb.ontotext.com/documentation/free/about-graphdb.html">GraphDB</a> triple-store to create a repository and run queries on their SPARQL interfaces. All graph-based images of this article were displayed and captured on <a href="http://franz.com/agraph/gruff/">Gruff</a>, an RDF visual browser that displays a variety of the relationships in <a href="https://en.wikipedia.org/wiki/AllegroGraph">AllegroGraph</a>.</p>
+<h2 id="cross-references">Cross-References</h2>
+<ul>
+<li><a href="https://www.linkedin.com/pulse/associative-data-modeling-demystified-part-4-hatzis-phd">LinkedIn Published Posts</a></li>
+<li><a href="https://www.linkedin.com/groups/49970/49970-6217358696947814400">LinkedIn Semantic Web Group</a></li>
+<li><a href="https://www.linkedin.com/groups/2552968/2552968-6217357737450438660">LinkedIn Graph Databases Group</a></li>
+<li><a href="https://www.linkedin.com/groups/108904/108904-6217358696935231488">LinkedIn Data Warehouse &amp; Business Intelligence Architects</a></li>
+<li><a href="https://www.linkedin.com/groups/6514034/6514034-6217358562243543041">LinkedIn Computational Semiotics</a></li>
+<li><a href="https://www.linkedin.com/groups/38506/38506-6217358477753483266">LinkedIn Semantic Technologies</a></li>
+<li><a href="https://www.linkedin.com/groups/4737538/4737538-6217357595209015300">LinkedIn Data Visualization</a></li>
+<li><a href="https://www.linkedin.com/groups/3750024/3750024-6217358686722097153">LinkedIn Database &amp; Data Store Professionals ★ NoSQL ★ NewSQL ★ Relational</a></li>
+<li><a href="https://www.linkedin.com/groups/73235/73235-6217357914919837698">LinkedIn Database Developers and Architects Group</a></li>
+<li><a href="https://www.linkedin.com/groups/60636/60636-6217357769868222467">LinkedIn Linked Data Web</a></li>
+<li><a href="https://www.linkedin.com/groups/62614/62614-6217357140789727236">LinkedIn Mathematica Users</a></li>
+<li><a href="https://www.linkedin.com/groups/45183/45183-6217358477761875970">LinkedIn Database Experts</a></li>
+<li><a href="https://dzone.com/articles/associative-data-modeling-demystified-part-iv">DZone Article</a></li>
+</ul>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tags/semantic_web/">Semantic_Web</a>
+  
+  <a class="badge badge-light" href="/en/tags/topic_map/">Topic_map</a>
+  
+  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  
+  <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
+  
+  <a class="badge badge-light" href="/en/tags/signified_and_signifier/">Signified_and_signifier</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
+  
+  <a class="badge badge-light" href="/en/tags/data_model/">Data_model</a>
+  
+  <a class="badge badge-light" href="/en/tags/semantics/">Semantics</a>
+  
+  <a class="badge badge-light" href="/en/tags/database/">Database</a>
+  
+  <a class="badge badge-light" href="/en/tags/database_management_system/">Database_management_system</a>
+  
+  <a class="badge badge-light" href="/en/tags/graph_database/">Graph_database</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_semiotic_hypergraph/">associative_semiotic_hypergraph</a>
+  
+  <a class="badge badge-light" href="/en/tags/computational_semiotics/">Computational_semiotics</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_entity/">Associative_entity</a>
+  
+  <a class="badge badge-light" href="/en/tags/resource_description_framework/">Resource_Description_Framework</a>
+  
+  <a class="badge badge-light" href="/en/tags/association_object-oriented_programming/">Association_(object-oriented_programming)</a>
+  
+  <a class="badge badge-light" href="/en/tags/serialization/">Serialization</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:athanassios@healis.eu" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/ahatzis" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/athanhat" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-quora"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://vimeo.com/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-vimeo"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://stackoverflow.com/users/5364935/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/en/post/20160825/">Relation, Relationship and Association</a></li>
+          
+          <li><a href="/en/post/20160902/">Association in Topic Map Data Model</a></li>
+          
+          <li><a href="/en/post/20160913/">Association in Property Graph Data Model</a></li>
+          
+          <li><a href="/en/project/r3dm/">S3DM/R3DM</a></li>
+          
+          <li><a href="/en/post/20131105/">S3DM/R3DM vs RDF</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/en/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          Powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/healiseu/" target="_blank" rel="noopener" title="Star Me"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/healiseu" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCoCkNTkn1dAbtyr5EMvzc7w/videos" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener" title="Connect with Me"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener" title="Contact Me"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:athanassios.hatzis?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener" title="Ping Me"><i class="fab fa-quora" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://disqus.com/home/forums/healiseu/" target="_blank" rel="noopener" title="Discuss on Disqus"><i class="fas fa-comments" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+select distinct ?pred where
+{
+  ?x ?pred ?y
+} 

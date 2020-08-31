@@ -1,0 +1,6 @@
+[
+	{"sid": 1081, "sname": "Acme Widget Suppliers", "saddress": "1 Grub St., Potemkin Village, IL 61801", "scity": "ILLINOIS", "scountry": "USA", "sstatus": 10},
+	{"sid": 1082, "sname": "Big Red Tool and Die", "saddress": "4 My Way, Bermuda Shorts, OR 90305", "scity": "OREGON", "scountry": "USA", "sstatus": 20},
+	{"sid": 1083, "sname": "Perfunctory Parts", "saddress": "99 Short Pier, Terra Del Fuego, TX 41299", "scity": "MADRID", "scountry": "SPAIN", "sstatus": 30},
+	{"sid": 1084, "sname": "Alien Aircaft Inc.", "saddress": "2 Groom Lake, Rachel, NV 51902", "scity": "NOTTINGHAM", "scountry": "UK", "sstatus": 10}
+]

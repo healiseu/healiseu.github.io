@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Relational_database on HEALIS</title>
+    <link>https://healis.eu/en/tags/relational_database/</link>
+    <description>Recent content in Relational_database on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Thu, 25 Aug 2016 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/en/tags/relational_database/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Relation, Relationship and Association</title>
+      <link>https://healis.eu/en/post/20160825/</link>
+      <pubDate>Thu, 25 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20160825/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#supplier-part-catalogue-dataset&#34;&gt;Supplier-Part-Catalogue Dataset&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#the-er-data-model&#34;&gt;The ER Data Model&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#association-and-associative-array&#34;&gt;Association and Associative Array&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#wolfram-language---association&#34;&gt;Wolfram Language - Association&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#json-serialization&#34;&gt;JSON Serialization&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#association-vs-relation&#34;&gt;Association vs Relation&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#wolfram-language---relation&#34;&gt;Wolfram Language - Relation&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#data-redundancy&#34;&gt;Data Redundancy&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#structured-query-language-sql&#34;&gt;Structured Query Language (SQL)&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#summary&#34;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In early 2009 an increasing number of non-relational DBMS started to appear on the scene. They were based on data models such as Column, Document, Key-Value, Graph and Multi-Model. At about the same time, big corporations in IT industry were concerned with data processing of large and complex data sets. Big data movement was a major driving force to re-examine whether current DBMS were sufficient to cope with the new requirements on data processing. More specifically the &lt;a href=&#34;http://www.ibmbigdatahub.com/infographic/four-vs-big-data&#34;&gt;four V&amp;rsquo;s of Big Data&lt;/a&gt;, i.e. volume, variety, velocity and veracity, put an increasing demand in major companies and organizations. This had as a result a reinvestigation on what DBMS technology to apply. Many started realizing that physical representation of data on the disk or in memory and data modeling are key factors on how you build or integrate parts of your IT solution.&lt;/p&gt;
+&lt;p&gt;While most players in the IT sector adopted Graph or Document databases and Hadoop based solutions, Hadoop is an enabler of &lt;a href=&#34;https://en.wikipedia.org/wiki/Apache_HBase&#34;&gt;HBase&lt;/a&gt; column store, it went almost unnoticed that several new DBMS, &lt;a href=&#34;http://www.atomicdb.ch/x10sys.html&#34;&gt;AtomicDB&lt;/a&gt; previous database engine of &lt;a href=&#34;https://www.aisys.us/&#34;&gt;X10SYS&lt;/a&gt;, and &lt;a href=&#34;http://www.sentences.com/sentences.htm&#34;&gt;Sentences&lt;/a&gt;, based on associative technology appeared on the scene. We have introduced and discussed about the &lt;a href=&#34;https://www.linkedin.com/pulse/towards-new-data-modelling-architecture-part-2-hatzis-phd&#34;&gt;data modelling architecture&lt;/a&gt; and the atomic information resource unit &lt;a href=&#34;https://www.linkedin.com/pulse/air-atomic-information-resource-athanassios-i-hatzis-phd&#34;&gt;(AIR)&lt;/a&gt; of AtomicDB. Similar technology has been the engine power of &lt;a href=&#34;http://www.qlik.com/us/&#34;&gt;Qlikview&lt;/a&gt;, a very popular software in Business Intelligence and Analytics, since 1993. Perhaps it is less known to the reader that the association construct is a first class citizen in &lt;a href=&#34;https://en.wikipedia.org/wiki/Topic_Maps&#34;&gt;Topic Map&lt;/a&gt; semantic web standard and it is translated to &lt;a href=&#34;https://en.wikipedia.org/wiki/Resource_Description_Framework&#34;&gt;(RDF)&lt;/a&gt;, the other semantic web standard. In other posts of this series we can see how it is possible to implement Associative Technology in multi-model graph databases such as &lt;a href=&#34;http://orientdb.com/orientdb/&#34;&gt;OrientDB&lt;/a&gt;, in object-relational DBMS such as &lt;a href=&#34;http://www.intersystems.com/our-products/cache/cache-overview/&#34;&gt;Intersystems Cache&lt;/a&gt; and &lt;a href=&#34;https://docs.oracle.com/database/121/ADOBJ/toc.htm&#34;&gt;Oracle&lt;/a&gt; or build the engine for in-memory processing with Wolfram &lt;a href=&#34;https://www.wolfram.com/mathematica/&#34;&gt;Mathematica&lt;/a&gt;. In this article, we introduce the concept of association from the perspective of Entity-Relationship &lt;a href=&#34;https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model&#34;&gt;(ER)&lt;/a&gt; data model and illustrate it with the modelling of a toy dataset.&lt;/p&gt;
+&lt;h2 id=&#34;supplier-part-catalogue-dataset&#34;&gt;Supplier-Part-Catalogue Dataset&lt;/h2&gt;
+&lt;p&gt;Our dataset is a collection of three related database tables. Two of the tables, Supplier ( &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/tsv/Suppliers.tsv&#34;&gt;TSV&lt;/a&gt;, &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/xlsx/SuppliersPartsCatalogue.xlsx&#34;&gt;XLSX&lt;/a&gt; ) and Part ( &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/tsv/Parts.tsv&#34;&gt;TSV&lt;/a&gt;, &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/xlsx/SuppliersPartsCatalogue.xlsx&#34;&gt;XLSX&lt;/a&gt; ), represent and describe Entity Types, i.e. Relations. The third one, Catalogue ( &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/tsv/Catalog.tsv&#34;&gt;TSV&lt;/a&gt;, &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/blob/master/media/SupplierPartCatalogue/xlsx/SuppliersPartsCatalogue.xlsx&#34;&gt;XLSX&lt;/a&gt; ) is the associative entity, a.k.a. bridge table, junction table, join table, etc. The typical case where data for the bridge table is captured is from a business inventory where each item is recorded with its unit price and a quantity in stock. Such  information is stored in our Catalogue table, together with a date the item record was modified and a flag that indicates inspection of the stock.&lt;/p&gt;
+&lt;h2 id=&#34;the-er-data-model&#34;&gt;The ER Data Model&lt;/h2&gt;
+&lt;p&gt;Quite often (ER) Data Model is confused with the &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_model&#34;&gt;Relational Data Model&lt;/a&gt;. The reader should become familiar with the following equivalent terminology.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;ER Data Model&lt;/th&gt;
+&lt;th&gt;Relational Data Model&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Entity Type (Set)&lt;/td&gt;
+&lt;td&gt;Relation (Table, Base relvar)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Heading - ordered set of attributes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Body - set of n-tuples, extension of a predicate&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Entity	(instance, member)&lt;/td&gt;
+&lt;td&gt;Tuple (ordered set of attribute values)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Value Set&lt;/td&gt;
+&lt;td&gt;Type name (data type)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Value&lt;/td&gt;
+&lt;td&gt;Attribute value&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Relationship set&lt;/td&gt;
+&lt;td&gt;View (Result set or Derived relvar)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Relationship (association)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Attribute (function)&lt;/td&gt;
+&lt;td&gt;Free variable of a predicate&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mapping of Entity Set or&lt;/td&gt;
+&lt;td&gt;Attribute name of the relation (column)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Relationship Set to Value Set&lt;/td&gt;
+&lt;td&gt;ordered pair of attribute name and type name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In this classic paper, &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=320440&#34;&gt;&amp;ldquo;The Entity-Relationship Model - Toward a Unified View of Data&amp;rdquo;&lt;/a&gt; &lt;strong&gt;Peter Chen defines relationship as an association among entities&lt;/strong&gt;. In the same paper &lt;strong&gt;entity and relationship are illustrated as hypergraphs&lt;/strong&gt;. In particular, &lt;em&gt;&lt;a href=&#34;#fig2&#34;&gt;Fig. 2&lt;/a&gt;&lt;/em&gt; at page 13 and &lt;em&gt;&lt;a href=&#34;#fig3&#34;&gt;Fig. 3&lt;/a&gt;&lt;/em&gt; at page 14 show how an instance from an Entity/Relationship set is linked to either values or other entities. Although Peter Chen did not describe these fundamental constructs of his data model with Hypegraph terms, it can be easily seen in these captured figures that a specific entity or relationship form hyperedges with other entities or values that play the role of hypernodes.&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;peter_chen_ER_model_fig2.jpg&#34; data-caption=&#34;(Emploee):Ei at Fig.2 and (PROJECT-WORKER):Ri at Fig.3 form hyperedges&#34;&gt;
+
+&lt;img src=&#34;peter_chen_ER_model_fig2.jpg&#34; alt=&#34;(Emploee):Ei at Fig.2 and (PROJECT-WORKER):Ri at Fig.3 form hyperedges&#34; &gt;
+&lt;/a&gt;
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;&lt;/h4&gt;
+  &lt;p&gt;
+    (Emploee):Ei at Fig.2 and (PROJECT-WORKER):Ri at Fig.3 form hyperedges
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;peter_chen_ER_model_fig3.jpg&#34; data-caption=&#34;(Emploee):Ei at Fig.2 and (PROJECT-WORKER):Ri at Fig.3 form hyperedges&#34;&gt;
+
+&lt;img src=&#34;peter_chen_ER_model_fig3.jpg&#34; alt=&#34;(Emploee):Ei at Fig.2 and (PROJECT-WORKER):Ri at Fig.3 form hyperedges&#34; &gt;
+&lt;/a&gt;
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;&lt;/h4&gt;
+  &lt;p&gt;
+    (Emploee):Ei at Fig.2 and (PROJECT-WORKER):Ri at Fig.3 form hyperedges
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;association-and-associative-array&#34;&gt;Association and Associative Array&lt;/h3&gt;
+&lt;p&gt;We extend the definition of association in the (ER) data model to cover both Entities and Relationships. In the aforementioned paper, Chen formally defines attribute as a function which maps a given entity to a single value (or a single tuple of values). He also mentions that relationships have their own attributes whose meaning depends on the associated entities. The (key,value) pair of an &lt;a href=&#34;https://en.wikipedia.org/wiki/Associative_array&#34;&gt;Associative array&lt;/a&gt;, a.k.a. map, symbol table, or dictionary, captures this functional operation of attribute.&lt;/p&gt;
+&lt;h3 id=&#34;wolfram-language---association&#34;&gt;Wolfram Language - Association&lt;/h3&gt;
+&lt;p&gt;Wolfram Language is using &lt;code&gt;Association&lt;/code&gt; fundamental construct to represent an associative array. The following three &lt;a href=&#34;https://reference.wolfram.com/language/guide/Associations.html&#34;&gt;Wolfram Language associations&lt;/a&gt; represent a relationship of a Catalog instance with a Supplier instance and some Part instance from our toy dataset.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Supplier&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Association&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;|&lt;/span&gt;supID&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1081&lt;/span&gt;, supName&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Acme Widget Suppliers&amp;#34;&lt;/span&gt;, supAddress&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1 Grub St., Potemkin Village, IL 61801&amp;#34;&lt;/span&gt;, supCity&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ILLINOIS&amp;#34;&lt;/span&gt;, supCountry&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;USA&amp;#34;&lt;/span&gt;, supStatus&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&amp;gt;&lt;/span&gt;
+
+(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Part&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Association&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;|&lt;/span&gt;prtID&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;998&lt;/span&gt;, prtName&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Fire Hydrant Cap&amp;#34;&lt;/span&gt;, prtColor&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Red&amp;#34;&lt;/span&gt;, prtWeight&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, prtUnit&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;gr&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&amp;gt;&lt;/span&gt;
+
+(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Catalogue&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Association&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;|&lt;/span&gt;supID&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1081&lt;/span&gt;, prtID&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;998&lt;/span&gt;, catPrice&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;, catQuantity&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;400&lt;/span&gt;, catDate&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Wed 10 Sep 2014&amp;#34;&lt;/span&gt;, catCheck&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;What we are missing in this representation are the hyperedges, i.e. the nexuses that link together hypernodes. According to hypergraph terminology, the edge that connects a hyperedge to a hypernode is called hyperlink or connector. You may think of these hyperlinks/connectors as hash fields but we need another identifier for the hash key, i.e. an identifier for the instance. We could have used supID, prtID or a combination of these two but we prefer to define new identifiers for hyperedges. &lt;strong&gt;The main reason for this is that in principle we want to design a uniform way of addressing and identifying both hyperedge and hypernode instances at a low-dimensional, e.g. (2D,3D,4D), space&lt;/strong&gt;. If we encode this way, it is possible to avoid namespace problems. In this post we use names to compare the graph with figures from Peter Chen&amp;rsquo;s paper.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./three_associations.jpg&#34; alt=&#34;Three Associations in a Named-Row Dataset&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We may also connect hyperedges, e.g. we can add a &amp;ldquo;type&amp;rdquo; hyperlink that maps instances to classes, a &amp;ldquo;vendor&amp;rdquo; hyperlink that maps a Catalog instance to its Supplier instance and a &amp;ldquo;stockItem&amp;rdquo; hyperlink that connects Catalog instance to Part instance. In Wolfram Language it is relatively easy to make a graph of these Associations. We colorized the graph according to the different data types we have, i.e. hyperedges, strings, doubles, integers, dates, and booleans, &lt;a href=&#34;#fig4&#34;&gt;&lt;strong&gt;Fig.4&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;association-relation-relationship.jpg&#34; data-caption=&#34;Hyperedges are displayed in red, strings are in grey, doubles in lightblue, integers in green, dates in lightgreen and boolean in black&#34;&gt;
+
+&lt;img src=&#34;association-relation-relationship.jpg&#34; alt=&#34;Hyperedges are displayed in red, strings are in grey, doubles in lightblue, integers in green, dates in lightgreen and boolean in black&#34; &gt;
+&lt;/a&gt;
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;&lt;/h4&gt;
+  &lt;p&gt;
+    Hyperedges are displayed in red, strings are in grey, doubles in lightblue, integers in green, dates in lightgreen and boolean in black
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;json-serialization&#34;&gt;JSON Serialization&lt;/h3&gt;
+&lt;p&gt;Another very popular representation for Association is JSON Serialization. Those associations we described above can be serialized with the following format.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;{
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;$PartI&amp;#34;&lt;/span&gt;: {
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;$Item&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;prtID&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;998&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;prtName&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Fire Hydrant Cap&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;prtColor&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Red&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;prtWeight&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;7.2&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;prtUnit&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;gr&amp;#34;&lt;/span&gt;
+  },
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;$SupplierJ&amp;#34;&lt;/span&gt;: {
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;$Organization&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;supID&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1081&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;supName&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Acme Widget Suppliers&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;supAddress&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1 Grub St., Potemkin Village, IL 61801&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;supCity&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ILLINOIS&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;supCountry&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;USA&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;supStatus&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;
+  },
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;$CatalogK&amp;#34;&lt;/span&gt;: {
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;$Inventory&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;supID&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1081&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;prtID&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;998&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;catPrice&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;11.7&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;catQuantity&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;400&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;catDate&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2014-09-10&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;catCheck&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Catalogue, Parts and Suppliers tables are also available in &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/tree/master/media/SupplierPartCatalogue/json&#34;&gt;JSON&lt;/a&gt; format.&lt;/p&gt;
+&lt;h3 id=&#34;association-vs-relation&#34;&gt;Association vs Relation&lt;/h3&gt;
+&lt;p&gt;Although the logical view of Chen&amp;rsquo;s (ER) data model and his popular diagrammatic technique incorporates Entities, Relationships, Attributes and Values, at the physical layer of any relational DBMS we find records, i.e. Entities or Relationships are ordered tuples. A set of these ordered tuples that have the same heading, is called body. This header is another ordered tuple with attribute names. Theoretically speaking the body and the header of a table make the Relation. In practise the header is separated from the body and located at the database catalog together with other metadata for the schema of the database. SQL standard specifies a uniform mean to access this catalog.&lt;/p&gt;
+&lt;h3 id=&#34;wolfram-language---relation&#34;&gt;Wolfram Language - Relation&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;https://reference.wolfram.com/language/ref/List.html&#34;&gt;&lt;code&gt;List&lt;/code&gt; fundamental construct of Wolfram Language&lt;/a&gt; can be used to represent a Relation. An extensive analysis of various representations and transformations on the constructs of the Relational data model in Wolfram Language can be found &lt;a href=&#34;https://www.linkedin.com/pulse/towards-new-data-modelling-architecture-part-1-hatzis-phd&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Part&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Relation&lt;/span&gt; with a header &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; three tuples (body) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)
+{
+  {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pid&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pname&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pcolor&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pweight&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;punit&amp;#34;&lt;/span&gt;},
+  {&lt;span style=&#34;color:#ae81ff&#34;&gt;991&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Left Handed Bacon Stretcher Cover&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Red&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;lb&amp;#34;&lt;/span&gt;},
+  {&lt;span style=&#34;color:#ae81ff&#34;&gt;992&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Smoke Shifter End&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Black&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;75&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;lb&amp;#34;&lt;/span&gt;},
+  {&lt;span style=&#34;color:#ae81ff&#34;&gt;993&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Acme Widget Washer&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Red&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;142&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;88&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;kg&amp;#34;&lt;/span&gt;}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The reader will notice that in both Associative array and Relation representations, the cell of a table, i.e. the value of an attribute, is always functionally dependent on the description of Attribute and Entity/Relationship. It cannot stand on its own without these semantic references. Moreover, for the Relation representation, the exact order of values has to be maintained together with any missing (NULL) values.&lt;/p&gt;
+&lt;h3 id=&#34;data-redundancy&#34;&gt;Data Redundancy&lt;/h3&gt;
+&lt;p&gt;Relational databases are usually normalized to eliminate duplication of information and ensure referential integrity. This is especially recommended in one-to-many relationships. &lt;a href=&#34;https://en.wikipedia.org/wiki/Database_normalization&#34;&gt;Normalization&lt;/a&gt; involves arranging attributes in tables, nevertheless in a relational database we cannot escape from data redundancy completely. For example if we take the unit attribute of the normalized Part table above we can see that values are still repeated. Most important the schema of a relational database is too rigid and cannot be easily modified without breaking normalization and compromising referential integrity.&lt;/p&gt;
+&lt;h3 id=&#34;structured-query-language-sql&#34;&gt;Structured Query Language (SQL)&lt;/h3&gt;
+&lt;p&gt;Performing queries of data in a relational database is highly dependent on these two factors we briefly mentioned above, the physical representation of data on the disk and the normalization procedure. One of the main bottlenecks with SQL is the natural join relational operator, counterpart of logical AND. An &lt;a href=&#34;https://en.wikipedia.org/wiki/Join_(SQL)&#34;&gt;SQL Join&lt;/a&gt; is a means for constructing a result set combining columns from two (or more) tables by using values common to each. The more tables you join and the bigger the size of each table the more time it takes to consolidate the data of the view. On the contrary in many graph databases, connected nodes, i.e. record instances, are directly linked to each other. Each node, contains a list of pointers of its edges, therefore avoiding look-ups. In fact you are not searching for records, you are traversing connections instead. This may dramatically reduce the speed of constructing the result set of a query.&lt;/p&gt;
+&lt;p&gt;For demonstration and comparison purposes we provide such a JOIN sql query for our toy database together with an ER diagram of the database schema,&lt;a href=&#34;#fig5&#34;&gt;&lt;strong&gt;Fig.5&lt;/strong&gt;&lt;/a&gt; and the result set on a Microsoft Access table view, &lt;a href=&#34;#fig6&#34;&gt;&lt;strong&gt;Fig.6&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You may also download a Microsoft Access, &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/tree/master/media/SupplierPartCatalogue/accdb&#34;&gt;accdb&lt;/a&gt; file format, database to experiment with.&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;SupplierPartCatalogue-ERModel-MSAccess.jpg&#34; data-caption=&#34;Image illustrates the ER diagram of database schema&#34;&gt;
+
+&lt;img src=&#34;SupplierPartCatalogue-ERModel-MSAccess.jpg&#34; alt=&#34;Image illustrates the ER diagram of database schema&#34; &gt;
+&lt;/a&gt;
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;&lt;/h4&gt;
+  &lt;p&gt;
+    Image illustrates the ER diagram of database schema
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;SupplierPartCatalogue-ERModel-MSAccess-JOINresultSet.jpg&#34; data-caption=&#34;Image illustrates the ER diagram of database schema&#34;&gt;
+
+&lt;img src=&#34;SupplierPartCatalogue-ERModel-MSAccess-JOINresultSet.jpg&#34; alt=&#34;Image illustrates the ER diagram of database schema&#34; &gt;
+&lt;/a&gt;
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;&lt;/h4&gt;
+  &lt;p&gt;
+    Image illustrates the ER diagram of database schema
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;Catalog&lt;/span&gt; . catsid ,
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;Catalog&lt;/span&gt; . catpid ,
+        Suppliers . sname ,
+        Parts . pname ,
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;Catalog&lt;/span&gt; . catcost ,
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;Catalog&lt;/span&gt; . catqnt ,
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;Catalog&lt;/span&gt; . catdate ,
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;Catalog&lt;/span&gt; . catchk
+&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt;    Suppliers
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;INNER&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;JOIN&lt;/span&gt;  ( Parts
+                    &lt;span style=&#34;color:#66d9ef&#34;&gt;INNER&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;JOIN&lt;/span&gt;  [&lt;span style=&#34;color:#66d9ef&#34;&gt;Catalog&lt;/span&gt;]
+                            &lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt;  Parts . pid  &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;Catalog&lt;/span&gt; . catpid )
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt;  Suppliers . sid  &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;Catalog&lt;/span&gt; . catsid
+&lt;span style=&#34;color:#66d9ef&#34;&gt;ORDER&lt;/span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;BY&lt;/span&gt;  Suppliers . sname  &lt;span style=&#34;color:#66d9ef&#34;&gt;DESC&lt;/span&gt; ,
+           &lt;span style=&#34;color:#66d9ef&#34;&gt;Catalog&lt;/span&gt; . catcost  &lt;span style=&#34;color:#66d9ef&#34;&gt;DESC&lt;/span&gt; ;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;One can immediately notice the complexity of SQL query language on the nested SQL Join constructs.&lt;/p&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this article we described several limitations of the ER model that we wish to overcome, in brief these are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Functional dependence of values&lt;/li&gt;
+&lt;li&gt;Data redundancy&lt;/li&gt;
+&lt;li&gt;Join operations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the next article of our series we continue with an international industry standard for information management and interchange, the &lt;a href=&#34;https://en.wikipedia.org/wiki/Topic_Maps&#34;&gt;Topic Maps Data Model&lt;/a&gt; (TMDM). Associations in TMDM are similar to tuples but they have types. Each member of an association plays a role that is defined explicitly. In fact this is in full agreement with Chen&amp;rsquo;s Entity-Relationship diagrams (see Fig.1 and Fig.2 above). Chen discusses the role of an entity in a relationship and the role of an attribute in a relation and he considers distinct constrains on allowable values for a value set and constraints on permitted values for a certain attribute.&lt;/p&gt;
+&lt;p&gt;TMDM view is edifying because it divides information space in two layers. At the conceptual level we have topics that can be associated and represent any subject that can be conceived by a human being. At the occurrence level we have addressable information resources that describe those subjects.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/associative-data-modeling-demystified-part1-hatzis-phd&#34;&gt;LinkedIn Published Posts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/hp/update/6178589225793916928&#34;&gt;LinkedIn Update&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.datasciencecentral.com/profiles/blogs/associative-data-modeling-demystified-part1&#34;&gt;Data Science Central&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/associative-data-modeling-demystified-part1&#34;&gt;DZone - Database Section&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

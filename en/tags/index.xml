@@ -220,9 +220,18 @@
     </item>
     
     <item>
+      <title>Associative_entity</title>
+      <link>https://healis.eu/en/tags/associative_entity/</link>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/associative_entity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data_model</title>
       <link>https://healis.eu/en/tags/data_model/</link>
-      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/data_model/</guid>
       <description></description>
@@ -231,7 +240,7 @@
     <item>
       <title>Graph_database</title>
       <link>https://healis.eu/en/tags/graph_database/</link>
-      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/graph_database/</guid>
       <description></description>
@@ -240,7 +249,7 @@
     <item>
       <title>Semantic_Web</title>
       <link>https://healis.eu/en/tags/semantic_web/</link>
-      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/semantic_web/</guid>
       <description></description>
@@ -249,7 +258,7 @@
     <item>
       <title>Semantics</title>
       <link>https://healis.eu/en/tags/semantics/</link>
-      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/semantics/</guid>
       <description></description>
@@ -258,7 +267,7 @@
     <item>
       <title>Sign_(semiotics)</title>
       <link>https://healis.eu/en/tags/sign_semiotics/</link>
-      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/sign_semiotics/</guid>
       <description></description>
@@ -267,7 +276,7 @@
     <item>
       <title>Signified_and_signifier</title>
       <link>https://healis.eu/en/tags/signified_and_signifier/</link>
-      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/signified_and_signifier/</guid>
       <description></description>
@@ -276,9 +285,81 @@
     <item>
       <title>Triangle_of_reference</title>
       <link>https://healis.eu/en/tags/triangle_of_reference/</link>
-      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/triangle_of_reference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Association_(object-oriented_programming)</title>
+      <link>https://healis.eu/en/tags/association_object-oriented_programming/</link>
+      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/association_object-oriented_programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resource_Description_Framework</title>
+      <link>https://healis.eu/en/tags/resource_description_framework/</link>
+      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/resource_description_framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ontology_(information_science)</title>
+      <link>https://healis.eu/en/tags/ontology_information_science/</link>
+      <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/ontology_information_science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Topic_Maps</title>
+      <link>https://healis.eu/en/tags/topic_maps/</link>
+      <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/topic_maps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Associative_array</title>
+      <link>https://healis.eu/en/tags/associative_array/</link>
+      <pubDate>Thu, 25 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/associative_array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Entity–relationship_model</title>
+      <link>https://healis.eu/en/tags/entityrelationship_model/</link>
+      <pubDate>Thu, 25 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/entityrelationship_model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Relational_database</title>
+      <link>https://healis.eu/en/tags/relational_database/</link>
+      <pubDate>Thu, 25 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/relational_database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Relational_model</title>
+      <link>https://healis.eu/en/tags/relational_model/</link>
+      <pubDate>Thu, 25 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/relational_model/</guid>
       <description></description>
     </item>
     

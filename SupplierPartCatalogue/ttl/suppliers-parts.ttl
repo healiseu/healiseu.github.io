@@ -1,0 +1,51 @@
+@prefix wd: <http://www.wikidata.org/property/> .
+@prefix Part: <http://example.org/spc/Part/> .
+@prefix Supplier: <http://example.org/spc/Supplier/> .
+
+
+Supplier:1081 wd:hasPart Part:991 .
+Supplier:1081 wd:hasPart Part:992 .
+Supplier:1081 wd:hasPart Part:993 .
+Supplier:1081 wd:hasPart Part:994 .
+Supplier:1081 wd:hasPart Part:995 .
+Supplier:1081 wd:hasPart Part:996 .
+Supplier:1081 wd:hasPart Part:997 .
+Supplier:1081 wd:hasPart Part:998 .
+Supplier:1081 wd:hasPart Part:999 .
+
+Supplier:1082 wd:hasPart Part:991 .
+Supplier:1082 wd:hasPart Part:997 .
+Supplier:1082 wd:hasPart Part:998 .
+
+Supplier:1083 wd:hasPart Part:998 .
+Supplier:1083 wd:hasPart Part:999 .
+
+Supplier:1084 wd:hasPart Part:994 .
+Supplier:1084 wd:hasPart Part:995 .
+Supplier:1084 wd:hasPart Part:998 .
+
+Part:991 wd:hasVendor Supplier:1081 .
+Part:991 wd:hasVendor Supplier:1082 .
+
+Part:992 wd:hasVendor Supplier:1081 .
+
+Part:993 wd:hasVendor Supplier:1081 .
+
+Part:994 wd:hasVendor Supplier:1081 .
+Part:994 wd:hasVendor Supplier:1084 .
+
+Part:995 wd:hasVendor Supplier:1081 .
+Part:995 wd:hasVendor Supplier:1084 .
+
+Part:996 wd:hasVendor Supplier:1081 .
+
+Part:997 wd:hasVendor Supplier:1081 .
+Part:997 wd:hasVendor Supplier:1082 .
+
+Part:998 wd:hasVendor Supplier:1081 .
+Part:998 wd:hasVendor Supplier:1082 .
+Part:998 wd:hasVendor Supplier:1083 .
+Part:998 wd:hasVendor Supplier:1084 .
+
+Part:999 wd:hasVendor Supplier:1081 .
+Part:999 wd:hasVendor Supplier:1083 .

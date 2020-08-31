@@ -1,0 +1,27 @@
+#Suppliers of Part 998 sorted by their catalog price
+ 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wd: <http://www.wikidata.org/property/>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+select ?sup ?supName ?supCountry ?catPrice ?catQuantity ?prt ?prtName ?prtColor ?cat where
+{ 
+    # Start with a ?prt that has id=998 get its name and color values
+    ?prt dc:identifier "998"^^xsd:int .
+    ?prt rdf:label ?prtName .
+    ?prt schema:color ?prtColor .            
+    
+    # Find all catalog items (?cat) with a reference to ?prt get their price and quantity values
+    ?cat wd:hasPart ?prt .
+    ?cat schema:cost ?catPrice
+    OPTIONAL {?cat schema:quantity ?catQuantity .}
+    
+    # For any catalog item (?cat) find the vendor that supplies ?prt get their name and the country of origin
+    ?cat wd:hasVendor ?sup .
+    ?sup rdf:label ?supName .
+    ?sup schema:country ?supCountry
+}
+ORDER BY ASC(?catPrice)
+

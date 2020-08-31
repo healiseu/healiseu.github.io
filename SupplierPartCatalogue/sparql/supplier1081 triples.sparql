@@ -1,0 +1,9 @@
+# Get all triples for a specific Supplier
+PREFIX Supplier: <http://example.org/spc/Supplier/>
+
+select ?sup ?p ?o where
+{ 
+    BIND(Supplier:1081 AS ?sup)
+    ?sup ?p ?o .
+}
+ 

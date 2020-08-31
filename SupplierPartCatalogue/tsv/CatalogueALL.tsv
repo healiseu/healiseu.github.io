@@ -1,0 +1,18 @@
+prtID	supID	catChk	catDate	catPrice	catTotal	prtColor	prtName	prtUnit	prtWeight	supAddress	supCity	supCountry	supName	supStatus
+993	1081	FALSE	03/03/2014	15.3	200	Red	Acme Widget Washer	kg	142.88	1 Grub St., Potemkin Village, IL 61801	ILLINOIS	USA	Acme Widget Suppliers	10
+994	1081	FALSE	03/03/2014	20.5	100	Silver	Acme Widget Washer	kg	142.88	1 Grub St., Potemkin Village, IL 61801	ILLINOIS	USA	Acme Widget Suppliers	10
+995	1081	FALSE		20.5			I Brake for Crop Circles Sticker			1 Grub St., Potemkin Village, IL 61801	ILLINOIS	USA	Acme Widget Suppliers	10
+999	1081	FALSE		75.2		Green	7 Segment Display	gr	2.1	1 Grub St., Potemkin Village, IL 61801	ILLINOIS	USA	Acme Widget Suppliers	10
+996	1081	FALSE		124.23		Cyan	Anti-Gravity Turbine Generator			1 Grub St., Potemkin Village, IL 61801	ILLINOIS	USA	Acme Widget Suppliers	10
+997	1081	FALSE		124.23		Magenta	Anti-Gravity Turbine Generator			1 Grub St., Potemkin Village, IL 61801	ILLINOIS	USA	Acme Widget Suppliers	10
+998	1081	TRUE	10/09/2014	11.7	400	Red	Fire Hydrant Cap	lb	7.2	1 Grub St., Potemkin Village, IL 61801	ILLINOIS	USA	Acme Widget Suppliers	10
+991	1081	TRUE	20/12/2014	36.1	300	Red	Left Handed Bacon Stretcher Cover	lb	15.5	1 Grub St., Potemkin Village, IL 61801	ILLINOIS	USA	Acme Widget Suppliers	10
+992	1081	TRUE	20/12/2014	42.3	400	Black	Smoke Shifter End	lb	3.75	1 Grub St., Potemkin Village, IL 61801	ILLINOIS	USA	Acme Widget Suppliers	10
+998	1082	FALSE	03/03/2014	7.95	200	Red	Fire Hydrant Cap	lb	7.2	4 My Way, Bermuda Shorts, OR 90305	OREGON	USA	Big Red Tool and Die	20
+997	1082	TRUE	10/09/2014	0.55	100	Magenta	Anti-Gravity Turbine Generator			4 My Way, Bermuda Shorts, OR 90305	OREGON	USA	Big Red Tool and Die	20
+991	1082	TRUE	10/09/2014	16.5	200	Red	Left Handed Bacon Stretcher Cover	lb	15.5	4 My Way, Bermuda Shorts, OR 90305	OREGON	USA	Big Red Tool and Die	20
+999	1083	FALSE		1		Green	7 Segment Display	gr	2.1	99 Short Pier, Terra Del Fuego, TX 41299	MADRID	SPAIN	Perfunctory Parts	30
+998	1083	FALSE		12.5		Red	Fire Hydrant Cap	lb	7.2	99 Short Pier, Terra Del Fuego, TX 41299	MADRID	SPAIN	Perfunctory Parts	30
+995	1084	FALSE		22.2			I Brake for Crop Circles Sticker			2 Groom Lake, Rachel, NV 51902	NOTTINGHAM	UK	Alien Aircaft Inc.	10
+998	1084	TRUE	20/12/2014	48.6	200	Red	Fire Hydrant Cap	lb	7.2	2 Groom Lake, Rachel, NV 51902	NOTTINGHAM	UK	Alien Aircaft Inc.	10
+994	1084	TRUE	20/12/2014	57.3	100	Silver	Acme Widget Washer	kg	142.88	2 Groom Lake, Rachel, NV 51902	NOTTINGHAM	UK	Alien Aircaft Inc.	10

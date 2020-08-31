@@ -1,0 +1,173 @@
+[
+  {
+    "@id": "http://example.org/supplier/1081",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Organization"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#label": [
+      {
+        "@value": "Acme Widget Suppliers",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/address": [
+      {
+        "@value": "1 Grub St., Potemkin Village, IL 61801",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/city": [
+      {
+        "@value": "ILLINOIS",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/country": [
+      {
+        "@value": "USA",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/status": [
+      {
+        "@value": "10",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+      {
+        "@value": "1081",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/supplier/1082",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Organization"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#label": [
+      {
+        "@value": "Big Red Tool and Die",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/address": [
+      {
+        "@value": "4 My Way, Bermuda Shorts, OR 90305",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/city": [
+      {
+        "@value": "OREGON",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/country": [
+      {
+        "@value": "USA",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/status": [
+      {
+        "@value": "20",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+      {
+        "@value": "1082",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/supplier/1083",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Organization"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#label": [
+      {
+        "@value": "Perfunctory Parts",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/address": [
+      {
+        "@value": "99 Short Pier, Terra Del Fuego, TX 41299",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/city": [
+      {
+        "@value": "MADRID",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/country": [
+      {
+        "@value": "SPAIN",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/status": [
+      {
+        "@value": "30",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+      {
+        "@value": "1083",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/supplier/1084",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Organization"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#label": [
+      {
+        "@value": "Alien Aircaft Inc.",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/address": [
+      {
+        "@value": "2 Groom Lake, Rachel, NV 51902",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/city": [
+      {
+        "@value": "NOTTINGHAM",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/country": [
+      {
+        "@value": "UK",
+        "@language": "en"
+      }
+    ],
+    "http://schema.org/status": [
+      {
+        "@value": "10",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+      {
+        "@value": "1084",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Organization"
+  }
+]

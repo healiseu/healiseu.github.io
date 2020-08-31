@@ -1,0 +1,37 @@
+{ "Model": {
+    "name":"SupplierPartCatalog", "short":"SPC_", "type":"MODEL", "stype":"DMS", "path":"F:\\athanbuntu\\tmp\\SupplierPartCatalog\\SupplierPartCatalogModel.json",
+    "Entities" : [
+      {"incr":"E1", "name":"Supplier","short":"SUP_","type":"ENTITY", "stype":"ORGANIZATION",
+        "Attributes" : [
+                        {"incr":"A1", "name":"id",      "short":"supID",       "type":"ATTRIBUTE", "stype":"IDENTITY",   "vtype":"INT" },
+                        {"incr":"A2", "name":"nameEN",  "short":"supName",     "type":"ATTRIBUTE", "stype":"NAME",       "vtype":"WRD" },
+                        {"incr":"A3", "name":"address", "short":"supAddress",  "type":"ATTRIBUTE", "stype":"DESCRIPTION","vtype":"TXT" },
+                        {"incr":"A4", "name":"city",    "short":"supCity",     "type":"ATTRIBUTE", "stype":"NAME",       "vtype":"WRD" },
+                        {"incr":"A5", "name":"country", "short":"supCountry",  "type":"ATTRIBUTE", "stype":"NAME",    	 "vtype":"WRD" },
+                        {"incr":"A6", "name":"status",  "short":"supStatus",   "type":"ATTRIBUTE", "stype":"CATEGORICAL","vtype":"INT" }]
+     },
+
+     {"incr":"E2", "name":"Part","short":"PRT_","type":"ENTITY", "stype":"PRODUCT",
+        "Attributes" : [
+                        {"incr":"A7", "name":"id",      "short":"prtID",       "type":"ATTRIBUTE", "stype":"IDENTITY",    "vtype":"INT" },
+                        {"incr":"A8", "name":"nameEN",  "short":"prtName",     "type":"ATTRIBUTE", "stype":"NAME",        "vtype":"WRD" },
+                        {"incr":"A9", "name":"color", 	"short":"prtColor",    "type":"ATTRIBUTE", "stype":"CATEGORICAL", "vtype":"WRD" },
+                        {"incr":"A10", "name":"weight", "short":"prtWeight",  "type":"ATTRIBUTE",  "stype":"QUANTITY",    "vtype":"REA" },
+                        {"incr":"A11", "name":"unit", 	"short":"prtUnit",     "type":"ATTRIBUTE", "stype":"CATEGORICAL", "vtype":"WRD" }]
+                        
+     },
+
+     {"incr":"E3", "name":"Catalog","short":"CAT_","type":"ENTITY", "stype":"DATACATALOG",
+        "Attributes" : [
+                        {"incr":"A12", "name":"price",    "short":"catPrice",   "type":"ATTRIBUTE", "stype":"QUANTITY",    "vtype":"REA" },
+                        {"incr":"A13", "name":"total",    "short":"catTotal",   "type":"ATTRIBUTE", "stype":"COUNT",       "vtype":"INT" },
+                        {"incr":"A14", "name":"date",     "short":"catDate",    "type":"ATTRIBUTE", "stype":"TIME",        "vtype":"DT" },
+                        {"incr":"A15", "name":"check",    "short":"catCheck",   "type":"ATTRIBUTE", "stype":"CATEGORICAL", "vtype":"WRD" }]
+     }],
+
+    "Bridges" : [
+	{"from":"E3", "to":"A1"},
+	{"from":"E3", "to":"A7"}
+    ]
+  }
+}

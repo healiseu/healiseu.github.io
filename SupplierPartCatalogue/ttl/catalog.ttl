@@ -1,0 +1,132 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/property/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix Catalog: <http://example.org/spc/Catalog/> .
+@prefix Part: <http://example.org/spc/Part/> .
+@prefix Supplier: <http://example.org/spc/Supplier/> .
+
+Catalog:0 a wd:Inventory ;
+	schema:cost "36.1"^^xsd:double ;
+	schema:quantity "300"^^xsd:int ;
+	schema:date "2014-12-20"^^xsd:date ;
+	schema:check "true"^^xsd:boolean ;
+	wd:hasPart Part:991 ;
+	wd:hasVendor Supplier:1081 .
+
+Catalog:1 a wd:Inventory ;
+	schema:cost "42.3"^^xsd:double ;
+	schema:quantity "400"^^xsd:int ;
+	schema:date "2014-12-20"^^xsd:date ;
+	schema:check "true"^^xsd:boolean ;
+	wd:hasPart Part:992 ;
+	wd:hasVendor Supplier:1081 .
+
+Catalog:2 a wd:Inventory ;
+	schema:cost "15.3"^^xsd:double ;
+	schema:quantity "200"^^xsd:int ;
+	schema:date "2014-03-03"^^xsd:date ;
+	schema:check "false"^^xsd:boolean ;
+	wd:hasPart Part:993 ;
+	wd:hasVendor Supplier:1081 .
+
+Catalog:3 a wd:Inventory ;
+	schema:cost "20.5"^^xsd:double ;
+	schema:quantity "100"^^xsd:int ;
+	schema:date "2014-03-03"^^xsd:date ;
+	schema:check "false"^^xsd:boolean ;
+	wd:hasPart Part:994 ;
+	wd:hasVendor Supplier:1081 .
+
+Catalog:4 a wd:Inventory ;
+	schema:cost "20.5"^^xsd:double ;
+	schema:check "false"^^xsd:boolean ;
+	wd:hasPart Part:995 ;
+	wd:hasVendor Supplier:1081 .
+
+Catalog:5 a wd:Inventory ;
+	schema:cost "124.23"^^xsd:double ;
+	schema:check "false"^^xsd:boolean ;
+	wd:hasPart Part:996 ;
+	wd:hasVendor Supplier:1081 .
+
+Catalog:6 a wd:Inventory ;
+	schema:cost "124.23"^^xsd:double ;
+	schema:check "false"^^xsd:boolean ;
+	wd:hasPart Part:997 ;
+	wd:hasVendor Supplier:1081 .
+
+Catalog:7 a wd:Inventory ;
+	schema:cost "11.7"^^xsd:double ;
+	schema:quantity "400"^^xsd:int ;
+	schema:date "2014-09-10"^^xsd:date ;
+	schema:check "true"^^xsd:boolean ;
+	wd:hasPart Part:998 ;
+	wd:hasVendor Supplier:1081 .
+
+Catalog:8 a wd:Inventory ;
+	schema:cost "75.2"^^xsd:double ;
+	schema:check "false"^^xsd:boolean ;
+	wd:hasPart Part:999 ;
+	wd:hasVendor Supplier:1081 .
+
+Catalog:9 a wd:Inventory ;
+	schema:cost "16.5"^^xsd:double ;
+	schema:quantity "200"^^xsd:int ;
+	schema:date "2014-09-10"^^xsd:date ;
+	schema:check "true"^^xsd:boolean ;
+	wd:hasPart Part:991 ;
+	wd:hasVendor Supplier:1082 .
+
+Catalog:10 a wd:Inventory ;
+	schema:cost "0.55"^^xsd:double ;
+	schema:quantity "100"^^xsd:int ;
+	schema:date "2014-09-10"^^xsd:date ;
+	schema:check "true"^^xsd:boolean ;
+	wd:hasPart Part:997 ;
+	wd:hasVendor Supplier:1082 .
+
+Catalog:11 a wd:Inventory ;
+	schema:cost "7.95"^^xsd:double ;
+	schema:quantity "200"^^xsd:int ;
+	schema:date "2014-03-03"^^xsd:date ;
+	schema:check "false"^^xsd:boolean ;
+	wd:hasPart Part:998 ;
+	wd:hasVendor Supplier:1082 .
+
+Catalog:12 a wd:Inventory ;
+	schema:cost "12.5"^^xsd:double ;
+	schema:check "false"^^xsd:boolean ;
+	wd:hasPart Part:998 ;
+	wd:hasVendor Supplier:1083 .
+
+Catalog:13 a wd:Inventory ;
+	schema:cost "1.0"^^xsd:double ;
+	schema:check "false"^^xsd:boolean ;
+	wd:hasPart Part:999 ;
+	wd:hasVendor Supplier:1083 .
+
+Catalog:14 a wd:Inventory ;
+	schema:cost "57.3"^^xsd:double ;
+	schema:quantity "100"^^xsd:int ;
+	schema:date "2014-12-20"^^xsd:date ;
+	schema:check "true"^^xsd:boolean ;
+	wd:hasPart Part:994 ;
+	wd:hasVendor Supplier:1084 .
+
+Catalog:15 a wd:Inventory ;
+	schema:cost "22.2"^^xsd:double ;
+	schema:check "false"^^xsd:boolean ;
+	wd:hasPart Part:995 ;
+	wd:hasVendor Supplier:1084 .
+
+Catalog:16 a wd:Inventory ;
+	schema:cost "48.6"^^xsd:double ;
+	schema:quantity "200"^^xsd:int ;
+	schema:date "2014-12-20"^^xsd:date ;
+	schema:check "true"^^xsd:boolean ;
+	wd:hasPart Part:998 ;
+	wd:hasVendor Supplier:1084 .

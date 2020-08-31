@@ -1,0 +1,7 @@
+PREFIX schema: <http://schema.org/>
+
+select ?prt ?p ?o where
+{	
+    ?prt a schema:item .
+    ?prt ?p ?o .
+}

@@ -1,0 +1,11 @@
+[
+	{"pid": 991, "pname": "Left Handed Bacon Stretcher Cover", "pcolor": "Red", "pweight": 15.5, "punit": "lb"},
+	{"pid": 992, "pname": "Smoke Shifter End", "pcolor": "Black", "pweight": 3.75, "punit": "lb"},
+	{"pid": 993, "pname": "Acme Widget Washer", "pcolor": "Red", "pweight": 142.88, "punit": "kg"},
+	{"pid": 994, "pname": "Acme Widget Washer", "pcolor": "Silver", "pweight": 142.88, "punit": "kg"},
+	{"pid": 995, "pname": "I Brake for Crop Circles Sticker"},
+	{"pid": 996, "pname": "Anti-Gravity Turbine Generator", "pcolor": "Cyan"},
+	{"pid": 997, "pname": "Anti-Gravity Turbine Generator", "pcolor": "Magenta"},
+	{"pid": 998, "pname": "Fire Hydrant Cap", "pcolor": "Red", "pweight": 7.2, "punit": "lb"},
+	{"pid": 999, "pname": "7 Segment Display", "pcolor": "Green", "pweight": 2.1, "punit": "gr"}
+]

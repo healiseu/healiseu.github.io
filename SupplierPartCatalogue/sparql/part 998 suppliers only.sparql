@@ -1,0 +1,20 @@
+#Suppliers of Part 998
+ 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wd: <http://www.wikidata.org/property/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+
+select ?prt ?p ?sup where
+{ 
+	BIND(wd:hasVendor AS ?p)    
+    
+    # Start with a ?prt that has id=998
+    ?prt dc:identifier "998"^^xsd:int .
+    
+    # Find all catalog items (?cat) with a reference to ?prt
+    ?cat wd:hasPart ?prt .
+    
+    # For any catalog item (?cat) find the vendor that supplies ?prt
+    ?cat ?p ?sup .
+}
