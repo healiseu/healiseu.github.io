@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.74.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Athanassios I. Hatzis, PhD">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Table of Contents  Introduction Two programming paradigm approaches for a NoSQL API Functional operations A glimpse from the future Epilogue   Introduction In a decade of investigating NoSQL systems, I noticed a huge effort from many vendors to create SQL compatible APIs. Yes, there is a pretty good reason behind this tendency to walk-the-line as usual. Everybody has learned to program in SQL, everybody knows how to access a DBMS using SQL.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://healis.eu/en/post/20200219/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24920503-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://healis.eu/en/post/20200219/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@healiseu">
+  <meta property="twitter:creator" content="@healiseu">
+  
+  <meta property="og:site_name" content="HEALIS">
+  <meta property="og:url" content="https://healis.eu/en/post/20200219/">
+  <meta property="og:title" content="50 Years of SQL, can you imagine a truly NoSQL approach ? | HEALIS">
+  <meta property="og:description" content="Table of Contents  Introduction Two programming paradigm approaches for a NoSQL API Functional operations A glimpse from the future Epilogue   Introduction In a decade of investigating NoSQL systems, I noticed a huge effort from many vendors to create SQL compatible APIs. Yes, there is a pretty good reason behind this tendency to walk-the-line as usual. Everybody has learned to program in SQL, everybody knows how to access a DBMS using SQL."><meta property="og:image" content="https://healis.eu/en/post/20200219/featured.jpg">
+  <meta property="twitter:image" content="https://healis.eu/en/post/20200219/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2020-02-19T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2020-02-19T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>50 Years of SQL, can you imagine a truly NoSQL approach ? | HEALIS</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/en/"><img src="/img/healis-text-with-logo.png" alt="HEALIS"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#home"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/about/"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/hmorph/"><span>HyperMorph</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/s3dm/"><span>S3DM</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/en/post/"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/talk/"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/terms/"><span>Terms</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/contact/"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/en/post/20200219/featured_huc7bacec61cc222ebb4ddb27b169915bd_54899_680x500_fill_q90_lanczos_center.jpg" itemprop="image" alt="">
+        
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">50 Years of SQL, can you imagine a truly NoSQL approach ?</h1>
+
+      
+      <p class="page-subtitle">Discussion about the development of a NoSQL API</p>
+      
+
+      
+
+
+
+<meta content="2020-02-19 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2020-02-19 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/en/authors/admin/">Athanassios I. Hatzis, PhD</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2020-02-19</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    9 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/en/post/20200219/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/en/categories/application_programming_interface/">Application_programming_interface</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://healis.eu/en/post/20200219/&amp;text=50%20Years%20of%20SQL,%20can%20you%20imagine%20a%20truly%20NoSQL%20approach%20?" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://healis.eu/en/post/20200219/&amp;t=50%20Years%20of%20SQL,%20can%20you%20imagine%20a%20truly%20NoSQL%20approach%20?" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=50%20Years%20of%20SQL,%20can%20you%20imagine%20a%20truly%20NoSQL%20approach%20?&amp;body=https://healis.eu/en/post/20200219/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://healis.eu/en/post/20200219/&amp;title=50%20Years%20of%20SQL,%20can%20you%20imagine%20a%20truly%20NoSQL%20approach%20?" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=50%20Years%20of%20SQL,%20can%20you%20imagine%20a%20truly%20NoSQL%20approach%20?%20https://healis.eu/en/post/20200219/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://healis.eu/en/post/20200219/&amp;title=50%20Years%20of%20SQL,%20can%20you%20imagine%20a%20truly%20NoSQL%20approach%20?" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/en/project/hypermorph/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#two-programming-paradigm-approaches-for-a-nosql-api">Two programming paradigm approaches for a NoSQL API</a></li>
+    <li><a href="#functional-operations">Functional operations</a></li>
+    <li><a href="#a-glimpse-from-the-future">A glimpse from the future</a></li>
+    <li><a href="#epilogue">Epilogue</a></li>
+  </ul>
+</nav>
+
+<h2 id="introduction">Introduction</h2>
+<p>In a decade of investigating NoSQL systems, I noticed a huge effort from many vendors to create SQL compatible APIs. Yes, there is a pretty good reason behind this tendency to walk-the-line as usual. Everybody has learned to program in SQL, everybody knows how to access a DBMS using SQL.</p>
+<p>Well, I guess after 50 years of SQL based DBMS there has to be a better approach to win programmer&rsquo;s acceptance but it seems nobody has managed to achieve such an ambitious goal in scale. Nobody dares to propose something different to be adopted as a better solution and even those few that tried something different, it just comes to my mind the <a href="http://tinkerpop.apache.org/">Apache Tinkpop-Gremlin</a> language, <a href="https://graphql.org/">GraphQL</a> and <a href="https://www.opencypher.org/">Cypher</a>, those brave hearts have not managed to convince the majority of IT users to switch gears to their proposed query environment. Others were more radical in their approach and even imagined a connected semantic web, but when they designed their query language, <a href="https://www.w3.org/TR/rdf-sparql-query/">SPARQL</a>, it looked very similar to SQL, and even its acronym reminds us SQL.</p>
+<p>I can start writing many reasons for why all these approaches have not reached the consensus for the majority of IT technical users. I could also state a number of facts for why the industry and several consortium keep using SQL as their favourite DBMS query language. But with this article I would like you to focus on a very specific point, and with that perhaps I can share a bit of my imagination on how it can be possible to access a DBMS differently, with more flexibility than SQL, without losing the comfort of your programming language, without the hurdles in SQL and most important with earning the interest and respect of developers.</p>
+<h2 id="two-programming-paradigm-approaches-for-a-nosql-api">Two programming paradigm approaches for a NoSQL API</h2>
+<p>What is SQL ? It&rsquo;s a domain specific language designed specifically to manage data in a relational DBMS, although many proponents of relational theory correctly argue that these DBMS do not follow Codd&rsquo;s relational principles. But that is another important story to tell some other time.</p>
+<p>Recently, in the last decade, graph databases started becoming very popular but interestingly many important vendors stretched SQL language to cover graph traversal and other related operations. Columnar databases another very successful NoSQL type also followed the same tactic regarding to the query language. Therefore, although the data model and the physical layer implementation can vary a lot, SQL attempts to create an artificial unity at the database client level.</p>
+<p>But again SQL is domain specific, started as data model specific and remains a declarative query language. The main question is what happens at the API side, i.e. at the side of the programming language and that is exactly where all interesting, peculiar things happen. How exactly do you connect to the DBMS server, what is the protocol DBMS driver uses to transfer data, how well objects match with entities and attributes in your DBMS, schema vs object model changes, nullable and partial loading of fields-atrributes, persistence, state, concurrency and caching of objects. For OOP aficionados and others what I briefly described is known as the <a href="https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch">object-relational impedance mismatch</a> problem, the <a href="http://blogs.tedneward.com/post/the-vietnam-of-computer-science/">Vietnam of Computer Science</a>. And do not make a mistake it is still &ldquo;Vietnam&rdquo; out there.</p>
+<p>Chainable operators and operands
+OOP is perhaps the most popular programming paradigm and yet because of the SQL magic spell everything had to be squeezed on a tabular form using one <a href="https://en.wikipedia.org/wiki/Object-relational_mapping">ORM</a> or the other. But during all these years of my personal research and development effort I noticed one specific characteristic of these ORM APIs that is related to the data retrieval approach in use. There are three major trends here, <a href="https://en.wikipedia.org/wiki/Query_by_Example">Query-By-Example</a> (QBE) the precursor of GraphQL, Query-By-API (QBA) the precursor of Gremlin and Query-By-Language (QBL) where all the SQL like query languages are categorised, <a href="https://www.gqlstandards.org/">GQL</a> is not an exception. Developer&rsquo;s practical experience showed that certain complex queries, particularly those with joins, were more difficult to represent in QBA and QBE and once more SQL won again this battle. But it is not a surprise that proponents of graph database technology have only partially touched the object-relational impedance mismatch. It requires a deeper architectural design and multi-perspective attitude than only comparing how well nodes of the graph match objects of a class.</p>
+<p>So, was that a fair battle between QBA and QBL, the answer is no because of the SQL existing dominance in DBMS and the mimicking of SQL join operations. That is where imagination enters the game, imagine that you could use object chainable operations using the <a href="https://en.wikipedia.org/wiki/Fluent_interface">fluent interface design method</a>, a.k.a QBA, without the mismatch between the DBMS and OOP, i.e. imagine a loose connection between the DBMS and API, think of API database client more like a bridge to fetch or transfer data. The method of chaining query operators is very promising indeed, it can won a second round of boxing with SQL. I will briefly explain why.</p>
+<p>OOP is based on the concept of objects that can exchange messages and modify their internal state. Therefore that kind of fluent interface is very natural in OOP languages, on the other hand most complex queries can be visualised and processed as a data pipeline. My question to those that design GQL, the next international query language standard, is why you keep following a dead-end declarative approach ? Wouldn&rsquo;t it be more natural and appealing to the users to follow a data pipeline methodology by standardising operands and operations ? There is plenty of hard evidence to verify that this is not an assumption. Recall TinkerPop-Gremlin reference above and in Python there is <a href="https://github.com/pandas-dev/pandas">Pandas</a>, a very popular data analysis library (23621 starts at GitHub).</p>
+<h2 id="functional-operations">Functional operations</h2>
+<p>Speaking about programming languages, what is the other very competitive paradigm in software development. Arguably it is the functional one and yet the functional requirements for such an API are more obscure. But such an API exists in one of the most powerful functional programming languages of IT industry, Mathematica. See for example how carefully they designed Wolfram language functions on <a href="https://reference.wolfram.com/language/guide/DatabaseLikeOperationsOnDatasets.html">Database-Like Operations on Datasets</a> and <a href="https://reference.wolfram.com/language/guide/ComputationWithStructuredDatasets.html">Computation with Structured Datasets</a> and how perfectly these fit with many other functions of the same language.</p>
+<h2 id="a-glimpse-from-the-future">A glimpse from the future</h2>
+<p>Enough said, software engineering is not a theoretical thing, it is based on practice. I will give you an example. One of the drawbacks of SQL is that you don&rsquo;t have a direct access to manage data dictionary information, this is handled more or less automatically by the DBMS. Gartner recently reported that data quality and data integration tools are incorporating data catalogs. This is certainly a step towards the right direction, you need a query API that is capable to manage both data and metadata using a unified approach.</p>
+<p>Consider the following code snippet in Python:</p>
+<p>The first command demonstrates fetching metadata using OOP chainable python methods:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">mis<span style="color:#f92672">.</span>get(<span style="color:#ae81ff">221</span>)
+   <span style="color:#f92672">.</span>fields
+   <span style="color:#f92672">.</span>over(select<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;nid, dim4, dim3, dim2, cname, alias, ntype, ctype, counter&#39;</span>)
+   <span style="color:#f92672">.</span>to_dataframe(index<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dim4, dim3, dim2&#39;</span>)
+   <span style="color:#f92672">.</span>out()
+
+Out[<span style="color:#ae81ff">18</span>]: 
+                nid                 cname alias ntype ctype  counter
+dim4 dim3 dim2                                                      
+<span style="color:#ae81ff">1</span>    <span style="color:#ae81ff">605</span>  <span style="color:#ae81ff">7</span>     <span style="color:#ae81ff">227</span>              Duration    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">8</span>     <span style="color:#ae81ff">228</span>            Start date    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">9</span>     <span style="color:#ae81ff">229</span>              End date    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">10</span>    <span style="color:#ae81ff">230</span>  Start station number    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">11</span>    <span style="color:#ae81ff">231</span>         Start station    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">12</span>    <span style="color:#ae81ff">232</span>    End station number    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">13</span>    <span style="color:#ae81ff">233</span>           End station    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">14</span>    <span style="color:#ae81ff">234</span>           Bike number    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">15</span>    <span style="color:#ae81ff">235</span>           Member type    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+</code></pre></div><p>The second command demonstrates fetching metadata using a functional approach:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">mis<span style="color:#f92672">.</span>get(nid<span style="color:#f92672">=</span><span style="color:#ae81ff">221</span>, 
+        what<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;fields&#39;</span>, 
+        select<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;nid, dim4, dim3, dim2, cname, alias, ntype, ctype, counter&#39;</span>,
+        index<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dim4, dim3, dim2&#39;</span>, 
+        out<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dataframe&#39;</span>)
+
+Out[<span style="color:#ae81ff">19</span>]: 
+                nid                 cname alias ntype ctype  counter
+dim4 dim3 dim2                                                      
+<span style="color:#ae81ff">1</span>    <span style="color:#ae81ff">605</span>  <span style="color:#ae81ff">7</span>     <span style="color:#ae81ff">227</span>              Duration    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">8</span>     <span style="color:#ae81ff">228</span>            Start date    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">9</span>     <span style="color:#ae81ff">229</span>              End date    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">10</span>    <span style="color:#ae81ff">230</span>  Start station number    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">11</span>    <span style="color:#ae81ff">231</span>         Start station    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">12</span>    <span style="color:#ae81ff">232</span>    End station number    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">13</span>    <span style="color:#ae81ff">233</span>           End station    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">14</span>    <span style="color:#ae81ff">234</span>           Bike number    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+          <span style="color:#ae81ff">15</span>    <span style="color:#ae81ff">235</span>           Member type    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
+</code></pre></div><p>And the third command demonstrates fetching data using again a functional approach</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">mis<span style="color:#f92672">.</span>get(<span style="color:#ae81ff">221</span>, what<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;data&#39;</span>, 
+             select<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;nid, dim4, dim3, dim2, cname, alias, ntype, ctype, counter&#39;</span>, 
+             out<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dataframe&#39;</span>, 
+             limit<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, 
+             offset<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>)
+
+Out[<span style="color:#ae81ff">20</span>]: 
+    <span style="color:#ae81ff">534</span>  <span style="color:#ae81ff">2012</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span> <span style="color:#ae81ff">10</span>:<span style="color:#ae81ff">29</span>:<span style="color:#ae81ff">06</span>  <span style="color:#ae81ff">2012</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span> <span style="color:#ae81ff">10</span>:<span style="color:#ae81ff">38</span>:<span style="color:#ae81ff">00</span>  <span style="color:#ae81ff">31113</span>  Columbia Rd <span style="color:#f92672">&amp;</span> Belmont St NW  <span style="color:#ae81ff">31201</span>                                <span style="color:#ae81ff">15</span>th <span style="color:#f92672">&amp;</span> P St NW  W00663  Member
+<span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">1937</span>  <span style="color:#ae81ff">2012</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span> <span style="color:#ae81ff">10</span>:<span style="color:#ae81ff">29</span>:<span style="color:#ae81ff">07</span>  <span style="color:#ae81ff">2012</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span> <span style="color:#ae81ff">11</span>:<span style="color:#ae81ff">01</span>:<span style="color:#ae81ff">25</span>  <span style="color:#ae81ff">31202</span>               <span style="color:#ae81ff">14</span>th <span style="color:#f92672">&amp;</span> R St NW  <span style="color:#ae81ff">31621</span>              <span style="color:#ae81ff">4</span>th <span style="color:#f92672">&amp;</span> D St NW <span style="color:#f92672">/</span> Judiciary Square  W00692  Casual
+<span style="color:#ae81ff">1</span>   <span style="color:#ae81ff">470</span>  <span style="color:#ae81ff">2012</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span> <span style="color:#ae81ff">10</span>:<span style="color:#ae81ff">29</span>:<span style="color:#ae81ff">17</span>  <span style="color:#ae81ff">2012</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span> <span style="color:#ae81ff">10</span>:<span style="color:#ae81ff">37</span>:<span style="color:#ae81ff">08</span>  <span style="color:#ae81ff">31104</span>  Adams Mill <span style="color:#f92672">&amp;</span> Columbia Rd NW  <span style="color:#ae81ff">31200</span>          Massachusetts Ave <span style="color:#f92672">&amp;</span> Dupont Circle NW  W00020  Member
+<span style="color:#ae81ff">2</span>   <span style="color:#ae81ff">727</span>  <span style="color:#ae81ff">2012</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span> <span style="color:#ae81ff">10</span>:<span style="color:#ae81ff">29</span>:<span style="color:#ae81ff">30</span>  <span style="color:#ae81ff">2012</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span> <span style="color:#ae81ff">10</span>:<span style="color:#ae81ff">41</span>:<span style="color:#ae81ff">38</span>  <span style="color:#ae81ff">31103</span>         <span style="color:#ae81ff">16</span>th <span style="color:#f92672">&amp;</span> Harvard St NW  <span style="color:#ae81ff">31200</span>          Massachusetts Ave <span style="color:#f92672">&amp;</span> Dupont Circle NW  W00880  Member
+<span style="color:#ae81ff">3</span>  <span style="color:#ae81ff">1144</span>  <span style="color:#ae81ff">2012</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span> <span style="color:#ae81ff">10</span>:<span style="color:#ae81ff">29</span>:<span style="color:#ae81ff">59</span>  <span style="color:#ae81ff">2012</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span> <span style="color:#ae81ff">10</span>:<span style="color:#ae81ff">49</span>:<span style="color:#ae81ff">03</span>  <span style="color:#ae81ff">31110</span>     <span style="color:#ae81ff">20</span>th St <span style="color:#f92672">&amp;</span> Florida Ave NW  <span style="color:#ae81ff">31236</span>        <span style="color:#ae81ff">37</span>th <span style="color:#f92672">&amp;</span> O St NW <span style="color:#f92672">/</span> Georgetown University  W00681  Casual
+<span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">1698</span>  <span style="color:#ae81ff">2012</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span> <span style="color:#ae81ff">10</span>:<span style="color:#ae81ff">30</span>:<span style="color:#ae81ff">09</span>  <span style="color:#ae81ff">2012</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span> <span style="color:#ae81ff">10</span>:<span style="color:#ae81ff">58</span>:<span style="color:#ae81ff">27</span>  <span style="color:#ae81ff">31107</span>      Lamont <span style="color:#f92672">&amp;</span> Mt Pleasant NW  <span style="color:#ae81ff">31610</span>  Eastern Market <span style="color:#f92672">/</span> <span style="color:#ae81ff">7</span>th <span style="color:#f92672">&amp;</span> North Carolina Ave SE  W01154  Member
+</code></pre></div><h2 id="epilogue">Epilogue</h2>
+<p>I am sure it is not difficult for those few out there to imagine and even implement a better solution than SQL provided you have the motive and financial backup. In fact as I mentioned in this article that partly exists. But it is certainly far more challenging and difficult to loose the safety of your daily job and/or income for years to imagine and consequently strive to give flesh and bones to a truly NoSQL API that can be more productive, efficient and innovative to work with than what already exists. Keep an eye for the next release of TRIADB project and who knows you might be convinced that this is truly a unique and valuable tool to use.</p>
+<blockquote>
+<p>Therefore, we need to investigate systems that combine relational algebra and linear algebra in a richer query paradigm, potentially as extensions to SQL. Two “holy grails” should continue to stay on our agenda. First, we must always explore any novel ideas to reduce the impedance mismatch between application development and writing database queries. Second, we must continue to find ways to make database systems less rigid (e.g., flexible schema evolution) without significantly sacrificing their performance <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>The Seattle Report on Database Research - the report summarizes the discussion and conclusions of the 9th such meeting, held during 9-10 October 2018. It appeared in the December 2019 issue of ACM SIGMOD Record <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tags/programming/">Programming</a>
+  
+  <a class="badge badge-light" href="/en/tags/software/">Software</a>
+  
+  <a class="badge badge-light" href="/en/tags/wolfram_language/">Wolfram_Language</a>
+  
+  <a class="badge badge-light" href="/en/tags/application_programming_interface/">Application_programming_interface</a>
+  
+  <a class="badge badge-light" href="/en/tags/database/">Database</a>
+  
+  <a class="badge badge-light" href="/en/tags/database_management_system/">Database_management_system</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_semiotic_hypergraph/">associative_semiotic_hypergraph</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
+  
+  <a class="badge badge-light" href="/en/tags/qlik/">Qlik</a>
+  
+  <a class="badge badge-light" href="/en/tags/topic_map/">Topic_map</a>
+  
+  <a class="badge badge-light" href="/en/tags/correlation_database/">Correlation_database</a>
+  
+  <a class="badge badge-light" href="/en/tags/database_model/">Database_model</a>
+  
+  <a class="badge badge-light" href="/en/tags/orientdb/">OrientDB</a>
+  
+  <a class="badge badge-light" href="/en/tags/redis/">Redis</a>
+  
+  <a class="badge badge-light" href="/en/tags/mariadb/">MariaDB</a>
+  
+  <a class="badge badge-light" href="/en/tags/clickhouse/">ClickHouse</a>
+  
+  <a class="badge badge-light" href="/en/tags/python_programming_language/">Python_(programming_language)</a>
+  
+  <a class="badge badge-light" href="/en/tags/intersystems_cache/">InterSystems_Caché</a>
+  
+  <a class="badge badge-light" href="/en/tags/filter_higher-order_function/">Filter_(higher-order_function)</a>
+  
+  <a class="badge badge-light" href="/en/tags/serialization/">Serialization</a>
+  
+  <a class="badge badge-light" href="/en/tags/hypergraph/">Hypergraph</a>
+  
+  <a class="badge badge-light" href="/en/tags/computational_semiotics/">Computational_semiotics</a>
+  
+  <a class="badge badge-light" href="/en/tags/api/">API</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:athanassios@healis.eu" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/ahatzis" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/athanhat" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-quora"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://vimeo.com/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-vimeo"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://stackoverflow.com/users/5364935/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/en/project/triadb/">TRIADB</a></li>
+          
+          <li><a href="/en/post/20191025/">TRIACLICK 2nd Release</a></li>
+          
+          <li><a href="/en/post/20190211/">TRIACLICK 1st Release</a></li>
+          
+          <li><a href="/en/talk/triadb_wolfram/">Associative Semiotic Hypergraph API in Mathematica for Next-Generation BI Systems</a></li>
+          
+          <li><a href="/en/talk/triadb_connected_data/">TRIADB at Connected Data London</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/en/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+
+    
+
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          Powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/healiseu/" target="_blank" rel="noopener" title="Star Me"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/healiseu" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCoCkNTkn1dAbtyr5EMvzc7w/videos" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener" title="Connect with Me"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener" title="Contact Me"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:athanassios.hatzis?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener" title="Ping Me"><i class="fab fa-quora" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://disqus.com/home/forums/healiseu/" target="_blank" rel="noopener" title="Discuss on Disqus"><i class="fas fa-comments" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

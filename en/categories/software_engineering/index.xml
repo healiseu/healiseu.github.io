@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software_engineering on HEALIS</title>
+    <link>https://healis.eu/en/categories/software_engineering/</link>
+    <description>Recent content in Software_engineering on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Sun, 10 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/en/categories/software_engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The wizards of stored computer program and the next generation of programmers</title>
+      <link>https://healis.eu/en/post/20170910/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20170910/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#transparent-operations&#34;&gt;Transparent operations&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#a-programming-language-with-a-built-in-database&#34;&gt;A programming language with a built-in database&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#epilogue&#34;&gt;Epilogue&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Have you noticed that what ever the model and data structure in databases we cannot escape from the fundamental principle of managing data allocation space with references, i.e. &lt;a href=&#34;https://en.wikipedia.org/wiki/Pointer_(computer_programming)&#34;&gt;pointer&lt;/a&gt; based logic, memory addressing ? Isn&amp;rsquo;t this the fundamental mechanism of programming languages too ? The problem I see with all these modern NoSQL databases, especially graph databases is that they provide a higher level abstraction for the end developer but they hide and lock completely the access to the low level storage and retrieval mechanism including indexes. Even in key-value stores you cannot see or understand the sorting of indexes, you cannot easily reference data values in permanent storage locations.&lt;/p&gt;
+&lt;h2 id=&#34;transparent-operations&#34;&gt;Transparent operations&lt;/h2&gt;
+&lt;p&gt;Transparency in computer science is a huge issue. The wizards and pioneers of computer hardware and software, have created multiple abstraction layers. They have hidden a lot of detail but at the same time they prevented access to low level mechanisms. And here comes the next generation that is asked to program the machine without understanding what is going on underneath. And even if there is such a desire, from the developer&amp;rsquo;s point of view, the operating system environment, the language and the debugging tools, not to mention the market, do not help us towards this direction. There have been few exceptions and one of them has been MUMPS (&lt;a href=&#34;https://en.wikipedia.org/wiki/MUMPS&#34;&gt;Massachusetts General Hospital Utility Multi-Programming System&lt;/a&gt;). I found astonishing the fact that M was developed by Neil Pappalardo, Robert Greenes, and Curt Marble &lt;strong&gt;during 1966 and 1967&lt;/strong&gt;. A reputable and established company in operational database market, Intersystems Cache, has taken over, expanded, and continued their effort on our days.&lt;/p&gt;
+&lt;h2 id=&#34;a-programming-language-with-a-built-in-database&#34;&gt;A programming language with a built-in database&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GCOS_intro&#34;&gt;Cache ObjectScript&lt;/a&gt; does make the difference from many aspects. Here I would like to emphasize its strong characteristic of a built-in database with sub-scripted arrays and multi-dimensional keys similar to the variables used by most programming languages to access main memory. Let me repeat this, you get a programming language with a built-in &lt;a href=&#34;https://en.wikipedia.org/wiki/Multi-model_database&#34;&gt;multi-model database&lt;/a&gt;. I think this is a fundamental aspect that software pioneers have been missing when they invented new programming languages or new sql databases. They are missing the innate common characteristic that both databases and programming languages share, which is the pointer, reference based logic. What do you think ?&lt;/p&gt;
+&lt;h2 id=&#34;epilogue&#34;&gt;Epilogue&lt;/h2&gt;
+&lt;p&gt;So I believe it&amp;rsquo;s time to return back and fix this for new generation multi-model databases AND post-modern programming languages too. We have already made a good start and we believe &lt;strong&gt;M&lt;/strong&gt; will make history again in database management and modeling with our &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;Associative Semiotic Hypergraph Engine&lt;/a&gt; that will be built on top of Intersystems Cache powerful &lt;a href=&#34;http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GGBL_structure&#34;&gt;global data structure&lt;/a&gt; and accompanied with a popular and easy to program client API in Python for data analytics.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/wizards-stored-computer-program-next-generation-hatzis-phd&#34;&gt;LinkedIn - 20170910 Article&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/129217/129217-6313331795513479172&#34;&gt;LinkedIn - 20170912 Semantic Web Research Post&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/73235/73235-6313334609023238144&#34;&gt;LinkedIn - 20170912 Database Developers and Architects Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/3750024/3750024-6313333971115737091&#34;&gt;LinkedIn - 20170912 Database &amp;amp; Data Store Professionals ★ NoSQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/45183/45183-6313333228287721476&#34;&gt;LinkedIn - 20170912 Database Experts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/2552968/2552968-6313334471701729282&#34;&gt;LinkedIn - 20170912 Graph Databases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/1969109/1969109-6313334298783154178&#34;&gt;LinkedIn - 20170912 MUMPS and Cache Development Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://community.intersystems.com/post/wizards-stored-computer-program-and-next-generation-programmers&#34;&gt;LinkedIn - 20170912 InterSystem Developer Community Post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

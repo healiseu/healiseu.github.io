@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.74.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Athanassios I. Hatzis, PhD">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Part 2/2 - Towards a New Data Modelling Architecture">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://healis.eu/en/post/20150320/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24920503-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://healis.eu/en/post/20150320/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@healiseu">
+  <meta property="twitter:creator" content="@healiseu">
+  
+  <meta property="og:site_name" content="HEALIS">
+  <meta property="og:url" content="https://healis.eu/en/post/20150320/">
+  <meta property="og:title" content="Atomic Information Resource (AIR) | HEALIS">
+  <meta property="og:description" content="Part 2/2 - Towards a New Data Modelling Architecture"><meta property="og:image" content="https://healis.eu/en/post/20150320/featured.jpg">
+  <meta property="twitter:image" content="https://healis.eu/en/post/20150320/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2015-03-20T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2015-03-20T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Atomic Information Resource (AIR) | HEALIS</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/en/"><img src="/img/healis-text-with-logo.png" alt="HEALIS"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#home"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/about/"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/hmorph/"><span>HyperMorph</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/s3dm/"><span>S3DM</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/en/post/"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/talk/"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/terms/"><span>Terms</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/contact/"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/en/post/20150320/featured_hu9b93e33d2c77ba78d7d4a987dd5ab2a6_21022_680x500_fill_q90_lanczos_smart1.jpg" itemprop="image" alt="">
+        
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">Atomic Information Resource (AIR)</h1>
+
+      
+      <p class="page-subtitle">Part 2/2 - Towards a New Data Modelling Architecture</p>
+      
+
+      
+
+
+
+<meta content="2015-03-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2015-03-20 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/en/authors/admin/">Athanassios I. Hatzis, PhD</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2015-03-20</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    21 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/en/post/20150320/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/en/categories/semantic_web/">Semantic_Web</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://healis.eu/en/post/20150320/&amp;text=Atomic%20Information%20Resource%20%28AIR%29" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://healis.eu/en/post/20150320/&amp;t=Atomic%20Information%20Resource%20%28AIR%29" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Atomic%20Information%20Resource%20%28AIR%29&amp;body=https://healis.eu/en/post/20150320/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://healis.eu/en/post/20150320/&amp;title=Atomic%20Information%20Resource%20%28AIR%29" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Atomic%20Information%20Resource%20%28AIR%29%20https://healis.eu/en/post/20150320/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://healis.eu/en/post/20150320/&amp;title=Atomic%20Information%20Resource%20%28AIR%29" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/en/project/r3dm/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#preface">Preface</a></li>
+    <li><a href="#background-information">Background Information</a>
+      <ul>
+        <li><a href="#atomicdb-evaluation">AtomicDB Evaluation</a></li>
+      </ul>
+    </li>
+    <li><a href="#entity-attribute-value-silo-structure">Entity-Attribute-Value &lsquo;Silo&rsquo; Structure</a>
+      <ul>
+        <li><a href="#table-form">Table form</a></li>
+        <li><a href="#xml-form">XML Form</a></li>
+        <li><a href="#json-form">JSON Form</a></li>
+      </ul>
+    </li>
+    <li><a href="#signified-sign-signifier-alternative-paradigm">Signified-Sign-Signifier Alternative Paradigm</a>
+      <ul>
+        <li><a href="#atomicdb-computational-semiotic-analysis-in-r3dm">AtomicDB Computational Semiotic Analysis in R3DM</a></li>
+      </ul>
+    </li>
+    <li><a href="#an-atomicdb-working-example">An AtomicDB Working Example</a>
+      <ul>
+        <li><a href="#terminology">Terminology</a></li>
+        <li><a href="#draw-model">Draw Model</a></li>
+        <li><a href="#add-model">Add Model</a></li>
+        <li><a href="#get-model">Get Model</a></li>
+        <li><a href="#add-concepts">Add Concepts</a></li>
+        <li><a href="#get-concepts">Get Concepts</a></li>
+        <li><a href="#add-collections">Add Collections</a></li>
+        <li><a href="#get-collections">Get Collections</a></li>
+        <li><a href="#add-data-values">Add Data Values</a></li>
+        <li><a href="#get-data-values">Get Data Values</a></li>
+      </ul>
+    </li>
+    <li><a href="#assimilation-of-a-table">Assimilation of a Table</a></li>
+    <li><a href="#review-and-discussion">Review and Discussion</a></li>
+    <li><a href="#cross-references">Cross-References</a></li>
+  </ul>
+</nav>
+
+<h2 id="preface">Preface</h2>
+<p>The content of this article is a mixture of these three LinkedIn posts, <a href="https://www.linkedin.com/pulse/towards-new-data-modelling-architecture-part-2-hatzis-phd">Towards a New Data Modelling Architecture - Part 2</a>, <a href="https://www.linkedin.com/pulse/air-atomic-information-resource-athanassios-i-hatzis-phd">Atomic Information Resource</a>, and <a href="https://www.linkedin.com/pulse/atomicdb-architecture-r3dm-athanassios-i-hatzis-phd">AtomicDB Architecture in R3DM</a>. We also used the full content of the original source from this Mathematica <a href="/en/post/20150320/R3DM_Part2.nb">notebook</a>. It is worth mentioning that the term AtomicDB, at that time, was used to signify both the brand-name and the database engine of a company that is now re-branded as X10SYS. <strong>R3DM</strong>, a vendor-neutral conceptual framework for data modeling, is sharing several fundamental architectural design principles with AtomicDB.</p>
+<p>In <a href="/en/post/20150317/">Part 1</a> of this series we talked about the main constructs of the Relational and Entity-Relationship data model. In this article we present a computational semiotic analysis of AtomicDB that is based on <strong>R3DM</strong> and we focus on explaining with an example the universal <strong>AIR</strong> unit that we will meet again on forthcoming posts of this series.</p>
+<h2 id="background-information">Background Information</h2>
+<p>The AtomicDB data model we describe has a long history behind it. Searching at Google for patents with the title &ldquo;Data base and knowledge operating system&rdquo; or with the title &ldquo;Data management architecture associating generic data items using reference&rdquo; we find several documents that are <a href="https://www.google.com/patents/US8051102">filed in the year 2003</a> from the inventor Ron Everett. The same year a &ldquo;proof of concept&rdquo; for this invention was successfully demonstrated with a <a href="https://www.linkedin.com/pulse/case-study-us-navy-jean-michel-letennier-1">use case of managing a 50+ milion records of spare/repair part requirements for US Navy ships</a>. Today AtomicDB is a fully fledged database management system that is based on Ron Everett&rsquo;s patented associative data items architecture. According to the vendor several pilots are currently running under big corporations and University research establishments.</p>
+<h3 id="atomicdb-evaluation">AtomicDB Evaluation</h3>
+<p>The author of this article has been an evaluator of AtomicDB with full access to test GUIs, APIs and web services of their system. In particular he explored their C# API functionality for developers. In order to make tests interactive and efficient most functions of their API have been ported to Wolfram Language using the <a href="https://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html">NETLink C#</a> interconnectivity package. Function calls and other expressions that you see here are based on <a href="/en/post/20151009/">AtomicDB Mathematica API</a> that is not included with the publication of this article. The Wolfram Language <a href="/en/post/20150320/R3DM_Part2.nb">notebook</a> is included for reference purposes.</p>
+<h2 id="entity-attribute-value-silo-structure">Entity-Attribute-Value &lsquo;Silo&rsquo; Structure</h2>
+<p>The Entity-Relationship model is universally accepted as the means to extend the relational model in order to give meaning to relationships. For our <a href="https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue/accdb">database example</a> in <a href="/en/post/20150317/">Part 1</a> we can draw the following ER diagram.</p>
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="/en/post/20150320/erdiagram.jpg" data-caption="depicts an association among the three entities of our database, Parts, Suppliers and Catalog, and shows the datatypes of their attributes. This is the classic many to many relationship between Parts and Suppliers where the Catalog is the associative entity, also known as the bridge table or join table. Primary and foreign keys are also specified for the names of the attributes that play that role">
+
+<img src="/en/post/20150320/erdiagram.jpg" alt="depicts an association among the three entities of our database, `Parts`, `Suppliers` and `Catalog`, and shows the datatypes of their attributes. This is the classic many to many relationship between `Parts` and `Suppliers` where the `Catalog` is the associative entity, also known as the bridge table or join table. Primary and foreign keys are also specified for the names of the attributes that play that role" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4>Many-to-Many Relationship</h4>
+  <p>
+    depicts an association among the three entities of our database, <code>Parts</code>, <code>Suppliers</code> and <code>Catalog</code>, and shows the datatypes of their attributes. This is the classic many to many relationship between <code>Parts</code> and <code>Suppliers</code> where the <code>Catalog</code> is the associative entity, also known as the bridge table or join table. Primary and foreign keys are also specified for the names of the attributes that play that role
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+
+<p>From a semantic point of view, similar diagrams are in need from users that want to express business processes. But when we reach the implementation stage software engineers have to marry business requirements with the technical constrains of the database system hence the ER diagram you see. This is known as &ldquo;The Model&rdquo;, a conceptual view of the user on data. The ER version of the model has several limitations, due to the architecture of RDBMS. One important consideration is that each attribute remains enclosed in the table structure; and in the case the same attribute appears in another table, it has to be repeated. In our example above, the primary key <code>pid</code> of <code>Parts</code>  is repeated as a foreign key <code>catpid</code> in <code>Catalog</code>. The difficulties that arise in data aggregation due to this limitation are substantial.</p>
+<p>The relational and the entity-relationship model made a huge impact in the IT world for nearly half a century. But during this long period of standardization it meant also one thing, everyone had to comply with the rules and requirements of the model. Everyone had to think in terms of Entity-Attribute-Value or Subject-Predicate-Object as it is known in the RDF semantic model. Programming languages have been affected too from this monolithic way of thinking. Although it proved to be advantageous to program with classes and objects, it created an artificial problem of how to map these onto persistent data structures on the disk, also known as the <a href="https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch">object-relational impedance mismatch</a> problem.</p>
+<p>Knowledge representation frameworks did not escape from this path. Ontologies expressed in OWL followed the same paradigm with classes, attributes, and values. Serialization methods such as JSON (object-name-value) and XML (element-attribute-value) also came after the same rationale. We consider that this is one of the main reasons that noSQL databases appeared on the scene recently. Key-value store, hierarchical semi-structured documents, column based and graph-property data structures are all attempts to provide a solution to this problem. We include a few examples of characteristic forms with comments by Ron Everett in order to contrast them with the alternative data model of AtomicDB.</p>
+<h3 id="table-form">Table form</h3>
+<blockquote>
+<p>When we attempt to use Tables as a storage paradigm for Information we discover that Tables are a namespace bound, non-dynamic, 2-D, structured storage paradigm that has a different structure for every Table in every Database. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
+<blockquote>
+<p>Each application is developed with unique and special queries written to each specific database design, table layout and named tables, columns and keys.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
+<p>Rows of <code>Parts</code> table from a Microsoft Access <a href="https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue/accdb">relational database</a> that we have used in <a href="/en/post/20150317/">Part 1</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(partsList <span style="color:#f92672">=</span>
+  <span style="color:#66d9ef">SQLExecute</span><span style="color:#f92672">[</span>conn,
+    <span style="color:#e6db74">&#34;select pid,pname from Parts where pid&lt;994&#34;</span>,
+    <span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> <span style="color:#66d9ef">TableForm</span>
+</code></pre></div><p><code>Out:</code> <img src="/en/post/20150320/notebook01.jpg" alt="notebook-output-01"></p>
+<h3 id="xml-form">XML Form</h3>
+<p>Rows of the table above serialized in XML</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span style="color:#f92672">&lt;dataroot&gt;</span>
+	<span style="color:#f92672">&lt;Parts&gt;</span>
+		<span style="color:#f92672">&lt;pid&gt;</span>991<span style="color:#f92672">&lt;/pid&gt;</span>
+		<span style="color:#f92672">&lt;pname&gt;</span>Left Handed Bacon Stretcher Cover<span style="color:#f92672">&lt;/pname&gt;</span>
+		<span style="color:#f92672">&lt;pcolor&gt;</span>Red<span style="color:#f92672">&lt;/pcolor&gt;</span>
+	<span style="color:#f92672">&lt;/Parts&gt;</span>
+	<span style="color:#f92672">&lt;Parts&gt;</span>
+		<span style="color:#f92672">&lt;pid&gt;</span>992<span style="color:#f92672">&lt;/pid&gt;</span>
+		<span style="color:#f92672">&lt;pname&gt;</span>Smoke Shifter End<span style="color:#f92672">&lt;/pname&gt;</span>
+		<span style="color:#f92672">&lt;pcolor&gt;</span>Black<span style="color:#f92672">&lt;/pcolor&gt;</span>
+	<span style="color:#f92672">&lt;/Parts&gt;</span>
+	<span style="color:#f92672">&lt;Parts&gt;</span>
+		<span style="color:#f92672">&lt;pid&gt;</span>993<span style="color:#f92672">&lt;/pid&gt;</span>
+		<span style="color:#f92672">&lt;pname&gt;</span>Acme Widget Washer<span style="color:#f92672">&lt;/pname&gt;</span>
+		<span style="color:#f92672">&lt;pcolor&gt;</span>Red<span style="color:#f92672">&lt;/pcolor&gt;</span>
+	<span style="color:#f92672">&lt;/Parts&gt;</span>
+<span style="color:#f92672">&lt;/dataroot&gt;</span>
+</code></pre></div><blockquote>
+<p>Some have hailed XML (RDF and triple stores) as the means to solve the n-dimensional relationship problem, because with it, meta-information can be captured, but XML is plagued with other problems, not the least of which are namespace binding requiring semantic accord, massively replicated tags and data, the heavy overhead of text based processing, the necessity of searching and indexing all the text in every possible XML document for each and every key/ value-tag/data match sought and the distribution of the tagged datasets across innumerable XML documents, stored in 2-D table-referenced 2-D file structures. Add to that list the overhead imposed by using Semantic Web languages and ontologies and the PhD level specialists required to develop and maintain these &lsquo;knowledge&rsquo; oriented systems and you get even more namespace entrenchment and hence specialization of the applications developed with it all <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
+<h3 id="json-form">JSON Form</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;dataroot&#34;</span>: {
+    <span style="color:#f92672">&#34;Parts&#34;</span>: [
+      {
+        <span style="color:#f92672">&#34;pid&#34;</span>: <span style="color:#e6db74">&#34;991&#34;</span>,
+        <span style="color:#f92672">&#34;pname&#34;</span>: <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>,
+        <span style="color:#f92672">&#34;pcolor&#34;</span>: <span style="color:#e6db74">&#34;Red&#34;</span>
+      },
+      {
+        <span style="color:#f92672">&#34;pid&#34;</span>: <span style="color:#e6db74">&#34;992&#34;</span>,
+        <span style="color:#f92672">&#34;pname&#34;</span>: <span style="color:#e6db74">&#34;Smoke Shifter End&#34;</span>,
+        <span style="color:#f92672">&#34;pcolor&#34;</span>: <span style="color:#e6db74">&#34;Black&#34;</span>
+      },
+      {
+        <span style="color:#f92672">&#34;pid&#34;</span>: <span style="color:#e6db74">&#34;993&#34;</span>,
+        <span style="color:#f92672">&#34;pname&#34;</span>: <span style="color:#e6db74">&#34;Acme Widget Washer&#34;</span>,
+        <span style="color:#f92672">&#34;pcolor&#34;</span>: <span style="color:#e6db74">&#34;Red&#34;</span>
+      }
+    ]
+  }
+}
+</code></pre></div><h2 id="signified-sign-signifier-alternative-paradigm">Signified-Sign-Signifier Alternative Paradigm</h2>
+<p>Entity-Attribute-Value bondage highlights the fact that three perspectives, semantics at the conceptual layer, representation at the symbol layer and encoding at the physical layer are mixed in such a way that it is very hard to separate and work with them at distinct levels of abstraction. The <strong>R3DM</strong>/<strong>S3DM</strong> conceptual framework is based on the natural process of semiosis where the signified, i.e. concept, entity, attribute and the signifier, i.e. value are referenced through symbols, i.e. signs, at discrete layers. The same philosophy is shared in the <a href="https://www.linkedin.com/pulse/atomicdb-architecture-r3dm-athanassios-i-hatzis-phd">architecture</a> of AtomicDB system.</p>
+<p><strong>From Data Items in Table to Information Atoms with NO Table</strong></p>
+<blockquote>
+<p>Every table is a silo. Every cell is an atom of data with no awareness of its contexts, or how it fits in to anything beyond its cell. It can be located by external intelligence but on its own it&rsquo; s a &ldquo;dumb&rdquo; participant in the system - the ultimate disconnected micro - fragment accessible only by knowing the column and the record it exists in. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
+<blockquote>
+<p>The alternative is to replace the data elements with information at the atomic level of the system. Instead of a data atom in a table, we have an information atom with no table. Information atoms exist in a multi-D vector space unbounded by data structures and know their context, such as a &ldquo;customer&rdquo; or a &ldquo;product&rdquo;, just like atoms in the physical world &ldquo;know&rdquo; they are nitrogen or hydrogen items and behave accordingly. Information atoms also know when they were created, when they were last modified, and what other information atoms of other types are associated with them. They know their parents, their siblings, and their workplace associates. They are powerful little entities and most certainly NOT fragments. Nor are they triple statements requiring endless extraneous indexing <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
+<p><strong>AtomicDB  is datatype and namespace agnostic, always fully contextualized, and structure free.</strong></p>
+<h3 id="atomicdb-computational-semiotic-analysis-in-r3dm">AtomicDB Computational Semiotic Analysis in R3DM</h3>
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="atomicdb-r3dm-references-1650x900.jpg" data-caption="illustrates the architecture of AtomicDB system according to R3DM framework. In particular, there are three layers that enable a computational semiotic analysis on AtomicDB; the semantic (S3), the sign (S2) and the storage (S1). An alternative notation and terminology is information resources (IRes-R3), representations (IRep-R2) and realizations (IRea-R1)">
+
+<img src="atomicdb-r3dm-references-1650x900.jpg" alt="illustrates the architecture of AtomicDB system according to **R3DM** framework. In particular, there are three layers that enable a computational semiotic analysis on AtomicDB; the semantic (**S3**), the sign (**S2**) and the storage (**S1**). An alternative notation and terminology is information resources (**IRes-R3**), representations (**IRep-R2**) and realizations (**IRea-R1**)" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4>AtomicDB Architecture in R3DM</h4>
+  <p>
+    illustrates the architecture of AtomicDB system according to <strong>R3DM</strong> framework. In particular, there are three layers that enable a computational semiotic analysis on AtomicDB; the semantic (<strong>S3</strong>), the sign (<strong>S2</strong>) and the storage (<strong>S1</strong>). An alternative notation and terminology is information resources (<strong>IRes-R3</strong>), representations (<strong>IRep-R2</strong>) and realizations (<strong>IRea-R1</strong>)
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+
+<p>Each layer plays a distinct role and it is clearly separable from the other two. This serves fully the trilateral principle in <strong>R3DM</strong>. Storage-Realization layer, depicted with green boxes, portrays how AtomicDB system is implemented with .NET framework at the API level. The AtomicDB <strong>Core Key-Value</strong> primitive data structure is used to build successive nested <a href="https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx">List Class</a> containers and association types, see [<strong>Fig. 3</strong>]. This is how the <strong>AIR</strong> of AtomicDB is realized at (<strong>S1</strong>).</p>
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="atomicdb-r3dm-relations-800x900.jpg" data-caption="different kinds of linking (AIR) units">
+
+<img src="atomicdb-r3dm-relations-800x900.jpg" alt="different kinds of linking (AIR) units" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4>AtomicDB Association Types</h4>
+  <p>
+    different kinds of linking (AIR) units
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+
+<p>At the Sign layer (<strong>S2</strong>), [<strong>Fig. 2</strong>], the <strong>AIR</strong> receives its symbolic representation. A mere list of four integer numbers is adequate to represent efficiently any piece of information. It is the golden ratio in postmodern era data modeling. It can represent types, instances, and properties, and associate these in a hypergraph network. It is truly a web of information resources based on the power of semiosis, with a reference mechanism not built with character strings (<a href="https://en.wikipedia.org/wiki/Uniform_Resource_Locator">URL</a>) but similar to Internet Protocol address (<a href="https://en.wikipedia.org/wiki/IP_address">IP</a>). This <strong>AIR</strong> information representation serves two principal functions; information resource identification and location addressing, i.e. dereferencing and retrieval, but it does not suffer from the identity problem crisis of the RDFised web. The various forms of <strong>KeyVector</strong> that correspond to the nested data structures at layer (<strong>S1</strong>) are depicted with purple boxes.</p>
+<p>Finally (<strong>S3</strong>) layer, [<strong>Fig. 2</strong>], depicted with blue boxes, put information resources in their semantic perspective and order with a four level hierarchical structure of containers. It is the kind of logic that developers use to manage classes, properties and objects (<strong>OOP</strong>), or tables, records and fields (<strong>RDBMS</strong>), or objects, keys and values (<strong>XML-JSON</strong>) and subject, predicate, objects (<strong>RDF</strong>). But Ron Everett&rsquo;s approach differs substantially from previous data models.  Information resources are not handled by name, they are always represented and function as meaningful 4D number vectors. We escape from the namespace entanglement and alleviate the complexity of linked information by smart (<strong>AIR</strong>) information resource units that are represented in a uniform way and their digital form can be processed, retrieved and stored efficiently and/or combined to create composite information structures.</p>
+<h2 id="an-atomicdb-working-example">An AtomicDB Working Example</h2>
+<p>In order to understand better the difference between a <a href="https://en.wikipedia.org/wiki/Namespace"><strong>Namespace</strong></a> bounded DBMS vs an <strong>AIR</strong> based DBMS we exemplify key points of AtomicDB architecture in R3DM. But before we start unfolding our example we present AtomicDB terminology.</p>
+<h3 id="terminology">Terminology</h3>
+<ul>
+<li>
+<p><code>Data Item</code> is a particular type of item that holds an atomic piece of data (an atomic value).</p>
+</li>
+<li>
+<p><code>Collection</code> (data set) is a generic container for data items with no duplicates. A collection is similar to the notion of attribute (column) data set in the relational model.</p>
+</li>
+<li>
+<p><code>Nexus item</code> is a special type of data item whose role is to keep associations with the other data items in a record. Nexus item plays a similar role to that of a record in the relational model.</p>
+</li>
+<li>
+<p><code>Nexus Collection</code> is a special type of collection which holds nexus items only. Nexus collection act similarly to the primary key column in the relational data model.</p>
+</li>
+<li>
+<p><code>Record</code> is a set of data items from different collections each associated to the same nexus item (exactly one per record)</p>
+</li>
+<li>
+<p><code>Group</code> refers to several collections and associates them. The group is not a container for collections. Each group has one and only one nexus collection.</p>
+</li>
+<li>
+<p><code>Bridge Collection</code> is a certain type of collection that can be associated with more than one group. Bridge collection act similarly to the foreign key column in the relational data model</p>
+</li>
+<li>
+<p><code>Concept</code> is a special type of item that represents uniquely one collection of items. A collection can have one or more representative concepts. A concept can be thought as a reference to collection.</p>
+</li>
+<li>
+<p><code>Model</code> is a generic container for unique concepts that are associated to form higher constructs and relations. Model is similar to a database schema, or view.</p>
+</li>
+</ul>
+<h3 id="draw-model">Draw Model</h3>
+<p>We start by designing a simple concept map using the <a href="http://cmap.ihmc.us/">CMAP Tools</a> that corresponds to the ER diagram of [<strong>Fig 1.</strong>] above.</p>
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="spcdiagram.jpg" >
+
+<img src="spcdiagram.jpg" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" class="numbered">
+  <h4>Schema with CMAP Tools</h4>
+  
+</figcaption>
+
+</figure>
+
+<p><strong>Entities</strong> in this diagram, (<code>Groups</code> - cyan square boxes), are formed by grouping <strong>Attributes</strong>, i.e. <code>Collections</code>. One or more <strong>Attributes</strong> (<code>Concepts</code> - oval shape) are shared between two or more <strong>Entities</strong> and form <code>bridge collections</code>. This is the equivalent notion of the <a href="https://en.wikipedia.org/wiki/Associative_entity">bridge table</a> in relational and entity-relationship theory. A closer examination of the links reveals that they all have the same type, i.e. <code>isRelatedTo</code>, and <strong>Attributes</strong> are always connected to <strong>Entities</strong> with that operator. According to R3DM we are examining information resources at (<strong>S3</strong>) layer.</p>
+<h3 id="add-model">Add Model</h3>
+<p>We can import this concept map or alternatively we can create a new <code>Model</code> programmatically by passing its name as a parameter to the <code>addModel</code> function. Then we can use <code>getModelByName</code> function to get back a Key-Value <a href="https://reference.wolfram.com/language/ref/Rule.html">Rule</a> representation of the <code>Model</code> we added to the system:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">modelName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Parts-Suppliers Catalog Model&#34;</span>;
+
+addModel<span style="color:#f92672">[</span>modelName<span style="color:#f92672">]</span>
+
+<span style="color:#e6db74">Out</span>:
+<span style="color:#960050;background-color:#1e0010">«</span><span style="color:#66d9ef">NETObject</span><span style="color:#f92672">[</span><span style="color:#66d9ef">System</span><span style="color:#f92672">.</span>Collections<span style="color:#f92672">.</span>Generic<span style="color:#f92672">.</span>List<span style="color:#e6db74">`1
+</span><span style="color:#e6db74">   [System.Collections.Generic.List`</span><span style="color:#ae81ff">1</span>
+     <span style="color:#f92672">[</span><span style="color:#66d9ef">IAMCore_SharpClient</span><span style="color:#f92672">.</span>Core_KeyValuePair<span style="color:#f92672">]]]</span><span style="color:#960050;background-color:#1e0010">»</span>
+</code></pre></div><h3 id="get-model">Get Model</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(model <span style="color:#f92672">=</span> getModelByName<span style="color:#f92672">[</span>modelName<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVP
+
+<span style="color:#e6db74">Out</span>: {<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">256</span>}<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Parts-Suppliers Catalog Model&#34;</span>
+</code></pre></div><p>The key <code>{0, 3, 13, 256}</code>, i.e. <strong>Sign</strong> (<strong>S2</strong>/<strong>R2</strong> - <strong>IRep</strong>), is a reference 4D vector that we use to access the <code>Model</code> item  and the value is the string we assigned as the name of the <code>Model</code>. Everything that is stored in AtomicDB has a key with four dimensions (<strong>Environment</strong>, <strong>System</strong>, <strong>Context</strong>, <strong>Item</strong>) and a value. Each dimension can be semantically interpreted in a different way, but they are always connected hierarchically. This makes AtomicDB fully symmetrical in terms of values, structures and relationships.</p>
+<h3 id="add-concepts">Add Concepts</h3>
+<p>We continue by adding the <code>Concepts</code> of the <code>Model</code> programmatically. The two arguments of function <code>addConceptsByName</code> are the name of the <code>Model</code> and a list of <code>Concept</code> names. The first name in the list signifies a <code>Nexus</code> concept that is used to associate the rest of the concepts in the list.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">catalogConceptNames <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;NX_Catalog&#34;</span>, <span style="color:#e6db74">&#34;SupplierIdentifier&#34;</span>, <span style="color:#e6db74">&#34;PartIdentifier&#34;</span>, <span style="color:#e6db74">&#34;PartCost&#34;</span>};
+partConceptNames <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;NX_Part&#34;</span>, <span style="color:#e6db74">&#34;PartIdentifier&#34;</span>, <span style="color:#e6db74">&#34;PartName&#34;</span>, <span style="color:#e6db74">&#34;PartColor&#34;</span>};
+supplierConceptNames <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;NX_Supplier&#34;</span>, <span style="color:#e6db74">&#34;SupplierIdentifier&#34;</span>, <span style="color:#e6db74">&#34;SupplierName&#34;</span>, <span style="color:#e6db74">&#34;SupplierAddress&#34;</span>};
+
+(catalogConcepts <span style="color:#f92672">=</span> addConceptsByName<span style="color:#f92672">[</span>modelName, catalogConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Catalog</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartCost</span>
+
+(partConcepts <span style="color:#f92672">=</span> addConceptsByName<span style="color:#f92672">[</span>modelName, partConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
+
+(supplierConcepts <span style="color:#f92672">=</span> addConceptsByName<span style="color:#f92672">[</span>modelName, supplierConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Supplier</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierName</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierAddress</span>
+</code></pre></div><p>The first thing you should notice is that the numbering of dimensions for <code>Concepts</code> does not follow the previous pattern with the <code>Model</code> 4D vector. Semantically this means we have a different system that can be interpreted in the following way:</p>
+<p>There are three <code>Groups</code> with four <code>Concepts</code> each added to our <code>Model</code>.  Notice that the first three dimensions of the keys remain constant but the last dimension varies to denote instances of <code>Concepts</code> that belong to the same <code>Model</code>. In this case, the <code>Item</code> dimension of the reference key plays the role of the <code>Concept</code> and the <code>Context</code> dimension plays the role of the <code>Model</code>. The other two dimensions are related possibly to the kind of repository, i.e. we are storing information about models, and our localhost database development environment. Contrast this representation with the previous vector <code>{0, 3, 13, 256}</code> where the <code>Item</code> dimension plays the role of the <code>Model</code>. This indicates that reference vectors in AtomicDB are cleverly inter-related; notice the position of number <code>256</code> that signifies always the <code>Model</code> in these 4D vectors.</p>
+<p>Another critical observation is that <code>PartIdentifier</code> and <code>SupplierIdentifier</code> <code>Concepts</code> are members of more than one <code>Group</code>. These are the <code>Bridge Concepts</code> and play the same role as the primary and foreign keys in relational data sets. But one of the main differences and a great advantage of this approach is that this time data sets are not duplicated. The same <code>Collection</code> of items, i.e. data set of an attribute, can be referenced by many <code>Concepts</code>.</p>
+<h3 id="get-concepts">Get Concepts</h3>
+<p>Verify that all the concepts have been added to our <code>Model</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">getConceptsFromModelName<span style="color:#f92672">[</span>modelName<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Catalog</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartCost</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Supplier</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierName</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierAddress</span>
+</code></pre></div><h3 id="add-collections">Add Collections</h3>
+<p>With the following <code>addCollectionsAutoMapGroupByName</code> function <code>Collections</code> are automatically associated with the <code>Concepts</code> and a <code>Group</code> is added. Notice that both <code>Collections</code> and <code>Models</code> have been created with the same <code>Environment</code> and <code>System</code> dimensions, it is the third dimension <code>Context</code> that differentiates the type of instances, i.e. items.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(catalogCollections <span style="color:#f92672">=</span>
+   addCollectionsAutoMapGroupByName<span style="color:#f92672">[</span>modelName, catalogConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">257</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Catalog</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">258</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">259</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">260</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartCost</span>   
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(partCollections <span style="color:#f92672">=</span>
+   addCollectionsAutoMapGroupByName<span style="color:#f92672">[</span>modelName, partConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">262</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">259</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">263</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">264</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(supplierCollections <span style="color:#f92672">=</span>
+   addCollectionsAutoMapGroupByName<span style="color:#f92672">[</span>modelName, supplierConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">265</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Supplier</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">258</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">266</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierName</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">267</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierAddress</span>
+</code></pre></div><p>And bridging is achieved by having <code>Bridge Collections</code>, <code>{0,3,15,259}</code> and <code>{0,3,15,258}</code> that are equivalent to <code>Bridge Concepts</code>.</p>
+<h3 id="get-collections">Get Collections</h3>
+<p>Verify that we have added all the collections to the system:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">getCollectionsFromModelName<span style="color:#f92672">[</span>modelName<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">257</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Catalog</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">258</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">259</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">260</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartCost</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">262</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">263</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">264</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">265</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Supplier</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">266</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierName</span>
+{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">267</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierAddress</span>
+</code></pre></div><h3 id="add-data-values">Add Data Values</h3>
+<p>Our next step is to add values into a separate system, at the same <code>Environment</code> with that of <code>Concepts</code> using the <code>Item</code> numbers from the <code>Collections</code> above. First we read relational datasets with <a href="http://reference.wolfram.com/language/DatabaseLink/ref/SQLSelect.html"><code>SQLSelect</code></a> function and we form <strong>Records</strong> that are represented with the <a href="https://reference.wolfram.com/language/ref/List.html"><code>List</code> built-in symbol</a> of Wolfram Language.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">catalogDataSet<span style="color:#f92672">=</span><span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn,<span style="color:#e6db74">&#34;Catalog&#34;</span>,<span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">False</span><span style="color:#f92672">]</span>;
+partDataSet <span style="color:#f92672">=</span> <span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn,<span style="color:#e6db74">&#34;Parts&#34;</span>,<span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">False</span><span style="color:#f92672">]</span>;
+supplierDataSet<span style="color:#f92672">=</span><span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn,<span style="color:#e6db74">&#34;Suppliers&#34;</span>,<span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">False</span><span style="color:#f92672">]</span>;
+</code></pre></div><p>Then we add records with the <code>addRecordsByName</code> command of our AtomicDB API passing three arguments; the name of the <code>Model</code>, <code>Concept</code> names, and the body of relational dataset that we read in the previous step.</p>
+<p>These are the items added to the NX_Catalog nexus collection</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">addRecordsByName<span style="color:#f92672">[</span>modelName, catalogConceptNames, catalogDataSet<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">10</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">11</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">11</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">12</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">12</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">13</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">13</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">14</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">14</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">15</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">15</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">16</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">16</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">17</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">17</span>
+</code></pre></div><p>These are the items added to the NX_Part nexus collection</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">addRecordsByName<span style="color:#f92672">[</span>modelName, partConceptNames, partDataSet<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>  
+</code></pre></div><p>These are the items added to the NX_Supplier nexus collection</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">addRecordsByName<span style="color:#f92672">[</span>modelName, supplierConceptNames, supplierDataSet<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">265</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">265</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">265</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">265</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
+</code></pre></div><h3 id="get-data-values">Get Data Values</h3>
+<p>In order to read back the data values, we use <code>Concepts</code> and the <code>getItemsFromConceptNames</code> function.</p>
+<p>For example to get data <code>Items</code> from the <strong>Part</strong> <code>Concepts</code> we pass the name of the <code>Model</code> and the <code>Concept</code> names for the <strong>Part</strong> <code>Group</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">getItemsFromConceptNames<span style="color:#f92672">[</span>modelName, partConceptNames<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>
+
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">992</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">993</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">994</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">995</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">996</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">997</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">998</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">999</span>
+
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Left</span> <span style="color:#66d9ef">Handed</span> <span style="color:#66d9ef">Bacon</span> <span style="color:#66d9ef">Stretcher</span> <span style="color:#66d9ef">Cover</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Smoke</span> <span style="color:#66d9ef">Shifter</span> <span style="color:#66d9ef">End</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Acme</span> <span style="color:#66d9ef">Widget</span> <span style="color:#66d9ef">Washer</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span>I <span style="color:#66d9ef">Brake</span> <span style="color:#66d9ef">for</span> <span style="color:#66d9ef">Crop</span> <span style="color:#66d9ef">Circles</span> <span style="color:#66d9ef">Sticker</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Anti</span><span style="color:#f92672">-</span><span style="color:#66d9ef">Gravity</span> <span style="color:#66d9ef">Turbine</span> <span style="color:#66d9ef">Generator</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Fire</span> <span style="color:#66d9ef">Hydrant</span> <span style="color:#66d9ef">Cap</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span> <span style="color:#66d9ef">Segment</span> <span style="color:#66d9ef">Display</span>
+
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Red</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Black</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Silver</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Translucent</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Cyan</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Magenta</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Green</span>
+</code></pre></div><p>Check that although we have nine records, i.e. nine identifiers for <code>Parts</code> and nine <code>Nexuses</code> respectively, we have only seven color values or seven <code>Part</code> names. This is because in relational data model certain values of a column/attribute are repeated but in <code>Associative Data Model</code> are single instances</p>
+<p>In a similar way, to get data <code>Items</code> from the <strong>Catalog</strong> <code>Concepts</code> we pass the name of the <code>Model</code> and the <code>Concept</code> names for the <strong>Catalog</strong> <code>Group</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">getItemsFromConceptNames<span style="color:#f92672">[</span>modelName, catalogConceptNames<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">10</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">11</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">11</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">12</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">12</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">13</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">13</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">14</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">14</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">15</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">15</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">16</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">16</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">17</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">17</span>
+
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1081</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1082</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1083</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1084</span>
+
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">992</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">993</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">994</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">995</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">996</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">997</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">998</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">999</span>
+
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">36</span><span style="color:#f92672">.</span><span style="color:#ae81ff">1</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">42</span><span style="color:#f92672">.</span><span style="color:#ae81ff">3</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">15</span><span style="color:#f92672">.</span><span style="color:#ae81ff">3</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">20</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">124</span><span style="color:#f92672">.</span><span style="color:#ae81ff">23</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">11</span><span style="color:#f92672">.</span><span style="color:#ae81ff">7</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">75</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">16</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">55</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span><span style="color:#f92672">.</span><span style="color:#ae81ff">95</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">11</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">12</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">12</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span><span style="color:#f92672">.</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">13</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">57</span><span style="color:#f92672">.</span><span style="color:#ae81ff">3</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">14</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">22</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">15</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">48</span><span style="color:#f92672">.</span><span style="color:#ae81ff">6</span>
+</code></pre></div><p>Notice that values for the <code>PartIdentifier</code> <code>Bridging Concept</code> are not duplicated but they are referenced instead by the same 4D key vectors whether we are in Catalog <code>Group</code> or Part <code>Group</code>.</p>
+<h2 id="assimilation-of-a-table">Assimilation of a Table</h2>
+<p>So far so good, but in practice everyone is accustomed to the use of tables. Table is the favorite manageable structure and convenient medium of exchanging-exporting/importing datasets. Therefore the challenge is that any alternative solution on data architecture should provide the means to view and handle data in tables with the minimum effort no matter what is the underlying structure. For this reason we continue our example with a comparison of how we retrieve records from a relational table and assimilate this operation to a <code>Group</code> of items that are represented with a nested <a href="https://reference.wolfram.com/language/ref/List.html">List</a> of <a href="https://reference.wolfram.com/language/ref/Rule.html">Rules</a>.</p>
+<p><strong>A. Relational</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">SQLExecute</span><span style="color:#f92672">[</span>conn, <span style="color:#e6db74">&#34;select * from Parts&#34;</span>, <span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> <span style="color:#66d9ef">TableForm</span>
+</code></pre></div><p><code>Out:</code>
+<img src="/en/post/20150320/parts-table-500x200.jpg" alt="notebook-output-parts table"></p>
+<p><strong>B. Associative</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(nexusMemberItems <span style="color:#f92672">=</span> getItemsFromConceptNames<span style="color:#f92672">[</span>modelName, <span style="color:#e6db74">&#34;NX_Part&#34;</span><span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>
+
+partConcepts<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+
+<span style="color:#e6db74">Out</span>:
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
+{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
+
+
+records <span style="color:#f92672">=</span> getAnything<span style="color:#f92672">[</span>
+  model,
+  partConcepts<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">]</span>,
+  nexusMemberItems,
+  setType<span style="color:#f92672">-&gt;</span>enGridType<span style="color:#f92672">]</span>
+
+<span style="color:#e6db74">Out</span>:
+<span style="color:#960050;background-color:#1e0010">«</span> <span style="color:#66d9ef">NETObject</span>
+<span style="color:#f92672">[</span><span style="color:#66d9ef">System</span><span style="color:#f92672">.</span>Collections<span style="color:#f92672">.</span>Generic<span style="color:#f92672">.</span>List<span style="color:#e6db74">`1
+</span><span style="color:#e6db74">  [System.Collections.Generic.List`</span><span style="color:#ae81ff">1</span>
+    <span style="color:#f92672">[</span><span style="color:#66d9ef">IAMCore_SharpClient</span><span style="color:#f92672">.</span>Core_KeyValuePair<span style="color:#f92672">]]]</span><span style="color:#960050;background-color:#1e0010">»</span>
+
+res <span style="color:#f92672">=</span> coreKVPL1ToRules <span style="color:#e6db74">/@ records@ToArray[];
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">res /</span><span style="color:#f92672">/</span> <span style="color:#66d9ef">TableForm</span>
+</code></pre></div><p><code>Out:</code>
+
+
+
+
+
+
+<figure>
+
+  <a data-fancybox="" href="parts-items-1130x170.jpg" >
+
+<img src="parts-items-1130x170.jpg" >
+</a>
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Key/Value records of Part Items</h4>
+  
+</figcaption>
+
+</figure>
+</p>
+<h2 id="review-and-discussion">Review and Discussion</h2>
+<p>How do we design a data model, how do we connect data, how do we represent information, how do we store or retrieve them ? These are all fundamental questions in data modeling but there is a common key to unlock them. You have to start by defining a primitive information resource, and then understand how one can build complex information structures on top it. And this is because everything in nature or systems follow this kind of abstraction from the simple to the most sophisticated. There are patterns that recur at progressively smaller scales. There are fundamental building blocks that can build higher-order structures.</p>
+<p>For more than thirty years, the data modeling world is dominated by records. Records in the form of a row in a table, or in a form of hierarchically structured XML/JSON documents, or in the form of property-graph nodes. Many consider the fundamental structure of RDF triplet, Subject-Predicate-Object, but this can be seen too as a form of a record that confines you to think in terms of a function-functor that maps information resources from a domain set to information resources of a range set. Neither the nature or reference mechanism of these resources, nor their linkage type are defined in a sufficient or efficient manner.</p>
+<p>An alternative view on data modeling that can extend and enrich RDF is introduced in this article. It is based on <strong>AIR</strong>, analyzed with R3DM framework, and exemplified with AtomicDB. <strong>AIR</strong> is the oxygen that makes this database technology breath. It makes it alive and kicking.</p>
+<!-- raw HTML omitted -->
+<p><strong>AIR</strong> fits perfectly to the duality principle of R3DM conceptual model and the <a href="https://www.linkedin.com/groups/6514034/6514034-5942584139847868418"><strong>Everything is Represented with a Symbol</strong></a> corollary. There is no better example to think about this than digital representations as sequences of binary digits in the internal memory state of our machines. In a digital computer, everything is represented and addressed at the machine level with sequences of 0s and 1s. In order to represent information, Ron Everett managed to conceive in a similar way at a higher abstracted level an identification and addressing schema of information units. He wrapped atomic data types, such as a string or number, and made them the core of these units and he used a four-dimensional space to uniformly address, identify, bind and encode <strong>AIRs</strong>. Thus in AtomicDB each <strong>AIR</strong> unit is a self-referenced and uniquely identified item in a 4D space with sets of 4D references to other <strong>AIRs</strong> for classification purpose, and embedded data values for querying purpose.</p>
+<p>According to R3DM we have three layers of abstraction, the semantic, the sign, and the storage-data layer. The 4D reference type of <strong>AIR</strong> is the implementation of sign layer and it is bridging the semantic with the storage layer in the most semiotic way. This is a fully apprehensive act of responding to the fact that <strong>atomic data types and data structures cannot play sufficiently both the role of encoding and that of representing information</strong>. You have to make these two roles distinct. This is exactly what we manage in a beautiful way with these references. The symbolic layer is created in this 4D space and instead of having dissimilar atomic data types and abstract complex data types, you have uniform <strong>AIR</strong> units and aggregates of them e.g. collections, records, sets and multi-sets that are referenced in exactly the same way .</p>
+<p>This is a completely, new, radical perspective on data modeling. It is a turning point and there has to be ample evidence to support claims that DBMS based on this are superior than their counterparts. We are determined to investigate, enhance, and apply that kind of database technology and connect it to the overall semiotic perspective of R3DM conceptual framework. It is possible that R3DM based on <strong>AIR</strong> can assimilate all other SQL and noSQL and SPARQL queries and data models in a simpler, more intuitive, faster, more secure, highly consistent, and in a large scale. This uniform structural symmetry based on <strong>AIR</strong>, both in terms of value representation and bi-directional relationships is perhaps the most innovative feature and what will hopefully make <strong>AIR</strong> the universal atomic information unit in the whole information science field. If not, I am sure that many other similar paradigms in data modeling will be based on this model, because a whole new unexplored path is now open and unimaginable applications of this technology can be turned into a reality.</p>
+<h2 id="cross-references">Cross-References</h2>
+<ul>
+<li><a href="https://www.linkedin.com/pulse/towards-new-data-modelling-architecture-part-2-hatzis-phd">LinkedIn Published Posts</a></li>
+<li><a href="https://www.linkedin.com/pulse/air-atomic-information-resource-athanassios-i-hatzis-phd">LinkedIn Published Posts</a></li>
+<li><a href="https://www.linkedin.com/pulse/atomicdb-architecture-r3dm-athanassios-i-hatzis-phd">LinkedIn Published Posts</a></li>
+</ul>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Ron Everett in &ldquo;<a href="https://www.linkedin.com/pulse/introduction-associative-information-systems-n-normal-letennier">Introduction to Associative Information Systems</a> - (N) Normal Form&rdquo; post by Jean-Michelle Letennier <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tags/abstraction_software_engineering/">Abstraction_(software_engineering)</a>
+  
+  <a class="badge badge-light" href="/en/tags/information/">Information</a>
+  
+  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  
+  <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
+  
+  <a class="badge badge-light" href="/en/tags/signified_and_signifier/">Signified_and_signifier</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
+  
+  <a class="badge badge-light" href="/en/tags/data_model/">Data_model</a>
+  
+  <a class="badge badge-light" href="/en/tags/semantics/">Semantics</a>
+  
+  <a class="badge badge-light" href="/en/tags/database/">Database</a>
+  
+  <a class="badge badge-light" href="/en/tags/database_management_system/">Database_management_system</a>
+  
+  <a class="badge badge-light" href="/en/tags/graph_database/">Graph_database</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_semiotic_hypergraph/">associative_semiotic_hypergraph</a>
+  
+  <a class="badge badge-light" href="/en/tags/computational_semiotics/">Computational_semiotics</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_entity/">Associative_entity</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
+  
+  <a class="badge badge-light" href="/en/tags/association_object-oriented_programming/">Association_(object-oriented_programming)</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_array/">Associative_array</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:athanassios@healis.eu" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/ahatzis" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/athanhat" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-quora"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://vimeo.com/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-vimeo"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://stackoverflow.com/users/5364935/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/en/post/20150317/">Relational/ER Constructs in Wolfram Language</a></li>
+          
+          <li><a href="/en/project/r3dm/">S3DM/R3DM</a></li>
+          
+          <li><a href="/en/post/20131001/">S3DM/R3DM Q&amp;A</a></li>
+          
+          <li><a href="/en/post/20130403/">Origins of a new theoretical framework on information representation</a></li>
+          
+          <li><a href="/en/post/20131105/">S3DM/R3DM vs RDF</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/en/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+
+    
+
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          Powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/healiseu/" target="_blank" rel="noopener" title="Star Me"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/healiseu" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCoCkNTkn1dAbtyr5EMvzc7w/videos" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener" title="Connect with Me"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener" title="Contact Me"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:athanassios.hatzis?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener" title="Ping Me"><i class="fab fa-quora" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://disqus.com/home/forums/healiseu/" target="_blank" rel="noopener" title="Discuss on Disqus"><i class="fas fa-comments" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

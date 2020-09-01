@@ -41,6 +41,7 @@
         &lt;li&gt;&lt;a href=&#34;#documentation&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
 
@@ -89,6 +90,10 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;p&gt;&lt;a href=&#34;https://healis.eu/en/hmorph/#demo_test&#34;&gt;Demonstration of HyperMorph functionality&lt;/a&gt; on data resources and demo scripts that are included in the distribution.&lt;/p&gt;
 &lt;h3 id=&#34;documentation&#34;&gt;Documentation&lt;/h3&gt;
 &lt;p&gt;A draft of the &lt;a href=&#34;https://hypermorph.healis.eu/docs&#34;&gt;documentation&lt;/a&gt; from comments in source code is generated automatically with Sphinx and it is hosted at GitHub.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/hypermorph-athanassios-hatzis/&#34;&gt;LinkedIn - 26/06/2020 Pulse Article&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

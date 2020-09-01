@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Granularity on HEALIS</title>
+    <link>https://healis.eu/en/tags/granularity/</link>
+    <description>Recent content in Granularity on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Sat, 10 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/en/tags/granularity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Back to the roots, Relational Data Model</title>
+      <link>https://healis.eu/en/post/20180310/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20180310/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#back-to-the-roots&#34;&gt;Back to the roots&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#relational-model-vs-other-data-models&#34;&gt;Relational model vs Other data models&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#our-perspective&#34;&gt;Our perspective&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;back-to-the-roots&#34;&gt;Back to the roots&lt;/h2&gt;
+&lt;p&gt;Recently, I realized that the &lt;strong&gt;associative, semiotic, hypergraph&lt;/strong&gt;, or in short the &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt;, technology framework we propose to be adopted in database management systems can be considered in many ways an extension to &lt;a href=&#34;https://en.wikipedia.org/wiki/Edgar_F._Codd&#34;&gt;Codd&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_model&#34;&gt;Relational Model&lt;/a&gt;. I am aware that this is a big claim and certainly this is not the place or the time to lay down my arguments, suffice it to say how this occurred to me.&lt;/p&gt;
+&lt;p&gt;I have partially implemented &lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt; technology twice on top of two different &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_store&#34;&gt;data stores&lt;/a&gt; and I noticed that those &lt;strong&gt;add and get operations&lt;/strong&gt; we defined are closely related to Codd&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_algebra&#34;&gt;relational algebra operations&lt;/a&gt;, while data sets, i.e. domains, and a user defined type system match the &lt;a href=&#34;https://en.wikipedia.org/wiki/Set_(mathematics)&#34;&gt;sets defined in mathematics&lt;/a&gt; and relational theory. Coincidentally Codd&amp;rsquo;s Relational logic goes back to Aristotle and the corner stone of our technology, which is the &lt;a href=&#34;https://healis.eu/en/project/r3dm/#computational-semiotic-triangle&#34;&gt;computational semiotic triangle&lt;/a&gt;, goes back to Aristotle too. I will briefly mention that one basic difference is that both the heading set and the body tuples of the Relation, in fact everything, are transformed and uniformly represented with numerical key references. Therefore it can also be called &lt;strong&gt;Reference Database Management System (RDBMS)&lt;/strong&gt;. All these are simply good indications. I believe we are on the right track.&lt;/p&gt;
+&lt;p&gt;The truth is, and I will quote &lt;a href=&#34;https://en.wikipedia.org/wiki/Christopher_J._Date&#34;&gt;Chris Date&lt;/a&gt; here, that:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;if you are proposing to replace technology A by technology B first is counted on you to understand technology A and then it is counted on you that there is some problem that technology A does not solve and technology B does solve&lt;/em&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And the best person I have found to teach me Relational database technology, so that I can acquire an in-depth understanding, is Chris Date himself. The following video is a clip from an excellent, &lt;a href=&#34;http://shop.oreilly.com/product/0636920030553.do&#34;&gt;illuminating workshop that explains Codd&amp;rsquo;s Relational Theory&lt;/a&gt; to computer professionals, but most importantly, he shows what a real relational product would be like, and how and why it would be so much better than what’s currently available.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/qx0F7TfA8CI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;relational-model-vs-other-data-models&#34;&gt;Relational model vs Other data models&lt;/h2&gt;
+&lt;p&gt;That said, allow me to have my doubts about whether many of the proponents of other database technologies, including those in SQL databases and those in NoSQL databases, have understood what are really the differences with respect to Relational model and at what abstraction level they occur. Again this is not the place or time to elaborate on this. Instead, I am inviting you to ponder on the architectural design of modern database management systems.&lt;/p&gt;
+&lt;p&gt;You see in practice, it is too difficult to make a very clean separation between the physical, logical and conceptual levels of information. From an engineer&amp;rsquo;s point of view it is hard to separate theoretical from practical purposes. Moreover, many of these NoSQL DBMS, that are in fashion nowadays, are suited to solve a particular type of problem and this is why you often hear that big corporations and large companies have many different kinds of DBMS at the back-end. Not to mention that nowadays there is the trend to market many DBMS as multi-model database systems. And that made me also to realize that:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;there has to be a distinction between those problems that one solves at the physical level e.g. physical layout, partition and availability and those that apply more at the logical-conceptual level e.g. integrity and data modeling. Therefore, I foresee that in the future systems will have to use a combination of these two levels that somehow will have to be tuned and made to work harmonically independent of each other&lt;/em&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;our-perspective&#34;&gt;Our perspective&lt;/h2&gt;
+&lt;p&gt;This is our perspective towards the architectural design of modern database management systems that fully justifies our choice of &lt;strong&gt;marketing TRIADB as a &lt;a href=&#34;https://en.wikipedia.org/wiki/Middleware&#34;&gt;middleware&lt;/a&gt;&lt;/strong&gt;. We are focusing to provide an &lt;strong&gt;efficient and effective solution at the logical and conceptual level&lt;/strong&gt; using an existing implementation of the database physical layer. Relational modeling theory applies here too, from what I understand it was the implementation details at the physical level and perhaps other naive simplifications that made many to depart from the original Relational model. So it&amp;rsquo;s time to return back to the roots and make some real progress.&lt;/p&gt;
+&lt;p&gt;In case you, as a reader, have the same feelings and see some truth on my writing, I would be more than happy to discuss with you about the progress we are making with TRIADB and associative, semiotic, hypergraph technology and definitely exchange ideas and share some common thoughts on these database topics. Stay tuned.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[LinkedIn - 20180305 Pulse Article - HEALIS: Build valuable relations; establish effective communications][1000]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Chris Date - SQL and Relational Theory Master Class - O&amp;rsquo;Reilly Workshop &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Athanassios I. Hatzis, LinkedIn post, March 2018 &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Are our old data model standards out of shape ?</title>
+      <link>https://healis.eu/en/post/20170709/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20170709/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#comparison-with-other-data-model-standards&#34;&gt;Comparison with other data model standards&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#namespace-problem&#34;&gt;Namespace problem&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#separate-abstraction-layers&#34;&gt;Separate abstraction layers&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#granularity-with-air-units&#34;&gt;Granularity with AIR units&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#filtering-instead-of-querying&#34;&gt;Filtering instead of querying&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#a-solid-theoretical-background&#34;&gt;A solid theoretical background&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#summarize&#34;&gt;Summarize&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Both Topic Maps and RDF/OWL exhibit signs of aging. In my opinion these signs do not indicate maturity levels but on the contrary they signal a re-examination of the data modeling, information representation problem. There is an emergent need to unify and exchange transformations between serialization formats (XML, JSON, etc), (graph) DBMS data model standards and semantic web data models.&lt;/p&gt;
+&lt;p&gt;Hence this is my speech at European Wolfram Technology Conference 2017 about a new data modeling framework &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt; that is implemented on top of OrientDB graph database and coded in Wolfram Mathematica.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BZleqH7iMng&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;comparison-with-other-data-model-standards&#34;&gt;Comparison with other data model standards&lt;/h2&gt;
+&lt;p&gt;These are a few critical points to consider when you compare this data model with Topic Maps and RDF/OWL:&lt;/p&gt;
+&lt;h3 id=&#34;namespace-problem&#34;&gt;Namespace problem&lt;/h3&gt;
+&lt;p&gt;Both RDF/OWL and Topic Maps are suffering from namespace problems and complexity. In topic maps for example, when you want to define associations, i.e. n-ary relations, relationships you must specify at least type and roles. For example:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Part(08:pid, &amp;quot;Acme Widget Washer&amp;quot;:pname, white:pcolor )&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;But in this representation you do not have a handle for the association instance and the context of roles has always to be present to assign meaning on values. Things become even more complicate with RDF association (type or instance) where everything has to be broken down in triples with labeled uni-directional edges.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;(Prt1 --pid--&amp;gt; 08, Prt1 --pname--&amp;gt; &amp;quot;Acme Widget Washer&amp;quot;, Prt1 --pcolor--&amp;gt; white}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The predicate of RDF triplet is causing more harm than good. Any SPARQL traversal algorithm is heavily dependent on these predicates, and in practice for large collaborative knowledge bases, e.g. Freebase, they used to label both directions to make traversal easier. You may also consider that owl:sameAs adds more complexity in the graph and traversal.&lt;/p&gt;
+&lt;p&gt;Now compare these with the simplicity of Entity-Relationship model. The database vocabulary has the header of the association (relation) and the body contains tuples.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;tuple type      : (pid, pname, pcolor)&lt;/code&gt;
+&lt;code&gt;tuple instance  : (08, &amp;quot;Acme Widget Washer&amp;quot;, white)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Is there an alternative representation to combine these ? Yes there is, you make a &lt;strong&gt;uniform numerical representation&lt;/strong&gt; of types and instances, of entities and attributes, of data values and data types and you bind everything in a hypergraph space.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;tuple type     : 233:0{85:0, 91:0, 34:0}&lt;/code&gt;
+&lt;code&gt;tuple instance : 233:1[85:6, 91:2, 34:9]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The vocabulary of relational model (header) permits to have &lt;strong&gt;ordered tuples&lt;/strong&gt; of values (body), the numerical reference vectors of R3DM/S3DM model permits to have &lt;strong&gt;unordered tuples&lt;/strong&gt; and there is a handle that represents each tuple instance. In RDF to represent a tuple you have to break it down into triples where you repeat the &lt;code&gt;subject&lt;/code&gt;. And values (&lt;code&gt;objects&lt;/code&gt;) &lt;strong&gt;must be semantically accompanied by the predicate&lt;/strong&gt;. Thus R3DM/S3DM associative representation with numerical references is simpler and it proves to be more efficient with indexing too !&lt;/p&gt;
+&lt;h3 id=&#34;separate-abstraction-layers&#34;&gt;Separate abstraction layers&lt;/h3&gt;
+&lt;p&gt;It is important to separate digital information resources, e.g. web pages, files, folders, audio/video recordings, images, text documents etc from real things e.g. humans, organizations, objects, etc. It is also important to distinguish between a flexible model and its instances. But it is equally or more important to separate any abstract concept from data values (numerical, string, bits, etc). Because the first is the vehicle for human thinking and the second is the way computers are processing data. Therefore this gap has to be bridged somehow. R3DM/S3DM achieves this with an extra abstraction layer where everything is connected with &lt;a href=&#34;https://healis.eu/en/post/20150320/&#34;&gt;Atomic Information Resource&lt;/a&gt; (AIR) units. This AIR unit defines also the level of granularity. Instead of building everything with Topics, you use AIR units.&lt;/p&gt;
+&lt;h3 id=&#34;granularity-with-air-units&#34;&gt;Granularity with AIR units&lt;/h3&gt;
+&lt;p&gt;But the AIR unit has the advantage that can be indexed easily, it is represented with a numerical vector, an address that can pinpoint the exact location of an Entity-Attribute-Value item. It is similar to an IPv4 address of a machine (e.g. domain, network, server, node/device/machine). My question is the following. &lt;span class=&#34;markup-quote&#34;&gt;If we use such addresses for connecting machines on the internet, why don&amp;rsquo;t we establish a similar standard for connecting data ?&lt;/span&gt; An AIR unit is the fundamental powerful construction unit for smart data. It knows its siblings, its parent, its type, its nexus, its associated AIR units (nodes). A tuple of such units can stand on its own, without a header and its completely meaningful because the context has already been defined.&lt;/p&gt;
+&lt;h3 id=&#34;filtering-instead-of-querying&#34;&gt;Filtering instead of querying&lt;/h3&gt;
+&lt;p&gt;Thanks to the uniform representation of everything with AIR units that are connected with bidirectional edges there is no need to define a query language but instead you define powerful functional operations that filter and add data in an associative manner in a fully typed environment. R3DM/S3DM supports types for database metadata, data sources, models, entity types, attribute types, items (instances), link types and value types. Again everything is constructed with AIR units. Both bidirectional edges and a full type system that is based on primitives were key features of Metadata Freebase project and then Google&amp;rsquo;s knowledge graph.&lt;/p&gt;
+&lt;h3 id=&#34;a-solid-theoretical-background&#34;&gt;A solid theoretical background&lt;/h3&gt;
+&lt;p&gt;R3DM/S3DM data model is founded on the theory of semiosis. There have been attempts to connect RDF/OWL with Aristotle&amp;rsquo;s triangle of reference/meaning but in my opinion they fail to capture the essence of the abstraction mechanism in semiosis which is played by the sign as the vehicle of communication between the signifier and the signified.&lt;/p&gt;
+&lt;h2 id=&#34;summarize&#34;&gt;Summarize&lt;/h2&gt;
+&lt;p&gt;To summarize the power of R3DM/S3DM is hidden on its Atomic Information Resource units that are fully typed, addressable and can be dereferenced and the formation of n-ary bidirectional associations.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/109285/109285-6289775148434366465&#34;&gt;LinkedIn - 20170709 Topic Maps Group Post&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/129217/129217-6289922338628734979&#34;&gt;LinkedIn - 20170709 Semantic Web Research Group Post&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/our-old-data-model-standards-out-shape-athanassios-i-hatzis-phd&#34;&gt;LinkedIn - 20170709 Article&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/feed/update/urn:li:activity:6262704855635365889&#34;&gt;LinkedIn - 20170409 Update about namespace problem&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

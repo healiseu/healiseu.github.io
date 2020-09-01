@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data_warehouse on HEALIS</title>
+    <link>https://healis.eu/en/tags/data_warehouse/</link>
+    <description>Recent content in Data_warehouse on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Tue, 28 Feb 2017 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/en/tags/data_warehouse/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Modelling Topologies of a Graph Database</title>
+      <link>https://healis.eu/en/post/20170228/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20170228/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#definition&#34;&gt;Definition&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#graph-databases-per-data-model&#34;&gt;Graph Databases Per Data Model&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#epilogue&#34;&gt;Epilogue&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;
+&lt;p&gt;There is a lot of confusion with the definition of graph databases. In my opinion, any definition that avoids any reference to the semantics of nodes and edges or their internal structure is preferable. Failing to follow this guideline, it is unavoidable to favor specific implementations, e.g. &lt;a href=&#34;http://neo4j.com/developer/graph-database/&#34;&gt;Property Graph Databases&lt;/a&gt; or &lt;a href=&#34;http://en.wikipedia.org/wiki/Triplestore&#34;&gt;Triple Stores&lt;/a&gt;, and you may easily become myopic to other types that are based on different models, e.g. &lt;a href=&#34;http://hypergraphdb.org/&#34;&gt;hypergraph databases&lt;/a&gt;, or different data storage paradigms, e.g. &lt;a href=&#34;http://en.wikipedia.org/wiki/Key-value_database&#34;&gt;key-value stores&lt;/a&gt;. Therefore, I propose we adopt a vendor neutral definition, such as the following one, which cannot exclude any future type of graph database.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A Graph Database is a database that uses a graph topology, i.e. vertices and edges, to manage information at the conceptual level independent of the logical and physical implementation of the graph data structure - &lt;a href=&#34;https://www.linkedin.com/pulse/data-modelling-topologies-graph-database-athanassios-i-hatzis-phd&#34;&gt;Athanassios I. Hatzis&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;graph-databases-per-data-model&#34;&gt;Graph Databases Per Data Model&lt;/h2&gt;
+&lt;p&gt;That said, there are many differences regarding to the &lt;a href=&#34;https://en.wikipedia.org/wiki/Database_abstraction_layer&#34;&gt;abstraction layer&lt;/a&gt; of databases. These affect everything — visualization, query language, indexing, scaling, and transactions. Now, let me focus on the conceptual/logical layer, where my work is based. Depending on the structure of nodes and edges, one can describe the following three different data models.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Property Graph Data Model&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Directed Labeled Graph&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Entity-centric with embedded properties and edges with bidirectional linking to nodes&lt;/li&gt;
+&lt;li&gt;Neo4J, OrientDB, ArrangoDB, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Triple/Quadruple Data Model&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Directed Labeled Graph&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Edge-centric with unidirectional linking on vertices&lt;/li&gt;
+&lt;li&gt;GraphDB, AllegroGraph, OpenLink Virtuoso, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Associative Data Model&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hypergraph/Bipartite Graph&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Hypernodes, Hyperedges with bidirectional linking&lt;/li&gt;
+&lt;li&gt;Topic Map Data Model, R3DM/S3DM, X10SYS (AtomicDB), HypergraphDB, Qlik Technology&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are two main differences between &lt;strong&gt;(1)&lt;/strong&gt; and &lt;strong&gt;(2)&lt;/strong&gt;. First, the type of edges in a property graph, by definition, is bidirectional. You can traverse any edge both ways, despite the fact there is a direction on the edge. On the contrary, with RDF, you have to define two labeled edges with opposite directions to achieve bidirectional linking. And secondly, in literal triples, object parts are properties of a subject part, but they are not first-class citizens and they are not embedded inside the structure of Entity nodes of a property graph.&lt;/p&gt;
+&lt;p&gt;I left the associative data model as the last thing to mention. &lt;strong&gt;R3DM/S3DM is the reincarnation of Topic Maps&lt;/strong&gt;, the de facto standard for the representation of associations. The following series of posts on associative data modeling is written with a hands-on practice style. It is an attempt to clear the information glut of many-to-many relationships (a.k.a associations) with a thorough examination of well-known data models and at the same time introduce R3DM/S3DM to the public.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20160825/&#34;&gt;Part 1/6&lt;/a&gt; - Relation, Relationship, and Association&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20160902/&#34;&gt;Part 2/6&lt;/a&gt; - Association in Topic Map Data Model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20160913/&#34;&gt;Part 3/6&lt;/a&gt; - Association in Property Graph Data Model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20161220/&#34;&gt;Part 4/6&lt;/a&gt; - Association in RDF Data Model and Sentences associative data model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20170211/&#34;&gt;Part 5/6&lt;/a&gt; - Qlik Associative Mode&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;Part 6/6&lt;/a&gt; - R3DM/S3DM Associative Semiotic Hypergraph Data Model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;epilogue&#34;&gt;Epilogue&lt;/h2&gt;
+&lt;p&gt;The verdict from this quick review on graph databases is that I have reasons to believe that associative data modeling is far more powerful and expressive than the other two. I foresee that DBMS vendors that will incorporate in their products R3DM/S3DM technology will eventually have a significant competitive advantage.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/data-modelling-topologies-graph-database-athanassios-i-hatzis-phd&#34;&gt;LinkedIn - 27/02/2017 Pulse Article&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/hp/update/6263485831336599552&#34;&gt;LinkedIn - 28/04/2017 Post about Robin Bloor on driving BI in real-time&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/hp/update/6263495928863432704&#34;&gt;LinkedIn - 28/04/2017 Post about Thomas Frisendal on atomic data&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/groups/129217&#34;&gt;LinkedIn - 04/05/2017 Featured on Semantic Web Research Group&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/groups/6514034&#34;&gt;LinkedIn - 04/05/2017 Featured on Computational Semiotics Group&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/groups/3732032/3732032-6265904280549629955&#34;&gt;LinkedIn - 04/05/2017 IT Professionals Group&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/groups/62438/62438-6265907308967137283&#34;&gt;LinkedIn - 04/05/2017 Business Analytics Group&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/groups/1814785/1814785-6265911933967433731&#34;&gt;LinkedIn - 04/05/2017 Big Data Analytics Strategy Group&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/groups/23006/23006-6265914043991752705&#34;&gt;LinkedIn - 04/05/2017 Big Data Analytics BI &amp;amp; Visualization Group&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/feed/update/urn:li:activity:6273393604094492672/&#34;&gt;LinkedIn - 25/05/2017 Post Comment SQL to NoSQL translator&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://dzone.com/articles/data-modelling-topologies-of-a-graph-database&#34;&gt;DZone    - 17/03/2017 Article&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.facebook.com/permalink.php?story_fbid=1260208257411844&amp;amp;id=811804875585520&#34;&gt;Facebook - 04/05/2017 HEALIS Page&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.datasciencecentral.com/profiles/blogs/data-modelling-topologies-of-a-graph-database&#34;&gt;Data Science Central - 17/06/2017 Blog Post&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Quick Guide on How to Prevail in the Graph Database Arena</title>
+      <link>https://healis.eu/en/post/20170213/</link>
+      <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20170213/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#definition-of-graph-databases&#34;&gt;Definition of Graph Databases&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#many-to-many-relationships&#34;&gt;Many-to-many Relationships&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#multi-model-database-engine&#34;&gt;Multi-model Database Engine&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#physical-versus-logical-perspective&#34;&gt;Physical versus Logical Perspective&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#conceptual-framework&#34;&gt;Conceptual Framework&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#query-language&#34;&gt;Query Language&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#business-analytics&#34;&gt;Business Analytics&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#epilogue&#34;&gt;Epilogue&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;There are endless discussions in the databases arena about which DBMS is best suited for operational or data warehousing analytics, which one is the most efficient for online transaction processing, or which one is suitable for semantic integration. Recently graph databases are growing in popularity, especially in the enterprise space, and perhaps that adds more headache on those vendors that try to differentiate from competition and on those clients that are completely uncertain how to embrace this database technology.&lt;/p&gt;
+&lt;h2 id=&#34;definition-of-graph-databases&#34;&gt;Definition of Graph Databases&lt;/h2&gt;
+&lt;p&gt;Recently &lt;a href=&#34;http://www.bloor.eu/&#34;&gt;Bloor&lt;/a&gt; published a report about &lt;a href=&#34;http://www.bloorresearch.com/research/market-report/graph-and-rdf-databases-2016/&#34;&gt;Graph and RDF Databases&lt;/a&gt;. The author, &lt;a href=&#34;http://www.bloorresearch.com/profiles/philip-howard/https://en.wikipedia.org/wiki/ACID&#34;&gt;Philip Howard&lt;/a&gt;, claims that &amp;ldquo;&lt;em&gt;the difference between a true graph product and a triple store is that the former supports index free adjacency (which means you can traverse a graph without needing an index) and the latter doesn&amp;rsquo;t&lt;/em&gt;&amp;rdquo;. On the contrary Weinberger, CEO of ArrangoDB, argues that this is not a fundamental criterion on what is a graph database. In a post titled &amp;ldquo;&lt;a href=&#34;https://www.arangodb.com/2016/04/index-free-adjacency-hybrid-indexes-graph-databases/&#34;&gt;Index Free Adjacency or Hybrid Indexes for Graph Databases&lt;/a&gt;&amp;rdquo; he proposes that the definition of graph database remains&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;a database that uses graph structures for semantic queries with nodes, edges and properties to represent and store data independent of the way the data is stored internally - Claudius Weinberger&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Indeed, in the same Bloor report a distinction between native and non-native graph databases is made based on their engine. In my opinion, any definition that avoids any reference to the semantics of nodes and edges or their internal structure is preferable. Failing to follow this guideline, it is unavoidable to favor specific implementations, e.g. Property Graph Databases or Triple Stores, and you may easily become myopic to other types that are based on different models, e.g. hypergraph databases, or different data storage paradigms, e.g. key-value stores. Therefore, I propose we adopt a vendor neutral definition, such as the following one, which cannot exclude any future type of graph database.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A Graph Database is a database that uses a graph topology, i.e. vertices and edges, to manage information at the conceptual level independent of the logical and physical implementation of the graph data structure - Athanassios I. Hatzis, 28th February 2017&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;many-to-many-relationships&#34;&gt;Many-to-many Relationships&lt;/h2&gt;
+&lt;p&gt;In another recently published Spotlight paper by Bloor, &lt;a href=&#34;http://www.bloorresearch.com/research/spotlight/all-about-graphs-a-primer/&#34;&gt;&amp;ldquo;All about graphs: a primer&amp;rdquo;&lt;/a&gt;, the author discusses the Graph data model and highlights the representational differences of a many-to-many relationship including those of bipartite, hypergraph and associative graphs. He observes that&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;unlike other new database approaches, graphs cannot easily be subsumed by the leading relational database vendors because the architectural constraints of graphs do not fit easily within the relational paradigm - Philip Howard&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;He mentions that the two main variants on entity relationships are labeled property graphs and &lt;code&gt;subject-predicate-object&lt;/code&gt; triples. In practice, although the idea of relationships (associations) between entities is at the heart of Peter Chen&amp;rsquo;s Entity-Relationship model, &lt;a href=&#34;https://healis.eu/en/post/20160825#fig2&#34;&gt;&lt;strong&gt;Fig.2&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://healis.eu/en/post/20160825#fig3&#34;&gt;&lt;strong&gt;Fig.3&lt;/strong&gt;&lt;/a&gt;, there are subtle dissimilarities in its implementation on various graph databases. &lt;a href=&#34;https://healis.eu/en/about#athanassios&#34;&gt;A. Hatzis&lt;/a&gt;, in a &lt;a href=&#34;https://healis.eu/en/post/20170420/&#34;&gt;series of posts on associative data modeling&lt;/a&gt;, that is written with a hands-on practice style, attempts to clear the information glut of this topic with a thorough examination of graph data models.&lt;/p&gt;
+&lt;h2 id=&#34;multi-model-database-engine&#34;&gt;Multi-model Database Engine&lt;/h2&gt;
+&lt;p&gt;The graph engine and the type of data model are critical factors for any graph database. Therefore it is not strange that many vendors have started marketing their DBMS as a multi-model. We have extensive and long experience with two such products, &lt;a href=&#34;http://orientdb.com/orientdb/&#34;&gt;OrientDB&lt;/a&gt; and &lt;a href=&#34;http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GIC_intro&#34;&gt;Intersystems Cache&lt;/a&gt;. The former supports Graph, Document, Key/Value, and Object models, the latter is an object database with relational access, integrated support for JSON documents and a multidimensional key-value storage mechanism that can be easily extended to cover Graph data model. Generally speaking, we have reasons to believe that &lt;strong&gt;multi-model DBMS will dominate the database market&lt;/strong&gt;. Currently OrientDB has become a leading player in the graph databases and Intersystems Cache is one of the best operational DBMS according to &lt;a href=&#34;https://www.gartner.com/doc/3467318/magic-quadrant-operational-database-management&#34;&gt;Magic Quadrant report&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;physical-versus-logical-perspective&#34;&gt;Physical versus Logical Perspective&lt;/h2&gt;
+&lt;p&gt;Not only has a multi-model database been flexible with its logical schema, but it also has a unified storage data architecture. Although the developer should hardly need access to the physical implementation details of the storage engine, an API for direct use of the engine is desirable and beneficial for many reasons. Most important, this kind of architecture allows someone to build a customized database management system. In theory, ANSI/SPARC three level architecture (external, conceptual/logical and physical) is an effort to allow these three perspectives to be relatively independent of each other, but &lt;strong&gt;in practice the front-end of a DBMS is most often strongly dependent on the back-end storage data model&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Loose_coupling&#34;&gt;loose coupling&lt;/a&gt; can be achieved with associative/multidimensional arrays. No matter what is their physical implementation, i.e. hash tables or trees, based on this abstract data type you can &lt;a href=&#34;http://mgateway.com/docs/universalNoSQL.pdf&#34;&gt;model all four NoSQL database types&lt;/a&gt;, (Key/Value, Tabular/Columnar, Document, Graph). For one reason or another, we are of the opinion that &lt;strong&gt;associative/multidimensional arrays will eventually prevail in the world of databases&lt;/strong&gt;. There is already strong competition for their best physical implementation and sparse, column-family store, databases have proven to be very popular (&lt;a href=&#34;http://hbase.apache.org/book.html#architecture&#34;&gt;HBase&lt;/a&gt;, &lt;a href=&#34;http://www.hypertable.com/documentation/architecture/&#34;&gt;Hypertable&lt;/a&gt;, &lt;a href=&#34;https://cloud.google.com/bigtable/&#34;&gt;BigTable&lt;/a&gt;, &lt;a href=&#34;http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GIC_intro&#34;&gt;Intersystems Cache&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;There are other properties that are crucial for &lt;a href=&#34;https://en.wikipedia.org/wiki/Operational_database&#34;&gt;operational database management systems&lt;/a&gt; such as &lt;a href=&#34;https://en.wikipedia.org/wiki/ACID&#34;&gt;ACID transactions&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/Distributed_database&#34;&gt;distributed data architecture&lt;/a&gt;, and &lt;a href=&#34;https://en.wikipedia.org/wiki/Scalability&#34;&gt;scalability&lt;/a&gt;. Whether we are talking for a multi-model or single model graph databases, there is a tendency to use them for on-line transaction processing therefore these properties are worth having. And again in terms of architectural design there is always the problem of how to achieve a loose coupling between the physical structures of a database and the application logic.&lt;/p&gt;
+&lt;h2 id=&#34;conceptual-framework&#34;&gt;Conceptual Framework&lt;/h2&gt;
+&lt;p&gt;With that said it brings us to the question on what kind of logical/conceptual data model architecture to use. Our R3DM/S3DM framework is based on the powerful theory of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Triangle_of_reference&#34;&gt;semiotic triangle&lt;/a&gt;. We use numerical vectors (signs), to encode abstract things in our mind (signified) to which the sign refers, e.g. Person, name, Car, model. We associate these with  data containers-forms that the sign takes for the storage of data values (signifier), i.e. primitive data types (see also &lt;a href=&#34;https://en.wikipedia.org/wiki/Signified_and_signifier&#34;&gt;Signified and Signifier&lt;/a&gt;). This trilateral principle of our framework permits a uniform treatment of semantics, syntax and storage of information based on a symbolic representation. This way we define a fundamental, atomic information resource unit, &lt;a href=&#34;https://healis.eu/en/post/20150320/&#34;&gt;(AIR)&lt;/a&gt;. Those units, in turn, can be easily shaped to form any tabular, hierarchical, or graph data structure in a unified way. For example, study this &lt;a href=&#34;https://healis.eu/en/post/20170211#r3dm-hypergraph-representation&#34;&gt;R3DM hypergraph representation&lt;/a&gt; of Qlikview associative model. &lt;a href=&#34;https://en.wikipedia.org/wiki/Granularity&#34;&gt;Data granularity&lt;/a&gt; can be also deeply connected and related to the definition of a fundamental unit of processing.&lt;/p&gt;
+&lt;p&gt;Based on this single primitive construct as a building block, (AIR), we have implemented seven type systems for an upper level management of any DBMS. These are:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;SYSTEM&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;SHORTNAME&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1. SYS_Dataset&lt;/td&gt;
+&lt;td&gt;DSS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2. SYS_DomainModel&lt;/td&gt;
+&lt;td&gt;DMS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3. SYS_EntityType&lt;/td&gt;
+&lt;td&gt;ETS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4. SYS_AttributeType&lt;/td&gt;
+&lt;td&gt;ATS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5. SYS_ValueType&lt;/td&gt;
+&lt;td&gt;VTS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6. SYS_LinkType&lt;/td&gt;
+&lt;td&gt;LTS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7. SYS_Database&lt;/td&gt;
+&lt;td&gt;DBS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;We characterize Datasets, Domain Models (schemas), Entities, Attributes, etc, as information resources, values are information realization and our AIR units that represent everything are called information representations or simply references. Our current implementation phase has been completed on top of OrientDB and a forthcoming article will present R3DM/S3DM architecture in detail. In the past, &lt;a href=&#34;https://www.linkedin.com/pulse/why-google-shuts-down-freebase-30th-june-2015-hatzis-phd&#34;&gt;Freebase collaborative knowledge graph&lt;/a&gt; had a type system that was built on primitive constructs.&lt;/p&gt;
+&lt;h2 id=&#34;query-language&#34;&gt;Query Language&lt;/h2&gt;
+&lt;p&gt;Yet another decisive norm in databases is the &lt;a href=&#34;https://en.wikipedia.org/wiki/Query_language&#34;&gt;query language&lt;/a&gt;. With RDF directed, labeled graph data format and with &lt;a href=&#34;https://en.wikipedia.org/wiki/Triplestore&#34;&gt;RDF store&lt;/a&gt; databases respectively, e.g. &lt;a href=&#34;https://virtuoso.openlinksw.com/&#34;&gt;OpenLink Virtuoso&lt;/a&gt;, &lt;a href=&#34;http://allegrograph.com/allegrograph/&#34;&gt;AllegroGraph&lt;/a&gt; and &lt;a href=&#34;http://ontotext.com/products/graphdb/&#34;&gt;Ontotext GraphDB&lt;/a&gt;, &lt;a href=&#34;https://www.w3.org/TR/rdf-sparql-query/&#34;&gt;SPARQL&lt;/a&gt; query language is a standard way to retrieve data. On the contrary the query language of property graph databases varies a lot. There are similar to SQL APIs such as those of &lt;a href=&#34;http://orientdb.com/orientdb/&#34;&gt;OrientDB&lt;/a&gt; and &lt;a href=&#34;https://www.arangodb.com/&#34;&gt;ArrangoDB&lt;/a&gt;, &lt;a href=&#34;https://neo4j.com/&#34;&gt;Neo4J&lt;/a&gt; is using its own Cypher declarative graph query language and there is also the Gremlin open-source graph programming language.&lt;/p&gt;
+&lt;p&gt;Another approach is that of &lt;a href=&#34;http://graphql.org/&#34;&gt;GraphQL&lt;/a&gt; which is similar to &lt;a href=&#34;https://en.wikipedia.org/wiki/Freebase#Overview&#34;&gt;Freebase MQL query language&lt;/a&gt;. Queries are shaped in JSON hierarchical format with patterns that follow the schema of the graph database.&lt;/p&gt;
+&lt;p&gt;We have developed a &lt;a href=&#34;https://healis.eu/en/post/20160210/&#34;&gt;functional RESTful API&lt;/a&gt; that can be served as a prototype for a uniform, universal treatment of data language. Commands and their parameters can become more efficient and they can be simplified if we take on account the hierarchical relationship of Server, Database, Class, Property and Record containers. There are five sets of commands for getting, updating, deleting, adding and linking information. Current implementation is built with Wolfram Language and we will expose more details in a forthcoming article where we analyze R3DM/S3DM architecture.&lt;/p&gt;
+&lt;h2 id=&#34;business-analytics&#34;&gt;Business Analytics&lt;/h2&gt;
+&lt;p&gt;Last but not least, there is an emerging need for databases that can function as both analytic and operational. In particular, the modern data warehouse should unify all client&amp;rsquo;s transactional databases as well as integrate other external data sources that enable data cleansing, validation and enhancement. Not only that, but for quick and smart business analytics the interface should be both user friendly and functionally powerful. We are aware of such a player in this market segment with a technology that possess similar features to our R3DM/S3DM framework. This is the reason that we devoted &lt;a href=&#34;https://healis.eu/en/post/20170211/&#34;&gt;one of our articles&lt;/a&gt; to describe &lt;a href=&#34;http://www.qlik.com/us/products/qlikview&#34;&gt;QlikView&amp;rsquo;s&lt;/a&gt; unique, award-winning, in-memory associative technology.&lt;/p&gt;
+&lt;h2 id=&#34;epilogue&#34;&gt;Epilogue&lt;/h2&gt;
+&lt;p&gt;Make no mistake, relational databases are the past of computer database technology. Graph databases are the present and the future. This quick review on what we considered important criteria for graph database related technology products might leave the reader in more perplexity than satisfaction. This is our perspective, we wanted to share some of our knowledge with experts and chief technology persons on this field so that we could discuss the matter in more detail with them. The future will show in how many of these discussion topics we were right.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/quick-guide-how-prevail-graph-database-arena-hatzis-phd&#34;&gt;LinkedIn - Published Posts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/129217/129217-6236916644548091906&#34;&gt;LinkedIn - Semantic Web Research Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/2552968/2552968-6236916721563901952&#34;&gt;LinkedIn - Graph Databases Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/108904/108904-6236916684649828353&#34;&gt;LinkedIn - Data Warehouse &amp;amp; Business Intelligence Architects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/6514034/6514034-6236916721589059584&#34;&gt;LinkedIn - Computational Semiotics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/3750024/3750024-6236916585051881475&#34;&gt;LinkedIn - Database &amp;amp; Data Store Professionals ★ NoSQL ★ NewSQL ★ Relational&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/73235/73235-6236915823848628225&#34;&gt;LinkedIn - Database Developers and Architects Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/2357895/2357895-6273464481200902148&#34;&gt;LinkedIn - Data Modeling Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/hp/update/6236886400814452736&#34;&gt;LinkedIn - Update&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/45183/45183-6236916721589059585&#34;&gt;LinkedIn - Database Experts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/4344857/4344857-6236916644548091907&#34;&gt;LinkedIn - OrientDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/groups/1969109/1969109-6236915855192657924&#34;&gt;LinkedIn - MUMPS and Cache Development&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.quora.com/What-are-the-criteria-to-differentiate-graph-databases/answer/Athanassios-Hatzis-PhD&#34;&gt;Quora - Question and Answer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/a-quick-guide-to-prevail-in-the-graph-database-arena&#34;&gt;DZone - Article&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.datasciencecentral.com/profiles/blogs/a-quick-guide-on-how-to-prevail-in-the-graph-database-arena&#34;&gt;Data Science Central - Blog Post&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://community.intersystems.com/post/how-intersystems-cach%C3%A9-fits-graph-database-arena&#34;&gt;Intersystems Developer Community - 21/2/2017 Post about how Intersystems Cache fits in the Graph Database Arena&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

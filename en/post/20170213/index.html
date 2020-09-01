@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.74.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Athanassios I. Hatzis, PhD">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A swift introduction to the key factors that influence the performance and unification character of graph databases">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://healis.eu/en/post/20170213/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24920503-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://healis.eu/en/post/20170213/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@healiseu">
+  <meta property="twitter:creator" content="@healiseu">
+  
+  <meta property="og:site_name" content="HEALIS">
+  <meta property="og:url" content="https://healis.eu/en/post/20170213/">
+  <meta property="og:title" content="A Quick Guide on How to Prevail in the Graph Database Arena | HEALIS">
+  <meta property="og:description" content="A swift introduction to the key factors that influence the performance and unification character of graph databases"><meta property="og:image" content="https://healis.eu/en/post/20170213/featured.jpeg">
+  <meta property="twitter:image" content="https://healis.eu/en/post/20170213/featured.jpeg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2017-02-13T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2017-02-13T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>A Quick Guide on How to Prevail in the Graph Database Arena | HEALIS</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/en/"><img src="/img/healis-text-with-logo.png" alt="HEALIS"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#home"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/about/"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/hmorph/"><span>HyperMorph</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/s3dm/"><span>S3DM</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/en/post/"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/talk/"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/terms/"><span>Terms</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/contact/"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/en/post/20170213/featured_hu21eb929ca438df842fc1fd6b6ac71a32_75426_680x500_fill_q90_lanczos_smart1.jpeg" itemprop="image" alt="">
+        
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">A Quick Guide on How to Prevail in the Graph Database Arena</h1>
+
+      
+      <p class="page-subtitle">A brief discussion on criteria to meet a differentiation strategy for graph databases</p>
+      
+
+      
+
+
+
+<meta content="2017-02-13 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2017-02-13 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/en/authors/admin/">Athanassios I. Hatzis, PhD</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2017-02-13</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    9 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/en/post/20170213/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/en/categories/semantic_web/">Semantic_Web</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://healis.eu/en/post/20170213/&amp;text=A%20Quick%20Guide%20on%20How%20to%20Prevail%20in%20the%20Graph%20Database%20Arena" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://healis.eu/en/post/20170213/&amp;t=A%20Quick%20Guide%20on%20How%20to%20Prevail%20in%20the%20Graph%20Database%20Arena" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=A%20Quick%20Guide%20on%20How%20to%20Prevail%20in%20the%20Graph%20Database%20Arena&amp;body=https://healis.eu/en/post/20170213/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://healis.eu/en/post/20170213/&amp;title=A%20Quick%20Guide%20on%20How%20to%20Prevail%20in%20the%20Graph%20Database%20Arena" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=A%20Quick%20Guide%20on%20How%20to%20Prevail%20in%20the%20Graph%20Database%20Arena%20https://healis.eu/en/post/20170213/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://healis.eu/en/post/20170213/&amp;title=A%20Quick%20Guide%20on%20How%20to%20Prevail%20in%20the%20Graph%20Database%20Arena" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/en/project/r3dm/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#definition-of-graph-databases">Definition of Graph Databases</a></li>
+    <li><a href="#many-to-many-relationships">Many-to-many Relationships</a></li>
+    <li><a href="#multi-model-database-engine">Multi-model Database Engine</a></li>
+    <li><a href="#physical-versus-logical-perspective">Physical versus Logical Perspective</a></li>
+    <li><a href="#conceptual-framework">Conceptual Framework</a></li>
+    <li><a href="#query-language">Query Language</a></li>
+    <li><a href="#business-analytics">Business Analytics</a></li>
+    <li><a href="#epilogue">Epilogue</a></li>
+    <li><a href="#cross-references">Cross-References</a></li>
+  </ul>
+</nav>
+
+<h2 id="introduction">Introduction</h2>
+<p>There are endless discussions in the databases arena about which DBMS is best suited for operational or data warehousing analytics, which one is the most efficient for online transaction processing, or which one is suitable for semantic integration. Recently graph databases are growing in popularity, especially in the enterprise space, and perhaps that adds more headache on those vendors that try to differentiate from competition and on those clients that are completely uncertain how to embrace this database technology.</p>
+<h2 id="definition-of-graph-databases">Definition of Graph Databases</h2>
+<p>Recently <a href="http://www.bloor.eu/">Bloor</a> published a report about <a href="http://www.bloorresearch.com/research/market-report/graph-and-rdf-databases-2016/">Graph and RDF Databases</a>. The author, <a href="http://www.bloorresearch.com/profiles/philip-howard/https://en.wikipedia.org/wiki/ACID">Philip Howard</a>, claims that &ldquo;<em>the difference between a true graph product and a triple store is that the former supports index free adjacency (which means you can traverse a graph without needing an index) and the latter doesn&rsquo;t</em>&rdquo;. On the contrary Weinberger, CEO of ArrangoDB, argues that this is not a fundamental criterion on what is a graph database. In a post titled &ldquo;<a href="https://www.arangodb.com/2016/04/index-free-adjacency-hybrid-indexes-graph-databases/">Index Free Adjacency or Hybrid Indexes for Graph Databases</a>&rdquo; he proposes that the definition of graph database remains</p>
+<blockquote>
+<p><strong>a database that uses graph structures for semantic queries with nodes, edges and properties to represent and store data independent of the way the data is stored internally - Claudius Weinberger</strong></p>
+</blockquote>
+<p>Indeed, in the same Bloor report a distinction between native and non-native graph databases is made based on their engine. In my opinion, any definition that avoids any reference to the semantics of nodes and edges or their internal structure is preferable. Failing to follow this guideline, it is unavoidable to favor specific implementations, e.g. Property Graph Databases or Triple Stores, and you may easily become myopic to other types that are based on different models, e.g. hypergraph databases, or different data storage paradigms, e.g. key-value stores. Therefore, I propose we adopt a vendor neutral definition, such as the following one, which cannot exclude any future type of graph database.</p>
+<blockquote>
+<p><strong>A Graph Database is a database that uses a graph topology, i.e. vertices and edges, to manage information at the conceptual level independent of the logical and physical implementation of the graph data structure - Athanassios I. Hatzis, 28th February 2017</strong></p>
+</blockquote>
+<h2 id="many-to-many-relationships">Many-to-many Relationships</h2>
+<p>In another recently published Spotlight paper by Bloor, <a href="http://www.bloorresearch.com/research/spotlight/all-about-graphs-a-primer/">&ldquo;All about graphs: a primer&rdquo;</a>, the author discusses the Graph data model and highlights the representational differences of a many-to-many relationship including those of bipartite, hypergraph and associative graphs. He observes that</p>
+<blockquote>
+<p><strong>unlike other new database approaches, graphs cannot easily be subsumed by the leading relational database vendors because the architectural constraints of graphs do not fit easily within the relational paradigm - Philip Howard</strong></p>
+</blockquote>
+<p>He mentions that the two main variants on entity relationships are labeled property graphs and <code>subject-predicate-object</code> triples. In practice, although the idea of relationships (associations) between entities is at the heart of Peter Chen&rsquo;s Entity-Relationship model, <a href="/en/post/20160825#fig2"><strong>Fig.2</strong></a> and <a href="/en/post/20160825#fig3"><strong>Fig.3</strong></a>, there are subtle dissimilarities in its implementation on various graph databases. <a href="/en/about#athanassios">A. Hatzis</a>, in a <a href="/en/post/20170420/">series of posts on associative data modeling</a>, that is written with a hands-on practice style, attempts to clear the information glut of this topic with a thorough examination of graph data models.</p>
+<h2 id="multi-model-database-engine">Multi-model Database Engine</h2>
+<p>The graph engine and the type of data model are critical factors for any graph database. Therefore it is not strange that many vendors have started marketing their DBMS as a multi-model. We have extensive and long experience with two such products, <a href="http://orientdb.com/orientdb/">OrientDB</a> and <a href="http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GIC_intro">Intersystems Cache</a>. The former supports Graph, Document, Key/Value, and Object models, the latter is an object database with relational access, integrated support for JSON documents and a multidimensional key-value storage mechanism that can be easily extended to cover Graph data model. Generally speaking, we have reasons to believe that <strong>multi-model DBMS will dominate the database market</strong>. Currently OrientDB has become a leading player in the graph databases and Intersystems Cache is one of the best operational DBMS according to <a href="https://www.gartner.com/doc/3467318/magic-quadrant-operational-database-management">Magic Quadrant report</a>.</p>
+<h2 id="physical-versus-logical-perspective">Physical versus Logical Perspective</h2>
+<p>Not only has a multi-model database been flexible with its logical schema, but it also has a unified storage data architecture. Although the developer should hardly need access to the physical implementation details of the storage engine, an API for direct use of the engine is desirable and beneficial for many reasons. Most important, this kind of architecture allows someone to build a customized database management system. In theory, ANSI/SPARC three level architecture (external, conceptual/logical and physical) is an effort to allow these three perspectives to be relatively independent of each other, but <strong>in practice the front-end of a DBMS is most often strongly dependent on the back-end storage data model</strong>.</p>
+<p>A <a href="https://en.wikipedia.org/wiki/Loose_coupling">loose coupling</a> can be achieved with associative/multidimensional arrays. No matter what is their physical implementation, i.e. hash tables or trees, based on this abstract data type you can <a href="http://mgateway.com/docs/universalNoSQL.pdf">model all four NoSQL database types</a>, (Key/Value, Tabular/Columnar, Document, Graph). For one reason or another, we are of the opinion that <strong>associative/multidimensional arrays will eventually prevail in the world of databases</strong>. There is already strong competition for their best physical implementation and sparse, column-family store, databases have proven to be very popular (<a href="http://hbase.apache.org/book.html#architecture">HBase</a>, <a href="http://www.hypertable.com/documentation/architecture/">Hypertable</a>, <a href="https://cloud.google.com/bigtable/">BigTable</a>, <a href="http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GIC_intro">Intersystems Cache</a>).</p>
+<p>There are other properties that are crucial for <a href="https://en.wikipedia.org/wiki/Operational_database">operational database management systems</a> such as <a href="https://en.wikipedia.org/wiki/ACID">ACID transactions</a>, <a href="https://en.wikipedia.org/wiki/Distributed_database">distributed data architecture</a>, and <a href="https://en.wikipedia.org/wiki/Scalability">scalability</a>. Whether we are talking for a multi-model or single model graph databases, there is a tendency to use them for on-line transaction processing therefore these properties are worth having. And again in terms of architectural design there is always the problem of how to achieve a loose coupling between the physical structures of a database and the application logic.</p>
+<h2 id="conceptual-framework">Conceptual Framework</h2>
+<p>With that said it brings us to the question on what kind of logical/conceptual data model architecture to use. Our R3DM/S3DM framework is based on the powerful theory of the <a href="https://en.wikipedia.org/wiki/Triangle_of_reference">semiotic triangle</a>. We use numerical vectors (signs), to encode abstract things in our mind (signified) to which the sign refers, e.g. Person, name, Car, model. We associate these with  data containers-forms that the sign takes for the storage of data values (signifier), i.e. primitive data types (see also <a href="https://en.wikipedia.org/wiki/Signified_and_signifier">Signified and Signifier</a>). This trilateral principle of our framework permits a uniform treatment of semantics, syntax and storage of information based on a symbolic representation. This way we define a fundamental, atomic information resource unit, <a href="/en/post/20150320/">(AIR)</a>. Those units, in turn, can be easily shaped to form any tabular, hierarchical, or graph data structure in a unified way. For example, study this <a href="/en/post/20170211#r3dm-hypergraph-representation">R3DM hypergraph representation</a> of Qlikview associative model. <a href="https://en.wikipedia.org/wiki/Granularity">Data granularity</a> can be also deeply connected and related to the definition of a fundamental unit of processing.</p>
+<p>Based on this single primitive construct as a building block, (AIR), we have implemented seven type systems for an upper level management of any DBMS. These are:</p>
+<table>
+<thead>
+<tr>
+<th><strong>SYSTEM</strong></th>
+<th><strong>SHORTNAME</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. SYS_Dataset</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>2. SYS_DomainModel</td>
+<td>DMS</td>
+</tr>
+<tr>
+<td>3. SYS_EntityType</td>
+<td>ETS</td>
+</tr>
+<tr>
+<td>4. SYS_AttributeType</td>
+<td>ATS</td>
+</tr>
+<tr>
+<td>5. SYS_ValueType</td>
+<td>VTS</td>
+</tr>
+<tr>
+<td>6. SYS_LinkType</td>
+<td>LTS</td>
+</tr>
+<tr>
+<td>7. SYS_Database</td>
+<td>DBS</td>
+</tr>
+</tbody>
+</table>
+<p>We characterize Datasets, Domain Models (schemas), Entities, Attributes, etc, as information resources, values are information realization and our AIR units that represent everything are called information representations or simply references. Our current implementation phase has been completed on top of OrientDB and a forthcoming article will present R3DM/S3DM architecture in detail. In the past, <a href="https://www.linkedin.com/pulse/why-google-shuts-down-freebase-30th-june-2015-hatzis-phd">Freebase collaborative knowledge graph</a> had a type system that was built on primitive constructs.</p>
+<h2 id="query-language">Query Language</h2>
+<p>Yet another decisive norm in databases is the <a href="https://en.wikipedia.org/wiki/Query_language">query language</a>. With RDF directed, labeled graph data format and with <a href="https://en.wikipedia.org/wiki/Triplestore">RDF store</a> databases respectively, e.g. <a href="https://virtuoso.openlinksw.com/">OpenLink Virtuoso</a>, <a href="http://allegrograph.com/allegrograph/">AllegroGraph</a> and <a href="http://ontotext.com/products/graphdb/">Ontotext GraphDB</a>, <a href="https://www.w3.org/TR/rdf-sparql-query/">SPARQL</a> query language is a standard way to retrieve data. On the contrary the query language of property graph databases varies a lot. There are similar to SQL APIs such as those of <a href="http://orientdb.com/orientdb/">OrientDB</a> and <a href="https://www.arangodb.com/">ArrangoDB</a>, <a href="https://neo4j.com/">Neo4J</a> is using its own Cypher declarative graph query language and there is also the Gremlin open-source graph programming language.</p>
+<p>Another approach is that of <a href="http://graphql.org/">GraphQL</a> which is similar to <a href="https://en.wikipedia.org/wiki/Freebase#Overview">Freebase MQL query language</a>. Queries are shaped in JSON hierarchical format with patterns that follow the schema of the graph database.</p>
+<p>We have developed a <a href="/en/post/20160210/">functional RESTful API</a> that can be served as a prototype for a uniform, universal treatment of data language. Commands and their parameters can become more efficient and they can be simplified if we take on account the hierarchical relationship of Server, Database, Class, Property and Record containers. There are five sets of commands for getting, updating, deleting, adding and linking information. Current implementation is built with Wolfram Language and we will expose more details in a forthcoming article where we analyze R3DM/S3DM architecture.</p>
+<h2 id="business-analytics">Business Analytics</h2>
+<p>Last but not least, there is an emerging need for databases that can function as both analytic and operational. In particular, the modern data warehouse should unify all client&rsquo;s transactional databases as well as integrate other external data sources that enable data cleansing, validation and enhancement. Not only that, but for quick and smart business analytics the interface should be both user friendly and functionally powerful. We are aware of such a player in this market segment with a technology that possess similar features to our R3DM/S3DM framework. This is the reason that we devoted <a href="/en/post/20170211/">one of our articles</a> to describe <a href="http://www.qlik.com/us/products/qlikview">QlikView&rsquo;s</a> unique, award-winning, in-memory associative technology.</p>
+<h2 id="epilogue">Epilogue</h2>
+<p>Make no mistake, relational databases are the past of computer database technology. Graph databases are the present and the future. This quick review on what we considered important criteria for graph database related technology products might leave the reader in more perplexity than satisfaction. This is our perspective, we wanted to share some of our knowledge with experts and chief technology persons on this field so that we could discuss the matter in more detail with them. The future will show in how many of these discussion topics we were right.</p>
+<h2 id="cross-references">Cross-References</h2>
+<ul>
+<li><a href="https://www.linkedin.com/pulse/quick-guide-how-prevail-graph-database-arena-hatzis-phd">LinkedIn - Published Posts</a></li>
+<li><a href="https://www.linkedin.com/groups/129217/129217-6236916644548091906">LinkedIn - Semantic Web Research Group</a></li>
+<li><a href="https://www.linkedin.com/groups/2552968/2552968-6236916721563901952">LinkedIn - Graph Databases Group</a></li>
+<li><a href="https://www.linkedin.com/groups/108904/108904-6236916684649828353">LinkedIn - Data Warehouse &amp; Business Intelligence Architects</a></li>
+<li><a href="https://www.linkedin.com/groups/6514034/6514034-6236916721589059584">LinkedIn - Computational Semiotics</a></li>
+<li><a href="https://www.linkedin.com/groups/3750024/3750024-6236916585051881475">LinkedIn - Database &amp; Data Store Professionals ★ NoSQL ★ NewSQL ★ Relational</a></li>
+<li><a href="https://www.linkedin.com/groups/73235/73235-6236915823848628225">LinkedIn - Database Developers and Architects Group</a></li>
+<li><a href="https://www.linkedin.com/groups/2357895/2357895-6273464481200902148">LinkedIn - Data Modeling Group</a></li>
+<li><a href="https://www.linkedin.com/hp/update/6236886400814452736">LinkedIn - Update</a></li>
+<li><a href="https://www.linkedin.com/groups/45183/45183-6236916721589059585">LinkedIn - Database Experts</a></li>
+<li><a href="https://www.linkedin.com/groups/4344857/4344857-6236916644548091907">LinkedIn - OrientDB</a></li>
+<li><a href="https://www.linkedin.com/groups/1969109/1969109-6236915855192657924">LinkedIn - MUMPS and Cache Development</a></li>
+<li><a href="https://www.quora.com/What-are-the-criteria-to-differentiate-graph-databases/answer/Athanassios-Hatzis-PhD">Quora - Question and Answer</a></li>
+<li><a href="https://dzone.com/articles/a-quick-guide-to-prevail-in-the-graph-database-arena">DZone - Article</a></li>
+<li><a href="http://www.datasciencecentral.com/profiles/blogs/a-quick-guide-on-how-to-prevail-in-the-graph-database-arena">Data Science Central - Blog Post</a></li>
+<li><a href="https://community.intersystems.com/post/how-intersystems-cach%C3%A9-fits-graph-database-arena">Intersystems Developer Community - 21/2/2017 Post about how Intersystems Cache fits in the Graph Database Arena</a></li>
+</ul>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tags/abstraction_software_engineering/">Abstraction_(software_engineering)</a>
+  
+  <a class="badge badge-light" href="/en/tags/information/">Information</a>
+  
+  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  
+  <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
+  
+  <a class="badge badge-light" href="/en/tags/signified_and_signifier/">Signified_and_signifier</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
+  
+  <a class="badge badge-light" href="/en/tags/data_model/">Data_model</a>
+  
+  <a class="badge badge-light" href="/en/tags/semantics/">Semantics</a>
+  
+  <a class="badge badge-light" href="/en/tags/database/">Database</a>
+  
+  <a class="badge badge-light" href="/en/tags/database_management_system/">Database_management_system</a>
+  
+  <a class="badge badge-light" href="/en/tags/graph_database/">Graph_database</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_semiotic_hypergraph/">associative_semiotic_hypergraph</a>
+  
+  <a class="badge badge-light" href="/en/tags/computational_semiotics/">Computational_semiotics</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_entity/">Associative_entity</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
+  
+  <a class="badge badge-light" href="/en/tags/association_object-oriented_programming/">Association_(object-oriented_programming)</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_array/">Associative_array</a>
+  
+  <a class="badge badge-light" href="/en/tags/online_analytical_processing/">Online_analytical_processing</a>
+  
+  <a class="badge badge-light" href="/en/tags/business_analytics/">Business_analytics</a>
+  
+  <a class="badge badge-light" href="/en/tags/data_warehouse/">Data_warehouse</a>
+  
+  <a class="badge badge-light" href="/en/tags/it_operations_analytics/">IT_Operations_Analytics</a>
+  
+  <a class="badge badge-light" href="/en/tags/resource_description_framework/">Resource_Description_Framework</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:athanassios@healis.eu" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/ahatzis" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/athanhat" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-quora"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://vimeo.com/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-vimeo"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://stackoverflow.com/users/5364935/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/en/post/20150320/">Atomic Information Resource (AIR)</a></li>
+          
+          <li><a href="/en/post/20161220/">Association in RDF Data Model</a></li>
+          
+          <li><a href="/en/post/20160825/">Relation, Relationship and Association</a></li>
+          
+          <li><a href="/en/post/20150317/">Relational/ER Constructs in Wolfram Language</a></li>
+          
+          <li><a href="/en/post/20170211/">Qlik Associative Model</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/en/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+
+    
+
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          Powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/healiseu/" target="_blank" rel="noopener" title="Star Me"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/healiseu" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCoCkNTkn1dAbtyr5EMvzc7w/videos" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener" title="Connect with Me"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener" title="Contact Me"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:athanassios.hatzis?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener" title="Ping Me"><i class="fab fa-quora" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://disqus.com/home/forums/healiseu/" target="_blank" rel="noopener" title="Discuss on Disqus"><i class="fas fa-comments" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
