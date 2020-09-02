@@ -7,10 +7,235 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
-    <lastBuildDate>Thu, 20 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://healis.eu/en/tags/association_object-oriented_programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Helicopter view of Graph Networks in DBMS</title>
+      <link>https://healis.eu/en/post/20191030/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20191030/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#the-new-brave-age-of-hyperlinked-data&#34;&gt;The new brave age of hyperlinked data&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#technical-questions-for-hyperlinking-data&#34;&gt;Technical questions for hyperlinking data&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#physical-layer&#34;&gt;Physical Layer&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#logical-layer&#34;&gt;Logical Layer&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#conceptual-layer&#34;&gt;Conceptual layer&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#by-reference-vs-by-value&#34;&gt;By reference vs. by value&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Normally IT people including architects, engineers, scientists and developers are forced to think a particular implementation of an application or a business solution in terms of the query language. Generally speaking most often it is the specific technology and infrastructure behind the scene that dictates how things should be done. Recently the first workshop on web standardization for graph data was held in Berlin, Germany. The title of the workshop &amp;ldquo;&lt;a href=&#34;https://www.w3.org/Data/events/data-ws-2019/cfp.html&#34;&gt;Creating Bridges: RDF, Property Graph and SQL&lt;/a&gt;&amp;rdquo; indicates that it is technology again, and its vendors, that force a narrow view of how to apply graph networks in data management. Hope they do not seek a solution that temporarily makes everyone happy in business, instead of taking a firm decision to move ahead on a new path that will be proven the right choice over time. That said, I do recognize that there are always compatibility issues with older technology in place but the bridges should serve the scope of a smooth transition from the old age to the new age.&lt;/p&gt;
+&lt;h2 id=&#34;the-new-brave-age-of-hyperlinked-data&#34;&gt;The new brave age of hyperlinked data&lt;/h2&gt;
+&lt;p&gt;But there is another factor more important than technology, the need to provide a business insight, understanding and/or solution to real world problems with increasing complexity. After all many recognize that this was the driving force behind the NoSQL movement that started ten years ago. Out of the three main technological categories of database products, key-value, document-hierarchical and graph networks, the last one emerged with significant importance for the future of IT business for many reasons that will not be analysed here. Suffice to say that WWW, the most advanced and popular information system, is the biggest graph network of documents and other resources in the history of human mankind. Today we reached the point in time that the maturity of NoSQL movement met the evolution of WWW but the question remains on how exactly these two will be married to serve human needs. A quick and sort answer is by &lt;strong&gt;hyperlinking data in the context of information&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;technical-questions-for-hyperlinking-data&#34;&gt;Technical questions for hyperlinking data&lt;/h2&gt;
+&lt;p&gt;Therefore the aim has been set but the competitive database, semantic and web technologies out there makes it too difficult for many to rise above the specifics. That is where a &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;multi-layer perspective&lt;/a&gt; is needed to embrace the problem of hyperlinking data.&lt;/p&gt;
+&lt;p&gt;Does this mean users are going to abandon their favorite popular SQL row-based, column-based, document based or existing triple store and property graph databases ? No, not at all but this new technology should integrate them in the large picture which takes on account the following questions as it concerns the hyperlinked graph data network :&lt;/p&gt;
+&lt;h3 id=&#34;physical-layer&#34;&gt;Physical Layer&lt;/h3&gt;
+&lt;p&gt;Although many vendors consider a native graph network storage layer as an advancement in graph databases, this approach has the following drawbacks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;it results in poor data locality and you may consider this issue independent of horizontal scaling.&lt;/li&gt;
+&lt;li&gt;you are forced to apply too early a graph layout on data especially on record-based data.&lt;/li&gt;
+&lt;li&gt;it is not easy to implement quick and easy data transformations, i.e. the result from a data query in a tabular, columnar, hierarchical or graph network format. All four are needed for different purposes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;So what is the best type of storage engine that serves these specifications ?&lt;/strong&gt; Would it be better to think in terms of a hybrid architecture ?&lt;/p&gt;
+&lt;h3 id=&#34;logical-layer&#34;&gt;Logical Layer&lt;/h3&gt;
+&lt;p&gt;This is where the basic constructs of the technology must be thoroughly specified. Since we are talking about a graph network:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What type of nodes and edges we have ?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do you allow key-value properties in nodes and edges ?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Does the edge connect only two nodes ?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What type of cardinality and linkage, i.e. unidirectional, bidirectional, they have ?&lt;/p&gt;
+&lt;p&gt;Speaking about linkage, both &lt;strong&gt;RDF and property graph databases are anchored on appropriate semantic labelling of edges&lt;/strong&gt; and then storage and retrieval of information at the implementation level are dependent on this labelling.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;However, have you considered that this extra piece of information, i.e. the label, in most cases can be a meta-data property of the node, e.g. type, category, role, characteristic, etc ?&lt;/p&gt;
+&lt;p&gt;For that reason labelling of edges should be left to the data modeller, business person, purely for conceptualising the business model. Here is perhaps the most critical question.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How do you use these constructs to build business data models and what are their semantics ?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This leads us inadvertently to the conceptual level.&lt;/p&gt;
+&lt;h3 id=&#34;conceptual-layer&#34;&gt;Conceptual layer&lt;/h3&gt;
+&lt;p&gt;I think RDF graphs and labeled property graphs and Topic Map graphs (hardly anyone talks anymore about this standard) and even entity-relationship graph in relational theory have varying types of constructs with big differences in meaning and use. Entities, attributes, properties, data resources, relationships, relations, associations, items, instances and many other concepts make the IT babel at the business, end-user level.&lt;/p&gt;
+&lt;p&gt;Here lies a major source of confusion for the newcomer, I used to be one of them, which is the &lt;strong&gt;distinction between classes and instances, metadata and data, terminological and assertion components&lt;/strong&gt;. This distinction as many others in IT semantic world is artificial, nevertheless it plays an extremely important role in programming, in data retrieval and even in inferencing mechanisms.&lt;/p&gt;
+&lt;p&gt;If you think you can handle this distinction easily, I urge you to think again, because in my opinion these two concepts must be clearly separable and at the same time they have to be related like the &lt;a href=&#34;https://healis.eu/en/post/20190624/&#34;&gt;hand mold and the letter types in typography&lt;/a&gt;. On the contrary I do not see this happening in our modern graph technologies, time does not permit to expand this argument but it is entangled with the following important observation.&lt;/p&gt;
+&lt;h3 id=&#34;by-reference-vs-by-value&#34;&gt;By reference vs. by value&lt;/h3&gt;
+&lt;p&gt;Those of us familiar with programming and the internals of computing know that there is another critical, fundamental distinction in data processing. &lt;strong&gt;How do you access the datum by reference or by value ?&lt;/strong&gt;_ This was the moment in time that RDF/OWL framework presented the first signs of derailment. First they came up with the idea of universal resource locator (URL), then the concept was elevated to the universal resource identifier (URI) and the result was the web identity crisis for those old enough to remember &lt;a href=&#34;https://ontopia.net/topicmaps/materials/identitycrisis.html&#34;&gt;the clash with the proponents of Topic Maps data modeling framework&lt;/a&gt;. If you ask me, &lt;a href=&#34;http://www.semantic-web-journal.net/content/semantic-web-identity-crisis-search-trivialities-never-were&#34;&gt;that crisis has not been resolved yet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The main reason behind web identity crisis is the use of namespace addressing, to connect, identify and locate data. The notion of web address has been semantically overloaded because of its textual form. On the contrary internet protocol for addressing and usually primary key mechanism of databases are numerical. Perhaps they thought that this way it would have been easier for developers and machines to do the linkage in the same way they use HTML anchoring. But I guess this is more or less a fallacy of TimBL&amp;rsquo;s linked data network where it was designed primarily for documents (html pages) not record-base (relational) data. The origin of this misconception is &lt;a href=&#34;https://en.wikipedia.org/wiki/Memex&#34;&gt;Memex&lt;/a&gt; and it is continued in our days with the invention of many different encodings, including RDFa, Microdata and JSON-LD with the intention of generating manual or semi-automated linked data in semi-structured, hierarchical forms and html documents.&lt;/p&gt;
+&lt;p&gt;Global Giant Graph (GGG) or WWW 3.0 will become a reality only if W3C consortium admit that they have to build likewise IP numerical addressing schema for concepts in data models and for hyperlinked data. It is this new protocol that will permit networking at semantic level, it is going to be the same protocol that we are going to use for identification purposes, the same protocol that will make each data element traceable and connectable, the same protocol that will be used in number-crunching computers. Moreover the whole process of constructing hyperlinked data, especially from structured data resources (databases), will be fully automated and hidden in the same way TCP/IP is hidden from internet users.&lt;/p&gt;
+&lt;p&gt;Epilogue
+The reader may realize that I have only touched various parts of the &amp;ldquo;elephant in the room&amp;rdquo;. But those key points that I tried to make digestible rose from my experience with semantic and database technologies and eventually from my long standing personal effort to develop &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; computational semiotics framework. This way I hope that I managed to enlighten a different path not in theory but in practice. And if there is one thing to remind you something from this article and assist you in following this path then let it be &lt;strong&gt;&lt;a href=&#34;https://healis.eu/en/post/20190624/&#34;&gt;granular computing&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/helicopter-view-graph-networks-dbms-athanassios-hatzis/&#34;&gt;LinkedIn - Published Post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About data granularity</title>
+      <link>https://healis.eu/en/post/20190624/</link>
+      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20190624/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#information&#34;&gt;Information&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#conceptual-computational-semiotics-framework&#34;&gt;Conceptual, computational semiotics framework&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#push-forward&#34;&gt;Push forward&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In computer science there are many things we take for granted like the fundamental digital representation of anything with 1s and 0s. It&amp;rsquo;s often too easy to forget that when you have dived deep into the virtual realm of a computer the only thing you get is a mere representation of abstract concepts. This is our data and because they live in a machine and its peripherals they always have structure no matter how you interpret them.&lt;/p&gt;
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;p&gt;And that kind of human interpretation I will call it information, i.e. you put data in a form, in some perspective, so you can get meaning out of them. In that sense data in a computer does not differ much from printed letters in a book, or paint in a canvas, or stone in a sculpture. From that point of view computer is simply an advanced form of a medium, a sophisticated printing press where 0&amp;rsquo;s and 1&amp;rsquo;s take the place of the movable individual metal letters, i.e. a computerized movable type printing.&lt;/p&gt;
+&lt;h2 id=&#34;conceptual-computational-semiotics-framework&#34;&gt;Conceptual, computational semiotics framework&lt;/h2&gt;
+&lt;p&gt;Once again, it&amp;rsquo;s only structured data you have, our mind is doing all the rest because of the power of &lt;a href=&#34;https://en.wikipedia.org/wiki/Semiosis&#34;&gt;semiosis&lt;/a&gt;. One can also ask, is there anything in our universe that is unstructured ? Yes there is, concept is unstructured because it is an abstract thing. When you represent the concept, or you realize, materialize it in our realm then you have structure again. A computational model of representation which is semiotic in its nature is &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;. And here is a memorable type of formula that describes fully the semiotic nature of this data model.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(R3DM): Representation ↦ Resource + Reference + Referent&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(S3DM): Semantics ↦ Signifier + Sign + Signified&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;push-forward&#34;&gt;Push forward&lt;/h2&gt;
+&lt;p&gt;Nowadays there is already a sufficient and effective solution for data volume and velocity. It&amp;rsquo;s variety and consequently integration that is at stake. In my opinion the key to an efficient and effective solution is to think about the exact form of what &lt;strong&gt;atomic fundamental constructs you use and how you build connected higher structures&lt;/strong&gt;. I think &lt;a href=&#34;https://en.wikipedia.org/wiki/Granular_computing&#34;&gt;granular computing&lt;/a&gt; is an excellent term we can use here. That said, I have experienced for more than a decade a denial of thinking a better data model standard than those we already have (Relational, RDF and Topic Maps) simply because many believe that the wheel is going to be reinvented. But progress is made only when one defies the established nomenclature and challenges them with a better alternative that can be proven in a &lt;a href=&#34;https://en.wikipedia.org/wiki/Computational_engineering&#34;&gt;computational scientific and engineering&lt;/a&gt; way.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here’s to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They’re not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can’t do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/mtftHaK9tYY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/data-granularity-athanassios-hatzis/&#34;&gt;LinkedIn - Published Post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Steve Jobs, Apple advertisement (Aired 1997) &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Where is the gap in data modeling ?</title>
+      <link>https://healis.eu/en/post/20190615/</link>
+      <pubDate>Sat, 15 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20190615/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#business-vs-technological-factors&#34;&gt;Business vs Technological Factors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I was motivated to write this post from an article of Christian Kaul &amp;ldquo;&lt;a href=&#34;https://www.linkedin.com/pulse/bridging-knowledge-gap-christian-kaul/&#34;&gt;Bridging the Knowledge Gap&lt;/a&gt;&amp;rdquo;. He is making questions about how, what is the best way to bridge the knowledge gap between data modeling experts and people from other fields ? But I think an important role that data modeling experts play is exactly that &lt;strong&gt;to bridge the gap between pure IT technical people like developers, database administrators, data engineers and people from other fields e.g. domain experts, scientists, business people, etc&lt;/strong&gt;. A more interesting question in my opinion is how this gap is created. Get prepared because I will answer with more questions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Do we all agree that the best way to model data-information is to create a graph ?&lt;/li&gt;
+&lt;li&gt;If yes the next question is how exactly you represent that graph ? As you probably know there are four major competing data models, (&lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_model&#34;&gt;relational model&lt;/a&gt; - &lt;a href=&#34;https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model&#34;&gt;ER&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_database#Labeled-property_graph&#34;&gt;labeled property graph&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/Resource_Description_Framework&#34;&gt;RDF&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Topic_map&#34;&gt;Topic Maps&lt;/a&gt;), Are you convinced that there can be no other better alternative ?&lt;/li&gt;
+&lt;li&gt;What about the building blocks, for example in RDF you have triples, in relational you have relations (tables) and tuples. Is that all ? Can we make better building blocks to connect data or information ?&lt;/li&gt;
+&lt;li&gt;And last but not least, at a physical layer, and I believe that is exactly &lt;strong&gt;where the gap lies between pure data modelers/architects and database engineers/developers&lt;/strong&gt;, you have row, column, document, native graph structures. Are you totally convinced that the best way to physically implement a graph data-information model is with a native graph structure on permanent storage ?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you ask me to answer these questions I suggest you read more information about &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; conceptual, computational semiotics framework and the related projects &lt;a href=&#34;https://healis.eu/en/hmorph/&#34;&gt;HyperMorph&lt;/a&gt; and &lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt;. This is what I have been involved with for the last ten years.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The nice thing with social media is that if you deserve to get some good feedback from professionals and experts of the field in a post like this one you might decide to extend it. That&amp;rsquo;s exactly what I did in the following few paragraphs to respond in a better way to comments in my post.&lt;/em&gt;_&lt;/p&gt;
+&lt;h2 id=&#34;business-vs-technological-factors&#34;&gt;Business vs Technological Factors&lt;/h2&gt;
+&lt;p&gt;I believe the resurgence of no-SQL movement (2009), which is highly related to data modeling, started out of the emergent need of companies-users to deal with the velocity, volume, variety and other properties of distributed data resources. That same movement pushed forward our technological boundaries to create better DBMS and BI, web/desktop applications.&lt;/p&gt;
+&lt;p&gt;Personally speaking I joined that movement because of my business need to manage complex medical databases. Another reason was to enrich and manage collectively and efficiently my own data resources, i.e. personal information management. Believe it or not I am still not satisfied from what exists out there and that is why I ended up &lt;strong&gt;researching and developing&lt;/strong&gt; my own solution.&lt;/p&gt;
+&lt;p&gt;Apparently another critical factor has to do purely with the cost of a solution you apply to a complex data/information management problem. That is also why open-source based systems are becoming more and more popular nowadays. We need bulletproof, open-source tools with strong communities behind to support, develop and test them. Do consider also that in many cases open-source is an escape from the high cost cloud solutions and corresponding vendor-locking mechanisms.&lt;/p&gt;
+&lt;p&gt;Eventually, somehow, sometime something similar to a Linux OS, will be created for information management at a higher level. Something that will earn the consensus of developers, end users and companies emerging out of practical need for a new data modeling standard, for effective physical layer implementation, highly responsive graphical user interfaces and efficient augmented artificial intelligence tools.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/where-gap-data-modeling-athanassios-hatzis-phd/&#34;&gt;LinkedIn - Published Post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Yet another query language, really ?</title>
+      <link>https://healis.eu/en/post/20180403/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20180403/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Recently, I have been reading an article for yet another query language, &lt;a href=&#34;https://www.hypergraphql.org/&#34;&gt;HypergraphQL&lt;/a&gt;. But do we really need another query language ? I do agree that it is always good to offer the developer a variety of choices for querying a database, especially if the new query language makes it easier or perhaps better in some sense to fetch or input data. But that&amp;rsquo;s not really a big deal, I will try to explain why in brief here.&lt;/p&gt;
+&lt;p&gt;Whether it is a standard based &lt;a href=&#34;https://www.w3.org/TR/rdf-sparql-query/&#34;&gt;SPARQL&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/SQL&#34;&gt;SQL&lt;/a&gt;, &lt;a href=&#34;http://www.isotopicmaps.org/tmql/&#34;&gt;TMQL&lt;/a&gt;, &lt;a href=&#34;https://www.w3.org/XML/Query/&#34;&gt;XQuery&lt;/a&gt; language, or a more graph oriented query language like &lt;a href=&#34;http://graphql.org/&#34;&gt;GraphQL&lt;/a&gt; (former Facebook Query language), &lt;a href=&#34;http://tinkerpop.apache.org/gremlin.html&#34;&gt;Gremlin&lt;/a&gt; and &lt;a href=&#34;https://www.opencypher.org/&#34;&gt;Cypher&lt;/a&gt;, the end user (developer) has to write down the query in some form according to the formal system of the language. That also implies that you do know your data model in some detail, i.e. structural form of data, instances vs object types, and kind of connections/links. This is essential to describe your query in the language.&lt;/p&gt;
+&lt;p&gt;Therefore &lt;strong&gt;all Query Languages are dependent on their data model and naturally they also carry the deficiencies of their data model and several quirks of their vendor&lt;/strong&gt;. So in my opinion that is where all bets are off. Better show me a new data model, describe how it deviates from other established data models, in what terms it is better and most important the functional operations, the basic mechanisms behind the implementation of a query language that is based on this data model.&lt;/p&gt;
+&lt;p&gt;Speaking about HypergraphQL, and former Facebook GraphQL that is not something new. They originate from &lt;a href=&#34;https://en.wikipedia.org/wiki/Freebase&#34;&gt;Freebase MQL&lt;/a&gt; language, which &lt;a href=&#34;https://discourse.cayley.io/t/query-languages-tour/191&#34;&gt;according to Barak Michener&lt;/a&gt;, a former employer of Metaweb Technologies and later on of Google, it was mainly developed in the period between 2006-2008 to elevate GQL a query language for a kind of triple store database (graphd). And if we decide to search further back MQL approach looks like the Query by Example (&lt;a href=&#34;https://en.wikipedia.org/wiki/Query_by_Example&#34;&gt;QBE&lt;/a&gt;) language for relational databases that was devised during the mid-1970s, I still remember Ashton-Tate &lt;a href=&#34;https://en.wikipedia.org/wiki/DBase&#34;&gt;dBase&lt;/a&gt; product that I was playing with as a BSc student.&lt;/p&gt;
+&lt;p&gt;But what really puzzles me is that I hardly see a strong mathematical foundation, e.g. like Codd&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_algebra&#34;&gt;relational algebra&lt;/a&gt;, that covers important features of all these query languages I mentioned above. I am specifically referring to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;closed vs open world assumption&lt;/li&gt;
+&lt;li&gt;closure under operations&lt;/li&gt;
+&lt;li&gt;constrains&lt;/li&gt;
+&lt;li&gt;updates&lt;/li&gt;
+&lt;li&gt;joins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That is why in a &lt;a href=&#34;https://healis.eu/en/post/20180310/&#34;&gt;previous article&lt;/a&gt; of mine I have proposed to return back to the roots and investigate better the Relational Algebra and these reasons that made both SQL and NoSQL DBMS to deviate from the original relational model path.&lt;/p&gt;
+&lt;p&gt;For those that follow my posts, they are aware that I am not speaking purely from a theoretical point of view. There is an alternative data model (&lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;) that I propose, a particular software technology based on this (&lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;Associative Semiotic Hypergraph&lt;/a&gt;) and two prototypes (&lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt;, &lt;a href=&#34;https://healis.eu/en/project/hypermorph/&#34;&gt;HyperMorph&lt;/a&gt;) implemented and demonstrated with an intuitive functional declarative way to query things. Nevertheless performance is a top priority, and that is what I am currently investigating.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/yet-another-query-language-really-athanassios-hatzis-phd/&#34;&gt;LinkedIn - Published Post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
     
     <item>
       <title>Many-to-Many Relationships</title>
@@ -1190,6 +1415,203 @@
     </item>
     
     <item>
+      <title>Know-How is How you Know</title>
+      <link>https://healis.eu/en/post/20160729/</link>
+      <pubDate>Fri, 29 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20160729/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#the-problem&#34;&gt;The Problem&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#about-knowledge&#34;&gt;About Knowledge&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#the-know-how-is-how-you-know&#34;&gt;The Know-How is how you know&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#the-i-know-something-or-someone-phrase&#34;&gt;The &amp;ldquo;I know something or someone&amp;rdquo; phrase&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#the-i-know-this-is-true-phrase&#34;&gt;The &amp;ldquo;I know this is true&amp;rdquo; phrase&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#epilogue&#34;&gt;Epilogue&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Perhaps there is not a better phrase to start this post than the Socratic paradox,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/I_know_that_I_know_nothing&#34;&gt;All I know is that I know nothing&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is typical of the great gap that exists between &lt;a href=&#34;https://healis.eu/en/post/20150523/&#34;&gt;Eastern and Western way of thinking&lt;/a&gt; about fundamental concepts such as information, knowledge and wisdom. In my opinion we have become too ignorant and arrogant boasting about our knowledge that we cannot even understand the basics of it. This is all too evident in Information/Computer Science fields. The well-known &lt;strong&gt;Data-Information-Knowledge-Wisdom&lt;/strong&gt; (&lt;a href=&#34;https://en.wikipedia.org/wiki/DIKW_pyramid&#34;&gt;DIKW&lt;/a&gt;) pyramid has become a popular shorthand representation for the data to information to knowledge to wisdom transformation. As a result of this we, the information/computer scientists, often hear about knowledge representation and inference, knowledge extraction, knowledge management and knowledge organization.&lt;/p&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;dikw.jpeg&#34; &gt;
+
+&lt;img src=&#34;dikw.jpeg&#34; &gt;
+&lt;/a&gt;
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Data-Information-Knowledge-Wisdom&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;This mechanized perception and realization of knowledge can easily lead people to believe that machines can become wise and they can become wise too by following this transformation process. The main appeal to this common belief is that we are completely ignorant on how these words, i.e. information, knowledge and wisdom were defined and used in the past by our ancestors. Most important is the fact that we have replaced their meaning and definition with other words that are inferior and subservient as symbols. An example of this phenomenon is the definition of the word information. Inform comes from the Latin verb informare, which literally means to give form, or to form an idea of. Where the &lt;strong&gt;ancient and modern Greek word for information is πληροφορία, which transliterates (plērophoria) from πλήρης (plērēs) “fully” and φέρω (phorein) frequentative of (pherein) to carry through&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. You may realize how different becomes your thinking by using one or the other definition of the word and perhaps how narrow is your thinking if you are missing completely the older ancient Greek definition of the word information. But this was the subject of a &lt;a href=&#34;https://healis.eu/en/post/20150523/&#34;&gt;previous post&lt;/a&gt; of mine.&lt;/p&gt;
+&lt;h2 id=&#34;about-knowledge&#34;&gt;About Knowledge&lt;/h2&gt;
+&lt;p&gt;In this post we focus on knowledge. How do we define knowledge ? According to &lt;a href=&#34;http://plato.stanford.edu/entries/knowledge-how/&#34;&gt;Stanford Encyclopedia of Philosophy&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;it is common in epistemology to distinguish among three kinds of knowledge. There&amp;rsquo;s the kind of knowledge you have when it is truly said of you that you know how to do something—say, ride a bicycle. There&amp;rsquo;s the kind of knowledge you have when it is truly said of you that you know a person—say, your best friend. And there&amp;rsquo;s the kind of knowledge you have when it is truly said of you that you know that some fact is true&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;the-know-how-is-how-you-know&#34;&gt;The Know-How is how you know&lt;/h2&gt;
+&lt;p&gt;The first definition of knowledge, i.e. the know-how, is most evident in our learning process. It is about acquiring knowledge through practicing and experiencing the difficulties and different situations that may arise. If you want to become, let&amp;rsquo;s say a neurosurgeon, reading books, watching videos and attending classes in a medical school is not going to make you a neurosurgeon. If you do not have hands-on practical training on a operating room with your colleagues, under the supervision of an experienced neurosurgeon, it is most probable that you are going to kill your first patient. Learning to perform a surgery simply means you know how to do it. Wikipedia definition on knowledge is very enlightening:  &lt;em&gt;&amp;ldquo;knowledge is a familiarity, awareness or understanding of someone or something, such as facts, information, descriptions, or skills, which is acquired through experience or education by perceiving, discovering, or learning&amp;rdquo;&lt;/em&gt;. Therefore, it seems we are are paying too much attention and we emphasize the awareness and understanding of facts and information part instead of focusing on the experience, education and learning part. Thus &lt;strong&gt;we are only informed about things&lt;/strong&gt;, such as processes, events, organizations, people, but deeply inside we do not know anything about them, i.e. &lt;strong&gt;know how is how you know&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;the-i-know-something-or-someone-phrase&#34;&gt;The &amp;ldquo;I know something or someone&amp;rdquo; phrase&lt;/h2&gt;
+&lt;p&gt;How you know him or this or that ? Most often we mean that it just happens, by coincidence, to meet him once in person, or we heard about something, or we read about this or that. And especially for people, I am sure that many of you think that they know someone well, until it comes the day you understand how wrong you are. &lt;strong&gt;This &amp;ldquo;know&amp;rdquo; perception of ours is what I was referring to as the inferior subservient purpose&lt;/strong&gt;.  This is also the case when information and computer scientists claim that &lt;strong&gt;they know how to extract or manage or organize knowledge&lt;/strong&gt;.  It just means they are capable of modeling, composing, structuring, storing, analyzing information in a clever way and they are simply aware of this fact. By analogy of our aforementioned statements information becomes degraded too. &lt;strong&gt;There is endless effort in our field on how to structure and model the data&lt;/strong&gt;, i.e. what form to give the data, this is the core idea of information technology.&lt;/p&gt;
+&lt;h2 id=&#34;the-i-know-this-is-true-phrase&#34;&gt;The &amp;ldquo;I know this is true&amp;rdquo; phrase&lt;/h2&gt;
+&lt;p&gt;Information technology is about Database Management Systems and digital libraries of information (data), and about building clever tools to do statistics and predictions. Let me take another example. Today we are able to browse a huge &amp;ldquo;Knowledge Base&amp;rdquo; such as Wolfram Alpha and &lt;a href=&#34;https://www.wolframalpha.com/input/?i=moon+distance+from+earth&#34;&gt;ask what is the distance of Moon from Earth&lt;/a&gt;, to receive the current result of 399383 kilometers. But do I know anything about that distance except this number figure ? Have I traveled that distance ? Have I measured that distance ? What is the source of information ? Is it authoritative ? Why is there such a distance and is it constant ? What purpose it serves ? These are typical question just to make you think that stating a fact is only the tip of the iceberg. Take another example, financial instability, let us assume we can predict such a phenomenon, does this mean we know anything about it ?&lt;/p&gt;
+&lt;h2 id=&#34;epilogue&#34;&gt;Epilogue&lt;/h2&gt;
+&lt;p&gt;We think we know, we know nothing, and even those that are in the process of knowing something, eventually they admit that they are still learning about it. The more you know something, the more you understand how deep your knowledge about this thing can become. Famous soloists are aware of this process. They are rediscovering day by day more about the quality of sound they can produce with their instrument. But it is not any more about the technical know-how, it is about &lt;strong&gt;knowing how to express themselves&lt;/strong&gt; through the instrument and feel more the music they play. In my opinion knowledge is a very deep process that takes place inside of us. It can assist you to your search for the path to wisdom, but it will not make you wiser. I believe wisdom is part of the spiritual endeavor. We are fools if we believe our knowledge, not to say our technology, makes us wiser than our ancestors. Wisdom is about how you lead your life, how you live your life and depends on the utmost goal you strive to achieve in this life. For such a reason Socrates was a wise man and he really meant that &amp;ldquo;All I know is that I know nothing&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/know-how-how-you-know/&#34;&gt;LinkedIn - Published Post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;The ancient Greek origin of the word &lt;code&gt;information&lt;/code&gt; - Wikipedia &lt;a href=&#34;https://en.wikipedia.org/wiki/Information#Etymology&#34;&gt;Etymology section&lt;/a&gt; of the term Information was updated by HEALIS with the quoted text above on the 13th of June 2014 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why Google shuts down Freebase ?</title>
+      <link>https://healis.eu/en/post/20150609/</link>
+      <pubDate>Tue, 09 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20150609/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#quick-history-review&#34;&gt;Quick History Review&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#summary-of-technology-achievements&#34;&gt;Summary of technology achievements&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#database-management-system-and-data-architecture&#34;&gt;Database management system and data architecture&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#the-identity-crisis-solution&#34;&gt;The identity crisis solution&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#schema-type-system-ontology&#34;&gt;Schema, Type System, Ontology&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#type-checking&#34;&gt;Type Checking&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#included-types&#34;&gt;Included Types&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#disambiguation-mechanism&#34;&gt;Disambiguation Mechanism&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#complexcompound-value-types-cvts-and-relationships&#34;&gt;Complex/Compound Value Types (CVTs) and Relationships&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#blobs-mechanism&#34;&gt;Blobs Mechanism&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#full-access-control-and-auditing-mechanism&#34;&gt;Full Access Control and Auditing mechanism&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#fully-web-based-user-interfaces-and-applications&#34;&gt;Fully web-based user interfaces and applications&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#mql---the-metaweb-query-language&#34;&gt;MQL - The Metaweb Query Language&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I have spent a lot of time studying in detail and experimenting with Freebase, and I am truly disappointed to see such a great collective effort to suddenly disappear from the software development scene without a good reason. I will justify this, but first let me discuss a bit about what is freebase for those that are not aware of the project.&lt;/p&gt;
+&lt;p&gt;Freebase, in my opinion, is currently the best collaborative information management system ever built. According to &lt;a href=&#34;http://en.wikipedia.org/wiki/Freebase&#34;&gt;Wikipedia&lt;/a&gt;, &amp;ldquo;It is an online collection of structured data harvested from many sources, including individual, user-submitted contributions. Freebase aims to create a global resource which allows people (and machines) to access common information more effectively&amp;rdquo;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://player.vimeo.com/video/1513562&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;vimeo video&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+&lt;h2 id=&#34;quick-history-review&#34;&gt;Quick History Review&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;In 2000 Danny Hillis first described his idea for creating a &amp;ldquo;knowledge web&amp;rdquo; which he called Aristotle !&lt;/li&gt;
+&lt;li&gt;In 2003 the project known as &amp;ldquo;The Metaweb&amp;rdquo; begins, inside Applied Minds&lt;/li&gt;
+&lt;li&gt;On October 2006 the One True Graph is born&lt;/li&gt;
+&lt;li&gt;On July 16th 2010 Metaweb is acquired by Google&lt;/li&gt;
+&lt;li&gt;On 30th of June 2015 Google plans to shut down completely the service. It is already in read-only mode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;summary-of-technology-achievements&#34;&gt;Summary of technology achievements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Freebase counts twelve years of focused development effort by a strong dedicated team of experts.&lt;/li&gt;
+&lt;li&gt;Freebase counts nine years of online editing with superb web-based client APIs and GUIs&lt;/li&gt;
+&lt;li&gt;Freebase, Google, have defined and implemented  state of the art technology in collaborative information management. Do consider the following topics just for a start :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;database-management-system-and-data-architecture&#34;&gt;Database management system and data architecture&lt;/h3&gt;
+&lt;p&gt;The most important IT asset is their proprietary &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=1807283&#34;&gt;Graphd&lt;/a&gt; database.  Some information have been disclosed to the public in the past, but of course the database itself is not going to be released or opened for inspection.&lt;/p&gt;
+&lt;p&gt;Graphd encodes everything  as a tuple. Every structure and construct such as entity type, entity instance, property, data types, domain, namespace, ontology you name it, are constructed from tuples. The very first layer of abstraction that is created on top of this is the object-link that implements RDF kind of statements in Freebase. Every item in freebase is either a link or an object. And you can get ALL the links to or from any object. Defining a single primitive construct as a building block is one of my R3DM semiotic principles in data modelling abstraction. Topic Maps data model (&lt;a href=&#34;http://www.isotopicmaps.org/sam/sam-model/#sect-metamodel&#34;&gt;TMDM&lt;/a&gt;) follow the same kind of logic, where everything is a topic and every other construct is built with topics. In RDF/OWL fundamental construct is the triplet, in Graph databases you have the node, in key-value stores you have the key-value primitive.&lt;/p&gt;
+&lt;h3 id=&#34;the-identity-crisis-solution&#34;&gt;The identity crisis solution&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;https://healis.eu/en/post/20131105/#vvp-and-the-identity-crisis-on-the-web&#34;&gt;identity crisis&lt;/a&gt;, that is still a problem in the linked-data world, has a fair solution in Freebase with not a single URL-based namespace identifier but with three kinds of identifiers that each plays a different role :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Under the hood GUIDs that are written internally in Graphd database&lt;/li&gt;
+&lt;li&gt;Long user friendly, human-readable, IDs&lt;/li&gt;
+&lt;li&gt;Short Machine IDs that cover the whole lifecycle of anything recorded in the database, i.e. track changes, solve merging/splitting issues, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;schema-type-system-ontology&#34;&gt;Schema, Type System, Ontology&lt;/h3&gt;
+&lt;p&gt;A flexible generic schema, that covers any other ontology based on top of it with only four hierarchical containers.&lt;/p&gt;
+&lt;span class=&#34;markup-quote&#34;&gt;Namespace &amp;mdash;&amp;gt; Domain &amp;mdash;&amp;gt; Types &amp;mdash;&amp;gt; Properties&lt;/span&gt;
+&lt;p&gt;This is the most generic, plain, T-Box you can define,  with just four levels. Pause for a moment here and take a very careful read on the following.  Are you familiar with the following fundamental hierarchies in Computer science ?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Namespace - Package -Class -Object (OOP)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Database - Schema -Table -Row (RDBMS)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Domain - Type -Property -Instance (Ontologies and XML)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is not a coincidence, and there is a very good reason that we naturally create abstractions based on this hierarchy. The very first person that came up with this astonishing observation is inventor &lt;a href=&#34;https://www.linkedin.com/in/ron-everett-5134a68a/&#34;&gt;Ron Everett&lt;/a&gt; and &lt;a href=&#34;https://healis.eu/en/post/20150320/#signified-sign-signifier-alternative-paradigm&#34;&gt;AtomicDB&amp;rsquo;s under the hood encoding structure (Environment, System, Context, Item)&lt;/a&gt; is the heart of their system. This is not the space or the time to cover that in more detail, it suffices that &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; semiotic conceptual model can offer an adequate explanation on the abstraction/reference mechanism behind the scenes.&lt;/p&gt;
+&lt;h3 id=&#34;type-checking&#34;&gt;Type Checking&lt;/h3&gt;
+&lt;p&gt;In freebase every property, i.e. bidirectional link between two items, by the way this is also a fundamental technology novelty of AtomicDB, stay tuned…., knows exactly what entity types to expect.&lt;/p&gt;
+&lt;h3 id=&#34;included-types&#34;&gt;Included Types&lt;/h3&gt;
+&lt;p&gt;They have implemented a kind of multiple inheritance mechanism, such that one type with its properties can automatically included within another type. Included types makes it possible to create any kind of hierarchical structure where it can be referenced. Most important you can easily create custom types based on previously defined types.&lt;/p&gt;
+&lt;h3 id=&#34;disambiguation-mechanism&#34;&gt;Disambiguation Mechanism&lt;/h3&gt;
+&lt;p&gt;That is based on both the namespace and disambiguating properties in identifying similarly-named topics. A score is also calculated to rank the items in conflict&lt;/p&gt;
+&lt;h3 id=&#34;complexcompound-value-types-cvts-and-relationships&#34;&gt;Complex/Compound Value Types (CVTs) and Relationships&lt;/h3&gt;
+&lt;p&gt;You can define new data types, e.g. use a dated integer for measurements. You can also define mediator type of nodes between the source and target of the original simple relationship. No black nodes and other such RDF/OWL crap in freebase.&lt;/p&gt;
+&lt;h3 id=&#34;blobs-mechanism&#34;&gt;Blobs Mechanism&lt;/h3&gt;
+&lt;p&gt;In freebase you can also store large objects, i.e. text/binary stream.&lt;/p&gt;
+&lt;h3 id=&#34;full-access-control-and-auditing-mechanism&#34;&gt;Full Access Control and Auditing mechanism&lt;/h3&gt;
+&lt;p&gt;Every user action is recorded inside freebase. They have defined Unix like access control on anything, i.e. user, user group, permissions. It is possible to request a full history on any item that is inside the database&lt;/p&gt;
+&lt;h3 id=&#34;fully-web-based-user-interfaces-and-applications&#34;&gt;Fully web-based user interfaces and applications&lt;/h3&gt;
+&lt;p&gt;If you want to attract easily new, inexperienced, users, then you must have the best ever built user interface suited for your purpose and Freebase-Google have managed to do that. You can access everything with a few clicks of a button. You can view everything in a well-presented hierarchical or table like format. You can build your queries online and save them as objects in the database, then you can simply access them with a permanent, tiny URL. Likewise, you can program your applications and save them like objects in the database.&lt;/p&gt;
+&lt;h3 id=&#34;mql---the-metaweb-query-language&#34;&gt;MQL - The Metaweb Query Language&lt;/h3&gt;
+&lt;p&gt;Last but not least, get your hands dirty with a truly magnificent piece of programming art in Freebase, their MQL query/update mechanism. It is based on pattern matching. Programmers and even advanced, non-expert users can define easily a query pattern and take back result in popular JSON formatted string. You can limit or sort results, you can ask for ordered collection items, you can specify optional directives and constrains and pattern matching with operators. Finally results have a numerical relevancy score, this is another Google&amp;rsquo;s secret technology similar to the full implementation of page ranking technology. For example you can get a ranked list of the most notable topics with a given name.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This is certainly not an exhausted list of best of breed Freebase features but I  hope you have read enough about the technology to make your own judgement on why Google shuts down completely their freebase service. Their one page announcement does not say much about it. It is not signed by any Google-Freebase authority persons. In my opinion, the reason explained there to all of us that embraced that project is a sham and is asking for reproach. Most of us knows that Google&amp;rsquo;s knowledge graph, 2012, that enhances Google search engine with semantic information is based on Freebase.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/mmQl6VGvX-c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Let met state clearly that I welcome Google&amp;rsquo;s decision to make contributions to &lt;a href=&#34;https://www.wikidata.org/wiki/Wikidata:Main_Page&#34;&gt;Wikidata&lt;/a&gt; project but I do not understand why they have to shut down completely Freebase in doing that. It is going to take a  long time to reach the level of experience that users already have with Freebase. And what about the curated data of many people and the projects they have built on top of it ? What about all these technological advances I described in this post, how one will be able to see how they operate and make a comparison with other projects ?&lt;/p&gt;
+&lt;p&gt;For a start, I think &lt;a href=&#34;https://www.wikidata.org/wiki/Wikidata:Main_Page&#34;&gt;Wikidata&lt;/a&gt; is a new project, that is built on a far worse fundamental data architecture than Freebase. Nevertheless I acknowledge that there are many good ideas and efforts to share. But, it makes no sense to eradicate such a historical project as Freebase in order to continue development on a newcomer.&lt;/p&gt;
+&lt;p&gt;So, what other alternatives exist in this area ? One is the &lt;a href=&#34;https://wiki.dbpedia.org/&#34;&gt;DBpedia&lt;/a&gt; project, purely RDF based linked-data project, that started in 2007. More recent proprietary systems are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.poolparty.biz/&#34;&gt;Pool-Party&lt;/a&gt; semantic suite, also RDF linked-data based,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kamala.mssm.nl&#34;&gt;Kamala&lt;/a&gt; a Topic-Map based web application,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://siren.io/&#34;&gt;Siren&lt;/a&gt; Investigative Intelligent Platform&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Neverthless I anticipate that sooner or later you should expect a unicorn in semantic based information management that will simply shutter and unify all the rest. The reason I believe this is going to happen is because none of these companies have an efficient underlying fundamental data architecture. In this other dimension, in the twilight zone, there is not any player in the market.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NzlG28B-R8Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Atomic Information Resource (AIR)</title>
       <link>https://healis.eu/en/post/20150320/</link>
       <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
@@ -1771,8 +2193,12 @@ res &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; coreKVPL1ToRules &l
 &lt;p&gt;How do we design a data model, how do we connect data, how do we represent information, how do we store or retrieve them ? These are all fundamental questions in data modeling but there is a common key to unlock them. You have to start by defining a primitive information resource, and then understand how one can build complex information structures on top it. And this is because everything in nature or systems follow this kind of abstraction from the simple to the most sophisticated. There are patterns that recur at progressively smaller scales. There are fundamental building blocks that can build higher-order structures.&lt;/p&gt;
 &lt;p&gt;For more than thirty years, the data modeling world is dominated by records. Records in the form of a row in a table, or in a form of hierarchically structured XML/JSON documents, or in the form of property-graph nodes. Many consider the fundamental structure of RDF triplet, Subject-Predicate-Object, but this can be seen too as a form of a record that confines you to think in terms of a function-functor that maps information resources from a domain set to information resources of a range set. Neither the nature or reference mechanism of these resources, nor their linkage type are defined in a sufficient or efficient manner.&lt;/p&gt;
 &lt;p&gt;An alternative view on data modeling that can extend and enrich RDF is introduced in this article. It is based on &lt;strong&gt;AIR&lt;/strong&gt;, analyzed with R3DM framework, and exemplified with AtomicDB. &lt;strong&gt;AIR&lt;/strong&gt; is the oxygen that makes this database technology breath. It makes it alive and kicking.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;&lt;strong&gt;AIR&lt;/strong&gt; fits perfectly to the duality principle of R3DM conceptual model and the &lt;a href=&#34;https://www.linkedin.com/groups/6514034/6514034-5942584139847868418&#34;&gt;&lt;strong&gt;Everything is Represented with a Symbol&lt;/strong&gt;&lt;/a&gt; corollary. There is no better example to think about this than digital representations as sequences of binary digits in the internal memory state of our machines. In a digital computer, everything is represented and addressed at the machine level with sequences of 0s and 1s. In order to represent information, Ron Everett managed to conceive in a similar way at a higher abstracted level an identification and addressing schema of information units. He wrapped atomic data types, such as a string or number, and made them the core of these units and he used a four-dimensional space to uniformly address, identify, bind and encode &lt;strong&gt;AIRs&lt;/strong&gt;. Thus in AtomicDB each &lt;strong&gt;AIR&lt;/strong&gt; unit is a self-referenced and uniquely identified item in a 4D space with sets of 4D references to other &lt;strong&gt;AIRs&lt;/strong&gt; for classification purpose, and embedded data values for querying purpose.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/B8A0xiD2gxE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;AIR&lt;/strong&gt; fits perfectly to the duality principle of R3DM conceptual model and the &lt;a href=&#34;https://healis.eu/en/project/r3dm/#symbols-duality-principle&#34;&gt;&lt;strong&gt;Everything is Represented with a Symbol&lt;/strong&gt;&lt;/a&gt; corollary. There is no better example to think about this than digital representations as sequences of binary digits in the internal memory state of our machines. In a digital computer, everything is represented and addressed at the machine level with sequences of 0s and 1s. In order to represent information, Ron Everett managed to conceive in a similar way at a higher abstracted level an identification and addressing schema of information units. He wrapped atomic data types, such as a string or number, and made them the core of these units and he used a four-dimensional space to uniformly address, identify, bind and encode &lt;strong&gt;AIRs&lt;/strong&gt;. Thus in AtomicDB each &lt;strong&gt;AIR&lt;/strong&gt; unit is a self-referenced and uniquely identified item in a 4D space with sets of 4D references to other &lt;strong&gt;AIRs&lt;/strong&gt; for classification purpose, and embedded data values for querying purpose.&lt;/p&gt;
 &lt;p&gt;According to R3DM we have three layers of abstraction, the semantic, the sign, and the storage-data layer. The 4D reference type of &lt;strong&gt;AIR&lt;/strong&gt; is the implementation of sign layer and it is bridging the semantic with the storage layer in the most semiotic way. This is a fully apprehensive act of responding to the fact that &lt;strong&gt;atomic data types and data structures cannot play sufficiently both the role of encoding and that of representing information&lt;/strong&gt;. You have to make these two roles distinct. This is exactly what we manage in a beautiful way with these references. The symbolic layer is created in this 4D space and instead of having dissimilar atomic data types and abstract complex data types, you have uniform &lt;strong&gt;AIR&lt;/strong&gt; units and aggregates of them e.g. collections, records, sets and multi-sets that are referenced in exactly the same way .&lt;/p&gt;
 &lt;p&gt;This is a completely, new, radical perspective on data modeling. It is a turning point and there has to be ample evidence to support claims that DBMS based on this are superior than their counterparts. We are determined to investigate, enhance, and apply that kind of database technology and connect it to the overall semiotic perspective of R3DM conceptual framework. It is possible that R3DM based on &lt;strong&gt;AIR&lt;/strong&gt; can assimilate all other SQL and noSQL and SPARQL queries and data models in a simpler, more intuitive, faster, more secure, highly consistent, and in a large scale. This uniform structural symmetry based on &lt;strong&gt;AIR&lt;/strong&gt;, both in terms of value representation and bi-directional relationships is perhaps the most innovative feature and what will hopefully make &lt;strong&gt;AIR&lt;/strong&gt; the universal atomic information unit in the whole information science field. If not, I am sure that many other similar paradigms in data modeling will be based on this model, because a whole new unexplored path is now open and unimaginable applications of this technology can be turned into a reality.&lt;/p&gt;
 &lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;

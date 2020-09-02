@@ -222,9 +222,126 @@
     <item>
       <title>Abstraction_(software_engineering)</title>
       <link>https://healis.eu/en/tags/abstraction_software_engineering/</link>
-      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/abstraction_software_engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Association_(object-oriented_programming)</title>
+      <link>https://healis.eu/en/tags/association_object-oriented_programming/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/association_object-oriented_programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Associative_array</title>
+      <link>https://healis.eu/en/tags/associative_array/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/associative_array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Associative_entity</title>
+      <link>https://healis.eu/en/tags/associative_entity/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/associative_entity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data_model</title>
+      <link>https://healis.eu/en/tags/data_model/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/data_model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Granular_computing</title>
+      <link>https://healis.eu/en/tags/granular_computing/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/granular_computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Granularity</title>
+      <link>https://healis.eu/en/tags/granularity/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/granularity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graph_database</title>
+      <link>https://healis.eu/en/tags/graph_database/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/graph_database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Information</title>
+      <link>https://healis.eu/en/tags/information/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/information/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Relational_algebra</title>
+      <link>https://healis.eu/en/tags/relational_algebra/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/relational_algebra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semantics</title>
+      <link>https://healis.eu/en/tags/semantics/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/semantics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semiosis</title>
+      <link>https://healis.eu/en/tags/semiosis/</link>
+      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/semiosis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Query_by_Example</title>
+      <link>https://healis.eu/en/tags/query_by_example/</link>
+      <pubDate>Sat, 15 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/query_by_example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Query_language</title>
+      <link>https://healis.eu/en/tags/query_language/</link>
+      <pubDate>Sat, 15 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/query_language/</guid>
       <description></description>
     </item>
     
@@ -238,38 +355,11 @@
     </item>
     
     <item>
-      <title>Data_model</title>
-      <link>https://healis.eu/en/tags/data_model/</link>
-      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://healis.eu/en/tags/data_model/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Data_store</title>
       <link>https://healis.eu/en/tags/data_store/</link>
       <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/data_store/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Granularity</title>
-      <link>https://healis.eu/en/tags/granularity/</link>
-      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://healis.eu/en/tags/granularity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Information</title>
-      <link>https://healis.eu/en/tags/information/</link>
-      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://healis.eu/en/tags/information/</guid>
       <description></description>
     </item>
     
@@ -292,15 +382,6 @@
     </item>
     
     <item>
-      <title>Relational_algebra</title>
-      <link>https://healis.eu/en/tags/relational_algebra/</link>
-      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://healis.eu/en/tags/relational_algebra/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Relational_database</title>
       <link>https://healis.eu/en/tags/relational_database/</link>
       <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
@@ -315,15 +396,6 @@
       <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/relational_model/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Semantics</title>
-      <link>https://healis.eu/en/tags/semantics/</link>
-      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://healis.eu/en/tags/semantics/</guid>
       <description></description>
     </item>
     
@@ -391,47 +463,11 @@
     </item>
     
     <item>
-      <title>Association_(object-oriented_programming)</title>
-      <link>https://healis.eu/en/tags/association_object-oriented_programming/</link>
-      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://healis.eu/en/tags/association_object-oriented_programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Associative_array</title>
-      <link>https://healis.eu/en/tags/associative_array/</link>
-      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://healis.eu/en/tags/associative_array/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Associative_entity</title>
-      <link>https://healis.eu/en/tags/associative_entity/</link>
-      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://healis.eu/en/tags/associative_entity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Entity–relationship_model</title>
       <link>https://healis.eu/en/tags/entityrelationship_model/</link>
       <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/entityrelationship_model/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Graph_database</title>
-      <link>https://healis.eu/en/tags/graph_database/</link>
-      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://healis.eu/en/tags/graph_database/</guid>
       <description></description>
     </item>
     
@@ -504,6 +540,24 @@
       <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/topic_maps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interpretation_(model_theory)</title>
+      <link>https://healis.eu/en/tags/interpretation_model_theory/</link>
+      <pubDate>Sat, 23 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/interpretation_model_theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Representation_(mathematics)</title>
+      <link>https://healis.eu/en/tags/representation_mathematics/</link>
+      <pubDate>Sat, 23 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/representation_mathematics/</guid>
       <description></description>
     </item>
     

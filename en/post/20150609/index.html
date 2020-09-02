@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.74.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Athanassios I. Hatzis, PhD">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Freebase, the best collaborative information management system ever built">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://healis.eu/en/post/20150609/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/gruvbox-dark.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24920503-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://healis.eu/en/post/20150609/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@healiseu">
+  <meta property="twitter:creator" content="@healiseu">
+  
+  <meta property="og:site_name" content="HEALIS">
+  <meta property="og:url" content="https://healis.eu/en/post/20150609/">
+  <meta property="og:title" content="Why Google shuts down Freebase ? | HEALIS">
+  <meta property="og:description" content="Freebase, the best collaborative information management system ever built"><meta property="og:image" content="https://healis.eu/en/post/20150609/featured.jpg">
+  <meta property="twitter:image" content="https://healis.eu/en/post/20150609/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2015-06-09T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2015-06-09T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Why Google shuts down Freebase ? | HEALIS</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/en/"><img src="/img/healis-text-with-logo.png" alt="HEALIS"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#home"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/about/"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/hmorph/"><span>HyperMorph</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/s3dm/"><span>S3DM</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/en/post/"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/talk/"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/terms/"><span>Terms</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/contact/"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/en/post/20150609/featured_hu8389fa6703aa2b9c5b16aff84bed18c4_26015_680x500_fill_q90_lanczos_smart1.jpg" itemprop="image" alt="">
+        
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">Why Google shuts down Freebase ?</h1>
+
+      
+      <p class="page-subtitle">On 30th of June 2015 Freebase was gone for ever</p>
+      
+
+      
+
+
+
+<meta content="2015-06-09 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2015-06-09 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/en/authors/admin/">Athanassios I. Hatzis, PhD</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2015-06-09</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    8 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/en/post/20150609/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/en/categories/semantic_web/">Semantic_Web</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://healis.eu/en/post/20150609/&amp;text=Why%20Google%20shuts%20down%20Freebase%20?" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://healis.eu/en/post/20150609/&amp;t=Why%20Google%20shuts%20down%20Freebase%20?" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Why%20Google%20shuts%20down%20Freebase%20?&amp;body=https://healis.eu/en/post/20150609/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://healis.eu/en/post/20150609/&amp;title=Why%20Google%20shuts%20down%20Freebase%20?" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Why%20Google%20shuts%20down%20Freebase%20?%20https://healis.eu/en/post/20150609/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://healis.eu/en/post/20150609/&amp;title=Why%20Google%20shuts%20down%20Freebase%20?" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/en/project/r3dm/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#quick-history-review">Quick History Review</a></li>
+    <li><a href="#summary-of-technology-achievements">Summary of technology achievements</a>
+      <ul>
+        <li><a href="#database-management-system-and-data-architecture">Database management system and data architecture</a></li>
+        <li><a href="#the-identity-crisis-solution">The identity crisis solution</a></li>
+        <li><a href="#schema-type-system-ontology">Schema, Type System, Ontology</a></li>
+        <li><a href="#type-checking">Type Checking</a></li>
+        <li><a href="#included-types">Included Types</a></li>
+        <li><a href="#disambiguation-mechanism">Disambiguation Mechanism</a></li>
+        <li><a href="#complexcompound-value-types-cvts-and-relationships">Complex/Compound Value Types (CVTs) and Relationships</a></li>
+        <li><a href="#blobs-mechanism">Blobs Mechanism</a></li>
+        <li><a href="#full-access-control-and-auditing-mechanism">Full Access Control and Auditing mechanism</a></li>
+        <li><a href="#fully-web-based-user-interfaces-and-applications">Fully web-based user interfaces and applications</a></li>
+        <li><a href="#mql---the-metaweb-query-language">MQL - The Metaweb Query Language</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+
+<h2 id="introduction">Introduction</h2>
+<p>I have spent a lot of time studying in detail and experimenting with Freebase, and I am truly disappointed to see such a great collective effort to suddenly disappear from the software development scene without a good reason. I will justify this, but first let me discuss a bit about what is freebase for those that are not aware of the project.</p>
+<p>Freebase, in my opinion, is currently the best collaborative information management system ever built. According to <a href="http://en.wikipedia.org/wiki/Freebase">Wikipedia</a>, &ldquo;It is an online collection of structured data harvested from many sources, including individual, user-submitted contributions. Freebase aims to create a global resource which allows people (and machines) to access common information more effectively&rdquo;.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://player.vimeo.com/video/1513562" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ </div>
+
+<h2 id="quick-history-review">Quick History Review</h2>
+<ul>
+<li>In 2000 Danny Hillis first described his idea for creating a &ldquo;knowledge web&rdquo; which he called Aristotle !</li>
+<li>In 2003 the project known as &ldquo;The Metaweb&rdquo; begins, inside Applied Minds</li>
+<li>On October 2006 the One True Graph is born</li>
+<li>On July 16th 2010 Metaweb is acquired by Google</li>
+<li>On 30th of June 2015 Google plans to shut down completely the service. It is already in read-only mode</li>
+</ul>
+<h2 id="summary-of-technology-achievements">Summary of technology achievements</h2>
+<ul>
+<li>Freebase counts twelve years of focused development effort by a strong dedicated team of experts.</li>
+<li>Freebase counts nine years of online editing with superb web-based client APIs and GUIs</li>
+<li>Freebase, Google, have defined and implemented  state of the art technology in collaborative information management. Do consider the following topics just for a start :</li>
+</ul>
+<h3 id="database-management-system-and-data-architecture">Database management system and data architecture</h3>
+<p>The most important IT asset is their proprietary <a href="http://dl.acm.org/citation.cfm?id=1807283">Graphd</a> database.  Some information have been disclosed to the public in the past, but of course the database itself is not going to be released or opened for inspection.</p>
+<p>Graphd encodes everything  as a tuple. Every structure and construct such as entity type, entity instance, property, data types, domain, namespace, ontology you name it, are constructed from tuples. The very first layer of abstraction that is created on top of this is the object-link that implements RDF kind of statements in Freebase. Every item in freebase is either a link or an object. And you can get ALL the links to or from any object. Defining a single primitive construct as a building block is one of my R3DM semiotic principles in data modelling abstraction. Topic Maps data model (<a href="http://www.isotopicmaps.org/sam/sam-model/#sect-metamodel">TMDM</a>) follow the same kind of logic, where everything is a topic and every other construct is built with topics. In RDF/OWL fundamental construct is the triplet, in Graph databases you have the node, in key-value stores you have the key-value primitive.</p>
+<h3 id="the-identity-crisis-solution">The identity crisis solution</h3>
+<p>The <a href="/en/post/20131105/#vvp-and-the-identity-crisis-on-the-web">identity crisis</a>, that is still a problem in the linked-data world, has a fair solution in Freebase with not a single URL-based namespace identifier but with three kinds of identifiers that each plays a different role :</p>
+<ul>
+<li>Under the hood GUIDs that are written internally in Graphd database</li>
+<li>Long user friendly, human-readable, IDs</li>
+<li>Short Machine IDs that cover the whole lifecycle of anything recorded in the database, i.e. track changes, solve merging/splitting issues, etc.</li>
+</ul>
+<h3 id="schema-type-system-ontology">Schema, Type System, Ontology</h3>
+<p>A flexible generic schema, that covers any other ontology based on top of it with only four hierarchical containers.</p>
+<span class="markup-quote">Namespace &mdash;&gt; Domain &mdash;&gt; Types &mdash;&gt; Properties</span>
+<p>This is the most generic, plain, T-Box you can define,  with just four levels. Pause for a moment here and take a very careful read on the following.  Are you familiar with the following fundamental hierarchies in Computer science ?</p>
+<ul>
+<li><strong>Namespace - Package -Class -Object (OOP)</strong></li>
+<li><strong>Database - Schema -Table -Row (RDBMS)</strong></li>
+<li><strong>Domain - Type -Property -Instance (Ontologies and XML)</strong></li>
+</ul>
+<p>This is not a coincidence, and there is a very good reason that we naturally create abstractions based on this hierarchy. The very first person that came up with this astonishing observation is inventor <a href="https://www.linkedin.com/in/ron-everett-5134a68a/">Ron Everett</a> and <a href="/en/post/20150320/#signified-sign-signifier-alternative-paradigm">AtomicDB&rsquo;s under the hood encoding structure (Environment, System, Context, Item)</a> is the heart of their system. This is not the space or the time to cover that in more detail, it suffices that <a href="/en/s3dm/">S3DM/R3DM</a> semiotic conceptual model can offer an adequate explanation on the abstraction/reference mechanism behind the scenes.</p>
+<h3 id="type-checking">Type Checking</h3>
+<p>In freebase every property, i.e. bidirectional link between two items, by the way this is also a fundamental technology novelty of AtomicDB, stay tuned…., knows exactly what entity types to expect.</p>
+<h3 id="included-types">Included Types</h3>
+<p>They have implemented a kind of multiple inheritance mechanism, such that one type with its properties can automatically included within another type. Included types makes it possible to create any kind of hierarchical structure where it can be referenced. Most important you can easily create custom types based on previously defined types.</p>
+<h3 id="disambiguation-mechanism">Disambiguation Mechanism</h3>
+<p>That is based on both the namespace and disambiguating properties in identifying similarly-named topics. A score is also calculated to rank the items in conflict</p>
+<h3 id="complexcompound-value-types-cvts-and-relationships">Complex/Compound Value Types (CVTs) and Relationships</h3>
+<p>You can define new data types, e.g. use a dated integer for measurements. You can also define mediator type of nodes between the source and target of the original simple relationship. No black nodes and other such RDF/OWL crap in freebase.</p>
+<h3 id="blobs-mechanism">Blobs Mechanism</h3>
+<p>In freebase you can also store large objects, i.e. text/binary stream.</p>
+<h3 id="full-access-control-and-auditing-mechanism">Full Access Control and Auditing mechanism</h3>
+<p>Every user action is recorded inside freebase. They have defined Unix like access control on anything, i.e. user, user group, permissions. It is possible to request a full history on any item that is inside the database</p>
+<h3 id="fully-web-based-user-interfaces-and-applications">Fully web-based user interfaces and applications</h3>
+<p>If you want to attract easily new, inexperienced, users, then you must have the best ever built user interface suited for your purpose and Freebase-Google have managed to do that. You can access everything with a few clicks of a button. You can view everything in a well-presented hierarchical or table like format. You can build your queries online and save them as objects in the database, then you can simply access them with a permanent, tiny URL. Likewise, you can program your applications and save them like objects in the database.</p>
+<h3 id="mql---the-metaweb-query-language">MQL - The Metaweb Query Language</h3>
+<p>Last but not least, get your hands dirty with a truly magnificent piece of programming art in Freebase, their MQL query/update mechanism. It is based on pattern matching. Programmers and even advanced, non-expert users can define easily a query pattern and take back result in popular JSON formatted string. You can limit or sort results, you can ask for ordered collection items, you can specify optional directives and constrains and pattern matching with operators. Finally results have a numerical relevancy score, this is another Google&rsquo;s secret technology similar to the full implementation of page ranking technology. For example you can get a ranked list of the most notable topics with a given name.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This is certainly not an exhausted list of best of breed Freebase features but I  hope you have read enough about the technology to make your own judgement on why Google shuts down completely their freebase service. Their one page announcement does not say much about it. It is not signed by any Google-Freebase authority persons. In my opinion, the reason explained there to all of us that embraced that project is a sham and is asking for reproach. Most of us knows that Google&rsquo;s knowledge graph, 2012, that enhances Google search engine with semantic information is based on Freebase.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/mmQl6VGvX-c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Let met state clearly that I welcome Google&rsquo;s decision to make contributions to <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a> project but I do not understand why they have to shut down completely Freebase in doing that. It is going to take a  long time to reach the level of experience that users already have with Freebase. And what about the curated data of many people and the projects they have built on top of it ? What about all these technological advances I described in this post, how one will be able to see how they operate and make a comparison with other projects ?</p>
+<p>For a start, I think <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a> is a new project, that is built on a far worse fundamental data architecture than Freebase. Nevertheless I acknowledge that there are many good ideas and efforts to share. But, it makes no sense to eradicate such a historical project as Freebase in order to continue development on a newcomer.</p>
+<p>So, what other alternatives exist in this area ? One is the <a href="https://wiki.dbpedia.org/">DBpedia</a> project, purely RDF based linked-data project, that started in 2007. More recent proprietary systems are:</p>
+<ul>
+<li><a href="https://www.poolparty.biz/">Pool-Party</a> semantic suite, also RDF linked-data based,</li>
+<li><a href="https://kamala.mssm.nl">Kamala</a> a Topic-Map based web application,</li>
+<li><a href="https://siren.io/">Siren</a> Investigative Intelligent Platform</li>
+</ul>
+<p>Neverthless I anticipate that sooner or later you should expect a unicorn in semantic based information management that will simply shutter and unify all the rest. The reason I believe this is going to happen is because none of these companies have an efficient underlying fundamental data architecture. In this other dimension, in the twilight zone, there is not any player in the market.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/NzlG28B-R8Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tags/abstraction_software_engineering/">Abstraction_(software_engineering)</a>
+  
+  <a class="badge badge-light" href="/en/tags/information/">Information</a>
+  
+  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  
+  <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
+  
+  <a class="badge badge-light" href="/en/tags/signified_and_signifier/">Signified_and_signifier</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
+  
+  <a class="badge badge-light" href="/en/tags/data_model/">Data_model</a>
+  
+  <a class="badge badge-light" href="/en/tags/semantics/">Semantics</a>
+  
+  <a class="badge badge-light" href="/en/tags/database/">Database</a>
+  
+  <a class="badge badge-light" href="/en/tags/database_management_system/">Database_management_system</a>
+  
+  <a class="badge badge-light" href="/en/tags/graph_database/">Graph_database</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_semiotic_hypergraph/">associative_semiotic_hypergraph</a>
+  
+  <a class="badge badge-light" href="/en/tags/computational_semiotics/">Computational_semiotics</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_entity/">Associative_entity</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
+  
+  <a class="badge badge-light" href="/en/tags/association_object-oriented_programming/">Association_(object-oriented_programming)</a>
+  
+  <a class="badge badge-light" href="/en/tags/associative_array/">Associative_array</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:athanassios@healis.eu" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/ahatzis" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/athanhat" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener">
+              <i class="fab fa-quora"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://vimeo.com/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-vimeo"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://stackoverflow.com/users/5364935/athanassios" target="_blank" rel="noopener">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/en/post/20150320/">Atomic Information Resource (AIR)</a></li>
+          
+          <li><a href="/en/post/20150523_part3/">The number &#39;3&#39; and The Three-Faceted Abstraction Mechanism in R3DM</a></li>
+          
+          <li><a href="/en/post/20150317/">Relational/ER Constructs in Wolfram Language</a></li>
+          
+          <li><a href="/en/project/r3dm/">S3DM/R3DM</a></li>
+          
+          <li><a href="/en/post/20131001/">S3DM/R3DM Q&amp;A</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/en/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+
+    
+
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          Powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/healiseu/" target="_blank" rel="noopener" title="Star Me"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/healiseu" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCoCkNTkn1dAbtyr5EMvzc7w/videos" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://linkedin.com/in/athanassios" target="_blank" rel="noopener" title="Connect with Me"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/athanassios.hatzis" target="_blank" rel="noopener" title="Contact Me"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="skype:athanassios.hatzis?call"  title="Skype Me"><i class="fab fa-skype" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.quora.com/profile/Athanassios-Hatzis" target="_blank" rel="noopener" title="Ping Me"><i class="fab fa-quora" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://disqus.com/home/forums/healiseu/" target="_blank" rel="noopener" title="Discuss on Disqus"><i class="fas fa-comments" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

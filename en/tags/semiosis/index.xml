@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Semiosis on HEALIS</title>
+    <link>https://healis.eu/en/tags/semiosis/</link>
+    <description>Recent content in Semiosis on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Mon, 24 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/en/tags/semiosis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About data granularity</title>
+      <link>https://healis.eu/en/post/20190624/</link>
+      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20190624/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#information&#34;&gt;Information&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#conceptual-computational-semiotics-framework&#34;&gt;Conceptual, computational semiotics framework&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#push-forward&#34;&gt;Push forward&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In computer science there are many things we take for granted like the fundamental digital representation of anything with 1s and 0s. It&amp;rsquo;s often too easy to forget that when you have dived deep into the virtual realm of a computer the only thing you get is a mere representation of abstract concepts. This is our data and because they live in a machine and its peripherals they always have structure no matter how you interpret them.&lt;/p&gt;
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;p&gt;And that kind of human interpretation I will call it information, i.e. you put data in a form, in some perspective, so you can get meaning out of them. In that sense data in a computer does not differ much from printed letters in a book, or paint in a canvas, or stone in a sculpture. From that point of view computer is simply an advanced form of a medium, a sophisticated printing press where 0&amp;rsquo;s and 1&amp;rsquo;s take the place of the movable individual metal letters, i.e. a computerized movable type printing.&lt;/p&gt;
+&lt;h2 id=&#34;conceptual-computational-semiotics-framework&#34;&gt;Conceptual, computational semiotics framework&lt;/h2&gt;
+&lt;p&gt;Once again, it&amp;rsquo;s only structured data you have, our mind is doing all the rest because of the power of &lt;a href=&#34;https://en.wikipedia.org/wiki/Semiosis&#34;&gt;semiosis&lt;/a&gt;. One can also ask, is there anything in our universe that is unstructured ? Yes there is, concept is unstructured because it is an abstract thing. When you represent the concept, or you realize, materialize it in our realm then you have structure again. A computational model of representation which is semiotic in its nature is &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;. And here is a memorable type of formula that describes fully the semiotic nature of this data model.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(R3DM): Representation ↦ Resource + Reference + Referent&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(S3DM): Semantics ↦ Signifier + Sign + Signified&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;push-forward&#34;&gt;Push forward&lt;/h2&gt;
+&lt;p&gt;Nowadays there is already a sufficient and effective solution for data volume and velocity. It&amp;rsquo;s variety and consequently integration that is at stake. In my opinion the key to an efficient and effective solution is to think about the exact form of what &lt;strong&gt;atomic fundamental constructs you use and how you build connected higher structures&lt;/strong&gt;. I think &lt;a href=&#34;https://en.wikipedia.org/wiki/Granular_computing&#34;&gt;granular computing&lt;/a&gt; is an excellent term we can use here. That said, I have experienced for more than a decade a denial of thinking a better data model standard than those we already have (Relational, RDF and Topic Maps) simply because many believe that the wheel is going to be reinvented. But progress is made only when one defies the established nomenclature and challenges them with a better alternative that can be proven in a &lt;a href=&#34;https://en.wikipedia.org/wiki/Computational_engineering&#34;&gt;computational scientific and engineering&lt;/a&gt; way.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here’s to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They’re not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can’t do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/mtftHaK9tYY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/data-granularity-athanassios-hatzis/&#34;&gt;LinkedIn - Published Post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Steve Jobs, Apple advertisement (Aired 1997) &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

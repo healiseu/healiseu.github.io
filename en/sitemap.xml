@@ -263,8 +263,98 @@
   </url>
   
   <url>
+    <loc>https://healis.eu/en/tags/abstraction_software_engineering/</loc>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/association_object-oriented_programming/</loc>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/associative_array/</loc>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/associative_entity/</loc>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/data_model/</loc>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/granular_computing/</loc>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/granularity/</loc>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/graph_database/</loc>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/post/20191030/</loc>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/information/</loc>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/relational_algebra/</loc>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/categories/semantic_web/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/semantics/</loc>
+    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://healis.eu/en/post/20191025/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/post/20190624/</loc>
+    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/semiosis/</loc>
+    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/query_by_example/</loc>
+    <lastmod>2019-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/query_language/</loc>
+    <lastmod>2019-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/post/20190615/</loc>
+    <lastmod>2019-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -298,8 +388,8 @@
   </url>
   
   <url>
-    <loc>https://healis.eu/en/tags/abstraction_software_engineering/</loc>
-    <lastmod>2018-03-10T00:00:00+00:00</lastmod>
+    <loc>https://healis.eu/en/post/20180403/</loc>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -313,22 +403,7 @@
   </url>
   
   <url>
-    <loc>https://healis.eu/en/tags/data_model/</loc>
-    <lastmod>2018-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://healis.eu/en/tags/data_store/</loc>
-    <lastmod>2018-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://healis.eu/en/tags/granularity/</loc>
-    <lastmod>2018-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://healis.eu/en/tags/information/</loc>
     <lastmod>2018-03-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -343,27 +418,12 @@
   </url>
   
   <url>
-    <loc>https://healis.eu/en/tags/relational_algebra/</loc>
-    <lastmod>2018-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://healis.eu/en/tags/relational_database/</loc>
     <lastmod>2018-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://healis.eu/en/tags/relational_model/</loc>
-    <lastmod>2018-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://healis.eu/en/categories/semantic_web/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://healis.eu/en/tags/semantics/</loc>
     <lastmod>2018-03-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -448,27 +508,7 @@
   </url>
   
   <url>
-    <loc>https://healis.eu/en/tags/association_object-oriented_programming/</loc>
-    <lastmod>2017-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://healis.eu/en/tags/associative_array/</loc>
-    <lastmod>2017-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://healis.eu/en/tags/associative_entity/</loc>
-    <lastmod>2017-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://healis.eu/en/tags/entityrelationship_model/</loc>
-    <lastmod>2017-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://healis.eu/en/tags/graph_database/</loc>
     <lastmod>2017-04-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -558,6 +598,11 @@
   </url>
   
   <url>
+    <loc>https://healis.eu/en/post/20160729/</loc>
+    <lastmod>2016-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://healis.eu/en/post/20160210/</loc>
     <lastmod>2016-02-10T00:00:00+00:00</lastmod>
   </url>
@@ -578,7 +623,27 @@
   </url>
   
   <url>
+    <loc>https://healis.eu/en/post/20150609/</loc>
+    <lastmod>2015-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/interpretation_model_theory/</loc>
+    <lastmod>2015-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://healis.eu/en/post/20150523/</loc>
+    <lastmod>2015-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/tags/representation_mathematics/</loc>
+    <lastmod>2015-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://healis.eu/en/post/20150523_part3/</loc>
     <lastmod>2015-05-23T00:00:00+00:00</lastmod>
   </url>
   

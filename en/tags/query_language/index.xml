@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Query_language on HEALIS</title>
+    <link>https://healis.eu/en/tags/query_language/</link>
+    <description>Recent content in Query_language on HEALIS</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
+    <lastBuildDate>Sat, 15 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://healis.eu/en/tags/query_language/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Where is the gap in data modeling ?</title>
+      <link>https://healis.eu/en/post/20190615/</link>
+      <pubDate>Sat, 15 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20190615/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#business-vs-technological-factors&#34;&gt;Business vs Technological Factors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I was motivated to write this post from an article of Christian Kaul &amp;ldquo;&lt;a href=&#34;https://www.linkedin.com/pulse/bridging-knowledge-gap-christian-kaul/&#34;&gt;Bridging the Knowledge Gap&lt;/a&gt;&amp;rdquo;. He is making questions about how, what is the best way to bridge the knowledge gap between data modeling experts and people from other fields ? But I think an important role that data modeling experts play is exactly that &lt;strong&gt;to bridge the gap between pure IT technical people like developers, database administrators, data engineers and people from other fields e.g. domain experts, scientists, business people, etc&lt;/strong&gt;. A more interesting question in my opinion is how this gap is created. Get prepared because I will answer with more questions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Do we all agree that the best way to model data-information is to create a graph ?&lt;/li&gt;
+&lt;li&gt;If yes the next question is how exactly you represent that graph ? As you probably know there are four major competing data models, (&lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_model&#34;&gt;relational model&lt;/a&gt; - &lt;a href=&#34;https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model&#34;&gt;ER&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_database#Labeled-property_graph&#34;&gt;labeled property graph&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/Resource_Description_Framework&#34;&gt;RDF&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Topic_map&#34;&gt;Topic Maps&lt;/a&gt;), Are you convinced that there can be no other better alternative ?&lt;/li&gt;
+&lt;li&gt;What about the building blocks, for example in RDF you have triples, in relational you have relations (tables) and tuples. Is that all ? Can we make better building blocks to connect data or information ?&lt;/li&gt;
+&lt;li&gt;And last but not least, at a physical layer, and I believe that is exactly &lt;strong&gt;where the gap lies between pure data modelers/architects and database engineers/developers&lt;/strong&gt;, you have row, column, document, native graph structures. Are you totally convinced that the best way to physically implement a graph data-information model is with a native graph structure on permanent storage ?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you ask me to answer these questions I suggest you read more information about &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; conceptual, computational semiotics framework and the related projects &lt;a href=&#34;https://healis.eu/en/hmorph/&#34;&gt;HyperMorph&lt;/a&gt; and &lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt;. This is what I have been involved with for the last ten years.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The nice thing with social media is that if you deserve to get some good feedback from professionals and experts of the field in a post like this one you might decide to extend it. That&amp;rsquo;s exactly what I did in the following few paragraphs to respond in a better way to comments in my post.&lt;/em&gt;_&lt;/p&gt;
+&lt;h2 id=&#34;business-vs-technological-factors&#34;&gt;Business vs Technological Factors&lt;/h2&gt;
+&lt;p&gt;I believe the resurgence of no-SQL movement (2009), which is highly related to data modeling, started out of the emergent need of companies-users to deal with the velocity, volume, variety and other properties of distributed data resources. That same movement pushed forward our technological boundaries to create better DBMS and BI, web/desktop applications.&lt;/p&gt;
+&lt;p&gt;Personally speaking I joined that movement because of my business need to manage complex medical databases. Another reason was to enrich and manage collectively and efficiently my own data resources, i.e. personal information management. Believe it or not I am still not satisfied from what exists out there and that is why I ended up &lt;strong&gt;researching and developing&lt;/strong&gt; my own solution.&lt;/p&gt;
+&lt;p&gt;Apparently another critical factor has to do purely with the cost of a solution you apply to a complex data/information management problem. That is also why open-source based systems are becoming more and more popular nowadays. We need bulletproof, open-source tools with strong communities behind to support, develop and test them. Do consider also that in many cases open-source is an escape from the high cost cloud solutions and corresponding vendor-locking mechanisms.&lt;/p&gt;
+&lt;p&gt;Eventually, somehow, sometime something similar to a Linux OS, will be created for information management at a higher level. Something that will earn the consensus of developers, end users and companies emerging out of practical need for a new data modeling standard, for effective physical layer implementation, highly responsive graphical user interfaces and efficient augmented artificial intelligence tools.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/where-gap-data-modeling-athanassios-hatzis-phd/&#34;&gt;LinkedIn - Published Post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Yet another query language, really ?</title>
+      <link>https://healis.eu/en/post/20180403/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/post/20180403/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cross-references&#34;&gt;Cross-References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Recently, I have been reading an article for yet another query language, &lt;a href=&#34;https://www.hypergraphql.org/&#34;&gt;HypergraphQL&lt;/a&gt;. But do we really need another query language ? I do agree that it is always good to offer the developer a variety of choices for querying a database, especially if the new query language makes it easier or perhaps better in some sense to fetch or input data. But that&amp;rsquo;s not really a big deal, I will try to explain why in brief here.&lt;/p&gt;
+&lt;p&gt;Whether it is a standard based &lt;a href=&#34;https://www.w3.org/TR/rdf-sparql-query/&#34;&gt;SPARQL&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/SQL&#34;&gt;SQL&lt;/a&gt;, &lt;a href=&#34;http://www.isotopicmaps.org/tmql/&#34;&gt;TMQL&lt;/a&gt;, &lt;a href=&#34;https://www.w3.org/XML/Query/&#34;&gt;XQuery&lt;/a&gt; language, or a more graph oriented query language like &lt;a href=&#34;http://graphql.org/&#34;&gt;GraphQL&lt;/a&gt; (former Facebook Query language), &lt;a href=&#34;http://tinkerpop.apache.org/gremlin.html&#34;&gt;Gremlin&lt;/a&gt; and &lt;a href=&#34;https://www.opencypher.org/&#34;&gt;Cypher&lt;/a&gt;, the end user (developer) has to write down the query in some form according to the formal system of the language. That also implies that you do know your data model in some detail, i.e. structural form of data, instances vs object types, and kind of connections/links. This is essential to describe your query in the language.&lt;/p&gt;
+&lt;p&gt;Therefore &lt;strong&gt;all Query Languages are dependent on their data model and naturally they also carry the deficiencies of their data model and several quirks of their vendor&lt;/strong&gt;. So in my opinion that is where all bets are off. Better show me a new data model, describe how it deviates from other established data models, in what terms it is better and most important the functional operations, the basic mechanisms behind the implementation of a query language that is based on this data model.&lt;/p&gt;
+&lt;p&gt;Speaking about HypergraphQL, and former Facebook GraphQL that is not something new. They originate from &lt;a href=&#34;https://en.wikipedia.org/wiki/Freebase&#34;&gt;Freebase MQL&lt;/a&gt; language, which &lt;a href=&#34;https://discourse.cayley.io/t/query-languages-tour/191&#34;&gt;according to Barak Michener&lt;/a&gt;, a former employer of Metaweb Technologies and later on of Google, it was mainly developed in the period between 2006-2008 to elevate GQL a query language for a kind of triple store database (graphd). And if we decide to search further back MQL approach looks like the Query by Example (&lt;a href=&#34;https://en.wikipedia.org/wiki/Query_by_Example&#34;&gt;QBE&lt;/a&gt;) language for relational databases that was devised during the mid-1970s, I still remember Ashton-Tate &lt;a href=&#34;https://en.wikipedia.org/wiki/DBase&#34;&gt;dBase&lt;/a&gt; product that I was playing with as a BSc student.&lt;/p&gt;
+&lt;p&gt;But what really puzzles me is that I hardly see a strong mathematical foundation, e.g. like Codd&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_algebra&#34;&gt;relational algebra&lt;/a&gt;, that covers important features of all these query languages I mentioned above. I am specifically referring to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;closed vs open world assumption&lt;/li&gt;
+&lt;li&gt;closure under operations&lt;/li&gt;
+&lt;li&gt;constrains&lt;/li&gt;
+&lt;li&gt;updates&lt;/li&gt;
+&lt;li&gt;joins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That is why in a &lt;a href=&#34;https://healis.eu/en/post/20180310/&#34;&gt;previous article&lt;/a&gt; of mine I have proposed to return back to the roots and investigate better the Relational Algebra and these reasons that made both SQL and NoSQL DBMS to deviate from the original relational model path.&lt;/p&gt;
+&lt;p&gt;For those that follow my posts, they are aware that I am not speaking purely from a theoretical point of view. There is an alternative data model (&lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;) that I propose, a particular software technology based on this (&lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;Associative Semiotic Hypergraph&lt;/a&gt;) and two prototypes (&lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt;, &lt;a href=&#34;https://healis.eu/en/project/hypermorph/&#34;&gt;HyperMorph&lt;/a&gt;) implemented and demonstrated with an intuitive functional declarative way to query things. Nevertheless performance is a top priority, and that is what I am currently investigating.&lt;/p&gt;
+&lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/yet-another-query-language-really-athanassios-hatzis-phd/&#34;&gt;LinkedIn - Published Post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
