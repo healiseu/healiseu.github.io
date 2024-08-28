@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.74.0" />
+  <meta name="generator" content="Hugo 0.92.2" />
 
   
 
@@ -81,7 +81,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+  <link rel="stylesheet" href="/css/academia.min.f061a21f63bf4b7a5a9dd13669fcb02e.css">
 
   
 
@@ -712,10 +712,10 @@
 </blockquote>
 <p>Example: <strong>Integer x String x Colour</strong></p>
 <p>In Wolfram Language an instance of such a type is represented with the built-in <a href="http://reference.wolfram.com/language/ref/List.html">List</a> symbol:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: partInstanceAsList <span style="color:#f92672">=</span> {<span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#66d9ef">Red</span>}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: partInstanceAsList <span style="color:#f92672">=</span> {<span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#66d9ef">Red</span>}
 </code></pre></div><p><code>Out:</code> <img src="/en/post/20150317/notebook01.png" alt="notebook-output-01"></p>
 <p>And to check/verify the type for each element of the List we map the function <a href="http://reference.wolfram.com/language/ref/Head.html">Head</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>:  <span style="color:#66d9ef">Head</span> <span style="color:#e6db74">/@ partInstanceAsList
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>:  <span style="color:#66d9ef">Head</span> <span style="color:#e6db74">/@ partInstanceAsList
 </span><span style="color:#e6db74">Out: {Integer, String, RGBColor}
 </span></code></pre></div><h3 id="tuple-recordrow">Tuple (Record/Row)</h3>
 <blockquote>
@@ -726,7 +726,7 @@ In computer science, tuples are directly implemented as product types in most fu
 <p>In database theory, the relational model uses a tuple definition similar to tuples as functions, but each tuple element is identified by a distinct name, called an attribute, instead of a number; this leads to a more user-friendly and practical notation. A tuple in the relational model is formally defined as a finite function that maps attributes to values. In this notation, attribute-value pairs may appear in any order - Wikipedia, <a href="https://en.wikipedia.org/wiki/Tuple">Tuple</a></p>
 </blockquote>
 <p>In Wolfram Language record abstract data structure is usually represented with the <a href="http://reference.wolfram.com/language/ref/Association.html">Association</a> function, i.e. a symbolically indexed list of <a href="http://reference.wolfram.com/language/ref/Rule.html">Rule</a>s (key-value pairs).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: partInstanceAsAssociation <span style="color:#f92672">=</span>  
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: partInstanceAsAssociation <span style="color:#f92672">=</span>  
         <span style="color:#66d9ef">Association</span><span style="color:#f92672">[</span>
                     partID <span style="color:#f92672">-&gt;</span> <span style="color:#ae81ff">991</span>,
                     partName <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>,
@@ -744,13 +744,13 @@ In computer science, tuples are directly implemented as product types in most fu
 <p>The basic relational building block is the domain or data type, usually abbreviated nowadays to type. A tuple is an ordered set of attribute values. An attribute is an ordered pair of attribute name and type name. An attribute value is a specific valid value for the type of the attribute. This can be either a scalar value or a more complex type. A domain describes the set of possible values for a given attribute, and can be considered a constraint on the value of the attribute. Mathematically, attaching a domain to an attribute means that any value for the attribute must be an element of the specified set. Constraints make it possible to further restrict the domain of an attribute - Wikipedia, <a href="https://en.wikipedia.org/wiki/Relational_model">Relational_model</a></p>
 </blockquote>
 <p>In our example, two of our attributes <code>partID</code> is of integer data type and <code>partName</code> is of string data type. They both take scalar values. But the <code>partColor</code> attribute is of complex type and is defined in Wolfram Language with the function <a href="https://reference.wolfram.com/language/ref/RGBColor.html">RGBColor</a>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">Apply</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Rule</span>,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">Apply</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Rule</span>,
       <span style="color:#66d9ef">Thread</span><span style="color:#f92672">[</span>
         {<span style="color:#66d9ef">Keys</span><span style="color:#f92672">[</span>partInstanceAsAssociation<span style="color:#f92672">]</span>, <span style="color:#66d9ef">Head</span> <span style="color:#e6db74">/@ partInstanceAsList}], {1}]
 </span><span style="color:#e6db74">
 </span><span style="color:#e6db74">Out: {partID-&gt;Integer, partName-&gt;String, partColor-&gt;RGBColor}
 </span></code></pre></div><p>Attribute can be seen as a mapping function. It maps a tuple to a value. We can define a function where we pass a single argument which is the association representation of the tuple and we return the specific value of the key. For example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
 isIdentifierOf<span style="color:#f92672">[</span>assoc_<span style="color:#f92672">]</span>:<span style="color:#f92672">=</span>assoc<span style="color:#f92672">[</span>partID<span style="color:#f92672">]</span>
 isNameOf<span style="color:#f92672">[</span>assoc_<span style="color:#f92672">]</span>:<span style="color:#f92672">=</span>assoc<span style="color:#f92672">[</span>partName<span style="color:#f92672">]</span>
 isColorOf<span style="color:#f92672">[</span>assoc_<span style="color:#f92672">]</span>:<span style="color:#f92672">=</span>assoc<span style="color:#f92672">[</span>partColor<span style="color:#f92672">]</span>
@@ -775,9 +775,9 @@ isColorOf<span style="color:#f92672">[</span>assoc_<span style="color:#f92672">]
 <blockquote>
 <p>A relation consists of a heading and a body. A heading is a set of attributes. A body (of an n-ary relation) is a set of n-tuples. The heading of the relation is also the heading of each of its tuples. The body of a relation is sometimes called its extension. This is because it is to be interpreted as a representation of the extension of some predicate, this being the set of true propositions that can be formed by replacing each free variable in that predicate by a name (a term that designates something). There is a one-to-one correspondence between the free variables of the predicate and the attribute names of the relation heading. Each tuple of the relation body provides attribute values to instantiate the predicate by substituting each of its free variables. The result is a proposition that is deemed, on account of the appearance of the tuple in the relation body, to be true. Contrariwise, every tuple whose heading conforms to that of the relation, but which does not appear in the body is deemed to be false. This assumption is known as the closed world assumption: it is often violated in practical databases, where the absence of a tuple might mean that the truth of the corresponding proposition is unknown - Wikipedia, <a href="https://en.wikipedia.org/wiki/Relation_(database)">Relation_(database)</a></p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn, <span style="color:#e6db74">&#34;Parts&#34;</span>, <span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> <span style="color:#66d9ef">TableForm</span>  
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn, <span style="color:#e6db74">&#34;Parts&#34;</span>, <span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> <span style="color:#66d9ef">TableForm</span>  
 </code></pre></div><p><code>Out:</code> <img src="/en/post/20150317/notebook02.jpg" alt="notebook-output-02"></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn, <span style="color:#e6db74">&#34;Parts&#34;</span>, <span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn, <span style="color:#e6db74">&#34;Parts&#34;</span>, <span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
 
 <span style="color:#e6db74">Out</span>: {
   {<span style="color:#e6db74">&#34;pid&#34;</span>, <span style="color:#e6db74">&#34;pname&#34;</span>, <span style="color:#e6db74">&#34;pcolor&#34;</span>},
@@ -795,7 +795,7 @@ isColorOf<span style="color:#f92672">[</span>assoc_<span style="color:#f92672">]
 <blockquote>
 <p>In a relational database, all data are stored and accessed via relations. Relations that store data are called &ldquo;base relations&rdquo;, and in implementations are called &ldquo;tables&rdquo;. Other relations do not store data, but are computed by applying relational operations to other relations. These relations are sometimes called &ldquo;derived relations&rdquo;. In implementations these are called &ldquo;views&rdquo; or &ldquo;queries&rdquo; - Wikipedia, <a href="https://en.wikipedia.org/wiki/Relation_(database)">Relation_(database)</a></p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">queryString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">queryString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;
 </span><span style="color:#e6db74">  SELECT Catalog.catsid,
 </span><span style="color:#e6db74">         Suppliers.sname,
 </span><span style="color:#e6db74">         Catalog.catpid,
@@ -815,7 +815,7 @@ isColorOf<span style="color:#f92672">[</span>assoc_<span style="color:#f92672">]
 <blockquote>
 <p>Each database is a collection of related tables; these are also called relations, hence the name &ldquo;relational database&rdquo;. Each table is a physical representation of an entity or object that is in a tabular format consisting of columns and rows - Wikipedia, <a href="https://en.wikipedia.org/wiki/Relation_(database)">Relation_(database)</a></p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">SQLTableNames</span><span style="color:#f92672">[</span>conn<span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">SQLTableNames</span><span style="color:#f92672">[</span>conn<span style="color:#f92672">]</span>
 <span style="color:#e6db74">Out</span>: {<span style="color:#e6db74">&#34;Catalog&#34;</span>, <span style="color:#e6db74">&#34;Parts&#34;</span>, <span style="color:#e6db74">&#34;Suppliers&#34;</span>}
 
 <span style="color:#e6db74">In</span>: <span style="color:#66d9ef">SQLTableNames</span><span style="color:#f92672">[</span>conn, <span style="color:#e6db74">&#34;TableType&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SQLTableTypeNames</span><span style="color:#f92672">[</span>conn<span style="color:#f92672">]]</span>
@@ -837,18 +837,18 @@ isColorOf<span style="color:#f92672">[</span>assoc_<span style="color:#f92672">]
 <h3 id="record-representations">Record Representations</h3>
 <p><strong>1. List</strong></p>
 <p>You need to maintain two ordered lists, one for the data values and another one for the semantics, i.e. the attribute/column names.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>:  partInstanceAsList
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>:  partInstanceAsList
 <span style="color:#e6db74">Out</span>: {<span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#66d9ef">Red</span>}
 
 <span style="color:#e6db74">In</span>:  attributes<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;pid&#34;</span>,<span style="color:#e6db74">&#34;pname&#34;</span>,<span style="color:#e6db74">&#34;pcolor&#34;</span>}
 <span style="color:#e6db74">Out</span>: {pid, pname, pcolor}
 </code></pre></div><p>You can combine the two lists in one list of <code>Rules</code> with the following command</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">Thread</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Rule</span><span style="color:#f92672">[</span>attributes, partInstanceAsList<span style="color:#f92672">]]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">Thread</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Rule</span><span style="color:#f92672">[</span>attributes, partInstanceAsList<span style="color:#f92672">]]</span>
 <span style="color:#e6db74">Out</span>: {<span style="color:#e6db74">&#34;pid&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;pname&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#e6db74">&#34;pcolor&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Red</span>}
 </code></pre></div><p>A Rule is the equivalent of a key-value pair, but it is more powerful because in Wolfram Language it is the basic mechanism that is used in transformations. Nevertheless for lookup operations and updating Wolfram researchers added a more powerful construct that is called Association, see below.</p>
 <p><strong>2. Triples</strong></p>
 <p>Let us call a specific part instance partXYZ, if we represent this as the subject resource of a triplet, the list of attributes as the predicates and the list of values as the objects we can take the following triplets</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">subject <span style="color:#f92672">=</span> <span style="color:#66d9ef">Table</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;http://example.org/resource/partXYZ&#34;</span>, {<span style="color:#ae81ff">3</span>}<span style="color:#f92672">]</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">subject <span style="color:#f92672">=</span> <span style="color:#66d9ef">Table</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;http://example.org/resource/partXYZ&#34;</span>, {<span style="color:#ae81ff">3</span>}<span style="color:#f92672">]</span>;
 predicate <span style="color:#f92672">=</span> <span style="color:#66d9ef">StringJoin</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;http://example.org/attribute/&#34;</span>, <span style="color:#75715e">#] &amp; /@ attributes;</span>
 object <span style="color:#f92672">=</span> partInstanceAsList;
 
@@ -858,14 +858,14 @@ object <span style="color:#f92672">=</span> partInstanceAsList;
 <p><img src="/en/post/20150317/notebook06.jpg" alt="notebook-output-06"></p>
 <p><strong>4. Tree</strong></p>
 <p>Wolfram Language functions are tree data structures that are created in the memory as a contiguous array of pointers, the first to the head and the rest to its successive elements. Take for example the <code>List</code> we defined, we can present it in a tree form with the command :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: {<span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#66d9ef">Red</span>} <span style="color:#e6db74">//</span> <span style="color:#66d9ef">TreeForm</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: {<span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#66d9ef">Red</span>} <span style="color:#e6db74">//</span> <span style="color:#66d9ef">TreeForm</span>
 </code></pre></div><p>Similarly we can represent this row of data as a function with three arguments that take values from the Integer, String, and Color domain, e.g. :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: partFunction<span style="color:#f92672">[</span><span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#66d9ef">RGBColor</span><span style="color:#f92672">[</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span><span style="color:#f92672">]]</span> <span style="color:#e6db74">//</span> <span style="color:#66d9ef">TreeForm</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: partFunction<span style="color:#f92672">[</span><span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#66d9ef">RGBColor</span><span style="color:#f92672">[</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span><span style="color:#f92672">]]</span> <span style="color:#e6db74">//</span> <span style="color:#66d9ef">TreeForm</span>
 </code></pre></div><p><code>Out:</code> <img src="/en/post/20150317/notebook07.jpg" alt="notebook-output-07"></p>
 <p><strong>5. Association</strong></p>
 <p>Associations in Wolfram Language are very similar to the <a href="http://www.topicmapslab.de/articles/TMDM_in_a_nutshell">Association Type</a> construct of the Topic Map data model. Each defined association is an instance of an association type. The keys of the association, association role types according to Topic Maps terminology, describe the role type of each value in the association instance. The values of the association, association role players according to Topic Maps terminology, describe the particular instance of the association type.</p>
 <p>The command to perform the association of attributes with their values is the following</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">AssociationThread</span><span style="color:#f92672">[</span>attributes<span style="color:#f92672">-&gt;</span>partInstanceAsList<span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">AssociationThread</span><span style="color:#f92672">[</span>attributes<span style="color:#f92672">-&gt;</span>partInstanceAsList<span style="color:#f92672">]</span>
 <span style="color:#e6db74">Out</span>: <span style="color:#f92672">&lt;|</span><span style="color:#e6db74">&#34;pid&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;pname&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#e6db74">&#34;pcolor&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Red</span><span style="color:#f92672">|&gt;</span>
 
 <span style="color:#e6db74">In</span>: <span style="color:#66d9ef">Keys</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#f92672">&lt;|</span><span style="color:#e6db74">&#34;pid&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;pname&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#e6db74">&#34;pcolor&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Red</span><span style="color:#f92672">|&gt;</span>
@@ -876,7 +876,7 @@ object <span style="color:#f92672">=</span> partInstanceAsList;
 </code></pre></div><p>Association is a relatively new fundamental construct in Wolfram Language, it acts like a symbolically indexed list. The main reason for using it is to allow highly efficient lookup and updating and also build complex hierarchical structures and other datasets.</p>
 <p><strong>6. List of Rules</strong></p>
 <p>You can easily convert an Association to a <code>List</code> of <code>Rules</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#f92672">&lt;|</span><span style="color:#e6db74">&#34;pid&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;pname&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#e6db74">&#34;pcolor&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Red</span><span style="color:#f92672">|&gt;</span> <span style="color:#e6db74">//</span><span style="color:#66d9ef">Normal</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#f92672">&lt;|</span><span style="color:#e6db74">&#34;pid&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;pname&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#e6db74">&#34;pcolor&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Red</span><span style="color:#f92672">|&gt;</span> <span style="color:#e6db74">//</span><span style="color:#66d9ef">Normal</span>
 <span style="color:#e6db74">Out</span>: {<span style="color:#e6db74">&#34;pid&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;pname&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#e6db74">&#34;pcolor&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Red</span>}
 </code></pre></div><p><strong>6. Hypergraph</strong></p>
 <p>In the following hypergraph representation we keep separate the schema from the data, i.e. the types from instances.</p>
@@ -886,11 +886,11 @@ object <span style="color:#f92672">=</span> partInstanceAsList;
 <p>In this hypergraph the <code>$Part991</code> plays the role of a hyperedge (green color) that connects three hypernodes that represent the values 991, &ldquo;Left Handled&hellip;.&rdquo;, RED (blue color).</p>
 <p>We defined two <code>hyperedges</code>, one at a layer of concepts to represent the head of the record, and another at the data layer to represent the body of the record.</p>
 <p><strong>7. EntityPropertyAssociation</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">Association</span><span style="color:#f92672">[</span>$Part991<span style="color:#f92672">-&gt;</span> <span style="color:#f92672">&lt;|</span><span style="color:#e6db74">&#34;partID&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;partName&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#e6db74">&#34;partColor&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Red</span><span style="color:#f92672">|&gt;</span> <span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: <span style="color:#66d9ef">Association</span><span style="color:#f92672">[</span>$Part991<span style="color:#f92672">-&gt;</span> <span style="color:#f92672">&lt;|</span><span style="color:#e6db74">&#34;partID&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;partName&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#e6db74">&#34;partColor&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Red</span><span style="color:#f92672">|&gt;</span> <span style="color:#f92672">]</span>
 <span style="color:#e6db74">Out</span>: <span style="color:#f92672">&lt;|</span> $Part991 <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">&lt;|</span>partID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>, partName<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, partColor<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Red</span><span style="color:#f92672">|&gt;</span> <span style="color:#f92672">|&gt;</span>
 </code></pre></div><h3 id="table-representations">Table Representations</h3>
 <p><strong>1. List of Lists</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: partsList <span style="color:#f92672">=</span> <span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn, <span style="color:#e6db74">&#34;Parts&#34;</span>, <span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#e6db74">In</span>: partsList <span style="color:#f92672">=</span> <span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn, <span style="color:#e6db74">&#34;Parts&#34;</span>, <span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
 <span style="color:#e6db74">Out</span>: {
   {<span style="color:#e6db74">&#34;pid&#34;</span>, <span style="color:#e6db74">&#34;pname&#34;</span>, <span style="color:#e6db74">&#34;pcolor&#34;</span>},
   {<span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#e6db74">&#34;Red&#34;</span>},
@@ -904,7 +904,7 @@ object <span style="color:#f92672">=</span> partInstanceAsList;
   {<span style="color:#ae81ff">999</span>, <span style="color:#e6db74">&#34;7 Segment Display&#34;</span>, <span style="color:#e6db74">&#34;Green&#34;</span>}
 }
 </code></pre></div><p><strong>2. List of Associations</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">head <span style="color:#f92672">=</span> partsList<span style="color:#f92672">[[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">head <span style="color:#f92672">=</span> partsList<span style="color:#f92672">[[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>;
 body <span style="color:#f92672">=</span> partsList<span style="color:#f92672">[[</span><span style="color:#ae81ff">2</span> ;;<span style="color:#f92672">]]</span>;
 
 <span style="color:#66d9ef">AssociationThread</span><span style="color:#f92672">[</span>head <span style="color:#f92672">-&gt;</span> <span style="color:#75715e">#] &amp; /@ body</span>
@@ -921,7 +921,7 @@ body <span style="color:#f92672">=</span> partsList<span style="color:#f92672">[
   <span style="color:#f92672">&lt;|</span>pid<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">999</span>,pname<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span> <span style="color:#66d9ef">Segment</span> <span style="color:#66d9ef">Display</span>,pcolor<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Green</span><span style="color:#f92672">|&gt;</span>
 }
 </code></pre></div><p><strong>3. Dataset</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">head <span style="color:#f92672">=</span> partsList<span style="color:#f92672">[[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">head <span style="color:#f92672">=</span> partsList<span style="color:#f92672">[[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>;
 body <span style="color:#f92672">=</span> partsList<span style="color:#f92672">[[</span><span style="color:#ae81ff">2</span> ;;<span style="color:#f92672">]]</span>;
 <span style="color:#66d9ef">AssociationThread</span><span style="color:#f92672">[</span>head <span style="color:#f92672">-&gt;</span> <span style="color:#75715e">#] &amp; /@ body //Dataset</span>
 </code></pre></div><p><img src="/en/post/20150317/notebook10.jpg" alt="notebook-output-10"></p>
@@ -1011,7 +1011,7 @@ body <span style="color:#f92672">=</span> partsList<span style="color:#f92672">[
 
     <div class="media-body">
       <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
-      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Consultant, Independent Contractor</h6>
       
       <ul class="network-icon" aria-hidden="true">
         
@@ -1283,7 +1283,7 @@ body <span style="color:#f92672">=</span> partsList<span style="color:#f92672">[
     
     
     
-    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
 
     
 
@@ -1302,7 +1302,7 @@ body <span style="color:#f92672">=</span> partsList<span style="color:#f92672">[
       <div class="col-md-6">
         
         <p>
-          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          © HEALIS - Athanassios I. Hatzis, 2024 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://healis.eu/el/authors/admin/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
@@ -15,9 +14,7 @@
                 hreflang="el"
                 href="https://healis.eu/el/authors/admin/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/authors/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -30,14 +27,10 @@
                 hreflang="el"
                 href="https://healis.eu/el/authors/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/test/embed/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -50,19 +43,13 @@
                 hreflang="el"
                 href="https://healis.eu/el/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/test/links/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/test/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/about/</loc>
     <lastmod>2020-08-16T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -75,9 +62,7 @@
                 hreflang="el"
                 href="https://healis.eu/el/about/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/contact/</loc>
     <lastmod>2020-08-16T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -90,9 +75,7 @@
                 hreflang="el"
                 href="https://healis.eu/el/contact/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/terms/</loc>
     <lastmod>2018-06-28T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -105,19 +88,13 @@
                 hreflang="el"
                 href="https://healis.eu/el/terms/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/tags/article_publishing/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/tags/event/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/post/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -130,14 +107,10 @@
                 hreflang="el"
                 href="https://healis.eu/el/post/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/tags/publicationevent/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/tags/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -150,14 +123,10 @@
                 hreflang="el"
                 href="https://healis.eu/el/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/post/2017-11-30/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -169,9 +138,7 @@
                 hreflang="el"
                 href="https://healis.eu/el/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://healis.eu/el/publication_types/</loc>
     <xhtml:link
                 rel="alternate"
@@ -184,5 +151,4 @@
                 href="https://healis.eu/el/publication_types/"
                 />
   </url>
-  
 </urlset>

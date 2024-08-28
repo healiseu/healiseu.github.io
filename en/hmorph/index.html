@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.74.0" />
+  <meta name="generator" content="Hugo 0.92.2" />
 
   
 
@@ -81,7 +81,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+  <link rel="stylesheet" href="/css/academia.min.f061a21f63bf4b7a5a9dd13669fcb02e.css">
 
   
 
@@ -662,30 +662,30 @@ You may also set the <strong>playback speed at 0.75</strong> to increase the tim
 <h3 id="python-environment">Python Environment</h3>
 <p>HyperMorph is written in Python 3. We recommend you create a virtual environment with the latest <a href="https://www.anaconda.com/products/individual">Anaconda 64-Bit Python 3.8 distribution</a>.</p>
 <h3 id="anaconda-environment-setup">Anaconda Environment Setup</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    conda create --name hmorph python<span style="color:#f92672">=</span>3.8
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    conda create --name hmorph python<span style="color:#f92672">=</span>3.8
     conda activate hmorph
     python -m site
 </code></pre></div><p>You can also add command <code>conda activate hmorph</code> at the end of .bashrc file</p>
 <h3 id="install-hypermorph-package">Install HyperMorph package</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    pip install hypermorph
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    pip install hypermorph
     ln -s ~/anaconda3/envs/hmorph/lib/python3.8/site-packages/hypermorph HyperMorph
 </code></pre></div><h3 id="install-dependencies">Install dependencies</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    cd HyperMorph
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    cd HyperMorph
     conda install --file requirements_conda.txt
     pip install -r requirements_pip.txt
 </code></pre></div><h3 id="test-package-installation">Test Package Installation</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    pip install ipython
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    pip install ipython
     ipython
 </code></pre></div><p><em>copy and paste the following commands in IPython console and examine the output</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> hypermorph <span style="color:#f92672">import</span> MIS
-mis <span style="color:#f92672">=</span> MIS(debug<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, rebuild<span style="color:#f92672">=</span>True, warning<span style="color:#f92672">=</span>False, net_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;demo_schema&#39;</span>, net_format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;gt&#39;</span>, net_path<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;data/DemoData/Schemata&#39;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> hypermorph <span style="color:#f92672">import</span> MIS
+mis <span style="color:#f92672">=</span> MIS(debug<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, rebuild<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, warning<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, net_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;demo_schema&#39;</span>, net_format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;gt&#39;</span>, net_path<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;data/DemoData/Schemata&#39;</span>)
 
-HyperMorph v0<span style="color:#f92672">.</span><span style="color:#ae81ff">1</span>
+HyperMorph v0<span style="color:#ae81ff">.1</span>
 Operational API <span style="color:#66d9ef">for</span> information management <span style="color:#f92672">and</span> data transformations on Associative Semiotic Hypergraph Development Framework
 (C) <span style="color:#ae81ff">2015</span><span style="color:#f92672">-</span><span style="color:#ae81ff">2020</span> Athanassios I<span style="color:#f92672">.</span> Hatzis
 
-Python <span style="color:#ae81ff">3.8</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span> <span style="color:#f92672">|</span> packaged by conda<span style="color:#f92672">-</span>forge <span style="color:#f92672">|</span> (default, Aug <span style="color:#ae81ff">21</span> <span style="color:#ae81ff">2020</span>, <span style="color:#ae81ff">18</span>:<span style="color:#ae81ff">21</span>:<span style="color:#ae81ff">27</span>) 
-[GCC <span style="color:#ae81ff">7.5</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0</span>] on linux
+Python <span style="color:#ae81ff">3.8.5</span> <span style="color:#f92672">|</span> packaged by conda<span style="color:#f92672">-</span>forge <span style="color:#f92672">|</span> (default, Aug <span style="color:#ae81ff">21</span> <span style="color:#ae81ff">2020</span>, <span style="color:#ae81ff">18</span>:<span style="color:#ae81ff">21</span>:<span style="color:#ae81ff">27</span>) 
+[GCC <span style="color:#ae81ff">7.5.0</span>] on linux
 Session Started on  Wed, <span style="color:#ae81ff">26</span> Aug <span style="color:#ae81ff">2020</span> <span style="color:#ae81ff">08</span>:<span style="color:#ae81ff">48</span>:<span style="color:#ae81ff">02</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">0000</span>
 
 
@@ -693,7 +693,7 @@ Please wait, rebuilding metadata graph schema <span style="color:#f92672">...</s
 
  Done<span style="color:#f92672">.</span>
 </code></pre></div><p><em>get an overview of the subsystems</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mis.overview
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mis.overview
 
 Out<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>: 
                 nid                                        cname alias ntype ctype  counter
@@ -704,7 +704,7 @@ dim4 dim3 dim2
 <span style="color:#ae81ff">3</span>    <span style="color:#ae81ff">0</span>    <span style="color:#ae81ff">0</span>       <span style="color:#ae81ff">3</span>     *** HyperMorph HYPER LINKS Subsystem ***   HLS   SYS    HL        <span style="color:#ae81ff">0</span>
 <span style="color:#ae81ff">4</span>    <span style="color:#ae81ff">0</span>    <span style="color:#ae81ff">0</span>       <span style="color:#ae81ff">4</span>    *** HyperMorph SCHEMA LINKS Subsystem ***   SLS   SYS    SL        <span style="color:#ae81ff">4</span>
 </code></pre></div><p><em>save your schema</em></p>
-<pre><code>mis.save()
+<pre tabindex="0"><code>mis.save()
 '/home/vagrant/anaconda3/envs/hmorph/lib/python3.8/site-packages/hypermorph/data/DemoData/Schemata/demo_schema.gt'
 </code></pre><p>If you did not get any warnings or errors, HyperMorph package and its dependencies have been succesffully installed. Congratulations you have completed successfully the installation guide. Now you may continue testing with our <a href="/en/hmorph/#demo_test">demo guide</a> or see a draft of the <a href="https://hypermorph.healis.eu/docs">documentation</a> for the project.</p>
 
@@ -757,10 +757,10 @@ dim4 dim3 dim2
       
       <h2 id="python-scripts">Python Scripts</h2>
 <p>Change to the location of HyperMorph package</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ln -s ~/anaconda3/envs/hmorph/lib/python3.8/site-packages/hypermorph HyperMorph
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ln -s ~/anaconda3/envs/hmorph/lib/python3.8/site-packages/hypermorph HyperMorph
 cd HyperMorph
 </code></pre></div><p>If you have followed our installation guide you can find the script files at</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls -lh ~/HyperMorph/demo
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls -lh ~/HyperMorph/demo
 </code></pre></div><p>otherwise look at the <code>/site-packages/hypermorph/demo</code> folder of your environment.</p>
 <h2 id="add-resources">Add Resources</h2>
 <p>Open <code>demo/add_resources.py</code> and execute commands.</p>
@@ -770,19 +770,19 @@ cd HyperMorph
 
 
 </p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> hypermorph <span style="color:#f92672">import</span> MIS
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> hypermorph <span style="color:#f92672">import</span> MIS
 
 <span style="color:#75715e"># rebuild TRIADB Schema</span>
-mis <span style="color:#f92672">=</span> MIS(debug<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, rebuild<span style="color:#f92672">=</span>True, warning<span style="color:#f92672">=</span>False,
+mis <span style="color:#f92672">=</span> MIS(debug<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, rebuild<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, warning<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
           net_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;demo_schema&#39;</span>, net_format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;gt&#39;</span>, net_path<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;data/DemoData/Schemata&#39;</span>)
 </code></pre></div><p>If you want to add those MySQL database resources included with the demo then you have to restore them in your MySQL DBMS (see create/restore databases). Or change the parameters of the <code>add()</code> command accordingly to use your own data resources.</p>
 <p>Alternatively you may also execute the whole script and create HyperMorph Schema <code>python demo/add_resources.py</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">HyperMorph v0<span style="color:#f92672">.</span><span style="color:#ae81ff">1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">HyperMorph v0<span style="color:#ae81ff">.1</span>
 Operational API <span style="color:#66d9ef">for</span> information management <span style="color:#f92672">and</span> data transformations on Associative Semiotic Hypergraph Development Framework
 (C) <span style="color:#ae81ff">2015</span><span style="color:#f92672">-</span><span style="color:#ae81ff">2020</span> Athanassios I<span style="color:#f92672">.</span> Hatzis
 
-Python <span style="color:#ae81ff">3.8</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span> <span style="color:#f92672">|</span> packaged by conda<span style="color:#f92672">-</span>forge <span style="color:#f92672">|</span> (default, Aug <span style="color:#ae81ff">21</span> <span style="color:#ae81ff">2020</span>, <span style="color:#ae81ff">18</span>:<span style="color:#ae81ff">21</span>:<span style="color:#ae81ff">27</span>) 
-[GCC <span style="color:#ae81ff">7.5</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0</span>] on linux
+Python <span style="color:#ae81ff">3.8.5</span> <span style="color:#f92672">|</span> packaged by conda<span style="color:#f92672">-</span>forge <span style="color:#f92672">|</span> (default, Aug <span style="color:#ae81ff">21</span> <span style="color:#ae81ff">2020</span>, <span style="color:#ae81ff">18</span>:<span style="color:#ae81ff">21</span>:<span style="color:#ae81ff">27</span>) 
+[GCC <span style="color:#ae81ff">7.5.0</span>] on linux
 Session Started on  Wed, <span style="color:#ae81ff">26</span> Aug <span style="color:#ae81ff">2020</span> <span style="color:#ae81ff">11</span>:<span style="color:#ae81ff">36</span>:<span style="color:#ae81ff">34</span> <span style="color:#f92672">+</span><span style="color:#ae81ff">0000</span>
 
 
@@ -791,7 +791,7 @@ Please wait, rebuilding metadata graph schema <span style="color:#f92672">...</s
  Done<span style="color:#f92672">.</span>
 </code></pre></div><h3 id="create-databases">Create databases</h3>
 <p><code>sudo mysql</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql">    <span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">ALL</span> <span style="color:#66d9ef">PRIVILEGES</span> <span style="color:#66d9ef">ON</span> <span style="color:#f92672">*</span>.<span style="color:#f92672">*</span> <span style="color:#66d9ef">TO</span> <span style="color:#e6db74">&#39;demo&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;localhost&#39;</span> IDENTIFIED <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;demo&#39;</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql">    <span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">ALL</span> <span style="color:#66d9ef">PRIVILEGES</span> <span style="color:#66d9ef">ON</span> <span style="color:#f92672">*</span>.<span style="color:#f92672">*</span> <span style="color:#66d9ef">TO</span> <span style="color:#e6db74">&#39;demo&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;localhost&#39;</span> IDENTIFIED <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;demo&#39;</span>;
     <span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> SPC;
     <span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> Northwind;
     <span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> TRIADB;
@@ -799,7 +799,7 @@ Please wait, rebuilding metadata graph schema <span style="color:#f92672">...</s
     <span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> Nodes (id int <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">NULL</span>);
     <span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> Edges (id int <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">NULL</span>);
 </code></pre></div><h3 id="restore-databases-from-sql-dump-files">Restore databases from SQL dump files</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~/HyperMorph/data/MySQLDumps
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~/HyperMorph/data/MySQLDumps
 mysql -u demo -pdemo SPC &lt; dump-SPC-201909050814.sql
 mysql -u demo -pdemo Northwind &lt; dump-Northwind8Entities-201909061113.sql
 </code></pre></div><h2 id="other-demo-scripts">Other Demo Scripts</h2>
@@ -840,7 +840,7 @@ mysql -u demo -pdemo Northwind &lt; dump-Northwind8Entities-201909061113.sql
 
 
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Comment out</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Comment out</span>
 <span style="color:#75715e"># from graph_tool.draw import graph_draw, sfdp_layout, fruchterman_reingold_layout, arf_layout, radial_tree_layout</span>
 <span style="color:#75715e">#</span>
 <span style="color:#75715e"># you will not be able to run graph_draw() commands</span>
@@ -954,7 +954,7 @@ mysql -u demo -pdemo Northwind &lt; dump-Northwind8Entities-201909061113.sql
     
     
     
-    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
 
     
 
@@ -973,7 +973,7 @@ mysql -u demo -pdemo Northwind &lt; dump-Northwind8Entities-201909061113.sql
       <div class="col-md-6">
         
         <p>
-          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          © HEALIS - Athanassios I. Hatzis, 2024 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.

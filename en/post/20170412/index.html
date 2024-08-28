@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.74.0" />
+  <meta name="generator" content="Hugo 0.92.2" />
 
   
 
@@ -81,7 +81,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+  <link rel="stylesheet" href="/css/academia.min.f061a21f63bf4b7a5a9dd13669fcb02e.css">
 
   
 
@@ -1021,7 +1021,7 @@
 </p>
 <p>Our <a href="%7B%7Bbase_path%7D%7D/dbapi/">DBAPI project</a> in Wolfram Language has been extended to cover all R3DM/S3DM functionality. For example, an <code>Environment</code> is added with <code>OR3addEnvironment</code> command, (<a href="#code3"><strong>Code.3</strong></a>), and we retrieve any metadata about it with the <code>OR3getAnything</code> command (<a href="#code4"><strong>Code.4</strong></a>).</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">   <span style="color:#66d9ef">OR3addEnvironment</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;F:</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">mp\R3DM_TypeSystem.json&#34;</span>,<span style="color:#e6db74">&#34;R3DB&#34;</span>,<span style="color:#e6db74">&#34;root&#34;</span>,<span style="color:#e6db74">&#34;123&#34;</span><span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">   <span style="color:#66d9ef">OR3addEnvironment</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;F:</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">mp\R3DM_TypeSystem.json&#34;</span>,<span style="color:#e6db74">&#34;R3DB&#34;</span>,<span style="color:#e6db74">&#34;root&#34;</span>,<span style="color:#e6db74">&#34;123&#34;</span><span style="color:#f92672">]</span>
 </code></pre></div><p><strong>Code.3</strong> - We pass the schema file (JSON), the name of the database (R3DB), the username and the password. Metadata for the newly created classes are stored in the <code>DBRegistry</code> subsystem <a href="#fig4"><strong>Fig.4</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <!-- raw HTML omitted -->
@@ -1075,7 +1075,7 @@
 </p>
 <p>We have <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/json/.json">serialized the domain model</a> graph of <a href="#fig6"><strong>Fig.6</strong></a> in the same manner as the schema of the type system and the task of loading and building the model is simplified again with the following single function call (<a href="#code6"><strong>Code.6</strong></a>).</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">   <span style="color:#66d9ef">OR3addDomainModel</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;F:</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">mp\SPCModel.json&#34;</span><span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">   <span style="color:#66d9ef">OR3addDomainModel</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;F:</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">mp\SPCModel.json&#34;</span><span style="color:#f92672">]</span>
 </code></pre></div><p><strong>Code.6</strong> - The only parameter required in <em>OR3addDomainModel</em> is the <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/json/.json">schema definition file</a> of the model. This function call will instruct OrientDB to create classes for all <code>Entities</code> and <code>Attributes</code> of the <code>Model</code>. All the metadata from the schema, <a href="#fig6"><strong>Fig.6</strong></a>, will be stored in <code>MTS</code> and will be available for retrieval with <code>OR3getAnything</code> command.</p>
 <p>Using the powerful <code>OR3getAnything</code> function in the context of <a href="%7B%7Bbase_path%7D%7D/dbapi/">DBAPI</a><code>OrientR3S3</code> package we can retrieve metadata, <a href="#fig6"><strong>Fig.6</strong></a>, for any Model, Entity or Attribute. The result set can be in the form of Wolfram Language <a href="http://reference.wolfram.com/language/ref/Dataset.html"><code>Dataset</code></a>, <a href="http://reference.wolfram.com/language/ref/List.html"><code>List</code></a>, or <a href="http://reference.wolfram.com/language/ref/Graph.html"><code>Graph</code></a> data structures (<a href="#code7"><strong>Code.7</strong></a>).</p>
 <p><strong>Code.7</strong> - Three examples of the <code>OR3getAnything</code> function where we retrieve OrientDB records for <code>Models</code>, <code>Entities</code> and <code>Attributes</code> respectively. The function call is translated to OrientDB RESTful API command and the JSON response from the DBMS is transformed to Wolfram Language data structures for further processing and visualization. It worths noticing the hypergraph representation which is the equivalent graphical form of Model&rsquo;s schema diagram in <a href="#fig6"><strong>Fig.6</strong></a>.</p>
@@ -1241,7 +1241,7 @@
 <h3 id="get-anything">Get Anything</h3>
 <p>By varying the named optional arguments we pass to <code>OR3getAnything</code> public function of the <strong>OrientR3S3 Package</strong>, <a href="#code14"><strong>Code.14</strong></a>, we can retrieve or search for anything in <strong>R3DM/S3DM</strong> and we can also ask to <strong>return</strong> the result in a specified format e.g. <code>Dataset</code>, <code>References</code>, <code>Rules</code>, and <code>Associations</code>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
 (<span style="color:#f92672">*</span> <span style="color:#66d9ef">Search</span> <span style="color:#66d9ef">Operations</span> <span style="color:#f92672">*</span>)
 <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:02&#34;</span>, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;SPC&#34;</span><span style="color:#f92672">]</span>
 <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:01&#34;</span>, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;prtName&#34;</span><span style="color:#f92672">]</span>
@@ -1354,7 +1354,7 @@
 <p>In this case we are looking for the <code>Supplier</code> that has the minimum <code>Catalog</code> <code>Price</code> for a <code>Red Fire Hydrant Cap</code> and we want to retrieve <em>supID</em>, <em>supName</em>, <em>supCity</em>, <em>supCountry</em>, <em>catPrice</em>, <em>catQuantity</em>, <em>prtID</em>, <em>prtName</em>, and <em>prtColor</em>. The following <a href="#code17">SQL SELECT query</a> and <a href="#code18">SPARQL query</a> retrieve a result set using the relational or the RDF data model respectively.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 <strong>Code.17</strong> - SQL query: sort <code>Catalog</code> prices for a <code>Red Fire Hydrant Cap</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> suppliers.sid, suppliers.sname, suppliers.scountry,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> suppliers.sid, suppliers.sname, suppliers.scountry,
        <span style="color:#66d9ef">catalog</span>.catcost, <span style="color:#66d9ef">catalog</span>.catqnt,
        parts.pid, parts.pname, parts.pcolor
 <span style="color:#66d9ef">FROM</span>   suppliers
@@ -1366,7 +1366,7 @@
 <span style="color:#66d9ef">ORDER</span>  <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">catalog</span>.catcost;
 </code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 <strong>Code.18</strong> - SPARQL query: sort <code>Catalog</code> prices for a <code>Red Fire Hydrant Cap</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">?</span>sup <span style="color:#f92672">?</span>supName <span style="color:#f92672">?</span>supCountry
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">?</span>sup <span style="color:#f92672">?</span>supName <span style="color:#f92672">?</span>supCountry
        <span style="color:#f92672">?</span>catPrice <span style="color:#f92672">?</span>catQuantity
        <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>prtName <span style="color:#f92672">?</span>prtColor <span style="color:#f92672">?</span>cat <span style="color:#66d9ef">where</span>
 <span style="color:#960050;background-color:#1e0010">{</span>
@@ -1394,7 +1394,7 @@
 
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 <strong>Code.20</strong> R3DM/S3DM Filtering. This is the condensed version of <a href="#code19">Code.19</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">    {<span style="color:#66d9ef">SUP</span>, <span style="color:#66d9ef">PRT</span>, <span style="color:#66d9ef">CAT</span>} <span style="color:#f92672">=</span> <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>spcModel, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Entities&#34;</span><span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">    {<span style="color:#66d9ef">SUP</span>, <span style="color:#66d9ef">PRT</span>, <span style="color:#66d9ef">CAT</span>} <span style="color:#f92672">=</span> <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>spcModel, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Entities&#34;</span><span style="color:#f92672">]</span>
     prtID <span style="color:#f92672">=</span>           <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>spcModel, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;prtID&#34;</span><span style="color:#f92672">][[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>
     fval1 <span style="color:#f92672">=</span>           <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>prtID, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">][[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>
 
@@ -1466,7 +1466,7 @@
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>© Athanassios I. Hatzis, March 2017 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>© Athanassios I. Hatzis, March 2017&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -1544,7 +1544,7 @@
 
     <div class="media-body">
       <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
-      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Consultant, Independent Contractor</h6>
       
       <ul class="network-icon" aria-hidden="true">
         
@@ -1816,7 +1816,7 @@
     
     
     
-    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
 
     
 
@@ -1835,7 +1835,7 @@
       <div class="col-md-6">
         
         <p>
-          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          © HEALIS - Athanassios I. Hatzis, 2024 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.74.0" />
+  <meta name="generator" content="Hugo 0.92.2" />
 
   
 
@@ -81,7 +81,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+  <link rel="stylesheet" href="/css/academia.min.f061a21f63bf4b7a5a9dd13669fcb02e.css">
 
   
 
@@ -829,7 +829,7 @@
 <p>We extend the definition of association in the (ER) data model to cover both Entities and Relationships. In the aforementioned paper, Chen formally defines attribute as a function which maps a given entity to a single value (or a single tuple of values). He also mentions that relationships have their own attributes whose meaning depends on the associated entities. The (key,value) pair of an <a href="https://en.wikipedia.org/wiki/Associative_array">Associative array</a>, a.k.a. map, symbol table, or dictionary, captures this functional operation of attribute.</p>
 <h3 id="wolfram-language---association">Wolfram Language - Association</h3>
 <p>Wolfram Language is using <code>Association</code> fundamental construct to represent an associative array. The following three <a href="https://reference.wolfram.com/language/guide/Associations.html">Wolfram Language associations</a> represent a relationship of a Catalog instance with a Supplier instance and some Part instance from our toy dataset.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Supplier</span> <span style="color:#66d9ef">Association</span> <span style="color:#f92672">*</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Supplier</span> <span style="color:#66d9ef">Association</span> <span style="color:#f92672">*</span>)
 <span style="color:#f92672">&lt;|</span>supID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1081</span>, supName<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Acme Widget Suppliers&#34;</span>, supAddress<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;1 Grub St., Potemkin Village, IL 61801&#34;</span>, supCity<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;ILLINOIS&#34;</span>, supCountry<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;USA&#34;</span>, supStatus<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">10</span><span style="color:#f92672">|&gt;</span>
 
 (<span style="color:#f92672">*</span> <span style="color:#66d9ef">Part</span> <span style="color:#66d9ef">Association</span> <span style="color:#f92672">*</span>)
@@ -869,7 +869,7 @@
 </p>
 <h3 id="json-serialization">JSON Serialization</h3>
 <p>Another very popular representation for Association is JSON Serialization. Those associations we described above can be serialized with the following format.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
   <span style="color:#f92672">&#34;$PartI&#34;</span>: {
     <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;$Item&#34;</span>,
     <span style="color:#f92672">&#34;prtID&#34;</span>: <span style="color:#ae81ff">998</span>,
@@ -902,7 +902,7 @@
 <p>Although the logical view of Chen&rsquo;s (ER) data model and his popular diagrammatic technique incorporates Entities, Relationships, Attributes and Values, at the physical layer of any relational DBMS we find records, i.e. Entities or Relationships are ordered tuples. A set of these ordered tuples that have the same heading, is called body. This header is another ordered tuple with attribute names. Theoretically speaking the body and the header of a table make the Relation. In practise the header is separated from the body and located at the database catalog together with other metadata for the schema of the database. SQL standard specifies a uniform mean to access this catalog.</p>
 <h3 id="wolfram-language---relation">Wolfram Language - Relation</h3>
 <p>The <a href="https://reference.wolfram.com/language/ref/List.html"><code>List</code> fundamental construct of Wolfram Language</a> can be used to represent a Relation. An extensive analysis of various representations and transformations on the constructs of the Relational data model in Wolfram Language can be found <a href="https://www.linkedin.com/pulse/towards-new-data-modelling-architecture-part-1-hatzis-phd">here</a>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Part</span> <span style="color:#66d9ef">Relation</span> with a header <span style="color:#f92672">and</span> three tuples (body) <span style="color:#f92672">*</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Part</span> <span style="color:#66d9ef">Relation</span> with a header <span style="color:#f92672">and</span> three tuples (body) <span style="color:#f92672">*</span>)
 {
   {<span style="color:#e6db74">&#34;pid&#34;</span>, <span style="color:#e6db74">&#34;pname&#34;</span>, <span style="color:#e6db74">&#34;pcolor&#34;</span>, <span style="color:#e6db74">&#34;pweight&#34;</span>, <span style="color:#e6db74">&#34;punit&#34;</span>},
   {<span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#e6db74">&#34;Red&#34;</span>, <span style="color:#ae81ff">15</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>, <span style="color:#e6db74">&#34;lb&#34;</span>},
@@ -970,7 +970,7 @@
 
 </figure>
 </p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span>  <span style="color:#66d9ef">Catalog</span> . catsid ,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span>  <span style="color:#66d9ef">Catalog</span> . catsid ,
         <span style="color:#66d9ef">Catalog</span> . catpid ,
         Suppliers . sname ,
         Parts . pname ,
@@ -1084,7 +1084,7 @@
 
     <div class="media-body">
       <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
-      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Consultant, Independent Contractor</h6>
       
       <ul class="network-icon" aria-hidden="true">
         
@@ -1356,7 +1356,7 @@
     
     
     
-    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
 
     
 
@@ -1375,7 +1375,7 @@
       <div class="col-md-6">
         
         <p>
-          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          © HEALIS - Athanassios I. Hatzis, 2024 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.

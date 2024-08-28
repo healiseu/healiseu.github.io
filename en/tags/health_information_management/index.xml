@@ -7,10 +7,22 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
-    <lastBuildDate>Mon, 13 Sep 2010 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://healis.eu/en/tags/health_information_management/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Obsidian MEDILIG</title>
+      <link>https://healis.eu/en/project/obsidian_medilig/</link>
+      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/project/obsidian_medilig/</guid>
+      <description>&lt;h2 id=&#34;we-welcome-a-modern-innovative-way-of-managing-medical-information&#34;&gt;We welcome a modern, innovative way of managing medical information&lt;/h2&gt;
+&lt;h2 id=&#34;at-a-glance&#34;&gt;At a Glance&lt;/h2&gt;
+&lt;p&gt;Obsidian MEDILIG (Medical Life Guard): An easy-to-use, flexible, secure, cross-platform medical knowledge management system for patient&amp;rsquo;s Electronic Health Record (EHR)  that is built on top of Obsidian software application for the design, implementation  and use of autonomous, multilingual, clinical documents from primary care to continuing care.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>MEDILIG</title>

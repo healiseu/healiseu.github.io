@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.74.0" />
+  <meta name="generator" content="Hugo 0.92.2" />
 
   
 
@@ -81,7 +81,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.4e3b2f408b00c06405993e164c128cb2.css">
+  <link rel="stylesheet" href="/css/academia.min.f061a21f63bf4b7a5a9dd13669fcb02e.css">
 
   
 
@@ -707,7 +707,7 @@ OOP is perhaps the most popular programming paradigm and yet because of the SQL 
 <p>Enough said, software engineering is not a theoretical thing, it is based on practice. I will give you an example. One of the drawbacks of SQL is that you don&rsquo;t have a direct access to manage data dictionary information, this is handled more or less automatically by the DBMS. Gartner recently reported that data quality and data integration tools are incorporating data catalogs. This is certainly a step towards the right direction, you need a query API that is capable to manage both data and metadata using a unified approach.</p>
 <p>Consider the following code snippet in Python:</p>
 <p>The first command demonstrates fetching metadata using OOP chainable python methods:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">mis<span style="color:#f92672">.</span>get(<span style="color:#ae81ff">221</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">mis<span style="color:#f92672">.</span>get(<span style="color:#ae81ff">221</span>)
    <span style="color:#f92672">.</span>fields
    <span style="color:#f92672">.</span>over(select<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;nid, dim4, dim3, dim2, cname, alias, ntype, ctype, counter&#39;</span>)
    <span style="color:#f92672">.</span>to_dataframe(index<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dim4, dim3, dim2&#39;</span>)
@@ -726,7 +726,7 @@ dim4 dim3 dim2
           <span style="color:#ae81ff">14</span>    <span style="color:#ae81ff">234</span>           Bike number    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
           <span style="color:#ae81ff">15</span>    <span style="color:#ae81ff">235</span>           Member type    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
 </code></pre></div><p>The second command demonstrates fetching metadata using a functional approach:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">mis<span style="color:#f92672">.</span>get(nid<span style="color:#f92672">=</span><span style="color:#ae81ff">221</span>, 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">mis<span style="color:#f92672">.</span>get(nid<span style="color:#f92672">=</span><span style="color:#ae81ff">221</span>, 
         what<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;fields&#39;</span>, 
         select<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;nid, dim4, dim3, dim2, cname, alias, ntype, ctype, counter&#39;</span>,
         index<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dim4, dim3, dim2&#39;</span>, 
@@ -745,7 +745,7 @@ dim4 dim3 dim2
           <span style="color:#ae81ff">14</span>    <span style="color:#ae81ff">234</span>           Bike number    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
           <span style="color:#ae81ff">15</span>    <span style="color:#ae81ff">235</span>           Member type    NA   FLD   CSV        <span style="color:#ae81ff">0</span>
 </code></pre></div><p>And the third command demonstrates fetching data using again a functional approach</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">mis<span style="color:#f92672">.</span>get(<span style="color:#ae81ff">221</span>, what<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;data&#39;</span>, 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">mis<span style="color:#f92672">.</span>get(<span style="color:#ae81ff">221</span>, what<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;data&#39;</span>, 
              select<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;nid, dim4, dim3, dim2, cname, alias, ntype, ctype, counter&#39;</span>, 
              out<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dataframe&#39;</span>, 
              limit<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, 
@@ -773,7 +773,7 @@ Out[<span style="color:#ae81ff">20</span>]:
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p><a href="https://sigmodrecord.org/publications/sigmodRecord/1912/pdfs/07_Reports_Abadi.pdf">The Seattle Report on Database Research</a> - the report summarizes the discussion and conclusions of the 9th such meeting, held during 9-10 October 2018. It appeared in the December 2019 issue of ACM SIGMOD Record <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://sigmodrecord.org/publications/sigmodRecord/1912/pdfs/07_Reports_Abadi.pdf">The Seattle Report on Database Research</a> - the report summarizes the discussion and conclusions of the 9th such meeting, held during 9-10 October 2018. It appeared in the December 2019 issue of ACM SIGMOD Record&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -865,7 +865,7 @@ Out[<span style="color:#ae81ff">20</span>]:
 
     <div class="media-body">
       <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
-      <h6 class="card-subtitle">Software Engineer - Researcher, Founder/Independent Contractor</h6>
+      <h6 class="card-subtitle">Software Engineer - Researcher, Consultant, Independent Contractor</h6>
       
       <ul class="network-icon" aria-hidden="true">
         
@@ -1137,7 +1137,7 @@ Out[<span style="color:#ae81ff">20</span>]:
     
     
     
-    <script src="/js/academia.min.e4fc229c2f28284fc2dfa5b66a52b765.js"></script>
+    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
 
     
 
@@ -1156,7 +1156,7 @@ Out[<span style="color:#ae81ff">20</span>]:
       <div class="col-md-6">
         
         <p>
-          © HEALIS - Athanassios I. Hatzis, 2020 &middot; 
+          © HEALIS - Athanassios I. Hatzis, 2024 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
