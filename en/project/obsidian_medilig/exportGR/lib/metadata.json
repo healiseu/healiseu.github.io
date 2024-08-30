@@ -1,22 +1,96 @@
 {
   "vaultName": "Obsidian MEDILIG EN",
-  "lastExport": 1724825712322,
+  "lastExport": 1725039398148,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon minimal-things-dark minimal-default-light colorful-headings colorful-frame colorful-active links-ext-on full-width-media img-grid minimal-readable minimal-dark-black table-wide img-100 map-100 h2-l h3-l zoom-off active-line-on metadata-heading-off metadata-dividers styled-scrollbars",
   "useCustomHeadContent": false,
   "useCustomFavicon": false,
   "files": [
-    "_System/Help/DOC - Κλινικό Περιστατικό.md",
+    "_System/Help/assets/20240529114327326.png",
+    "_System/Help/assets/20240529120427405.png",
+    "_System/Help/assets/20240529120941584.png",
+    "_System/Help/assets/20240529121747760.png",
+    "_System/Help/assets/20240529121949751.png",
+    "_System/Help/assets/20240529122954335.png",
+    "_System/Help/assets/20240529123116342.png",
+    "_System/Help/assets/20240529130141861.png",
+    "_System/Help/assets/20240529131353870.png",
+    "_System/Help/assets/20240530164912615.png",
+    "_System/Help/assets/20240531131105416.png",
+    "_System/Help/assets/20240721221707548.png",
+    "_System/Help/assets/20240810093843143.png",
+    "_System/Help/assets/20240810164307361.png",
+    "_System/Help/assets/20240810204031138.png",
+    "_System/Help/assets/20240810213833852.png",
+    "_System/Help/assets/20240810214123979.png",
+    "_System/Help/assets/20240810225738898.png",
+    "_System/Help/assets/20240810235101967.png",
+    "_System/Help/assets/20240812093404254.png",
+    "_System/Help/assets/20240812114728213.png",
+    "_System/Help/assets/20240812121507701.png",
+    "_System/Help/assets/20240812122353034.png",
+    "_System/Help/assets/20240813110942294.png",
+    "_System/Help/assets/20240813111414674.png",
+    "_System/Help/assets/20240813113354922.png",
+    "_System/Help/assets/20240813123332171.png",
+    "_System/Help/assets/20240813225302757.png",
+    "_System/Help/assets/20240814005855425.png",
+    "_System/Help/assets/20240814011005838.png",
+    "_System/Help/assets/20240814013519397.png",
+    "_System/Help/assets/20240814015340027.png",
+    "_System/Help/assets/20240814111750719.png",
+    "_System/Help/assets/20240814113519445.png",
+    "_System/Help/assets/20240814114206731.png",
+    "_System/Help/assets/20240814114919280.png",
+    "_System/Help/assets/20240816103259970.png",
+    "_System/Help/assets/20240816182018527.png",
+    "_System/Help/assets/20240817085012806.png",
+    "_System/Help/assets/20240817093648481.png",
+    "_System/Help/assets/20240821101205353.png",
+    "_System/Help/assets/20240821111710146.png",
+    "_System/Help/assets/20240821113512128.png",
+    "_System/Help/assets/20240821113653963.png",
+    "_System/Help/assets/20240821114715245.png",
+    "_System/Help/assets/20240821115757929.png",
+    "_System/Help/assets/20240821115844219.png",
+    "_System/Help/assets/20240821115932956.png",
+    "_System/Help/assets/20240821120641337.png",
+    "_System/Help/assets/20240821202616241.png",
+    "_System/Help/assets/20240821205734328.png",
+    "_System/Help/assets/20240822204535356.png",
+    "_System/Help/assets/20240822211454692.png",
+    "_System/Help/assets/20240822222047182.png",
+    "_System/Help/assets/20240823113753204.png",
+    "_System/Help/assets/20240823114723499.png",
+    "_System/Help/assets/20240823114858828.png",
+    "_System/Help/assets/20240823115631925.png",
+    "_System/Help/assets/20240823210057006.png",
+    "_System/Help/assets/20240824082955258.png",
+    "_System/Help/assets/20240824103901618.png",
+    "_System/Help/assets/20240824121046958.png",
+    "_System/Help/assets/20240824231354596.png",
+    "_System/Help/assets/20240826102620813.png",
+    "_System/Help/assets/20240826122337097.png",
+    "_System/Help/assets/20240826204944383.png",
+    "_System/Help/assets/20240826211906132.png",
+    "_System/Help/assets/20240826215236867.png",
+    "_System/Help/assets/20240826221748214.png",
+    "_System/Help/assets/20240826222549222.png",
+    "_System/Help/assets/20240827195015420.png",
+    "_System/Help/assets/20240827200533108.png",
+    "_System/Help/assets/20240827215023238.png",
+    "_System/Help/assets/20240827223459677.png",
+    "_System/Help/assets/20240827224323926.png",
+    "_System/Help/assets/20240827225118488.png",
+    "_System/Help/assets/20240827225552306.png",
+    "_System/Help/assets/mdoc_process.mp4",
+    "_System/Help/assets/scale_up_demo.mp4",
+    "_System/Help/DOC - Clinical Case.md",
     "AGPL-3.0 license.md",
     "Changelog.md",
     "Obsidian MEDILIG v0.9.1.en.md",
     "Obsidian MEDILIG v0.9.1.el.md",
     "ToDo.md",
-    "_system/help/assets/20240821202616241.png",
-    "_system/help/assets/20240821205734328.png",
-    "_system/help/assets/20240822204535356.png",
-    "_system/help/assets/20240822211454692.png",
-    "_system/help/assets/20240822222047182.png",
     "assets/20240807111858323.png",
     "assets/20240807112102674.png",
     "assets/20240731112038526.png",
@@ -214,36 +288,6 @@
       "modifiedTime": 1724355097792,
       "sourceSize": 222214,
       "exportedPath": "_system/help/assets/20240817093648481.png",
-      "dependencies": []
-    },
-    "_system/help/assets/20240821202616241.png": {
-      "modifiedTime": 1724825712322,
-      "sourceSize": 424505,
-      "exportedPath": "_system/help/assets/20240821202616241.png",
-      "dependencies": []
-    },
-    "_system/help/assets/20240821205734328.png": {
-      "modifiedTime": 1724825712322,
-      "sourceSize": 144795,
-      "exportedPath": "_system/help/assets/20240821205734328.png",
-      "dependencies": []
-    },
-    "_system/help/assets/20240822204535356.png": {
-      "modifiedTime": 1724825712322,
-      "sourceSize": 634037,
-      "exportedPath": "_system/help/assets/20240822204535356.png",
-      "dependencies": []
-    },
-    "_system/help/assets/20240822211454692.png": {
-      "modifiedTime": 1724825712322,
-      "sourceSize": 23795,
-      "exportedPath": "_system/help/assets/20240822211454692.png",
-      "dependencies": []
-    },
-    "_system/help/assets/20240822222047182.png": {
-      "modifiedTime": 1724825712322,
-      "sourceSize": 151363,
-      "exportedPath": "_system/help/assets/20240822222047182.png",
       "dependencies": []
     },
     "_system/help/assets/20240814111750719.png": {
@@ -451,284 +495,284 @@
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 130471,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 11473,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 227059,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 498,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 7543,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 34313,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
     },
     "Obsidian MEDILIG v0.9.1.el.md": {
-      "modifiedTime": 1724825712322,
-      "sourceSize": 5619,
+      "modifiedTime": 1725039398148,
+      "sourceSize": 5595,
       "exportedPath": "obsidian-medilig-v0.9.1.el.html",
       "dependencies": [
         "assets/20240807111858323.png",
@@ -736,49 +780,37 @@
       ]
     },
     "assets/20240807111858323.png": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 984150,
       "exportedPath": "assets/20240807111858323.png",
       "dependencies": []
     },
     "assets/20240807112102674.png": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 2222343,
       "exportedPath": "assets/20240807112102674.png",
       "dependencies": []
     },
-    "_System/Help/DOC - Κλινικό Περιστατικό.md": {
-      "modifiedTime": 1724825712322,
-      "sourceSize": 11722,
-      "exportedPath": "_system/help/doc-κλινικό-περιστατικό.html",
-      "dependencies": [
-        "_system/help/assets/20240821202616241.png",
-        "_system/help/assets/20240821205734328.png",
-        "_system/help/assets/20240822204535356.png",
-        "_system/help/assets/20240822211454692.png",
-        "_system/help/assets/20240822222047182.png"
-      ]
-    },
     "AGPL-3.0 license.md": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 34323,
       "exportedPath": "agpl-3.0-license.html",
       "dependencies": []
     },
     "Changelog.md": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 6752,
       "exportedPath": "changelog.html",
       "dependencies": []
     },
     "Obsidian MEDILIG v0.9.1.en.md": {
-      "modifiedTime": 1724825712322,
-      "sourceSize": 1480,
+      "modifiedTime": 1725039398148,
+      "sourceSize": 1483,
       "exportedPath": "obsidian-medilig-v0.9.1.en.html",
       "dependencies": []
     },
     "ToDo.md": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 3225,
       "exportedPath": "todo.html",
       "dependencies": [
@@ -790,34 +822,520 @@
       ]
     },
     "assets/20240731112038526.png": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 47018,
       "exportedPath": "assets/20240731112038526.png",
       "dependencies": []
     },
     "assets/20240731112252094.png": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 36370,
       "exportedPath": "assets/20240731112252094.png",
       "dependencies": []
     },
     "assets/20240731160345858.png": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 16442,
       "exportedPath": "assets/20240731160345858.png",
       "dependencies": []
     },
     "assets/20240731155743751.png": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 118731,
       "exportedPath": "assets/20240731155743751.png",
       "dependencies": []
     },
     "assets/20240731161523514.png": {
-      "modifiedTime": 1724825712322,
+      "modifiedTime": 1725039398148,
       "sourceSize": 80521,
       "exportedPath": "assets/20240731161523514.png",
       "dependencies": []
+    },
+    "_System/Help/assets/20240529114327326.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 30145,
+      "exportedPath": "_system/help/assets/20240529114327326.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240529120427405.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 97734,
+      "exportedPath": "_system/help/assets/20240529120427405.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240529120941584.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 32377,
+      "exportedPath": "_system/help/assets/20240529120941584.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240529121747760.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 21119,
+      "exportedPath": "_system/help/assets/20240529121747760.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240529121949751.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 19949,
+      "exportedPath": "_system/help/assets/20240529121949751.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240529122954335.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 88494,
+      "exportedPath": "_system/help/assets/20240529122954335.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240529123116342.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 123123,
+      "exportedPath": "_system/help/assets/20240529123116342.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240529130141861.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 72154,
+      "exportedPath": "_system/help/assets/20240529130141861.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240529131353870.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 80320,
+      "exportedPath": "_system/help/assets/20240529131353870.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240530164912615.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 34666,
+      "exportedPath": "_system/help/assets/20240530164912615.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240531131105416.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 42850,
+      "exportedPath": "_system/help/assets/20240531131105416.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240721221707548.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 104595,
+      "exportedPath": "_system/help/assets/20240721221707548.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240810093843143.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 1345665,
+      "exportedPath": "_system/help/assets/20240810093843143.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240810164307361.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 60802,
+      "exportedPath": "_system/help/assets/20240810164307361.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240810204031138.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 65614,
+      "exportedPath": "_system/help/assets/20240810204031138.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240810213833852.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 123643,
+      "exportedPath": "_system/help/assets/20240810213833852.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240810214123979.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 464691,
+      "exportedPath": "_system/help/assets/20240810214123979.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240810225738898.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 620543,
+      "exportedPath": "_system/help/assets/20240810225738898.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240810235101967.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 600099,
+      "exportedPath": "_system/help/assets/20240810235101967.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240812093404254.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 1027659,
+      "exportedPath": "_system/help/assets/20240812093404254.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240812114728213.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 917770,
+      "exportedPath": "_system/help/assets/20240812114728213.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240812121507701.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 829428,
+      "exportedPath": "_system/help/assets/20240812121507701.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240812122353034.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 515206,
+      "exportedPath": "_system/help/assets/20240812122353034.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240813110942294.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 838002,
+      "exportedPath": "_system/help/assets/20240813110942294.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240813111414674.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 587121,
+      "exportedPath": "_system/help/assets/20240813111414674.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240813113354922.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 522741,
+      "exportedPath": "_system/help/assets/20240813113354922.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240813123332171.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 37995,
+      "exportedPath": "_system/help/assets/20240813123332171.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240813225302757.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 91589,
+      "exportedPath": "_system/help/assets/20240813225302757.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240814005855425.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 40348,
+      "exportedPath": "_system/help/assets/20240814005855425.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240814011005838.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 66453,
+      "exportedPath": "_system/help/assets/20240814011005838.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240814013519397.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 104323,
+      "exportedPath": "_system/help/assets/20240814013519397.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240814015340027.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 103835,
+      "exportedPath": "_system/help/assets/20240814015340027.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240814111750719.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 541703,
+      "exportedPath": "_system/help/assets/20240814111750719.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240814113519445.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 11478,
+      "exportedPath": "_system/help/assets/20240814113519445.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240814114206731.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 10028,
+      "exportedPath": "_system/help/assets/20240814114206731.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240814114919280.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 29630,
+      "exportedPath": "_system/help/assets/20240814114919280.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240816103259970.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 957412,
+      "exportedPath": "_system/help/assets/20240816103259970.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240816182018527.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 270536,
+      "exportedPath": "_system/help/assets/20240816182018527.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240817085012806.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 745264,
+      "exportedPath": "_system/help/assets/20240817085012806.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240817093648481.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 222214,
+      "exportedPath": "_system/help/assets/20240817093648481.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240821101205353.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 237722,
+      "exportedPath": "_system/help/assets/20240821101205353.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240821111710146.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 86843,
+      "exportedPath": "_system/help/assets/20240821111710146.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240821113512128.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 797473,
+      "exportedPath": "_system/help/assets/20240821113512128.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240821113653963.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 72741,
+      "exportedPath": "_system/help/assets/20240821113653963.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240821114715245.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 801117,
+      "exportedPath": "_system/help/assets/20240821114715245.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240821115757929.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 559246,
+      "exportedPath": "_system/help/assets/20240821115757929.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240821115844219.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 72124,
+      "exportedPath": "_system/help/assets/20240821115844219.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240821115932956.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 72124,
+      "exportedPath": "_system/help/assets/20240821115932956.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240821120641337.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 542701,
+      "exportedPath": "_system/help/assets/20240821120641337.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240821202616241.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 424505,
+      "exportedPath": "_system/help/assets/20240821202616241.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240821205734328.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 144795,
+      "exportedPath": "_system/help/assets/20240821205734328.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240822204535356.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 634037,
+      "exportedPath": "_system/help/assets/20240822204535356.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240822211454692.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 23795,
+      "exportedPath": "_system/help/assets/20240822211454692.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240822222047182.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 151363,
+      "exportedPath": "_system/help/assets/20240822222047182.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240823113753204.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 252898,
+      "exportedPath": "_system/help/assets/20240823113753204.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240823114723499.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 185279,
+      "exportedPath": "_system/help/assets/20240823114723499.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240823114858828.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 154925,
+      "exportedPath": "_system/help/assets/20240823114858828.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240823115631925.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 697797,
+      "exportedPath": "_system/help/assets/20240823115631925.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240823210057006.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 643890,
+      "exportedPath": "_system/help/assets/20240823210057006.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240824082955258.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 108054,
+      "exportedPath": "_system/help/assets/20240824082955258.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240824103901618.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 207434,
+      "exportedPath": "_system/help/assets/20240824103901618.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240824121046958.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 770872,
+      "exportedPath": "_system/help/assets/20240824121046958.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240824231354596.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 432301,
+      "exportedPath": "_system/help/assets/20240824231354596.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240826102620813.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 469057,
+      "exportedPath": "_system/help/assets/20240826102620813.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240826122337097.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 450718,
+      "exportedPath": "_system/help/assets/20240826122337097.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240826204944383.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 181727,
+      "exportedPath": "_system/help/assets/20240826204944383.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240826211906132.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 204872,
+      "exportedPath": "_system/help/assets/20240826211906132.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240826215236867.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 113013,
+      "exportedPath": "_system/help/assets/20240826215236867.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240826221748214.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 7510,
+      "exportedPath": "_system/help/assets/20240826221748214.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240826222549222.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 101030,
+      "exportedPath": "_system/help/assets/20240826222549222.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240827195015420.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 751548,
+      "exportedPath": "_system/help/assets/20240827195015420.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240827200533108.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 47012,
+      "exportedPath": "_system/help/assets/20240827200533108.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240827215023238.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 15201,
+      "exportedPath": "_system/help/assets/20240827215023238.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240827223459677.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 85900,
+      "exportedPath": "_system/help/assets/20240827223459677.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240827224323926.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 89574,
+      "exportedPath": "_system/help/assets/20240827224323926.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240827225118488.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 586235,
+      "exportedPath": "_system/help/assets/20240827225118488.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/20240827225552306.png": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 178766,
+      "exportedPath": "_system/help/assets/20240827225552306.png",
+      "dependencies": []
+    },
+    "_System/Help/assets/mdoc_process.mp4": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 5725382,
+      "exportedPath": "_system/help/assets/mdoc_process.mp4",
+      "dependencies": []
+    },
+    "_System/Help/assets/scale_up_demo.mp4": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 14234799,
+      "exportedPath": "_system/help/assets/scale_up_demo.mp4",
+      "dependencies": []
+    },
+    "_System/Help/DOC - Clinical Case.md": {
+      "modifiedTime": 1725039398148,
+      "sourceSize": 11722,
+      "exportedPath": "_system/help/doc-clinical-case.html",
+      "dependencies": [
+        "_system/help/assets/20240821202616241.png",
+        "_system/help/assets/20240821205734328.png",
+        "_system/help/assets/20240822204535356.png",
+        "_system/help/assets/20240822211454692.png",
+        "_system/help/assets/20240822222047182.png"
+      ]
     }
   }
 }
