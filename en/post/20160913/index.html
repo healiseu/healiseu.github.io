@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.92.2" />
+  <meta name="generator" content="Hugo 0.123.7">
 
   
 
@@ -81,7 +81,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.f061a21f63bf4b7a5a9dd13669fcb02e.css">
+  <link rel="stylesheet" href="/css/academia.min.dbe83bbf6477781bec4f66e695a12d6d.css">
 
   
 
@@ -470,7 +470,7 @@
 
 
 <meta content="2016-09-13 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2016-09-13 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -493,6 +493,8 @@
   <span class="article-date">
     
     
+      
+          Last updated on
       
     
     <time>2016-09-13</time>
@@ -704,12 +706,12 @@
 <p>In previous posts of this series, (<a href="/en/post/20160825/">Part-1</a>, <a href="/en/post/20160902/">Part-2</a>), we have seen several representations of the association construct. In this article we continue our investigation with the Graph Data model. Despite its mere representation as nodes and edges, the <a href="https://en.wikipedia.org/wiki/Graph_(abstract_data_type)">structure of this model</a> and its implementation details varies a lot in <a href="https://en.wikipedia.org/wiki/Graph_database">Graph Databases</a>. There is still a strong controversy and perhaps confusion on <a href="https://www.arangodb.com/2016/04/index-free-adjacency-hybrid-indexes-graph-databases/">what makes a database, a Graph database</a> and many are not fully aware that there exist other types of Graph Databases apart from Property Graph Database. Things get more complicated because the engine of a <a href="http://tinkerpop.apache.org/docs/current/reference/#intro">Property Graph Database</a> is not the same kind of engine with either an <a href="https://en.wikipedia.org/wiki/Triplestore">RDF store</a> or engines based on <a href="http://www.isotopicmaps.org/sam/sam-model/">Topic Maps</a> or <a href="https://en.wikipedia.org/wiki/Relational_model">Relational</a> data model. Property Graph data model is neither close to <a href="https://en.wikipedia.org/wiki/Object_model">Object Model</a>, a data model that is found in <a href="https://en.wikipedia.org/wiki/Object_database">Object-oriented database management systems</a>. There are <strong>significant differences of the Property Graph data model at both the logical and the physical level with all other models and it has not been established yet as a standard</strong>. Which brings us to the question whether there is indeed a necessity for another data model standard based on the association construct to fill the space of Property Graph databases and bridge also the gap with other Semantic Web technologies, especially <a href="http://json-ld.org/">JSON for Linking Data</a>. This question will not be answered in this post, we will make an attempt instead to give a formal definition of the association construct using the mighty Wolfram Language and compare it with RDF and Property Graph components and this will prepare also the ground for introducing our R3DM data model later on.</p>
 <h2 id="wolfram-language-entitypropertyassociation">Wolfram Language EntityPropertyAssociation</h2>
 <p>Real-world entities are another kind of symbolic expression that exists in latest versions of the Wolfram Language. You can get the values of specific properties for an <a href="http://reference.wolfram.com/language/ref/Entity.html"><code>Entity</code></a>, if it exists in <a href="https://www.wolfram.com/knowledgebase/"><code>Wolfram Knowledgebase</code></a>, world&rsquo;s largest and broadest repository of computable information according to Wolfram. But you do not write a query to fetch the data, you use a functional approach instead. The network delay for a first time search on specific values of <a href="http://reference.wolfram.com/language/ref/EntityProperties.html">EntityProperties</a> is minimal. For example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">Socrates</span><span style="color:#f92672">=</span><span style="color:#66d9ef">Entity</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;Person&#34;</span>,<span style="color:#e6db74">&#34;Socrates::dnz7w&#34;</span><span style="color:#f92672">]</span>;
-<span style="color:#66d9ef">EntityValue</span><span style="color:#f92672">[</span>
-  {<span style="color:#66d9ef">Socrates</span>},
-  {gender,date of birth,place of birth,parents,children},
-  <span style="color:#e6db74">&#34;EntityPropertyAssociation&#34;</span><span style="color:#f92672">]</span>
-</code></pre></div><p>Notice the third argument of the <a href="http://reference.wolfram.com/language/ref/EntityValue.html">EntityValue</a> function here, <code>EntityPropertyAssociation</code> will format the output, <a href="#fig1"><strong>Fig. 1</strong></a>, of this calculation as an association in which the specified entity is the key, and value is another nested association of properties and <code>EntityProperties</code> values.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">Socrates</span><span style="color:#f92672">=</span><span style="color:#66d9ef">Entity</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;Person&#34;</span>,<span style="color:#e6db74">&#34;Socrates::dnz7w&#34;</span><span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">EntityValue</span><span style="color:#f92672">[</span>
+</span></span><span style="display:flex;"><span>  {<span style="color:#66d9ef">Socrates</span>},
+</span></span><span style="display:flex;"><span>  {gender,date of birth,place of birth,parents,children},
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;EntityPropertyAssociation&#34;</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>Notice the third argument of the <a href="http://reference.wolfram.com/language/ref/EntityValue.html">EntityValue</a> function here, <code>EntityPropertyAssociation</code> will format the output, <a href="/en/post/20160913/#fig1"><strong>Fig. 1</strong></a>, of this calculation as an association in which the specified entity is the key, and value is another nested association of properties and <code>EntityProperties</code> values.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -738,7 +740,7 @@
 </figure>
 </p>
 <p>A boxed word is the symbolic Wolfram Language <a href="http://reference.wolfram.com/language/guide/KnowledgeRepresentationAndAccess.html"><code>Knowledge Representation</code></a> of a named entity of any type, (e.g. Person, City, Property), that is used as a handler to access records of information about that <code>Entity</code> that are stored in <code>Wolfram Knowledgebase</code>. The reader should realize how important this symbolic representation is in data modeling. Although the developer/user may compute a solution with a boxed <code>CommonName</code>, e.g. Socrates, behind the scenes a canonical name, e.g. <strong>Socrates::dnz7w</strong>, is used as the unique identifier for the <code>Entity</code> to disambiguate and to interpret user&rsquo;s instructions.</p>
-<p>This <code>EntityPropertyAssociation</code> representation extends Wolfram Language fundamental <a href="http://reference.wolfram.com/language/guide/Associations.html"><code>Association</code></a> construct, and it is in accordance with Topic Map Association serialization that we discussed in the <a href="/en/post/20160902/#topic-map-serialization">second part of our series</a>. The following figure, <a href="#fig2"><strong>Fig. 2</strong></a>, is from a previous example that is included in <a href="/en/post/20160825/#wolfram-language---association">Part 1</a> of our series and depicts three associations of this kind in a <a href="http://reference.wolfram.com/language/ref/Dataset.html">Wolfram Dataset</a>. Each association represents an Entity type instance (<strong>$PartI</strong>, <strong>$SupplierJ</strong> and <strong>$CatalogK</strong>) and for each instance the entity type (<strong>$Item</strong>, <strong>$Organization</strong>, <strong>$Inventory</strong>) is embedded as a key value pair together with other <code>EntityProperties</code> key-value pairs.</p>
+<p>This <code>EntityPropertyAssociation</code> representation extends Wolfram Language fundamental <a href="http://reference.wolfram.com/language/guide/Associations.html"><code>Association</code></a> construct, and it is in accordance with Topic Map Association serialization that we discussed in the <a href="/en/post/20160902/#topic-map-serialization">second part of our series</a>. The following figure, <a href="/en/post/20160913/#fig2"><strong>Fig. 2</strong></a>, is from a previous example that is included in <a href="/en/post/20160825/#wolfram-language---association">Part 1</a> of our series and depicts three associations of this kind in a <a href="http://reference.wolfram.com/language/ref/Dataset.html">Wolfram Dataset</a>. Each association represents an Entity type instance (<strong>$PartI</strong>, <strong>$SupplierJ</strong> and <strong>$CatalogK</strong>) and for each instance the entity type (<strong>$Item</strong>, <strong>$Organization</strong>, <strong>$Inventory</strong>) is embedded as a key value pair together with other <code>EntityProperties</code> key-value pairs.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -767,10 +769,10 @@
 </figure>
 </p>
 <p>Contrast this with mere tuples from the three tables of our relational database, <strong>Supplier</strong>, <strong>Part</strong>, <strong>Catalog</strong>. Semantically speaking, the three tuples cannot stand alone without the header of the relation body and their relation type. In addition to that observation, each value of either an <code>EntityPropertyAssociation</code> or member of a  tuple, is always dependent on their sibling nodes. <strong>Therefore values cannot be handled in isolation</strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">{ {<span style="color:#ae81ff">998</span>, <span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>, <span style="color:#e6db74">&#34;Red&#34;</span>, <span style="color:#ae81ff">7</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;gr&#34;</span>},
-  {<span style="color:#ae81ff">1081</span>, <span style="color:#e6db74">&#34;Acme Widget Suppliers&#34;</span>, <span style="color:#e6db74">&#34;1 Grub St., Potemkin Village, IL 61801&#34;</span>, <span style="color:#e6db74">&#34;ILLINOIS&#34;</span>, <span style="color:#e6db74">&#34;USA&#34;</span>, <span style="color:#ae81ff">10</span>},
-  {<span style="color:#ae81ff">1081</span>, <span style="color:#ae81ff">998</span>, <span style="color:#ae81ff">11</span><span style="color:#f92672">.</span><span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">400</span>, <span style="color:#e6db74">&#34;2014-9-10&#34;</span>, <span style="color:#66d9ef">True</span>} }
-</code></pre></div><h3 id="r3dm-hypergraph-terminology">R3DM Hypergraph Terminology</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>{ {<span style="color:#ae81ff">998</span>, <span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>, <span style="color:#e6db74">&#34;Red&#34;</span>, <span style="color:#ae81ff">7</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;gr&#34;</span>},
+</span></span><span style="display:flex;"><span>  {<span style="color:#ae81ff">1081</span>, <span style="color:#e6db74">&#34;Acme Widget Suppliers&#34;</span>, <span style="color:#e6db74">&#34;1 Grub St., Potemkin Village, IL 61801&#34;</span>, <span style="color:#e6db74">&#34;ILLINOIS&#34;</span>, <span style="color:#e6db74">&#34;USA&#34;</span>, <span style="color:#ae81ff">10</span>},
+</span></span><span style="display:flex;"><span>  {<span style="color:#ae81ff">1081</span>, <span style="color:#ae81ff">998</span>, <span style="color:#ae81ff">11</span><span style="color:#f92672">.</span><span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">400</span>, <span style="color:#e6db74">&#34;2014-9-10&#34;</span>, <span style="color:#66d9ef">True</span>} }
+</span></span></code></pre></div><h3 id="r3dm-hypergraph-terminology">R3DM Hypergraph Terminology</h3>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -798,7 +800,7 @@
 
 </figure>
 </p>
-<p>The figure on the left, <a href="#fig3"><strong>Fig. 3</strong></a>, illustrates a single <code>EntityPropertyAssociation</code> of <strong>Part no. 998</strong> with its properties and values. According to Hypergraph theory, red nodes are hypernodes and the green node is the hyperedge where here connects a set of hypernodes. In R3DM we use the following definitions and terminology.</p>
+<p>The figure on the left, <a href="/en/post/20160913/#fig3"><strong>Fig. 3</strong></a>, illustrates a single <code>EntityPropertyAssociation</code> of <strong>Part no. 998</strong> with its properties and values. According to Hypergraph theory, red nodes are hypernodes and the green node is the hyperedge where here connects a set of hypernodes. In R3DM we use the following definitions and terminology.</p>
 <p>An <code>EntityPropertyAssociation</code> can be defined as an <code>Association</code> of entity&rsquo;s attributes (properties) with values. Each attribute-value pair is represented on the hypergraph by a <code>hyperatom</code>. Therefore the general form of a <code>hyperatom</code> is a key-value pair. Each <code>hyperatom</code> is <strong>always connected bidirectionally</strong> to a <code>hyperbond</code> with a <code>hyperlink</code>. Normally <code>hyperlinks</code> do not have labels or direction. A <code>hyperbond</code> represents a complex structure, such as a tuple of a relation or instance of a class. The role of a <code>hyperbond</code> is to connect a set of <code>hyperatoms</code>. A <code>hyperbond</code> to <code>hyperbond</code> connection is also possible.</p>
 <p>Two important observations:</p>
 <ul>
@@ -839,31 +841,31 @@
 <p>We built a property graph data model for our <strong>Supplier</strong>-<strong>Part</strong>-<strong>Catalog</strong> example in <a href="https://orientdb.org/">OrientDB</a>, a very popular, open-source, and free multi-model database.</p>
 <h3 id="property-graph-nodes">Property Graph Nodes</h3>
 <p>OrientDB allows both schema-full and schema-less creation of classes. Each class represents either a type of nodes or a type of edges on the graph. In the manner of a relational schema, we can add properties of a class with OrientDB SQL commands.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">CLASS</span> Part EXTENDS V;
-<span style="color:#66d9ef">CREATE</span> PROPERTY Part.pid INTEGER;
-<span style="color:#66d9ef">CREATE</span> PROPERTY Part.pname STRING;
-<span style="color:#66d9ef">CREATE</span> PROPERTY Part.pcolor STRING;
-<span style="color:#66d9ef">CREATE</span> PROPERTY Part.pweight DOUBLE;
-<span style="color:#66d9ef">CREATE</span> PROPERTY Part.punit STRING;
-<span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">CLASS</span> Part SHORTNAME P;
-</code></pre></div><p>Then we can populate the class with records, e.g. create a vertex (an instance of type <strong>Part</strong>) that represents <strong>Part no. 998</strong> (Red Fire Hydrant Cap)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> VERTEX Part CONTENT
-<span style="color:#960050;background-color:#1e0010">{</span><span style="color:#e6db74">&#34;pid&#34;</span>:<span style="color:#ae81ff">998</span>,<span style="color:#e6db74">&#34;pname&#34;</span>:<span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>,<span style="color:#e6db74">&#34;pcolor&#34;</span>:<span style="color:#e6db74">&#34;Red&#34;</span>,<span style="color:#e6db74">&#34;pweight&#34;</span>:<span style="color:#ae81ff">7</span>.<span style="color:#ae81ff">2</span>,<span style="color:#e6db74">&#34;punit&#34;</span>:<span style="color:#e6db74">&#34;lb&#34;</span><span style="color:#960050;background-color:#1e0010">}</span>
-</code></pre></div><h3 id="property-graph-with-directed-edges">Property Graph with Directed Edges</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">CLASS</span> Part EXTENDS V;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> PROPERTY Part.pid INTEGER;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> PROPERTY Part.pname STRING;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> PROPERTY Part.pcolor STRING;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> PROPERTY Part.pweight DOUBLE;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> PROPERTY Part.punit STRING;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">CLASS</span> Part SHORTNAME P;
+</span></span></code></pre></div><p>Then we can populate the class with records, e.g. create a vertex (an instance of type <strong>Part</strong>) that represents <strong>Part no. 998</strong> (Red Fire Hydrant Cap)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> VERTEX Part CONTENT
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">{</span><span style="color:#e6db74">&#34;pid&#34;</span>:<span style="color:#ae81ff">998</span>,<span style="color:#e6db74">&#34;pname&#34;</span>:<span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>,<span style="color:#e6db74">&#34;pcolor&#34;</span>:<span style="color:#e6db74">&#34;Red&#34;</span>,<span style="color:#e6db74">&#34;pweight&#34;</span>:<span style="color:#ae81ff">7</span>.<span style="color:#ae81ff">2</span>,<span style="color:#e6db74">&#34;punit&#34;</span>:<span style="color:#e6db74">&#34;lb&#34;</span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span></code></pre></div><h3 id="property-graph-with-directed-edges">Property Graph with Directed Edges</h3>
 <p>Now comes the tricky part, we want to associate <strong>Suppliers</strong> with <strong>Parts</strong>. Notice that in Property Graph data model there is not an <a href="https://en.wikipedia.org/wiki/Associative_entity">associative entity</a> to resolve a many-to-many relationship. We only have the concept of a directed edge that links one vertex with another vertex. Let us define the type of edge first.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">CLASS</span> inCatalog EXTENDS E;
-<span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catsid INTEGER;
-<span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catpid INTEGER;
-<span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catprice DOUBLE;
-<span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catqnt INTEGER;
-<span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catdate DATETIME;
-<span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catchk BOOLEAN;
-<span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">CLASS</span> inCatalog SHORTNAME <span style="color:#66d9ef">C</span>;
-</code></pre></div><p>In this OrientDB DDL <code>inCatalog.catsid</code> and <code>inCatalog.catpid</code> are superfluous, we added them for comparison purposes with the relational model. Records of edge type <code>inCatalog</code> contain record identifiers for the outgoing tail vertex and the incoming head vertex <a href="#fig11"><strong>Fig. 11</strong></a>. Secondly, it is not specified in the schema that this type of edge, <code>inCatalog</code>, connects <strong>Suppliers</strong> with <strong>Parts</strong>, neither is specified any direction on how to link these two types. These are defined during the creation of an edge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">CLASS</span> inCatalog EXTENDS E;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catsid INTEGER;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catpid INTEGER;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catprice DOUBLE;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catqnt INTEGER;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catdate DATETIME;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> PROPERTY inCatalog.catchk BOOLEAN;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">CLASS</span> inCatalog SHORTNAME <span style="color:#66d9ef">C</span>;
+</span></span></code></pre></div><p>In this OrientDB DDL <code>inCatalog.catsid</code> and <code>inCatalog.catpid</code> are superfluous, we added them for comparison purposes with the relational model. Records of edge type <code>inCatalog</code> contain record identifiers for the outgoing tail vertex and the incoming head vertex <a href="/en/post/20160913/#fig11"><strong>Fig. 11</strong></a>. Secondly, it is not specified in the schema that this type of edge, <code>inCatalog</code>, connects <strong>Suppliers</strong> with <strong>Parts</strong>, neither is specified any direction on how to link these two types. These are defined during the creation of an edge.</p>
 <p>One way of creating <code>inCatalog</code> instances is to read each <strong>Catalog</strong> record from the table, get OrientDB record identifiers (<a href="https://orientdb.com/docs/2.2.x/Tutorial-Record-ID.html">RIDs</a>) for the specific <strong>Supplier</strong> and <strong>Part</strong> and then execute OrientDB <code>CREATE EDGE</code> SQL command to create a bidirectional edge. For example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> EDGE inCatalog <span style="color:#66d9ef">FROM</span> <span style="color:#f92672">#</span><span style="color:#ae81ff">19</span>:<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">TO</span> <span style="color:#f92672">#</span><span style="color:#ae81ff">18</span>:<span style="color:#ae81ff">7</span> CONTENT
- <span style="color:#960050;background-color:#1e0010">{</span><span style="color:#e6db74">&#34;catsid&#34;</span>:<span style="color:#ae81ff">1081</span>,<span style="color:#e6db74">&#34;catpid&#34;</span>:<span style="color:#ae81ff">998</span>,<span style="color:#e6db74">&#34;catprice&#34;</span>:<span style="color:#ae81ff">11</span>.<span style="color:#ae81ff">7</span>,<span style="color:#e6db74">&#34;catqnt&#34;</span>:<span style="color:#ae81ff">400</span>,<span style="color:#e6db74">&#34;catdate&#34;</span>:<span style="color:#e6db74">&#34;2014-09-10&#34;</span>,<span style="color:#e6db74">&#34;catchk&#34;</span>:<span style="color:#66d9ef">true</span><span style="color:#960050;background-color:#1e0010">}</span>
-</code></pre></div><p>Newcomers can easily get confused with Property Graph edges. This is because although the outgoing tail and the incoming head of the edge implies a directed graph, in practice <strong>we can traverse the graph bidirectionally</strong>, i.e. start from any node to reach another node independent of the direction of the edge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> EDGE inCatalog <span style="color:#66d9ef">FROM</span> <span style="color:#f92672">#</span><span style="color:#ae81ff">19</span>:<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">TO</span> <span style="color:#f92672">#</span><span style="color:#ae81ff">18</span>:<span style="color:#ae81ff">7</span> CONTENT
+</span></span><span style="display:flex;"><span> <span style="color:#960050;background-color:#1e0010">{</span><span style="color:#e6db74">&#34;catsid&#34;</span>:<span style="color:#ae81ff">1081</span>,<span style="color:#e6db74">&#34;catpid&#34;</span>:<span style="color:#ae81ff">998</span>,<span style="color:#e6db74">&#34;catprice&#34;</span>:<span style="color:#ae81ff">11</span>.<span style="color:#ae81ff">7</span>,<span style="color:#e6db74">&#34;catqnt&#34;</span>:<span style="color:#ae81ff">400</span>,<span style="color:#e6db74">&#34;catdate&#34;</span>:<span style="color:#e6db74">&#34;2014-09-10&#34;</span>,<span style="color:#e6db74">&#34;catchk&#34;</span>:<span style="color:#66d9ef">true</span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span></code></pre></div><p>Newcomers can easily get confused with Property Graph edges. This is because although the outgoing tail and the incoming head of the edge implies a directed graph, in practice <strong>we can traverse the graph bidirectionally</strong>, i.e. start from any node to reach another node independent of the direction of the edge.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -891,7 +893,7 @@
 
 </figure>
 </p>
-<p>In this screen capture, <a href="#fig4"><strong>Fig. 4</strong></a>, of OrientDB graph canvas one <strong>Supplier</strong> is associated with three <strong>Parts</strong> and one <strong>Part</strong> is associated with three <strong>Suppliers</strong>. We observe that <code>inCatalog</code> edges are always from a <strong>Supplier</strong> to a <strong>Part</strong>. This is because we created edges this way, we could have created them equally in the opposite direction. Semantically speaking, both <strong>Supplier</strong> and <strong>Part</strong> participate in a <strong>Catalog</strong> association and their binary relation is not directed. In such a case Property Graph edges look like <a href="/en/post/20160902/#topic-map-serialization">Topic Map binary associations</a>. The label of the edge is the type and the roles of its members are played by the outgoing head (<code>out</code>) and incoming tail (<code>in</code>), <a href="#fig5"><strong>Fig. 5</strong></a>.</p>
+<p>In this screen capture, <a href="/en/post/20160913/#fig4"><strong>Fig. 4</strong></a>, of OrientDB graph canvas one <strong>Supplier</strong> is associated with three <strong>Parts</strong> and one <strong>Part</strong> is associated with three <strong>Suppliers</strong>. We observe that <code>inCatalog</code> edges are always from a <strong>Supplier</strong> to a <strong>Part</strong>. This is because we created edges this way, we could have created them equally in the opposite direction. Semantically speaking, both <strong>Supplier</strong> and <strong>Part</strong> participate in a <strong>Catalog</strong> association and their binary relation is not directed. In such a case Property Graph edges look like <a href="/en/post/20160902/#topic-map-serialization">Topic Map binary associations</a>. The label of the edge is the type and the roles of its members are played by the outgoing head (<code>out</code>) and incoming tail (<code>in</code>), <a href="/en/post/20160913/#fig5"><strong>Fig. 5</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -921,7 +923,7 @@
 </p>
 <h3 id="property-graph-with-bidirectional-links">Property Graph with Bidirectional Links</h3>
 <p>Hence the bidirectional nature of the edge can be seen in two ways.</p>
-<p>Firstly the <code>out</code> and <code>in</code> links can be considered as one-to-one relationship of an edge with vertices. One <strong>Supplier</strong>/<strong>Part</strong> is referenced by Many <strong>Catalog</strong> items. The fields that are linked are the RID of <strong>Catalog</strong> with the RID of <strong>Part</strong> or <strong>Supplier</strong>, <a href="#fig11"><strong>Fig. 11</strong></a>. This type of direct linking is similar to the many-to-many relationship with a join-table, <a href="#fig6"><strong>Fig. 6</strong></a>.</p>
+<p>Firstly the <code>out</code> and <code>in</code> links can be considered as one-to-one relationship of an edge with vertices. One <strong>Supplier</strong>/<strong>Part</strong> is referenced by Many <strong>Catalog</strong> items. The fields that are linked are the RID of <strong>Catalog</strong> with the RID of <strong>Part</strong> or <strong>Supplier</strong>, <a href="/en/post/20160913/#fig11"><strong>Fig. 11</strong></a>. This type of direct linking is similar to the many-to-many relationship with a join-table, <a href="/en/post/20160913/#fig6"><strong>Fig. 6</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -949,7 +951,7 @@
 
 </figure>
 </p>
-<p>Secondly, on the <code>one</code> side of the relationship, i.e. on the vertex we have the link set of outgoing/incoming edges, <a href="#fig8"><strong>Fig. 8</strong></a> and <a href="#fig9"><strong>Fig. 9</strong></a>. For example, many <strong>Catalog</strong> items (<a href="https://orientdb.com/docs/2.2.x/Types.html">LinkSet</a>) have One <strong>Supplier</strong>/<strong>Part</strong>, <a href="#fig7"><strong>Fig. 7</strong></a>.</p>
+<p>Secondly, on the <code>one</code> side of the relationship, i.e. on the vertex we have the link set of outgoing/incoming edges, <a href="/en/post/20160913/#fig8"><strong>Fig. 8</strong></a> and <a href="/en/post/20160913/#fig9"><strong>Fig. 9</strong></a>. For example, many <strong>Catalog</strong> items (<a href="https://orientdb.com/docs/2.2.x/Types.html">LinkSet</a>) have One <strong>Supplier</strong>/<strong>Part</strong>, <a href="/en/post/20160913/#fig7"><strong>Fig. 7</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -977,13 +979,13 @@
 
 </figure>
 </p>
-<p>The following query returns a list of both the outgoing edges for <code>Big Red Tool and Die</code> <strong>Supplier</strong>, see <a href="#fig4"><strong>Fig. 4</strong></a>, and the list of associated <strong>Parts</strong>, <a href="#fig8"><strong>Fig. 8</strong></a>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#f92672">@</span>rid <span style="color:#66d9ef">As</span> Supplier,
-       out_inCatalog <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">Catalog</span>, <span style="color:#66d9ef">out</span>() <span style="color:#66d9ef">As</span> Part,
-       sid <span style="color:#66d9ef">As</span> supplierID, <span style="color:#66d9ef">out</span>().pid <span style="color:#66d9ef">As</span> partID,
-       scountry, scity
-<span style="color:#66d9ef">from</span> <span style="color:#ae81ff">19</span>:<span style="color:#ae81ff">1</span>
-</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<p>The following query returns a list of both the outgoing edges for <code>Big Red Tool and Die</code> <strong>Supplier</strong>, see <a href="/en/post/20160913/#fig4"><strong>Fig. 4</strong></a>, and the list of associated <strong>Parts</strong>, <a href="/en/post/20160913/#fig8"><strong>Fig. 8</strong></a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">select</span> <span style="color:#f92672">@</span>rid <span style="color:#66d9ef">As</span> Supplier,
+</span></span><span style="display:flex;"><span>       out_inCatalog <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">Catalog</span>, <span style="color:#66d9ef">out</span>() <span style="color:#66d9ef">As</span> Part,
+</span></span><span style="display:flex;"><span>       sid <span style="color:#66d9ef">As</span> supplierID, <span style="color:#66d9ef">out</span>().pid <span style="color:#66d9ef">As</span> partID,
+</span></span><span style="display:flex;"><span>       scountry, scity
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">from</span> <span style="color:#ae81ff">19</span>:<span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
 
@@ -1010,13 +1012,13 @@
 
 </figure>
 </p>
-<p>In a similar fashion, we can ask for the list of incoming edges to <strong>Part no. 998</strong>, see <a href="#fig4"><strong>Fig. 4</strong></a>, and the list of <strong>Suppliers</strong> that provide that <strong>Part</strong>, <a href="#fig9"><strong>Fig. 9</strong></a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#f92672">@</span>rid <span style="color:#66d9ef">As</span> Part,
-       in_inCatalog <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">Catalog</span>, <span style="color:#66d9ef">in</span>() <span style="color:#66d9ef">As</span> Supplier,
-       pid <span style="color:#66d9ef">As</span> partID, <span style="color:#66d9ef">in</span>().sid <span style="color:#66d9ef">As</span> supplierID,
-       pname, pcolor
-<span style="color:#66d9ef">from</span> <span style="color:#ae81ff">18</span>:<span style="color:#ae81ff">7</span>
-</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<p>In a similar fashion, we can ask for the list of incoming edges to <strong>Part no. 998</strong>, see <a href="/en/post/20160913/#fig4"><strong>Fig. 4</strong></a>, and the list of <strong>Suppliers</strong> that provide that <strong>Part</strong>, <a href="/en/post/20160913/#fig9"><strong>Fig. 9</strong></a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">select</span> <span style="color:#f92672">@</span>rid <span style="color:#66d9ef">As</span> Part,
+</span></span><span style="display:flex;"><span>       in_inCatalog <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">Catalog</span>, <span style="color:#66d9ef">in</span>() <span style="color:#66d9ef">As</span> Supplier,
+</span></span><span style="display:flex;"><span>       pid <span style="color:#66d9ef">As</span> partID, <span style="color:#66d9ef">in</span>().sid <span style="color:#66d9ef">As</span> supplierID,
+</span></span><span style="display:flex;"><span>       pname, pcolor
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">from</span> <span style="color:#ae81ff">18</span>:<span style="color:#ae81ff">7</span>
+</span></span></code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
 
@@ -1043,11 +1045,11 @@
 
 </figure>
 </p>
-<p>The set of outgoing edges from the <strong>Supplier</strong> and the set of incoming edges to <strong>Part no. 998</strong> have a common edge, <code>17:11</code>, that connects this <strong>Supplier</strong> with this <strong>Part</strong>, see <a href="#fig4"><strong>Fig. 4</strong></a>.</p>
+<p>The set of outgoing edges from the <strong>Supplier</strong> and the set of incoming edges to <strong>Part no. 998</strong> have a common edge, <code>17:11</code>, that connects this <strong>Supplier</strong> with this <strong>Part</strong>, see <a href="/en/post/20160913/#fig4"><strong>Fig. 4</strong></a>.</p>
 <h3 id="property-graph-and-object-oriented-database">Property Graph and Object-Oriented database</h3>
-<p>We could have implemented bidirectional edges on top of OrientDB <a href="https://orientdb.com/docs/2.2.x/Tutorial-Document-and-graph-model.html">Document</a> data model using Link, Link list, Link set data structures and the <a href="https://orientdb.com/docs/2.2.x/SQL-Create-Link.html"><code>CREATE LINK</code></a> SQL command. If you take also into account its class <a href="https://orientdb.com/docs/2.2.x/Inheritance.html">inheritance</a>, <a href="https://orientdb.com/docs/2.2.x/Graph-Schema.html">schema-full</a>, and <a href="https://orientdb.com/docs/2.2.x/SQL-Methods.html">SQL methods</a> features, that brings us pretty close to the <a href="https://en.wikipedia.org/wiki/Object_database">object-oriented database</a> model. Objects, in turn, may reference one another and therefore form a network graph. A relationship, in particular, is an association between two persistent objects, each of a specific type. In Intersystems Cache, <a href="http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GOBJ_relationships">relationships</a> are binary, i.e. defined between two classes and bidirectional, i.e. both sides of a relationship must be defined by creating a pair of complementary relationship properties, one in each class. Two-way reference property in both classes, <a href="http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GOBJ_propcoll">collection</a> in &ldquo;one&rdquo; side and simple reference in &ldquo;many&rdquo; side are analogous to the link set of outgoing/incoming edges in a vertex and the <code>out</code>/<code>in</code> links in edge of Property Graph data model, <a href="#fig8"><strong>Fig. 8</strong></a>, <a href="#fig9"><strong>Fig. 9</strong></a>, <a href="#fig11"><strong>Fig. 11</strong></a>.</p>
+<p>We could have implemented bidirectional edges on top of OrientDB <a href="https://orientdb.com/docs/2.2.x/Tutorial-Document-and-graph-model.html">Document</a> data model using Link, Link list, Link set data structures and the <a href="https://orientdb.com/docs/2.2.x/SQL-Create-Link.html"><code>CREATE LINK</code></a> SQL command. If you take also into account its class <a href="https://orientdb.com/docs/2.2.x/Inheritance.html">inheritance</a>, <a href="https://orientdb.com/docs/2.2.x/Graph-Schema.html">schema-full</a>, and <a href="https://orientdb.com/docs/2.2.x/SQL-Methods.html">SQL methods</a> features, that brings us pretty close to the <a href="https://en.wikipedia.org/wiki/Object_database">object-oriented database</a> model. Objects, in turn, may reference one another and therefore form a network graph. A relationship, in particular, is an association between two persistent objects, each of a specific type. In Intersystems Cache, <a href="http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GOBJ_relationships">relationships</a> are binary, i.e. defined between two classes and bidirectional, i.e. both sides of a relationship must be defined by creating a pair of complementary relationship properties, one in each class. Two-way reference property in both classes, <a href="http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GOBJ_propcoll">collection</a> in &ldquo;one&rdquo; side and simple reference in &ldquo;many&rdquo; side are analogous to the link set of outgoing/incoming edges in a vertex and the <code>out</code>/<code>in</code> links in edge of Property Graph data model, <a href="/en/post/20160913/#fig8"><strong>Fig. 8</strong></a>, <a href="/en/post/20160913/#fig9"><strong>Fig. 9</strong></a>, <a href="/en/post/20160913/#fig11"><strong>Fig. 11</strong></a>.</p>
 <h2 id="association-vs-edge">Association vs Edge</h2>
-<p>If we take these &ldquo;Three Associations in a Named-Row Dataset&rdquo;, <a href="#fig2"><strong>Fig. 2</strong></a>, and create a graph with analogy to the Property Graph data model, we can see that <strong>$PartI</strong> (green node), <strong>$CatalogK</strong> (red edge), and <strong>$SupplierJ</strong> (blue node) are <code>hyperbonds</code>, i.e. they are <code>EntityProperty</code> associations and they are connected with <code>hyperlinks</code> i.e. undirected bidirectional links, [<strong>Fig. 10</strong>].</p>
+<p>If we take these &ldquo;Three Associations in a Named-Row Dataset&rdquo;, <a href="/en/post/20160913/#fig2"><strong>Fig. 2</strong></a>, and create a graph with analogy to the Property Graph data model, we can see that <strong>$PartI</strong> (green node), <strong>$CatalogK</strong> (red edge), and <strong>$SupplierJ</strong> (blue node) are <code>hyperbonds</code>, i.e. they are <code>EntityProperty</code> associations and they are connected with <code>hyperlinks</code> i.e. undirected bidirectional links, [<strong>Fig. 10</strong>].</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -1089,21 +1091,21 @@
 </ol>
 <h2 id="join-vs-edge">Join vs Edge</h2>
 <p>Now, examine this relational database sql query <a href="/en/post/20160902/#introduction">here</a> with the following comparable OrientDB Property Graph query:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">/* Suppliers of a Red Fire Hydrant Cap sorted by their Catalog price */</span>
-
-<span style="color:#66d9ef">select</span> <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">as</span> supRID,
-       <span style="color:#66d9ef">out</span>.sname <span style="color:#66d9ef">as</span> supName,
-       <span style="color:#66d9ef">out</span>.scountry <span style="color:#66d9ef">as</span> supCountry,       
-       catprice <span style="color:#66d9ef">as</span> catPrice,
-       catqnt <span style="color:#66d9ef">as</span> catQuantity,       
-       <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">as</span> prtRID,
-       <span style="color:#66d9ef">in</span>.pname <span style="color:#66d9ef">as</span> prtName,
-       <span style="color:#66d9ef">in</span>.pcolor <span style="color:#66d9ef">as</span> prtColor,       
-       <span style="color:#f92672">@</span>rid <span style="color:#66d9ef">as</span> catRID       
-<span style="color:#66d9ef">from</span> inCatalog
-<span style="color:#66d9ef">where</span> <span style="color:#66d9ef">in</span>.pid<span style="color:#f92672">=</span><span style="color:#ae81ff">998</span>
-<span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> catPrice
-</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">/* Suppliers of a Red Fire Hydrant Cap sorted by their Catalog price */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">select</span> <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">as</span> supRID,
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">out</span>.sname <span style="color:#66d9ef">as</span> supName,
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">out</span>.scountry <span style="color:#66d9ef">as</span> supCountry,       
+</span></span><span style="display:flex;"><span>       catprice <span style="color:#66d9ef">as</span> catPrice,
+</span></span><span style="display:flex;"><span>       catqnt <span style="color:#66d9ef">as</span> catQuantity,       
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">as</span> prtRID,
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">in</span>.pname <span style="color:#66d9ef">as</span> prtName,
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">in</span>.pcolor <span style="color:#66d9ef">as</span> prtColor,       
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">@</span>rid <span style="color:#66d9ef">as</span> catRID       
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">from</span> inCatalog
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">where</span> <span style="color:#66d9ef">in</span>.pid<span style="color:#f92672">=</span><span style="color:#ae81ff">998</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> catPrice
+</span></span></code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
 
@@ -1157,8 +1159,8 @@
 
 </figure>
 </p>
-<p>This OrientDB SQL query is clearly more compact and with a faster performance, because there are no JOIN operations anymore. We can get back the result set represented with a Wolfram Dataset structure, <a href="#fig11"><strong>Fig. 11</strong></a>. Instead of having supplier IDs and part IDs, these are now replaced with OrientDB record IDs (<a href="https://orientdb.com/docs/2.2.x/Tutorial-Record-ID.html">RIDs</a>). We have also added another column at the end which is the RID of the edge record, i.e. <strong>Catalog</strong> record.</p>
-<p>Check also this <a href="/en/post/20160902/#topic-map-serialization">Topic Map graph representation</a>. The main difference is that these <strong>Catalog</strong> relationships and the <strong>Part</strong> tuple are drawn explicitly on the Topic Map and all values of properties are visible on the same graph. In this Property Graph, <a href="#fig12"><strong>Fig. 12</strong></a>, only one of the enclosed properties of any node or edge type is displayed.</p>
+<p>This OrientDB SQL query is clearly more compact and with a faster performance, because there are no JOIN operations anymore. We can get back the result set represented with a Wolfram Dataset structure, <a href="/en/post/20160913/#fig11"><strong>Fig. 11</strong></a>. Instead of having supplier IDs and part IDs, these are now replaced with OrientDB record IDs (<a href="https://orientdb.com/docs/2.2.x/Tutorial-Record-ID.html">RIDs</a>). We have also added another column at the end which is the RID of the edge record, i.e. <strong>Catalog</strong> record.</p>
+<p>Check also this <a href="/en/post/20160902/#topic-map-serialization">Topic Map graph representation</a>. The main difference is that these <strong>Catalog</strong> relationships and the <strong>Part</strong> tuple are drawn explicitly on the Topic Map and all values of properties are visible on the same graph. In this Property Graph, <a href="/en/post/20160913/#fig12"><strong>Fig. 12</strong></a>, only one of the enclosed properties of any node or edge type is displayed.</p>
 <h2 id="summary">Summary</h2>
 <p>We can summarize the critical points of our investigation in Property Graph data model:</p>
 <ol>
@@ -1209,7 +1211,7 @@
   
   <a class="badge badge-light" href="/en/tags/topic_map/">Topic_map</a>
   
-  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  <a class="badge badge-light" href="">Sign_(semiotics)</a>
   
   <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
   
@@ -1267,7 +1269,7 @@
     
 
     <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu/">Athanassios I. Hatzis, PhD</a></h5>
       <h6 class="card-subtitle">Software Engineer - Researcher, Consultant, Independent Contractor</h6>
       
       <ul class="network-icon" aria-hidden="true">
@@ -1540,7 +1542,7 @@
     
     
     
-    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
+    <script src="/js/academia.min.1def94b00314e302593e38a8ce0e471f.js"></script>
 
     
 
@@ -1559,7 +1561,7 @@
       <div class="col-md-6">
         
         <p>
-          © HEALIS - Athanassios I. Hatzis, 2024 &middot; 
+          © HEALIS - Athanassios I. Hatzis, 2025 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.

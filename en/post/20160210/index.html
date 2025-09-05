@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.92.2" />
+  <meta name="generator" content="Hugo 0.123.7">
 
   
 
@@ -81,7 +81,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.f061a21f63bf4b7a5a9dd13669fcb02e.css">
+  <link rel="stylesheet" href="/css/academia.min.dbe83bbf6477781bec4f66e695a12d6d.css">
 
   
 
@@ -471,7 +471,7 @@
 
 
 <meta content="2016-02-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2016-02-10 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -494,6 +494,8 @@
   <span class="article-date">
     
     
+      
+          Last updated on
       
     
     <time>2016-02-10</time>
@@ -689,22 +691,22 @@
 <p>The implementation of the package is based on the <a href="https://orientdb.org/docs/3.0.x/misc/OrientDB-REST.html">HTTP RESTful SQL commands of OrientDB</a>. The <a href="/en/project/wolfram_apis/">Mathematica API</a> project, can be extended to cover also the programming operations of other DBMS, in an analogy of the functional patterns and operations of this package.</p>
 <h2 id="examples">Examples</h2>
 <p>These are a few <strong>CRUD</strong> examples that are transformed to <strong>GUDA</strong> in order to compare the functional with the declarative form of SQL operations.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#960050;background-color:#1e0010">#</span> Create bidirectional linking<span style="color:#f92672">,</span> i<span style="color:#f92672">.</span><span style="color:#a6e22e">e</span><span style="color:#f92672">.</span> association
-CREATE EDGE isOwnerOf FROM 12<span style="color:#f92672">:</span>0 TO 16<span style="color:#f92672">:</span>0
-ODBapi<span style="color:#f92672">[</span>com<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;addEdge&#34;</span><span style="color:#f92672">,</span> class<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;isOwnerOf&#34;</span><span style="color:#f92672">,</span> from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;12:0&#34;</span><span style="color:#f92672">,</span> to<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;16:0&#34;</span><span style="color:#f92672">]</span>
-
-<span style="color:#960050;background-color:#1e0010">#</span> Read records with projection and filtering
-SELECT <span style="color:#a6e22e">@rid</span><span style="color:#f92672">,</span> DOB FROM Person WHERE lastName<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Smith&#34;</span>
-ODBapi<span style="color:#f92672">[</span>com<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;getRecords&#34;</span><span style="color:#f92672">,</span> prjkt<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;@rid, DOB&#34;</span><span style="color:#f92672">,</span> class<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Person&#34;</span><span style="color:#f92672">,</span> propnam<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;lastName&#34;</span><span style="color:#f92672">,</span> propval<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Smith&#34;</span><span style="color:#f92672">]</span>
-
-<span style="color:#960050;background-color:#1e0010">#</span> Update with restrictions
-UPDATE Person set age<span style="color:#f92672">=</span>57 WHERE age<span style="color:#f92672">&lt;</span>60
-ODBapi<span style="color:#f92672">[</span>com<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;updValues&#34;</span><span style="color:#f92672">,</span> class<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Person&#34;</span><span style="color:#f92672">,</span> propnam<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;age&#34;</span><span style="color:#f92672">,</span> propval<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;57 where age&lt;60&#34;</span><span style="color:#f92672">]</span>
-
-<span style="color:#960050;background-color:#1e0010">#</span> Delete all the records of a <span style="color:#a6e22e">class</span> <span style="color:#f92672">(</span>table<span style="color:#f92672">,</span> vertex<span style="color:#f92672">,</span> document<span style="color:#f92672">,</span> <span style="color:#f92672">....)</span>
-DELETE VERTEX Person
-ODBapi<span style="color:#f92672">[</span>com<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;delRecords&#34;</span><span style="color:#f92672">,</span> class<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Person&#34;</span><span style="color:#f92672">,</span> all<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;True&#34;</span><span style="color:#f92672">,</span> construct<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;VERTEX&#34;</span><span style="color:#f92672">]</span>
-</code></pre></div><h2 id="installation">Installation</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> Create bidirectional linking, i.<span style="color:#a6e22e">e</span>. association
+</span></span><span style="display:flex;"><span>CREATE EDGE isOwnerOf FROM 12:0 TO 16:0
+</span></span><span style="display:flex;"><span>ODBapi<span style="color:#f92672">[</span>com<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;addEdge&#34;</span>, <span style="color:#66d9ef">class</span><span style="color:#960050;background-color:#1e0010">-&gt;&#34;</span><span style="color:#a6e22e">isOwnerOf</span><span style="color:#e6db74">&#34;, from-&gt;&#34;</span>12:0<span style="color:#e6db74">&#34;, to-&gt;&#34;</span>16:0<span style="color:#e6db74">&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># Read records with projection and filtering
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">SELECT @rid, DOB FROM Person WHERE lastName=&#34;</span>Smith<span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ODBapi[com-&gt;&#34;</span>getRecords<span style="color:#e6db74">&#34;, prjkt-&gt;&#34;</span><span style="color:#a6e22e">@rid</span>, DOB<span style="color:#e6db74">&#34;, class-&gt;&#34;</span>Person<span style="color:#e6db74">&#34;, propnam-&gt;&#34;</span>lastName<span style="color:#e6db74">&#34;, propval-&gt;&#34;</span>Smith<span style="color:#e6db74">&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># Update with restrictions
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">UPDATE Person set age=57 WHERE age&lt;60
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ODBapi[com-&gt;&#34;</span>updValues<span style="color:#e6db74">&#34;, class-&gt;&#34;</span>Person<span style="color:#e6db74">&#34;, propnam-&gt;&#34;</span>age<span style="color:#e6db74">&#34;, propval-&gt;&#34;</span>57 where age<span style="color:#f92672">&lt;</span>60<span style="color:#e6db74">&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># Delete all the records of a class (table, vertex, document, ....)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">DELETE VERTEX Person
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ODBapi[com-&gt;&#34;</span>delRecords<span style="color:#e6db74">&#34;, class-&gt;&#34;</span>Person<span style="color:#e6db74">&#34;, all-&gt;&#34;</span>True<span style="color:#e6db74">&#34;, construct-&gt;&#34;</span>VERTEX<span style="color:#e6db74">&#34;]
+</span></span></span></code></pre></div><h2 id="installation">Installation</h2>
 <p>The <a href="/en/project/wolfram_apis/">DBAPI application project</a> is open source and free. You are most welcome to contribute in the Github repository of the project that can be found <a href="https://github.com/healiseu/dbapiProject">here</a></p>
 <ul>
 <li>
@@ -774,7 +776,7 @@ ODBapi<span style="color:#f92672">[</span>com<span style="color:#f92672">-&gt;</
     
 
     <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu/">Athanassios I. Hatzis, PhD</a></h5>
       <h6 class="card-subtitle">Software Engineer - Researcher, Consultant, Independent Contractor</h6>
       
       <ul class="network-icon" aria-hidden="true">
@@ -1047,7 +1049,7 @@ ODBapi<span style="color:#f92672">[</span>com<span style="color:#f92672">-&gt;</
     
     
     
-    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
+    <script src="/js/academia.min.1def94b00314e302593e38a8ce0e471f.js"></script>
 
     
 
@@ -1066,7 +1068,7 @@ ODBapi<span style="color:#f92672">[</span>com<span style="color:#f92672">-&gt;</
       <div class="col-md-6">
         
         <p>
-          © HEALIS - Athanassios I. Hatzis, 2024 &middot; 
+          © HEALIS - Athanassios I. Hatzis, 2025 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.

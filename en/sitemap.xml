@@ -11,7 +11,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://healis.eu/en/authors/admin/"
                 />
   </url><url>
@@ -24,7 +24,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://healis.eu/en/authors/"
                 />
   </url><url>
@@ -37,7 +37,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://healis.eu/en/categories/"
                 />
   </url><url>
@@ -56,7 +56,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://healis.eu/en/"
                 />
   </url><url>
@@ -87,7 +87,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://healis.eu/en/tags/"
                 />
   </url><url>
@@ -120,16 +120,6 @@
   </url><url>
     <loc>https://healis.eu/en/about/</loc>
     <lastmod>2020-08-16T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="el"
-                href="https://healis.eu/el/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://healis.eu/en/about/"
-                />
   </url><url>
     <loc>https://healis.eu/en/contact/</loc>
     <lastmod>2020-08-16T00:00:00+00:00</lastmod>
@@ -140,7 +130,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://healis.eu/en/contact/"
                 />
   </url><url>
@@ -156,7 +146,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://healis.eu/en/post/"
                 />
   </url><url>
@@ -283,7 +273,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://healis.eu/en/terms/"
                 />
   </url><url>
@@ -488,7 +478,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://healis.eu/en/publication_types/"
                 />
   </url><url>
@@ -599,5 +589,7 @@
   </url><url>
     <loc>https://healis.eu/en/project/vahisom/</loc>
     <lastmod>1995-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://healis.eu/en/ztemp/</loc>
   </url>
 </urlset>

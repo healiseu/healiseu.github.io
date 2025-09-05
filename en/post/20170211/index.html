@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.92.2" />
+  <meta name="generator" content="Hugo 0.123.7">
 
   
 
@@ -81,7 +81,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.f061a21f63bf4b7a5a9dd13669fcb02e.css">
+  <link rel="stylesheet" href="/css/academia.min.dbe83bbf6477781bec4f66e695a12d6d.css">
 
   
 
@@ -470,7 +470,7 @@
 
 
 <meta content="2017-02-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2017-02-11 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -493,6 +493,8 @@
   <span class="article-date">
     
     
+      
+          Last updated on
       
     
     <time>2017-02-11</time>
@@ -699,26 +701,26 @@
 <h2 id="introduction-to-qliks-associative-model">Introduction to Qlik&rsquo;s Associative Model</h2>
 <p>In the <a href="/en/post/20161220/#discussion">discussion session</a> of the previous post of our series we mentioned two basic reasons that make <a href="https://en.wikipedia.org/wiki/Resource_Description_Framework">RDF</a> data modeling and consequently <a href="https://www.w3.org/TR/rdf-sparql-query/">SPARQL</a> query mechanism disadvantageous with an interactive and associative data exploration and data integration as that of <a href="http://www.qlik.com/us/products/qlikview">QlikView</a>/<a href="http://www.qlik.com/us/products/qlik-sense">Qliksense</a>. These are the naming of predicate terms that connect resources and literals and the unidirectional architectural design of the edges. We have already demonstrated this issue with the <a href="/en/post/20161220/#associative-model">associative model schema design</a> of a Movies domain in Freebase, <a href="/en/post/20161220/#fig12"><strong>Fig.12</strong></a>, and the modeling of our Supplier-Parts-Catalogue toy example in Sentences, <a href="/en/post/20161220/#fig15"><strong>Fig.15</strong></a>, <a href="/en/post/20161220/#fig16"><strong>Fig.16</strong></a> and OrientDB Property Graph, <a href="/en/post/20160913/#fig4"><strong>Fig.4</strong></a>. In this post we continue our journey with Qlik&rsquo;s associative data model.</p>
 <h2 id="qliks-in-memory-associative-architecture">Qlik&rsquo;s In-Memory Associative Architecture</h2>
-<p>Qlik&rsquo;s competitive advantage over other BI tools is that it manages associations in memory at the engine level and not at the application level [(English,2010)]<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. This management of data, is deep down to an atomic level of data (<a href="http://www.businessdictionary.com/definition/granularity.html">Granularity</a>), i.e. <strong>every data point in every field of a table is associated with every other data point anywhere in the entire schema</strong> [(English,2010)]<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. We will follow Qlik&rsquo;x QIX engine stepwise approach with the goal of performing an interactive data exploration [(Ferguson,2015,p.10)]<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> of our Suppliers-Parts-Catalogue data set.</p>
+<p>Qlik&rsquo;s competitive advantage over other BI tools is that it manages associations in memory at the engine level and not at the application level [(English,2010)]<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. This management of data, is deep down to an atomic level of data (<a href="http://www.businessdictionary.com/definition/granularity.html">Granularity</a>), i.e. <strong>every data point in every field of a table is associated with every other data point anywhere in the entire schema</strong> [(English,2010)]<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. We will follow Qlik&rsquo;x QIX engine stepwise approach with the goal of performing an interactive data exploration [(Ferguson,2015,p.10)]<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> of our Suppliers-Parts-Catalogue data set.</p>
 <h3 id="loading-the-data">Loading the data</h3>
-<p>The first step is to bring data into memory. A multi-table <strong>read-only</strong>, in-memory, compressed, binary, columnar data model is created. Data from each source data table is converted into two types of in memory data structure : [(Ferguson,2015,p.12)]<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<p>The first step is to bring data into memory. A multi-table <strong>read-only</strong>, in-memory, compressed, binary, columnar data model is created. Data from each source data table is converted into two types of in memory data structure : [(Ferguson,2015,p.12)]<sup id="fnref1:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
 <ul>
 <li>A set of columns that contain binary values, i.e. references, <strong>for each distinct original value</strong>.</li>
 <li>A compressed binary data table by <strong>replacing each row/column cell value with a binary reference</strong>.</li>
 </ul>
 <p>For example, the following statements, [QlikView script syntax, p.242]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, load data from the <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/tsv/Parts.tsv">Parts</a> and <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/tsv/Suppliers.tsv">Suppliers</a> tables that are stored in Excel files and reconstruct eleven unique columns and two read-only binary representation of these tables in memory.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">LOAD</span> <span style="color:#a6e22e">prtID</span>, <span style="color:#a6e22e">prtName</span>, <span style="color:#a6e22e">prtColor</span>, <span style="color:#a6e22e">prtWeight</span>, <span style="color:#a6e22e">prtUnit</span>
-<span style="color:#a6e22e">FROM</span> [<span style="color:#a6e22e">F</span><span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">tmp</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SupplierPartCatalogue</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SuppliersPartsCatalogue</span>.<span style="color:#a6e22e">xlsx</span>]
-(<span style="color:#a6e22e">ooxml</span>, <span style="color:#a6e22e">embedded</span> <span style="color:#a6e22e">labels</span>, <span style="color:#a6e22e">table</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">Part</span>);
-
-<span style="color:#a6e22e">LOAD</span> <span style="color:#a6e22e">supID</span>, <span style="color:#a6e22e">supName</span>, <span style="color:#a6e22e">supAddress</span>, <span style="color:#a6e22e">supCity</span>, <span style="color:#a6e22e">supCountry</span>, <span style="color:#a6e22e">supStatus</span>
-<span style="color:#a6e22e">FROM</span> [<span style="color:#a6e22e">F</span><span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">tmp</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SupplierPartCatalogue</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SuppliersPartsCatalogue</span>.<span style="color:#a6e22e">xlsx</span>]
-(<span style="color:#a6e22e">ooxml</span>, <span style="color:#a6e22e">embedded</span> <span style="color:#a6e22e">labels</span>, <span style="color:#a6e22e">table</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">Supplier</span>);
-</code></pre></div><p>If two fields have the same name in two different tables (i.e. a relationship) then they have the same columnar binary representation. In order to resolve ambiguities and to associate over fields that have the same name, unique column naming is required. This is the case for our third associative, i.e. bridge, junction table. Field names <code>catSID</code> and <code>catPID</code> have already been loaded and represented with the columns <code>supID</code> and <code>prtID</code>. The next <code>LOAD</code> statement is using the alias operator (<code>as</code>) to handle unique column naming.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">LOAD</span> <span style="color:#a6e22e">catSID</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">supID</span>, <span style="color:#a6e22e">catPID</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">prtID</span>, <span style="color:#a6e22e">catPrice</span>, <span style="color:#a6e22e">catTotal</span>, <span style="color:#a6e22e">catDate</span>, <span style="color:#a6e22e">catChk</span>
-<span style="color:#a6e22e">FROM</span> [<span style="color:#a6e22e">F</span><span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">tmp</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SupplierPartCatalogue</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SuppliersPartsCatalogue</span>.<span style="color:#a6e22e">xlsx</span>]
-(<span style="color:#a6e22e">ooxml</span>, <span style="color:#a6e22e">embedded</span> <span style="color:#a6e22e">labels</span>, <span style="color:#a6e22e">table</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">Catalogue</span>);
-</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">LOAD</span> <span style="color:#a6e22e">prtID</span>, <span style="color:#a6e22e">prtName</span>, <span style="color:#a6e22e">prtColor</span>, <span style="color:#a6e22e">prtWeight</span>, <span style="color:#a6e22e">prtUnit</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">FROM</span> [<span style="color:#a6e22e">F</span><span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">tmp</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SupplierPartCatalogue</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SuppliersPartsCatalogue</span>.<span style="color:#a6e22e">xlsx</span>]
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">ooxml</span>, <span style="color:#a6e22e">embedded</span> <span style="color:#a6e22e">labels</span>, <span style="color:#a6e22e">table</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">Part</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">LOAD</span> <span style="color:#a6e22e">supID</span>, <span style="color:#a6e22e">supName</span>, <span style="color:#a6e22e">supAddress</span>, <span style="color:#a6e22e">supCity</span>, <span style="color:#a6e22e">supCountry</span>, <span style="color:#a6e22e">supStatus</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">FROM</span> [<span style="color:#a6e22e">F</span><span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">tmp</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SupplierPartCatalogue</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SuppliersPartsCatalogue</span>.<span style="color:#a6e22e">xlsx</span>]
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">ooxml</span>, <span style="color:#a6e22e">embedded</span> <span style="color:#a6e22e">labels</span>, <span style="color:#a6e22e">table</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">Supplier</span>);
+</span></span></code></pre></div><p>If two fields have the same name in two different tables (i.e. a relationship) then they have the same columnar binary representation. In order to resolve ambiguities and to associate over fields that have the same name, unique column naming is required. This is the case for our third associative, i.e. bridge, junction table. Field names <code>catSID</code> and <code>catPID</code> have already been loaded and represented with the columns <code>supID</code> and <code>prtID</code>. The next <code>LOAD</code> statement is using the alias operator (<code>as</code>) to handle unique column naming.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">LOAD</span> <span style="color:#a6e22e">catSID</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">supID</span>, <span style="color:#a6e22e">catPID</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">prtID</span>, <span style="color:#a6e22e">catPrice</span>, <span style="color:#a6e22e">catTotal</span>, <span style="color:#a6e22e">catDate</span>, <span style="color:#a6e22e">catChk</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">FROM</span> [<span style="color:#a6e22e">F</span><span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">tmp</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SupplierPartCatalogue</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">SuppliersPartsCatalogue</span>.<span style="color:#a6e22e">xlsx</span>]
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">ooxml</span>, <span style="color:#a6e22e">embedded</span> <span style="color:#a6e22e">labels</span>, <span style="color:#a6e22e">table</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">Catalogue</span>);
+</span></span></code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
 
@@ -740,14 +742,14 @@
 
 </figure>
 </p>
-<p>Once the script is executed we can review the data table structure, <a href="#fig1"><strong>Fig. 1</strong></a>, with the Table Viewer. The three tables are associated with two connectors that bidirectionally link them through their common fields. This layout is quite similar with the Entity-Relationship diagram of Microsoft Access database schema, <a href="/en/post/20160825/#fig5"><strong>Fig.5</strong></a>. A QlikView association resembles a SQL natural outer join. However, an outer join in SQL is unidirectional. An association always results in a full (bidirectional) linkage. In practice we have two completely different approaches. In a typical SQL join query we repeatedly search the index because of the join condition.</p>
+<p>Once the script is executed we can review the data table structure, <a href="/en/post/20170211/#fig1"><strong>Fig. 1</strong></a>, with the Table Viewer. The three tables are associated with two connectors that bidirectionally link them through their common fields. This layout is quite similar with the Entity-Relationship diagram of Microsoft Access database schema, <a href="/en/post/20160825/#fig5"><strong>Fig.5</strong></a>. A QlikView association resembles a SQL natural outer join. However, an outer join in SQL is unidirectional. An association always results in a full (bidirectional) linkage. In practice we have two completely different approaches. In a typical SQL join query we repeatedly search the index because of the join condition.</p>
 <blockquote>
-<p><strong>QlikView associative engine (QIX) knows how every data point is associated, therefore it can effectively determine (infers) and flag all distinct column values and all rows in each data table upon user&rsquo;s selection</strong> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p><strong>QlikView associative engine (QIX) knows how every data point is associated, therefore it can effectively determine (infers) and flag all distinct column values and all rows in each data table upon user&rsquo;s selection</strong> <sup id="fnref2:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 </blockquote>
 <h4 id="the-blind-spot">The Blind Spot</h4>
 <p>Depending only on memory, QlikView can load many whole tables without joins, instead of a limited view from the main dataset. Other query-based BI tools usually aggregate an extracted subset of data and return it in the form of a result set. This result set is completely divorced from the original data set and this very act of extraction breaks associations. For example, find out how a piece of data contained in a query relates to another piece of data outside the query [(QlikView Whitepaper, October 2010, p.3)]<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. You may think also of an internal combustion engine analogy . With the query-based paradigm, we would look at individual parts of the engine in isolation, (see the header image of our post). Using QlikView associative technology, we have access to a digital model of a complete working engine and we can tweak any part to see how that affects other parts and the engine on the whole.</p>
 <h3 id="explorefilter-data-via-selections">Explore/Filter Data via Selections</h3>
-<p>In this section we will examine QlikView associative aspect from the user&rsquo;s experience point of view. &ldquo;<em>Central to QlikView is the concept of a user-defined selection state. As users click around in a QlikView document, they indicate which subsets of data they are interested in analyzing and which subsets should be ignored</em>, [(QlikView Whitepaper, September 2011, p.10)]<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. To demonstrate the visual effect of associations, i.e. the relationship between a value in one field and a value in another, we arranged a number of [Sheet Objects, p.457]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> in our Main worksheet. We chose [Table Boxes, p.507]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to present rows of data from our Tables and [List Boxes, p.459]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to display a list of all possible values of a specific field. We have also added a [Current Selections Box, p.519]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to list user&rsquo;s selected field values and a [Search Object, p.569]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> for searching for information anywhere in the document, <a href="#fig2"><strong>Fig.2</strong></a>.</p>
+<p>In this section we will examine QlikView associative aspect from the user&rsquo;s experience point of view. &ldquo;<em>Central to QlikView is the concept of a user-defined selection state. As users click around in a QlikView document, they indicate which subsets of data they are interested in analyzing and which subsets should be ignored</em>, [(QlikView Whitepaper, September 2011, p.10)]<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. To demonstrate the visual effect of associations, i.e. the relationship between a value in one field and a value in another, we arranged a number of [Sheet Objects, p.457]<sup id="fnref1:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> in our Main worksheet. We chose [Table Boxes, p.507]<sup id="fnref2:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to present rows of data from our Tables and [List Boxes, p.459]<sup id="fnref3:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to display a list of all possible values of a specific field. We have also added a [Current Selections Box, p.519]<sup id="fnref4:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to list user&rsquo;s selected field values and a [Search Object, p.569]<sup id="fnref5:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> for searching for information anywhere in the document, <a href="/en/post/20170211/#fig2"><strong>Fig.2</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -775,7 +777,7 @@
 
 </figure>
 </p>
-<p>Now you can see visually what is associated and is not associated with any particular selection. For instance, [<strong>Fig.3</strong>]<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> displays the state of our Worksheet when the user selected the Part item with ID value equal to <code>998</code>. The <code>List Box</code> of the field (<strong>prtID</strong>) with the value <code>998</code> appears in green and it has also been added to the <code>Current Selections</code> list. In other <code>List Boxes</code>, unrelated values in all other fields appear in gray and those that are related appear in white. At the same time, when the user interacts with this particular <code>List Box</code> all the rows of <code>Table Boxes</code> are instantly filtered to reflect this new context.</p>
+<p>Now you can see visually what is associated and is not associated with any particular selection. For instance, [<strong>Fig.3</strong>]<sup id="fnref6:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> displays the state of our Worksheet when the user selected the Part item with ID value equal to <code>998</code>. The <code>List Box</code> of the field (<strong>prtID</strong>) with the value <code>998</code> appears in green and it has also been added to the <code>Current Selections</code> list. In other <code>List Boxes</code>, unrelated values in all other fields appear in gray and those that are related appear in white. At the same time, when the user interacts with this particular <code>List Box</code> all the rows of <code>Table Boxes</code> are instantly filtered to reflect this new context.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -803,7 +805,7 @@
 
 </figure>
 </p>
-<p>So far we have seen how we can get the resulting data after user&rsquo;s selection in two possible formats, a list of values (<code>List Box</code>) for each field of the data Table, <a href="#fig5"><strong>Fig.5</strong></a>, and a grid (<code>Table Box</code>) with tuples (records), <a href="#fig4"><strong>Fig.4</strong></a>. You may also notice in our visual setup that we have a <code>Derived Relation</code> red grid with selected fields from all three Tables of our data set. This grid is automatically constructed with those tuples that appear in the other three grids (<code>Catalogue Table Box</code>, <code>Part Table Box</code> and <code>Supplier Table Box</code>). We should make it clear that the update of this <code>Derived Relation</code> under the hood is not performing any kind of <a href="https://en.wikipedia.org/wiki/Join_(SQL)">Join (SQL)</a> operation. The effect of tuples filtering and shading of list values is demonstrated with <strong>animated gif images</strong> in three states. There is the <strong>Unselected State</strong>, then there is the <strong>Part with ID value <code>998</code></strong> selected state, and from those <code>Catalog</code> entries for this specific <code>Part</code>, (4 entries, one for each <code>Supplier</code>), we <strong>select the <code>Supplier</code> with the minimum <code>Catalog</code> price</strong> and that is our third state.</p>
+<p>So far we have seen how we can get the resulting data after user&rsquo;s selection in two possible formats, a list of values (<code>List Box</code>) for each field of the data Table, <a href="/en/post/20170211/#fig5"><strong>Fig.5</strong></a>, and a grid (<code>Table Box</code>) with tuples (records), <a href="/en/post/20170211/#fig4"><strong>Fig.4</strong></a>. You may also notice in our visual setup that we have a <code>Derived Relation</code> red grid with selected fields from all three Tables of our data set. This grid is automatically constructed with those tuples that appear in the other three grids (<code>Catalogue Table Box</code>, <code>Part Table Box</code> and <code>Supplier Table Box</code>). We should make it clear that the update of this <code>Derived Relation</code> under the hood is not performing any kind of <a href="https://en.wikipedia.org/wiki/Join_(SQL)">Join (SQL)</a> operation. The effect of tuples filtering and shading of list values is demonstrated with <strong>animated gif images</strong> in three states. There is the <strong>Unselected State</strong>, then there is the <strong>Part with ID value <code>998</code></strong> selected state, and from those <code>Catalog</code> entries for this specific <code>Part</code>, (4 entries, one for each <code>Supplier</code>), we <strong>select the <code>Supplier</code> with the minimum <code>Catalog</code> price</strong> and that is our third state.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -859,12 +861,12 @@
 </figure>
 </p>
 <h2 id="r3dm-hypergraph-representation">R3DM Hypergraph Representation</h2>
-<p>With the Associative Data Modeling there can be a third way to present data. This is the one that engages the user with the visualization of network graphs. In the previous post of our series, we have drawn an R3DM Hypergraph, <a href="/en/post/20161220/#fig14"><strong>Fig. 14</strong></a>, and we described associations according to R3DM terminology. We have used exactly the same data of this case study example, i.e. find the <strong>Supplier</strong> with the minimum <strong>Catalog</strong> price for <strong>Part</strong> with <code>prtID</code> value <code>998</code>, to draw <a href="#fig2"><strong>Fig.2</strong> </a>, <a href="#fig3"><strong>Fig.3</strong> </a>, <a href="#fig4"><strong>Fig.4</strong> </a> and <a href="#fig5"><strong>Fig.5</strong> </a>. This time we have redrawn hypergraph of <a href="/en/post/20161220/#fig14"><strong>Fig. 14</strong></a> with the help of <a href="http://orientdb.com/docs/last/Graph-Editor.html">OrientDB Graph Editor</a>, <a href="#fig6"><strong>Fig.6</strong></a>. Every string label and numerical value of <a href="/en/post/20161220/#fig14"><strong>Fig. 14</strong></a> has been replaced with a unique OrientDB record identifier, <a href="http://orientdb.com/docs/last/Tutorial-Record-ID.html"><strong>(RID - clusterID : clusterPosition)</strong></a>. In effect, this is how we implemented R3DM/S3DM <a href="/en/post/20150320/#signified-sign-signifier-alternative-paradigm"><code>Sign</code> layer</a>. Each data item becomes an Atomic Information Resource <a href="/en/post/20150320/#atomicdb-computational-semiotic-analysis-in-r3dm">(AIR) unit</a> with a symbolic representation of a 2D vector <strong>(Entity/Attribute Type : Instance)</strong>.</p>
+<p>With the Associative Data Modeling there can be a third way to present data. This is the one that engages the user with the visualization of network graphs. In the previous post of our series, we have drawn an R3DM Hypergraph, <a href="/en/post/20161220/#fig14"><strong>Fig. 14</strong></a>, and we described associations according to R3DM terminology. We have used exactly the same data of this case study example, i.e. find the <strong>Supplier</strong> with the minimum <strong>Catalog</strong> price for <strong>Part</strong> with <code>prtID</code> value <code>998</code>, to draw <a href="/en/post/20170211/#fig2"><strong>Fig.2</strong> </a>, <a href="/en/post/20170211/#fig3"><strong>Fig.3</strong> </a>, <a href="/en/post/20170211/#fig4"><strong>Fig.4</strong> </a> and <a href="/en/post/20170211/#fig5"><strong>Fig.5</strong> </a>. This time we have redrawn hypergraph of <a href="/en/post/20161220/#fig14"><strong>Fig. 14</strong></a> with the help of <a href="http://orientdb.com/docs/last/Graph-Editor.html">OrientDB Graph Editor</a>, <a href="/en/post/20170211/#fig6"><strong>Fig.6</strong></a>. Every string label and numerical value of <a href="/en/post/20161220/#fig14"><strong>Fig. 14</strong></a> has been replaced with a unique OrientDB record identifier, <a href="http://orientdb.com/docs/last/Tutorial-Record-ID.html"><strong>(RID - clusterID : clusterPosition)</strong></a>. In effect, this is how we implemented R3DM/S3DM <a href="/en/post/20150320/#signified-sign-signifier-alternative-paradigm"><code>Sign</code> layer</a>. Each data item becomes an Atomic Information Resource <a href="/en/post/20150320/#atomicdb-computational-semiotic-analysis-in-r3dm">(AIR) unit</a> with a symbolic representation of a 2D vector <strong>(Entity/Attribute Type : Instance)</strong>.</p>
 <h3 id="air-units">AIR Units</h3>
 <p><strong>From Data Items in any structure (Table/Entity/Triple/JSON/XML) to data model reconstruction with Information Atoms</strong></p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 <span class="markup-quote">AIR units can represent in a uniform way anything, i.e. Entities, Attributes, Values, Types, Databases, etc. Their vector form can be indexed, linked, retrieved, stored efficiently, and we can use AIR units to build associations and assimilate composite information structures such as records (tuples).</span></p>
-<p>To visualize R3DM associations using AIR units we have color coded the graph and we added a legend at the left side, <a href="#fig6"><strong>Fig.6</strong></a>. Entities are distinguished from attributes by the size of the disk and grouping of entities and attributes is depicted with different shades of a color (green for Suppliers, brown for Parts, purple for Catalog items). We can easily see four <code>Catalog</code> items (#70:7, #70:11, #70:12, #70:16) associations with the four <code>Suppliers</code> (#68:0, #68:1, #68:2, #68:3) and the <code>Part</code> (#69:7) with ID value <code>998</code> (#77:7) that is drawn in the center of the graph with the black disk around it. USA suppliers (#68:0, #68:1) share the value of their common <code>supCountry</code> attribute (#75:0). One of them (#68:1) has a Catalog entry (#70:11) with the minimum catalog price,<code>catPrice</code>, (#82:9). We can also see the formation of tuples for Supplier (4), Catalog (4) and Part (1).</p>
+<p>To visualize R3DM associations using AIR units we have color coded the graph and we added a legend at the left side, <a href="/en/post/20170211/#fig6"><strong>Fig.6</strong></a>. Entities are distinguished from attributes by the size of the disk and grouping of entities and attributes is depicted with different shades of a color (green for Suppliers, brown for Parts, purple for Catalog items). We can easily see four <code>Catalog</code> items (#70:7, #70:11, #70:12, #70:16) associations with the four <code>Suppliers</code> (#68:0, #68:1, #68:2, #68:3) and the <code>Part</code> (#69:7) with ID value <code>998</code> (#77:7) that is drawn in the center of the graph with the black disk around it. USA suppliers (#68:0, #68:1) share the value of their common <code>supCountry</code> attribute (#75:0). One of them (#68:1) has a Catalog entry (#70:11) with the minimum catalog price,<code>catPrice</code>, (#82:9). We can also see the formation of tuples for Supplier (4), Catalog (4) and Part (1).</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -919,29 +921,29 @@
 </ul>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
-<p>D. English, &ldquo;White Paper: Understanding QlikView&rsquo;s Associative Architecture&rdquo;, QlikTech International AB, May 2010&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:1">
+<p>D. English, &ldquo;White Paper: Understanding QlikView&rsquo;s Associative Architecture&rdquo;, QlikTech International AB, May 2010&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
-<p>M. Ferguson, &ldquo;White Paper: Interactive Data Exploration With An In-Memory Analytics Engine&rdquo;, QlikTech International AB, May 2015 <a href="https://www.google.gr/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjm1aKMne_RAhUCtBoKHWqZBKsQFggkMAA&amp;url=http%3A%2F%2Fglobal.qlik.com%2Fuk%2F~%2Fmedia%2FFiles%2Fresource-library%2Fglobal-us%2Fregister%2Fwhitepapers%2FWP-Interactive-Data-Exploration-and-Analysis-EN.ashx&amp;usg=AFQjCNHPdA7lr1ztLjYmx8Vgv7Qxkbx65g&amp;bvm=bv.145822982,d.d2s">(pdf)</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:2">
+<p>M. Ferguson, &ldquo;White Paper: Interactive Data Exploration With An In-Memory Analytics Engine&rdquo;, QlikTech International AB, May 2015 <a href="https://www.google.gr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjm1aKMne_RAhUCtBoKHWqZBKsQFggkMAA&url=http%3A%2F%2Fglobal.qlik.com%2Fuk%2F~%2Fmedia%2FFiles%2Fresource-library%2Fglobal-us%2Fregister%2Fwhitepapers%2FWP-Interactive-Data-Exploration-and-Analysis-EN.ashx&usg=AFQjCNHPdA7lr1ztLjYmx8Vgv7Qxkbx65g&bvm=bv.145822982,d.d2s">(pdf)</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref2:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
-<p>&ldquo;QlikView Reference Manual v11.20 SR2&rdquo;, QlikTech International AB, Lund, Sweden, 2013 <a href="http://semanticommunity.info/@api/deki/files/24990/QlikView_Reference_Manual.pdf">(pdf)</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:3">
+<p>&ldquo;QlikView Reference Manual v11.20 SR2&rdquo;, QlikTech International AB, Lund, Sweden, 2013 <a href="http://semanticommunity.info/@api/deki/files/24990/QlikView_Reference_Manual.pdf">(pdf)</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref2:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref3:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref4:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref5:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref6:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
-<p>&ldquo;The Associative Experience QlikView&rsquo;s Overwhelming Advantage&rdquo;, QlikTech International AB, October 2010 <a href="https://www.google.gr/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;ved=0ahUKEwidjr_8rvHRAhXKuBoKHVDgBJsQFggtMAE&amp;url=http%3A%2F%2Fwww.hyperintel.com%2Fwp-content%2Fuploads%2FQV-10-AssocExp_Whitepaper_A4.pdf&amp;usg=AFQjCNE-Ttjtu2qH-fGZry_rn9WA9kOVcQ&amp;sig2=ns6WuIBNLd_S2-LYYtE9gg">(pdf)</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:4">
+<p>&ldquo;The Associative Experience QlikView&rsquo;s Overwhelming Advantage&rdquo;, QlikTech International AB, October 2010 <a href="https://www.google.gr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwidjr_8rvHRAhXKuBoKHVDgBJsQFggtMAE&url=http%3A%2F%2Fwww.hyperintel.com%2Fwp-content%2Fuploads%2FQV-10-AssocExp_Whitepaper_A4.pdf&usg=AFQjCNE-Ttjtu2qH-fGZry_rn9WA9kOVcQ&sig2=ns6WuIBNLd_S2-LYYtE9gg">(pdf)</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p>&ldquo;QlikView Architectural Overview&rdquo;, QlikTech International AB, September 2011 <a href="https://community.qlik.com/servlet/JiveServlet/downloadBody/7673-102-1-10318/WP-QlikView-Architectural-Overview-EN.pdf">(pdf)</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:6" role="doc-endnote">
+<li id="fn:6">
 <p>&ldquo;<a href="https://www.google.com/patents/US6236986">Method and Device for Extracting Information from a Database</a>&rdquo;, QlikTech International AB, May 2001&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
     </div>
 
@@ -953,7 +955,7 @@
   
   <a class="badge badge-light" href="/en/tags/topic_map/">Topic_map</a>
   
-  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  <a class="badge badge-light" href="">Sign_(semiotics)</a>
   
   <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
   
@@ -1013,7 +1015,7 @@
     
 
     <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu/">Athanassios I. Hatzis, PhD</a></h5>
       <h6 class="card-subtitle">Software Engineer - Researcher, Consultant, Independent Contractor</h6>
       
       <ul class="network-icon" aria-hidden="true">
@@ -1286,7 +1288,7 @@
     
     
     
-    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
+    <script src="/js/academia.min.1def94b00314e302593e38a8ce0e471f.js"></script>
 
     
 
@@ -1305,7 +1307,7 @@
       <div class="col-md-6">
         
         <p>
-          © HEALIS - Athanassios I. Hatzis, 2024 &middot; 
+          © HEALIS - Athanassios I. Hatzis, 2025 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.

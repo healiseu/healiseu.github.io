@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.92.2" />
+  <meta name="generator" content="Hugo 0.123.7">
 
   
 
@@ -81,7 +81,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.f061a21f63bf4b7a5a9dd13669fcb02e.css">
+  <link rel="stylesheet" href="/css/academia.min.dbe83bbf6477781bec4f66e695a12d6d.css">
 
   
 
@@ -470,7 +470,7 @@
 
 
 <meta content="2017-04-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2017-04-12 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -493,6 +493,8 @@
   <span class="article-date">
     
     
+      
+          Last updated on
       
     
     <time>2017-04-12</time>
@@ -774,7 +776,7 @@
 </li>
 </ul>
 <h3 id="conceptual-perspective">Conceptual Perspective</h3>
-<p>Regarding to the conceptual data model <strong>R3DM/S3DM</strong> is using terms that are well-known among database experts, i.e. <code>Entities</code> and <code>Attributes</code>. In <a href="#code1"><strong>Code.1</strong></a> segment we can view instances of <strong>Supplier</strong>, <strong>Part</strong> and <strong>Catalog</strong> <code>Entities</code> and the <code>Attributes</code> that describe them. Remember that in <strong>R3DM/S3DM</strong> <code>Entities</code> and <code>Attributes</code> play the role of abstract concepts that we associate to create models of our data, they are NOT containers or instances of data.</p>
+<p>Regarding to the conceptual data model <strong>R3DM/S3DM</strong> is using terms that are well-known among database experts, i.e. <code>Entities</code> and <code>Attributes</code>. In <a href="/en/post/20170412/#code1"><strong>Code.1</strong></a> segment we can view instances of <strong>Supplier</strong>, <strong>Part</strong> and <strong>Catalog</strong> <code>Entities</code> and the <code>Attributes</code> that describe them. Remember that in <strong>R3DM/S3DM</strong> <code>Entities</code> and <code>Attributes</code> play the role of abstract concepts that we associate to create models of our data, they are NOT containers or instances of data.</p>
 <ul>
 <li>
 <p><a href="https://en.wikipedia.org/wiki/Entity"><code>Entity</code></a> is something that has a discrete, independent existence,</p>
@@ -791,14 +793,14 @@
 <li>
 <p><a href="http://www.isotopicmaps.org/sam/sam-model/#sect-association"><code>Association</code></a> represents:</p>
 <ol>
-<li>An N-ary relation of an <code>Entity</code> with its <code>Attributes</code> (see <a href="#code1"><strong>Code.1</strong></a>)</li>
+<li>An N-ary relation of an <code>Entity</code> with its <code>Attributes</code> (see <a href="/en/post/20170412/#code1"><strong>Code.1</strong></a>)</li>
 </ol>
 <ul>
 <li>e.g. Part{ID, Description, Color, Weight}</li>
 <li>e.g. <em>Part998 {998, &ldquo;Fire Hydrant Cap&rdquo;, &ldquo;Red&rdquo;, 7.2}</em></li>
 </ul>
 <ol start="2">
-<li>An N-ary relationship between one or more <code>Entities</code>, sharing one or more common <code>Attributes</code>, that is defined by the roles they play in the association (see <a href="#code1"><strong>Code.1</strong></a>)</li>
+<li>An N-ary relationship between one or more <code>Entities</code>, sharing one or more common <code>Attributes</code>, that is defined by the roles they play in the association (see <a href="/en/post/20170412/#code1"><strong>Code.1</strong></a>)</li>
 </ol>
 <ul>
 <li>e.g. Film {StarringActor1, StarringActor2, Director}</li>
@@ -806,7 +808,7 @@
 </ul>
 </li>
 </ul>
-<p><strong>Code.1</strong> - Result sets from SQL queries on Supplier, Part and Catalog tables. The same result sets are drawn in <a href="#fig1"><strong>Fig.1</strong></a> with a hypergraph and in <a href="#code2"><strong>Code.2</strong></a> segment they are assimilated with AIR units in <code>Associations</code></p>
+<p><strong>Code.1</strong> - Result sets from SQL queries on Supplier, Part and Catalog tables. The same result sets are drawn in <a href="/en/post/20170412/#fig1"><strong>Fig.1</strong></a> with a hypergraph and in <a href="/en/post/20170412/#code2"><strong>Code.2</strong></a> segment they are assimilated with AIR units in <code>Associations</code></p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <!-- raw HTML omitted -->
 
@@ -816,7 +818,7 @@
 
 
 <h3 id="logical-perspective">Logical Perspective</h3>
-<p>Changing now our perspective with a focus on the logical building blocks, <strong>R3DM/S3DM</strong> can be viewed as a <a href="https://en.wikipedia.org/wiki/Hypergraph">hypergraph</a>, <a href="#fig1"><strong>Fig.1</strong></a>, comprised of three data structures <code>hyperatoms</code> (hypernodes), <code>hyperbonds</code> (hyperedges), and <code>hyperlinks</code> (edges).</p>
+<p>Changing now our perspective with a focus on the logical building blocks, <strong>R3DM/S3DM</strong> can be viewed as a <a href="https://en.wikipedia.org/wiki/Hypergraph">hypergraph</a>, <a href="/en/post/20170412/#fig1"><strong>Fig.1</strong></a>, comprised of three data structures <code>hyperatoms</code> (hypernodes), <code>hyperbonds</code> (hyperedges), and <code>hyperlinks</code> (edges).</p>
 <ul>
 <li>
 <p>A <code>hyperbond</code> represents graphically a complex data structure (e.g. tuple, JSON object). The role of <code>hyperbond</code> is to connect a set of <code>hyperatoms</code> in order to form associations</p>
@@ -856,7 +858,7 @@
 </figure>
 </p>
 <h3 id="instances-perspective">Instances Perspective</h3>
-<p><code>Entity</code> or <code>Attribute</code> in R3DM/S3DM are <strong><a href="https://en.wikipedia.org/wiki/Class_(computer_programming)">Types</a></strong> and represent uniquely a single <strong><a href="https://en.wikipedia.org/wiki/Set_(mathematics)">Set</a></strong> of <strong><a href="https://en.wikipedia.org/wiki/Instance_(computer_science)">Instances</a></strong> also known as items (see also <a href="/en/post/20170412/#items-type-system-its">Items Type System</a>). <code>Entities</code> or <code>Attributes</code> can be thought as <strong>references</strong> to <code>Collections</code>, <a href="#fig2"><strong>Fig.2</strong></a>.</p>
+<p><code>Entity</code> or <code>Attribute</code> in R3DM/S3DM are <strong><a href="https://en.wikipedia.org/wiki/Class_(computer_programming)">Types</a></strong> and represent uniquely a single <strong><a href="https://en.wikipedia.org/wiki/Set_(mathematics)">Set</a></strong> of <strong><a href="https://en.wikipedia.org/wiki/Instance_(computer_science)">Instances</a></strong> also known as items (see also <a href="/en/post/20170412/#items-type-system-its">Items Type System</a>). <code>Entities</code> or <code>Attributes</code> can be thought as <strong>references</strong> to <code>Collections</code>, <a href="/en/post/20170412/#fig2"><strong>Fig.2</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -903,7 +905,7 @@
 <p>The most commercially successful semantic model is <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">Entity-Relationship</a> data model. In the first post of this series we discussed the conceptual data model that Chen is using to represent the tuples of <a href="https://en.wikipedia.org/wiki/Relational_model">relational data model</a>. <a href="/en/post/20160825/#fig2">Fig. 2</a> and <a href="/en/post/20160825/#fig3">Fig. 3</a> shows that Chen is using either Entity Set, Attributes and Value Sets or Entity Set(s), Relationship Set(s), Attributes and Value Sets to form an <code>Association</code>. The key point here is that <strong>Entity set and Attributes in both cases are separated from the Value sets</strong>. Indeed, this is the design principle that is followed in any modern relational DBMS. There is a <a href="https://en.wikipedia.org/wiki/Data_dictionary">data dictionary</a>, also known as a <a href="https://en.wikipedia.org/wiki/Metadata_repository">metadata repository</a> or <a href="https://en.wikipedia.org/wiki/Metadata_registry">metadata registry</a>, that stores among other things names and descriptions of Entity Sets, Relationships and their Attributes that construct a <a href="https://en.wikipedia.org/wiki/Database_schema">database schema</a>.</p>
 <p>Semantically speaking, the database schema and its <a href="https://en.wikipedia.org/wiki/Metadata">metadata</a> describe the meaning of its instances, i.e. Entity relations, Entity relationships and Attribute Value sets. For this purpose, in the current OrientDB implementation of <strong>R3DM/S3DM</strong> each one of these sets is <strong>defined explicitly</strong> and is represented with an <a href="http://orientdb.com/docs/last/Concepts.html#class">OrientDB Class</a>. There is another reason we keep separate the actual data values. <strong>R3DM/S3DM</strong> uses a <strong>single instance value-based storage</strong>. Each unique value in the raw data is stored only once. With this feature there is some resemblance with the data model of <a href="https://en.wikipedia.org/wiki/Correlation_database">Correlation Database</a>.</p>
 <h4 id="network-graph-view">Network Graph View</h4>
-<p>While it is helpful to view the higher-level <strong><a href="/en/post/20170412/#environment-type-systems">Type System Architecture of R3DM/S3DM</a></strong> through an object-oriented filter, it is important to understand that at a low-level <strong>R3DM/S3DM</strong> consists of nodes and edges. In particular, the prototype framework we describe in this article is built on top of <a href="http://orientdb.com/docs/last/Tutorial-Document-and-graph-model.html#the-graph-model">OrientDB Graph engine</a> with <a href="http://orientdb.com/docs/last/Tutorial-Working-with-graphs.html#lightweight-edges">Lightweight Edges</a> and a hypergraph structure, <a href="#fig9"><strong>Fig.9</strong></a>.</p>
+<p>While it is helpful to view the higher-level <strong><a href="/en/post/20170412/#environment-type-systems">Type System Architecture of R3DM/S3DM</a></strong> through an object-oriented filter, it is important to understand that at a low-level <strong>R3DM/S3DM</strong> consists of nodes and edges. In particular, the prototype framework we describe in this article is built on top of <a href="http://orientdb.com/docs/last/Tutorial-Document-and-graph-model.html#the-graph-model">OrientDB Graph engine</a> with <a href="http://orientdb.com/docs/last/Tutorial-Working-with-graphs.html#lightweight-edges">Lightweight Edges</a> and a hypergraph structure, <a href="/en/post/20170412/#fig9"><strong>Fig.9</strong></a>.</p>
 <p>In previous posts of this series we have made a comparison of the <code>Association</code> construct with <a href="/en/post/20160825">Relational tuples</a>, <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000101/">Topic Map Association</a>, <a href="%7B%7Bbase_path%7D%7D/r3dm_project/post000102/">RDF triplet</a>, <a href="/en/post/20161220">Property Graph nodes and edges</a> and <a href="/en/post/20170211">Qlik binary coded records</a>. Such semantic models, with the exception of Qlik technology, are fact oriented and semantics are typically expressed by binary or n-ary relations between data elements. In <strong>R3DM/S3DM</strong> the graph is usually undirected with <a href="/en/post/20170412/#link-type-system-lts">symmetric and typed binary relations</a> between the <code>hyperbond</code> and the <code>hyperatom</code>.</p>
 <p>This low-level graph view of the system can be implemented in many ways. For example you can have two constructs, e.g. tables, one for the nodes and another for the edges (see the work of Simon Williams in <a href="/en/post/20161220/#associative-model">Sentences database</a>), or you can use a key-value store that saves tuples (<a href="http://blog.hostilefork.com/brief-tour-graphd-scott-meyer/">Graphd</a> the back store of Freebase) or you can also have a native triple store.</p>
 <h4 id="semiotic-view">Semiotic View</h4>
@@ -918,9 +920,9 @@
 <p><!-- raw HTML omitted --> Ron Everett <!-- raw HTML omitted --> in &ldquo;<a href="https://www.linkedin.com/pulse/introduction-associative-information-systems-n-normal-letennier">Introduction to Associative Information Systems</a> - (N) Normal Form&rdquo;
 {: .small}</p>
 <p>Therefore the trick here is to build <code>Associations</code>, based on a uniform representation of its members and the roles they play, in a similar way to Topic Map <a href="http://www.isotopicmaps.org/sam/sam-model/#sect-association">Association items</a>. For this purpose we have introduced <a href="/en/post/20170211/#air-units">Atomic Information Resource (AIR)</a> unit in the previous post of this series. Now we will view <code>AIR</code> with more detail and in action. For each <code>AIR</code> unit we maintain a record of information. For simplicity and for demonstration purposes, the <code>AIR</code> unit in the current implementation of <strong>R3DM/S3DM</strong> is equivalent to <a href="http://orientdb.com/docs/last/Tutorial-Record-ID.html">OrientDB Record ID</a> (RID).</p>
-<p>For example the <code>Supplier</code> result set in <a href="#code1"><strong>Code.1</strong></a> is transformed to an associative set and each cell of <code>Supplier</code> table is represented with an <code>RID</code> (<a href="#code2"><strong>Code.2</strong></a> - <em>Get <code>Supplier</code> Associative Set</em>). Columns of <code>Part</code> table, e.g. <code>pid</code> (<a href="#code1"><strong>Code.1</strong></a>), and any of its values are also represented with <code>RIDs</code> (<a href="#code2"><strong>Code.2</strong></a> - <em>Get <code>Datum</code> where Parts.pid=998</em>). The single <code>Part</code> tuple where <code>pid=998</code>, (<a href="#code1"><strong>Code.1</strong></a>) is considered to be an instance of a <code>Entity</code> and has an <code>RID</code> too (<a href="#code2"><strong>Code.2</strong></a> - <em>Get tuples that this Datum is part of</em>).</p>
+<p>For example the <code>Supplier</code> result set in <a href="/en/post/20170412/#code1"><strong>Code.1</strong></a> is transformed to an associative set and each cell of <code>Supplier</code> table is represented with an <code>RID</code> (<a href="/en/post/20170412/#code2"><strong>Code.2</strong></a> - <em>Get <code>Supplier</code> Associative Set</em>). Columns of <code>Part</code> table, e.g. <code>pid</code> (<a href="/en/post/20170412/#code1"><strong>Code.1</strong></a>), and any of its values are also represented with <code>RIDs</code> (<a href="/en/post/20170412/#code2"><strong>Code.2</strong></a> - <em>Get <code>Datum</code> where Parts.pid=998</em>). The single <code>Part</code> tuple where <code>pid=998</code>, (<a href="/en/post/20170412/#code1"><strong>Code.1</strong></a>) is considered to be an instance of a <code>Entity</code> and has an <code>RID</code> too (<a href="/en/post/20170412/#code2"><strong>Code.2</strong></a> - <em>Get tuples that this Datum is part of</em>).</p>
 <span class="markup-quote">This way AIR information representation serves two principal functions; information resource identification and location addressing, i.e. dereferencing and retrieval.</span>
-<p><strong>Code.2</strong> - Associative sets are presented with values or in RID (reference key) format. The equivalent result sets are drawn in the hypergraph of <a href="#fig1"><strong>Fig.1</strong></a> and fetched with SQL in (<a href="#code1"><strong>Code.1</strong></a>) segment. The document record in OrientDB with RID <strong>#60:7</strong> is an instance of <code>prtID Attribute</code> collection. We can read the <code>Datum</code> value, find which <code>Attribute</code> collection (class) it belongs to, and get its siblings, i.e. other <code>Datum</code> items of the class. In the same <code>Datum</code> record we can see its row context associates, i.e. <code>Nexus Items</code>. These are the five tuples it participates, one <code>Part</code> relation (<strong>#52:7</strong>) and four <code>Catalog</code> relationships (<strong>#53:7, #53:11, #53:12, #53:16</strong>).</p>
+<p><strong>Code.2</strong> - Associative sets are presented with values or in RID (reference key) format. The equivalent result sets are drawn in the hypergraph of <a href="/en/post/20170412/#fig1"><strong>Fig.1</strong></a> and fetched with SQL in (<a href="/en/post/20170412/#code1"><strong>Code.1</strong></a>) segment. The document record in OrientDB with RID <strong>#60:7</strong> is an instance of <code>prtID Attribute</code> collection. We can read the <code>Datum</code> value, find which <code>Attribute</code> collection (class) it belongs to, and get its siblings, i.e. other <code>Datum</code> items of the class. In the same <code>Datum</code> record we can see its row context associates, i.e. <code>Nexus Items</code>. These are the five tuples it participates, one <code>Part</code> relation (<strong>#52:7</strong>) and four <code>Catalog</code> relationships (<strong>#53:7, #53:11, #53:12, #53:16</strong>).</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <!-- raw HTML omitted -->
 
@@ -932,7 +934,7 @@
 <p>There are two steps towards this transformation of tuples. First we create a <a href="/en/post/20170412/#value-type-system-vts">value type system</a>, i.e. a place where we store atomic values based on their type. And second we apply a uniform representation on everything, i.e. data and metadata. This turns our DBMS to a <strong>Reference Database Management System (RDBMS)</strong>, i.e. redefining this way the acronym of <strong>Relational Database Management Systems</strong>. Remember that deep down to an atomic level we store single instance values. <strong>It is only the reference keys to those values that we manage</strong>. This enables a cellular granularity on <strong>R3DM/S3DM</strong>. Metadata with a high granularity allows for deeper, more detailed, and more structured information and enables greater levels of technical manipulation.</p>
 <p>This uniform <em>Representation</em> and management of abstract information <em>Resources</em> (Models, Data Sources, Metadata) with AIR units in <strong>R3DM</strong> is the <em>Realization</em> of the fact that underneath there is a separate storage layer of single instance data values.
 {: .btn .btn&ndash;info}</p>
-<p><strong>S3DM</strong> framework is based on the powerful theory of the semiotic triangle also known as the triangle of meaning or the triangle of reference. We use key references (<em>Signs-Symbols</em>), to represent abstract things (<em>Signified Concepts</em>) in our mind. We encode these into data containers, i.e. forms that the sign takes, for the storage of data values (<em>Signifiers</em>), <a href="#fig3"><strong>Fig.3</strong></a>.
+<p><strong>S3DM</strong> framework is based on the powerful theory of the semiotic triangle also known as the triangle of meaning or the triangle of reference. We use key references (<em>Signs-Symbols</em>), to represent abstract things (<em>Signified Concepts</em>) in our mind. We encode these into data containers, i.e. forms that the sign takes, for the storage of data values (<em>Signifiers</em>), <a href="/en/post/20170412/#fig3"><strong>Fig.3</strong></a>.
 {: .btn .btn&ndash;success}</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
@@ -964,65 +966,65 @@
 <p>This trilateral principle permits a uniform treatment of semantics, syntax, storage and structure of information based on symbolic representation. The very same principle is applied to the architectural design of <strong>R3DM/S3DM</strong> type system.
 {: .btn .btn&ndash;info}</p>
 <h2 id="environment-type-systems">Environment Type Systems</h2>
-<p>In the previous section we have seen that <strong>R3DM/S3DM</strong> can be seen from many perspectives. At a lower level we have a network graph of nodes and edges. In OrientDB <a href="http://orientdb.com/docs/last/Tutorial-Document-and-graph-model.html#the-graph-model">graph model</a> these are instances of the &ldquo;V&rdquo; (for Vertex) and &ldquo;E&rdquo; (for Edges) classes. At a higher level, based on those two classes, we build a hierarchically organized <a href="https://en.wikipedia.org/wiki/Namespace">namespace</a> in OrientDB <a href="http://orientdb.com/docs/last/Paginated-Local-Storage.html">paginated local storage</a> (plocal). This is the database <code>Environment</code>, the highest organizational structure, a logical container that it may represent a business environment, a user environment, even a programming environment. Its role is to group related classes into eight <a href="https://en.wikipedia.org/wiki/Type_system">type systems</a>. Seven of them manage vertices and one of them is for the different types of edges, <a href="#fig4"><strong>Fig.4</strong></a>. The process of initializing and defining the structures in OrientDB database is fully automated by reading the schema of the type system from a JSON file, <a href="#fig5"><strong>Fig.5</strong></a>.</p>
+<p>In the previous section we have seen that <strong>R3DM/S3DM</strong> can be seen from many perspectives. At a lower level we have a network graph of nodes and edges. In OrientDB <a href="http://orientdb.com/docs/last/Tutorial-Document-and-graph-model.html#the-graph-model">graph model</a> these are instances of the &ldquo;V&rdquo; (for Vertex) and &ldquo;E&rdquo; (for Edges) classes. At a higher level, based on those two classes, we build a hierarchically organized <a href="https://en.wikipedia.org/wiki/Namespace">namespace</a> in OrientDB <a href="http://orientdb.com/docs/last/Paginated-Local-Storage.html">paginated local storage</a> (plocal). This is the database <code>Environment</code>, the highest organizational structure, a logical container that it may represent a business environment, a user environment, even a programming environment. Its role is to group related classes into eight <a href="https://en.wikipedia.org/wiki/Type_system">type systems</a>. Seven of them manage vertices and one of them is for the different types of edges, <a href="/en/post/20170412/#fig4"><strong>Fig.4</strong></a>. The process of initializing and defining the structures in OrientDB database is fully automated by reading the schema of the type system from a JSON file, <a href="/en/post/20170412/#fig5"><strong>Fig.5</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
-
-
-
-
-
-<figure>
-
-  <a data-fancybox="" href="OrientDB_R3DM_REG.png" data-caption="Fig. 4 (Left)- Information about R3DM/S3DM hierarchical type system stored in DBRegistry subsystem">
-
-<img src="OrientDB_R3DM_REG.png" alt="Fig. 4 (Left)- Information about R3DM/S3DM hierarchical type system stored in *DBRegistry* subsystem" >
-</a>
-
-
-<figcaption data-pre="Figure " data-post=":" class="numbered">
-  <h4></h4>
-  <p>
-    Fig. 4 (Left)- Information about R3DM/S3DM hierarchical type system stored in <em>DBRegistry</em> subsystem
-    
-    
-    
-  </p> 
-</figcaption>
-
-</figure>
+ 
+ 
+ 
+ 
+ 
+ <figure>
+ 
+   <a data-fancybox="" href="OrientDB_R3DM_REG.png" data-caption="Fig. 4 (Left)- Information about R3DM/S3DM hierarchical type system stored in DBRegistry subsystem">
+ 
+ <img src="OrientDB_R3DM_REG.png" alt="Fig. 4 (Left)- Information about R3DM/S3DM hierarchical type system stored in *DBRegistry* subsystem" >
+ </a>
+ 
+ 
+ <figcaption data-pre="Figure " data-post=":" class="numbered">
+   <h4></h4>
+   <p>
+     Fig. 4 (Left)- Information about R3DM/S3DM hierarchical type system stored in <em>DBRegistry</em> subsystem
+     
+     
+     
+   </p> 
+ </figcaption>
+ 
+ </figure>
 </p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
-
-
-
-
-
-<figure>
-
-  <a data-fancybox="" href="R3DM_REG_JSON.png" data-caption="Fig. 5 (Right) - Schema of R3DM/S3DM hierarchical type system in a JSON format. For simplicity, in the current implementation Items Type System (ITS) is not present. Entity Type System (ETS) and Attribute Type System (ATS) OrientDB classes compose this missing system">
-
-<img src="R3DM_REG_JSON.png" alt="Fig. 5 (Right) - Schema of R3DM/S3DM hierarchical type system in a JSON format. For simplicity, in the current implementation Items Type System (ITS) is not present. Entity Type System (ETS) and Attribute Type System (ATS) OrientDB classes compose this missing system" >
-</a>
-
-
-<figcaption data-pre="Figure " data-post=":" class="numbered">
-  <h4></h4>
-  <p>
-    Fig. 5 (Right) - Schema of R3DM/S3DM hierarchical type system in a JSON format. For simplicity, in the current implementation Items Type System (ITS) is not present. Entity Type System (ETS) and Attribute Type System (ATS) OrientDB classes compose this missing system
-    
-    
-    
-  </p> 
-</figcaption>
-
-</figure>
+ 
+ 
+ 
+ 
+ 
+ <figure>
+ 
+   <a data-fancybox="" href="R3DM_REG_JSON.png" data-caption="Fig. 5 (Right) - Schema of R3DM/S3DM hierarchical type system in a JSON format. For simplicity, in the current implementation Items Type System (ITS) is not present. Entity Type System (ETS) and Attribute Type System (ATS) OrientDB classes compose this missing system">
+ 
+ <img src="R3DM_REG_JSON.png" alt="Fig. 5 (Right) - Schema of R3DM/S3DM hierarchical type system in a JSON format. For simplicity, in the current implementation Items Type System (ITS) is not present. Entity Type System (ETS) and Attribute Type System (ATS) OrientDB classes compose this missing system" >
+ </a>
+ 
+ 
+ <figcaption data-pre="Figure " data-post=":" class="numbered">
+   <h4></h4>
+   <p>
+     Fig. 5 (Right) - Schema of R3DM/S3DM hierarchical type system in a JSON format. For simplicity, in the current implementation Items Type System (ITS) is not present. Entity Type System (ETS) and Attribute Type System (ATS) OrientDB classes compose this missing system
+     
+     
+     
+   </p> 
+ </figcaption>
+ 
+ </figure>
 </p>
-<p>Our <a href="%7B%7Bbase_path%7D%7D/dbapi/">DBAPI project</a> in Wolfram Language has been extended to cover all R3DM/S3DM functionality. For example, an <code>Environment</code> is added with <code>OR3addEnvironment</code> command, (<a href="#code3"><strong>Code.3</strong></a>), and we retrieve any metadata about it with the <code>OR3getAnything</code> command (<a href="#code4"><strong>Code.4</strong></a>).</p>
+<p>Our <a href="%7B%7Bbase_path%7D%7D/dbapi/">DBAPI project</a> in Wolfram Language has been extended to cover all R3DM/S3DM functionality. For example, an <code>Environment</code> is added with <code>OR3addEnvironment</code> command, (<a href="/en/post/20170412/#code3"><strong>Code.3</strong></a>), and we retrieve any metadata about it with the <code>OR3getAnything</code> command (<a href="/en/post/20170412/#code4"><strong>Code.4</strong></a>).</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">   <span style="color:#66d9ef">OR3addEnvironment</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;F:</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">mp\R3DM_TypeSystem.json&#34;</span>,<span style="color:#e6db74">&#34;R3DB&#34;</span>,<span style="color:#e6db74">&#34;root&#34;</span>,<span style="color:#e6db74">&#34;123&#34;</span><span style="color:#f92672">]</span>
-</code></pre></div><p><strong>Code.3</strong> - We pass the schema file (JSON), the name of the database (R3DB), the username and the password. Metadata for the newly created classes are stored in the <code>DBRegistry</code> subsystem <a href="#fig4"><strong>Fig.4</strong></a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>   <span style="color:#66d9ef">OR3addEnvironment</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;F:</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">mp\R3DM_TypeSystem.json&#34;</span>,<span style="color:#e6db74">&#34;R3DB&#34;</span>,<span style="color:#e6db74">&#34;root&#34;</span>,<span style="color:#e6db74">&#34;123&#34;</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><p><strong>Code.3</strong> - We pass the schema file (JSON), the name of the database (R3DB), the username and the password. Metadata for the newly created classes are stored in the <code>DBRegistry</code> subsystem <a href="/en/post/20170412/#fig4"><strong>Fig.4</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <!-- raw HTML omitted -->
 <p><strong>Code.4</strong> - Retrieval of Environment System Types with <code>OR3getAnything</code> command. By default it is returning a List of references (RIDs) unless we specify a specific format for the structure e.g. Dataset.</p>
@@ -1033,7 +1035,7 @@
 
 
 <h3 id="database-type-system-dbs">Database Type System (DBS)</h3>
-<p>Classes that start with the letters DB such as <code>DBLog</code>, <code>DBUser</code>, <code>DBOperation</code>, and <code>DBUserRole</code> are used to store the user <code>Environment</code> metadata useful for administrative, security, and monitoring purposes (<a href="#code5"><strong>Code.5</strong></a>).</p>
+<p>Classes that start with the letters DB such as <code>DBLog</code>, <code>DBUser</code>, <code>DBOperation</code>, and <code>DBUserRole</code> are used to store the user <code>Environment</code> metadata useful for administrative, security, and monitoring purposes (<a href="/en/post/20170412/#code5"><strong>Code.5</strong></a>).</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <!-- raw HTML omitted -->
 <p><strong>Code.5</strong> - Retrieval of Primitive Database Types with <code>OR3getAnything</code> command as a List of references or as as Dataset.</p>
@@ -1043,9 +1045,9 @@
 
 
 
-<p>We have already seen the <code>DBRegistry</code> subsystem where information about the schema of <code>Environment</code> is stored, <a href="#fig4"><strong>Fig.4</strong></a>. Another class <code>DBObject</code> is used for casting multi-type role playing at a node (<code>Object</code> is an instance of a <code>Type</code>).</p>
+<p>We have already seen the <code>DBRegistry</code> subsystem where information about the schema of <code>Environment</code> is stored, <a href="/en/post/20170412/#fig4"><strong>Fig.4</strong></a>. Another class <code>DBObject</code> is used for casting multi-type role playing at a node (<code>Object</code> is an instance of a <code>Type</code>).</p>
 <h3 id="model-type-system-mts">Model Type System (MTS)</h3>
-<p>Next we will examine how we can add a new domain model in the system. Usually at this stage the database expert draws the entity-relationship diagram of the model which is a graph of <code>Entities</code>, <code>Attributes</code> and relationships. In <a href="#fig6"><strong>Fig.6</strong></a> we present a similar diagram for our Supplier-Part-Catalog data set and in <a href="#fig9"><strong>Fig.9</strong></a> we have drawn the same diagram in OrientDB <a href="http://orientdb.com/docs/master/Graph-Editor.html">Graph Editor</a>. The main difference with ER diagrams is that relationships/relations here have a direct representation on the system with the edges (<strong>R3DM/S3DM</strong> links) and dictionary metadata are explicitly defined and stored in <code>MTS</code>.</p>
+<p>Next we will examine how we can add a new domain model in the system. Usually at this stage the database expert draws the entity-relationship diagram of the model which is a graph of <code>Entities</code>, <code>Attributes</code> and relationships. In <a href="/en/post/20170412/#fig6"><strong>Fig.6</strong></a> we present a similar diagram for our Supplier-Part-Catalog data set and in <a href="/en/post/20170412/#fig9"><strong>Fig.9</strong></a> we have drawn the same diagram in OrientDB <a href="http://orientdb.com/docs/master/Graph-Editor.html">Graph Editor</a>. The main difference with ER diagrams is that relationships/relations here have a direct representation on the system with the edges (<strong>R3DM/S3DM</strong> links) and dictionary metadata are explicitly defined and stored in <code>MTS</code>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -1073,12 +1075,12 @@
 
 </figure>
 </p>
-<p>We have <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/json/.json">serialized the domain model</a> graph of <a href="#fig6"><strong>Fig.6</strong></a> in the same manner as the schema of the type system and the task of loading and building the model is simplified again with the following single function call (<a href="#code6"><strong>Code.6</strong></a>).</p>
+<p>We have <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/json/.json">serialized the domain model</a> graph of <a href="/en/post/20170412/#fig6"><strong>Fig.6</strong></a> in the same manner as the schema of the type system and the task of loading and building the model is simplified again with the following single function call (<a href="/en/post/20170412/#code6"><strong>Code.6</strong></a>).</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">   <span style="color:#66d9ef">OR3addDomainModel</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;F:</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">mp\SPCModel.json&#34;</span><span style="color:#f92672">]</span>
-</code></pre></div><p><strong>Code.6</strong> - The only parameter required in <em>OR3addDomainModel</em> is the <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/json/.json">schema definition file</a> of the model. This function call will instruct OrientDB to create classes for all <code>Entities</code> and <code>Attributes</code> of the <code>Model</code>. All the metadata from the schema, <a href="#fig6"><strong>Fig.6</strong></a>, will be stored in <code>MTS</code> and will be available for retrieval with <code>OR3getAnything</code> command.</p>
-<p>Using the powerful <code>OR3getAnything</code> function in the context of <a href="%7B%7Bbase_path%7D%7D/dbapi/">DBAPI</a><code>OrientR3S3</code> package we can retrieve metadata, <a href="#fig6"><strong>Fig.6</strong></a>, for any Model, Entity or Attribute. The result set can be in the form of Wolfram Language <a href="http://reference.wolfram.com/language/ref/Dataset.html"><code>Dataset</code></a>, <a href="http://reference.wolfram.com/language/ref/List.html"><code>List</code></a>, or <a href="http://reference.wolfram.com/language/ref/Graph.html"><code>Graph</code></a> data structures (<a href="#code7"><strong>Code.7</strong></a>).</p>
-<p><strong>Code.7</strong> - Three examples of the <code>OR3getAnything</code> function where we retrieve OrientDB records for <code>Models</code>, <code>Entities</code> and <code>Attributes</code> respectively. The function call is translated to OrientDB RESTful API command and the JSON response from the DBMS is transformed to Wolfram Language data structures for further processing and visualization. It worths noticing the hypergraph representation which is the equivalent graphical form of Model&rsquo;s schema diagram in <a href="#fig6"><strong>Fig.6</strong></a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>   <span style="color:#66d9ef">OR3addDomainModel</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;F:</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">mp\SPCModel.json&#34;</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><p><strong>Code.6</strong> - The only parameter required in <em>OR3addDomainModel</em> is the <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/json/.json">schema definition file</a> of the model. This function call will instruct OrientDB to create classes for all <code>Entities</code> and <code>Attributes</code> of the <code>Model</code>. All the metadata from the schema, <a href="/en/post/20170412/#fig6"><strong>Fig.6</strong></a>, will be stored in <code>MTS</code> and will be available for retrieval with <code>OR3getAnything</code> command.</p>
+<p>Using the powerful <code>OR3getAnything</code> function in the context of <a href="%7B%7Bbase_path%7D%7D/dbapi/">DBAPI</a><code>OrientR3S3</code> package we can retrieve metadata, <a href="/en/post/20170412/#fig6"><strong>Fig.6</strong></a>, for any Model, Entity or Attribute. The result set can be in the form of Wolfram Language <a href="http://reference.wolfram.com/language/ref/Dataset.html"><code>Dataset</code></a>, <a href="http://reference.wolfram.com/language/ref/List.html"><code>List</code></a>, or <a href="http://reference.wolfram.com/language/ref/Graph.html"><code>Graph</code></a> data structures (<a href="/en/post/20170412/#code7"><strong>Code.7</strong></a>).</p>
+<p><strong>Code.7</strong> - Three examples of the <code>OR3getAnything</code> function where we retrieve OrientDB records for <code>Models</code>, <code>Entities</code> and <code>Attributes</code> respectively. The function call is translated to OrientDB RESTful API command and the JSON response from the DBMS is transformed to Wolfram Language data structures for further processing and visualization. It worths noticing the hypergraph representation which is the equivalent graphical form of Model&rsquo;s schema diagram in <a href="/en/post/20170412/#fig6"><strong>Fig.6</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <!-- raw HTML omitted -->
 
@@ -1089,7 +1091,7 @@
 
 <p>To maintain compatibility and interoperability with ontologies and other vocabularies for structured data on the Internet such as <a href="http://schema.org/">schema.org</a> we categorize <code>Entities</code> and <code>Attributes</code> of any <code>Model</code> according to OrientDB classes that typically form the hierarchical structure of <code>Entity Type System</code> and <code>Attribute Type System</code>.</p>
 <h3 id="entity-type-system-ets">Entity Type System (ETS)</h3>
-<p><code>Entity Types</code> usually refer to abstract entity types. They are used to create schema templates for popular entity types. Metadata are kept in DB_Registry and as usual they can be retrieved with <code>OR3getAnything</code> command (<a href="#code8"><strong>Code.8</strong></a>).</p>
+<p><code>Entity Types</code> usually refer to abstract entity types. They are used to create schema templates for popular entity types. Metadata are kept in DB_Registry and as usual they can be retrieved with <code>OR3getAnything</code> command (<a href="/en/post/20170412/#code8"><strong>Code.8</strong></a>).</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <!-- raw HTML omitted -->
 <p><strong>Code.8</strong> - Retrieval of Entity Types with <code>OR3getAnything</code> command from <code>DB_Registry</code>. For each <code>Entity Type</code> we can view its type and its super-type as well as the name and shortname that can be accessed.</p>
@@ -1099,9 +1101,9 @@
 
 
 
-<p>As an example consider the schema diagram of <a href="#fig6"><strong>Fig.6</strong></a> where we have three entity sub types, <strong><code>ORGANIZATION</code></strong>, <strong><code>PRODUCT</code></strong> and <strong><code>DATACATALOGUE</code></strong>  where we classify the <code>Supplier</code>, <code>Product</code> and <code>Catalogue</code> entity collections respectively (see <a href="#code7"><strong>Code.7</strong></a>, <em>Get Entities section</em>).</p>
+<p>As an example consider the schema diagram of <a href="/en/post/20170412/#fig6"><strong>Fig.6</strong></a> where we have three entity sub types, <strong><code>ORGANIZATION</code></strong>, <strong><code>PRODUCT</code></strong> and <strong><code>DATACATALOGUE</code></strong>  where we classify the <code>Supplier</code>, <code>Product</code> and <code>Catalogue</code> entity collections respectively (see <a href="/en/post/20170412/#code7"><strong>Code.7</strong></a>, <em>Get Entities section</em>).</p>
 <h3 id="attribute-type-system-ats">Attribute Type System (ATS)</h3>
-<p>Similarly, <code>Attribute Types</code> refer to abstract attribute types. Each attribute can participate in one or more <code>Entity Types</code> and that is how schema templates are formed. In our <code>Supplier-Product-Catalogue</code> data model, <a href="#fig6"><strong>Fig.6</strong></a>, attributes can be classified as <strong><code>CATEGORICAL</code></strong> (<code>Supplier_status</code>, <code>Part_color</code>, <code>Part_unit</code>, <code>Catalog_check</code>), <strong><code>IDENTITY</code></strong> (<code>Supplier_id</code>, <code>Part_id</code>), <strong><code>NAME</code></strong> (<code>Part_nameEN</code>, <code>Supplier_nameEN</code>, <code>Supplier_city</code>, <code>Supplier_country</code>), <strong><code>QUANTITY</code></strong> (<code>Part_weight</code>, <code>Catalog_price</code>), <strong><code>COUNT</code></strong> (<code>Catalog_total</code>), <strong><code>TIME</code></strong> (<code>Catalog_date</code>) and <strong><code>DESCRIPTION</code></strong> (<code>Supplier_address</code>). The following <code>OR3getAnything</code> command demonstrates how we can draw metadata about this type system (<a href="#code9"><strong>Code.9</strong></a>).</p>
+<p>Similarly, <code>Attribute Types</code> refer to abstract attribute types. Each attribute can participate in one or more <code>Entity Types</code> and that is how schema templates are formed. In our <code>Supplier-Product-Catalogue</code> data model, <a href="/en/post/20170412/#fig6"><strong>Fig.6</strong></a>, attributes can be classified as <strong><code>CATEGORICAL</code></strong> (<code>Supplier_status</code>, <code>Part_color</code>, <code>Part_unit</code>, <code>Catalog_check</code>), <strong><code>IDENTITY</code></strong> (<code>Supplier_id</code>, <code>Part_id</code>), <strong><code>NAME</code></strong> (<code>Part_nameEN</code>, <code>Supplier_nameEN</code>, <code>Supplier_city</code>, <code>Supplier_country</code>), <strong><code>QUANTITY</code></strong> (<code>Part_weight</code>, <code>Catalog_price</code>), <strong><code>COUNT</code></strong> (<code>Catalog_total</code>), <strong><code>TIME</code></strong> (<code>Catalog_date</code>) and <strong><code>DESCRIPTION</code></strong> (<code>Supplier_address</code>). The following <code>OR3getAnything</code> command demonstrates how we can draw metadata about this type system (<a href="/en/post/20170412/#code9"><strong>Code.9</strong></a>).</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <!-- raw HTML omitted -->
 <p><strong>Code.9</strong> - Retrieval of Attribute Types with <code>OR3getAnything</code> command from <code>DB_Registry</code>. For each <code>Attribute Type</code> we can view its type and its super-type as well as the name and shortname that can be accessed.</p>
@@ -1111,9 +1113,9 @@
 
 
 
-<p>Each of these attribute classes above (see <a href="#code7"><strong>Code.7</strong></a>, <em>Get Attributes section</em>) refers to an attribute collection of data items that has a value type. For example, <code>Supplier_status</code>, <code>Part_id</code>, <code>Catalog_total</code>, <code>Supplier_id</code> are of value type <strong>INT</strong> (integer) and <code>Part_weight</code> is of value type <strong>REA</strong> (real).</p>
+<p>Each of these attribute classes above (see <a href="/en/post/20170412/#code7"><strong>Code.7</strong></a>, <em>Get Attributes section</em>) refers to an attribute collection of data items that has a value type. For example, <code>Supplier_status</code>, <code>Part_id</code>, <code>Catalog_total</code>, <code>Supplier_id</code> are of value type <strong>INT</strong> (integer) and <code>Part_weight</code> is of value type <strong>REA</strong> (real).</p>
 <h3 id="items-type-system-its">Items Type System (ITS)</h3>
-<p>This is the system of items collections, i.e. where <code>Entity</code> and <code>Attribute</code> reference instances are stored (see <a href="/en/post/20170412/#instances-perspective">Instances Perspective</a>). In our demo these are represented with OrientDB classes, <a href="#fig7"><strong>Fig.7</strong></a>.</p>
+<p>This is the system of items collections, i.e. where <code>Entity</code> and <code>Attribute</code> reference instances are stored (see <a href="/en/post/20170412/#instances-perspective">Instances Perspective</a>). In our demo these are represented with OrientDB classes, <a href="/en/post/20170412/#fig7"><strong>Fig.7</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -1143,7 +1145,7 @@
 </p>
 <p>For simplicity&rsquo;s sake we have not constructed <code>ITS</code> separately but we used OrientDB classes instead to populate them with instances of <code>Entity</code> and <code>Attribute</code> types. Nevertheless the idea is the same, segregate the abstract concepts, <strong>TYPES</strong>, from the domain particular <strong>INSTANCES</strong>.</p>
 <h3 id="value-type-system-vts">Value Type System (VTS)</h3>
-<p>According to our Semiotic View (<a href="#fig3"><strong>Fig.3</strong></a>) key <strong>REFERENCES</strong> (RIDs) represent <strong>RESOURCES</strong> from <code>DBS</code>, <code>MTS</code>, <code>ETS</code>, <code>ATS</code>, <code>ITS</code>, <code>LTS</code>, <code>DSS</code> and encoded form of data, i.e. <strong>REALIZATION</strong> of data values. These values have domains that are based on OrientDB primitive data types, e.g. <em>Integer</em>, <em>Double</em>, <em>DateTime</em>, <em>String</em> and types  that are defined in the <strong>Value Type System</strong> (<code>VTS</code>),  <a href="#code10"><strong>Code.10</strong></a>.</p>
+<p>According to our Semiotic View (<a href="/en/post/20170412/#fig3"><strong>Fig.3</strong></a>) key <strong>REFERENCES</strong> (RIDs) represent <strong>RESOURCES</strong> from <code>DBS</code>, <code>MTS</code>, <code>ETS</code>, <code>ATS</code>, <code>ITS</code>, <code>LTS</code>, <code>DSS</code> and encoded form of data, i.e. <strong>REALIZATION</strong> of data values. These values have domains that are based on OrientDB primitive data types, e.g. <em>Integer</em>, <em>Double</em>, <em>DateTime</em>, <em>String</em> and types  that are defined in the <strong>Value Type System</strong> (<code>VTS</code>),  <a href="/en/post/20170412/#code10"><strong>Code.10</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <!-- raw HTML omitted -->
 <p><strong>Code.10</strong> - Retrieval of Value Types with <code>OR3getAnything</code> command from <code>DB_Registry</code>. For each <code>Attribute Type</code> we can view its RID, type, super-type, name, shortname and the <a href="http://orientdb.com/docs/master/Types.html">OrientDB data type</a> that is based on.</p>
@@ -1153,7 +1155,7 @@
 
 
 
-<p>Data values are stored together in ordered <a href="https://en.wikipedia.org/wiki/Set_(mathematics)">sets</a> based on <code>Value Types</code>, e.g. all integers in one set (<code>VTS_Integer</code>), identifiers in another (<code>VTS_Encoded</code>), and so on. This optimizes the access and management of values. Each <code>Item Collection</code> is a subset of values, i.e. a subset of a value set, <a href="#fig8"><strong>Fig.8</strong></a>.</p>
+<p>Data values are stored together in ordered <a href="https://en.wikipedia.org/wiki/Set_(mathematics)">sets</a> based on <code>Value Types</code>, e.g. all integers in one set (<code>VTS_Integer</code>), identifiers in another (<code>VTS_Encoded</code>), and so on. This optimizes the access and management of values. Each <code>Item Collection</code> is a subset of values, i.e. a subset of a value set, <a href="/en/post/20170412/#fig8"><strong>Fig.8</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -1176,13 +1178,13 @@
 
 </figure>
 </p>
-<p>Fig.8 - A subset of the <code>VTS_Integer</code> value set. This record set is obtained with OrientDB SQL select command. Each one of these records is pointed from a <code>datum</code> item of the <code>Supplier_id</code> collection (see <a href="#fig7"><strong>Fig.7</strong></a>) using the <a href="http://orientdb.com/docs/master/Types.html">OrientDB Link type</a>.</p>
+<p>Fig.8 - A subset of the <code>VTS_Integer</code> value set. This record set is obtained with OrientDB SQL select command. Each one of these records is pointed from a <code>datum</code> item of the <code>Supplier_id</code> collection (see <a href="/en/post/20170412/#fig7"><strong>Fig.7</strong></a>) using the <a href="http://orientdb.com/docs/master/Types.html">OrientDB Link type</a>.</p>
 <p>Elements of both <code>Value Sets</code> and <code>Item Collections</code> are unique, i.e. a single instance of each one. In OrientDB this is implemented by setting <a href="http://orientdb.com/docs/master/SB-Tree-index.html">SB-Tree index with UNIQUE keys</a> in both <code>Value set</code> and <code>Item Collection</code>.</p>
 <h3 id="data-sources-type-system-dss">Data Sources Type System (DSS)</h3>
-<p>Yet there is another type system in <strong>R3DM/S3DM</strong> framework that is reserved for the input of data sets, the <code>Data Sources Type System</code> (DSS). A <a href="https://en.wikipedia.org/wiki/Data_set"><code>Data Set</code></a> is considered to be a number of related collections that usually correspond to the contents of <a href="https://en.wikipedia.org/wiki/Flat_file_database">flat files</a> or database tables. During the process of adding a <code>Data Set</code>we do not store the values but only the structure and properties, <a href="#code11"><strong>Code.11</strong></a>.</p>
+<p>Yet there is another type system in <strong>R3DM/S3DM</strong> framework that is reserved for the input of data sets, the <code>Data Sources Type System</code> (DSS). A <a href="https://en.wikipedia.org/wiki/Data_set"><code>Data Set</code></a> is considered to be a number of related collections that usually correspond to the contents of <a href="https://en.wikipedia.org/wiki/Flat_file_database">flat files</a> or database tables. During the process of adding a <code>Data Set</code>we do not store the values but only the structure and properties, <a href="/en/post/20170412/#code11"><strong>Code.11</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <!-- raw HTML omitted -->
-<p><strong>Code.11</strong> - Demonstration of the <code>OR3addDataSet</code> command with three parameters, the name of the new DataSet that will be created, the working path and the filenames of the flat files to inspect. This function call will instruct OrientDB to create a new class to store information about the structure of these flat files. These metadata will be available for retrieval with <code>OR3getAnything</code> command (<a href="#code12"><strong>Code.12</strong></a>).</p>
+<p><strong>Code.11</strong> - Demonstration of the <code>OR3addDataSet</code> command with three parameters, the name of the new DataSet that will be created, the working path and the filenames of the flat files to inspect. This function call will instruct OrientDB to create a new class to store information about the structure of these flat files. These metadata will be available for retrieval with <code>OR3getAnything</code> command (<a href="/en/post/20170412/#code12"><strong>Code.12</strong></a>).</p>
 
 
 <button class="btn  btn-success" type="button"  onclick="location.href='http:\/\/test.healis.eu\/post000107\/addDataSet'" > View Code.11 </button>
@@ -1199,7 +1201,7 @@
 
 
 <h3 id="link-type-system-lts">Link Type System (LTS)</h3>
-<p>Last but not least the aforementioned <a href="/en/post/20170412/#network-graph-view"><strong>symmetric and typed binary relation</strong></a> is a bidirectional link, i.e. <code>hyperlink</code>, that is used to connect a <code>hyperatom</code> to a <code>hyperbond</code> to form <a href="/en/post/20170412/#conceptual-perspective"><code>Associations</code></a>. We have two kinds of <code>hyperlinks</code>, directed and undirected. Directed links are used to form directed associations of a specific type, e.g. <code>Entity</code>-<code>Attribute</code>, <code>Whole</code>-<code>Part</code>, <code>Type</code>-<code>Instance</code> <a href="#fig9"><strong>Fig.9</strong></a>. Depending on which direction we traverse the link, outgoing or incoming we have two different labels to assist us in reading and understanding the semantics of the binary relation. In all cases metadata about the <code>Link Type System</code> (LTS) are currently stored in <code>DB_Registry</code> and as usual we can retrieve link types with <code>OR3getAnything</code> command, <a href="#code13"><strong>Code.13</strong></a>.</p>
+<p>Last but not least the aforementioned <a href="/en/post/20170412/#network-graph-view"><strong>symmetric and typed binary relation</strong></a> is a bidirectional link, i.e. <code>hyperlink</code>, that is used to connect a <code>hyperatom</code> to a <code>hyperbond</code> to form <a href="/en/post/20170412/#conceptual-perspective"><code>Associations</code></a>. We have two kinds of <code>hyperlinks</code>, directed and undirected. Directed links are used to form directed associations of a specific type, e.g. <code>Entity</code>-<code>Attribute</code>, <code>Whole</code>-<code>Part</code>, <code>Type</code>-<code>Instance</code> <a href="/en/post/20170412/#fig9"><strong>Fig.9</strong></a>. Depending on which direction we traverse the link, outgoing or incoming we have two different labels to assist us in reading and understanding the semantics of the binary relation. In all cases metadata about the <code>Link Type System</code> (LTS) are currently stored in <code>DB_Registry</code> and as usual we can retrieve link types with <code>OR3getAnything</code> command, <a href="/en/post/20170412/#code13"><strong>Code.13</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <!-- raw HTML omitted -->
 <p><strong>Code.13</strong> - Retrieval of Link Types with <code>OR3getAnything</code> command from <code>DB_Registry</code>. For each <code>ASSOCIATION</code> type we can view its supertype, name, short name, and the labels for outgoing or incoming traversal direction.</p>
@@ -1237,88 +1239,88 @@
 </figure>
 </p>
 <h2 id="functional-operations">Functional Operations</h2>
-<p>The <strong>OrientR3S3 Package</strong> extends <a href="%7B%7Bbase_path%7D%7D/dbapi_project/orientdb-package/">OrientDB RESTful API package</a> in Mathematica with a powerful functional set of commands that cover all operations in <strong>R3DM/S3DM</strong>. These operations fall in four categories, <strong>get</strong>, <strong>update</strong>, <strong>delete</strong>, <strong>add</strong> (<a href="%7B%7Bbase_path%7D%7D/dbapi_project/guda">GUDA</a>). The main idea here is to define standard <a href="http://reference.wolfram.com/language/tutorial/SettingUpFunctionsWithOptionalArguments.html"><strong>named optional arguments</strong></a> for any of these functional categories and then allow their values, default or mandatory, to be given using Wolfram Language transformation rules. We have already started viewing examples of this functional approach to data management with the <code>OR3getAnything</code> command, <a href="#code2"><strong>Code.2</strong></a>, <a href="#code4"><strong>Code.4</strong></a>, <a href="#code5"><strong>Code.5</strong></a>, <a href="#code7"><strong>Code.7</strong></a>, <a href="#code8"><strong>Code.8</strong></a>, <a href="#code9"><strong>Code.9</strong></a>, <a href="#code10"><strong>Code.10</strong></a>, <a href="#code12"><strong>Code.12</strong></a>, <a href="#code13"><strong>Code.13</strong></a>.</p>
+<p>The <strong>OrientR3S3 Package</strong> extends <a href="%7B%7Bbase_path%7D%7D/dbapi_project/orientdb-package/">OrientDB RESTful API package</a> in Mathematica with a powerful functional set of commands that cover all operations in <strong>R3DM/S3DM</strong>. These operations fall in four categories, <strong>get</strong>, <strong>update</strong>, <strong>delete</strong>, <strong>add</strong> (<a href="%7B%7Bbase_path%7D%7D/dbapi_project/guda">GUDA</a>). The main idea here is to define standard <a href="http://reference.wolfram.com/language/tutorial/SettingUpFunctionsWithOptionalArguments.html"><strong>named optional arguments</strong></a> for any of these functional categories and then allow their values, default or mandatory, to be given using Wolfram Language transformation rules. We have already started viewing examples of this functional approach to data management with the <code>OR3getAnything</code> command, <a href="/en/post/20170412/#code2"><strong>Code.2</strong></a>, <a href="/en/post/20170412/#code4"><strong>Code.4</strong></a>, <a href="/en/post/20170412/#code5"><strong>Code.5</strong></a>, <a href="/en/post/20170412/#code7"><strong>Code.7</strong></a>, <a href="/en/post/20170412/#code8"><strong>Code.8</strong></a>, <a href="/en/post/20170412/#code9"><strong>Code.9</strong></a>, <a href="/en/post/20170412/#code10"><strong>Code.10</strong></a>, <a href="/en/post/20170412/#code12"><strong>Code.12</strong></a>, <a href="/en/post/20170412/#code13"><strong>Code.13</strong></a>.</p>
 <h3 id="get-anything">Get Anything</h3>
-<p>By varying the named optional arguments we pass to <code>OR3getAnything</code> public function of the <strong>OrientR3S3 Package</strong>, <a href="#code14"><strong>Code.14</strong></a>, we can retrieve or search for anything in <strong>R3DM/S3DM</strong> and we can also ask to <strong>return</strong> the result in a specified format e.g. <code>Dataset</code>, <code>References</code>, <code>Rules</code>, and <code>Associations</code>.</p>
+<p>By varying the named optional arguments we pass to <code>OR3getAnything</code> public function of the <strong>OrientR3S3 Package</strong>, <a href="/en/post/20170412/#code14"><strong>Code.14</strong></a>, we can retrieve or search for anything in <strong>R3DM/S3DM</strong> and we can also ask to <strong>return</strong> the result in a specified format e.g. <code>Dataset</code>, <code>References</code>, <code>Rules</code>, and <code>Associations</code>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
-(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Search</span> <span style="color:#66d9ef">Operations</span> <span style="color:#f92672">*</span>)
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:02&#34;</span>, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;SPC&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:01&#34;</span>, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;prtName&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:02&#34;</span>, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;&#39;Acme Widget Washer&#39;&#34;</span><span style="color:#f92672">]</span>
-
-(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Type</span> <span style="color:#66d9ef">Systems</span> <span style="color:#66d9ef">Operations</span> <span style="color:#f92672">*</span>)
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:19&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;SYSTEM&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span>, debug<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span>, check<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:19&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;PRIMITIVE&#34;</span>,   <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span>, debug<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:19&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;ASSOCIATION&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:19&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;VALUE&#34;</span>,       <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
-
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:02&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;MODEL&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:02&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;ENTITY&#34;</span>,    <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:02&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;ATTRIBUTE&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
-
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:01&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;DATASET&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:01&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;TABLE&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:01&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;COLUMN&#34;</span>,    <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span><span style="color:#f92672">]</span>
-
-(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Mapping</span> <span style="color:#66d9ef">Operations</span> <span style="color:#f92672">*</span>)
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>,         get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Mapping&#34;</span>,    <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Rules&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>,         get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Mapping&#34;</span>,    <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Bigraph&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>supplierMRules, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Mapping&#34;</span>,    <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;AssociationWithValueTypes&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>supplierMRules, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Mapping&#34;</span>,    <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;AssociationWithNames&#34;</span><span style="color:#f92672">]</span>
-
-(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Items</span> <span style="color:#66d9ef">Operations</span> <span style="color:#f92672">*</span>)
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:1&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Fields&#34;</span><span style="color:#f92672">]</span>
-
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:1&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Entities&#34;</span>,   <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Count&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:5&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Entities&#34;</span>,   <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Attributes&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Model&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Names&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Attributes&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;RulesWithNames&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Attributes&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Rules&#34;</span><span style="color:#f92672">]</span>
-
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Parts&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Names&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Parts&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Count&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Parts&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:5&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Whole&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:1&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Parts&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Rules&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:1&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Parts&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;RulesWithNames&#34;</span><span style="color:#f92672">]</span>
-
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:3&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Count&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:3&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Rules&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:3&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span>,    values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span>,       values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span>,       values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span>, filter<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;58:0&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;FieldsDataset&#34;</span>, values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
-
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:3&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Collections&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span>, values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
-
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:11&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;DataItems&#34;</span>,   <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span>, values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
-
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;60:7&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Nexuses&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Count&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;60:7&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Nexuses&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;60:7&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Nexuses&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Rules&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;60:7&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Nexuses&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Association&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;60:7&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Nexuses&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;AssociationWithFields&#34;</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;60:7&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Nexuses&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
-</code></pre></div><p><strong>Code.14</strong> - Examples of the <code>OR3getAnything</code> command from <strong>OrientR3S3 Wolfram Language package</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Search</span> <span style="color:#66d9ef">Operations</span> <span style="color:#f92672">*</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:02&#34;</span>, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;SPC&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:01&#34;</span>, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;prtName&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:02&#34;</span>, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;&#39;Acme Widget Washer&#39;&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Type</span> <span style="color:#66d9ef">Systems</span> <span style="color:#66d9ef">Operations</span> <span style="color:#f92672">*</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:19&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;SYSTEM&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span>, debug<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span>, check<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:19&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;PRIMITIVE&#34;</span>,   <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span>, debug<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:19&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;ASSOCIATION&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:19&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;VALUE&#34;</span>,       <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:02&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;MODEL&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:02&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;ENTITY&#34;</span>,    <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:02&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;ATTRIBUTE&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:01&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;DATASET&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:01&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;TABLE&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;25:01&#34;</span>, type<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;COLUMN&#34;</span>,    <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Mapping</span> <span style="color:#66d9ef">Operations</span> <span style="color:#f92672">*</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>,         get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Mapping&#34;</span>,    <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Rules&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>,         get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Mapping&#34;</span>,    <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Bigraph&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>supplierMRules, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Mapping&#34;</span>,    <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;AssociationWithValueTypes&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>supplierMRules, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Mapping&#34;</span>,    <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;AssociationWithNames&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Items</span> <span style="color:#66d9ef">Operations</span> <span style="color:#f92672">*</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:1&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Fields&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:1&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Entities&#34;</span>,   <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Count&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:5&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Entities&#34;</span>,   <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Attributes&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Model&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Names&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Attributes&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;RulesWithNames&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Attributes&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Rules&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Parts&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Names&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Parts&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Count&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Parts&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:5&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Whole&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:1&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Parts&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Rules&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;70:1&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Parts&#34;</span>,      <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;RulesWithNames&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:3&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Count&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:3&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Rules&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:3&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span>,    values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span>,       values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span>,       values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span>, filter<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;58:0&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:2&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;FieldsDataset&#34;</span>, values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:3&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Collections&#34;</span>, <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span>, values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;50:11&#34;</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;DataItems&#34;</span>,   <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span>, values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;60:7&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Nexuses&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Count&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;60:7&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Nexuses&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;References&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;60:7&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Nexuses&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Rules&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;60:7&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Nexuses&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Association&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;60:7&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Nexuses&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;AssociationWithFields&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;60:7&#34;</span>,  get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Nexuses&#34;</span>,     <span style="color:#66d9ef">return</span><span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Dataset&#34;</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><p><strong>Code.14</strong> - Examples of the <code>OR3getAnything</code> command from <strong>OrientR3S3 Wolfram Language package</strong>.</p>
 <h3 id="add-anything">Add anything</h3>
 <p>We have not reached the development phase of integrating all <strong>add</strong> operation in an <code>OR3addAnything</code> function of <strong>OrientR3S3 Package</strong>. Instead of this unified function we have defined many others such as:</p>
 <ol>
 <li>
-<p><code>OR3addEnvironment</code> <em>[ envstruct, envname, usrname, usrpwd ]</em> - <a href="#code13">Code13</a></p>
+<p><code>OR3addEnvironment</code> <em>[ envstruct, envname, usrname, usrpwd ]</em> - <a href="/en/post/20170412/#code13">Code13</a></p>
 </li>
 <li>
-<p><code>OR3addDomainModel</code> <em>[ jsonFileName]</em> - <a href="#code6">Code6</a></p>
+<p><code>OR3addDomainModel</code> <em>[ jsonFileName]</em> - <a href="/en/post/20170412/#code6">Code6</a></p>
 </li>
 <li>
-<p><code>OR3addDataSet</code> <em>[ datasetName, dataSetPath, fileNames]</em> - <a href="#code11">Code11</a></p>
+<p><code>OR3addDataSet</code> <em>[ datasetName, dataSetPath, fileNames]</em> - <a href="/en/post/20170412/#code11">Code11</a></p>
 <p>Thus, we have seen how we can add an <a href="/en/post/20170412/#environment-type-systems">Environment Type System</a>, a <a href="/en/post/20170412/#model-type-system-mts">Domain Model</a> and a <a href="/en/post/20170412/#data-sources-type-system-dss">Data Source</a>. The last two and those that follow are repetitive actions in data analytics lifecycle, i.e. <strong>data sources import</strong>, <strong>modeling</strong>, <strong>mapping</strong>, <strong>ingestion</strong>,  [<strong>filtering and aggregation</strong>][].</p>
 </li>
 <li>
-<p><code>OR3addMapping</code> <em>[columns, attributes, mappingRules]</em> - <a href="#code15">Code15</a></p>
+<p><code>OR3addMapping</code> <em>[columns, attributes, mappingRules]</em> - <a href="/en/post/20170412/#code15">Code15</a></p>
 <p>This is a problem of matching the Columns of a Table or in general fields of a data set with the Attributes of an Entity in a data model.</p>
-<p>We can have fields from multiple data sources that are mapped in the same model. The following code section <a href="#code15">Code15</a> demonstrates how we perform the mapping of the <code>Columns</code> from the three <code>Tables</code> of a data set that we added in <a href="#code12">Code12</a>.</p>
+<p>We can have fields from multiple data sources that are mapped in the same model. The following code section <a href="/en/post/20170412/#code15">Code15</a> demonstrates how we perform the mapping of the <code>Columns</code> from the three <code>Tables</code> of a data set that we added in <a href="/en/post/20170412/#code12">Code12</a>.</p>
 </li>
 </ol>
 <p><strong>Code.15</strong> demonstrates the mapping of data fields onto <code>Attributes</code> in three steps. <strong>Step1:</strong> retrieve metadata from the <code>Data Set</code> and the <code>Model</code>, <strong>Step2:</strong> specify the mapping rules, <strong>Step3:</strong> store the mapping.</p>
@@ -1330,11 +1332,11 @@
 
 
 
-<p>Mapping is necessary in order to proceed with the data ingestion. This allows seamless integration of data from multiple data sources on the model we design in <strong>R3DM/S3DM</strong>. The following three <strong>add</strong> operations are used in populating <code>Entity</code>, <code>Attribute</code> items collections with reference instances and the <code>Value Type System</code> with data values. Records, i.e. tuples, are assimilated by creating associations (<a href="#code16">Code16</a>).</p>
+<p>Mapping is necessary in order to proceed with the data ingestion. This allows seamless integration of data from multiple data sources on the model we design in <strong>R3DM/S3DM</strong>. The following three <strong>add</strong> operations are used in populating <code>Entity</code>, <code>Attribute</code> items collections with reference instances and the <code>Value Type System</code> with data values. Records, i.e. tuples, are assimilated by creating associations (<a href="/en/post/20170412/#code16">Code16</a>).</p>
 <ol start="5">
-<li><code>OR3addValue</code> <em>[className, propertyValue, propertyName]</em> - <a href="#code16">Code16</a></li>
-<li><code>OR3addNexus</code> <em>[className]</em> - <a href="#code16">Code16</a></li>
-<li><code>OR3addEdge</code>  <em>[edgeClass, fromItem, toItem]</em> - <a href="#code16">Code16</a></li>
+<li><code>OR3addValue</code> <em>[className, propertyValue, propertyName]</em> - <a href="/en/post/20170412/#code16">Code16</a></li>
+<li><code>OR3addNexus</code> <em>[className]</em> - <a href="/en/post/20170412/#code16">Code16</a></li>
+<li><code>OR3addEdge</code>  <em>[edgeClass, fromItem, toItem]</em> - <a href="/en/post/20170412/#code16">Code16</a></li>
 </ol>
 <p><strong>Code.16</strong> demonstrates the ingestion of three data sources (TSV files). First we read headers and body from each file in memory. Then we <strong>get</strong> the mapping of <code>Columns</code> from the stored <code>Dataset</code> onto the <code>Attributes</code> of each <code>Entity</code> and finally we <strong>add</strong> values, collections items and associations.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
@@ -1351,40 +1353,40 @@
 {: .btn .btn&ndash;info}</p>
 <p>This filtering operation is similar to <a href="http://www.qlik.com/us/products/qlikview">QlikView</a> and we will make a contrast with the same data set and example case we used in the <a href="/en/post/20170211/#explorefilter-data-via-selections">5th article of this series</a>.</p>
 <h3 id="case1-condition-and-sorting-order">Case1: Condition and Sorting Order</h3>
-<p>In this case we are looking for the <code>Supplier</code> that has the minimum <code>Catalog</code> <code>Price</code> for a <code>Red Fire Hydrant Cap</code> and we want to retrieve <em>supID</em>, <em>supName</em>, <em>supCity</em>, <em>supCountry</em>, <em>catPrice</em>, <em>catQuantity</em>, <em>prtID</em>, <em>prtName</em>, and <em>prtColor</em>. The following <a href="#code17">SQL SELECT query</a> and <a href="#code18">SPARQL query</a> retrieve a result set using the relational or the RDF data model respectively.</p>
+<p>In this case we are looking for the <code>Supplier</code> that has the minimum <code>Catalog</code> <code>Price</code> for a <code>Red Fire Hydrant Cap</code> and we want to retrieve <em>supID</em>, <em>supName</em>, <em>supCity</em>, <em>supCountry</em>, <em>catPrice</em>, <em>catQuantity</em>, <em>prtID</em>, <em>prtName</em>, and <em>prtColor</em>. The following <a href="/en/post/20170412/#code17">SQL SELECT query</a> and <a href="/en/post/20170412/#code18">SPARQL query</a> retrieve a result set using the relational or the RDF data model respectively.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 <strong>Code.17</strong> - SQL query: sort <code>Catalog</code> prices for a <code>Red Fire Hydrant Cap</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> suppliers.sid, suppliers.sname, suppliers.scountry,
-       <span style="color:#66d9ef">catalog</span>.catcost, <span style="color:#66d9ef">catalog</span>.catqnt,
-       parts.pid, parts.pname, parts.pcolor
-<span style="color:#66d9ef">FROM</span>   suppliers
-       <span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> (parts
-                   <span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> [<span style="color:#66d9ef">catalog</span>]
-                           <span style="color:#66d9ef">ON</span> parts.pid <span style="color:#f92672">=</span> <span style="color:#66d9ef">catalog</span>.catpid)
-               <span style="color:#66d9ef">ON</span> suppliers.sid <span style="color:#f92672">=</span> <span style="color:#66d9ef">catalog</span>.catsid
-<span style="color:#66d9ef">WHERE</span>  (( ( parts.pid ) <span style="color:#f92672">=</span> <span style="color:#ae81ff">998</span> ))
-<span style="color:#66d9ef">ORDER</span>  <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">catalog</span>.catcost;
-</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> suppliers.sid, suppliers.sname, suppliers.scountry,
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">catalog</span>.catcost, <span style="color:#66d9ef">catalog</span>.catqnt,
+</span></span><span style="display:flex;"><span>       parts.pid, parts.pname, parts.pcolor
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span>   suppliers
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> (parts
+</span></span><span style="display:flex;"><span>                   <span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> [<span style="color:#66d9ef">catalog</span>]
+</span></span><span style="display:flex;"><span>                           <span style="color:#66d9ef">ON</span> parts.pid <span style="color:#f92672">=</span> <span style="color:#66d9ef">catalog</span>.catpid)
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">ON</span> suppliers.sid <span style="color:#f92672">=</span> <span style="color:#66d9ef">catalog</span>.catsid
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span>  (( ( parts.pid ) <span style="color:#f92672">=</span> <span style="color:#ae81ff">998</span> ))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ORDER</span>  <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">catalog</span>.catcost;
+</span></span></code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 <strong>Code.18</strong> - SPARQL query: sort <code>Catalog</code> prices for a <code>Red Fire Hydrant Cap</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">?</span>sup <span style="color:#f92672">?</span>supName <span style="color:#f92672">?</span>supCountry
-       <span style="color:#f92672">?</span>catPrice <span style="color:#f92672">?</span>catQuantity
-       <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>prtName <span style="color:#f92672">?</span>prtColor <span style="color:#f92672">?</span>cat <span style="color:#66d9ef">where</span>
-<span style="color:#960050;background-color:#1e0010">{</span>
-    <span style="color:#f92672">?</span>prt dc:identifier <span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">^^</span>xsd:int .
-    <span style="color:#f92672">?</span>prt rdf:label <span style="color:#f92672">?</span>prtName .
-    <span style="color:#f92672">?</span>prt <span style="color:#66d9ef">schema</span>:color <span style="color:#f92672">?</span>prtColor .            
-
-    <span style="color:#f92672">?</span>cat wd:hasPart <span style="color:#f92672">?</span>prt .
-    <span style="color:#f92672">?</span>cat <span style="color:#66d9ef">schema</span>:cost <span style="color:#f92672">?</span>catPrice
-    OPTIONAL <span style="color:#960050;background-color:#1e0010">{</span><span style="color:#f92672">?</span>cat <span style="color:#66d9ef">schema</span>:quantity <span style="color:#f92672">?</span>catQuantity .<span style="color:#960050;background-color:#1e0010">}</span>
-
-    <span style="color:#f92672">?</span>cat wd:hasVendor <span style="color:#f92672">?</span>sup .
-    <span style="color:#f92672">?</span>sup rdf:label <span style="color:#f92672">?</span>supName .
-    <span style="color:#f92672">?</span>sup <span style="color:#66d9ef">schema</span>:country <span style="color:#f92672">?</span>supCountry
-<span style="color:#960050;background-color:#1e0010">}</span>
-<span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">ASC</span>(<span style="color:#f92672">?</span>catPrice)
-</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
-<strong>Code. 19</strong> - We have coded two solutions for the testing case using our <code>DBAPI</code> <code>OrientR3S3</code> package. In the first one (see condensed form in <a href="#code20">Code20</a>) <code>Catalog Tuples</code> are filtered then sorted with a single command ! The first tuple in the resulting set is the one we are looking for. Then we use filtering on <code>Part</code> and <code>Supplier</code> sets to obtain other information. Finally we project and we <code>Join</code> all three tuples deleting any duplicates. In the second solution we start by filtering <code>Catalog</code> collections, then we find the <code>Datum</code> with the minimum <code>Catalog price</code>. Then we filter <code>Catalog</code>, <code>Supplier</code> and <code>Part</code> tuples, we project and join the final tuples.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">?</span>sup <span style="color:#f92672">?</span>supName <span style="color:#f92672">?</span>supCountry
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">?</span>catPrice <span style="color:#f92672">?</span>catQuantity
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>prtName <span style="color:#f92672">?</span>prtColor <span style="color:#f92672">?</span>cat <span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>prt dc:identifier <span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">^^</span>xsd:int .
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>prt rdf:label <span style="color:#f92672">?</span>prtName .
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>prt <span style="color:#66d9ef">schema</span>:color <span style="color:#f92672">?</span>prtColor .            
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>cat wd:hasPart <span style="color:#f92672">?</span>prt .
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>cat <span style="color:#66d9ef">schema</span>:cost <span style="color:#f92672">?</span>catPrice
+</span></span><span style="display:flex;"><span>    OPTIONAL <span style="color:#960050;background-color:#1e0010">{</span><span style="color:#f92672">?</span>cat <span style="color:#66d9ef">schema</span>:quantity <span style="color:#f92672">?</span>catQuantity .<span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>cat wd:hasVendor <span style="color:#f92672">?</span>sup .
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>sup rdf:label <span style="color:#f92672">?</span>supName .
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>sup <span style="color:#66d9ef">schema</span>:country <span style="color:#f92672">?</span>supCountry
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">ASC</span>(<span style="color:#f92672">?</span>catPrice)
+</span></span></code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<strong>Code. 19</strong> - We have coded two solutions for the testing case using our <code>DBAPI</code> <code>OrientR3S3</code> package. In the first one (see condensed form in <a href="/en/post/20170412/#code20">Code20</a>) <code>Catalog Tuples</code> are filtered then sorted with a single command ! The first tuple in the resulting set is the one we are looking for. Then we use filtering on <code>Part</code> and <code>Supplier</code> sets to obtain other information. Finally we project and we <code>Join</code> all three tuples deleting any duplicates. In the second solution we start by filtering <code>Catalog</code> collections, then we find the <code>Datum</code> with the minimum <code>Catalog price</code>. Then we filter <code>Catalog</code>, <code>Supplier</code> and <code>Part</code> tuples, we project and join the final tuples.</p>
 <!-- raw HTML omitted -->
 
 
@@ -1393,24 +1395,24 @@
 
 
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
-<strong>Code.20</strong> R3DM/S3DM Filtering. This is the condensed version of <a href="#code19">Code.19</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">    {<span style="color:#66d9ef">SUP</span>, <span style="color:#66d9ef">PRT</span>, <span style="color:#66d9ef">CAT</span>} <span style="color:#f92672">=</span> <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>spcModel, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Entities&#34;</span><span style="color:#f92672">]</span>
-    prtID <span style="color:#f92672">=</span>           <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>spcModel, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;prtID&#34;</span><span style="color:#f92672">][[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>
-    fval1 <span style="color:#f92672">=</span>           <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>prtID, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">][[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>
-
-
-    minCatPriceTuple <span style="color:#f92672">=</span> <span style="color:#66d9ef">SortBy</span><span style="color:#f92672">[</span>
-             <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">CAT</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, filter<span style="color:#f92672">-&gt;</span>fval1<span style="color:#f92672">]</span>, <span style="color:#66d9ef">OR3getValue</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#75715e">#[[3]] &amp;][[1]]</span>
-
-    catTuple <span style="color:#f92672">=</span> minCatPriceTuple <span style="color:#e6db74">//</span> <span style="color:#66d9ef">OR3getValue</span>
-    fval2    <span style="color:#f92672">=</span> minCatPriceTuple<span style="color:#f92672">[[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>
-
-    supTuple<span style="color:#f92672">=</span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SUP</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, filter<span style="color:#f92672">-&gt;</span>fval2, values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span>,<span style="color:#f92672">][[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>
-
-    prtTuple<span style="color:#f92672">=</span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PRT</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, filter<span style="color:#f92672">-&gt;</span>fval1, values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span>,<span style="color:#f92672">][[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>
-
-    prtTuple<span style="color:#f92672">[[</span><span style="color:#ae81ff">1</span> ;; <span style="color:#ae81ff">3</span><span style="color:#f92672">]]~</span><span style="color:#66d9ef">Join</span><span style="color:#f92672">~</span>catTuple<span style="color:#f92672">[[</span><span style="color:#ae81ff">3</span> ;; <span style="color:#ae81ff">4</span><span style="color:#f92672">]]~</span><span style="color:#66d9ef">Join</span><span style="color:#f92672">~</span>supTuple<span style="color:#f92672">[[</span>{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>}<span style="color:#f92672">]]</span> <span style="color:#e6db74">//</span> <span style="color:#66d9ef">DeleteDuplicates</span>
-</code></pre></div><h3 id="case2-condition-and-cleansing">Case2: Condition and Cleansing</h3>
+<strong>Code.20</strong> R3DM/S3DM Filtering. This is the condensed version of <a href="/en/post/20170412/#code19">Code.19</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>    {<span style="color:#66d9ef">SUP</span>, <span style="color:#66d9ef">PRT</span>, <span style="color:#66d9ef">CAT</span>} <span style="color:#f92672">=</span> <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>spcModel, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Entities&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>    prtID <span style="color:#f92672">=</span>           <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>spcModel, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;prtID&#34;</span><span style="color:#f92672">][[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>    fval1 <span style="color:#f92672">=</span>           <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span>prtID, find<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">][[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    minCatPriceTuple <span style="color:#f92672">=</span> <span style="color:#66d9ef">SortBy</span><span style="color:#f92672">[</span>
+</span></span><span style="display:flex;"><span>             <span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">CAT</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, filter<span style="color:#f92672">-&gt;</span>fval1<span style="color:#f92672">]</span>, <span style="color:#66d9ef">OR3getValue</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#75715e">#[[3]] &amp;][[1]]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    catTuple <span style="color:#f92672">=</span> minCatPriceTuple <span style="color:#e6db74">//</span> <span style="color:#66d9ef">OR3getValue</span>
+</span></span><span style="display:flex;"><span>    fval2    <span style="color:#f92672">=</span> minCatPriceTuple<span style="color:#f92672">[[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    supTuple<span style="color:#f92672">=</span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SUP</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, filter<span style="color:#f92672">-&gt;</span>fval2, values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span>,<span style="color:#f92672">][[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    prtTuple<span style="color:#f92672">=</span><span style="color:#66d9ef">OR3getAnything</span><span style="color:#f92672">[</span>from<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PRT</span>, get<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Tuples&#34;</span>, filter<span style="color:#f92672">-&gt;</span>fval1, values<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span>,<span style="color:#f92672">][[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    prtTuple<span style="color:#f92672">[[</span><span style="color:#ae81ff">1</span> ;; <span style="color:#ae81ff">3</span><span style="color:#f92672">]]~</span><span style="color:#66d9ef">Join</span><span style="color:#f92672">~</span>catTuple<span style="color:#f92672">[[</span><span style="color:#ae81ff">3</span> ;; <span style="color:#ae81ff">4</span><span style="color:#f92672">]]~</span><span style="color:#66d9ef">Join</span><span style="color:#f92672">~</span>supTuple<span style="color:#f92672">[[</span>{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>}<span style="color:#f92672">]]</span> <span style="color:#e6db74">//</span> <span style="color:#66d9ef">DeleteDuplicates</span>
+</span></span></code></pre></div><h3 id="case2-condition-and-cleansing">Case2: Condition and Cleansing</h3>
 <p>This is a case of detecting and correcting an inaccurate value from a record set that is returned by specifying a condition.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 <strong>Code. 21</strong> - This is an example of cleansing in two phases, detection and correction. Here we can spot the error by filtering collection sets with the condition <code>prtName=Acme Widget Washer</code>. There are two values in <code>prtUnit</code> collection <code>kg</code> and <code>kb</code>. The second one should be <code>kg</code>, it is a typographical error. We can fix this by deleting the <code>hyperlink</code> that connects the <code>nexus 52:3</code> (<code>red hyperbond</code>), with the <code>datum kb</code> (<code>green hyperatom</code>), and then adding a new <code>hyperlink</code> from <code>52:3</code> to <code>datum 64:1</code>.</p>
@@ -1462,14 +1464,14 @@
 </ul>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>© Athanassios I. Hatzis, March 2017&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
     </div>
 
@@ -1481,7 +1483,7 @@
   
   <a class="badge badge-light" href="/en/tags/topic_map/">Topic_map</a>
   
-  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  <a class="badge badge-light" href="">Sign_(semiotics)</a>
   
   <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
   
@@ -1543,7 +1545,7 @@
     
 
     <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu/">Athanassios I. Hatzis, PhD</a></h5>
       <h6 class="card-subtitle">Software Engineer - Researcher, Consultant, Independent Contractor</h6>
       
       <ul class="network-icon" aria-hidden="true">
@@ -1816,7 +1818,7 @@
     
     
     
-    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
+    <script src="/js/academia.min.1def94b00314e302593e38a8ce0e471f.js"></script>
 
     
 
@@ -1835,7 +1837,7 @@
       <div class="col-md-6">
         
         <p>
-          © HEALIS - Athanassios I. Hatzis, 2024 &middot; 
+          © HEALIS - Athanassios I. Hatzis, 2025 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.

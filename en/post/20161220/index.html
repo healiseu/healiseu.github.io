@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.92.2" />
+  <meta name="generator" content="Hugo 0.123.7">
 
   
 
@@ -81,7 +81,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.f061a21f63bf4b7a5a9dd13669fcb02e.css">
+  <link rel="stylesheet" href="/css/academia.min.dbe83bbf6477781bec4f66e695a12d6d.css">
 
   
 
@@ -470,7 +470,7 @@
 
 
 <meta content="2016-12-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2016-12-20 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -493,6 +493,8 @@
   <span class="article-date">
     
     
+      
+          Last updated on
       
     
     <time>2016-12-20</time>
@@ -693,47 +695,47 @@
 <h2 id="introduction-to-rdf">Introduction to RDF</h2>
 <p>In the previous post, <a href="/en/post/20160913/">Part-3</a>, of this series we explored the Property Graph data model. It is now time to write about another Graph data model with a long history behind it, the Resource-Description-Framework (<a href="https://en.wikipedia.org/wiki/Resource_Description_Framework">RDF</a>). We will see how we can define an association in RDF and what are the differences with other data models that we analyzed in previous posts of our series.</p>
 <p>RDF is a graph-based data model that has been designed to represent information as a <strong>labeled directed graph</strong>. In RDF, a description of a resource, i.e. any type of thing, is represented as a number of triples. Each triple has a subject, predicate, and object. Alternatively if you want to think in terms of <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">Entity-Relationship</a> model, these three parts of the triple become the Entity-Attribute-Value. This is also known as the <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model">EAV</a> model. For instance the Entity subject <code>Part:998</code> of our <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/tsv/Parts.tsv">Parts</a> table in the <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue">example data set</a> of our series can be <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/ttl/parts.ttl">serialized</a> in Turtle syntax as :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Part:998 rdf<span style="color:#f92672">:</span>label        <span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span><span style="color:#a6e22e">@en</span> <span style="color:#f92672">;</span>
-         schema<span style="color:#f92672">:</span>color     <span style="color:#e6db74">&#34;Red&#34;</span><span style="color:#a6e22e">@en</span> <span style="color:#f92672">;</span>
-         schema<span style="color:#f92672">:</span>weight    <span style="color:#e6db74">&#34;7.2&#34;</span><span style="color:#f92672">^^</span>xsd<span style="color:#f92672">:</span><span style="color:#66d9ef">double</span> <span style="color:#f92672">;</span>
-         schema<span style="color:#f92672">:</span>unitText  <span style="color:#e6db74">&#34;lb&#34;</span><span style="color:#a6e22e">@en</span> <span style="color:#f92672">;</span>
-         dc<span style="color:#f92672">:</span>identifier    <span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">^^</span>xsd<span style="color:#f92672">:</span><span style="color:#66d9ef">int</span> <span style="color:#f92672">.</span>
-</code></pre></div><p>These <code>rdf:label</code>, <code>schema:color</code>, <code>schema:weight</code>, <code>schema:unitText</code>, <code>dc:identifier</code> are attributes of this Entity instance and &ldquo;Fire Hydrant Cap&rdquo;, &ldquo;Red&rdquo;, &ldquo;7.2&rdquo;, &ldquo;lb&rdquo; and &ldquo;998&rdquo; are atomic values with an accompanied data type, see also <a href="#fig7"><strong>Fig. 7</strong></a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Part:998 rdf:label        <span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span><span style="color:#a6e22e">@en</span> ;
+</span></span><span style="display:flex;"><span>         schema:color     <span style="color:#e6db74">&#34;Red&#34;</span><span style="color:#a6e22e">@en</span> ;
+</span></span><span style="display:flex;"><span>         schema:weight    <span style="color:#e6db74">&#34;7.2&#34;</span><span style="color:#f92672">^^</span>xsd:<span style="color:#66d9ef">double</span> ;
+</span></span><span style="display:flex;"><span>         schema:unitText  <span style="color:#e6db74">&#34;lb&#34;</span><span style="color:#a6e22e">@en</span> ;
+</span></span><span style="display:flex;"><span>         dc:identifier    <span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">^^</span>xsd:<span style="color:#66d9ef">int</span> .
+</span></span></code></pre></div><p>These <code>rdf:label</code>, <code>schema:color</code>, <code>schema:weight</code>, <code>schema:unitText</code>, <code>dc:identifier</code> are attributes of this Entity instance and &ldquo;Fire Hydrant Cap&rdquo;, &ldquo;Red&rdquo;, &ldquo;7.2&rdquo;, &ldquo;lb&rdquo; and &ldquo;998&rdquo; are atomic values with an accompanied data type, see also <a href="/en/post/20161220/#fig7"><strong>Fig. 7</strong></a>.</p>
 <h2 id="rdf-and-linked-data">RDF and Linked Data</h2>
 <p>But RDF is not like any other data model, it has been selected from <a href="https://en.wikipedia.org/wiki/World_Wide_Web_Consortium">W3C</a> as one of the Web technologies, together with <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> and <a href="https://en.wikipedia.org/wiki/Uniform_resource_identifier">URIs</a>, to <strong>extend the hyperlinking of documents to a set of best practices for publishing and interlinking structured data on global scale</strong>. Today the term <a href="https://en.wikipedia.org/wiki/Linked_data">Linked Data</a> refers to these standards, and the extension of the Web is also known as the <a href="https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a>. The predecessor of RDF, the <a href="https://en.wikipedia.org/wiki/Semantic_network">Semantic Network Model</a>, was formed in the early 1960s. The main difference is that arcs and nodes in RDF are identified using HTTP URIs and dereferenced (i.e., looked up) over the HTTP protocol. If we use <a href="https://en.wikipedia.org/wiki/N-Triples">N-Triples</a> syntax to serialize the same resource <code>Part:998</code> we take:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#label&gt;  &#34;Fire Hydrant Cap&#34;@en .
-</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://schema.org/color&gt;                           &#34;Red&#34;@en .
-</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://schema.org/weight&gt;                          &#34;7.2&#34;^^&lt;http://www.w3.org/2001/XMLSchema#double&gt; .
-</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://schema.org/unitText&gt;                        &#34;lb&#34;@en .
-</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://purl.org/dc/elements/1.1/identifier&gt;        &#34;998&#34;^^&lt;http://www.w3.org/2001/XMLSchema#int&gt; .
-</span></code></pre></div><p>Notice that the <code>object</code> part of the triple is an <a href="https://www.w3.org/TR/rdf11-concepts/#section-Datatypes">RDF literal</a> and datatypes are used to represent values such as strings, numbers and dates. These triples are called <strong>Literal triples</strong> and describe the properties of resources. In our example these <code>literal triples</code> describe five properties of the <code>Part:998</code> resource. This type of RDF triples is distinguished from the other type which is <strong>RDF Links</strong> and describe the relationship between two resources. For example if we want to express with the same syntax all the vendors of <code>Part:998</code> we will form these triples:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.wikidata.org/property/hasVendor&gt;  &lt;http://example.org/spc/Supplier/1081&gt; .
-</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.wikidata.org/property/hasVendor&gt;  &lt;http://example.org/spc/Supplier/1082&gt; .
-</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.wikidata.org/property/hasVendor&gt;  &lt;http://example.org/spc/Supplier/1083&gt; .
-</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>http<span style="color:#f92672">:</span><span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.wikidata.org/property/hasVendor&gt;  &lt;http://example.org/spc/Supplier/1084&gt; .
-</span></code></pre></div><p>This is also the equivalent result set at <a href="#fig1"><strong>Fig. 1</strong></a> presented in a compact form from the following <a href="https://www.w3.org/TR/rdf-sparql-query/">SPARQL</a> query:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">#</span>Suppliers <span style="color:#66d9ef">of</span> Part <span style="color:#ae81ff">998</span>
-
-<span style="color:#66d9ef">PREFIX</span> Supplier: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>example.org<span style="color:#f92672">/</span>spc<span style="color:#f92672">/</span>Supplier<span style="color:#f92672">/&gt;</span>
-<span style="color:#66d9ef">PREFIX</span> Part: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>example.org<span style="color:#f92672">/</span>spc<span style="color:#f92672">/</span>Part<span style="color:#f92672">/&gt;</span>
-<span style="color:#66d9ef">PREFIX</span> xsd: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.w3.org<span style="color:#f92672">/</span><span style="color:#ae81ff">2001</span><span style="color:#f92672">/</span>XMLSchema<span style="color:#f92672">#&gt;</span>
-<span style="color:#66d9ef">PREFIX</span> wd: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.wikidata.org<span style="color:#f92672">/</span>property<span style="color:#f92672">/&gt;</span>
-<span style="color:#66d9ef">PREFIX</span> dc: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>purl.org<span style="color:#f92672">/</span>dc<span style="color:#f92672">/</span>elements<span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">1</span><span style="color:#f92672">/&gt;</span>
-
-<span style="color:#66d9ef">select</span> <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>p <span style="color:#f92672">?</span>sup <span style="color:#66d9ef">where</span>
-<span style="color:#960050;background-color:#1e0010">{</span>
-	BIND(wd:hasVendor <span style="color:#66d9ef">AS</span> <span style="color:#f92672">?</span>p)    
-
-    <span style="color:#f92672">#</span> <span style="color:#66d9ef">Start</span> <span style="color:#66d9ef">with</span> a <span style="color:#f92672">?</span>prt that has id<span style="color:#f92672">=</span><span style="color:#ae81ff">998</span>
-    <span style="color:#f92672">?</span>prt dc:identifier <span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">^^</span>xsd:int .
-
-    <span style="color:#f92672">#</span> Find <span style="color:#66d9ef">all</span> <span style="color:#66d9ef">catalog</span> items (<span style="color:#f92672">?</span>cat) <span style="color:#66d9ef">with</span> a reference <span style="color:#66d9ef">to</span> <span style="color:#f92672">?</span>prt
-    <span style="color:#f92672">?</span>cat wd:hasPart <span style="color:#f92672">?</span>prt .
-
-    <span style="color:#f92672">#</span> <span style="color:#66d9ef">For</span> <span style="color:#66d9ef">any</span> <span style="color:#66d9ef">catalog</span> item (<span style="color:#f92672">?</span>cat) find the vendor that supplies <span style="color:#f92672">?</span>prt
-    <span style="color:#f92672">?</span>cat <span style="color:#f92672">?</span>p <span style="color:#f92672">?</span>sup .
-<span style="color:#960050;background-color:#1e0010">}</span>
-</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>http:<span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#label&gt;  &#34;Fire Hydrant Cap&#34;@en .</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>http:<span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://schema.org/color&gt;                           &#34;Red&#34;@en .</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>http:<span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://schema.org/weight&gt;                          &#34;7.2&#34;^^&lt;http://www.w3.org/2001/XMLSchema#double&gt; .</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>http:<span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://schema.org/unitText&gt;                        &#34;lb&#34;@en .</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>http:<span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://purl.org/dc/elements/1.1/identifier&gt;        &#34;998&#34;^^&lt;http://www.w3.org/2001/XMLSchema#int&gt; .</span>
+</span></span></code></pre></div><p>Notice that the <code>object</code> part of the triple is an <a href="https://www.w3.org/TR/rdf11-concepts/#section-Datatypes">RDF literal</a> and datatypes are used to represent values such as strings, numbers and dates. These triples are called <strong>Literal triples</strong> and describe the properties of resources. In our example these <code>literal triples</code> describe five properties of the <code>Part:998</code> resource. This type of RDF triples is distinguished from the other type which is <strong>RDF Links</strong> and describe the relationship between two resources. For example if we want to express with the same syntax all the vendors of <code>Part:998</code> we will form these triples:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>http:<span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.wikidata.org/property/hasVendor&gt;  &lt;http://example.org/spc/Supplier/1081&gt; .</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>http:<span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.wikidata.org/property/hasVendor&gt;  &lt;http://example.org/spc/Supplier/1082&gt; .</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>http:<span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.wikidata.org/property/hasVendor&gt;  &lt;http://example.org/spc/Supplier/1083&gt; .</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>http:<span style="color:#75715e">//example.org/spc/Part/998&gt;   &lt;http://www.wikidata.org/property/hasVendor&gt;  &lt;http://example.org/spc/Supplier/1084&gt; .</span>
+</span></span></code></pre></div><p>This is also the equivalent result set at <a href="/en/post/20161220/#fig1"><strong>Fig. 1</strong></a> presented in a compact form from the following <a href="https://www.w3.org/TR/rdf-sparql-query/">SPARQL</a> query:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#f92672">#</span>Suppliers <span style="color:#66d9ef">of</span> Part <span style="color:#ae81ff">998</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">PREFIX</span> Supplier: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>example.org<span style="color:#f92672">/</span>spc<span style="color:#f92672">/</span>Supplier<span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">PREFIX</span> Part: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>example.org<span style="color:#f92672">/</span>spc<span style="color:#f92672">/</span>Part<span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">PREFIX</span> xsd: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.w3.org<span style="color:#f92672">/</span><span style="color:#ae81ff">2001</span><span style="color:#f92672">/</span>XMLSchema<span style="color:#f92672">#&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">PREFIX</span> wd: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.wikidata.org<span style="color:#f92672">/</span>property<span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">PREFIX</span> dc: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>purl.org<span style="color:#f92672">/</span>dc<span style="color:#f92672">/</span>elements<span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">1</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">select</span> <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>p <span style="color:#f92672">?</span>sup <span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>	BIND(wd:hasVendor <span style="color:#66d9ef">AS</span> <span style="color:#f92672">?</span>p)    
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">#</span> <span style="color:#66d9ef">Start</span> <span style="color:#66d9ef">with</span> a <span style="color:#f92672">?</span>prt that has id<span style="color:#f92672">=</span><span style="color:#ae81ff">998</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>prt dc:identifier <span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">^^</span>xsd:int .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">#</span> Find <span style="color:#66d9ef">all</span> <span style="color:#66d9ef">catalog</span> items (<span style="color:#f92672">?</span>cat) <span style="color:#66d9ef">with</span> a reference <span style="color:#66d9ef">to</span> <span style="color:#f92672">?</span>prt
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>cat wd:hasPart <span style="color:#f92672">?</span>prt .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">#</span> <span style="color:#66d9ef">For</span> <span style="color:#66d9ef">any</span> <span style="color:#66d9ef">catalog</span> item (<span style="color:#f92672">?</span>cat) find the vendor that supplies <span style="color:#f92672">?</span>prt
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>cat <span style="color:#f92672">?</span>p <span style="color:#f92672">?</span>sup .
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span></code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
 
@@ -760,8 +762,8 @@
 
 </figure>
 </p>
-<p>In <a href="#fig1"><strong>Fig. 1</strong></a> The URI with <a href="https://en.wikipedia.org/wiki/QName">QName</a> <code>wd:hasVendor</code>,  in the <code>predicate</code> position defines the type of relationship between a <code>subject</code> with QName <code>Part:998</code> and an <code>object</code> with any of these QNames (<code>Supplier:1081</code>, <code>Supplier:1082</code>, <code>Supplier:1083</code>, <code>Supplier:1084</code>). Both subject and object URIs are in the same namespace (<code>http://example.org/spc/</code>), these are called <strong>Internal RDF links</strong>.</p>
-<p>One way to think these <strong>RDF links</strong> is as a <strong>labeled directed graph</strong>. Each triple is a directed arc that connects a subject, e.g. <code>Part:998</code>, with an object, e.g. <code>Supplier:1084</code>,  and the predicate is the label of the arc, <code>wd:hasVendor</code>. For example the previous result set can be represented with the following graph in <a href="#fig2"><strong>Fig. 2</strong></a>:</p>
+<p>In <a href="/en/post/20161220/#fig1"><strong>Fig. 1</strong></a> The URI with <a href="https://en.wikipedia.org/wiki/QName">QName</a> <code>wd:hasVendor</code>,  in the <code>predicate</code> position defines the type of relationship between a <code>subject</code> with QName <code>Part:998</code> and an <code>object</code> with any of these QNames (<code>Supplier:1081</code>, <code>Supplier:1082</code>, <code>Supplier:1083</code>, <code>Supplier:1084</code>). Both subject and object URIs are in the same namespace (<code>http://example.org/spc/</code>), these are called <strong>Internal RDF links</strong>.</p>
+<p>One way to think these <strong>RDF links</strong> is as a <strong>labeled directed graph</strong>. Each triple is a directed arc that connects a subject, e.g. <code>Part:998</code>, with an object, e.g. <code>Supplier:1084</code>,  and the predicate is the label of the arc, <code>wd:hasVendor</code>. For example the previous result set can be represented with the following graph in <a href="/en/post/20161220/#fig2"><strong>Fig. 2</strong></a>:</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -789,7 +791,7 @@
 
 </figure>
 </p>
-<p>But the graph for the data model of our example is slightly more complicated because there are intermediate nodes, i.e. inventory items that represent records from the <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/tsv/Catalog.tsv">Catalog</a> table, that <a href="https://en.wikipedia.org/wiki/Associative_entity"><strong>associate</strong></a>, bridge <strong>Suppliers</strong> with <strong>Parts</strong> <a href="#fig3"><strong>Fig. 3</strong></a>.</p>
+<p>But the graph for the data model of our example is slightly more complicated because there are intermediate nodes, i.e. inventory items that represent records from the <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/tsv/Catalog.tsv">Catalog</a> table, that <a href="https://en.wikipedia.org/wiki/Associative_entity"><strong>associate</strong></a>, bridge <strong>Suppliers</strong> with <strong>Parts</strong> <a href="/en/post/20161220/#fig3"><strong>Fig. 3</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -817,8 +819,8 @@
 
 </figure>
 </p>
-<p>Another distinction of <strong>RDF links</strong> to <strong>Outgoing</strong> and <strong>Incoming</strong> can be seen in <a href="#fig3"><strong>Fig. 3</strong></a>. For example <code>Part:998</code> has four incoming <strong>RDF links</strong> of type <code>wd:hasPart</code> and <code>Item:7</code> has two outgoing <strong>RDF links</strong> of type <code>wd:hasPart</code> and <code>wd:hasVendor</code> respectively.</p>
-<p>In fact the SPARQL query above has been written taking in consideration this graph. In order to traverse the nodes you must know both the type of <strong>RDF link</strong> and its direction. <strong>In RDF graph data model edges are unidirectional</strong>. In order to define bidirectional edges we have to define both outgoing and incoming  <strong>RDF links</strong> for each node, i.e. two predicates <a href="#fig4"><strong>Fig. 4</strong></a>.</p>
+<p>Another distinction of <strong>RDF links</strong> to <strong>Outgoing</strong> and <strong>Incoming</strong> can be seen in <a href="/en/post/20161220/#fig3"><strong>Fig. 3</strong></a>. For example <code>Part:998</code> has four incoming <strong>RDF links</strong> of type <code>wd:hasPart</code> and <code>Item:7</code> has two outgoing <strong>RDF links</strong> of type <code>wd:hasPart</code> and <code>wd:hasVendor</code> respectively.</p>
+<p>In fact the SPARQL query above has been written taking in consideration this graph. In order to traverse the nodes you must know both the type of <strong>RDF link</strong> and its direction. <strong>In RDF graph data model edges are unidirectional</strong>. In order to define bidirectional edges we have to define both outgoing and incoming  <strong>RDF links</strong> for each node, i.e. two predicates <a href="/en/post/20161220/#fig4"><strong>Fig. 4</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -847,16 +849,16 @@
 </figure>
 </p>
 <h2 id="association-in-rdf">Association in RDF</h2>
-<p>We can now compare these <a href="/en/post/20160902/#topic-map-serialization">five associations</a> of <code>Part:998</code> with <strong>RDF links</strong> of the graph in <a href="#fig6"><strong>Fig. 6</strong></a>.  One of them is composed with all outgoing triples of <code>Part:998</code>, i.e. <code>Part:998</code> is the subject of the triple <a href="#fig5"><strong>Fig. 5</strong></a>. These <code>literal triples</code> describe five properties of <code>Part:998</code> resource, yellow boxes of <a href="#fig6"><strong>Fig. 6</strong></a>, and another RDF link is for the type of resource, i.e. <code>Item</code> (grey box).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">#</span> <span style="color:#66d9ef">Get</span> <span style="color:#66d9ef">all</span> outgoing triples <span style="color:#66d9ef">for</span> a <span style="color:#66d9ef">specific</span> part
-<span style="color:#66d9ef">PREFIX</span> Part: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>example.org<span style="color:#f92672">/</span>spc<span style="color:#f92672">/</span>Part<span style="color:#f92672">/&gt;</span>
-
-<span style="color:#66d9ef">select</span> <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>p <span style="color:#f92672">?</span>o <span style="color:#66d9ef">where</span>
-<span style="color:#960050;background-color:#1e0010">{</span>
-    BIND(Part:<span style="color:#ae81ff">998</span> <span style="color:#66d9ef">AS</span> <span style="color:#f92672">?</span>prt)
-    <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>p <span style="color:#f92672">?</span>o .
-<span style="color:#960050;background-color:#1e0010">}</span>
-</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<p>We can now compare these <a href="/en/post/20160902/#topic-map-serialization">five associations</a> of <code>Part:998</code> with <strong>RDF links</strong> of the graph in <a href="/en/post/20161220/#fig6"><strong>Fig. 6</strong></a>.  One of them is composed with all outgoing triples of <code>Part:998</code>, i.e. <code>Part:998</code> is the subject of the triple <a href="/en/post/20161220/#fig5"><strong>Fig. 5</strong></a>. These <code>literal triples</code> describe five properties of <code>Part:998</code> resource, yellow boxes of <a href="/en/post/20161220/#fig6"><strong>Fig. 6</strong></a>, and another RDF link is for the type of resource, i.e. <code>Item</code> (grey box).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#f92672">#</span> <span style="color:#66d9ef">Get</span> <span style="color:#66d9ef">all</span> outgoing triples <span style="color:#66d9ef">for</span> a <span style="color:#66d9ef">specific</span> part
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">PREFIX</span> Part: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>example.org<span style="color:#f92672">/</span>spc<span style="color:#f92672">/</span>Part<span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">select</span> <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>p <span style="color:#f92672">?</span>o <span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>    BIND(Part:<span style="color:#ae81ff">998</span> <span style="color:#66d9ef">AS</span> <span style="color:#f92672">?</span>prt)
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>p <span style="color:#f92672">?</span>o .
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span></code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
 
@@ -883,7 +885,7 @@
 
 </figure>
 </p>
-<p>The resource <code>Part:998</code> participates in four associations with <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/ttl/catalog.ttl"><strong>Inventory</strong> resources</a>,  as the object of a triple. These are the four incoming <strong>RDF links</strong> of <code>Part:998</code> in <a href="#fig3"><strong>Fig. 3</strong></a>, <a href="#fig6"><strong>Fig. 6</strong></a> and <a href="#fig8"><strong>Fig. 8</strong></a>.</p>
+<p>The resource <code>Part:998</code> participates in four associations with <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/ttl/catalog.ttl"><strong>Inventory</strong> resources</a>,  as the object of a triple. These are the four incoming <strong>RDF links</strong> of <code>Part:998</code> in <a href="/en/post/20161220/#fig3"><strong>Fig. 3</strong></a>, <a href="/en/post/20161220/#fig6"><strong>Fig. 6</strong></a> and <a href="/en/post/20161220/#fig8"><strong>Fig. 8</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -912,33 +914,33 @@
 </figure>
 </p>
 <p>We can write the following SPARQL query to ask for all the suppliers of <code>Part:998</code> sorted by their catalog price.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">#</span>Suppliers <span style="color:#66d9ef">of</span> Part <span style="color:#ae81ff">998</span> (Red Fire Hydrant Cap) sorted <span style="color:#66d9ef">by</span> their <span style="color:#66d9ef">catalog</span> price
-
-<span style="color:#66d9ef">PREFIX</span> xsd: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.w3.org<span style="color:#f92672">/</span><span style="color:#ae81ff">2001</span><span style="color:#f92672">/</span>XMLSchema<span style="color:#f92672">#&gt;</span>
-<span style="color:#66d9ef">PREFIX</span> wd: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.wikidata.org<span style="color:#f92672">/</span>property<span style="color:#f92672">/&gt;</span>
-<span style="color:#66d9ef">PREFIX</span> <span style="color:#66d9ef">schema</span>: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span><span style="color:#66d9ef">schema</span>.org<span style="color:#f92672">/&gt;</span>
-<span style="color:#66d9ef">PREFIX</span> rdf: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.w3.org<span style="color:#f92672">/</span><span style="color:#ae81ff">1999</span><span style="color:#f92672">/</span><span style="color:#ae81ff">02</span><span style="color:#f92672">/</span><span style="color:#ae81ff">22</span><span style="color:#f92672">-</span>rdf<span style="color:#f92672">-</span>syntax<span style="color:#f92672">-</span>ns<span style="color:#f92672">#&gt;</span>
-<span style="color:#66d9ef">PREFIX</span> dc: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>purl.org<span style="color:#f92672">/</span>dc<span style="color:#f92672">/</span>elements<span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">1</span><span style="color:#f92672">/&gt;</span>
-
-<span style="color:#66d9ef">select</span> <span style="color:#f92672">?</span>sup <span style="color:#f92672">?</span>supName <span style="color:#f92672">?</span>supCountry <span style="color:#f92672">?</span>catPrice <span style="color:#f92672">?</span>catQuantity <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>prtName <span style="color:#f92672">?</span>prtColor <span style="color:#f92672">?</span>cat <span style="color:#66d9ef">where</span>
-<span style="color:#960050;background-color:#1e0010">{</span>
-    <span style="color:#f92672">#</span> <span style="color:#66d9ef">Start</span> <span style="color:#66d9ef">with</span> a <span style="color:#f92672">?</span>prt that has id<span style="color:#f92672">=</span><span style="color:#ae81ff">998</span> <span style="color:#66d9ef">get</span> its name <span style="color:#66d9ef">and</span> color <span style="color:#66d9ef">values</span>
-    <span style="color:#f92672">?</span>prt dc:identifier <span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">^^</span>xsd:int .
-    <span style="color:#f92672">?</span>prt rdf:label <span style="color:#f92672">?</span>prtName .
-    <span style="color:#f92672">?</span>prt <span style="color:#66d9ef">schema</span>:color <span style="color:#f92672">?</span>prtColor .            
-
-    <span style="color:#f92672">#</span> Find <span style="color:#66d9ef">all</span> <span style="color:#66d9ef">catalog</span> items (<span style="color:#f92672">?</span>cat) <span style="color:#66d9ef">with</span> a reference <span style="color:#66d9ef">to</span> <span style="color:#f92672">?</span>prt <span style="color:#66d9ef">get</span> their price <span style="color:#66d9ef">and</span> quantity <span style="color:#66d9ef">values</span>
-    <span style="color:#f92672">?</span>cat wd:hasPart <span style="color:#f92672">?</span>prt .
-    <span style="color:#f92672">?</span>cat <span style="color:#66d9ef">schema</span>:cost <span style="color:#f92672">?</span>catPrice
-    OPTIONAL <span style="color:#960050;background-color:#1e0010">{</span><span style="color:#f92672">?</span>cat <span style="color:#66d9ef">schema</span>:quantity <span style="color:#f92672">?</span>catQuantity .<span style="color:#960050;background-color:#1e0010">}</span>
-
-    <span style="color:#f92672">#</span> <span style="color:#66d9ef">For</span> <span style="color:#66d9ef">any</span> <span style="color:#66d9ef">catalog</span> item (<span style="color:#f92672">?</span>cat) find the vendor that supplies <span style="color:#f92672">?</span>prt <span style="color:#66d9ef">get</span> their name <span style="color:#66d9ef">and</span> the country <span style="color:#66d9ef">of</span> origin
-    <span style="color:#f92672">?</span>cat wd:hasVendor <span style="color:#f92672">?</span>sup .
-    <span style="color:#f92672">?</span>sup rdf:label <span style="color:#f92672">?</span>supName .
-    <span style="color:#f92672">?</span>sup <span style="color:#66d9ef">schema</span>:country <span style="color:#f92672">?</span>supCountry
-<span style="color:#960050;background-color:#1e0010">}</span>
-<span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">ASC</span>(<span style="color:#f92672">?</span>catPrice)
-</code></pre></div><p>You may consider the analogy between this query and the result set at <a href="#fig7"><strong>Fig. 7</strong></a> and the equivalent <a href="/en/post/20160913/#join-vs-edge">OrientDB SQL query and the result set from a <strong>Property Graph</strong> data model</a>. The main differences are that in <strong>Property Graph</strong> data model you can traverse edges in both directions, (incoming, outcoming), the filtering part (<code>where</code>) in SPARQL is significantly longer, and the starting point is represented in a different manner (edge vs link).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#f92672">#</span>Suppliers <span style="color:#66d9ef">of</span> Part <span style="color:#ae81ff">998</span> (Red Fire Hydrant Cap) sorted <span style="color:#66d9ef">by</span> their <span style="color:#66d9ef">catalog</span> price
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">PREFIX</span> xsd: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.w3.org<span style="color:#f92672">/</span><span style="color:#ae81ff">2001</span><span style="color:#f92672">/</span>XMLSchema<span style="color:#f92672">#&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">PREFIX</span> wd: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.wikidata.org<span style="color:#f92672">/</span>property<span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">PREFIX</span> <span style="color:#66d9ef">schema</span>: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span><span style="color:#66d9ef">schema</span>.org<span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">PREFIX</span> rdf: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>www.w3.org<span style="color:#f92672">/</span><span style="color:#ae81ff">1999</span><span style="color:#f92672">/</span><span style="color:#ae81ff">02</span><span style="color:#f92672">/</span><span style="color:#ae81ff">22</span><span style="color:#f92672">-</span>rdf<span style="color:#f92672">-</span>syntax<span style="color:#f92672">-</span>ns<span style="color:#f92672">#&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">PREFIX</span> dc: <span style="color:#f92672">&lt;</span>http:<span style="color:#f92672">//</span>purl.org<span style="color:#f92672">/</span>dc<span style="color:#f92672">/</span>elements<span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">1</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">select</span> <span style="color:#f92672">?</span>sup <span style="color:#f92672">?</span>supName <span style="color:#f92672">?</span>supCountry <span style="color:#f92672">?</span>catPrice <span style="color:#f92672">?</span>catQuantity <span style="color:#f92672">?</span>prt <span style="color:#f92672">?</span>prtName <span style="color:#f92672">?</span>prtColor <span style="color:#f92672">?</span>cat <span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">#</span> <span style="color:#66d9ef">Start</span> <span style="color:#66d9ef">with</span> a <span style="color:#f92672">?</span>prt that has id<span style="color:#f92672">=</span><span style="color:#ae81ff">998</span> <span style="color:#66d9ef">get</span> its name <span style="color:#66d9ef">and</span> color <span style="color:#66d9ef">values</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>prt dc:identifier <span style="color:#e6db74">&#34;998&#34;</span><span style="color:#f92672">^^</span>xsd:int .
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>prt rdf:label <span style="color:#f92672">?</span>prtName .
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>prt <span style="color:#66d9ef">schema</span>:color <span style="color:#f92672">?</span>prtColor .            
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">#</span> Find <span style="color:#66d9ef">all</span> <span style="color:#66d9ef">catalog</span> items (<span style="color:#f92672">?</span>cat) <span style="color:#66d9ef">with</span> a reference <span style="color:#66d9ef">to</span> <span style="color:#f92672">?</span>prt <span style="color:#66d9ef">get</span> their price <span style="color:#66d9ef">and</span> quantity <span style="color:#66d9ef">values</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>cat wd:hasPart <span style="color:#f92672">?</span>prt .
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>cat <span style="color:#66d9ef">schema</span>:cost <span style="color:#f92672">?</span>catPrice
+</span></span><span style="display:flex;"><span>    OPTIONAL <span style="color:#960050;background-color:#1e0010">{</span><span style="color:#f92672">?</span>cat <span style="color:#66d9ef">schema</span>:quantity <span style="color:#f92672">?</span>catQuantity .<span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">#</span> <span style="color:#66d9ef">For</span> <span style="color:#66d9ef">any</span> <span style="color:#66d9ef">catalog</span> item (<span style="color:#f92672">?</span>cat) find the vendor that supplies <span style="color:#f92672">?</span>prt <span style="color:#66d9ef">get</span> their name <span style="color:#66d9ef">and</span> the country <span style="color:#66d9ef">of</span> origin
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>cat wd:hasVendor <span style="color:#f92672">?</span>sup .
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>sup rdf:label <span style="color:#f92672">?</span>supName .
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span>sup <span style="color:#66d9ef">schema</span>:country <span style="color:#f92672">?</span>supCountry
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">ASC</span>(<span style="color:#f92672">?</span>catPrice)
+</span></span></code></pre></div><p>You may consider the analogy between this query and the result set at <a href="/en/post/20161220/#fig7"><strong>Fig. 7</strong></a> and the equivalent <a href="/en/post/20160913/#join-vs-edge">OrientDB SQL query and the result set from a <strong>Property Graph</strong> data model</a>. The main differences are that in <strong>Property Graph</strong> data model you can traverse edges in both directions, (incoming, outcoming), the filtering part (<code>where</code>) in SPARQL is significantly longer, and the starting point is represented in a different manner (edge vs link).</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -993,13 +995,13 @@
 
 </figure>
 </p>
-<p>We can view a graph representation, <a href="#fig8"><strong>Fig. 8</strong></a>, of this SPARQL query and its result data set <a href="#fig7"><strong>Fig. 7</strong></a>. In the same screen capture, <a href="#fig8"><strong>Fig. 8</strong></a>, a many-to-many relationship is modeled with RDF triples. <code>Supplier:1082</code> is associated with three parts (<code>Part:991</code>, <code>Part:997</code> and <code>Part:998</code>) and <code>Part998</code> is associated with four suppliers (<code>Supplier:1081</code>, <code>Supplier:1082</code>, <code>Supplier:1083</code>, <code>Supplier:1084</code>), see also <a href="#fig9"><strong>Fig. 9</strong></a>. From a semantic point of view, Parts and Suppliers participate in associations with Inventory items (green boxes - <code>Catalog:7</code>, <code>Catalog:9</code>, <code>Catalog:10</code>, <code>Catalog:11</code>, <code>Catalog:12</code> and <code>Catalog:16</code>). In contrast with the binary relations between Suppliers and Parts represented with directed edges in a <strong>Property Graph</strong>, <a href="/en/post/20160913/#property-graph-with-directed-edges">see here</a>, instead of an <strong>edge type</strong> we have explicit intermediate (bridge) nodes and instead of outgoing head (out) and incoming tail (in) we have two outgoing directional links (<code>wd:hasPart</code> and <code>wd:hasVendor</code>) from this intermediate node, e.g. Catalog/Inventory item to Supplier and Part. In such as case these outgoing directional links (<code>wd:hasPart</code> and <code>wd:hasVendor</code>) look like <a href="/en/post/20160902/#topic-map-serialization">roles in a Topic Map binary association</a>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/* 4 Associations of catalog part no 998 with supplier Ids and catalog prices */</span>
-<span style="color:#a6e22e">Catalog07</span>( <span style="color:#a6e22e">Part998</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasPart</span>, <span style="color:#a6e22e">Supplier1081</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasVendor</span>, <span style="color:#ae81ff">11.7</span><span style="color:#f92672">:</span><span style="color:#a6e22e">Cost</span> )
-<span style="color:#a6e22e">Catalog11</span>( <span style="color:#a6e22e">Part998</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasPart</span>, <span style="color:#a6e22e">Supplier1082</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasVendor</span>, <span style="color:#ae81ff">7.95</span><span style="color:#f92672">:</span><span style="color:#a6e22e">Cost</span> )
-<span style="color:#a6e22e">Catalog12</span>( <span style="color:#a6e22e">Part998</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasPart</span>, <span style="color:#a6e22e">Supplier1083</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasVendor</span>, <span style="color:#ae81ff">12.5</span><span style="color:#f92672">:</span><span style="color:#a6e22e">Cost</span> )
-<span style="color:#a6e22e">Catalog16</span>( <span style="color:#a6e22e">Part998</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasPart</span>, <span style="color:#a6e22e">Supplier1084</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasVendor</span>, <span style="color:#ae81ff">48.6</span><span style="color:#f92672">:</span><span style="color:#a6e22e">Cost</span> )
-</code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<p>We can view a graph representation, <a href="/en/post/20161220/#fig8"><strong>Fig. 8</strong></a>, of this SPARQL query and its result data set <a href="/en/post/20161220/#fig7"><strong>Fig. 7</strong></a>. In the same screen capture, <a href="/en/post/20161220/#fig8"><strong>Fig. 8</strong></a>, a many-to-many relationship is modeled with RDF triples. <code>Supplier:1082</code> is associated with three parts (<code>Part:991</code>, <code>Part:997</code> and <code>Part:998</code>) and <code>Part998</code> is associated with four suppliers (<code>Supplier:1081</code>, <code>Supplier:1082</code>, <code>Supplier:1083</code>, <code>Supplier:1084</code>), see also <a href="/en/post/20161220/#fig9"><strong>Fig. 9</strong></a>. From a semantic point of view, Parts and Suppliers participate in associations with Inventory items (green boxes - <code>Catalog:7</code>, <code>Catalog:9</code>, <code>Catalog:10</code>, <code>Catalog:11</code>, <code>Catalog:12</code> and <code>Catalog:16</code>). In contrast with the binary relations between Suppliers and Parts represented with directed edges in a <strong>Property Graph</strong>, <a href="/en/post/20160913/#property-graph-with-directed-edges">see here</a>, instead of an <strong>edge type</strong> we have explicit intermediate (bridge) nodes and instead of outgoing head (out) and incoming tail (in) we have two outgoing directional links (<code>wd:hasPart</code> and <code>wd:hasVendor</code>) from this intermediate node, e.g. Catalog/Inventory item to Supplier and Part. In such as case these outgoing directional links (<code>wd:hasPart</code> and <code>wd:hasVendor</code>) look like <a href="/en/post/20160902/#topic-map-serialization">roles in a Topic Map binary association</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">/* 4 Associations of catalog part no 998 with supplier Ids and catalog prices */</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Catalog07</span>( <span style="color:#a6e22e">Part998</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasPart</span>, <span style="color:#a6e22e">Supplier1081</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasVendor</span>, <span style="color:#ae81ff">11.7</span><span style="color:#f92672">:</span><span style="color:#a6e22e">Cost</span> )
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Catalog11</span>( <span style="color:#a6e22e">Part998</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasPart</span>, <span style="color:#a6e22e">Supplier1082</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasVendor</span>, <span style="color:#ae81ff">7.95</span><span style="color:#f92672">:</span><span style="color:#a6e22e">Cost</span> )
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Catalog12</span>( <span style="color:#a6e22e">Part998</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasPart</span>, <span style="color:#a6e22e">Supplier1083</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasVendor</span>, <span style="color:#ae81ff">12.5</span><span style="color:#f92672">:</span><span style="color:#a6e22e">Cost</span> )
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Catalog16</span>( <span style="color:#a6e22e">Part998</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasPart</span>, <span style="color:#a6e22e">Supplier1084</span><span style="color:#f92672">:</span><span style="color:#a6e22e">HasVendor</span>, <span style="color:#ae81ff">48.6</span><span style="color:#f92672">:</span><span style="color:#a6e22e">Cost</span> )
+</span></span></code></pre></div><p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
 
@@ -1111,7 +1113,7 @@
 
 </figure>
 </p>
-<p>Bidirectional links allow a 360° view of every data item in the database. Directed edges in <strong>Property Graph</strong> share the same concept, <a href="/en/post/20160913/#property-graph-with-directed-edges">see here</a>. In the following three figures (<a href="#fig11"><strong>Fig. 11</strong></a>, <a href="#fig12"><strong>Fig. 12</strong></a>, <a href="#fig13"><strong>Fig. 13</strong></a>) we present three alternative schema views for our Supplier-Part-Catalog database that we built on Sentences DBMS. <a href="#fig11"><strong>Fig. 11</strong></a> illustrates that it is possible to add attributes on the link. <a href="#fig12"><strong>Fig. 12</strong></a> shows that <code>Supplier</code>, <code>Catalog</code> and <code>Part</code> entities are sharing common attributes while in <a href="#fig13"><strong>Fig. 13</strong></a> they are directly connected with bidirectional links.</p>
+<p>Bidirectional links allow a 360° view of every data item in the database. Directed edges in <strong>Property Graph</strong> share the same concept, <a href="/en/post/20160913/#property-graph-with-directed-edges">see here</a>. In the following three figures (<a href="/en/post/20161220/#fig11"><strong>Fig. 11</strong></a>, <a href="/en/post/20161220/#fig12"><strong>Fig. 12</strong></a>, <a href="/en/post/20161220/#fig13"><strong>Fig. 13</strong></a>) we present three alternative schema views for our Supplier-Part-Catalog database that we built on Sentences DBMS. <a href="/en/post/20161220/#fig11"><strong>Fig. 11</strong></a> illustrates that it is possible to add attributes on the link. <a href="/en/post/20161220/#fig12"><strong>Fig. 12</strong></a> shows that <code>Supplier</code>, <code>Catalog</code> and <code>Part</code> entities are sharing common attributes while in <a href="/en/post/20161220/#fig13"><strong>Fig. 13</strong></a> they are directly connected with bidirectional links.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 <!-- raw HTML omitted --><!-- raw HTML omitted -->
 <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
@@ -1164,7 +1166,7 @@
   
 </div>
 <h2 id="association-in-r3dm">Association in R3DM</h2>
-<p>According to <a href="/en/post/20160913/#r3dm-hypergraph-terminology">R3DM Hypergaph Terminology</a>, the objects of <code>RDF literal</code> triples, i.e. values, are  <strong>HyperAtoms</strong> and the resources of <strong>RDF links</strong> are <strong>HyperBonds</strong>. Thus the RDF graph of <a href="#fig8"><strong>Fig. 8</strong></a> can be redrawn as a hypergraph with <!-- raw HTML omitted --> red <!-- raw HTML omitted --> nodes that play the role of <strong>HyperAtoms</strong> and <!-- raw HTML omitted --> green <!-- raw HTML omitted --> nodes that play the role of <strong>HyperBonds</strong>, see <a href="#fig14"><strong>Fig. 14</strong></a>.</p>
+<p>According to <a href="/en/post/20160913/#r3dm-hypergraph-terminology">R3DM Hypergaph Terminology</a>, the objects of <code>RDF literal</code> triples, i.e. values, are  <strong>HyperAtoms</strong> and the resources of <strong>RDF links</strong> are <strong>HyperBonds</strong>. Thus the RDF graph of <a href="/en/post/20161220/#fig8"><strong>Fig. 8</strong></a> can be redrawn as a hypergraph with <!-- raw HTML omitted --> red <!-- raw HTML omitted --> nodes that play the role of <strong>HyperAtoms</strong> and <!-- raw HTML omitted --> green <!-- raw HTML omitted --> nodes that play the role of <strong>HyperBonds</strong>, see <a href="/en/post/20161220/#fig14"><strong>Fig. 14</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -1192,44 +1194,44 @@
 
 </figure>
 </p>
-<p>This R3DM hypergraph figure above, <a href="#fig14"><strong>Fig. 14</strong></a>, has been created from the execution of the following Wolfram Language code. You will notice that <strong>HyperAtom</strong> sets such as <strong>ha2-(catcost)</strong> and <strong>ha5-(catqnt)</strong> are attribute sets with value members that take part in the formation of <strong>Catalog</strong> records with instances that are drawn from <strong>hb2 set</strong>. <strong>Supplier</strong> instances are drawn from the other <strong>HyperBond</strong> set (<strong>hb3</strong>) and <strong>ha3-(sname)</strong>, <strong>ha4-(scountry)</strong> are attribute sets with value members that describe the <strong>Suppliers</strong>. Instances from these <strong>HyperBond</strong> sets may share common values or associated with the same <strong>HyperBond</strong>. For example we have two suppliers, <strong>Supplier:1082</strong> and <strong>Supplier:1081</strong> that are located in <strong>USA</strong> or <strong>Catalog:11</strong> and <strong>Catalog:16</strong> entries that are associated with <strong>Part:998</strong> and they both have the same quantity, i.e. <strong>200</strong> pieces of this part.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">ha1<span style="color:#f92672">=</span>{<span style="color:#ae81ff">998</span>,<span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>,<span style="color:#e6db74">&#34;Red&#34;</span>,<span style="color:#ae81ff">7</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span><span style="color:#e6db74">`,&#34;lb&#34;};
-</span><span style="color:#e6db74">ha2={11.7,7.95,12.5,48.6};
-</span><span style="color:#e6db74">ha3={&#34;Acme Widget Suppliers&#34;,&#34;Big Red Tool and Die&#34;,&#34;Perfunctory Parts&#34;,&#34;Alien Aircaft Inc.&#34;};
-</span><span style="color:#e6db74">ha4={&#34;USA&#34;,&#34;USA&#34;,&#34;SPAIN&#34;,&#34;UK&#34;};
-</span><span style="color:#e6db74">ha5={&#34;400&#34;,&#34;200&#34;,&#34;200&#34;};
-</span><span style="color:#e6db74">hb1={&#34;Part:998&#34;,&#34;schema:item&#34;};
-</span><span style="color:#e6db74">hb2={&#34;Catalog:7&#34;,&#34;Catalog:11&#34;,&#34;Catalog:12&#34;,&#34;Catalog:16&#34;};
-</span><span style="color:#e6db74">hb3={&#34;Supplier:1081&#34;,&#34;Supplier:1082&#34;,&#34;Supplier:1083&#34;,&#34;Supplier:1084&#34;};
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">vstyle=Join[Thread[Join[ha1,ha2, ha3,ha4,ha5]-&gt;Red],Thread[Join[hb1,hb2,hb3]-&gt;Green]];
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">data=Join[
-</span><span style="color:#e6db74">  {&#34;Part:998&#34;-&gt;&#34;schema:item&#34;},
-</span><span style="color:#e6db74">  Thread[&#34;Part:998&#34;-&gt;ha1],Thread[hb2-&gt;ha2],
-</span><span style="color:#e6db74">  Thread[hb2-&gt;hb3],Thread[hb3-&gt;ha3],
-</span><span style="color:#e6db74">  Thread[hb3-&gt;ha4],Thread[hb2-&gt;&#34;Part:998&#34;],  
-</span><span style="color:#e6db74">  Thread[{&#34;Catalog:7&#34;,&#34;Catalog:11&#34;,&#34;Catalog:16&#34;}-&gt;ha5]];
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">Graph[
-</span><span style="color:#e6db74">  data,
-</span><span style="color:#e6db74">  VertexLabels-&gt;&#34;Name&#34;,
-</span><span style="color:#e6db74">  VertexSize-&gt;{{&#34;Nearest&#34;,0.15}},
-</span><span style="color:#e6db74">  VertexStyle-&gt;vstyle,
-</span><span style="color:#e6db74">  EdgeShapeFunction-&gt;GraphElementData[{&#34;CarvedArrow&#34;,&#34;ArrowSize&#34;-&gt;.02}],
-</span><span style="color:#e6db74">  EdgeStyle-&gt;Thick,
-</span><span style="color:#e6db74">  GraphLayout-&gt;&#34;SpringEmbedding&#34;,
-</span><span style="color:#e6db74">  ImageSize-&gt;{400.,Automatic}
-</span><span style="color:#e6db74">]
-</span></code></pre></div><p>We can rewrite now the following four associations :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/* 4 Associations of catalog part no 998 with supplier Ids and catalog prices */</span>
-<span style="color:#a6e22e">CatalogID</span>( <span style="color:#a6e22e">catpid</span>,  <span style="color:#a6e22e">catsid</span>,       <span style="color:#a6e22e">catqnt</span>, <span style="color:#a6e22e">catcost</span>)
-
-<span style="color:#a6e22e">Catalog07</span>( <span style="color:#a6e22e">Part998</span>, <span style="color:#a6e22e">Supplier1081</span>, <span style="color:#ae81ff">400</span>,    <span style="color:#ae81ff">11.70</span>  )
-<span style="color:#a6e22e">Catalog11</span>( <span style="color:#a6e22e">Part998</span>, <span style="color:#a6e22e">Supplier1082</span>, <span style="color:#ae81ff">200</span>,     <span style="color:#ae81ff">7.95</span>  )
-<span style="color:#a6e22e">Catalog12</span>( <span style="color:#a6e22e">Part998</span>, <span style="color:#a6e22e">Supplier1083</span>,         <span style="color:#ae81ff">12.50</span>  )
-<span style="color:#a6e22e">Catalog16</span>( <span style="color:#a6e22e">Part998</span>, <span style="color:#a6e22e">Supplier1084</span>, <span style="color:#ae81ff">200</span>,    <span style="color:#ae81ff">48.60</span>  )
-</code></pre></div><p>Associations in this form greatly resemble tuples of <strong>Catalog</strong> relation, see <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/tsv/Catalog.tsv">TSV</a> format, where the <strong>heading</strong> of this relation is usually stored in a <a href="https://en.wikipedia.org/wiki/Data_dictionary">data dictionary</a> and <strong>Null</strong> marker indicates that a data value is absent from the tuple. On the contrary in case of <strong>RDF literal</strong> triples the predicate position signifies the object part of the triple and in <strong>RDF links</strong> Instances/Type of resources at subject and object positions are also signified by predicates such as (<code>rdf:type</code>). But in <strong>R3DM associations</strong> there is not any label on the edge that connects <strong>HyperAtoms</strong> or <strong>HyperBonds</strong>. Therefore the denotation of resources and literals, i.e. what they stand for, cannot be seen on this graph, <a href="#fig14"><strong>Fig. 14</strong></a>. For example in <code>Catalog12</code> association instance we have to know that the literal meaning of the value <code>12.5</code> is the <strong>Catalog Cost</strong>. Generally speaking, this is the <strong>granularity of data</strong> problem. How we represent a piece of information at atomic level and how we construct higher structures. <strong>R3DM/S3DM unifies three perspectives, semantics at the conceptual layer, representation at the symbol layer and encoding at the physical layer</strong>, in such a way that they are separable. R3DM/S3DM conceptual framework is based on the natural process of semiosis where <strong>the signified, i.e. concept, entity, attribute and the signifier, i.e. value, <a href="/en/post/20150320/#signified-sign-signifier-alternative-paradigm">are referenced through symbols</a>, i.e. signs, at discrete layers</strong>. The main difference with RDF data model is that these references are not in the form of <a href="https://en.wikipedia.org/wiki/Uniform_resource_identifier">URIs</a> but they resemble <a href="https://en.wikipedia.org/wiki/IP_address">IPs</a>. For example the value <code>12.50</code> can be referenced by a 4D vector of the form <code>{2, 8, 262, 1}</code> where the first dimension is the database, the second dimension is the table (Entity), the third dimension is the field (Attribute) and the last dimension is a member of an attribute set.</p>
+<p>This R3DM hypergraph figure above, <a href="/en/post/20161220/#fig14"><strong>Fig. 14</strong></a>, has been created from the execution of the following Wolfram Language code. You will notice that <strong>HyperAtom</strong> sets such as <strong>ha2-(catcost)</strong> and <strong>ha5-(catqnt)</strong> are attribute sets with value members that take part in the formation of <strong>Catalog</strong> records with instances that are drawn from <strong>hb2 set</strong>. <strong>Supplier</strong> instances are drawn from the other <strong>HyperBond</strong> set (<strong>hb3</strong>) and <strong>ha3-(sname)</strong>, <strong>ha4-(scountry)</strong> are attribute sets with value members that describe the <strong>Suppliers</strong>. Instances from these <strong>HyperBond</strong> sets may share common values or associated with the same <strong>HyperBond</strong>. For example we have two suppliers, <strong>Supplier:1082</strong> and <strong>Supplier:1081</strong> that are located in <strong>USA</strong> or <strong>Catalog:11</strong> and <strong>Catalog:16</strong> entries that are associated with <strong>Part:998</strong> and they both have the same quantity, i.e. <strong>200</strong> pieces of this part.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>ha1<span style="color:#f92672">=</span>{<span style="color:#ae81ff">998</span>,<span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>,<span style="color:#e6db74">&#34;Red&#34;</span>,<span style="color:#ae81ff">7</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span><span style="color:#e6db74">`,&#34;lb&#34;};
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ha2={11.7,7.95,12.5,48.6};
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ha3={&#34;Acme Widget Suppliers&#34;,&#34;Big Red Tool and Die&#34;,&#34;Perfunctory Parts&#34;,&#34;Alien Aircaft Inc.&#34;};
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ha4={&#34;USA&#34;,&#34;USA&#34;,&#34;SPAIN&#34;,&#34;UK&#34;};
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ha5={&#34;400&#34;,&#34;200&#34;,&#34;200&#34;};
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">hb1={&#34;Part:998&#34;,&#34;schema:item&#34;};
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">hb2={&#34;Catalog:7&#34;,&#34;Catalog:11&#34;,&#34;Catalog:12&#34;,&#34;Catalog:16&#34;};
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">hb3={&#34;Supplier:1081&#34;,&#34;Supplier:1082&#34;,&#34;Supplier:1083&#34;,&#34;Supplier:1084&#34;};
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">vstyle=Join[Thread[Join[ha1,ha2, ha3,ha4,ha5]-&gt;Red],Thread[Join[hb1,hb2,hb3]-&gt;Green]];
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">data=Join[
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  {&#34;Part:998&#34;-&gt;&#34;schema:item&#34;},
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  Thread[&#34;Part:998&#34;-&gt;ha1],Thread[hb2-&gt;ha2],
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  Thread[hb2-&gt;hb3],Thread[hb3-&gt;ha3],
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  Thread[hb3-&gt;ha4],Thread[hb2-&gt;&#34;Part:998&#34;],  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  Thread[{&#34;Catalog:7&#34;,&#34;Catalog:11&#34;,&#34;Catalog:16&#34;}-&gt;ha5]];
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Graph[
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  data,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  VertexLabels-&gt;&#34;Name&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  VertexSize-&gt;{{&#34;Nearest&#34;,0.15}},
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  VertexStyle-&gt;vstyle,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  EdgeShapeFunction-&gt;GraphElementData[{&#34;CarvedArrow&#34;,&#34;ArrowSize&#34;-&gt;.02}],
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  EdgeStyle-&gt;Thick,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  GraphLayout-&gt;&#34;SpringEmbedding&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  ImageSize-&gt;{400.,Automatic}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">]
+</span></span></span></code></pre></div><p>We can rewrite now the following four associations :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">/* 4 Associations of catalog part no 998 with supplier Ids and catalog prices */</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">CatalogID</span>( <span style="color:#a6e22e">catpid</span>,  <span style="color:#a6e22e">catsid</span>,       <span style="color:#a6e22e">catqnt</span>, <span style="color:#a6e22e">catcost</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Catalog07</span>( <span style="color:#a6e22e">Part998</span>, <span style="color:#a6e22e">Supplier1081</span>, <span style="color:#ae81ff">400</span>,    <span style="color:#ae81ff">11.70</span>  )
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Catalog11</span>( <span style="color:#a6e22e">Part998</span>, <span style="color:#a6e22e">Supplier1082</span>, <span style="color:#ae81ff">200</span>,     <span style="color:#ae81ff">7.95</span>  )
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Catalog12</span>( <span style="color:#a6e22e">Part998</span>, <span style="color:#a6e22e">Supplier1083</span>,         <span style="color:#ae81ff">12.50</span>  )
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Catalog16</span>( <span style="color:#a6e22e">Part998</span>, <span style="color:#a6e22e">Supplier1084</span>, <span style="color:#ae81ff">200</span>,    <span style="color:#ae81ff">48.60</span>  )
+</span></span></code></pre></div><p>Associations in this form greatly resemble tuples of <strong>Catalog</strong> relation, see <a href="https://github.com/healiseu/healiseu.github.io/blob/master/SupplierPartCatalogue/tsv/Catalog.tsv">TSV</a> format, where the <strong>heading</strong> of this relation is usually stored in a <a href="https://en.wikipedia.org/wiki/Data_dictionary">data dictionary</a> and <strong>Null</strong> marker indicates that a data value is absent from the tuple. On the contrary in case of <strong>RDF literal</strong> triples the predicate position signifies the object part of the triple and in <strong>RDF links</strong> Instances/Type of resources at subject and object positions are also signified by predicates such as (<code>rdf:type</code>). But in <strong>R3DM associations</strong> there is not any label on the edge that connects <strong>HyperAtoms</strong> or <strong>HyperBonds</strong>. Therefore the denotation of resources and literals, i.e. what they stand for, cannot be seen on this graph, <a href="/en/post/20161220/#fig14"><strong>Fig. 14</strong></a>. For example in <code>Catalog12</code> association instance we have to know that the literal meaning of the value <code>12.5</code> is the <strong>Catalog Cost</strong>. Generally speaking, this is the <strong>granularity of data</strong> problem. How we represent a piece of information at atomic level and how we construct higher structures. <strong>R3DM/S3DM unifies three perspectives, semantics at the conceptual layer, representation at the symbol layer and encoding at the physical layer</strong>, in such a way that they are separable. R3DM/S3DM conceptual framework is based on the natural process of semiosis where <strong>the signified, i.e. concept, entity, attribute and the signifier, i.e. value, <a href="/en/post/20150320/#signified-sign-signifier-alternative-paradigm">are referenced through symbols</a>, i.e. signs, at discrete layers</strong>. The main difference with RDF data model is that these references are not in the form of <a href="https://en.wikipedia.org/wiki/Uniform_resource_identifier">URIs</a> but they resemble <a href="https://en.wikipedia.org/wiki/IP_address">IPs</a>. For example the value <code>12.50</code> can be referenced by a 4D vector of the form <code>{2, 8, 262, 1}</code> where the first dimension is the database, the second dimension is the table (Entity), the third dimension is the field (Attribute) and the last dimension is a member of an attribute set.</p>
 <h2 id="discussion">Discussion</h2>
 <p>Although this is not the space or the time to elaborate more on <strong>R3DM/S3DM associations</strong> it is important to mention that it is possible to escape from the predicate logic (<code>owl#sameAs</code>) on how to identify that two URI aliases refer to the same entity. Moreover the alternative paradigm of <strong>R3DM/S3DM</strong> offers a more attractive and efficient approach on data integration and heterogeneous data representation than bridging between RDF vocabularies with mapping predicates such as <code>owl:equivalentClass</code>  and <code>owl:equivalentProperty</code>.</p>
 <p>We foresee that the Internet of things will use a protocol with numerical reference vectors for data communication in a similar fashion to IP addresses that are used for connecting devices in a computer network. Hopefully one day it will become clear that the predicate part of RDF data model is causing more harm than good in the semantic interpretation and information representation.</p>
@@ -1264,7 +1266,7 @@
   
   <a class="badge badge-light" href="/en/tags/topic_map/">Topic_map</a>
   
-  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  <a class="badge badge-light" href="">Sign_(semiotics)</a>
   
   <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
   
@@ -1290,7 +1292,7 @@
   
   <a class="badge badge-light" href="/en/tags/resource_description_framework/">Resource_Description_Framework</a>
   
-  <a class="badge badge-light" href="/en/tags/association_object-oriented_programming/">Association_(object-oriented_programming)</a>
+  <a class="badge badge-light" href="">Association_(object-oriented_programming)</a>
   
   <a class="badge badge-light" href="/en/tags/serialization/">Serialization</a>
   
@@ -1328,7 +1330,7 @@
     
 
     <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu/">Athanassios I. Hatzis, PhD</a></h5>
       <h6 class="card-subtitle">Software Engineer - Researcher, Consultant, Independent Contractor</h6>
       
       <ul class="network-icon" aria-hidden="true">
@@ -1601,7 +1603,7 @@
     
     
     
-    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
+    <script src="/js/academia.min.1def94b00314e302593e38a8ce0e471f.js"></script>
 
     
 
@@ -1620,7 +1622,7 @@
       <div class="col-md-6">
         
         <p>
-          © HEALIS - Athanassios I. Hatzis, 2024 &middot; 
+          © HEALIS - Athanassios I. Hatzis, 2025 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.

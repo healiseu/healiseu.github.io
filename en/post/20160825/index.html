@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.92.2" />
+  <meta name="generator" content="Hugo 0.123.7">
 
   
 
@@ -81,7 +81,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.f061a21f63bf4b7a5a9dd13669fcb02e.css">
+  <link rel="stylesheet" href="/css/academia.min.dbe83bbf6477781bec4f66e695a12d6d.css">
 
   
 
@@ -470,7 +470,7 @@
 
 
 <meta content="2016-08-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2016-08-25 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -493,6 +493,8 @@
   <span class="article-date">
     
     
+      
+          Last updated on
       
     
     <time>2016-08-25</time>
@@ -770,7 +772,7 @@
 </tr>
 </tbody>
 </table>
-<p>In this classic paper, <a href="https://dl.acm.org/citation.cfm?id=320440">&ldquo;The Entity-Relationship Model - Toward a Unified View of Data&rdquo;</a> <strong>Peter Chen defines relationship as an association among entities</strong>. In the same paper <strong>entity and relationship are illustrated as hypergraphs</strong>. In particular, <em><a href="#fig2">Fig. 2</a></em> at page 13 and <em><a href="#fig3">Fig. 3</a></em> at page 14 show how an instance from an Entity/Relationship set is linked to either values or other entities. Although Peter Chen did not describe these fundamental constructs of his data model with Hypegraph terms, it can be easily seen in these captured figures that a specific entity or relationship form hyperedges with other entities or values that play the role of hypernodes.</p>
+<p>In this classic paper, <a href="https://dl.acm.org/citation.cfm?id=320440">&ldquo;The Entity-Relationship Model - Toward a Unified View of Data&rdquo;</a> <strong>Peter Chen defines relationship as an association among entities</strong>. In the same paper <strong>entity and relationship are illustrated as hypergraphs</strong>. In particular, <em><a href="/en/post/20160825/#fig2">Fig. 2</a></em> at page 13 and <em><a href="/en/post/20160825/#fig3">Fig. 3</a></em> at page 14 show how an instance from an Entity/Relationship set is linked to either values or other entities. Although Peter Chen did not describe these fundamental constructs of his data model with Hypegraph terms, it can be easily seen in these captured figures that a specific entity or relationship form hyperedges with other entities or values that play the role of hypernodes.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -829,17 +831,17 @@
 <p>We extend the definition of association in the (ER) data model to cover both Entities and Relationships. In the aforementioned paper, Chen formally defines attribute as a function which maps a given entity to a single value (or a single tuple of values). He also mentions that relationships have their own attributes whose meaning depends on the associated entities. The (key,value) pair of an <a href="https://en.wikipedia.org/wiki/Associative_array">Associative array</a>, a.k.a. map, symbol table, or dictionary, captures this functional operation of attribute.</p>
 <h3 id="wolfram-language---association">Wolfram Language - Association</h3>
 <p>Wolfram Language is using <code>Association</code> fundamental construct to represent an associative array. The following three <a href="https://reference.wolfram.com/language/guide/Associations.html">Wolfram Language associations</a> represent a relationship of a Catalog instance with a Supplier instance and some Part instance from our toy dataset.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Supplier</span> <span style="color:#66d9ef">Association</span> <span style="color:#f92672">*</span>)
-<span style="color:#f92672">&lt;|</span>supID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1081</span>, supName<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Acme Widget Suppliers&#34;</span>, supAddress<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;1 Grub St., Potemkin Village, IL 61801&#34;</span>, supCity<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;ILLINOIS&#34;</span>, supCountry<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;USA&#34;</span>, supStatus<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">10</span><span style="color:#f92672">|&gt;</span>
-
-(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Part</span> <span style="color:#66d9ef">Association</span> <span style="color:#f92672">*</span>)
-<span style="color:#f92672">&lt;|</span>prtID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">998</span>, prtName<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>, prtColor<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Red&#34;</span>, prtWeight<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span>, prtUnit<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;gr&#34;</span><span style="color:#f92672">|&gt;</span>
-
-(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Catalogue</span> <span style="color:#66d9ef">Association</span> <span style="color:#f92672">*</span>)
-<span style="color:#f92672">&lt;|</span>supID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1081</span>, prtID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">998</span>, catPrice<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">11</span><span style="color:#f92672">.</span><span style="color:#ae81ff">7</span>, catQuantity<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">400</span>, catDate<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Wed 10 Sep 2014&#34;</span>, catCheck<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">|&gt;</span>
-</code></pre></div><p>What we are missing in this representation are the hyperedges, i.e. the nexuses that link together hypernodes. According to hypergraph terminology, the edge that connects a hyperedge to a hypernode is called hyperlink or connector. You may think of these hyperlinks/connectors as hash fields but we need another identifier for the hash key, i.e. an identifier for the instance. We could have used supID, prtID or a combination of these two but we prefer to define new identifiers for hyperedges. <strong>The main reason for this is that in principle we want to design a uniform way of addressing and identifying both hyperedge and hypernode instances at a low-dimensional, e.g. (2D,3D,4D), space</strong>. If we encode this way, it is possible to avoid namespace problems. In this post we use names to compare the graph with figures from Peter Chen&rsquo;s paper.</p>
-<p><img src="./three_associations.jpg" alt="Three Associations in a Named-Row Dataset"></p>
-<p>We may also connect hyperedges, e.g. we can add a &ldquo;type&rdquo; hyperlink that maps instances to classes, a &ldquo;vendor&rdquo; hyperlink that maps a Catalog instance to its Supplier instance and a &ldquo;stockItem&rdquo; hyperlink that connects Catalog instance to Part instance. In Wolfram Language it is relatively easy to make a graph of these Associations. We colorized the graph according to the different data types we have, i.e. hyperedges, strings, doubles, integers, dates, and booleans, <a href="#fig4"><strong>Fig.4</strong></a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Supplier</span> <span style="color:#66d9ef">Association</span> <span style="color:#f92672">*</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;|</span>supID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1081</span>, supName<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Acme Widget Suppliers&#34;</span>, supAddress<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;1 Grub St., Potemkin Village, IL 61801&#34;</span>, supCity<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;ILLINOIS&#34;</span>, supCountry<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;USA&#34;</span>, supStatus<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">10</span><span style="color:#f92672">|&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Part</span> <span style="color:#66d9ef">Association</span> <span style="color:#f92672">*</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;|</span>prtID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">998</span>, prtName<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>, prtColor<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Red&#34;</span>, prtWeight<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span>, prtUnit<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;gr&#34;</span><span style="color:#f92672">|&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Catalogue</span> <span style="color:#66d9ef">Association</span> <span style="color:#f92672">*</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;|</span>supID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1081</span>, prtID<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">998</span>, catPrice<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">11</span><span style="color:#f92672">.</span><span style="color:#ae81ff">7</span>, catQuantity<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">400</span>, catDate<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Wed 10 Sep 2014&#34;</span>, catCheck<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">|&gt;</span>
+</span></span></code></pre></div><p>What we are missing in this representation are the hyperedges, i.e. the nexuses that link together hypernodes. According to hypergraph terminology, the edge that connects a hyperedge to a hypernode is called hyperlink or connector. You may think of these hyperlinks/connectors as hash fields but we need another identifier for the hash key, i.e. an identifier for the instance. We could have used supID, prtID or a combination of these two but we prefer to define new identifiers for hyperedges. <strong>The main reason for this is that in principle we want to design a uniform way of addressing and identifying both hyperedge and hypernode instances at a low-dimensional, e.g. (2D,3D,4D), space</strong>. If we encode this way, it is possible to avoid namespace problems. In this post we use names to compare the graph with figures from Peter Chen&rsquo;s paper.</p>
+<p><img alt="Three Associations in a Named-Row Dataset" src="./three_associations.jpg"></p>
+<p>We may also connect hyperedges, e.g. we can add a &ldquo;type&rdquo; hyperlink that maps instances to classes, a &ldquo;vendor&rdquo; hyperlink that maps a Catalog instance to its Supplier instance and a &ldquo;stockItem&rdquo; hyperlink that connects Catalog instance to Part instance. In Wolfram Language it is relatively easy to make a graph of these Associations. We colorized the graph according to the different data types we have, i.e. hyperedges, strings, doubles, integers, dates, and booleans, <a href="/en/post/20160825/#fig4"><strong>Fig.4</strong></a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
 
@@ -869,52 +871,52 @@
 </p>
 <h3 id="json-serialization">JSON Serialization</h3>
 <p>Another very popular representation for Association is JSON Serialization. Those associations we described above can be serialized with the following format.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-  <span style="color:#f92672">&#34;$PartI&#34;</span>: {
-    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;$Item&#34;</span>,
-    <span style="color:#f92672">&#34;prtID&#34;</span>: <span style="color:#ae81ff">998</span>,
-    <span style="color:#f92672">&#34;prtName&#34;</span>: <span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>,
-    <span style="color:#f92672">&#34;prtColor&#34;</span>: <span style="color:#e6db74">&#34;Red&#34;</span>,
-    <span style="color:#f92672">&#34;prtWeight&#34;</span>: <span style="color:#ae81ff">7.2</span>,
-    <span style="color:#f92672">&#34;prtUnit&#34;</span>: <span style="color:#e6db74">&#34;gr&#34;</span>
-  },
-  <span style="color:#f92672">&#34;$SupplierJ&#34;</span>: {
-    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;$Organization&#34;</span>,
-    <span style="color:#f92672">&#34;supID&#34;</span>: <span style="color:#ae81ff">1081</span>,
-    <span style="color:#f92672">&#34;supName&#34;</span>: <span style="color:#e6db74">&#34;Acme Widget Suppliers&#34;</span>,
-    <span style="color:#f92672">&#34;supAddress&#34;</span>: <span style="color:#e6db74">&#34;1 Grub St., Potemkin Village, IL 61801&#34;</span>,
-    <span style="color:#f92672">&#34;supCity&#34;</span>: <span style="color:#e6db74">&#34;ILLINOIS&#34;</span>,
-    <span style="color:#f92672">&#34;supCountry&#34;</span>: <span style="color:#e6db74">&#34;USA&#34;</span>,
-    <span style="color:#f92672">&#34;supStatus&#34;</span>: <span style="color:#ae81ff">10</span>
-  },
-  <span style="color:#f92672">&#34;$CatalogK&#34;</span>: {
-    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;$Inventory&#34;</span>,
-    <span style="color:#f92672">&#34;supID&#34;</span>: <span style="color:#ae81ff">1081</span>,
-    <span style="color:#f92672">&#34;prtID&#34;</span>: <span style="color:#ae81ff">998</span>,
-    <span style="color:#f92672">&#34;catPrice&#34;</span>: <span style="color:#ae81ff">11.7</span>,
-    <span style="color:#f92672">&#34;catQuantity&#34;</span>: <span style="color:#ae81ff">400</span>,
-    <span style="color:#f92672">&#34;catDate&#34;</span>: <span style="color:#e6db74">&#34;2014-09-10&#34;</span>,
-    <span style="color:#f92672">&#34;catCheck&#34;</span>: <span style="color:#66d9ef">true</span>
-  }
-}
-</code></pre></div><p>Catalogue, Parts and Suppliers tables are also available in <a href="https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue/json">JSON</a> format.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;$PartI&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;$Item&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;prtID&#34;</span>: <span style="color:#ae81ff">998</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;prtName&#34;</span>: <span style="color:#e6db74">&#34;Fire Hydrant Cap&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;prtColor&#34;</span>: <span style="color:#e6db74">&#34;Red&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;prtWeight&#34;</span>: <span style="color:#ae81ff">7.2</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;prtUnit&#34;</span>: <span style="color:#e6db74">&#34;gr&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;$SupplierJ&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;$Organization&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;supID&#34;</span>: <span style="color:#ae81ff">1081</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;supName&#34;</span>: <span style="color:#e6db74">&#34;Acme Widget Suppliers&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;supAddress&#34;</span>: <span style="color:#e6db74">&#34;1 Grub St., Potemkin Village, IL 61801&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;supCity&#34;</span>: <span style="color:#e6db74">&#34;ILLINOIS&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;supCountry&#34;</span>: <span style="color:#e6db74">&#34;USA&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;supStatus&#34;</span>: <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;$CatalogK&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;$Inventory&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;supID&#34;</span>: <span style="color:#ae81ff">1081</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;prtID&#34;</span>: <span style="color:#ae81ff">998</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;catPrice&#34;</span>: <span style="color:#ae81ff">11.7</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;catQuantity&#34;</span>: <span style="color:#ae81ff">400</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;catDate&#34;</span>: <span style="color:#e6db74">&#34;2014-09-10&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;catCheck&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Catalogue, Parts and Suppliers tables are also available in <a href="https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue/json">JSON</a> format.</p>
 <h3 id="association-vs-relation">Association vs Relation</h3>
 <p>Although the logical view of Chen&rsquo;s (ER) data model and his popular diagrammatic technique incorporates Entities, Relationships, Attributes and Values, at the physical layer of any relational DBMS we find records, i.e. Entities or Relationships are ordered tuples. A set of these ordered tuples that have the same heading, is called body. This header is another ordered tuple with attribute names. Theoretically speaking the body and the header of a table make the Relation. In practise the header is separated from the body and located at the database catalog together with other metadata for the schema of the database. SQL standard specifies a uniform mean to access this catalog.</p>
 <h3 id="wolfram-language---relation">Wolfram Language - Relation</h3>
 <p>The <a href="https://reference.wolfram.com/language/ref/List.html"><code>List</code> fundamental construct of Wolfram Language</a> can be used to represent a Relation. An extensive analysis of various representations and transformations on the constructs of the Relational data model in Wolfram Language can be found <a href="https://www.linkedin.com/pulse/towards-new-data-modelling-architecture-part-1-hatzis-phd">here</a>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Part</span> <span style="color:#66d9ef">Relation</span> with a header <span style="color:#f92672">and</span> three tuples (body) <span style="color:#f92672">*</span>)
-{
-  {<span style="color:#e6db74">&#34;pid&#34;</span>, <span style="color:#e6db74">&#34;pname&#34;</span>, <span style="color:#e6db74">&#34;pcolor&#34;</span>, <span style="color:#e6db74">&#34;pweight&#34;</span>, <span style="color:#e6db74">&#34;punit&#34;</span>},
-  {<span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#e6db74">&#34;Red&#34;</span>, <span style="color:#ae81ff">15</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>, <span style="color:#e6db74">&#34;lb&#34;</span>},
-  {<span style="color:#ae81ff">992</span>, <span style="color:#e6db74">&#34;Smoke Shifter End&#34;</span>, <span style="color:#e6db74">&#34;Black&#34;</span>, <span style="color:#ae81ff">3</span><span style="color:#f92672">.</span><span style="color:#ae81ff">75</span>, <span style="color:#e6db74">&#34;lb&#34;</span>},
-  {<span style="color:#ae81ff">993</span>, <span style="color:#e6db74">&#34;Acme Widget Washer&#34;</span>, <span style="color:#e6db74">&#34;Red&#34;</span>, <span style="color:#ae81ff">142</span><span style="color:#f92672">.</span><span style="color:#ae81ff">88</span>, <span style="color:#e6db74">&#34;kg&#34;</span>}
-}
-</code></pre></div><p>The reader will notice that in both Associative array and Relation representations, the cell of a table, i.e. the value of an attribute, is always functionally dependent on the description of Attribute and Entity/Relationship. It cannot stand on its own without these semantic references. Moreover, for the Relation representation, the exact order of values has to be maintained together with any missing (NULL) values.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>(<span style="color:#f92672">*</span> <span style="color:#66d9ef">Part</span> <span style="color:#66d9ef">Relation</span> with a header <span style="color:#f92672">and</span> three tuples (body) <span style="color:#f92672">*</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  {<span style="color:#e6db74">&#34;pid&#34;</span>, <span style="color:#e6db74">&#34;pname&#34;</span>, <span style="color:#e6db74">&#34;pcolor&#34;</span>, <span style="color:#e6db74">&#34;pweight&#34;</span>, <span style="color:#e6db74">&#34;punit&#34;</span>},
+</span></span><span style="display:flex;"><span>  {<span style="color:#ae81ff">991</span>, <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>, <span style="color:#e6db74">&#34;Red&#34;</span>, <span style="color:#ae81ff">15</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>, <span style="color:#e6db74">&#34;lb&#34;</span>},
+</span></span><span style="display:flex;"><span>  {<span style="color:#ae81ff">992</span>, <span style="color:#e6db74">&#34;Smoke Shifter End&#34;</span>, <span style="color:#e6db74">&#34;Black&#34;</span>, <span style="color:#ae81ff">3</span><span style="color:#f92672">.</span><span style="color:#ae81ff">75</span>, <span style="color:#e6db74">&#34;lb&#34;</span>},
+</span></span><span style="display:flex;"><span>  {<span style="color:#ae81ff">993</span>, <span style="color:#e6db74">&#34;Acme Widget Washer&#34;</span>, <span style="color:#e6db74">&#34;Red&#34;</span>, <span style="color:#ae81ff">142</span><span style="color:#f92672">.</span><span style="color:#ae81ff">88</span>, <span style="color:#e6db74">&#34;kg&#34;</span>}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The reader will notice that in both Associative array and Relation representations, the cell of a table, i.e. the value of an attribute, is always functionally dependent on the description of Attribute and Entity/Relationship. It cannot stand on its own without these semantic references. Moreover, for the Relation representation, the exact order of values has to be maintained together with any missing (NULL) values.</p>
 <h3 id="data-redundancy">Data Redundancy</h3>
 <p>Relational databases are usually normalized to eliminate duplication of information and ensure referential integrity. This is especially recommended in one-to-many relationships. <a href="https://en.wikipedia.org/wiki/Database_normalization">Normalization</a> involves arranging attributes in tables, nevertheless in a relational database we cannot escape from data redundancy completely. For example if we take the unit attribute of the normalized Part table above we can see that values are still repeated. Most important the schema of a relational database is too rigid and cannot be easily modified without breaking normalization and compromising referential integrity.</p>
 <h3 id="structured-query-language-sql">Structured Query Language (SQL)</h3>
 <p>Performing queries of data in a relational database is highly dependent on these two factors we briefly mentioned above, the physical representation of data on the disk and the normalization procedure. One of the main bottlenecks with SQL is the natural join relational operator, counterpart of logical AND. An <a href="https://en.wikipedia.org/wiki/Join_(SQL)">SQL Join</a> is a means for constructing a result set combining columns from two (or more) tables by using values common to each. The more tables you join and the bigger the size of each table the more time it takes to consolidate the data of the view. On the contrary in many graph databases, connected nodes, i.e. record instances, are directly linked to each other. Each node, contains a list of pointers of its edges, therefore avoiding look-ups. In fact you are not searching for records, you are traversing connections instead. This may dramatically reduce the speed of constructing the result set of a query.</p>
-<p>For demonstration and comparison purposes we provide such a JOIN sql query for our toy database together with an ER diagram of the database schema,<a href="#fig5"><strong>Fig.5</strong></a> and the result set on a Microsoft Access table view, <a href="#fig6"><strong>Fig.6</strong></a>.</p>
+<p>For demonstration and comparison purposes we provide such a JOIN sql query for our toy database together with an ER diagram of the database schema,<a href="/en/post/20160825/#fig5"><strong>Fig.5</strong></a> and the result set on a Microsoft Access table view, <a href="/en/post/20160825/#fig6"><strong>Fig.6</strong></a>.</p>
 <p>You may also download a Microsoft Access, <a href="https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue/accdb">accdb</a> file format, database to experiment with.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted -->
 
@@ -970,22 +972,22 @@
 
 </figure>
 </p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span>  <span style="color:#66d9ef">Catalog</span> . catsid ,
-        <span style="color:#66d9ef">Catalog</span> . catpid ,
-        Suppliers . sname ,
-        Parts . pname ,
-        <span style="color:#66d9ef">Catalog</span> . catcost ,
-        <span style="color:#66d9ef">Catalog</span> . catqnt ,
-        <span style="color:#66d9ef">Catalog</span> . catdate ,
-        <span style="color:#66d9ef">Catalog</span> . catchk
-<span style="color:#66d9ef">FROM</span>    Suppliers
-        <span style="color:#66d9ef">INNER</span>  <span style="color:#66d9ef">JOIN</span>  ( Parts
-                    <span style="color:#66d9ef">INNER</span>  <span style="color:#66d9ef">JOIN</span>  [<span style="color:#66d9ef">Catalog</span>]
-                            <span style="color:#66d9ef">ON</span>  Parts . pid  <span style="color:#f92672">=</span>  <span style="color:#66d9ef">Catalog</span> . catpid )
-                <span style="color:#66d9ef">ON</span>  Suppliers . sid  <span style="color:#f92672">=</span>  <span style="color:#66d9ef">Catalog</span> . catsid
-<span style="color:#66d9ef">ORDER</span>   <span style="color:#66d9ef">BY</span>  Suppliers . sname  <span style="color:#66d9ef">DESC</span> ,
-           <span style="color:#66d9ef">Catalog</span> . catcost  <span style="color:#66d9ef">DESC</span> ;
-</code></pre></div><p>One can immediately notice the complexity of SQL query language on the nested SQL Join constructs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>  <span style="color:#66d9ef">Catalog</span> . catsid ,
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">Catalog</span> . catpid ,
+</span></span><span style="display:flex;"><span>        Suppliers . sname ,
+</span></span><span style="display:flex;"><span>        Parts . pname ,
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">Catalog</span> . catcost ,
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">Catalog</span> . catqnt ,
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">Catalog</span> . catdate ,
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">Catalog</span> . catchk
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span>    Suppliers
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">INNER</span>  <span style="color:#66d9ef">JOIN</span>  ( Parts
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">INNER</span>  <span style="color:#66d9ef">JOIN</span>  [<span style="color:#66d9ef">Catalog</span>]
+</span></span><span style="display:flex;"><span>                            <span style="color:#66d9ef">ON</span>  Parts . pid  <span style="color:#f92672">=</span>  <span style="color:#66d9ef">Catalog</span> . catpid )
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">ON</span>  Suppliers . sid  <span style="color:#f92672">=</span>  <span style="color:#66d9ef">Catalog</span> . catsid
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ORDER</span>   <span style="color:#66d9ef">BY</span>  Suppliers . sname  <span style="color:#66d9ef">DESC</span> ,
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">Catalog</span> . catcost  <span style="color:#66d9ef">DESC</span> ;
+</span></span></code></pre></div><p>One can immediately notice the complexity of SQL query language on the nested SQL Join constructs.</p>
 <h2 id="summary">Summary</h2>
 <p>In this article we described several limitations of the ER model that we wish to overcome, in brief these are:</p>
 <ul>
@@ -1013,7 +1015,7 @@
   
   <a class="badge badge-light" href="/en/tags/topic_map/">Topic_map</a>
   
-  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  <a class="badge badge-light" href="">Sign_(semiotics)</a>
   
   <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
   
@@ -1037,13 +1039,13 @@
   
   <a class="badge badge-light" href="/en/tags/associative_entity/">Associative_entity</a>
   
-  <a class="badge badge-light" href="/en/tags/entityrelationship_model/">Entity–relationship_model</a>
+  <a class="badge badge-light" href="">Entity–relationship_model</a>
   
   <a class="badge badge-light" href="/en/tags/serialization/">Serialization</a>
   
   <a class="badge badge-light" href="/en/tags/relational_model/">Relational_model</a>
   
-  <a class="badge badge-light" href="/en/tags/association_object-oriented_programming/">Association_(object-oriented_programming)</a>
+  <a class="badge badge-light" href="">Association_(object-oriented_programming)</a>
   
   <a class="badge badge-light" href="/en/tags/associative_array/">Associative_array</a>
   
@@ -1083,7 +1085,7 @@
     
 
     <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu/">Athanassios I. Hatzis, PhD</a></h5>
       <h6 class="card-subtitle">Software Engineer - Researcher, Consultant, Independent Contractor</h6>
       
       <ul class="network-icon" aria-hidden="true">
@@ -1356,7 +1358,7 @@
     
     
     
-    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
+    <script src="/js/academia.min.1def94b00314e302593e38a8ce0e471f.js"></script>
 
     
 
@@ -1375,7 +1377,7 @@
       <div class="col-md-6">
         
         <p>
-          © HEALIS - Athanassios I. Hatzis, 2024 &middot; 
+          © HEALIS - Athanassios I. Hatzis, 2025 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.

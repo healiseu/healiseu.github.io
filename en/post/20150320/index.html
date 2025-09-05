@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.92.2" />
+  <meta name="generator" content="Hugo 0.123.7">
 
   
 
@@ -81,7 +81,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.f061a21f63bf4b7a5a9dd13669fcb02e.css">
+  <link rel="stylesheet" href="/css/academia.min.dbe83bbf6477781bec4f66e695a12d6d.css">
 
   
 
@@ -471,7 +471,7 @@
 
 
 <meta content="2015-03-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2015-03-20 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -494,6 +494,8 @@
   <span class="article-date">
     
     
+      
+          Last updated on
       
     
     <time>2015-03-20</time>
@@ -761,67 +763,67 @@
 <p>When we attempt to use Tables as a storage paradigm for Information we discover that Tables are a namespace bound, non-dynamic, 2-D, structured storage paradigm that has a different structure for every Table in every Database. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 </blockquote>
 <blockquote>
-<p>Each application is developed with unique and special queries written to each specific database design, table layout and named tables, columns and keys.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>Each application is developed with unique and special queries written to each specific database design, table layout and named tables, columns and keys.<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 </blockquote>
 <p>Rows of <code>Parts</code> table from a Microsoft Access <a href="https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue/accdb">relational database</a> that we have used in <a href="/en/post/20150317/">Part 1</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(partsList <span style="color:#f92672">=</span>
-  <span style="color:#66d9ef">SQLExecute</span><span style="color:#f92672">[</span>conn,
-    <span style="color:#e6db74">&#34;select pid,pname from Parts where pid&lt;994&#34;</span>,
-    <span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> <span style="color:#66d9ef">TableForm</span>
-</code></pre></div><p><code>Out:</code> <img src="/en/post/20150320/notebook01.jpg" alt="notebook-output-01"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>(partsList <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">SQLExecute</span><span style="color:#f92672">[</span>conn,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;select pid,pname from Parts where pid&lt;994&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> <span style="color:#66d9ef">TableForm</span>
+</span></span></code></pre></div><p><code>Out:</code> <img alt="notebook-output-01" src="/en/post/20150320/notebook01.jpg"></p>
 <h3 id="xml-form">XML Form</h3>
 <p>Rows of the table above serialized in XML</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
-<span style="color:#f92672">&lt;dataroot&gt;</span>
-	<span style="color:#f92672">&lt;Parts&gt;</span>
-		<span style="color:#f92672">&lt;pid&gt;</span>991<span style="color:#f92672">&lt;/pid&gt;</span>
-		<span style="color:#f92672">&lt;pname&gt;</span>Left Handed Bacon Stretcher Cover<span style="color:#f92672">&lt;/pname&gt;</span>
-		<span style="color:#f92672">&lt;pcolor&gt;</span>Red<span style="color:#f92672">&lt;/pcolor&gt;</span>
-	<span style="color:#f92672">&lt;/Parts&gt;</span>
-	<span style="color:#f92672">&lt;Parts&gt;</span>
-		<span style="color:#f92672">&lt;pid&gt;</span>992<span style="color:#f92672">&lt;/pid&gt;</span>
-		<span style="color:#f92672">&lt;pname&gt;</span>Smoke Shifter End<span style="color:#f92672">&lt;/pname&gt;</span>
-		<span style="color:#f92672">&lt;pcolor&gt;</span>Black<span style="color:#f92672">&lt;/pcolor&gt;</span>
-	<span style="color:#f92672">&lt;/Parts&gt;</span>
-	<span style="color:#f92672">&lt;Parts&gt;</span>
-		<span style="color:#f92672">&lt;pid&gt;</span>993<span style="color:#f92672">&lt;/pid&gt;</span>
-		<span style="color:#f92672">&lt;pname&gt;</span>Acme Widget Washer<span style="color:#f92672">&lt;/pname&gt;</span>
-		<span style="color:#f92672">&lt;pcolor&gt;</span>Red<span style="color:#f92672">&lt;/pcolor&gt;</span>
-	<span style="color:#f92672">&lt;/Parts&gt;</span>
-<span style="color:#f92672">&lt;/dataroot&gt;</span>
-</code></pre></div><blockquote>
-<p>Some have hailed XML (RDF and triple stores) as the means to solve the n-dimensional relationship problem, because with it, meta-information can be captured, but XML is plagued with other problems, not the least of which are namespace binding requiring semantic accord, massively replicated tags and data, the heavy overhead of text based processing, the necessity of searching and indexing all the text in every possible XML document for each and every key/ value-tag/data match sought and the distribution of the tagged datasets across innumerable XML documents, stored in 2-D table-referenced 2-D file structures. Add to that list the overhead imposed by using Semantic Web languages and ontologies and the PhD level specialists required to develop and maintain these &lsquo;knowledge&rsquo; oriented systems and you get even more namespace entrenchment and hence specialization of the applications developed with it all <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;dataroot&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;Parts&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;pid&gt;</span>991<span style="color:#f92672">&lt;/pid&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;pname&gt;</span>Left Handed Bacon Stretcher Cover<span style="color:#f92672">&lt;/pname&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;pcolor&gt;</span>Red<span style="color:#f92672">&lt;/pcolor&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/Parts&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;Parts&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;pid&gt;</span>992<span style="color:#f92672">&lt;/pid&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;pname&gt;</span>Smoke Shifter End<span style="color:#f92672">&lt;/pname&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;pcolor&gt;</span>Black<span style="color:#f92672">&lt;/pcolor&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/Parts&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;Parts&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;pid&gt;</span>993<span style="color:#f92672">&lt;/pid&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;pname&gt;</span>Acme Widget Washer<span style="color:#f92672">&lt;/pname&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;pcolor&gt;</span>Red<span style="color:#f92672">&lt;/pcolor&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/Parts&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/dataroot&gt;</span>
+</span></span></code></pre></div><blockquote>
+<p>Some have hailed XML (RDF and triple stores) as the means to solve the n-dimensional relationship problem, because with it, meta-information can be captured, but XML is plagued with other problems, not the least of which are namespace binding requiring semantic accord, massively replicated tags and data, the heavy overhead of text based processing, the necessity of searching and indexing all the text in every possible XML document for each and every key/ value-tag/data match sought and the distribution of the tagged datasets across innumerable XML documents, stored in 2-D table-referenced 2-D file structures. Add to that list the overhead imposed by using Semantic Web languages and ontologies and the PhD level specialists required to develop and maintain these &lsquo;knowledge&rsquo; oriented systems and you get even more namespace entrenchment and hence specialization of the applications developed with it all <sup id="fnref2:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 </blockquote>
 <h3 id="json-form">JSON Form</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-  <span style="color:#f92672">&#34;dataroot&#34;</span>: {
-    <span style="color:#f92672">&#34;Parts&#34;</span>: [
-      {
-        <span style="color:#f92672">&#34;pid&#34;</span>: <span style="color:#e6db74">&#34;991&#34;</span>,
-        <span style="color:#f92672">&#34;pname&#34;</span>: <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>,
-        <span style="color:#f92672">&#34;pcolor&#34;</span>: <span style="color:#e6db74">&#34;Red&#34;</span>
-      },
-      {
-        <span style="color:#f92672">&#34;pid&#34;</span>: <span style="color:#e6db74">&#34;992&#34;</span>,
-        <span style="color:#f92672">&#34;pname&#34;</span>: <span style="color:#e6db74">&#34;Smoke Shifter End&#34;</span>,
-        <span style="color:#f92672">&#34;pcolor&#34;</span>: <span style="color:#e6db74">&#34;Black&#34;</span>
-      },
-      {
-        <span style="color:#f92672">&#34;pid&#34;</span>: <span style="color:#e6db74">&#34;993&#34;</span>,
-        <span style="color:#f92672">&#34;pname&#34;</span>: <span style="color:#e6db74">&#34;Acme Widget Washer&#34;</span>,
-        <span style="color:#f92672">&#34;pcolor&#34;</span>: <span style="color:#e6db74">&#34;Red&#34;</span>
-      }
-    ]
-  }
-}
-</code></pre></div><h2 id="signified-sign-signifier-alternative-paradigm">Signified-Sign-Signifier Alternative Paradigm</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;dataroot&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Parts&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;pid&#34;</span>: <span style="color:#e6db74">&#34;991&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;pname&#34;</span>: <span style="color:#e6db74">&#34;Left Handed Bacon Stretcher Cover&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;pcolor&#34;</span>: <span style="color:#e6db74">&#34;Red&#34;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;pid&#34;</span>: <span style="color:#e6db74">&#34;992&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;pname&#34;</span>: <span style="color:#e6db74">&#34;Smoke Shifter End&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;pcolor&#34;</span>: <span style="color:#e6db74">&#34;Black&#34;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;pid&#34;</span>: <span style="color:#e6db74">&#34;993&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;pname&#34;</span>: <span style="color:#e6db74">&#34;Acme Widget Washer&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;pcolor&#34;</span>: <span style="color:#e6db74">&#34;Red&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="signified-sign-signifier-alternative-paradigm">Signified-Sign-Signifier Alternative Paradigm</h2>
 <p>Entity-Attribute-Value bondage highlights the fact that three perspectives, semantics at the conceptual layer, representation at the symbol layer and encoding at the physical layer are mixed in such a way that it is very hard to separate and work with them at distinct levels of abstraction. The <strong>R3DM</strong>/<strong>S3DM</strong> conceptual framework is based on the natural process of semiosis where the signified, i.e. concept, entity, attribute and the signifier, i.e. value are referenced through symbols, i.e. signs, at discrete layers. The same philosophy is shared in the <a href="https://www.linkedin.com/pulse/atomicdb-architecture-r3dm-athanassios-i-hatzis-phd">architecture</a> of AtomicDB system.</p>
 <p><strong>From Data Items in Table to Information Atoms with NO Table</strong></p>
 <blockquote>
-<p>Every table is a silo. Every cell is an atom of data with no awareness of its contexts, or how it fits in to anything beyond its cell. It can be located by external intelligence but on its own it' s a &ldquo;dumb&rdquo; participant in the system - the ultimate disconnected micro - fragment accessible only by knowing the column and the record it exists in. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>Every table is a silo. Every cell is an atom of data with no awareness of its contexts, or how it fits in to anything beyond its cell. It can be located by external intelligence but on its own it&rsquo; s a &ldquo;dumb&rdquo; participant in the system - the ultimate disconnected micro - fragment accessible only by knowing the column and the record it exists in. <sup id="fnref3:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 </blockquote>
 <blockquote>
-<p>The alternative is to replace the data elements with information at the atomic level of the system. Instead of a data atom in a table, we have an information atom with no table. Information atoms exist in a multi-D vector space unbounded by data structures and know their context, such as a &ldquo;customer&rdquo; or a &ldquo;product&rdquo;, just like atoms in the physical world &ldquo;know&rdquo; they are nitrogen or hydrogen items and behave accordingly. Information atoms also know when they were created, when they were last modified, and what other information atoms of other types are associated with them. They know their parents, their siblings, and their workplace associates. They are powerful little entities and most certainly NOT fragments. Nor are they triple statements requiring endless extraneous indexing <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>The alternative is to replace the data elements with information at the atomic level of the system. Instead of a data atom in a table, we have an information atom with no table. Information atoms exist in a multi-D vector space unbounded by data structures and know their context, such as a &ldquo;customer&rdquo; or a &ldquo;product&rdquo;, just like atoms in the physical world &ldquo;know&rdquo; they are nitrogen or hydrogen items and behave accordingly. Information atoms also know when they were created, when they were last modified, and what other information atoms of other types are associated with them. They know their parents, their siblings, and their workplace associates. They are powerful little entities and most certainly NOT fragments. Nor are they triple statements requiring endless extraneous indexing <sup id="fnref4:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 </blockquote>
 <p><strong>AtomicDB  is datatype and namespace agnostic, always fully contextualized, and structure free.</strong></p>
 <h3 id="atomicdb-computational-semiotic-analysis-in-r3dm">AtomicDB Computational Semiotic Analysis in R3DM</h3>
@@ -938,296 +940,296 @@
 <p><strong>Entities</strong> in this diagram, (<code>Groups</code> - cyan square boxes), are formed by grouping <strong>Attributes</strong>, i.e. <code>Collections</code>. One or more <strong>Attributes</strong> (<code>Concepts</code> - oval shape) are shared between two or more <strong>Entities</strong> and form <code>bridge collections</code>. This is the equivalent notion of the <a href="https://en.wikipedia.org/wiki/Associative_entity">bridge table</a> in relational and entity-relationship theory. A closer examination of the links reveals that they all have the same type, i.e. <code>isRelatedTo</code>, and <strong>Attributes</strong> are always connected to <strong>Entities</strong> with that operator. According to R3DM we are examining information resources at (<strong>S3</strong>) layer.</p>
 <h3 id="add-model">Add Model</h3>
 <p>We can import this concept map or alternatively we can create a new <code>Model</code> programmatically by passing its name as a parameter to the <code>addModel</code> function. Then we can use <code>getModelByName</code> function to get back a Key-Value <a href="https://reference.wolfram.com/language/ref/Rule.html">Rule</a> representation of the <code>Model</code> we added to the system:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">modelName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Parts-Suppliers Catalog Model&#34;</span>;
-
-addModel<span style="color:#f92672">[</span>modelName<span style="color:#f92672">]</span>
-
-<span style="color:#e6db74">Out</span>:
-<span style="color:#960050;background-color:#1e0010">«</span><span style="color:#66d9ef">NETObject</span><span style="color:#f92672">[</span><span style="color:#66d9ef">System</span><span style="color:#f92672">.</span>Collections<span style="color:#f92672">.</span>Generic<span style="color:#f92672">.</span>List<span style="color:#e6db74">`1
-</span><span style="color:#e6db74">   [System.Collections.Generic.List`</span><span style="color:#ae81ff">1</span>
-     <span style="color:#f92672">[</span><span style="color:#66d9ef">IAMCore_SharpClient</span><span style="color:#f92672">.</span>Core_KeyValuePair<span style="color:#f92672">]]]</span><span style="color:#960050;background-color:#1e0010">»</span>
-</code></pre></div><h3 id="get-model">Get Model</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(model <span style="color:#f92672">=</span> getModelByName<span style="color:#f92672">[</span>modelName<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVP
-
-<span style="color:#e6db74">Out</span>: {<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">256</span>}<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Parts-Suppliers Catalog Model&#34;</span>
-</code></pre></div><p>The key <code>{0, 3, 13, 256}</code>, i.e. <strong>Sign</strong> (<strong>S2</strong>/<strong>R2</strong> - <strong>IRep</strong>), is a reference 4D vector that we use to access the <code>Model</code> item  and the value is the string we assigned as the name of the <code>Model</code>. Everything that is stored in AtomicDB has a key with four dimensions (<strong>Environment</strong>, <strong>System</strong>, <strong>Context</strong>, <strong>Item</strong>) and a value. Each dimension can be semantically interpreted in a different way, but they are always connected hierarchically. This makes AtomicDB fully symmetrical in terms of values, structures and relationships.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>modelName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Parts-Suppliers Catalog Model&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>addModel<span style="color:#f92672">[</span>modelName<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">«</span><span style="color:#66d9ef">NETObject</span><span style="color:#f92672">[</span><span style="color:#66d9ef">System</span><span style="color:#f92672">.</span>Collections<span style="color:#f92672">.</span>Generic<span style="color:#f92672">.</span>List<span style="color:#e6db74">`1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">   [System.Collections.Generic.List`</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">[</span><span style="color:#66d9ef">IAMCore_SharpClient</span><span style="color:#f92672">.</span>Core_KeyValuePair<span style="color:#f92672">]]]</span><span style="color:#960050;background-color:#1e0010">»</span>
+</span></span></code></pre></div><h3 id="get-model">Get Model</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>(model <span style="color:#f92672">=</span> getModelByName<span style="color:#f92672">[</span>modelName<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVP
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>: {<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">256</span>}<span style="color:#f92672">-&gt;</span><span style="color:#e6db74">&#34;Parts-Suppliers Catalog Model&#34;</span>
+</span></span></code></pre></div><p>The key <code>{0, 3, 13, 256}</code>, i.e. <strong>Sign</strong> (<strong>S2</strong>/<strong>R2</strong> - <strong>IRep</strong>), is a reference 4D vector that we use to access the <code>Model</code> item  and the value is the string we assigned as the name of the <code>Model</code>. Everything that is stored in AtomicDB has a key with four dimensions (<strong>Environment</strong>, <strong>System</strong>, <strong>Context</strong>, <strong>Item</strong>) and a value. Each dimension can be semantically interpreted in a different way, but they are always connected hierarchically. This makes AtomicDB fully symmetrical in terms of values, structures and relationships.</p>
 <h3 id="add-concepts">Add Concepts</h3>
 <p>We continue by adding the <code>Concepts</code> of the <code>Model</code> programmatically. The two arguments of function <code>addConceptsByName</code> are the name of the <code>Model</code> and a list of <code>Concept</code> names. The first name in the list signifies a <code>Nexus</code> concept that is used to associate the rest of the concepts in the list.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">catalogConceptNames <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;NX_Catalog&#34;</span>, <span style="color:#e6db74">&#34;SupplierIdentifier&#34;</span>, <span style="color:#e6db74">&#34;PartIdentifier&#34;</span>, <span style="color:#e6db74">&#34;PartCost&#34;</span>};
-partConceptNames <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;NX_Part&#34;</span>, <span style="color:#e6db74">&#34;PartIdentifier&#34;</span>, <span style="color:#e6db74">&#34;PartName&#34;</span>, <span style="color:#e6db74">&#34;PartColor&#34;</span>};
-supplierConceptNames <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;NX_Supplier&#34;</span>, <span style="color:#e6db74">&#34;SupplierIdentifier&#34;</span>, <span style="color:#e6db74">&#34;SupplierName&#34;</span>, <span style="color:#e6db74">&#34;SupplierAddress&#34;</span>};
-
-(catalogConcepts <span style="color:#f92672">=</span> addConceptsByName<span style="color:#f92672">[</span>modelName, catalogConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Catalog</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartCost</span>
-
-(partConcepts <span style="color:#f92672">=</span> addConceptsByName<span style="color:#f92672">[</span>modelName, partConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
-
-(supplierConcepts <span style="color:#f92672">=</span> addConceptsByName<span style="color:#f92672">[</span>modelName, supplierConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Supplier</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierName</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierAddress</span>
-</code></pre></div><p>The first thing you should notice is that the numbering of dimensions for <code>Concepts</code> does not follow the previous pattern with the <code>Model</code> 4D vector. Semantically this means we have a different system that can be interpreted in the following way:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>catalogConceptNames <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;NX_Catalog&#34;</span>, <span style="color:#e6db74">&#34;SupplierIdentifier&#34;</span>, <span style="color:#e6db74">&#34;PartIdentifier&#34;</span>, <span style="color:#e6db74">&#34;PartCost&#34;</span>};
+</span></span><span style="display:flex;"><span>partConceptNames <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;NX_Part&#34;</span>, <span style="color:#e6db74">&#34;PartIdentifier&#34;</span>, <span style="color:#e6db74">&#34;PartName&#34;</span>, <span style="color:#e6db74">&#34;PartColor&#34;</span>};
+</span></span><span style="display:flex;"><span>supplierConceptNames <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;NX_Supplier&#34;</span>, <span style="color:#e6db74">&#34;SupplierIdentifier&#34;</span>, <span style="color:#e6db74">&#34;SupplierName&#34;</span>, <span style="color:#e6db74">&#34;SupplierAddress&#34;</span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(catalogConcepts <span style="color:#f92672">=</span> addConceptsByName<span style="color:#f92672">[</span>modelName, catalogConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Catalog</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartCost</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(partConcepts <span style="color:#f92672">=</span> addConceptsByName<span style="color:#f92672">[</span>modelName, partConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(supplierConcepts <span style="color:#f92672">=</span> addConceptsByName<span style="color:#f92672">[</span>modelName, supplierConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Supplier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierName</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierAddress</span>
+</span></span></code></pre></div><p>The first thing you should notice is that the numbering of dimensions for <code>Concepts</code> does not follow the previous pattern with the <code>Model</code> 4D vector. Semantically this means we have a different system that can be interpreted in the following way:</p>
 <p>There are three <code>Groups</code> with four <code>Concepts</code> each added to our <code>Model</code>.  Notice that the first three dimensions of the keys remain constant but the last dimension varies to denote instances of <code>Concepts</code> that belong to the same <code>Model</code>. In this case, the <code>Item</code> dimension of the reference key plays the role of the <code>Concept</code> and the <code>Context</code> dimension plays the role of the <code>Model</code>. The other two dimensions are related possibly to the kind of repository, i.e. we are storing information about models, and our localhost database development environment. Contrast this representation with the previous vector <code>{0, 3, 13, 256}</code> where the <code>Item</code> dimension plays the role of the <code>Model</code>. This indicates that reference vectors in AtomicDB are cleverly inter-related; notice the position of number <code>256</code> that signifies always the <code>Model</code> in these 4D vectors.</p>
 <p>Another critical observation is that <code>PartIdentifier</code> and <code>SupplierIdentifier</code> <code>Concepts</code> are members of more than one <code>Group</code>. These are the <code>Bridge Concepts</code> and play the same role as the primary and foreign keys in relational data sets. But one of the main differences and a great advantage of this approach is that this time data sets are not duplicated. The same <code>Collection</code> of items, i.e. data set of an attribute, can be referenced by many <code>Concepts</code>.</p>
 <h3 id="get-concepts">Get Concepts</h3>
 <p>Verify that all the concepts have been added to our <code>Model</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">getConceptsFromModelName<span style="color:#f92672">[</span>modelName<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Catalog</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartCost</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Supplier</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierName</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierAddress</span>
-</code></pre></div><h3 id="add-collections">Add Collections</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>getConceptsFromModelName<span style="color:#f92672">[</span>modelName<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Catalog</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartCost</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Supplier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierName</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierAddress</span>
+</span></span></code></pre></div><h3 id="add-collections">Add Collections</h3>
 <p>With the following <code>addCollectionsAutoMapGroupByName</code> function <code>Collections</code> are automatically associated with the <code>Concepts</code> and a <code>Group</code> is added. Notice that both <code>Collections</code> and <code>Models</code> have been created with the same <code>Environment</code> and <code>System</code> dimensions, it is the third dimension <code>Context</code> that differentiates the type of instances, i.e. items.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(catalogCollections <span style="color:#f92672">=</span>
-   addCollectionsAutoMapGroupByName<span style="color:#f92672">[</span>modelName, catalogConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">257</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Catalog</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">258</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">259</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">260</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartCost</span>   
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(partCollections <span style="color:#f92672">=</span>
-   addCollectionsAutoMapGroupByName<span style="color:#f92672">[</span>modelName, partConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">262</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">259</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">263</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">264</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(supplierCollections <span style="color:#f92672">=</span>
-   addCollectionsAutoMapGroupByName<span style="color:#f92672">[</span>modelName, supplierConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">265</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Supplier</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">258</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">266</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierName</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">267</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierAddress</span>
-</code></pre></div><p>And bridging is achieved by having <code>Bridge Collections</code>, <code>{0,3,15,259}</code> and <code>{0,3,15,258}</code> that are equivalent to <code>Bridge Concepts</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>(catalogCollections <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>   addCollectionsAutoMapGroupByName<span style="color:#f92672">[</span>modelName, catalogConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">257</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Catalog</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">258</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">259</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">260</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartCost</span>   
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>(partCollections <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>   addCollectionsAutoMapGroupByName<span style="color:#f92672">[</span>modelName, partConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">262</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">259</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">263</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">264</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>(supplierCollections <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>   addCollectionsAutoMapGroupByName<span style="color:#f92672">[</span>modelName, supplierConceptNames<span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">265</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Supplier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">258</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">266</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierName</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">267</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierAddress</span>
+</span></span></code></pre></div><p>And bridging is achieved by having <code>Bridge Collections</code>, <code>{0,3,15,259}</code> and <code>{0,3,15,258}</code> that are equivalent to <code>Bridge Concepts</code>.</p>
 <h3 id="get-collections">Get Collections</h3>
 <p>Verify that we have added all the collections to the system:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">getCollectionsFromModelName<span style="color:#f92672">[</span>modelName<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">257</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Catalog</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">258</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">259</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">260</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartCost</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">262</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">263</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">264</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">265</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Supplier</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">266</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierName</span>
-{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">267</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierAddress</span>
-</code></pre></div><h3 id="add-data-values">Add Data Values</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>getCollectionsFromModelName<span style="color:#f92672">[</span>modelName<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">257</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Catalog</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">258</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierIdentifier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">259</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">260</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartCost</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">262</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">263</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">264</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">265</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Supplier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">266</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierName</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">267</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">SupplierAddress</span>
+</span></span></code></pre></div><h3 id="add-data-values">Add Data Values</h3>
 <p>Our next step is to add values into a separate system, at the same <code>Environment</code> with that of <code>Concepts</code> using the <code>Item</code> numbers from the <code>Collections</code> above. First we read relational datasets with <a href="http://reference.wolfram.com/language/DatabaseLink/ref/SQLSelect.html"><code>SQLSelect</code></a> function and we form <strong>Records</strong> that are represented with the <a href="https://reference.wolfram.com/language/ref/List.html"><code>List</code> built-in symbol</a> of Wolfram Language.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">catalogDataSet<span style="color:#f92672">=</span><span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn,<span style="color:#e6db74">&#34;Catalog&#34;</span>,<span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">False</span><span style="color:#f92672">]</span>;
-partDataSet <span style="color:#f92672">=</span> <span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn,<span style="color:#e6db74">&#34;Parts&#34;</span>,<span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">False</span><span style="color:#f92672">]</span>;
-supplierDataSet<span style="color:#f92672">=</span><span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn,<span style="color:#e6db74">&#34;Suppliers&#34;</span>,<span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">False</span><span style="color:#f92672">]</span>;
-</code></pre></div><p>Then we add records with the <code>addRecordsByName</code> command of our AtomicDB API passing three arguments; the name of the <code>Model</code>, <code>Concept</code> names, and the body of relational dataset that we read in the previous step.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>catalogDataSet<span style="color:#f92672">=</span><span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn,<span style="color:#e6db74">&#34;Catalog&#34;</span>,<span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">False</span><span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>partDataSet <span style="color:#f92672">=</span> <span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn,<span style="color:#e6db74">&#34;Parts&#34;</span>,<span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">False</span><span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>supplierDataSet<span style="color:#f92672">=</span><span style="color:#66d9ef">SQLSelect</span><span style="color:#f92672">[</span>conn,<span style="color:#e6db74">&#34;Suppliers&#34;</span>,<span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">False</span><span style="color:#f92672">]</span>;
+</span></span></code></pre></div><p>Then we add records with the <code>addRecordsByName</code> command of our AtomicDB API passing three arguments; the name of the <code>Model</code>, <code>Concept</code> names, and the body of relational dataset that we read in the previous step.</p>
 <p>These are the items added to the NX_Catalog nexus collection</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">addRecordsByName<span style="color:#f92672">[</span>modelName, catalogConceptNames, catalogDataSet<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">10</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">11</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">11</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">12</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">12</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">13</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">13</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">14</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">14</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">15</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">15</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">16</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">16</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">17</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">17</span>
-</code></pre></div><p>These are the items added to the NX_Part nexus collection</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">addRecordsByName<span style="color:#f92672">[</span>modelName, partConceptNames, partDataSet<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>  
-</code></pre></div><p>These are the items added to the NX_Supplier nexus collection</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">addRecordsByName<span style="color:#f92672">[</span>modelName, supplierConceptNames, supplierDataSet<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">265</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">265</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">265</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">265</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
-</code></pre></div><h3 id="get-data-values">Get Data Values</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>addRecordsByName<span style="color:#f92672">[</span>modelName, catalogConceptNames, catalogDataSet<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">11</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">11</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">12</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">12</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">13</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">13</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">14</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">14</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">15</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">16</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">16</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">17</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">17</span>
+</span></span></code></pre></div><p>These are the items added to the NX_Part nexus collection</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>addRecordsByName<span style="color:#f92672">[</span>modelName, partConceptNames, partDataSet<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>  
+</span></span></code></pre></div><p>These are the items added to the NX_Supplier nexus collection</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>addRecordsByName<span style="color:#f92672">[</span>modelName, supplierConceptNames, supplierDataSet<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">265</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">265</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">265</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">265</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
+</span></span></code></pre></div><h3 id="get-data-values">Get Data Values</h3>
 <p>In order to read back the data values, we use <code>Concepts</code> and the <code>getItemsFromConceptNames</code> function.</p>
 <p>For example to get data <code>Items</code> from the <strong>Part</strong> <code>Concepts</code> we pass the name of the <code>Model</code> and the <code>Concept</code> names for the <strong>Part</strong> <code>Group</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">getItemsFromConceptNames<span style="color:#f92672">[</span>modelName, partConceptNames<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>
-
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">992</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">993</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">994</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">995</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">996</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">997</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">998</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">999</span>
-
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Left</span> <span style="color:#66d9ef">Handed</span> <span style="color:#66d9ef">Bacon</span> <span style="color:#66d9ef">Stretcher</span> <span style="color:#66d9ef">Cover</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Smoke</span> <span style="color:#66d9ef">Shifter</span> <span style="color:#66d9ef">End</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Acme</span> <span style="color:#66d9ef">Widget</span> <span style="color:#66d9ef">Washer</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span>I <span style="color:#66d9ef">Brake</span> <span style="color:#66d9ef">for</span> <span style="color:#66d9ef">Crop</span> <span style="color:#66d9ef">Circles</span> <span style="color:#66d9ef">Sticker</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Anti</span><span style="color:#f92672">-</span><span style="color:#66d9ef">Gravity</span> <span style="color:#66d9ef">Turbine</span> <span style="color:#66d9ef">Generator</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Fire</span> <span style="color:#66d9ef">Hydrant</span> <span style="color:#66d9ef">Cap</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span> <span style="color:#66d9ef">Segment</span> <span style="color:#66d9ef">Display</span>
-
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Red</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Black</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Silver</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Translucent</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Cyan</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Magenta</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Green</span>
-</code></pre></div><p>Check that although we have nine records, i.e. nine identifiers for <code>Parts</code> and nine <code>Nexuses</code> respectively, we have only seven color values or seven <code>Part</code> names. This is because in relational data model certain values of a column/attribute are repeated but in <code>Associative Data Model</code> are single instances</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>getItemsFromConceptNames<span style="color:#f92672">[</span>modelName, partConceptNames<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">992</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">993</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">994</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">995</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">996</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">997</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">998</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">999</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Left</span> <span style="color:#66d9ef">Handed</span> <span style="color:#66d9ef">Bacon</span> <span style="color:#66d9ef">Stretcher</span> <span style="color:#66d9ef">Cover</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Smoke</span> <span style="color:#66d9ef">Shifter</span> <span style="color:#66d9ef">End</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Acme</span> <span style="color:#66d9ef">Widget</span> <span style="color:#66d9ef">Washer</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span>I <span style="color:#66d9ef">Brake</span> <span style="color:#66d9ef">for</span> <span style="color:#66d9ef">Crop</span> <span style="color:#66d9ef">Circles</span> <span style="color:#66d9ef">Sticker</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Anti</span><span style="color:#f92672">-</span><span style="color:#66d9ef">Gravity</span> <span style="color:#66d9ef">Turbine</span> <span style="color:#66d9ef">Generator</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Fire</span> <span style="color:#66d9ef">Hydrant</span> <span style="color:#66d9ef">Cap</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">263</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span> <span style="color:#66d9ef">Segment</span> <span style="color:#66d9ef">Display</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Red</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Black</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Silver</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Translucent</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Cyan</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Magenta</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">264</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">Green</span>
+</span></span></code></pre></div><p>Check that although we have nine records, i.e. nine identifiers for <code>Parts</code> and nine <code>Nexuses</code> respectively, we have only seven color values or seven <code>Part</code> names. This is because in relational data model certain values of a column/attribute are repeated but in <code>Associative Data Model</code> are single instances</p>
 <p>In a similar way, to get data <code>Items</code> from the <strong>Catalog</strong> <code>Concepts</code> we pass the name of the <code>Model</code> and the <code>Concept</code> names for the <strong>Catalog</strong> <code>Group</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">getItemsFromConceptNames<span style="color:#f92672">[</span>modelName, catalogConceptNames<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">10</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">11</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">11</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">12</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">12</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">13</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">13</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">14</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">14</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">15</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">15</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">16</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">16</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">17</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">17</span>
-
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1081</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1082</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1083</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1084</span>
-
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">992</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">993</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">994</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">995</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">996</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">997</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">998</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">999</span>
-
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">36</span><span style="color:#f92672">.</span><span style="color:#ae81ff">1</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">42</span><span style="color:#f92672">.</span><span style="color:#ae81ff">3</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">15</span><span style="color:#f92672">.</span><span style="color:#ae81ff">3</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">20</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">124</span><span style="color:#f92672">.</span><span style="color:#ae81ff">23</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">11</span><span style="color:#f92672">.</span><span style="color:#ae81ff">7</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">75</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">16</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">55</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span><span style="color:#f92672">.</span><span style="color:#ae81ff">95</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">11</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">12</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">12</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span><span style="color:#f92672">.</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">13</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">57</span><span style="color:#f92672">.</span><span style="color:#ae81ff">3</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">14</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">22</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">15</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">48</span><span style="color:#f92672">.</span><span style="color:#ae81ff">6</span>
-</code></pre></div><p>Notice that values for the <code>PartIdentifier</code> <code>Bridging Concept</code> are not duplicated but they are referenced instead by the same 4D key vectors whether we are in Catalog <code>Group</code> or Part <code>Group</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>getItemsFromConceptNames<span style="color:#f92672">[</span>modelName, catalogConceptNames<span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">11</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">11</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">12</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">12</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">13</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">13</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">14</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">14</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">15</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">16</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">16</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">257</span>,<span style="color:#ae81ff">17</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">17</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1081</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1082</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1083</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">258</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1084</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">991</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">992</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">993</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">994</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">995</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">996</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">997</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">998</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">259</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">999</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">36</span><span style="color:#f92672">.</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">42</span><span style="color:#f92672">.</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">15</span><span style="color:#f92672">.</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">20</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">124</span><span style="color:#f92672">.</span><span style="color:#ae81ff">23</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">11</span><span style="color:#f92672">.</span><span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">75</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">16</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">55</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">10</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span><span style="color:#f92672">.</span><span style="color:#ae81ff">95</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">11</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">12</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">12</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">13</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">57</span><span style="color:#f92672">.</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">14</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">22</span><span style="color:#f92672">.</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">260</span>,<span style="color:#ae81ff">15</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">48</span><span style="color:#f92672">.</span><span style="color:#ae81ff">6</span>
+</span></span></code></pre></div><p>Notice that values for the <code>PartIdentifier</code> <code>Bridging Concept</code> are not duplicated but they are referenced instead by the same 4D key vectors whether we are in Catalog <code>Group</code> or Part <code>Group</code>.</p>
 <h2 id="assimilation-of-a-table">Assimilation of a Table</h2>
 <p>So far so good, but in practice everyone is accustomed to the use of tables. Table is the favorite manageable structure and convenient medium of exchanging-exporting/importing datasets. Therefore the challenge is that any alternative solution on data architecture should provide the means to view and handle data in tables with the minimum effort no matter what is the underlying structure. For this reason we continue our example with a comparison of how we retrieve records from a relational table and assimilate this operation to a <code>Group</code> of items that are represented with a nested <a href="https://reference.wolfram.com/language/ref/List.html">List</a> of <a href="https://reference.wolfram.com/language/ref/Rule.html">Rules</a>.</p>
 <p><strong>A. Relational</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">SQLExecute</span><span style="color:#f92672">[</span>conn, <span style="color:#e6db74">&#34;select * from Parts&#34;</span>, <span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> <span style="color:#66d9ef">TableForm</span>
-</code></pre></div><p><code>Out:</code>
-<img src="/en/post/20150320/parts-table-500x200.jpg" alt="notebook-output-parts table"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">SQLExecute</span><span style="color:#f92672">[</span>conn, <span style="color:#e6db74">&#34;select * from Parts&#34;</span>, <span style="color:#e6db74">&#34;ShowColumnHeadings&#34;</span><span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">True</span><span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> <span style="color:#66d9ef">TableForm</span>
+</span></span></code></pre></div><p><code>Out:</code>
+<img alt="notebook-output-parts table" src="/en/post/20150320/parts-table-500x200.jpg"></p>
 <p><strong>B. Associative</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">(nexusMemberItems <span style="color:#f92672">=</span> getItemsFromConceptNames<span style="color:#f92672">[</span>modelName, <span style="color:#e6db74">&#34;NX_Part&#34;</span><span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>
-
-partConcepts<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
-
-<span style="color:#e6db74">Out</span>:
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
-{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
-
-
-records <span style="color:#f92672">=</span> getAnything<span style="color:#f92672">[</span>
-  model,
-  partConcepts<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">]</span>,
-  nexusMemberItems,
-  setType<span style="color:#f92672">-&gt;</span>enGridType<span style="color:#f92672">]</span>
-
-<span style="color:#e6db74">Out</span>:
-<span style="color:#960050;background-color:#1e0010">«</span> <span style="color:#66d9ef">NETObject</span>
-<span style="color:#f92672">[</span><span style="color:#66d9ef">System</span><span style="color:#f92672">.</span>Collections<span style="color:#f92672">.</span>Generic<span style="color:#f92672">.</span>List<span style="color:#e6db74">`1
-</span><span style="color:#e6db74">  [System.Collections.Generic.List`</span><span style="color:#ae81ff">1</span>
-    <span style="color:#f92672">[</span><span style="color:#66d9ef">IAMCore_SharpClient</span><span style="color:#f92672">.</span>Core_KeyValuePair<span style="color:#f92672">]]]</span><span style="color:#960050;background-color:#1e0010">»</span>
-
-res <span style="color:#f92672">=</span> coreKVPL1ToRules <span style="color:#e6db74">/@ records@ToArray[];
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">res /</span><span style="color:#f92672">/</span> <span style="color:#66d9ef">TableForm</span>
-</code></pre></div><p><code>Out:</code>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>(nexusMemberItems <span style="color:#f92672">=</span> getItemsFromConceptNames<span style="color:#f92672">[</span>modelName, <span style="color:#e6db74">&#34;NX_Part&#34;</span><span style="color:#f92672">]</span>) <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">1</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">2</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">4</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">8</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">262</span>,<span style="color:#ae81ff">9</span>}<span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>partConcepts<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">]</span> <span style="color:#e6db74">//</span> printKVPL2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">5</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">NX_Part</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">3</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartIdentifier</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">6</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartName</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1025</span>,<span style="color:#ae81ff">256</span>,<span style="color:#ae81ff">7</span>}<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">PartColor</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>records <span style="color:#f92672">=</span> getAnything<span style="color:#f92672">[</span>
+</span></span><span style="display:flex;"><span>  model,
+</span></span><span style="display:flex;"><span>  partConcepts<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">]</span>,
+</span></span><span style="display:flex;"><span>  nexusMemberItems,
+</span></span><span style="display:flex;"><span>  setType<span style="color:#f92672">-&gt;</span>enGridType<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Out</span>:
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">«</span> <span style="color:#66d9ef">NETObject</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#66d9ef">System</span><span style="color:#f92672">.</span>Collections<span style="color:#f92672">.</span>Generic<span style="color:#f92672">.</span>List<span style="color:#e6db74">`1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  [System.Collections.Generic.List`</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">[</span><span style="color:#66d9ef">IAMCore_SharpClient</span><span style="color:#f92672">.</span>Core_KeyValuePair<span style="color:#f92672">]]]</span><span style="color:#960050;background-color:#1e0010">»</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">=</span> coreKVPL1ToRules <span style="color:#e6db74">/@ records@ToArray[];
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">res /</span><span style="color:#f92672">/</span> <span style="color:#66d9ef">TableForm</span>
+</span></span></code></pre></div><p><code>Out:</code>
 
 
 
@@ -1267,14 +1269,14 @@ res <span style="color:#f92672">=</span> coreKVPL1ToRules <span style="color:#e6
 <li><a href="https://www.linkedin.com/pulse/air-atomic-information-resource-athanassios-i-hatzis-phd">LinkedIn Published Posts</a></li>
 <li><a href="https://www.linkedin.com/pulse/atomicdb-architecture-r3dm-athanassios-i-hatzis-phd">LinkedIn Published Posts</a></li>
 </ul>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
-<p>Ron Everett in &ldquo;<a href="https://www.linkedin.com/pulse/introduction-associative-information-systems-n-normal-letennier">Introduction to Associative Information Systems</a> - (N) Normal Form&rdquo; post by Jean-Michelle Letennier&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:1">
+<p>Ron Everett in &ldquo;<a href="https://www.linkedin.com/pulse/introduction-associative-information-systems-n-normal-letennier">Introduction to Associative Information Systems</a> - (N) Normal Form&rdquo; post by Jean-Michelle Letennier&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref2:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref3:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref4:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
     </div>
 
@@ -1282,11 +1284,11 @@ res <span style="color:#f92672">=</span> coreKVPL1ToRules <span style="color:#e6
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/en/tags/abstraction_software_engineering/">Abstraction_(software_engineering)</a>
+  <a class="badge badge-light" href="">Abstraction_(software_engineering)</a>
   
   <a class="badge badge-light" href="/en/tags/information/">Information</a>
   
-  <a class="badge badge-light" href="/en/tags/sign_semiotics/">Sign_(semiotics)</a>
+  <a class="badge badge-light" href="">Sign_(semiotics)</a>
   
   <a class="badge badge-light" href="/en/tags/triangle_of_reference/">Triangle_of_reference</a>
   
@@ -1312,7 +1314,7 @@ res <span style="color:#f92672">=</span> coreKVPL1ToRules <span style="color:#e6
   
   <a class="badge badge-light" href="/en/tags/associative_model_of_data/">Associative_model_of_data</a>
   
-  <a class="badge badge-light" href="/en/tags/association_object-oriented_programming/">Association_(object-oriented_programming)</a>
+  <a class="badge badge-light" href="">Association_(object-oriented_programming)</a>
   
   <a class="badge badge-light" href="/en/tags/associative_array/">Associative_array</a>
   
@@ -1350,7 +1352,7 @@ res <span style="color:#f92672">=</span> coreKVPL1ToRules <span style="color:#e6
     
 
     <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="https://healis.eu">Athanassios I. Hatzis, PhD</a></h5>
+      <h5 class="card-title" itemprop="name"><a href="https://healis.eu/">Athanassios I. Hatzis, PhD</a></h5>
       <h6 class="card-subtitle">Software Engineer - Researcher, Consultant, Independent Contractor</h6>
       
       <ul class="network-icon" aria-hidden="true">
@@ -1623,7 +1625,7 @@ res <span style="color:#f92672">=</span> coreKVPL1ToRules <span style="color:#e6
     
     
     
-    <script src="/js/academia.min.1864145399ae9e7997bb63a7a7dd152c.js"></script>
+    <script src="/js/academia.min.1def94b00314e302593e38a8ce0e471f.js"></script>
 
     
 
@@ -1642,7 +1644,7 @@ res <span style="color:#f92672">=</span> coreKVPL1ToRules <span style="color:#e6
       <div class="col-md-6">
         
         <p>
-          © HEALIS - Athanassios I. Hatzis, 2024 &middot; 
+          © HEALIS - Athanassios I. Hatzis, 2025 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
