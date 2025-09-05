@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on HEALIS</title>
+    <title>HEALIS</title>
     <link>https://healis.eu/el/authors/</link>
-    <description>Recent content in Authors on HEALIS</description>
+    <description>Recent content on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>el</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
@@ -13,16 +13,12 @@
     
     
     <item>
-      <title></title>
+      <title>Admin</title>
       <link>https://healis.eu/el/authors/admin/</link>
       <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/el/authors/admin/</guid>
-      <description>&lt;p&gt;Dr. Athanassios I. Hatzis is a seasoned IT professional, showcasing a blend of technical expertise, proficiency in software engineering, and strong leadership. His project management skills, particularly highlighted as an IT Work Package Manager in EC FP7, are complemented by a rich background in research and academia. With over two decades of experience in the IT sector, Athanassios has demonstrated a strategic mindset, adept at making trade-off decisions considering desirability, viability, and technical feasibility.&lt;/p&gt;
-&lt;p&gt;Serving as the software architect at major USA marathon events, Athanassios has showcased his ability to manage and execute agile development work effectively. He has been instrumental in establishing, deploying, and securely operating back-end systems and services across their full software life cycle. His strategic planning and resource allocation have been key in ensuring the smooth operation of these events, demonstrating proactive problem-solving in both technical and managerial aspects. During his tenure as Health Informatics Manager at Evangelismos General Hospital, Athanassios effectively managed facilities and IT infrastructure implementing electronic medical records and cutting-edge clinical information systems. He developed strategies and organised work activities, demonstrating his strong organizational and managerial skills. His commitment to network and database security policy ensured the protection of sensitive medical information.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../img/certifacates.jpg&#34; alt=&#34;reviews&#34;&gt;&lt;/p&gt;
-&lt;p&gt;It is a long established fact&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
   </channel>

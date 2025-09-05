@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>HEALIS</title>
+    <title>Admin on HEALIS</title>
     <link>https://healis.eu/el/authors/admin/</link>
-    <description>Recent content on HEALIS</description>
+    <description>Recent content in Admin on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>el</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
@@ -11,6 +11,19 @@
     
 	    <atom:link href="https://healis.eu/el/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://healis.eu/el/authors/</link>
+      <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/el/authors/</guid>
+      <description>&lt;p&gt;Dr. Athanassios I. Hatzis is a seasoned IT professional, showcasing a blend of technical expertise, proficiency in software engineering, and strong leadership. His project management skills, particularly highlighted as an IT Work Package Manager in EC FP7, are complemented by a rich background in research and academia. With over two decades of experience in the IT sector, Athanassios has demonstrated a strategic mindset, adept at making trade-off decisions considering desirability, viability, and technical feasibility.&lt;/p&gt;
+&lt;p&gt;Serving as the software architect at major USA marathon events, Athanassios has showcased his ability to manage and execute agile development work effectively. He has been instrumental in establishing, deploying, and securely operating back-end systems and services across their full software life cycle. His strategic planning and resource allocation have been key in ensuring the smooth operation of these events, demonstrating proactive problem-solving in both technical and managerial aspects. During his tenure as Health Informatics Manager at Evangelismos General Hospital, Athanassios effectively managed facilities and IT infrastructure implementing electronic medical records and cutting-edge clinical information systems. He developed strategies and organised work activities, demonstrating his strong organizational and managerial skills. His commitment to network and database security policy ensured the protection of sensitive medical information.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;reviews&#34; src=&#34;../../img/certifacates.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It is a long established fact&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Embed MEDIA</title>
@@ -115,9 +128,9 @@
 &lt;/div&gt;
 &lt;h3 id=&#34;use-markdown-img-notation&#34;&gt;Use Markdown ![img] notation&lt;/h3&gt;
 &lt;p&gt;Figure is withing a page&amp;rsquo;s folder (e.g. content/el/test/embed/healis_vine.png/)
-&lt;img src=&#34;./healis_vine.png&#34; alt=&#34;jpg&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;jpg&#34; src=&#34;./healis_vine.png&#34;&gt;&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;&lt;a href=&#34;https://healis.eu/en/about/#athanassios&#34;&gt;&lt;img src=&#34;./healis_vine.png&#34; alt=&#34;jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://healis.eu/en/about/#athanassios&#34;&gt;&lt;img alt=&#34;jpg&#34; src=&#34;./healis_vine.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;use-figure-shortcut&#34;&gt;Use figure shortcut&lt;/h3&gt;
 &lt;p&gt;Figure is withing a page&amp;rsquo;s folder (e.g. content/el/test/embed/healis_vine.png/)
 
@@ -308,17 +321,17 @@
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;&lt;a href=&#34;http://wordnetweb.princeton.edu/perl/webwn?s=computer%20scientist&#34;&gt;&amp;ldquo;WordNet Search—3.1&amp;rdquo;&lt;/a&gt;. Wordnetweb.princeton.edu. Retrieved 2012-05-14.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.cs.mtu.edu/~john/whatiscs.html&#34;&gt;John Lowther&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     

@@ -18,7 +18,7 @@
       <pubDate>Tue, 10 Aug 2010 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/post/20100810/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;./featured.jpg&#34; alt=&#34;jpg&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;jpg&#34; src=&#34;./featured.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;This is a summary from a post that I wrote for &lt;a href=&#34;http://comments.gmane.org/gmane.org.misc.open-knowledge-foundation.general/1485&#34;&gt;Open Knowledge Foundation discussion list&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;{&amp;lt; toc &amp;gt;}&lt;/p&gt;
 &lt;h2 id=&#34;definitions&#34;&gt;Definitions&lt;/h2&gt;
@@ -43,7 +43,7 @@
       <pubDate>Mon, 12 Apr 2010 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/post/20100412/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;./featured.jpg&#34; alt=&#34;jpg&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;jpg&#34; src=&#34;./featured.jpg&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;extract-from-a-post-to-gnusolidario-forum-of-luis-falcon&#34;&gt;Extract from a post to gnusolidario forum of Luis Falcon&lt;/h2&gt;
 &lt;p&gt;Recently I released to the public MEDILIG project v1.0 (MEDILIG Source at Sourceforge) under a combination of two licenses GPL and ODbL.&lt;/p&gt;
 &lt;p&gt;The current implementation is based on a combination of Microsoft SQL Server and Microsoft Access and there is minimal coding. Therefore a quick conclusion would be that this is a health software under a proprietary operating system. But that limits completely the horizon for this project. Let me throw here a few critical MEDILIG features for discussion.&lt;/p&gt;

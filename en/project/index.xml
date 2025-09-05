@@ -19,13 +19,38 @@
       
       <guid>https://healis.eu/en/project/obsidian_medilig/</guid>
       <description>&lt;h2 id=&#34;we-welcome-a-modern-innovative-way-of-managing-medical-information&#34;&gt;We welcome a modern, innovative way of managing medical information&lt;/h2&gt;
-&lt;h2 id=&#34;at-a-glance&#34;&gt;At a Glance&lt;/h2&gt;
+&lt;h3 id=&#34;at-a-glance&#34;&gt;At a Glance&lt;/h3&gt;
 &lt;p&gt;Obsidian MEDILIG (Medical Life Guard): An easy-to-use, flexible, secure, cross-platform medical knowledge management system for patient&amp;rsquo;s Electronic Health Record (EHR)  that is built on top of Obsidian software application for the design, implementation  and use of autonomous, multilingual, clinical documents from primary care to continuing care.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-backers-and-sponsors&#34;&gt;👑 Backers and Sponsors&lt;/h3&gt;
+&lt;p&gt;Thank you to all our supporters! If you find Obsidian MEDILIG useful, we would greatly appreciate a donation of €9 or more. You can contribute via: &lt;a href=&#34;https://www.paypal.com/paypalme/athanhat&#34;&gt;PayPal&lt;/a&gt;, or &lt;a href=&#34;https://ko-fi.com/athanhat&#34;&gt;Ko-fi&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your generosity helps us maintain and expand our project. Additionally, your contributions will allow us to release a public version of the project on GitHub. Please also remember that many key features and functions of Obsidian MEDILIG are based on &lt;strong&gt;Obsidian plugins&lt;/strong&gt;, whose creators also expect some financial assistance.&lt;/p&gt;
+&lt;p&gt;Thank you for your support!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;download-now-from&#34;&gt;Download now from&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourceforge.net/p/obsidian-medilig/&#34;&gt;&lt;img alt=&#34;Download Obsidian MEDILIG&#34; src=&#34;https://sourceforge.net/sflogo.php?type=18&amp;group_id=3908171&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourceforge.net/projects/obsidian-medilig/files/latest/download&#34;&gt;&lt;img alt=&#34;Download Obsidian MEDILIG&#34; src=&#34;https://a.fsdn.com/con/app/sf-download-button&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Visit SourceForge &lt;a href=&#34;https://sourceforge.net/projects/obsidian-medilig/files/&#34;&gt;Obsidian MEDILIG Files section&lt;/a&gt; and/or the relevant section of the user manual for a more illustrative description and configuration&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;user-manual&#34;&gt;User Manual&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://healis.eu/en/project/obsidian_medilig/exportEN&#34;&gt;In English&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://healis.eu/en/project/obsidian_medilig/exportGR&#34;&gt;In Greek&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;support&#34;&gt;Support&lt;/h2&gt;
+&lt;p&gt;If you&amp;rsquo;d like to receive support open a &lt;a href=&#34;https://sourceforge.net/p/obsidian-medilig/tickets/&#34;&gt;SourceForge ticket&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;contributing&#34;&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;If you’d like to contribute improvements, suggestions, or additional resources, participate in a &lt;a href=&#34;https://sourceforge.net/p/obsidian-medilig/discussion/&#34;&gt;SourceForge discussion&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;gnu-affero-general-public-license---agpl&#34;&gt;GNU AFFERO GENERAL PUBLIC LICENSE - AGPL&lt;/h2&gt;
+&lt;p&gt;Copyright (C) 2024 - &lt;a href=&#34;https://healis.eu/en/authors/admin/&#34;&gt;Athanassios I. Hatzis&lt;/a&gt;
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&lt;/p&gt;
+&lt;p&gt;This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.&lt;/p&gt;
+&lt;p&gt;You should have received a copy of the &lt;a href=&#34;https://www.gnu.org/licenses/agpl-3.0.html&#34;&gt;GNU Affero General Public License (AGPL-3.0)&lt;/a&gt; along with this program. If not, see &lt;a href=&#34;https://www.gnu.org/licenses/&#34;&gt;https://www.gnu.org/licenses/&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -64,7 +89,7 @@
 
 &lt;h2 id=&#34;why-hypermorph&#34;&gt;Why HyperMorph&lt;/h2&gt;
 &lt;h3 id=&#34;not-just-another-etl-tool&#34;&gt;Not just another ETL tool&lt;/h3&gt;
-&lt;p&gt;There are many open-source tools written in Python for ETL or ELT process, &lt;a href=&#34;https://github.com/petl-developers/petl&#34;&gt;petl&lt;/a&gt;, &lt;a href=&#34;https://github.com/Stiivi/bubbles&#34;&gt;bubbles&lt;/a&gt;, &lt;a href=&#34;https://github.com/mara/mara-pipelines&#34;&gt;mara-pipelines&lt;/a&gt;, &lt;a href=&#34;https://github.com/mara/mara-schema&#34;&gt;mara-schema&lt;/a&gt;, &lt;a href=&#34;https://github.com/python-bonobo/bonobo&#34;&gt;bonobo&lt;/a&gt;, &lt;a href=&#34;https://github.com/spotify/luigi&#34;&gt;luigi&lt;/a&gt;, &lt;a href=&#34;https://github.com/blaze/odo&#34;&gt;odo&lt;/a&gt;, &lt;a href=&#34;https://github.com/seanharr11/etlalchemy&#34;&gt;etlalchemy&lt;/a&gt;, &lt;a href=&#34;https://github.com/ceumicrodata/mETL&#34;&gt;mETL&lt;/a&gt;, &lt;a href=&#34;https://github.com/nerevu/riko&#34;&gt;riko&lt;/a&gt;, &lt;a href=&#34;https://github.com/toaco/carry%5D&#34;&gt;carry&lt;/a&gt;, &lt;a href=&#34;https://github.com/capitalone/Data-Load-and-Copy-using-Python&#34;&gt;locopy&lt;/a&gt;, &lt;a href=&#34;https://github.com/ferventdesert/etlpy&#34;&gt;etlpy&lt;/a&gt;, &lt;a href=&#34;https://github.com/chrthomsen/pygrametl&#34;&gt;pygrametl&lt;/a&gt;. Authors in many of these tools realized that Python developers need a uniform interface based on object oriented abstractions for commonly used operations.&lt;/p&gt;
+&lt;p&gt;There are many open-source tools written in Python for ETL or ELT process, &lt;a href=&#34;https://github.com/petl-developers/petl&#34;&gt;petl&lt;/a&gt;, &lt;a href=&#34;https://github.com/Stiivi/bubbles&#34;&gt;bubbles&lt;/a&gt;, &lt;a href=&#34;https://github.com/mara/mara-pipelines&#34;&gt;mara-pipelines&lt;/a&gt;, &lt;a href=&#34;https://github.com/mara/mara-schema&#34;&gt;mara-schema&lt;/a&gt;, &lt;a href=&#34;https://github.com/python-bonobo/bonobo&#34;&gt;bonobo&lt;/a&gt;, &lt;a href=&#34;https://github.com/spotify/luigi&#34;&gt;luigi&lt;/a&gt;, &lt;a href=&#34;https://github.com/blaze/odo&#34;&gt;odo&lt;/a&gt;, &lt;a href=&#34;https://github.com/seanharr11/etlalchemy&#34;&gt;etlalchemy&lt;/a&gt;, &lt;a href=&#34;https://github.com/ceumicrodata/mETL&#34;&gt;mETL&lt;/a&gt;, &lt;a href=&#34;https://github.com/nerevu/riko&#34;&gt;riko&lt;/a&gt;, &lt;a href=&#34;https://github.com/toaco/carry]&#34;&gt;carry&lt;/a&gt;, &lt;a href=&#34;https://github.com/capitalone/Data-Load-and-Copy-using-Python&#34;&gt;locopy&lt;/a&gt;, &lt;a href=&#34;https://github.com/ferventdesert/etlpy&#34;&gt;etlpy&lt;/a&gt;, &lt;a href=&#34;https://github.com/chrthomsen/pygrametl&#34;&gt;pygrametl&lt;/a&gt;. Authors in many of these tools realized that Python developers need a uniform interface based on object oriented abstractions for commonly used operations.&lt;/p&gt;
 &lt;h4 id=&#34;well-designed-powerful-oop-classes&#34;&gt;Well-designed powerful OOP classes&lt;/h4&gt;
 &lt;p&gt;HyperMorph offers interactive console programming and development with high-level OOP components tailored to cover all aspects of database management and analytics. HyperMorph is very rich in that aspect and provides &lt;code&gt;DataSet&lt;/code&gt;, &lt;code&gt;Table&lt;/code&gt; and &lt;code&gt;Field&lt;/code&gt; classes for data resources, &lt;code&gt;DataModel&lt;/code&gt;, &lt;code&gt;Entity&lt;/code&gt;, &lt;code&gt;Attribute&lt;/code&gt; classes for data models, &lt;code&gt;SchemaGraph&lt;/code&gt;, &lt;code&gt;SchemaNode&lt;/code&gt;, &lt;code&gt;SchemaLink&lt;/code&gt;, &lt;code&gt;SchemaPipe&lt;/code&gt; classes for metadata management, &lt;code&gt;DataGraph&lt;/code&gt;, &lt;code&gt;DataNode&lt;/code&gt;, &lt;code&gt;DataLink&lt;/code&gt;, &lt;code&gt;DataPipe&lt;/code&gt; for data management, &lt;code&gt;Connector&lt;/code&gt; class for python drivers/clients and at the highest level of management we have &lt;code&gt;ASET&lt;/code&gt; (Associative Entity Set is similar to Relation) and &lt;code&gt;HACOL&lt;/code&gt; (HyperAtom collection).&lt;/p&gt;
 &lt;h4 id=&#34;schema-and-data-as-objects-and-nodes-on-a-hypergraph&#34;&gt;Schema and data as objects and nodes on a hypergraph&lt;/h4&gt;
@@ -266,7 +291,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Packages in this project extend Wolfram Language with commands that are related to data management and especially generic database management. There is a basic &lt;code&gt;Utilities Package&lt;/code&gt; that is used in transformations between Wolfram Language constructs such as &lt;a href=&#34;https://reference.wolfram.com/language/ref/List.html&#34;&gt;List&lt;/a&gt;, &lt;a href=&#34;https://reference.wolfram.com/language/ref/Rule.html&#34;&gt;Rule&lt;/a&gt;, &lt;a href=&#34;https://reference.wolfram.com/language/ref/Association.html&#34;&gt;Association&lt;/a&gt;, and &lt;a href=&#34;https://reference.wolfram.com/language/ref/Dataset.html&#34;&gt;Dataset&lt;/a&gt;, and external serialization standards such as &lt;a href=&#34;https://json.org&#34;&gt;JSON&lt;/a&gt; and comma-separated values (CSV) files. On top of that package we are porting RESTful APIs from various web services through &lt;a href=&#34;https://reference.wolfram.com/language/ref/URLFetch.html&#34;&gt;URLFetch&lt;/a&gt; into Wolfram Language building commands with arguments that specify options with rules of the form name-&amp;gt;value. An example of such a RESTful API is the &lt;a href=&#34;https://orientdb.org/docs/3.0.x/misc/OrientDB-REST.html&#34;&gt;OrientDB HTTP API&lt;/a&gt; and the &lt;code&gt;OrientDB package&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./orientdb_logo.png&#34; alt=&#34;jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;jpg&#34; src=&#34;./orientdb_logo.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Enhanced &lt;a href=&#34;https://orientdb.org/docs/3.0.x/misc/OrientDB-REST.html&#34;&gt;OrientDB HTTP RESTful API&lt;/a&gt; functionality with powerful new commands for Mathematica users&lt;/li&gt;
@@ -1605,7 +1630,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
       <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/project/stardust/</guid>
-      <description>&lt;p&gt;Two funded research projects: &lt;a href=&#34;https://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;https://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&#39; &lt;a href=&#34;https://healis.eu/en/project/oltk/&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Two funded research projects: &lt;a href=&#34;https://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;https://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&amp;rsquo; &lt;a href=&#34;https://healis.eu/en/project/oltk/&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
 
 
 
@@ -1700,7 +1725,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;Two funded research projects: &lt;a href=&#34;https://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;https://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&#39; &lt;a href=&#34;https://healis.eu/documents/Hatzis1999.pdf&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Two funded research projects: &lt;a href=&#34;https://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;https://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&amp;rsquo; &lt;a href=&#34;https://healis.eu/documents/Hatzis1999.pdf&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
 
 
 
