@@ -7,7 +7,7 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
-    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://healis.eu/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Electronic_health_record</title>
       <link>https://healis.eu/en/tags/electronic_health_record/</link>
-      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/electronic_health_record/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>Electronic_medical_record</title>
       <link>https://healis.eu/en/tags/electronic_medical_record/</link>
-      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/electronic_medical_record/</guid>
       <description></description>
@@ -33,7 +33,7 @@
     <item>
       <title>Health_care</title>
       <link>https://healis.eu/en/tags/health_care/</link>
-      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/health_care/</guid>
       <description></description>
@@ -42,7 +42,7 @@
     <item>
       <title>Health_information_management</title>
       <link>https://healis.eu/en/tags/health_information_management/</link>
-      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/health_information_management/</guid>
       <description></description>
@@ -51,9 +51,45 @@
     <item>
       <title>Health_information_technology</title>
       <link>https://healis.eu/en/tags/health_information_technology/</link>
-      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/health_information_technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Medical_software</title>
+      <link>https://healis.eu/en/tags/medical_software/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/medical_software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Obsidian</title>
+      <link>https://healis.eu/en/tags/obsidian/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/obsidian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://healis.eu/en/tags/programming/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://healis.eu/en/tags/software/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/tags/software/</guid>
       <description></description>
     </item>
     
@@ -85,29 +121,11 @@
     </item>
     
     <item>
-      <title>Programming</title>
-      <link>https://healis.eu/en/tags/programming/</link>
-      <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://healis.eu/en/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Python_(programming_language)</title>
       <link>https://healis.eu/en/tags/python_programming_language/</link>
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/python_programming_language/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software</title>
-      <link>https://healis.eu/en/tags/software/</link>
-      <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://healis.eu/en/tags/software/</guid>
       <description></description>
     </item>
     
@@ -639,15 +657,6 @@
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/tags/source-themes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Medical_software</title>
-      <link>https://healis.eu/en/tags/medical_software/</link>
-      <pubDate>Mon, 13 Sep 2010 00:00:00 +0000</pubDate>
-      
-      <guid>https://healis.eu/en/tags/medical_software/</guid>
       <description></description>
     </item>
     

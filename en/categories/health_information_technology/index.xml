@@ -7,10 +7,87 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
-    <lastBuildDate>Mon, 13 Sep 2010 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://healis.eu/en/categories/health_information_technology/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Obsidian MEDILIG EHR/EMR Application</title>
+      <link>https://healis.eu/en/talk/smart_villages/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://healis.eu/en/talk/smart_villages/</guid>
+      <description>&lt;h3 id=&#34;screen-captures&#34;&gt;Screen Captures&lt;/h3&gt;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screenshots&#34; href=&#34;https://healis.eu/en/talk/smart_villages/screenshots/smart_villages_participants.png&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/smart_villages/screenshots/smart_villages_participants_hu8e4180aaa063d1d3919a99c1feed8773_3468932_0x190_resize_lanczos_3.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screenshots&#34; href=&#34;https://healis.eu/en/talk/smart_villages/screenshots/with_chalki_mayor.png&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/talk/smart_villages/screenshots/with_chalki_mayor_hu54e0af1cf0f3ba2c136fe9b842134af4_2445203_0x190_resize_lanczos_3.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+&lt;h3 id=&#34;powerpoint-presentation-slides&#34;&gt;PowerPoint Presentation Slides&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;In Greek &lt;div class=&#34;gslides-embed responsive-embed&#34;&gt;
+  &lt;iframe src=&#34;https://docs.google.com/presentation/d/1Lp2jn8mN1JIIZfKfWtzd0N5ubLREhP0a/embed?start=true&amp;loop=true&amp;delayms=3000&#34; 
+          width=&#34;100%&#34; 
+          height=&#34;400&#34;
+          frameborder=&#34;0&#34; 
+          allowfullscreen=&#34;true&#34; 
+          mozallowfullscreen=&#34;true&#34; 
+          webkitallowfullscreen=&#34;true&#34;
+          loading=&#34;lazy&#34;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;recorded-powerpoint-presentation&#34;&gt;Recorded PowerPoint Presentation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;In Greek &lt;div class=&#34;gdrive-embed&#34;&gt;
+  &lt;iframe src=&#34;https://drive.google.com/file/d/1wxlWaUhOvpoRTr9q4VqzLYSz75VibjQN/preview&#34; 
+          width=&#34;100%&#34; 
+          height=&#34;500&#34;
+          style=&#34;border: none;&#34;
+          allow=&#34;autoplay&#34;
+          loading=&#34;lazy&#34;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;acknowledgement&#34;&gt;Acknowledgement&lt;/h3&gt;
+&lt;p&gt;We would like to thank &lt;a href=&#34;https://www.bca.edu.gr/en/about-bca/&#34;&gt;Business College of Athens&lt;/a&gt;, especially the marketing director &lt;a href=&#34;https://www.linkedin.com/in/kiros-daskalakis/&#34;&gt;Kyros Daskalakis&lt;/a&gt; for his initiative to present Obsidian MEDILIG at Smart Villages conference.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>MEDILIG</title>

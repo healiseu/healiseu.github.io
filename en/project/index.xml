@@ -18,35 +18,119 @@
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>https://healis.eu/en/project/obsidian_medilig/</guid>
-      <description>&lt;h2 id=&#34;we-welcome-a-modern-innovative-way-of-managing-medical-information&#34;&gt;We welcome a modern, innovative way of managing medical information&lt;/h2&gt;
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#at-a-glance&#34;&gt;At a Glance&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#application-screenshots-gallery&#34;&gt;Application Screenshots Gallery&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#conference-presentations&#34;&gt;Conference Presentations&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#-backers-and-sponsors&#34;&gt;👑 Backers and Sponsors&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#download-from&#34;&gt;Download from&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#installation&#34;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#user-manual&#34;&gt;User Manual&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#support&#34;&gt;Support&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#contributing&#34;&gt;Contributing&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#gnu-affero-general-public-license---agpl&#34;&gt;GNU AFFERO GENERAL PUBLIC LICENSE - AGPL&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
 &lt;h3 id=&#34;at-a-glance&#34;&gt;At a Glance&lt;/h3&gt;
+
+
+&lt;button class=&#34;btn  btn-warning&#34; type=&#34;button&#34;  &gt; We welcome a modern, innovative way of managing medical information &lt;/button&gt;
+
+
+
 &lt;p&gt;Obsidian MEDILIG (Medical Life Guard): An easy-to-use, flexible, secure, cross-platform medical knowledge management system for patient&amp;rsquo;s Electronic Health Record (EHR)  that is built on top of Obsidian software application for the design, implementation  and use of autonomous, multilingual, clinical documents from primary care to continuing care.&lt;/p&gt;
+
+
+
+
+
+
+&lt;figure class=&#34;alignleft&#34;&gt;
+
+&lt;img src=&#34;obsidian_medilig_features.jpg&#34; &gt;
+
+
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h3 id=&#34;application-screenshots-gallery&#34;&gt;Application Screenshots Gallery&lt;/h3&gt;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screenshots&#34; href=&#34;https://healis.eu/en/project/obsidian_medilig/screenshots/admin_en_gr.png&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/obsidian_medilig/screenshots/admin_en_gr_huf4f02844c6b118d408a2bd837a6c1f7c_1004759_0x190_resize_lanczos_3.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-screenshots&#34; href=&#34;https://healis.eu/en/project/obsidian_medilig/screenshots/physician_en_gr.png&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/obsidian_medilig/screenshots/physician_en_gr_hu7f8b4fca112656609656991da387006b_958904_0x190_resize_lanczos_3.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;conference-presentations&#34;&gt;Conference Presentations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;2nd September 2025&lt;/strong&gt; - &lt;a href=&#34;https://healis.eu/en/talk/smart_villages/&#34;&gt;Smart Villages Leader Program - European Network for Rural Development - Salamina Conference&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;-backers-and-sponsors&#34;&gt;👑 Backers and Sponsors&lt;/h3&gt;
 &lt;p&gt;Thank you to all our supporters! If you find Obsidian MEDILIG useful, we would greatly appreciate a donation of €9 or more. You can contribute via: &lt;a href=&#34;https://www.paypal.com/paypalme/athanhat&#34;&gt;PayPal&lt;/a&gt;, or &lt;a href=&#34;https://ko-fi.com/athanhat&#34;&gt;Ko-fi&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Your generosity helps us maintain and expand our project. Additionally, your contributions will allow us to release a public version of the project on GitHub. Please also remember that many key features and functions of Obsidian MEDILIG are based on &lt;strong&gt;Obsidian plugins&lt;/strong&gt;, whose creators also expect some financial assistance.&lt;/p&gt;
 &lt;p&gt;Thank you for your support!&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;download-now-from&#34;&gt;Download now from&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://sourceforge.net/p/obsidian-medilig/&#34;&gt;&lt;img alt=&#34;Download Obsidian MEDILIG&#34; src=&#34;https://sourceforge.net/sflogo.php?type=18&amp;group_id=3908171&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;download-from&#34;&gt;Download from&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourceforge.net/p/obsidian-medilig/&#34;&gt;&lt;img alt=&#34;Download Obsidian MEDILIG&#34; src=&#34;https://sourceforge.net/sflogo.php?type=16&amp;group_id=3908171&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://sourceforge.net/projects/obsidian-medilig/files/latest/download&#34;&gt;&lt;img alt=&#34;Download Obsidian MEDILIG&#34; src=&#34;https://a.fsdn.com/con/app/sf-download-button&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
 &lt;p&gt;Visit SourceForge &lt;a href=&#34;https://sourceforge.net/projects/obsidian-medilig/files/&#34;&gt;Obsidian MEDILIG Files section&lt;/a&gt; and/or the relevant section of the user manual for a more illustrative description and configuration&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;user-manual&#34;&gt;User Manual&lt;/h2&gt;
+&lt;h3 id=&#34;user-manual&#34;&gt;User Manual&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://healis.eu/en/project/obsidian_medilig/exportEN&#34;&gt;In English&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://healis.eu/en/project/obsidian_medilig/exportGR&#34;&gt;In Greek&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;support&#34;&gt;Support&lt;/h2&gt;
+&lt;h3 id=&#34;support&#34;&gt;Support&lt;/h3&gt;
 &lt;p&gt;If you&amp;rsquo;d like to receive support open a &lt;a href=&#34;https://sourceforge.net/p/obsidian-medilig/tickets/&#34;&gt;SourceForge ticket&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;contributing&#34;&gt;Contributing&lt;/h2&gt;
+&lt;h3 id=&#34;contributing&#34;&gt;Contributing&lt;/h3&gt;
 &lt;p&gt;If you’d like to contribute improvements, suggestions, or additional resources, participate in a &lt;a href=&#34;https://sourceforge.net/p/obsidian-medilig/discussion/&#34;&gt;SourceForge discussion&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;gnu-affero-general-public-license---agpl&#34;&gt;GNU AFFERO GENERAL PUBLIC LICENSE - AGPL&lt;/h2&gt;
+&lt;h3 id=&#34;gnu-affero-general-public-license---agpl&#34;&gt;GNU AFFERO GENERAL PUBLIC LICENSE - AGPL&lt;/h3&gt;
 &lt;p&gt;Copyright (C) 2024 - &lt;a href=&#34;https://healis.eu/en/authors/admin/&#34;&gt;Athanassios I. Hatzis&lt;/a&gt;
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&lt;/p&gt;
 &lt;p&gt;This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.&lt;/p&gt;

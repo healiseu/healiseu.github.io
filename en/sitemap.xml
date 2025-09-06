@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://healis.eu/en/authors/</loc>
-    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://healis.eu/en/authors/admin/</loc>
-    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
@@ -28,8 +28,11 @@
                 href="https://healis.eu/en/authors/admin/"
                 />
   </url><url>
+    <loc>https://healis.eu/en/talk/</loc>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://healis.eu/en/categories/</loc>
-    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
@@ -42,13 +45,13 @@
                 />
   </url><url>
     <loc>https://healis.eu/en/tags/electronic_health_record/</loc>
-    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://healis.eu/en/tags/electronic_medical_record/</loc>
-    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://healis.eu/en/</loc>
-    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
@@ -61,25 +64,34 @@
                 />
   </url><url>
     <loc>https://healis.eu/en/tags/health_care/</loc>
-    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://healis.eu/en/tags/health_information_management/</loc>
-    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://healis.eu/en/tags/health_information_technology/</loc>
-    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://healis.eu/en/project/obsidian_medilig/</loc>
-    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <loc>https://healis.eu/en/categories/health_information_technology/</loc>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://healis.eu/en/project/</loc>
-    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <loc>https://healis.eu/en/tags/medical_software/</loc>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://healis.eu/en/categories/semantic_web/</loc>
-    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <loc>https://healis.eu/en/tags/obsidian/</loc>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://healis.eu/en/talk/smart_villages/</loc>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://healis.eu/en/tags/programming/</loc>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://healis.eu/en/tags/software/</loc>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://healis.eu/en/tags/</loc>
-    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
@@ -90,6 +102,15 @@
                 hreflang="en-us"
                 href="https://healis.eu/en/tags/"
                 />
+  </url><url>
+    <loc>https://healis.eu/en/project/obsidian_medilig/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://healis.eu/en/project/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://healis.eu/en/categories/semantic_web/</loc>
+    <lastmod>2024-08-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://healis.eu/en/tags/application_programming_interface/</loc>
     <lastmod>2020-08-22T00:00:00+00:00</lastmod>
@@ -106,13 +127,7 @@
     <loc>https://healis.eu/en/project/hypermorph/</loc>
     <lastmod>2020-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://healis.eu/en/tags/programming/</loc>
-    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://healis.eu/en/tags/python_programming_language/</loc>
-    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://healis.eu/en/tags/software/</loc>
     <lastmod>2020-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://healis.eu/en/hmorph/</loc>
@@ -319,9 +334,6 @@
     <loc>https://healis.eu/en/tags/tagline/</loc>
     <lastmod>2018-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://healis.eu/en/talk/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://healis.eu/en/talk/triadb_connected_data/</loc>
     <lastmod>2017-11-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -498,12 +510,6 @@
     <lastmod>2012-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://healis.eu/en/talk/ignite_athens_2012/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://healis.eu/en/categories/health_information_technology/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://healis.eu/en/tags/medical_software/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://healis.eu/en/project/medilig/</loc>
