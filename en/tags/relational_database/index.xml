@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Relational_database on HEALIS</title>
-    <link>https://healis.eu/en/tags/relational_database/</link>
+    <link>http://healis.eu/en/tags/relational_database/</link>
     <description>Recent content in Relational_database on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
     <lastBuildDate>Sat, 10 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://healis.eu/en/tags/relational_database/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://healis.eu/en/tags/relational_database/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Back to the roots, Relational Data Model</title>
-      <link>https://healis.eu/en/post/20180310/</link>
+      <link>http://healis.eu/en/post/20180310/</link>
       <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/post/20180310/</guid>
+      <guid>http://healis.eu/en/post/20180310/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -29,8 +29,8 @@
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;back-to-the-roots&#34;&gt;Back to the roots&lt;/h2&gt;
-&lt;p&gt;Recently, I realized that the &lt;strong&gt;associative, semiotic, hypergraph&lt;/strong&gt;, or in short the &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt;, technology framework we propose to be adopted in database management systems can be considered in many ways an extension to &lt;a href=&#34;https://en.wikipedia.org/wiki/Edgar_F._Codd&#34;&gt;Codd&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_model&#34;&gt;Relational Model&lt;/a&gt;. I am aware that this is a big claim and certainly this is not the place or the time to lay down my arguments, suffice it to say how this occurred to me.&lt;/p&gt;
-&lt;p&gt;I have partially implemented &lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt; technology twice on top of two different &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_store&#34;&gt;data stores&lt;/a&gt; and I noticed that those &lt;strong&gt;add and get operations&lt;/strong&gt; we defined are closely related to Codd&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_algebra&#34;&gt;relational algebra operations&lt;/a&gt;, while data sets, i.e. domains, and a user defined type system match the &lt;a href=&#34;https://en.wikipedia.org/wiki/Set_(mathematics)&#34;&gt;sets defined in mathematics&lt;/a&gt; and relational theory. Coincidentally Codd&amp;rsquo;s Relational logic goes back to Aristotle and the corner stone of our technology, which is the &lt;a href=&#34;https://healis.eu/en/project/r3dm/#computational-semiotic-triangle&#34;&gt;computational semiotic triangle&lt;/a&gt;, goes back to Aristotle too. I will briefly mention that one basic difference is that both the heading set and the body tuples of the Relation, in fact everything, are transformed and uniformly represented with numerical key references. Therefore it can also be called &lt;strong&gt;Reference Database Management System (RDBMS)&lt;/strong&gt;. All these are simply good indications. I believe we are on the right track.&lt;/p&gt;
+&lt;p&gt;Recently, I realized that the &lt;strong&gt;associative, semiotic, hypergraph&lt;/strong&gt;, or in short the &lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt;, technology framework we propose to be adopted in database management systems can be considered in many ways an extension to &lt;a href=&#34;https://en.wikipedia.org/wiki/Edgar_F._Codd&#34;&gt;Codd&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_model&#34;&gt;Relational Model&lt;/a&gt;. I am aware that this is a big claim and certainly this is not the place or the time to lay down my arguments, suffice it to say how this occurred to me.&lt;/p&gt;
+&lt;p&gt;I have partially implemented &lt;a href=&#34;http://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt; technology twice on top of two different &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_store&#34;&gt;data stores&lt;/a&gt; and I noticed that those &lt;strong&gt;add and get operations&lt;/strong&gt; we defined are closely related to Codd&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_algebra&#34;&gt;relational algebra operations&lt;/a&gt;, while data sets, i.e. domains, and a user defined type system match the &lt;a href=&#34;https://en.wikipedia.org/wiki/Set_(mathematics)&#34;&gt;sets defined in mathematics&lt;/a&gt; and relational theory. Coincidentally Codd&amp;rsquo;s Relational logic goes back to Aristotle and the corner stone of our technology, which is the &lt;a href=&#34;http://healis.eu/en/project/r3dm/#computational-semiotic-triangle&#34;&gt;computational semiotic triangle&lt;/a&gt;, goes back to Aristotle too. I will briefly mention that one basic difference is that both the heading set and the body tuples of the Relation, in fact everything, are transformed and uniformly represented with numerical key references. Therefore it can also be called &lt;strong&gt;Reference Database Management System (RDBMS)&lt;/strong&gt;. All these are simply good indications. I believe we are on the right track.&lt;/p&gt;
 &lt;p&gt;The truth is, and I will quote &lt;a href=&#34;https://en.wikipedia.org/wiki/Christopher_J._Date&#34;&gt;Chris Date&lt;/a&gt; here, that:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;if you are proposing to replace technology A by technology B first is counted on you to understand technology A and then it is counted on you that there is some problem that technology A does not solve and technology B does solve&lt;/em&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
@@ -74,10 +74,10 @@
     
     <item>
       <title>Many-to-Many Relationships</title>
-      <link>https://healis.eu/en/post/20170420/</link>
+      <link>http://healis.eu/en/post/20170420/</link>
       <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/post/20170420/</guid>
+      <guid>http://healis.eu/en/post/20170420/</guid>
       <description>&lt;h2 id=&#34;in-the-past&#34;&gt;In the Past&lt;/h2&gt;
 &lt;p&gt;A many to many relationship is represented with an associative entity. Experts and non-experts in IT field know that this is one of the most important topics in Entity-Relationship and Relational theory. Seven years ago, when I started my data modeling saga, searching for SQL joins returned numerous results and few of them were on XML data. But I could hardly find any discussion about how a join table is related to the theory of two international data model standards, namely RDF and Topic Maps. A year later, in 2010 W3C started publishing &lt;a href=&#34;https://www.w3.org/TR/rdb-direct-mapping/&#34;&gt;&amp;ldquo;A Direct Mapping of Relational Data to RDF&amp;rdquo;&lt;/a&gt;. Coincidentally, back in 2009-2010 the &lt;a href=&#34;https://en.wikipedia.org/wiki/NoSQL&#34;&gt;NoSQL movement&lt;/a&gt; was born and Graph Databases started becoming a hot topic but nodes and edges were shrouded in disorientation for users of relational databases.&lt;/p&gt;
 &lt;h2 id=&#34;in-the-present&#34;&gt;In the Present&lt;/h2&gt;
@@ -85,12 +85,12 @@
 &lt;h2 id=&#34;epilogue&#34;&gt;Epilogue&lt;/h2&gt;
 &lt;p&gt;I took a firm decision to clear a bit this info-glut with a series of articles in associative data modeling written with a hands-on practice style:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20160825/&#34;&gt;Part 1/6&lt;/a&gt; is about Entity-Relationship data model&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20160902/&#34;&gt;Part 2/6&lt;/a&gt; discusses Topic-Map data model&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20160913/&#34;&gt;Part 3/6&lt;/a&gt; is focusing on Property Graph data model&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20161220/&#34;&gt;Part 4/6&lt;/a&gt; is explaining RDF Graph data model and Sentences associative data model&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20170211/&#34;&gt;Part 5/6&lt;/a&gt; is a demonstration of QlikView associative data model&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;Part 6/6&lt;/a&gt; presents R3DM/S3DM associative semiotic hypergraph data modeling perspective&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/post/20160825/&#34;&gt;Part 1/6&lt;/a&gt; is about Entity-Relationship data model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/post/20160902/&#34;&gt;Part 2/6&lt;/a&gt; discusses Topic-Map data model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/post/20160913/&#34;&gt;Part 3/6&lt;/a&gt; is focusing on Property Graph data model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/post/20161220/&#34;&gt;Part 4/6&lt;/a&gt; is explaining RDF Graph data model and Sentences associative data model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/post/20170211/&#34;&gt;Part 5/6&lt;/a&gt; is a demonstration of QlikView associative data model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;Part 6/6&lt;/a&gt; presents R3DM/S3DM associative semiotic hypergraph data modeling perspective&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
 &lt;ul&gt;
@@ -107,10 +107,10 @@
     
     <item>
       <title>Relation, Relationship and Association</title>
-      <link>https://healis.eu/en/post/20160825/</link>
+      <link>http://healis.eu/en/post/20160825/</link>
       <pubDate>Thu, 25 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/post/20160825/</guid>
+      <guid>http://healis.eu/en/post/20160825/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -205,7 +205,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;In this classic paper, &lt;a href=&#34;https://dl.acm.org/citation.cfm?id=320440&#34;&gt;&amp;ldquo;The Entity-Relationship Model - Toward a Unified View of Data&amp;rdquo;&lt;/a&gt; &lt;strong&gt;Peter Chen defines relationship as an association among entities&lt;/strong&gt;. In the same paper &lt;strong&gt;entity and relationship are illustrated as hypergraphs&lt;/strong&gt;. In particular, &lt;em&gt;&lt;a href=&#34;https://healis.eu/en/post/20160825/#fig2&#34;&gt;Fig. 2&lt;/a&gt;&lt;/em&gt; at page 13 and &lt;em&gt;&lt;a href=&#34;https://healis.eu/en/post/20160825/#fig3&#34;&gt;Fig. 3&lt;/a&gt;&lt;/em&gt; at page 14 show how an instance from an Entity/Relationship set is linked to either values or other entities. Although Peter Chen did not describe these fundamental constructs of his data model with Hypegraph terms, it can be easily seen in these captured figures that a specific entity or relationship form hyperedges with other entities or values that play the role of hypernodes.&lt;/p&gt;
+&lt;p&gt;In this classic paper, &lt;a href=&#34;https://dl.acm.org/citation.cfm?id=320440&#34;&gt;&amp;ldquo;The Entity-Relationship Model - Toward a Unified View of Data&amp;rdquo;&lt;/a&gt; &lt;strong&gt;Peter Chen defines relationship as an association among entities&lt;/strong&gt;. In the same paper &lt;strong&gt;entity and relationship are illustrated as hypergraphs&lt;/strong&gt;. In particular, &lt;em&gt;&lt;a href=&#34;http://healis.eu/en/post/20160825/#fig2&#34;&gt;Fig. 2&lt;/a&gt;&lt;/em&gt; at page 13 and &lt;em&gt;&lt;a href=&#34;http://healis.eu/en/post/20160825/#fig3&#34;&gt;Fig. 3&lt;/a&gt;&lt;/em&gt; at page 14 show how an instance from an Entity/Relationship set is linked to either values or other entities. Although Peter Chen did not describe these fundamental constructs of his data model with Hypegraph terms, it can be easily seen in these captured figures that a specific entity or relationship form hyperedges with other entities or values that play the role of hypernodes.&lt;/p&gt;
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
 
 
@@ -274,7 +274,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;|&lt;/span&gt;supID&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1081&lt;/span&gt;, prtID&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;998&lt;/span&gt;, catPrice&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;, catQuantity&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;400&lt;/span&gt;, catDate&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Wed 10 Sep 2014&amp;#34;&lt;/span&gt;, catCheck&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;What we are missing in this representation are the hyperedges, i.e. the nexuses that link together hypernodes. According to hypergraph terminology, the edge that connects a hyperedge to a hypernode is called hyperlink or connector. You may think of these hyperlinks/connectors as hash fields but we need another identifier for the hash key, i.e. an identifier for the instance. We could have used supID, prtID or a combination of these two but we prefer to define new identifiers for hyperedges. &lt;strong&gt;The main reason for this is that in principle we want to design a uniform way of addressing and identifying both hyperedge and hypernode instances at a low-dimensional, e.g. (2D,3D,4D), space&lt;/strong&gt;. If we encode this way, it is possible to avoid namespace problems. In this post we use names to compare the graph with figures from Peter Chen&amp;rsquo;s paper.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;Three Associations in a Named-Row Dataset&#34; src=&#34;./three_associations.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;We may also connect hyperedges, e.g. we can add a &amp;ldquo;type&amp;rdquo; hyperlink that maps instances to classes, a &amp;ldquo;vendor&amp;rdquo; hyperlink that maps a Catalog instance to its Supplier instance and a &amp;ldquo;stockItem&amp;rdquo; hyperlink that connects Catalog instance to Part instance. In Wolfram Language it is relatively easy to make a graph of these Associations. We colorized the graph according to the different data types we have, i.e. hyperedges, strings, doubles, integers, dates, and booleans, &lt;a href=&#34;https://healis.eu/en/post/20160825/#fig4&#34;&gt;&lt;strong&gt;Fig.4&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We may also connect hyperedges, e.g. we can add a &amp;ldquo;type&amp;rdquo; hyperlink that maps instances to classes, a &amp;ldquo;vendor&amp;rdquo; hyperlink that maps a Catalog instance to its Supplier instance and a &amp;ldquo;stockItem&amp;rdquo; hyperlink that connects Catalog instance to Part instance. In Wolfram Language it is relatively easy to make a graph of these Associations. We colorized the graph according to the different data types we have, i.e. hyperedges, strings, doubles, integers, dates, and booleans, &lt;a href=&#34;http://healis.eu/en/post/20160825/#fig4&#34;&gt;&lt;strong&gt;Fig.4&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
 
 
@@ -349,7 +349,7 @@
 &lt;p&gt;Relational databases are usually normalized to eliminate duplication of information and ensure referential integrity. This is especially recommended in one-to-many relationships. &lt;a href=&#34;https://en.wikipedia.org/wiki/Database_normalization&#34;&gt;Normalization&lt;/a&gt; involves arranging attributes in tables, nevertheless in a relational database we cannot escape from data redundancy completely. For example if we take the unit attribute of the normalized Part table above we can see that values are still repeated. Most important the schema of a relational database is too rigid and cannot be easily modified without breaking normalization and compromising referential integrity.&lt;/p&gt;
 &lt;h3 id=&#34;structured-query-language-sql&#34;&gt;Structured Query Language (SQL)&lt;/h3&gt;
 &lt;p&gt;Performing queries of data in a relational database is highly dependent on these two factors we briefly mentioned above, the physical representation of data on the disk and the normalization procedure. One of the main bottlenecks with SQL is the natural join relational operator, counterpart of logical AND. An &lt;a href=&#34;https://en.wikipedia.org/wiki/Join_(SQL)&#34;&gt;SQL Join&lt;/a&gt; is a means for constructing a result set combining columns from two (or more) tables by using values common to each. The more tables you join and the bigger the size of each table the more time it takes to consolidate the data of the view. On the contrary in many graph databases, connected nodes, i.e. record instances, are directly linked to each other. Each node, contains a list of pointers of its edges, therefore avoiding look-ups. In fact you are not searching for records, you are traversing connections instead. This may dramatically reduce the speed of constructing the result set of a query.&lt;/p&gt;
-&lt;p&gt;For demonstration and comparison purposes we provide such a JOIN sql query for our toy database together with an ER diagram of the database schema,&lt;a href=&#34;https://healis.eu/en/post/20160825/#fig5&#34;&gt;&lt;strong&gt;Fig.5&lt;/strong&gt;&lt;/a&gt; and the result set on a Microsoft Access table view, &lt;a href=&#34;https://healis.eu/en/post/20160825/#fig6&#34;&gt;&lt;strong&gt;Fig.6&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For demonstration and comparison purposes we provide such a JOIN sql query for our toy database together with an ER diagram of the database schema,&lt;a href=&#34;http://healis.eu/en/post/20160825/#fig5&#34;&gt;&lt;strong&gt;Fig.5&lt;/strong&gt;&lt;/a&gt; and the result set on a Microsoft Access table view, &lt;a href=&#34;http://healis.eu/en/post/20160825/#fig6&#34;&gt;&lt;strong&gt;Fig.6&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You may also download a Microsoft Access, &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue/accdb&#34;&gt;accdb&lt;/a&gt; file format, database to experiment with.&lt;/p&gt;
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
 

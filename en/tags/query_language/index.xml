@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Query_language on HEALIS</title>
-    <link>https://healis.eu/en/tags/query_language/</link>
+    <link>http://healis.eu/en/tags/query_language/</link>
     <description>Recent content in Query_language on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
     <lastBuildDate>Sat, 15 Jun 2019 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://healis.eu/en/tags/query_language/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://healis.eu/en/tags/query_language/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Where is the gap in data modeling ?</title>
-      <link>https://healis.eu/en/post/20190615/</link>
+      <link>http://healis.eu/en/post/20190615/</link>
       <pubDate>Sat, 15 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/post/20190615/</guid>
+      <guid>http://healis.eu/en/post/20190615/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -35,7 +35,7 @@
 &lt;li&gt;What about the building blocks, for example in RDF you have triples, in relational you have relations (tables) and tuples. Is that all ? Can we make better building blocks to connect data or information ?&lt;/li&gt;
 &lt;li&gt;And last but not least, at a physical layer, and I believe that is exactly &lt;strong&gt;where the gap lies between pure data modelers/architects and database engineers/developers&lt;/strong&gt;, you have row, column, document, native graph structures. Are you totally convinced that the best way to physically implement a graph data-information model is with a native graph structure on permanent storage ?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;If you ask me to answer these questions I suggest you read more information about &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; conceptual, computational semiotics framework and the related projects &lt;a href=&#34;https://healis.eu/en/hmorph/&#34;&gt;HyperMorph&lt;/a&gt; and &lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt;. This is what I have been involved with for the last ten years.&lt;/p&gt;
+&lt;p&gt;If you ask me to answer these questions I suggest you read more information about &lt;a href=&#34;http://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; conceptual, computational semiotics framework and the related projects &lt;a href=&#34;http://healis.eu/en/hmorph/&#34;&gt;HyperMorph&lt;/a&gt; and &lt;a href=&#34;http://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt;. This is what I have been involved with for the last ten years.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The nice thing with social media is that if you deserve to get some good feedback from professionals and experts of the field in a post like this one you might decide to extend it. That&amp;rsquo;s exactly what I did in the following few paragraphs to respond in a better way to comments in my post.&lt;/em&gt;_&lt;/p&gt;
 &lt;h2 id=&#34;business-vs-technological-factors&#34;&gt;Business vs Technological Factors&lt;/h2&gt;
 &lt;p&gt;I believe the resurgence of no-SQL movement (2009), which is highly related to data modeling, started out of the emergent need of companies-users to deal with the velocity, volume, variety and other properties of distributed data resources. That same movement pushed forward our technological boundaries to create better DBMS and BI, web/desktop applications.&lt;/p&gt;
@@ -55,10 +55,10 @@
     
     <item>
       <title>Yet another query language, really ?</title>
-      <link>https://healis.eu/en/post/20180403/</link>
+      <link>http://healis.eu/en/post/20180403/</link>
       <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/post/20180403/</guid>
+      <guid>http://healis.eu/en/post/20180403/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -80,8 +80,8 @@
 &lt;li&gt;updates&lt;/li&gt;
 &lt;li&gt;joins&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;That is why in a &lt;a href=&#34;https://healis.eu/en/post/20180310/&#34;&gt;previous article&lt;/a&gt; of mine I have proposed to return back to the roots and investigate better the Relational Algebra and these reasons that made both SQL and NoSQL DBMS to deviate from the original relational model path.&lt;/p&gt;
-&lt;p&gt;For those that follow my posts, they are aware that I am not speaking purely from a theoretical point of view. There is an alternative data model (&lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;) that I propose, a particular software technology based on this (&lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;Associative Semiotic Hypergraph&lt;/a&gt;) and two prototypes (&lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt;, &lt;a href=&#34;https://healis.eu/en/project/hypermorph/&#34;&gt;HyperMorph&lt;/a&gt;) implemented and demonstrated with an intuitive functional declarative way to query things. Nevertheless performance is a top priority, and that is what I am currently investigating.&lt;/p&gt;
+&lt;p&gt;That is why in a &lt;a href=&#34;http://healis.eu/en/post/20180310/&#34;&gt;previous article&lt;/a&gt; of mine I have proposed to return back to the roots and investigate better the Relational Algebra and these reasons that made both SQL and NoSQL DBMS to deviate from the original relational model path.&lt;/p&gt;
+&lt;p&gt;For those that follow my posts, they are aware that I am not speaking purely from a theoretical point of view. There is an alternative data model (&lt;a href=&#34;http://healis.eu/en/s3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;) that I propose, a particular software technology based on this (&lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;Associative Semiotic Hypergraph&lt;/a&gt;) and two prototypes (&lt;a href=&#34;http://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt;, &lt;a href=&#34;http://healis.eu/en/project/hypermorph/&#34;&gt;HyperMorph&lt;/a&gt;) implemented and demonstrated with an intuitive functional declarative way to query things. Nevertheless performance is a top priority, and that is what I am currently investigating.&lt;/p&gt;
 &lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/yet-another-query-language-really-athanassios-hatzis-phd/&#34;&gt;LinkedIn - Published Post&lt;/a&gt;&lt;/li&gt;

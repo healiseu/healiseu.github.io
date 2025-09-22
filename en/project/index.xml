@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on HEALIS</title>
-    <link>https://healis.eu/en/project/</link>
+    <link>http://healis.eu/en/project/</link>
     <description>Recent content in Projects on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
     <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://healis.eu/en/project/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://healis.eu/en/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Obsidian MEDILIG</title>
-      <link>https://healis.eu/en/project/obsidian_medilig/</link>
+      <link>http://healis.eu/en/project/obsidian_medilig/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/obsidian_medilig/</guid>
+      <guid>http://healis.eu/en/project/obsidian_medilig/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -46,6 +46,26 @@
 
 
 &lt;p&gt;Obsidian MEDILIG (Medical Life Guard): An easy-to-use, flexible, secure, cross-platform medical knowledge management system for patient&amp;rsquo;s Electronic Health Record (EHR)  that is built on top of Obsidian software application for the design, implementation  and use of autonomous, multilingual, clinical documents from primary care to continuing care.&lt;/p&gt;
+&lt;h4 id=&#34;for-the-patient-and-the-healthcare-professional&#34;&gt;For the patient and the healthcare professional&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Obsidian MEDILIG installs easily and runs locally on a PC without connection to databases or without internet connection (local-first &amp;amp; offline-first)&lt;/li&gt;
+&lt;li&gt;Best possible way for security and protection of sensitive-personal data. There is no form of tracking or data analysis in the application.&lt;/li&gt;
+&lt;li&gt;Rapid access and analysis of data (full text search, tags, properties)&lt;/li&gt;
+&lt;li&gt;The user edits markdown text files that can be enriched with multimedia&lt;/li&gt;
+&lt;li&gt;Any file can be converted to pdf or transferred to another PC and opened with any simple text editor (no data lock-in)&lt;/li&gt;
+&lt;li&gt;Current Functionality:
+&lt;ul&gt;
+&lt;li&gt;Patient management and administrative support&lt;/li&gt;
+&lt;li&gt;Reminders and notifications&lt;/li&gt;
+&lt;li&gt;Visit scheduling&lt;/li&gt;
+&lt;li&gt;File linking and navigation like on the internet (Wikipedia)&lt;/li&gt;
+&lt;li&gt;Multimedia management and linking&lt;/li&gt;
+&lt;li&gt;References to other files, to patients, to multimedia and embedding of file sections into files&lt;/li&gt;
+&lt;li&gt;Easy and fast backup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ideal for case presentations, research, EHR/EMR learning for medical students&lt;/li&gt;
+&lt;/ul&gt;
 
 
 
@@ -54,7 +74,30 @@
 
 &lt;figure class=&#34;alignleft&#34;&gt;
 
-&lt;img src=&#34;obsidian_medilig_features.jpg&#34; &gt;
+&lt;img src=&#34;second_digital_brain.png&#34; &gt;
+
+
+&lt;/figure&gt;
+
+&lt;h4 id=&#34;for-the-it-professional-programmer-for-any-user&#34;&gt;For the IT professional, programmer, for any user&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Your second digital brain&lt;/li&gt;
+&lt;li&gt;Creation and modification of templates with the ability to embed code&lt;/li&gt;
+&lt;li&gt;Creation of specialized applications on top of Obsidian like MEDILIG using plugins and interactive elements&lt;/li&gt;
+&lt;li&gt;Self-contained formatted text markdown files that incorporate code, metadata and multimedia content&lt;/li&gt;
+&lt;li&gt;Automated processes for creating interconnected entities that are related to each other&lt;/li&gt;
+&lt;li&gt;The philosophy of Live NodeBook Network.&lt;/li&gt;
+&lt;li&gt;The future of the digital web (Web3,4,…) Decentralized information networks.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+&lt;figure class=&#34;alignleft&#34;&gt;
+
+&lt;img src=&#34;p2p_network.png&#34; &gt;
 
 
 &lt;/figure&gt;
@@ -84,8 +127,8 @@
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screenshots&#34; href=&#34;https://healis.eu/en/project/obsidian_medilig/screenshots/admin_en_gr.png&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/obsidian_medilig/screenshots/admin_en_gr_huf4f02844c6b118d408a2bd837a6c1f7c_1004759_0x190_resize_lanczos_3.png&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screenshots&#34; href=&#34;http://healis.eu/en/project/obsidian_medilig/screenshots/admin_en_gr.png&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/obsidian_medilig/screenshots/admin_en_gr_huf4f02844c6b118d408a2bd837a6c1f7c_1004759_0x190_resize_lanczos_3.png&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -93,8 +136,8 @@
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screenshots&#34; href=&#34;https://healis.eu/en/project/obsidian_medilig/screenshots/physician_en_gr.png&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/obsidian_medilig/screenshots/physician_en_gr_hu7f8b4fca112656609656991da387006b_958904_0x190_resize_lanczos_3.png&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screenshots&#34; href=&#34;http://healis.eu/en/project/obsidian_medilig/screenshots/physician_en_gr.png&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/obsidian_medilig/screenshots/physician_en_gr_hu7f8b4fca112656609656991da387006b_958904_0x190_resize_lanczos_3.png&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
 
@@ -103,7 +146,7 @@
 &lt;hr&gt;
 &lt;h3 id=&#34;conference-presentations&#34;&gt;Conference Presentations&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;2nd September 2025&lt;/strong&gt; - &lt;a href=&#34;https://healis.eu/en/talk/smart_villages/&#34;&gt;Smart Villages Leader Program - European Network for Rural Development - Salamina Conference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2nd September 2025&lt;/strong&gt; - &lt;a href=&#34;http://healis.eu/en/talk/smart_villages/&#34;&gt;Smart Villages Leader Program - European Network for Rural Development - Salamina Conference&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;-backers-and-sponsors&#34;&gt;👑 Backers and Sponsors&lt;/h3&gt;
@@ -120,8 +163,8 @@
 &lt;hr&gt;
 &lt;h3 id=&#34;user-manual&#34;&gt;User Manual&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/project/obsidian_medilig/exportEN&#34;&gt;In English&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/project/obsidian_medilig/exportGR&#34;&gt;In Greek&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/project/obsidian_medilig/exportEN&#34;&gt;In English&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/project/obsidian_medilig/exportGR&#34;&gt;In Greek&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;support&#34;&gt;Support&lt;/h3&gt;
@@ -140,10 +183,10 @@ This program is free software: you can redistribute it and/or modify it under th
     
     <item>
       <title>HyperMorph</title>
-      <link>https://healis.eu/en/project/hypermorph/</link>
+      <link>http://healis.eu/en/project/hypermorph/</link>
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/hypermorph/</guid>
+      <guid>http://healis.eu/en/project/hypermorph/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -195,7 +238,7 @@ This program is free software: you can redistribute it and/or modify it under th
 &lt;h4 id=&#34;pipelines&#34;&gt;Pipelines&lt;/h4&gt;
 &lt;p&gt;This is a standard approach in ETL frameworks and a very useful one because in general &lt;code&gt;pipelines&lt;/code&gt; are flexible and intuitive in programming. Hypermorph is not an exception we tried to make a difference here by designing same pipeline operators for fetching either data or metadata. For example there is an &lt;code&gt;over()&lt;/code&gt; operator for projection and &lt;code&gt;to_dataframe()&lt;/code&gt; for transformation to Python Pandas dataframe. We have even wrapped functional commands on pipelines so that you can choose between OOP (chaining) or functional style of programming.&lt;/p&gt;
 &lt;h3 id=&#34;not-only-a-data-storage-and-transformations-analytics-tool&#34;&gt;Not only a data storage and transformations-analytics tool&lt;/h3&gt;
-&lt;p&gt;There is another category of tools related with data storage (in-memory, on-disk), transformations and analytics processing, such as &lt;a href=&#34;https://github.com/TileDB-Inc/TileDB&#34;&gt;TileDB&lt;/a&gt;, &lt;a href=&#34;https://github.com/pandas-dev/pandas&#34;&gt;datatable&lt;/a&gt;, &lt;a href=&#34;https://github.com/h2oai/datatable&#34;&gt;pandas&lt;/a&gt;, &lt;a href=&#34;https://github.com/petl-developers/petl&#34;&gt;petl&lt;/a&gt;, &lt;a href=&#34;https://github.com/vaexio/vaex&#34;&gt;vaex&lt;/a&gt;, &lt;a href=&#34;https://github.com/PyTables&#34;&gt;pytables&lt;/a&gt;, &lt;a href=&#34;https://github.com/ibis-project/ibis&#34;&gt;ibis&lt;/a&gt;, &lt;a href=&#34;https://github.com/numpy/numpy&#34;&gt;numpy&lt;/a&gt;, &lt;a href=&#34;https://github.com/dask/dask&#34;&gt;dask&lt;/a&gt;, &lt;a href=&#34;https://github.com/apache/arrow&#34;&gt;pyarrow&lt;/a&gt;, &lt;a href=&#34;https://arrow.apache.org/blog/2018/12/05/gandiva-donation/&#34;&gt;gandiva&lt;/a&gt;. Usually most of them construct a table data structure in-memory or on-disk and use either a column layout or row layout to process the data. Hence they resemble database engines. In fact previous prototypes of HyperMorph (see &lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt; project) were based on SQL database engines. This time the current, first, release of HyperMorph is powered by &lt;a href=&#34;https://arrow.apache.org/docs/python/index.html&#34;&gt;PyArrow&lt;/a&gt;. There are many reasons for that choice. Most important PyArrow is mature and provides a columnar memory format for flat and hierarchical data, organized for efficient analytic operations on modern hardware including GPUs. But regarding HyperMorph the killer feature of PyArrow package is &lt;a href=&#34;https://arrow.apache.org/docs/python/data.html#dictionary-arrays&#34;&gt;dictionary encoding&lt;/a&gt; which is utilized to implement associative filtering, part of our &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;associative semiotic hypergraph technology&lt;/a&gt;, in the style of &lt;a href=&#34;https://www.qlik.com/us/products/associative-difference&#34;&gt;Qlik&lt;/a&gt; analytics engine.&lt;/p&gt;
+&lt;p&gt;There is another category of tools related with data storage (in-memory, on-disk), transformations and analytics processing, such as &lt;a href=&#34;https://github.com/TileDB-Inc/TileDB&#34;&gt;TileDB&lt;/a&gt;, &lt;a href=&#34;https://github.com/pandas-dev/pandas&#34;&gt;datatable&lt;/a&gt;, &lt;a href=&#34;https://github.com/h2oai/datatable&#34;&gt;pandas&lt;/a&gt;, &lt;a href=&#34;https://github.com/petl-developers/petl&#34;&gt;petl&lt;/a&gt;, &lt;a href=&#34;https://github.com/vaexio/vaex&#34;&gt;vaex&lt;/a&gt;, &lt;a href=&#34;https://github.com/PyTables&#34;&gt;pytables&lt;/a&gt;, &lt;a href=&#34;https://github.com/ibis-project/ibis&#34;&gt;ibis&lt;/a&gt;, &lt;a href=&#34;https://github.com/numpy/numpy&#34;&gt;numpy&lt;/a&gt;, &lt;a href=&#34;https://github.com/dask/dask&#34;&gt;dask&lt;/a&gt;, &lt;a href=&#34;https://github.com/apache/arrow&#34;&gt;pyarrow&lt;/a&gt;, &lt;a href=&#34;https://arrow.apache.org/blog/2018/12/05/gandiva-donation/&#34;&gt;gandiva&lt;/a&gt;. Usually most of them construct a table data structure in-memory or on-disk and use either a column layout or row layout to process the data. Hence they resemble database engines. In fact previous prototypes of HyperMorph (see &lt;a href=&#34;http://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt; project) were based on SQL database engines. This time the current, first, release of HyperMorph is powered by &lt;a href=&#34;https://arrow.apache.org/docs/python/index.html&#34;&gt;PyArrow&lt;/a&gt;. There are many reasons for that choice. Most important PyArrow is mature and provides a columnar memory format for flat and hierarchical data, organized for efficient analytic operations on modern hardware including GPUs. But regarding HyperMorph the killer feature of PyArrow package is &lt;a href=&#34;https://arrow.apache.org/docs/python/data.html#dictionary-arrays&#34;&gt;dictionary encoding&lt;/a&gt; which is utilized to implement associative filtering, part of our &lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;associative semiotic hypergraph technology&lt;/a&gt;, in the style of &lt;a href=&#34;https://www.qlik.com/us/products/associative-difference&#34;&gt;Qlik&lt;/a&gt; analytics engine.&lt;/p&gt;
 &lt;h3 id=&#34;more-promising-than-data-virtualization-and-cloud-analytics-services&#34;&gt;More promising than data virtualization and cloud analytics services&lt;/h3&gt;
 &lt;p&gt;In recent years there is also another approach for data management and analytics aiming to skip the weary ETL process. Usually these are SaaS products on the cloud, such as &lt;a href=&#34;https://panoply.io/&#34;&gt;panoply&lt;/a&gt;, &lt;a href=&#34;https://www.dremio.com/&#34;&gt;dremio&lt;/a&gt;, &lt;a href=&#34;https://www.knowi.com/&#34;&gt;knowi&lt;/a&gt;, &lt;a href=&#34;https://www.denodo.com/en/data-virtualization/overview&#34;&gt;denodo&lt;/a&gt;, and many others. They provide GUIs and act as &lt;a href=&#34;https://en.wikipedia.org/wiki/Middleware&#34;&gt;middleware&lt;/a&gt; between DBMS and BI platforms. Naturally these are proprietary products and details on how they work under the hood are hidden. Developers or power users have to stick with menu-widget driven interfaces than having the ultimate flexibility of programming at the level of Python language. You may consider HyperMorph as an open-source API with the same role to fetch data for graph visualisation platforms. HyperMorph has three key differentiating points here data consolidation, user defined data modeling and interactive associative filtering for analytics with the option to visualize connected data on a graph. And because HyperMorph is open-source it is more promising that potentially our technology can be used from many software vendors for BI applications.&lt;/p&gt;
 &lt;h2 id=&#34;speechless-hypermorph-screencast&#34;&gt;Speechless HyperMorph Screencast&lt;/h2&gt;
@@ -211,9 +254,9 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;p&gt;and the only limit on what you can is your imagination.&lt;/p&gt;
 &lt;h2 id=&#34;installation---demo-test---documentation&#34;&gt;Installation - Demo Test - Documentation&lt;/h2&gt;
 &lt;h3 id=&#34;step-by-step-instructions&#34;&gt;Step by step instructions&lt;/h3&gt;
-&lt;p&gt;on how to &lt;a href=&#34;https://healis.eu/en/hmorph/#install&#34;&gt;install&lt;/a&gt; release.&lt;/p&gt;
+&lt;p&gt;on how to &lt;a href=&#34;http://healis.eu/en/hmorph/#install&#34;&gt;install&lt;/a&gt; release.&lt;/p&gt;
 &lt;h3 id=&#34;demo-guide-to-test-package&#34;&gt;Demo Guide to Test package&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://healis.eu/en/hmorph/#demo_test&#34;&gt;Demonstration of HyperMorph functionality&lt;/a&gt; on data resources and demo scripts that are included in the distribution.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://healis.eu/en/hmorph/#demo_test&#34;&gt;Demonstration of HyperMorph functionality&lt;/a&gt; on data resources and demo scripts that are included in the distribution.&lt;/p&gt;
 &lt;h3 id=&#34;documentation&#34;&gt;Documentation&lt;/h3&gt;
 &lt;p&gt;A draft of the &lt;a href=&#34;https://hypermorph.healis.eu/docs&#34;&gt;documentation&lt;/a&gt; from comments in source code is generated automatically with Sphinx and it is hosted at GitHub.&lt;/p&gt;
 &lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
@@ -225,10 +268,10 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     <item>
       <title>TRIADB</title>
-      <link>https://healis.eu/en/project/triadb/</link>
+      <link>http://healis.eu/en/project/triadb/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/triadb/</guid>
+      <guid>http://healis.eu/en/project/triadb/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -253,30 +296,30 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;at-a-glance&#34;&gt;At A Glance&lt;/h2&gt;
-&lt;p&gt;TRIADB is an innovative, multi-perspective database framework. It is a Python library that sits on top of suitable NoSQL/SQL data store engines and enables the users to perform easily &lt;strong&gt;integration, correlation, aggregation and hypergraph exploration of multiple data resources&lt;/strong&gt;. TRIADB is founded on the principles of &lt;a href=&#34;https://healis.eu/en/project/r3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;TRIADB is an innovative, multi-perspective database framework. It is a Python library that sits on top of suitable NoSQL/SQL data store engines and enables the users to perform easily &lt;strong&gt;integration, correlation, aggregation and hypergraph exploration of multiple data resources&lt;/strong&gt;. TRIADB is founded on the principles of &lt;a href=&#34;http://healis.eu/en/project/r3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;architectural-design&#34;&gt;Architectural Design&lt;/h2&gt;
-&lt;p&gt;In terms of the architectural design TRIADB is based on &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000107/&#34;&gt;&lt;strong&gt;associative&lt;/strong&gt;, &lt;strong&gt;semiotic&lt;/strong&gt;, &lt;strong&gt;hypergraph&lt;/strong&gt; technology&lt;/a&gt; pioneered by &lt;a href=&#34;https://healis.eu/en/about/#athanassios&#34;&gt;Dr. Athanassios I. Hatzis&lt;/a&gt;. Foundational principles, theoretical formalization and ontological dimensions of the framework and the data model are &lt;a href=&#34;https://healis.eu/en/project/r3dm/#cross-references&#34;&gt;dating back to the year 2012&lt;/a&gt;. Our technology shares certain similarities with &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000104/&#34;&gt;Qlik&lt;/a&gt; associative technology, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000002/&#34;&gt;AtomicDB and X10SYS&lt;/a&gt; associative technology, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000103/#associative-model&#34;&gt;Sentences&lt;/a&gt; associative data model, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000101/&#34;&gt;Topic Maps&lt;/a&gt; data model and &lt;a href=&#34;https://en.wikipedia.org/wiki/Correlation_database&#34;&gt;correlation database model&lt;/a&gt;. The &lt;span class=&#34;markup-quote&#34;&gt;main difference of our technology from other similar associative technologies&lt;/span&gt; is that it has a solid theoretical background, a unified data modeling architecture and at the same time it is distinct in its design and implementation.&lt;/p&gt;
+&lt;p&gt;In terms of the architectural design TRIADB is based on &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000107/&#34;&gt;&lt;strong&gt;associative&lt;/strong&gt;, &lt;strong&gt;semiotic&lt;/strong&gt;, &lt;strong&gt;hypergraph&lt;/strong&gt; technology&lt;/a&gt; pioneered by &lt;a href=&#34;http://healis.eu/en/about/#athanassios&#34;&gt;Dr. Athanassios I. Hatzis&lt;/a&gt;. Foundational principles, theoretical formalization and ontological dimensions of the framework and the data model are &lt;a href=&#34;http://healis.eu/en/project/r3dm/#cross-references&#34;&gt;dating back to the year 2012&lt;/a&gt;. Our technology shares certain similarities with &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000104/&#34;&gt;Qlik&lt;/a&gt; associative technology, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000002/&#34;&gt;AtomicDB and X10SYS&lt;/a&gt; associative technology, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000103/#associative-model&#34;&gt;Sentences&lt;/a&gt; associative data model, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000101/&#34;&gt;Topic Maps&lt;/a&gt; data model and &lt;a href=&#34;https://en.wikipedia.org/wiki/Correlation_database&#34;&gt;correlation database model&lt;/a&gt;. The &lt;span class=&#34;markup-quote&#34;&gt;main difference of our technology from other similar associative technologies&lt;/span&gt; is that it has a solid theoretical background, a unified data modeling architecture and at the same time it is distinct in its design and implementation.&lt;/p&gt;
 &lt;h2 id=&#34;architectural-overview-white-paper&#34;&gt;Architectural Overview (White Paper)&lt;/h2&gt;
 &lt;div class=&#34;responsive-wrap&#34;&gt;
 	&lt;object data=&#34;/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
-		&lt;embed src=&#34;https://healis.eu/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
-			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;https://healis.eu/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+		&lt;embed src=&#34;http://healis.eu/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;http://healis.eu/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
 			instead. Thanks!&lt;/em&gt;
 	&lt;/object&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;implementations&#34;&gt;Implementations&lt;/h2&gt;
 &lt;p&gt;There are four TRIADB prototypes implemented:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;TRIADB on &lt;a href=&#34;https://healis.eu/en/talk/triadb_wolfram/&#34;&gt;OrientDB with Mathematica&lt;/a&gt; - 2016&lt;/li&gt;
-&lt;li&gt;TRIADB on &lt;a href=&#34;https://healis.eu/en/talk/triadb_connected_data/&#34;&gt;Intersystems Cache with Python&lt;/a&gt; - 2017&lt;/li&gt;
+&lt;li&gt;TRIADB on &lt;a href=&#34;http://healis.eu/en/talk/triadb_wolfram/&#34;&gt;OrientDB with Mathematica&lt;/a&gt; - 2016&lt;/li&gt;
+&lt;li&gt;TRIADB on &lt;a href=&#34;http://healis.eu/en/talk/triadb_connected_data/&#34;&gt;Intersystems Cache with Python&lt;/a&gt; - 2017&lt;/li&gt;
 &lt;li&gt;TRIADB on Redis with Python - 2018&lt;/li&gt;
-&lt;li&gt;TRIADB on &lt;a href=&#34;https://healis.eu/en/post/20191025/&#34;&gt;MariaDB and ClickHouse with Python&lt;/a&gt; - 2019&lt;/li&gt;
+&lt;li&gt;TRIADB on &lt;a href=&#34;http://healis.eu/en/post/20191025/&#34;&gt;MariaDB and ClickHouse with Python&lt;/a&gt; - 2019&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the last open-source release of TRIADB, MariaDB stores data dictionary information and ClickHouse data storage engines are used for processing and querying data. The associative, semiotic, hypergraph engine has a proprietary licence, although the sources are included in the release, and it is given the codename TriaClick.&lt;/p&gt;
 &lt;h2 id=&#34;conference-presentations&#34;&gt;Conference Presentations&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;16/11/2017&lt;/strong&gt; - &lt;a href=&#34;https://healis.eu/en/talk/triadb_connected_data/&#34;&gt;Connected Data London Conference&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;19/06/2017&lt;/strong&gt; - &lt;a href=&#34;https://healis.eu/en/talk/triadb_wolfram/&#34;&gt;European Wolfram Technology Conference in Amsterdam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;16/11/2017&lt;/strong&gt; - &lt;a href=&#34;http://healis.eu/en/talk/triadb_connected_data/&#34;&gt;Connected Data London Conference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;19/06/2017&lt;/strong&gt; - &lt;a href=&#34;http://healis.eu/en/talk/triadb_wolfram/&#34;&gt;European Wolfram Technology Conference in Amsterdam&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;key-differentiating-factors&#34;&gt;Key Differentiating Factors&lt;/h2&gt;
 &lt;p&gt;The following is a list of technical specifications and features in the design and implementation of TRIADB. This same list is what makes &lt;span class=&#34;markup-quote&#34;&gt;TRIADB a unique and valuable product&lt;/span&gt;:&lt;/p&gt;
@@ -308,10 +351,10 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     <item>
       <title>Cache Python ORM</title>
-      <link>https://healis.eu/en/project/cache_python/</link>
+      <link>http://healis.eu/en/project/cache_python/</link>
       <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/cache_python/</guid>
+      <guid>http://healis.eu/en/project/cache_python/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -323,7 +366,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;
-&lt;p&gt;The project&amp;rsquo;s &lt;a href=&#34;https://github.com/healiseu/IntersystemsCacheORM&#34;&gt;source code at GitHub&lt;/a&gt;, was originally written and used as a module of &lt;a href=&#34;https://healis.eu/en/talk/triadb_connected_data/&#34;&gt;TRIADB&lt;/a&gt; project.&lt;/p&gt;
+&lt;p&gt;The project&amp;rsquo;s &lt;a href=&#34;https://github.com/healiseu/IntersystemsCacheORM&#34;&gt;source code at GitHub&lt;/a&gt;, was originally written and used as a module of &lt;a href=&#34;http://healis.eu/en/talk/triadb_connected_data/&#34;&gt;TRIADB&lt;/a&gt; project.&lt;/p&gt;
 &lt;h2 id=&#34;about-the-project&#34;&gt;About the project&lt;/h2&gt;
 &lt;p&gt;CacheORM module is an enhanced OOP porting of &lt;a href=&#34;https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GBPY_using&#34;&gt;Intersystems Cache-Python binding&lt;/a&gt;. There are three classes implemented:&lt;/p&gt;
 &lt;ul&gt;
@@ -358,10 +401,10 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     <item>
       <title>RESTful API in Mathematica</title>
-      <link>https://healis.eu/en/project/wolfram_apis/</link>
+      <link>http://healis.eu/en/project/wolfram_apis/</link>
       <pubDate>Thu, 31 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/wolfram_apis/</guid>
+      <guid>http://healis.eu/en/project/wolfram_apis/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -418,10 +461,10 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     <item>
       <title>S3DM/R3DM</title>
-      <link>https://healis.eu/en/project/r3dm/</link>
+      <link>http://healis.eu/en/project/r3dm/</link>
       <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/r3dm/</guid>
+      <guid>http://healis.eu/en/project/r3dm/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -478,8 +521,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;https://healis.eu/en/project/r3dm/triangles/1.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/r3dm/triangles/1_hu36aa7f76864557f3365108584961a105_72807_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;http://healis.eu/en/project/r3dm/triangles/1.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/r3dm/triangles/1_hu36aa7f76864557f3365108584961a105_72807_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -487,8 +530,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;https://healis.eu/en/project/r3dm/triangles/2.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/r3dm/triangles/2_hu21e291047e3aff5b1aa1a72857386392_434705_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;http://healis.eu/en/project/r3dm/triangles/2.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/r3dm/triangles/2_hu21e291047e3aff5b1aa1a72857386392_434705_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -496,8 +539,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;https://healis.eu/en/project/r3dm/triangles/3.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/r3dm/triangles/3_hu51a099ed62fa0c4ab18c6aa77bd260ce_417813_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;http://healis.eu/en/project/r3dm/triangles/3.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/r3dm/triangles/3_hu51a099ed62fa0c4ab18c6aa77bd260ce_417813_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -505,8 +548,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;https://healis.eu/en/project/r3dm/triangles/4.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/r3dm/triangles/4_hu892b8cab1a2bc8a100e1abb73c5314bf_1111011_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;http://healis.eu/en/project/r3dm/triangles/4.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/r3dm/triangles/4_hu892b8cab1a2bc8a100e1abb73c5314bf_1111011_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -514,8 +557,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;https://healis.eu/en/project/r3dm/triangles/5..jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/r3dm/triangles/5._hue8fd63799a17e9a13e3af2a06cce3c19_414369_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;http://healis.eu/en/project/r3dm/triangles/5..jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/r3dm/triangles/5._hue8fd63799a17e9a13e3af2a06cce3c19_414369_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
 
@@ -805,11 +848,11 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     <item>
       <title>NULON</title>
-      <link>https://healis.eu/en/project/nulon/</link>
+      <link>http://healis.eu/en/project/nulon/</link>
       <pubDate>Tue, 04 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/nulon/</guid>
-      <description>&lt;h1 id=&#34;visit-demo-site1&#34;&gt;Visit &lt;a href=&#34;https://healis.eu/en/project/nulon/demo/&#34;&gt;Demo Site&lt;/a&gt;&lt;/h1&gt;
+      <guid>http://healis.eu/en/project/nulon/</guid>
+      <description>&lt;h1 id=&#34;visit-demo-site1&#34;&gt;Visit &lt;a href=&#34;http://healis.eu/en/project/nulon/demo/&#34;&gt;Demo Site&lt;/a&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Neurorganon Upper Level Ontology (NULON) is a top-level ontology also known as a foundation ontology. It includes a list of very general terms grouped in ontological distinct categories , such as &lt;code&gt;address&lt;/code&gt; , &lt;code&gt;agent&lt;/code&gt;, &lt;code&gt;artifact&lt;/code&gt;, &lt;code&gt;device&lt;/code&gt;, &lt;code&gt;document&lt;/code&gt;, &lt;code&gt;space&lt;/code&gt;, &lt;code&gt;time&lt;/code&gt; and many others. These categories determine the most fundamental and the broadest classes of information resources. In NULON members of each class, i.e. vocabulary terms, preserve the same meaning across more specific knowledge domains and other reference work. In that aspect it is similar to a thesaurus because it groups together terms in disjoint collections of mostly similar concepts and it is like a dictionary because it can also include multiple, multi-lingual definitions. It is also an ontology because it defines relations and properties that describe how the terms can be linked together or bind them to web, computerized information resources. NULON recent version, numbers more than 500 core vocabulary terms grouped in 47 maximally disjoint categories. All these terms have been consistently mapped to standard definitions from at least two major reference works in the realm of semantically linked data; OpenCyc and Wikipedia. Respectively their information resources are used as identifiers and references for NULON terms. Most important, at this stage of architectural design what makes NULON really different from other Upper-Level Ontologies is the kind of grouping of the terms and the categories included and described in the οntology. This is the result of a big effort, the whole year, from a single person, to discover and organize efficiently most terms related to information technology, including abstraction, management, computer programming, data storage, metadata, data modeling, identity, reference, design patterns, web use, digital resources and devices to name a few of them.&lt;/p&gt;
 &lt;h2 id=&#34;from-neuron-to-nulon&#34;&gt;From NEURON to NULON&lt;/h2&gt;
@@ -831,10 +874,10 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     <item>
       <title>MEDILIG</title>
-      <link>https://healis.eu/en/project/medilig/</link>
+      <link>http://healis.eu/en/project/medilig/</link>
       <pubDate>Mon, 13 Sep 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/medilig/</guid>
+      <guid>http://healis.eu/en/project/medilig/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -920,8 +963,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-01.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-01_hu4438e4dc417a1cd9954908855bce152a_188755_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-01.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-01_hu4438e4dc417a1cd9954908855bce152a_188755_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -929,8 +972,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-02.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-02_hu273c3b26bbef24f517b79f646b84a0c4_176767_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-02.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-02_hu273c3b26bbef24f517b79f646b84a0c4_176767_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -938,8 +981,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-03.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-03_hu3c46a67e35ddbccb51715b60605da06a_152086_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-03.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-03_hu3c46a67e35ddbccb51715b60605da06a_152086_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -947,8 +990,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-04.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-04_hue04219d8a4a746bc6053744ed4e39852_156678_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-04.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-04_hue04219d8a4a746bc6053744ed4e39852_156678_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -956,8 +999,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-05.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-05_hu75e786171791f48e81dc4a3c9dfd9fc9_114707_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-05.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-05_hu75e786171791f48e81dc4a3c9dfd9fc9_114707_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -965,8 +1008,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-06.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-06_huad2032b0edb63e9af909a849718f5bfb_225900_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-06.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-06_huad2032b0edb63e9af909a849718f5bfb_225900_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -974,8 +1017,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-07.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-07_huea88bb6778c2617c8aec617eb0679e1e_155492_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-07.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-07_huea88bb6778c2617c8aec617eb0679e1e_155492_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -983,8 +1026,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-08.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-08_hu1edca84a6788111f62aeb0084681c856_247007_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-08.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-08_hu1edca84a6788111f62aeb0084681c856_247007_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -992,8 +1035,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-09.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-09_hufb4f5b2fa9d1f5cb10d94852535e6e2d_159796_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-09.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-09_hufb4f5b2fa9d1f5cb10d94852535e6e2d_159796_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1001,8 +1044,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-10.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-10_hu9070e55f81114b4921c5d2e9d9112556_147415_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-10.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-10_hu9070e55f81114b4921c5d2e9d9112556_147415_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1010,8 +1053,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-11.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-11_hu51842c46c792ba419779655e8b92efb2_108245_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-11.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-11_hu51842c46c792ba419779655e8b92efb2_108245_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1019,8 +1062,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-12.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/medilig/screen_captures/medilig2010-12_hu0f37a34b36357d97fb7af47e47094ad0_142033_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-screen_captures&#34; href=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-12.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/medilig/screen_captures/medilig2010-12_hu0f37a34b36357d97fb7af47e47094ad0_142033_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
 
@@ -1029,7 +1072,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;
 &lt;p&gt;The full documentation of the project can be accessed on [this post][19].&lt;/p&gt;
 &lt;h2 id=&#34;neurohealis-vs-medilig&#34;&gt;NeuroHEALIS vs MEDILIG&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://healis.eu/en/project/neurohealis/&#34;&gt;NeuroHEALIS&lt;/a&gt; was the precursor of MEDILIG, a health information system that was developed for the &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Department of Neurosurgery in the University of Athens&lt;/a&gt; situated at “Evangelismos” General Hospital. NeuroHEALIS was fully operational during the period from 2006 to 2009 with several publications, presentations and pilot studies that were based on its use.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://healis.eu/en/project/neurohealis/&#34;&gt;NeuroHEALIS&lt;/a&gt; was the precursor of MEDILIG, a health information system that was developed for the &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Department of Neurosurgery in the University of Athens&lt;/a&gt; situated at “Evangelismos” General Hospital. NeuroHEALIS was fully operational during the period from 2006 to 2009 with several publications, presentations and pilot studies that were based on its use.&lt;/p&gt;
 &lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1080,10 +1123,10 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     <item>
       <title>NEUROHEALIS</title>
-      <link>https://healis.eu/en/project/neurohealis/</link>
+      <link>http://healis.eu/en/project/neurohealis/</link>
       <pubDate>Wed, 16 May 2007 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/neurohealis/</guid>
+      <guid>http://healis.eu/en/project/neurohealis/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -1117,9 +1160,9 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;NeuroHEALIS was the precursor of &lt;a href=&#34;https://healis.eu/en/project/medilig/&#34;&gt;MEDILIG&lt;/a&gt;, a health information system that was developed for the &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Department of Neurosurgery in the University of Athens&lt;/a&gt; situated at “Evangelismos” General Hospital. NeuroHEALIS was fully operational during the period from 2006 to 2009 with several publications, presentations and pilot studies that were based on its use.&lt;/p&gt;
+&lt;p&gt;NeuroHEALIS was the precursor of &lt;a href=&#34;http://healis.eu/en/project/medilig/&#34;&gt;MEDILIG&lt;/a&gt;, a health information system that was developed for the &lt;a href=&#34;https://neurosurgery.org.gr/&#34;&gt;Department of Neurosurgery in the University of Athens&lt;/a&gt; situated at “Evangelismos” General Hospital. NeuroHEALIS was fully operational during the period from 2006 to 2009 with several publications, presentations and pilot studies that were based on its use.&lt;/p&gt;
 &lt;h2 id=&#34;brochure&#34;&gt;Brochure&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Download the brochure (&lt;a href=&#34;https://healis.eu/documents/20090602-neurohealis_brochure.pptx&#34;&gt;.pptx&lt;/a&gt;) file&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Download the brochure (&lt;a href=&#34;http://healis.eu/documents/20090602-neurohealis_brochure.pptx&#34;&gt;.pptx&lt;/a&gt;) file&lt;/strong&gt;&lt;/p&gt;
 &lt;iframe
   style=&#34;width: 100%; height: 500px;&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;
   src=&#34;http://www.slideshare.net/slideshow/embed_code/4878795?rel=0&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt;
@@ -1153,8 +1196,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-01.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-01_hu26ce4c05c0d65005dab515205ecae8a7_87659_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-01.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-01_hu26ce4c05c0d65005dab515205ecae8a7_87659_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1162,8 +1205,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-02.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-02_hub2599e399f6dee62fa8191c6777878f6_167226_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-02.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-02_hub2599e399f6dee62fa8191c6777878f6_167226_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1171,8 +1214,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-03.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-03_hu66876c80ada8c4c1a6d9c0ccdbfa3035_39784_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-03.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-03_hu66876c80ada8c4c1a6d9c0ccdbfa3035_39784_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1180,8 +1223,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-04.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-04_hub0a53991a1f6cb7ad3368cfeb763260c_115276_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-04.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-04_hub0a53991a1f6cb7ad3368cfeb763260c_115276_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1189,8 +1232,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-05.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-05_hu2a71bdf8fd33406231e458d1ff2921c6_64227_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-05.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-05_hu2a71bdf8fd33406231e458d1ff2921c6_64227_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1198,8 +1241,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-06.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-06_huc7ab58324e3b4cafb90eed0cc3327b29_82743_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-06.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-06_huc7ab58324e3b4cafb90eed0cc3327b29_82743_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1207,8 +1250,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-07.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-07_hu8576cdc34df1ded7710a79b2fa4ed218_161592_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-07.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-07_hu8576cdc34df1ded7710a79b2fa4ed218_161592_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1216,8 +1259,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-08.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-08_hu961b86443825e67fd38ca54afdf992ab_169309_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-08.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-08_hu961b86443825e67fd38ca54afdf992ab_169309_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1225,8 +1268,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-09.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-09_hu8bd07371e04a727db2e98d866b8ea54a_179504_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-09.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-09_hu8bd07371e04a727db2e98d866b8ea54a_179504_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1234,8 +1277,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-10.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_emr/NHIS-10_hu559c31805dd54ad301fd8b168a266744_73923_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_emr&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-10.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_emr/NHIS-10_hu559c31805dd54ad301fd8b168a266744_73923_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
 
@@ -1266,8 +1309,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_spasticity&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-01.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-01_hub51a35bb2651215b778e042662f92d23_169360_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_spasticity&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-01.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-01_hub51a35bb2651215b778e042662f92d23_169360_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1275,8 +1318,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_spasticity&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-02.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-02_hua091f4c62f6ca7e50a494bd9d2475881_99386_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_spasticity&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-02.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-02_hua091f4c62f6ca7e50a494bd9d2475881_99386_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1284,8 +1327,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_spasticity&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-03.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-03_huab119e8f161e52cc879fc3a7192da789_148414_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_spasticity&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-03.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_spasticity/NHIS-spasticity-03_huab119e8f161e52cc879fc3a7192da789_148414_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
 
@@ -1316,8 +1359,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-01.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-01_hudab8ebeccac066d00cb91de7d6e14063_93107_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-01.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-01_hudab8ebeccac066d00cb91de7d6e14063_93107_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1325,8 +1368,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-02.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-02_hu632b2adce1d4c72d98d27c3d8627d2e0_139289_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-02.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-02_hu632b2adce1d4c72d98d27c3d8627d2e0_139289_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1334,8 +1377,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-03.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-03_hu1e91bdea73f79840fd9d1b728a32e5bb_136864_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-03.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-03_hu1e91bdea73f79840fd9d1b728a32e5bb_136864_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1343,8 +1386,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-04.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-04_hu462ffc11169e52b0d8e701df8c2faed8_119134_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-04.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-04_hu462ffc11169e52b0d8e701df8c2faed8_119134_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1352,8 +1395,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-05.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-05_hu01a8058cb31e5a518205a0608cd85a97_56691_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_parkinson&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-05.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_parkinson/NHIS-parkinson-05_hu01a8058cb31e5a518205a0608cd85a97_56691_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
 
@@ -1384,8 +1427,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-01.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-01_hu0a6e316b99931076cd1afd9b2b83e074_120278_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-01.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-01_hu0a6e316b99931076cd1afd9b2b83e074_120278_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1393,8 +1436,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-02.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-02_hud039b73ccbe585468c5341d225eafb80_109887_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-02.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-02_hud039b73ccbe585468c5341d225eafb80_109887_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1402,8 +1445,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-03.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-03_hu51c4010ef9c6653292d78c3eeb6cc320_66904_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-03.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-03_hu51c4010ef9c6653292d78c3eeb6cc320_66904_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1411,8 +1454,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-04.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-04_huc6e44d478b27bb7fe86492b1f9b4e87b_66599_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-04.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-04_huc6e44d478b27bb7fe86492b1f9b4e87b_66599_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1420,8 +1463,8 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-05.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-05_hu59abcca9d386a61a603e2d76df5b8c3b_131124_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-05.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-05_hu59abcca9d386a61a603e2d76df5b8c3b_131124_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1429,15 +1472,15 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     
     
-  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-06.jpg&#34; &gt;
-  &lt;img src=&#34;https://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-06_hu14ade045bcb283c3f2312971f5eb166f_156064_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-gallery_dystonia&#34; href=&#34;http://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-06.jpg&#34; &gt;
+  &lt;img src=&#34;http://healis.eu/en/project/neurohealis/gallery_dystonia/NHIS-dystonia-DBS-06_hu14ade045bcb283c3f2312971f5eb166f_156064_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
 
   
 &lt;/div&gt;&lt;/p&gt;
 &lt;h2 id=&#34;system-performance&#34;&gt;System Performance&lt;/h2&gt;
-&lt;p&gt;During NeuroHEALIS pilot study, 2007-2008, we monitored closely the data entry procedure. In the case of stasticity database we observed a 200% increase on data completion and quality. This was achieved thanks to automation of reports and measurement of several indexes such as percentage of completion on database fields, percentage of data entered by each user, and frequence and duration of follow-up measurements (see &lt;a href=&#34;https://healis.eu/en/post/20090123/&#34;&gt;spasticity study&lt;/a&gt;). Results were presented on the 7th International Conference on Information Communication Technologies in Health, (&lt;a href=&#34;https://healis.eu/en/talk/neurohealis-20090716/&#34;&gt;ICICTH 2009&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;During NeuroHEALIS pilot study, 2007-2008, we monitored closely the data entry procedure. In the case of stasticity database we observed a 200% increase on data completion and quality. This was achieved thanks to automation of reports and measurement of several indexes such as percentage of completion on database fields, percentage of data entered by each user, and frequence and duration of follow-up measurements (see &lt;a href=&#34;http://healis.eu/en/post/20090123/&#34;&gt;spasticity study&lt;/a&gt;). Results were presented on the 7th International Conference on Information Communication Technologies in Health, (&lt;a href=&#34;http://healis.eu/en/talk/neurohealis-20090716/&#34;&gt;ICICTH 2009&lt;/a&gt;).&lt;/p&gt;
 
 
 
@@ -1448,7 +1491,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://healis.eu/img/patient_increase_diagram.jpg&#34; &gt;
+&lt;img src=&#34;http://healis.eu/img/patient_increase_diagram.jpg&#34; &gt;
 
 
 &lt;/figure&gt;
@@ -1457,25 +1500,25 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;h3 id=&#34;in-english&#34;&gt;In English&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;A presentation entitled &lt;a href=&#34;https://healis.eu/en/talk/neurohealis-20090716/&#34;&gt;&amp;ldquo;NeuroHEALIS - A Neurosurgical Health Information System for Integration of Clinical Research and Clinical Care&amp;rdquo;&lt;/a&gt; presented on the 7th ICICTH Conference held at Samos, July 26 2009&lt;/p&gt;
+&lt;p&gt;A presentation entitled &lt;a href=&#34;http://healis.eu/en/talk/neurohealis-20090716/&#34;&gt;&amp;ldquo;NeuroHEALIS - A Neurosurgical Health Information System for Integration of Clinical Research and Clinical Care&amp;rdquo;&lt;/a&gt; presented on the 7th ICICTH Conference held at Samos, July 26 2009&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;A paper entitled &lt;a href=&#34;https://healis.eu/en/talk/neurohealis-20090508/&#34;&gt;&amp;ldquo;A Modern Neuro-Surgical Operating Room at Evangelismos Hospital&amp;rdquo;&lt;/a&gt; was presented on the &amp;ldquo;Data Mining in BioMedicine 2009 Conference - DMINBIO 2009&amp;rdquo; held in Athens Information Technology (AIT) at Paiania, Athens, May 7-8 2009&lt;/p&gt;
+&lt;p&gt;A paper entitled &lt;a href=&#34;http://healis.eu/en/talk/neurohealis-20090508/&#34;&gt;&amp;ldquo;A Modern Neuro-Surgical Operating Room at Evangelismos Hospital&amp;rdquo;&lt;/a&gt; was presented on the &amp;ldquo;Data Mining in BioMedicine 2009 Conference - DMINBIO 2009&amp;rdquo; held in Athens Information Technology (AIT) at Paiania, Athens, May 7-8 2009&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Based on the modern operating room at &amp;ldquo;Evangelismos&amp;rdquo; General Hospital &lt;a href=&#34;https://healis.eu/en/talk/neurohealis-20080710/&#34;&gt;Department of Neurosurgery organized two advanced training courses&lt;/a&gt; in the year 2008, &amp;ldquo;Stereotactic Techniques and Deep Brain Stimulation&amp;rdquo; and &amp;ldquo;Computer-guided Neurosurgical Navigation&amp;rdquo; to train European neurosurgeons. The minister of public health Dimitris Avramopoulos congratulated Prof. Sakas and his team for the successful outcome of their efforts.&lt;/p&gt;
+&lt;p&gt;Based on the modern operating room at &amp;ldquo;Evangelismos&amp;rdquo; General Hospital &lt;a href=&#34;http://healis.eu/en/talk/neurohealis-20080710/&#34;&gt;Department of Neurosurgery organized two advanced training courses&lt;/a&gt; in the year 2008, &amp;ldquo;Stereotactic Techniques and Deep Brain Stimulation&amp;rdquo; and &amp;ldquo;Computer-guided Neurosurgical Navigation&amp;rdquo; to train European neurosurgeons. The minister of public health Dimitris Avramopoulos congratulated Prof. Sakas and his team for the successful outcome of their efforts.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;in-greek&#34;&gt;In Greek&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Ελεύθερη ανακοίνωση με τίτλο &lt;a href=&#34;https://healis.eu/en/talk/enxe_22nd/&#34;&gt;&amp;ldquo;Η συμβολή των Πολυμέσων στην Νευροχειρουργική Εκπαίδευση&amp;rdquo;&lt;/a&gt; που παρουσιάστηκε στο 22ο Πανελλήνιο Συνέδριο Νευροχειρουργικής στην Αθήνα το 2008. Η παρουσίαση δείχνει την υλοποίηση και εφαρμογή κατάλληλης υλικοτεχνικής υποδομής για την καταγραφή και ψηφιοποίηση της χειρουργικής επέμβασης, μετάδοση σε πραγματικό χρόνο και αρχειοθέτηση τμήματος αυτής σε ειδική βάση πολυμέσων.&lt;/p&gt;
+&lt;p&gt;Ελεύθερη ανακοίνωση με τίτλο &lt;a href=&#34;http://healis.eu/en/talk/enxe_22nd/&#34;&gt;&amp;ldquo;Η συμβολή των Πολυμέσων στην Νευροχειρουργική Εκπαίδευση&amp;rdquo;&lt;/a&gt; που παρουσιάστηκε στο 22ο Πανελλήνιο Συνέδριο Νευροχειρουργικής στην Αθήνα το 2008. Η παρουσίαση δείχνει την υλοποίηση και εφαρμογή κατάλληλης υλικοτεχνικής υποδομής για την καταγραφή και ψηφιοποίηση της χειρουργικής επέμβασης, μετάδοση σε πραγματικό χρόνο και αρχειοθέτηση τμήματος αυτής σε ειδική βάση πολυμέσων.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Ελεύθερη ανακοίνωση με τίτλο &lt;a href=&#34;https://healis.eu/en/talk/enxe_21st/&#34;&gt;&amp;ldquo;Η συμβολή της Ιατρικής Πληροφορικής στην Νευροχειρουργική&amp;rdquo;&lt;/a&gt; που παρουσιάστηκε στο 21ο Πανελλήνιο Συνέδριο Νευροχειρουργικής στη Ρόδο το 2007. Το δημοσίευμα αυτό είναι το πρώτο με εκτενή αναφορά στο έργο της Ιατρικής Πληροφορικής που επιτελέστηκε στην Νευροχειρουργική Κλινική στο Θεραπευτήριο &amp;ldquo;Ο Ευαγγελισμός&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Ελεύθερη ανακοίνωση με τίτλο &lt;a href=&#34;http://healis.eu/en/talk/enxe_21st/&#34;&gt;&amp;ldquo;Η συμβολή της Ιατρικής Πληροφορικής στην Νευροχειρουργική&amp;rdquo;&lt;/a&gt; που παρουσιάστηκε στο 21ο Πανελλήνιο Συνέδριο Νευροχειρουργικής στη Ρόδο το 2007. Το δημοσίευμα αυτό είναι το πρώτο με εκτενή αναφορά στο έργο της Ιατρικής Πληροφορικής που επιτελέστηκε στην Νευροχειρουργική Κλινική στο Θεραπευτήριο &amp;ldquo;Ο Ευαγγελισμός&amp;rdquo;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Αποσπάσματα από το άρθρο &lt;a href=&#34;https://healis.eu/en/publication/20171130&#34;&gt;&amp;ldquo;Οι νέες τεχνολογίες στην υπηρεσία των Ελλήνων νευροχειρουργών&amp;rdquo;&lt;/a&gt; της δημοσιογράφου Θεοδώρας Τσώλη στο Βήμα, Παρασκευή 30 Νοεμβρίου 2007.&lt;/p&gt;
+&lt;p&gt;Αποσπάσματα από το άρθρο &lt;a href=&#34;http://healis.eu/en/publication/20171130&#34;&gt;&amp;ldquo;Οι νέες τεχνολογίες στην υπηρεσία των Ελλήνων νευροχειρουργών&amp;rdquo;&lt;/a&gt; της δημοσιογράφου Θεοδώρας Τσώλη στο Βήμα, Παρασκευή 30 Νοεμβρίου 2007.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;screen-capture-demo&#34;&gt;Screen-capture Demo&lt;/h2&gt;
@@ -1515,10 +1558,10 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
     
     <item>
       <title>STAPTK</title>
-      <link>https://healis.eu/en/project/staptk/</link>
+      <link>http://healis.eu/en/project/staptk/</link>
       <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/staptk/</guid>
+      <guid>http://healis.eu/en/project/staptk/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -1546,7 +1589,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://spandh.dcs.shef.ac.uk/projects/staptk/&#34;&gt;STAPTk software&lt;/a&gt; was developed in the Speech and Hearing group, at the department of Computer Science, University of Sheffield. It is the epitome of the research work of Athanassios Hatzis, nine years in total, during his &lt;a href=&#34;https://healis.eu/en/project/vahisom/&#34;&gt;MSc&lt;/a&gt;, &lt;a href=&#34;https://healis.eu/en/project/oltk/&#34;&gt;PhD&lt;/a&gt; and two funded research projects &lt;a href=&#34;https://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt;, NHS-NEAT 275K€ UK project, and OLP&lt;a href=&#34;https://healis.eu/en/project/staptk/&#34;&gt;12&lt;/a&gt;, FP5-Quality of Life 2.67M€ EC project.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://spandh.dcs.shef.ac.uk/projects/staptk/&#34;&gt;STAPTk software&lt;/a&gt; was developed in the Speech and Hearing group, at the department of Computer Science, University of Sheffield. It is the epitome of the research work of Athanassios Hatzis, nine years in total, during his &lt;a href=&#34;http://healis.eu/en/project/vahisom/&#34;&gt;MSc&lt;/a&gt;, &lt;a href=&#34;http://healis.eu/en/project/oltk/&#34;&gt;PhD&lt;/a&gt; and two funded research projects &lt;a href=&#34;http://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt;, NHS-NEAT 275K€ UK project, and OLP&lt;a href=&#34;http://healis.eu/en/project/staptk/&#34;&gt;12&lt;/a&gt;, FP5-Quality of Life 2.67M€ EC project.&lt;/p&gt;
 
 
 
@@ -1557,7 +1600,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://healis.eu/img/research_timeline.gif&#34; &gt;
+&lt;img src=&#34;http://healis.eu/img/research_timeline.gif&#34; &gt;
 
 
 
@@ -1575,7 +1618,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;h3 id=&#34;optacia-kinematic-maps&#34;&gt;OPTACIA Kinematic Maps&lt;/h3&gt;
 &lt;p&gt;An OPTACIA Kinematic map uses a two-dimensional ANN-trained map as a visual metaphor for isolated sounds and simple utterances. We describe the map as &amp;ldquo;kinematic&amp;rdquo; (i.e. relating to movement) because its visualization technique correlates strongly with articulatory movement during speech production. Visualization of speech sounds is instantaneous, the client can vary the articulators in response to on-screen visual feedback. Speech therapy is based on the evaluation of the quality of speech production and accompanied characteristics i.e. consistency and intelligibility. OPTACIA is meant to assist speech therapists in that role.&lt;/p&gt;
 &lt;h3 id=&#34;publication&#34;&gt;Publication&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://healis.eu/documents/oster-fonetic-2003.pdf&#34;&gt;Testing a New Method for Training Fricatives using Visual Maps in the Ortho-Logo-Paedia Project (OLP)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://healis.eu/documents/oster-fonetic-2003.pdf&#34;&gt;Testing a New Method for Training Fricatives using Visual Maps in the Ortho-Logo-Paedia Project (OLP)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This paper concentrates on therapy based on real-time audio-visual feedback of client’s speech and presents results from building and testing visual maps for training hearing-impaired clients using the OPTACIA component. OPTACIA was developed from the Optical Logo-Therapy OLT (Hatzis, 1999; Hatzis and Green, 2001). OPTACIA is based on three basic, well-founded treatment principles: visuomotor tracking, visual contrast, and visual reinforcement. Visuomotor tracking (Ziegler, Vogel, Teiwes, and Ahrndt, 1997) is a special case of biofeedback where some dynamic physical measure of performance is portrayed visually in real-time.&lt;/p&gt;
 &lt;h3 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h3&gt;
 &lt;ul&gt;
@@ -1700,21 +1743,21 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;publications&#34;&gt;Publications&lt;/h2&gt;
-&lt;p&gt;The paper titled &lt;a href=&#34;https://healis.eu/documents/straptk-eurospeech-2003.pdf&#34;&gt;&amp;ldquo;An Integrated Toolkit Deploying Speech Technology for Computer Based Speech Training with Application to Dysarthric Speakers&amp;rdquo;&lt;/a&gt; summarizes the development and application of STAPTk.&lt;/p&gt;
+&lt;p&gt;The paper titled &lt;a href=&#34;http://healis.eu/documents/straptk-eurospeech-2003.pdf&#34;&gt;&amp;ldquo;An Integrated Toolkit Deploying Speech Technology for Computer Based Speech Training with Application to Dysarthric Speakers&amp;rdquo;&lt;/a&gt; summarizes the development and application of STAPTk.&lt;/p&gt;
 &lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 &lt;p&gt;Computer based speech training systems aim to provide the client with customised tools for improving articulation based on audio-visual stimuli and feedback. They require the integration of various components of speech technology, such as speech recognition and transcription tools, and a database management system which supports multiple on-the-fly configurations of the speech training application. This paper describes the requirements and development of STAPTk from the point of view of developers, clinicians, and clients in the domain of speech training for severely dysarthric speakers. Preliminary results from an extended field trial are presented.&lt;/p&gt;
 &lt;h3 id=&#34;presentation&#34;&gt;Presentation&lt;/h3&gt;
-&lt;p&gt;Eurospeech 2003 – STAPTk (&lt;a href=&#34;https://healis.eu/documents/staptk-poster.ppsx&#34;&gt;ppsx&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Eurospeech 2003 – STAPTk (&lt;a href=&#34;http://healis.eu/documents/staptk-poster.ppsx&#34;&gt;ppsx&lt;/a&gt;)&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>STARDUST</title>
-      <link>https://healis.eu/en/project/stardust/</link>
+      <link>http://healis.eu/en/project/stardust/</link>
       <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/stardust/</guid>
-      <description>&lt;p&gt;Two funded research projects: &lt;a href=&#34;https://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;https://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&amp;rsquo; &lt;a href=&#34;https://healis.eu/en/project/oltk/&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
+      <guid>http://healis.eu/en/project/stardust/</guid>
+      <description>&lt;p&gt;Two funded research projects: &lt;a href=&#34;http://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;http://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&amp;rsquo; &lt;a href=&#34;http://healis.eu/en/project/oltk/&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
 
 
 
@@ -1725,7 +1768,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://healis.eu/img/research_timeline.gif&#34; &gt;
+&lt;img src=&#34;http://healis.eu/img/research_timeline.gif&#34; &gt;
 
 
 
@@ -1740,7 +1783,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;h3 id=&#34;staptk-in-stardust&#34;&gt;STAPTK in STARDUST&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;http://spandh.dcs.shef.ac.uk/projects/stardust/&#34;&gt;STARDUST NHS project&lt;/a&gt; (2000-2003) integrates computer based visual-feedback for speech training to assist dysarthric speakers to improve the consistency of their utterances, and speech recognition of commands in sequence to control an environmental device.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;In an attempt to reduce speech production inconsistency and hence enhance the success of voice-driven assistive technology, the ASR component in STAPTk is closely coupled with therapy - &lt;a href=&#34;https://healis.eu/documents/Sparse_Data_ES03.pdf&#34;&gt;Eurospeech 2003, Phil Green et al.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In an attempt to reduce speech production inconsistency and hence enhance the success of voice-driven assistive technology, the ASR component in STAPTk is closely coupled with therapy - &lt;a href=&#34;http://healis.eu/documents/Sparse_Data_ES03.pdf&#34;&gt;Eurospeech 2003, Phil Green et al.&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;stardust-aims&#34;&gt;STARDUST Aims&lt;/h4&gt;
 &lt;ul&gt;
@@ -1777,16 +1820,16 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;eurospeech-2003-presentation&#34;&gt;Eurospeech 2003 Presentation&lt;/h4&gt;
-&lt;p&gt;Eurospeech 2003 – Automatic Speech Recognition with Sparse Training Data for Dysarthric Speakers (&lt;a href=&#34;https://healis.eu/documents/Eurospeech2003_confusability.ppsx&#34;&gt;ppsx&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Eurospeech 2003 – Automatic Speech Recognition with Sparse Training Data for Dysarthric Speakers (&lt;a href=&#34;http://healis.eu/documents/Eurospeech2003_confusability.ppsx&#34;&gt;ppsx&lt;/a&gt;)&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>OLT</title>
-      <link>https://healis.eu/en/project/oltk/</link>
+      <link>http://healis.eu/en/project/oltk/</link>
       <pubDate>Wed, 01 Dec 1999 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/oltk/</guid>
+      <guid>http://healis.eu/en/project/oltk/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -1809,7 +1852,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;Two funded research projects: &lt;a href=&#34;https://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;https://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&amp;rsquo; &lt;a href=&#34;https://healis.eu/documents/Hatzis1999.pdf&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Two funded research projects: &lt;a href=&#34;http://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;http://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&amp;rsquo; &lt;a href=&#34;http://healis.eu/documents/Hatzis1999.pdf&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
 
 
 
@@ -1820,7 +1863,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://healis.eu/img/research_timeline.gif&#34; &gt;
+&lt;img src=&#34;http://healis.eu/img/research_timeline.gif&#34; &gt;
 
 
 
@@ -1835,7 +1878,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 &lt;h2 id=&#34;phd-thesis-summary&#34;&gt;PhD Thesis Summary&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Optical Logo-Therapy (OLT)&lt;/strong&gt; is about a real-time computer-based audio-visual feedback method that can used in speech training. With this method speech acoustics are transformed into visual events on a two-dimensional display called a ‘phonetic map’. Phonetic maps are created by training a neural network to associate acoustic input vectors with points in a two-dimensional space. The target points on the map can be chosen by the teacher to reflect the relationship between articulatory gestures and acoustics. OLT thus helps the client to become aware of, and to correct, errors in articulation. Phonetic maps can be tailored to different training problems, and to the needs of individual clients. We formulate the theoretical principles and practical requirements for OLT and we describe the design and implementation of a software application, OLTk.  We report on the successful application of OLT in two areas: speech therapy and second language learning.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;PhD Thesis &lt;a href=&#34;https://healis.eu/documents/Hatzis1999.pdf&#34;&gt;In Acrobat pdf format&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PhD Thesis &lt;a href=&#34;http://healis.eu/documents/Hatzis1999.pdf&#34;&gt;In Acrobat pdf format&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;olt-therapy-sesssion&#34;&gt;OLT Therapy Sesssion&lt;/h3&gt;
 
@@ -1845,9 +1888,9 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 
 &lt;h3 id=&#34;presentations&#34;&gt;Presentations&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;1996 Insitute of Acoustics (IOA) &lt;a href=&#34;https://healis.eu/documents/IOA96-Poster.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;1999 Phonetics Teaching &amp;amp; Learning Conference (PTLC) &lt;a href=&#34;https://healis.eu/documents/ptlc-poster.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;2001 Workshop on Innovation in Speech Processing (WISP) &lt;a href=&#34;https://healis.eu/documents/wisp2001-presentation.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;1996 Insitute of Acoustics (IOA) &lt;a href=&#34;http://healis.eu/documents/IOA96-Poster.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;1999 Phonetics Teaching &amp;amp; Learning Conference (PTLC) &lt;a href=&#34;http://healis.eu/documents/ptlc-poster.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2001 Workshop on Innovation in Speech Processing (WISP) &lt;a href=&#34;http://healis.eu/documents/wisp2001-presentation.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -1962,7 +2005,7 @@ You may also set the &lt;strong&gt;playback speed at 0.75&lt;/strong&gt; to incr
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://healis.eu/img/olt_map.gif&#34; &gt;
+&lt;img src=&#34;http://healis.eu/img/olt_map.gif&#34; &gt;
 
 
 
@@ -2038,7 +2081,7 @@ The settings appear in the pull down menu as follows:&lt;/p&gt;
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://healis.eu/img/research_dcs_sheffield_university_419x480.jpg&#34; &gt;
+&lt;img src=&#34;http://healis.eu/img/research_dcs_sheffield_university_419x480.jpg&#34; &gt;
 
 
 
@@ -2054,10 +2097,10 @@ The settings appear in the pull down menu as follows:&lt;/p&gt;
     
     <item>
       <title>VAHISOM</title>
-      <link>https://healis.eu/en/project/vahisom/</link>
+      <link>http://healis.eu/en/project/vahisom/</link>
       <pubDate>Thu, 01 Jun 1995 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/vahisom/</guid>
+      <guid>http://healis.eu/en/project/vahisom/</guid>
       <description>&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
 &lt;p&gt;This &lt;a href=&#34;http://www.dai.ed.ac.uk/papers/authors/athanh.html&#34;&gt;MSc project&lt;/a&gt; focuses on place of articulation for a hearing impaired person. Most of the work is based on building an efficient and attractive user interface to explore the use of Kohonen’s Self-Organising-Maps in visualising the phonemic trajectory. Several experiments were done with a hearing-impaired person and normal speakers and the results were analysed and visualised with the VAHISOM program.&lt;/p&gt;
 &lt;p&gt;In parallel with the objectives of that project the user of that software can also explore the use of Kohonen’s Self-Organising-Maps and measure how well they can fit to a similar problem. Thus this makes also VAHISOM a useful tutorial aid.&lt;/p&gt;
@@ -2074,7 +2117,7 @@ The settings appear in the pull down menu as follows:&lt;/p&gt;
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://healis.eu/img/vahisom-compare.gif&#34; &gt;
+&lt;img src=&#34;http://healis.eu/img/vahisom-compare.gif&#34; &gt;
 
 
 

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software_license on HEALIS</title>
-    <link>https://healis.eu/en/tags/software_license/</link>
+    <link>http://healis.eu/en/tags/software_license/</link>
     <description>Recent content in Software_license on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
     <lastBuildDate>Tue, 10 Aug 2010 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://healis.eu/en/tags/software_license/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://healis.eu/en/tags/software_license/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Open Data vs Open Source Software</title>
-      <link>https://healis.eu/en/post/20100810/</link>
+      <link>http://healis.eu/en/post/20100810/</link>
       <pubDate>Tue, 10 Aug 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/post/20100810/</guid>
+      <guid>http://healis.eu/en/post/20100810/</guid>
       <description>&lt;p&gt;&lt;img alt=&#34;jpg&#34; src=&#34;./featured.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;This is a summary from a post that I wrote for &lt;a href=&#34;http://comments.gmane.org/gmane.org.misc.open-knowledge-foundation.general/1485&#34;&gt;Open Knowledge Foundation discussion list&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;{&amp;lt; toc &amp;gt;}&lt;/p&gt;
 &lt;h2 id=&#34;definitions&#34;&gt;Definitions&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Open_Data&#34;&gt;Wikipedia Open Data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Open_Source&#34;&gt;Wikipedia Open Source&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Open Source licenses control the use of computer programs (software) while open data licenses such as &lt;a href=&#34;http://www.opendatacommons.org/licenses/odbl/&#34;&gt;Open Database License (ODbL)&lt;/a&gt; concern primarily the use of databases and their content. Nevertheless a database often constitutes part of the software. Therefore there is some overlap between the two. The following questions and answers demonstrate a real life scenario that is based on &lt;a href=&#34;https://healis.eu/en/project/medilig/&#34;&gt;MEDILIG project&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Open Source licenses control the use of computer programs (software) while open data licenses such as &lt;a href=&#34;http://www.opendatacommons.org/licenses/odbl/&#34;&gt;Open Database License (ODbL)&lt;/a&gt; concern primarily the use of databases and their content. Nevertheless a database often constitutes part of the software. Therefore there is some overlap between the two. The following questions and answers demonstrate a real life scenario that is based on &lt;a href=&#34;http://healis.eu/en/project/medilig/&#34;&gt;MEDILIG project&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;qa-session&#34;&gt;Q&amp;amp;A Session&lt;/h2&gt;
 &lt;h3 id=&#34;why-do-you-apply-two-licenses-odbl-and-gpl-for-the-medilig-project-&#34;&gt;Why do you apply two licenses ODbL and GPL for the MEDILIG project ?&lt;/h3&gt;
 &lt;p&gt;MEDILIG project is a software product/service and it also includes a database. The &lt;!-- raw HTML omitted --&gt;use of the database&lt;!-- raw HTML omitted --&gt; cannot be covered with a GPL license.&lt;/p&gt;
@@ -39,10 +39,10 @@
     
     <item>
       <title>Healthcare Software on Proprietary OS</title>
-      <link>https://healis.eu/en/post/20100412/</link>
+      <link>http://healis.eu/en/post/20100412/</link>
       <pubDate>Mon, 12 Apr 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/post/20100412/</guid>
+      <guid>http://healis.eu/en/post/20100412/</guid>
       <description>&lt;p&gt;&lt;img alt=&#34;jpg&#34; src=&#34;./featured.jpg&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;extract-from-a-post-to-gnusolidario-forum-of-luis-falcon&#34;&gt;Extract from a post to gnusolidario forum of Luis Falcon&lt;/h2&gt;
 &lt;p&gt;Recently I released to the public MEDILIG project v1.0 (MEDILIG Source at Sourceforge) under a combination of two licenses GPL and ODbL.&lt;/p&gt;

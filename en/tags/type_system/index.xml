@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Type_system on HEALIS</title>
-    <link>https://healis.eu/en/tags/type_system/</link>
+    <link>http://healis.eu/en/tags/type_system/</link>
     <description>Recent content in Type_system on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
     <lastBuildDate>Sat, 10 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://healis.eu/en/tags/type_system/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://healis.eu/en/tags/type_system/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Back to the roots, Relational Data Model</title>
-      <link>https://healis.eu/en/post/20180310/</link>
+      <link>http://healis.eu/en/post/20180310/</link>
       <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/post/20180310/</guid>
+      <guid>http://healis.eu/en/post/20180310/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -29,8 +29,8 @@
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;back-to-the-roots&#34;&gt;Back to the roots&lt;/h2&gt;
-&lt;p&gt;Recently, I realized that the &lt;strong&gt;associative, semiotic, hypergraph&lt;/strong&gt;, or in short the &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt;, technology framework we propose to be adopted in database management systems can be considered in many ways an extension to &lt;a href=&#34;https://en.wikipedia.org/wiki/Edgar_F._Codd&#34;&gt;Codd&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_model&#34;&gt;Relational Model&lt;/a&gt;. I am aware that this is a big claim and certainly this is not the place or the time to lay down my arguments, suffice it to say how this occurred to me.&lt;/p&gt;
-&lt;p&gt;I have partially implemented &lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt; technology twice on top of two different &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_store&#34;&gt;data stores&lt;/a&gt; and I noticed that those &lt;strong&gt;add and get operations&lt;/strong&gt; we defined are closely related to Codd&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_algebra&#34;&gt;relational algebra operations&lt;/a&gt;, while data sets, i.e. domains, and a user defined type system match the &lt;a href=&#34;https://en.wikipedia.org/wiki/Set_(mathematics)&#34;&gt;sets defined in mathematics&lt;/a&gt; and relational theory. Coincidentally Codd&amp;rsquo;s Relational logic goes back to Aristotle and the corner stone of our technology, which is the &lt;a href=&#34;https://healis.eu/en/project/r3dm/#computational-semiotic-triangle&#34;&gt;computational semiotic triangle&lt;/a&gt;, goes back to Aristotle too. I will briefly mention that one basic difference is that both the heading set and the body tuples of the Relation, in fact everything, are transformed and uniformly represented with numerical key references. Therefore it can also be called &lt;strong&gt;Reference Database Management System (RDBMS)&lt;/strong&gt;. All these are simply good indications. I believe we are on the right track.&lt;/p&gt;
+&lt;p&gt;Recently, I realized that the &lt;strong&gt;associative, semiotic, hypergraph&lt;/strong&gt;, or in short the &lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt;, technology framework we propose to be adopted in database management systems can be considered in many ways an extension to &lt;a href=&#34;https://en.wikipedia.org/wiki/Edgar_F._Codd&#34;&gt;Codd&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_model&#34;&gt;Relational Model&lt;/a&gt;. I am aware that this is a big claim and certainly this is not the place or the time to lay down my arguments, suffice it to say how this occurred to me.&lt;/p&gt;
+&lt;p&gt;I have partially implemented &lt;a href=&#34;http://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt; technology twice on top of two different &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_store&#34;&gt;data stores&lt;/a&gt; and I noticed that those &lt;strong&gt;add and get operations&lt;/strong&gt; we defined are closely related to Codd&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_algebra&#34;&gt;relational algebra operations&lt;/a&gt;, while data sets, i.e. domains, and a user defined type system match the &lt;a href=&#34;https://en.wikipedia.org/wiki/Set_(mathematics)&#34;&gt;sets defined in mathematics&lt;/a&gt; and relational theory. Coincidentally Codd&amp;rsquo;s Relational logic goes back to Aristotle and the corner stone of our technology, which is the &lt;a href=&#34;http://healis.eu/en/project/r3dm/#computational-semiotic-triangle&#34;&gt;computational semiotic triangle&lt;/a&gt;, goes back to Aristotle too. I will briefly mention that one basic difference is that both the heading set and the body tuples of the Relation, in fact everything, are transformed and uniformly represented with numerical key references. Therefore it can also be called &lt;strong&gt;Reference Database Management System (RDBMS)&lt;/strong&gt;. All these are simply good indications. I believe we are on the right track.&lt;/p&gt;
 &lt;p&gt;The truth is, and I will quote &lt;a href=&#34;https://en.wikipedia.org/wiki/Christopher_J._Date&#34;&gt;Chris Date&lt;/a&gt; here, that:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;if you are proposing to replace technology A by technology B first is counted on you to understand technology A and then it is counted on you that there is some problem that technology A does not solve and technology B does solve&lt;/em&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
@@ -74,10 +74,10 @@
     
     <item>
       <title>Are our old data model standards out of shape ?</title>
-      <link>https://healis.eu/en/post/20170709/</link>
+      <link>http://healis.eu/en/post/20170709/</link>
       <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/post/20170709/</guid>
+      <guid>http://healis.eu/en/post/20170709/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -98,7 +98,7 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Both Topic Maps and RDF/OWL exhibit signs of aging. In my opinion these signs do not indicate maturity levels but on the contrary they signal a re-examination of the data modeling, information representation problem. There is an emergent need to unify and exchange transformations between serialization formats (XML, JSON, etc), (graph) DBMS data model standards and semantic web data models.&lt;/p&gt;
-&lt;p&gt;Hence this is my speech at European Wolfram Technology Conference 2017 about a new data modeling framework &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt; that is implemented on top of OrientDB graph database and coded in Wolfram Mathematica.&lt;/p&gt;
+&lt;p&gt;Hence this is my speech at European Wolfram Technology Conference 2017 about a new data modeling framework &lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt; that is implemented on top of OrientDB graph database and coded in Wolfram Mathematica.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/BZleqH7iMng&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -120,7 +120,7 @@
 &lt;code&gt;tuple instance : 233:1[85:6, 91:2, 34:9]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;The vocabulary of relational model (header) permits to have &lt;strong&gt;ordered tuples&lt;/strong&gt; of values (body), the numerical reference vectors of R3DM/S3DM model permits to have &lt;strong&gt;unordered tuples&lt;/strong&gt; and there is a handle that represents each tuple instance. In RDF to represent a tuple you have to break it down into triples where you repeat the &lt;code&gt;subject&lt;/code&gt;. And values (&lt;code&gt;objects&lt;/code&gt;) &lt;strong&gt;must be semantically accompanied by the predicate&lt;/strong&gt;. Thus R3DM/S3DM associative representation with numerical references is simpler and it proves to be more efficient with indexing too !&lt;/p&gt;
 &lt;h3 id=&#34;separate-abstraction-layers&#34;&gt;Separate abstraction layers&lt;/h3&gt;
-&lt;p&gt;It is important to separate digital information resources, e.g. web pages, files, folders, audio/video recordings, images, text documents etc from real things e.g. humans, organizations, objects, etc. It is also important to distinguish between a flexible model and its instances. But it is equally or more important to separate any abstract concept from data values (numerical, string, bits, etc). Because the first is the vehicle for human thinking and the second is the way computers are processing data. Therefore this gap has to be bridged somehow. R3DM/S3DM achieves this with an extra abstraction layer where everything is connected with &lt;a href=&#34;https://healis.eu/en/post/20150320/&#34;&gt;Atomic Information Resource&lt;/a&gt; (AIR) units. This AIR unit defines also the level of granularity. Instead of building everything with Topics, you use AIR units.&lt;/p&gt;
+&lt;p&gt;It is important to separate digital information resources, e.g. web pages, files, folders, audio/video recordings, images, text documents etc from real things e.g. humans, organizations, objects, etc. It is also important to distinguish between a flexible model and its instances. But it is equally or more important to separate any abstract concept from data values (numerical, string, bits, etc). Because the first is the vehicle for human thinking and the second is the way computers are processing data. Therefore this gap has to be bridged somehow. R3DM/S3DM achieves this with an extra abstraction layer where everything is connected with &lt;a href=&#34;http://healis.eu/en/post/20150320/&#34;&gt;Atomic Information Resource&lt;/a&gt; (AIR) units. This AIR unit defines also the level of granularity. Instead of building everything with Topics, you use AIR units.&lt;/p&gt;
 &lt;h3 id=&#34;granularity-with-air-units&#34;&gt;Granularity with AIR units&lt;/h3&gt;
 &lt;p&gt;But the AIR unit has the advantage that can be indexed easily, it is represented with a numerical vector, an address that can pinpoint the exact location of an Entity-Attribute-Value item. It is similar to an IPv4 address of a machine (e.g. domain, network, server, node/device/machine). My question is the following. &lt;span class=&#34;markup-quote&#34;&gt;If we use such addresses for connecting machines on the internet, why don&amp;rsquo;t we establish a similar standard for connecting data ?&lt;/span&gt; An AIR unit is the fundamental powerful construction unit for smart data. It knows its siblings, its parent, its type, its nexus, its associated AIR units (nodes). A tuple of such units can stand on its own, without a header and its completely meaningful because the context has already been defined.&lt;/p&gt;
 &lt;h3 id=&#34;filtering-instead-of-querying&#34;&gt;Filtering instead of querying&lt;/h3&gt;
@@ -141,11 +141,11 @@
     
     <item>
       <title>NULON</title>
-      <link>https://healis.eu/en/project/nulon/</link>
+      <link>http://healis.eu/en/project/nulon/</link>
       <pubDate>Tue, 04 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/project/nulon/</guid>
-      <description>&lt;h1 id=&#34;visit-demo-site1&#34;&gt;Visit &lt;a href=&#34;https://healis.eu/en/project/nulon/demo/&#34;&gt;Demo Site&lt;/a&gt;&lt;/h1&gt;
+      <guid>http://healis.eu/en/project/nulon/</guid>
+      <description>&lt;h1 id=&#34;visit-demo-site1&#34;&gt;Visit &lt;a href=&#34;http://healis.eu/en/project/nulon/demo/&#34;&gt;Demo Site&lt;/a&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Neurorganon Upper Level Ontology (NULON) is a top-level ontology also known as a foundation ontology. It includes a list of very general terms grouped in ontological distinct categories , such as &lt;code&gt;address&lt;/code&gt; , &lt;code&gt;agent&lt;/code&gt;, &lt;code&gt;artifact&lt;/code&gt;, &lt;code&gt;device&lt;/code&gt;, &lt;code&gt;document&lt;/code&gt;, &lt;code&gt;space&lt;/code&gt;, &lt;code&gt;time&lt;/code&gt; and many others. These categories determine the most fundamental and the broadest classes of information resources. In NULON members of each class, i.e. vocabulary terms, preserve the same meaning across more specific knowledge domains and other reference work. In that aspect it is similar to a thesaurus because it groups together terms in disjoint collections of mostly similar concepts and it is like a dictionary because it can also include multiple, multi-lingual definitions. It is also an ontology because it defines relations and properties that describe how the terms can be linked together or bind them to web, computerized information resources. NULON recent version, numbers more than 500 core vocabulary terms grouped in 47 maximally disjoint categories. All these terms have been consistently mapped to standard definitions from at least two major reference works in the realm of semantically linked data; OpenCyc and Wikipedia. Respectively their information resources are used as identifiers and references for NULON terms. Most important, at this stage of architectural design what makes NULON really different from other Upper-Level Ontologies is the kind of grouping of the terms and the categories included and described in the οntology. This is the result of a big effort, the whole year, from a single person, to discover and organize efficiently most terms related to information technology, including abstraction, management, computer programming, data storage, metadata, data modeling, identity, reference, design patterns, web use, digital resources and devices to name a few of them.&lt;/p&gt;
 &lt;h2 id=&#34;from-neuron-to-nulon&#34;&gt;From NEURON to NULON&lt;/h2&gt;

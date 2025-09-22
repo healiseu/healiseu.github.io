@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topic_Maps on HEALIS</title>
-    <link>https://healis.eu/en/tags/topic_maps/</link>
+    <link>http://healis.eu/en/tags/topic_maps/</link>
     <description>Recent content in Topic_Maps on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
     <lastBuildDate>Fri, 02 Sep 2016 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://healis.eu/en/tags/topic_maps/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://healis.eu/en/tags/topic_maps/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Association in Topic Map Data Model</title>
-      <link>https://healis.eu/en/post/20160902/</link>
+      <link>http://healis.eu/en/post/20160902/</link>
       <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/post/20160902/</guid>
+      <guid>http://healis.eu/en/post/20160902/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -36,7 +36,7 @@
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;In the &lt;a href=&#34;https://healis.eu/en/post/20160825/&#34;&gt;previous article&lt;/a&gt; of this series we examined the association construct from the perspective of Entity-Relationship data model. In this post we demonstrate how Topic Map data model represents associations. In order to link the two we continue with another SQL query from our &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue/accdb&#34;&gt;relational database&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In the &lt;a href=&#34;http://healis.eu/en/post/20160825/&#34;&gt;previous article&lt;/a&gt; of this series we examined the association construct from the perspective of Entity-Relationship data model. In this post we demonstrate how Topic Map data model represents associations. In order to link the two we continue with another SQL query from our &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue/accdb&#34;&gt;relational database&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; suppliers.sid,
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       suppliers.sname,
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       suppliers.scountry,
@@ -67,7 +67,7 @@
 
 &lt;/figure&gt;
 
-&lt;p&gt;This will fetch all the rows of a result set where we are looking for the &lt;em&gt;minimum catalogue price of a Red Fire Hydrant Cap&lt;/em&gt; and who is the supplier that manufactures this part. The reader will notice that apart from the deficiensy of the nested JOINs, &lt;a href=&#34;https://healis.eu/en/post/20160825/#structured-query-language-sql&#34;&gt;(see here)&lt;/a&gt;, we had to formalize our search in SQL language in order to get back our result. Wouldn&amp;rsquo;t be nice if we could engage the user in a codeless style of search, independent of the business case. Let us see the difference with the Topic Map data model first.&lt;/p&gt;
+&lt;p&gt;This will fetch all the rows of a result set where we are looking for the &lt;em&gt;minimum catalogue price of a Red Fire Hydrant Cap&lt;/em&gt; and who is the supplier that manufactures this part. The reader will notice that apart from the deficiensy of the nested JOINs, &lt;a href=&#34;http://healis.eu/en/post/20160825/#structured-query-language-sql&#34;&gt;(see here)&lt;/a&gt;, we had to formalize our search in SQL language in order to get back our result. Wouldn&amp;rsquo;t be nice if we could engage the user in a codeless style of search, independent of the business case. Let us see the difference with the Topic Map data model first.&lt;/p&gt;
 &lt;h2 id=&#34;associations-in-topic-map-data-model&#34;&gt;Associations in Topic Map Data Model&lt;/h2&gt;
 &lt;p&gt;Perhaps there is not a better software tool out there to introduce you to Topic Maps than &lt;a href=&#34;http://wandora.org&#34;&gt;Wandora&lt;/a&gt; information management application, see how.&lt;/p&gt;
 &lt;h3 id=&#34;tuples-to-associations&#34;&gt;Tuples to Associations&lt;/h3&gt;
@@ -220,7 +220,7 @@
 
 &lt;/figure&gt;
 
-&lt;p&gt;We start again our exploration from the data item with the value &lt;code&gt;998&lt;/code&gt;. There is one association, labeled &lt;code&gt;Part8&lt;/code&gt;, representing a tuple from Part table &lt;strong&gt;(998, &amp;ldquo;Fire Hydrant Cap&amp;rdquo;, Red, 7.2, lb)&lt;/strong&gt; and four of them, labeled &lt;code&gt;Cat08&lt;/code&gt;, &lt;code&gt;Cat12&lt;/code&gt;, &lt;code&gt;Cat13&lt;/code&gt;, &lt;code&gt;Cat17&lt;/code&gt;, representing tuples from the Catalogue table (see result set above). Further on, &lt;code&gt;USA&lt;/code&gt; suppliers are expanded with two more associations, labeled &lt;code&gt;Supplier1&lt;/code&gt; and &lt;code&gt;Supplier2&lt;/code&gt;. The two previous graphs are combined in a single one. We can also observe other associations with only two members, we call these symmetric binary predicates &lt;strong&gt;(SBP)&lt;/strong&gt;. SBPs are used to define a prototype for our R3DM type system. For example, the member value &lt;code&gt;7.2&lt;/code&gt; of association &lt;code&gt;Part8&lt;/code&gt; is of type &lt;code&gt;Part Weight&lt;/code&gt; (Instantiation Predicate) and &lt;code&gt;Part Weight&lt;/code&gt; is hyponym of &lt;code&gt;Weight&lt;/code&gt; (HyperHypo Predicate). The reader may compare this graph with this &lt;a href=&#34;https://healis.eu/en/post/20160825/#structured-query-language-sql&#34;&gt;Entity-Relationship diagram&lt;/a&gt; and realize that we have both instances (values) and classes, i.e. Entities and Attribues, on the same graphics diagram. Not only that, but most important our type system is generic and we are able to merge and classify data from multiple datasets. Alternatively, Wandora&amp;rsquo;s Topics tree panel on the left part of the image displays a hierarchical structure for types and instances. Those that are expanded can also be seen on the graph panel.&lt;/p&gt;
+&lt;p&gt;We start again our exploration from the data item with the value &lt;code&gt;998&lt;/code&gt;. There is one association, labeled &lt;code&gt;Part8&lt;/code&gt;, representing a tuple from Part table &lt;strong&gt;(998, &amp;ldquo;Fire Hydrant Cap&amp;rdquo;, Red, 7.2, lb)&lt;/strong&gt; and four of them, labeled &lt;code&gt;Cat08&lt;/code&gt;, &lt;code&gt;Cat12&lt;/code&gt;, &lt;code&gt;Cat13&lt;/code&gt;, &lt;code&gt;Cat17&lt;/code&gt;, representing tuples from the Catalogue table (see result set above). Further on, &lt;code&gt;USA&lt;/code&gt; suppliers are expanded with two more associations, labeled &lt;code&gt;Supplier1&lt;/code&gt; and &lt;code&gt;Supplier2&lt;/code&gt;. The two previous graphs are combined in a single one. We can also observe other associations with only two members, we call these symmetric binary predicates &lt;strong&gt;(SBP)&lt;/strong&gt;. SBPs are used to define a prototype for our R3DM type system. For example, the member value &lt;code&gt;7.2&lt;/code&gt; of association &lt;code&gt;Part8&lt;/code&gt; is of type &lt;code&gt;Part Weight&lt;/code&gt; (Instantiation Predicate) and &lt;code&gt;Part Weight&lt;/code&gt; is hyponym of &lt;code&gt;Weight&lt;/code&gt; (HyperHypo Predicate). The reader may compare this graph with this &lt;a href=&#34;http://healis.eu/en/post/20160825/#structured-query-language-sql&#34;&gt;Entity-Relationship diagram&lt;/a&gt; and realize that we have both instances (values) and classes, i.e. Entities and Attribues, on the same graphics diagram. Not only that, but most important our type system is generic and we are able to merge and classify data from multiple datasets. Alternatively, Wandora&amp;rsquo;s Topics tree panel on the left part of the image displays a hierarchical structure for types and instances. Those that are expanded can also be seen on the graph panel.&lt;/p&gt;
 &lt;p&gt;This is a good place to introduce our &lt;strong&gt;R3DM type system&lt;/strong&gt;. It is presented here for the first time and it will be fully analyzed in a forthcoming post of this series. In the next graph we have expanded several nodes of our hierarchical type system. For instance, &lt;code&gt;Catalogue&lt;/code&gt;, &lt;code&gt;Catalogue Part&lt;/code&gt;, &lt;code&gt;Catalog Supplier&lt;/code&gt; are represented as groups (&lt;code&gt;Grouping Predicate&lt;/code&gt;) of &lt;code&gt;Wandora&lt;/code&gt; class which is the Root of the Topic Tree. Each of these groups is also a type (&lt;code&gt;Instantiation Predicate&lt;/code&gt;) for a set of instances that represent associations. We have Cat01-16 for Catalogue associations, Part1-9 for Part associations, and Supplier1-4 for Supplier associations.&lt;/p&gt;
 
 

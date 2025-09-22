@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Representation_(mathematics) on HEALIS</title>
-    <link>https://healis.eu/en/tags/representation_mathematics/</link>
+    <link>http://healis.eu/en/tags/representation_mathematics/</link>
     <description>Recent content in Representation_(mathematics) on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
     <lastBuildDate>Sat, 23 May 2015 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://healis.eu/en/tags/representation_mathematics/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://healis.eu/en/tags/representation_mathematics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The number &#39;3&#39; and The Three-Faceted Abstraction Mechanism in R3DM</title>
-      <link>https://healis.eu/en/post/20150523_part3/</link>
+      <link>http://healis.eu/en/post/20150523_part3/</link>
       <pubDate>Sat, 23 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/post/20150523_part3/</guid>
+      <guid>http://healis.eu/en/post/20150523_part3/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -31,7 +31,7 @@
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;In &lt;a href=&#34;https://healis.eu/en/post/20150320/&#34;&gt;Part 2&lt;/a&gt; of this series we introduced the Atomic Information Resource (AIR) data model of the AtomicDB database management system. In this part we present a simple but extensive example on various representations of number three using the poweful Mathematica functions and the unique features of Mathematica notebooks. We relate these with the three-faceted abstraction mechanism in &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;http://healis.eu/en/post/20150320/&#34;&gt;Part 2&lt;/a&gt; of this series we introduced the Atomic Information Resource (AIR) data model of the AtomicDB database management system. In this part we present a simple but extensive example on various representations of number three using the poweful Mathematica functions and the unique features of Mathematica notebooks. We relate these with the three-faceted abstraction mechanism in &lt;a href=&#34;http://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;1-functional-representation-of-number-3---the-sign-representation&#34;&gt;1. Functional Representation of Number 3 - The Sign (Representation)&lt;/h2&gt;
 &lt;p&gt;Functional representation is the core operation of R3DM. Everything is represented as a function that is mapping values from one domain to another. You may view functions, as transformations. This is also how they operate in Wolfram Language. They transform expressions from one symbolic form to another.&lt;/p&gt;
 &lt;p&gt;In this section we investigate the various forms that a symbol related to number &amp;lsquo;3&amp;rsquo; can take. In R3DM this is the sign that is used to signify something at a higher level and at the same time it is used to symbolize an internal representation, a realization.&lt;/p&gt;
@@ -59,11 +59,11 @@
 &lt;/ul&gt;
 &lt;p&gt;We present an Image container (symbol) realized in Mathematica as a raw array of bytes (visual representation), and a Sound container (symbol) realized in Mathematica as a list of sound amplitude levels samples (aural representation).&lt;/p&gt;
 &lt;h2 id=&#34;mathematica-notebook&#34;&gt;Mathematica Notebook&lt;/h2&gt;
-&lt;p&gt;Here is the full article printed from this &lt;a href=&#34;https://healis.eu/documents/number_3.nb&#34;&gt;Mathematica Notebook&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here is the full article printed from this &lt;a href=&#34;http://healis.eu/documents/number_3.nb&#34;&gt;Mathematica Notebook&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;responsive-wrap&#34;&gt;
 	&lt;object data=&#34;/documents/Towards%20a%20New%20Data%20Modelling%20Architecture%20-%20Part%203.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
-		&lt;embed src=&#34;https://healis.eu/documents/Towards%20a%20New%20Data%20Modelling%20Architecture%20-%20Part%203.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
-			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;https://healis.eu/documents/Towards%20a%20New%20Data%20Modelling%20Architecture%20-%20Part%203.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+		&lt;embed src=&#34;http://healis.eu/documents/Towards%20a%20New%20Data%20Modelling%20Architecture%20-%20Part%203.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;http://healis.eu/documents/Towards%20a%20New%20Data%20Modelling%20Architecture%20-%20Part%203.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
 			instead. Thanks!&lt;/em&gt;
 	&lt;/object&gt;
 &lt;/div&gt;

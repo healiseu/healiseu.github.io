@@ -2,76 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on HEALIS</title>
-    <link>https://healis.eu/en/categories/</link>
+    <link>http://healis.eu/en/categories/</link>
     <description>Recent content in Categories on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
     <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://healis.eu/en/categories/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://healis.eu/en/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Health_information_technology</title>
-      <link>https://healis.eu/en/categories/health_information_technology/</link>
+      <link>http://healis.eu/en/categories/health_information_technology/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/categories/health_information_technology/</guid>
+      <guid>http://healis.eu/en/categories/health_information_technology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Semantic_Web</title>
-      <link>https://healis.eu/en/categories/semantic_web/</link>
+      <link>http://healis.eu/en/categories/semantic_web/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/categories/semantic_web/</guid>
+      <guid>http://healis.eu/en/categories/semantic_web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Application_programming_interface</title>
-      <link>https://healis.eu/en/categories/application_programming_interface/</link>
+      <link>http://healis.eu/en/categories/application_programming_interface/</link>
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/categories/application_programming_interface/</guid>
+      <guid>http://healis.eu/en/categories/application_programming_interface/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Computer_programming</title>
-      <link>https://healis.eu/en/categories/computer_programming/</link>
+      <link>http://healis.eu/en/categories/computer_programming/</link>
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/categories/computer_programming/</guid>
+      <guid>http://healis.eu/en/categories/computer_programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Software_engineering</title>
-      <link>https://healis.eu/en/categories/software_engineering/</link>
+      <link>http://healis.eu/en/categories/software_engineering/</link>
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/categories/software_engineering/</guid>
+      <guid>http://healis.eu/en/categories/software_engineering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Augmentative_and_alternative_communication</title>
-      <link>https://healis.eu/en/categories/augmentative_and_alternative_communication/</link>
+      <link>http://healis.eu/en/categories/augmentative_and_alternative_communication/</link>
       <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/categories/augmentative_and_alternative_communication/</guid>
+      <guid>http://healis.eu/en/categories/augmentative_and_alternative_communication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Assistive_technology</title>
-      <link>https://healis.eu/en/categories/assistive_technology/</link>
+      <link>http://healis.eu/en/categories/assistive_technology/</link>
       <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
       
-      <guid>https://healis.eu/en/categories/assistive_technology/</guid>
+      <guid>http://healis.eu/en/categories/assistive_technology/</guid>
       <description></description>
     </item>
     

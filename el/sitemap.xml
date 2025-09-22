@@ -2,140 +2,140 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://healis.eu/el/authors/</loc>
+    <loc>http://healis.eu/el/authors/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://healis.eu/en/authors/"
+                href="http://healis.eu/en/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://healis.eu/el/authors/"
+                href="http://healis.eu/el/authors/"
                 />
   </url><url>
-    <loc>https://healis.eu/el/authors/admin/</loc>
+    <loc>http://healis.eu/el/authors/admin/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://healis.eu/en/authors/admin/"
+                href="http://healis.eu/en/authors/admin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://healis.eu/el/authors/admin/"
+                href="http://healis.eu/el/authors/admin/"
                 />
   </url><url>
-    <loc>https://healis.eu/el/test/embed/</loc>
+    <loc>http://healis.eu/el/test/embed/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://healis.eu/el/</loc>
+    <loc>http://healis.eu/el/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://healis.eu/en/"
+                href="http://healis.eu/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://healis.eu/el/"
+                href="http://healis.eu/el/"
                 />
   </url><url>
-    <loc>https://healis.eu/el/test/links/</loc>
+    <loc>http://healis.eu/el/test/links/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://healis.eu/el/test/</loc>
+    <loc>http://healis.eu/el/test/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://healis.eu/el/contact/</loc>
+    <loc>http://healis.eu/el/contact/</loc>
     <lastmod>2020-08-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://healis.eu/en/contact/"
+                href="http://healis.eu/en/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://healis.eu/el/contact/"
+                href="http://healis.eu/el/contact/"
                 />
   </url><url>
-    <loc>https://healis.eu/el/terms/</loc>
+    <loc>http://healis.eu/el/terms/</loc>
     <lastmod>2018-06-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://healis.eu/en/terms/"
+                href="http://healis.eu/en/terms/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://healis.eu/el/terms/"
+                href="http://healis.eu/el/terms/"
                 />
   </url><url>
-    <loc>https://healis.eu/el/tags/article_publishing/</loc>
+    <loc>http://healis.eu/el/tags/article_publishing/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://healis.eu/el/tags/event/</loc>
+    <loc>http://healis.eu/el/tags/event/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://healis.eu/el/post/</loc>
+    <loc>http://healis.eu/el/post/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://healis.eu/en/post/"
+                href="http://healis.eu/en/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://healis.eu/el/post/"
+                href="http://healis.eu/el/post/"
                 />
   </url><url>
-    <loc>https://healis.eu/el/tags/publicationevent/</loc>
+    <loc>http://healis.eu/el/tags/publicationevent/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://healis.eu/el/tags/</loc>
+    <loc>http://healis.eu/el/tags/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://healis.eu/en/tags/"
+                href="http://healis.eu/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://healis.eu/el/tags/"
+                href="http://healis.eu/el/tags/"
                 />
   </url><url>
-    <loc>https://healis.eu/el/post/2017-11-30/</loc>
+    <loc>http://healis.eu/el/post/2017-11-30/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://healis.eu/el/categories/</loc>
+    <loc>http://healis.eu/el/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://healis.eu/en/categories/"
+                href="http://healis.eu/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://healis.eu/el/categories/"
+                href="http://healis.eu/el/categories/"
                 />
   </url><url>
-    <loc>https://healis.eu/el/publication_types/</loc>
+    <loc>http://healis.eu/el/publication_types/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://healis.eu/en/publication_types/"
+                href="http://healis.eu/en/publication_types/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el"
-                href="https://healis.eu/el/publication_types/"
+                href="http://healis.eu/el/publication_types/"
                 />
   </url>
 </urlset>
