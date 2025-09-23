@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Filter_(higher-Order_function) on HEALIS</title>
-    <link>http://healis.eu/en/tags/filter_higher-order_function/</link>
+    <link>https://healis.eu/en/tags/filter_higher-order_function/</link>
     <description>Recent content in Filter_(higher-Order_function) on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
     <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="http://healis.eu/en/tags/filter_higher-order_function/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://healis.eu/en/tags/filter_higher-order_function/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>50 Years of SQL, can you imagine a truly NoSQL approach ?</title>
-      <link>http://healis.eu/en/post/20200219/</link>
+      <link>https://healis.eu/en/post/20200219/</link>
       <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20200219/</guid>
+      <guid>https://healis.eu/en/post/20200219/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -123,10 +123,10 @@ OOP is perhaps the most popular programming paradigm and yet because of the SQL 
     
     <item>
       <title>TRIADB</title>
-      <link>http://healis.eu/en/project/triadb/</link>
+      <link>https://healis.eu/en/project/triadb/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/project/triadb/</guid>
+      <guid>https://healis.eu/en/project/triadb/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -151,30 +151,30 @@ OOP is perhaps the most popular programming paradigm and yet because of the SQL 
 &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;at-a-glance&#34;&gt;At A Glance&lt;/h2&gt;
-&lt;p&gt;TRIADB is an innovative, multi-perspective database framework. It is a Python library that sits on top of suitable NoSQL/SQL data store engines and enables the users to perform easily &lt;strong&gt;integration, correlation, aggregation and hypergraph exploration of multiple data resources&lt;/strong&gt;. TRIADB is founded on the principles of &lt;a href=&#34;http://healis.eu/en/project/r3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;TRIADB is an innovative, multi-perspective database framework. It is a Python library that sits on top of suitable NoSQL/SQL data store engines and enables the users to perform easily &lt;strong&gt;integration, correlation, aggregation and hypergraph exploration of multiple data resources&lt;/strong&gt;. TRIADB is founded on the principles of &lt;a href=&#34;https://healis.eu/en/project/r3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;architectural-design&#34;&gt;Architectural Design&lt;/h2&gt;
-&lt;p&gt;In terms of the architectural design TRIADB is based on &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000107/&#34;&gt;&lt;strong&gt;associative&lt;/strong&gt;, &lt;strong&gt;semiotic&lt;/strong&gt;, &lt;strong&gt;hypergraph&lt;/strong&gt; technology&lt;/a&gt; pioneered by &lt;a href=&#34;http://healis.eu/en/about/#athanassios&#34;&gt;Dr. Athanassios I. Hatzis&lt;/a&gt;. Foundational principles, theoretical formalization and ontological dimensions of the framework and the data model are &lt;a href=&#34;http://healis.eu/en/project/r3dm/#cross-references&#34;&gt;dating back to the year 2012&lt;/a&gt;. Our technology shares certain similarities with &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000104/&#34;&gt;Qlik&lt;/a&gt; associative technology, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000002/&#34;&gt;AtomicDB and X10SYS&lt;/a&gt; associative technology, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000103/#associative-model&#34;&gt;Sentences&lt;/a&gt; associative data model, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000101/&#34;&gt;Topic Maps&lt;/a&gt; data model and &lt;a href=&#34;https://en.wikipedia.org/wiki/Correlation_database&#34;&gt;correlation database model&lt;/a&gt;. The &lt;span class=&#34;markup-quote&#34;&gt;main difference of our technology from other similar associative technologies&lt;/span&gt; is that it has a solid theoretical background, a unified data modeling architecture and at the same time it is distinct in its design and implementation.&lt;/p&gt;
+&lt;p&gt;In terms of the architectural design TRIADB is based on &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000107/&#34;&gt;&lt;strong&gt;associative&lt;/strong&gt;, &lt;strong&gt;semiotic&lt;/strong&gt;, &lt;strong&gt;hypergraph&lt;/strong&gt; technology&lt;/a&gt; pioneered by &lt;a href=&#34;https://healis.eu/en/about/#athanassios&#34;&gt;Dr. Athanassios I. Hatzis&lt;/a&gt;. Foundational principles, theoretical formalization and ontological dimensions of the framework and the data model are &lt;a href=&#34;https://healis.eu/en/project/r3dm/#cross-references&#34;&gt;dating back to the year 2012&lt;/a&gt;. Our technology shares certain similarities with &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000104/&#34;&gt;Qlik&lt;/a&gt; associative technology, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000002/&#34;&gt;AtomicDB and X10SYS&lt;/a&gt; associative technology, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000103/#associative-model&#34;&gt;Sentences&lt;/a&gt; associative data model, &lt;a href=&#34;%7B%7Bbase_path%7D%7D/r3dm_project/post000101/&#34;&gt;Topic Maps&lt;/a&gt; data model and &lt;a href=&#34;https://en.wikipedia.org/wiki/Correlation_database&#34;&gt;correlation database model&lt;/a&gt;. The &lt;span class=&#34;markup-quote&#34;&gt;main difference of our technology from other similar associative technologies&lt;/span&gt; is that it has a solid theoretical background, a unified data modeling architecture and at the same time it is distinct in its design and implementation.&lt;/p&gt;
 &lt;h2 id=&#34;architectural-overview-white-paper&#34;&gt;Architectural Overview (White Paper)&lt;/h2&gt;
 &lt;div class=&#34;responsive-wrap&#34;&gt;
 	&lt;object data=&#34;/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
-		&lt;embed src=&#34;http://healis.eu/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
-			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;http://healis.eu/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+		&lt;embed src=&#34;https://healis.eu/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;https://healis.eu/documents/WP-TriaClick-Architectural-Overview-Final.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
 			instead. Thanks!&lt;/em&gt;
 	&lt;/object&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;implementations&#34;&gt;Implementations&lt;/h2&gt;
 &lt;p&gt;There are four TRIADB prototypes implemented:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;TRIADB on &lt;a href=&#34;http://healis.eu/en/talk/triadb_wolfram/&#34;&gt;OrientDB with Mathematica&lt;/a&gt; - 2016&lt;/li&gt;
-&lt;li&gt;TRIADB on &lt;a href=&#34;http://healis.eu/en/talk/triadb_connected_data/&#34;&gt;Intersystems Cache with Python&lt;/a&gt; - 2017&lt;/li&gt;
+&lt;li&gt;TRIADB on &lt;a href=&#34;https://healis.eu/en/talk/triadb_wolfram/&#34;&gt;OrientDB with Mathematica&lt;/a&gt; - 2016&lt;/li&gt;
+&lt;li&gt;TRIADB on &lt;a href=&#34;https://healis.eu/en/talk/triadb_connected_data/&#34;&gt;Intersystems Cache with Python&lt;/a&gt; - 2017&lt;/li&gt;
 &lt;li&gt;TRIADB on Redis with Python - 2018&lt;/li&gt;
-&lt;li&gt;TRIADB on &lt;a href=&#34;http://healis.eu/en/post/20191025/&#34;&gt;MariaDB and ClickHouse with Python&lt;/a&gt; - 2019&lt;/li&gt;
+&lt;li&gt;TRIADB on &lt;a href=&#34;https://healis.eu/en/post/20191025/&#34;&gt;MariaDB and ClickHouse with Python&lt;/a&gt; - 2019&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the last open-source release of TRIADB, MariaDB stores data dictionary information and ClickHouse data storage engines are used for processing and querying data. The associative, semiotic, hypergraph engine has a proprietary licence, although the sources are included in the release, and it is given the codename TriaClick.&lt;/p&gt;
 &lt;h2 id=&#34;conference-presentations&#34;&gt;Conference Presentations&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;16/11/2017&lt;/strong&gt; - &lt;a href=&#34;http://healis.eu/en/talk/triadb_connected_data/&#34;&gt;Connected Data London Conference&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;19/06/2017&lt;/strong&gt; - &lt;a href=&#34;http://healis.eu/en/talk/triadb_wolfram/&#34;&gt;European Wolfram Technology Conference in Amsterdam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;16/11/2017&lt;/strong&gt; - &lt;a href=&#34;https://healis.eu/en/talk/triadb_connected_data/&#34;&gt;Connected Data London Conference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;19/06/2017&lt;/strong&gt; - &lt;a href=&#34;https://healis.eu/en/talk/triadb_wolfram/&#34;&gt;European Wolfram Technology Conference in Amsterdam&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;key-differentiating-factors&#34;&gt;Key Differentiating Factors&lt;/h2&gt;
 &lt;p&gt;The following is a list of technical specifications and features in the design and implementation of TRIADB. This same list is what makes &lt;span class=&#34;markup-quote&#34;&gt;TRIADB a unique and valuable product&lt;/span&gt;:&lt;/p&gt;
@@ -206,10 +206,10 @@ OOP is perhaps the most popular programming paradigm and yet because of the SQL 
     
     <item>
       <title>Back to the roots, Relational Data Model</title>
-      <link>http://healis.eu/en/post/20180310/</link>
+      <link>https://healis.eu/en/post/20180310/</link>
       <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20180310/</guid>
+      <guid>https://healis.eu/en/post/20180310/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -221,8 +221,8 @@ OOP is perhaps the most popular programming paradigm and yet because of the SQL 
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;back-to-the-roots&#34;&gt;Back to the roots&lt;/h2&gt;
-&lt;p&gt;Recently, I realized that the &lt;strong&gt;associative, semiotic, hypergraph&lt;/strong&gt;, or in short the &lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt;, technology framework we propose to be adopted in database management systems can be considered in many ways an extension to &lt;a href=&#34;https://en.wikipedia.org/wiki/Edgar_F._Codd&#34;&gt;Codd&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_model&#34;&gt;Relational Model&lt;/a&gt;. I am aware that this is a big claim and certainly this is not the place or the time to lay down my arguments, suffice it to say how this occurred to me.&lt;/p&gt;
-&lt;p&gt;I have partially implemented &lt;a href=&#34;http://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt; technology twice on top of two different &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_store&#34;&gt;data stores&lt;/a&gt; and I noticed that those &lt;strong&gt;add and get operations&lt;/strong&gt; we defined are closely related to Codd&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_algebra&#34;&gt;relational algebra operations&lt;/a&gt;, while data sets, i.e. domains, and a user defined type system match the &lt;a href=&#34;https://en.wikipedia.org/wiki/Set_(mathematics)&#34;&gt;sets defined in mathematics&lt;/a&gt; and relational theory. Coincidentally Codd&amp;rsquo;s Relational logic goes back to Aristotle and the corner stone of our technology, which is the &lt;a href=&#34;http://healis.eu/en/project/r3dm/#computational-semiotic-triangle&#34;&gt;computational semiotic triangle&lt;/a&gt;, goes back to Aristotle too. I will briefly mention that one basic difference is that both the heading set and the body tuples of the Relation, in fact everything, are transformed and uniformly represented with numerical key references. Therefore it can also be called &lt;strong&gt;Reference Database Management System (RDBMS)&lt;/strong&gt;. All these are simply good indications. I believe we are on the right track.&lt;/p&gt;
+&lt;p&gt;Recently, I realized that the &lt;strong&gt;associative, semiotic, hypergraph&lt;/strong&gt;, or in short the &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt;, technology framework we propose to be adopted in database management systems can be considered in many ways an extension to &lt;a href=&#34;https://en.wikipedia.org/wiki/Edgar_F._Codd&#34;&gt;Codd&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_model&#34;&gt;Relational Model&lt;/a&gt;. I am aware that this is a big claim and certainly this is not the place or the time to lay down my arguments, suffice it to say how this occurred to me.&lt;/p&gt;
+&lt;p&gt;I have partially implemented &lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt; technology twice on top of two different &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_store&#34;&gt;data stores&lt;/a&gt; and I noticed that those &lt;strong&gt;add and get operations&lt;/strong&gt; we defined are closely related to Codd&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_algebra&#34;&gt;relational algebra operations&lt;/a&gt;, while data sets, i.e. domains, and a user defined type system match the &lt;a href=&#34;https://en.wikipedia.org/wiki/Set_(mathematics)&#34;&gt;sets defined in mathematics&lt;/a&gt; and relational theory. Coincidentally Codd&amp;rsquo;s Relational logic goes back to Aristotle and the corner stone of our technology, which is the &lt;a href=&#34;https://healis.eu/en/project/r3dm/#computational-semiotic-triangle&#34;&gt;computational semiotic triangle&lt;/a&gt;, goes back to Aristotle too. I will briefly mention that one basic difference is that both the heading set and the body tuples of the Relation, in fact everything, are transformed and uniformly represented with numerical key references. Therefore it can also be called &lt;strong&gt;Reference Database Management System (RDBMS)&lt;/strong&gt;. All these are simply good indications. I believe we are on the right track.&lt;/p&gt;
 &lt;p&gt;The truth is, and I will quote &lt;a href=&#34;https://en.wikipedia.org/wiki/Christopher_J._Date&#34;&gt;Chris Date&lt;/a&gt; here, that:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;if you are proposing to replace technology A by technology B first is counted on you to understand technology A and then it is counted on you that there is some problem that technology A does not solve and technology B does solve&lt;/em&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
@@ -266,10 +266,10 @@ OOP is perhaps the most popular programming paradigm and yet because of the SQL 
     
     <item>
       <title>Are our old data model standards out of shape ?</title>
-      <link>http://healis.eu/en/post/20170709/</link>
+      <link>https://healis.eu/en/post/20170709/</link>
       <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20170709/</guid>
+      <guid>https://healis.eu/en/post/20170709/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -290,7 +290,7 @@ OOP is perhaps the most popular programming paradigm and yet because of the SQL 
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Both Topic Maps and RDF/OWL exhibit signs of aging. In my opinion these signs do not indicate maturity levels but on the contrary they signal a re-examination of the data modeling, information representation problem. There is an emergent need to unify and exchange transformations between serialization formats (XML, JSON, etc), (graph) DBMS data model standards and semantic web data models.&lt;/p&gt;
-&lt;p&gt;Hence this is my speech at European Wolfram Technology Conference 2017 about a new data modeling framework &lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt; that is implemented on top of OrientDB graph database and coded in Wolfram Mathematica.&lt;/p&gt;
+&lt;p&gt;Hence this is my speech at European Wolfram Technology Conference 2017 about a new data modeling framework &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt; that is implemented on top of OrientDB graph database and coded in Wolfram Mathematica.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/BZleqH7iMng&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -312,7 +312,7 @@ OOP is perhaps the most popular programming paradigm and yet because of the SQL 
 &lt;code&gt;tuple instance : 233:1[85:6, 91:2, 34:9]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;The vocabulary of relational model (header) permits to have &lt;strong&gt;ordered tuples&lt;/strong&gt; of values (body), the numerical reference vectors of R3DM/S3DM model permits to have &lt;strong&gt;unordered tuples&lt;/strong&gt; and there is a handle that represents each tuple instance. In RDF to represent a tuple you have to break it down into triples where you repeat the &lt;code&gt;subject&lt;/code&gt;. And values (&lt;code&gt;objects&lt;/code&gt;) &lt;strong&gt;must be semantically accompanied by the predicate&lt;/strong&gt;. Thus R3DM/S3DM associative representation with numerical references is simpler and it proves to be more efficient with indexing too !&lt;/p&gt;
 &lt;h3 id=&#34;separate-abstraction-layers&#34;&gt;Separate abstraction layers&lt;/h3&gt;
-&lt;p&gt;It is important to separate digital information resources, e.g. web pages, files, folders, audio/video recordings, images, text documents etc from real things e.g. humans, organizations, objects, etc. It is also important to distinguish between a flexible model and its instances. But it is equally or more important to separate any abstract concept from data values (numerical, string, bits, etc). Because the first is the vehicle for human thinking and the second is the way computers are processing data. Therefore this gap has to be bridged somehow. R3DM/S3DM achieves this with an extra abstraction layer where everything is connected with &lt;a href=&#34;http://healis.eu/en/post/20150320/&#34;&gt;Atomic Information Resource&lt;/a&gt; (AIR) units. This AIR unit defines also the level of granularity. Instead of building everything with Topics, you use AIR units.&lt;/p&gt;
+&lt;p&gt;It is important to separate digital information resources, e.g. web pages, files, folders, audio/video recordings, images, text documents etc from real things e.g. humans, organizations, objects, etc. It is also important to distinguish between a flexible model and its instances. But it is equally or more important to separate any abstract concept from data values (numerical, string, bits, etc). Because the first is the vehicle for human thinking and the second is the way computers are processing data. Therefore this gap has to be bridged somehow. R3DM/S3DM achieves this with an extra abstraction layer where everything is connected with &lt;a href=&#34;https://healis.eu/en/post/20150320/&#34;&gt;Atomic Information Resource&lt;/a&gt; (AIR) units. This AIR unit defines also the level of granularity. Instead of building everything with Topics, you use AIR units.&lt;/p&gt;
 &lt;h3 id=&#34;granularity-with-air-units&#34;&gt;Granularity with AIR units&lt;/h3&gt;
 &lt;p&gt;But the AIR unit has the advantage that can be indexed easily, it is represented with a numerical vector, an address that can pinpoint the exact location of an Entity-Attribute-Value item. It is similar to an IPv4 address of a machine (e.g. domain, network, server, node/device/machine). My question is the following. &lt;span class=&#34;markup-quote&#34;&gt;If we use such addresses for connecting machines on the internet, why don&amp;rsquo;t we establish a similar standard for connecting data ?&lt;/span&gt; An AIR unit is the fundamental powerful construction unit for smart data. It knows its siblings, its parent, its type, its nexus, its associated AIR units (nodes). A tuple of such units can stand on its own, without a header and its completely meaningful because the context has already been defined.&lt;/p&gt;
 &lt;h3 id=&#34;filtering-instead-of-querying&#34;&gt;Filtering instead of querying&lt;/h3&gt;

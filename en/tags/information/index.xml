@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Information on HEALIS</title>
-    <link>http://healis.eu/en/tags/information/</link>
+    <link>https://healis.eu/en/tags/information/</link>
     <description>Recent content in Information on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
     <lastBuildDate>Wed, 30 Oct 2019 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="http://healis.eu/en/tags/information/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://healis.eu/en/tags/information/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Helicopter view of Graph Networks in DBMS</title>
-      <link>http://healis.eu/en/post/20191030/</link>
+      <link>https://healis.eu/en/post/20191030/</link>
       <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20191030/</guid>
+      <guid>https://healis.eu/en/post/20191030/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -40,7 +40,7 @@
 &lt;h2 id=&#34;the-new-brave-age-of-hyperlinked-data&#34;&gt;The new brave age of hyperlinked data&lt;/h2&gt;
 &lt;p&gt;But there is another factor more important than technology, the need to provide a business insight, understanding and/or solution to real world problems with increasing complexity. After all many recognize that this was the driving force behind the NoSQL movement that started ten years ago. Out of the three main technological categories of database products, key-value, document-hierarchical and graph networks, the last one emerged with significant importance for the future of IT business for many reasons that will not be analysed here. Suffice to say that WWW, the most advanced and popular information system, is the biggest graph network of documents and other resources in the history of human mankind. Today we reached the point in time that the maturity of NoSQL movement met the evolution of WWW but the question remains on how exactly these two will be married to serve human needs. A quick and sort answer is by &lt;strong&gt;hyperlinking data in the context of information&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;technical-questions-for-hyperlinking-data&#34;&gt;Technical questions for hyperlinking data&lt;/h2&gt;
-&lt;p&gt;Therefore the aim has been set but the competitive database, semantic and web technologies out there makes it too difficult for many to rise above the specifics. That is where a &lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;multi-layer perspective&lt;/a&gt; is needed to embrace the problem of hyperlinking data.&lt;/p&gt;
+&lt;p&gt;Therefore the aim has been set but the competitive database, semantic and web technologies out there makes it too difficult for many to rise above the specifics. That is where a &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;multi-layer perspective&lt;/a&gt; is needed to embrace the problem of hyperlinking data.&lt;/p&gt;
 &lt;p&gt;Does this mean users are going to abandon their favorite popular SQL row-based, column-based, document based or existing triple store and property graph databases ? No, not at all but this new technology should integrate them in the large picture which takes on account the following questions as it concerns the hyperlinked graph data network :&lt;/p&gt;
 &lt;h3 id=&#34;physical-layer&#34;&gt;Physical Layer&lt;/h3&gt;
 &lt;p&gt;Although many vendors consider a native graph network storage layer as an advancement in graph databases, this approach has the following drawbacks:&lt;/p&gt;
@@ -78,13 +78,13 @@
 &lt;h3 id=&#34;conceptual-layer&#34;&gt;Conceptual layer&lt;/h3&gt;
 &lt;p&gt;I think RDF graphs and labeled property graphs and Topic Map graphs (hardly anyone talks anymore about this standard) and even entity-relationship graph in relational theory have varying types of constructs with big differences in meaning and use. Entities, attributes, properties, data resources, relationships, relations, associations, items, instances and many other concepts make the IT babel at the business, end-user level.&lt;/p&gt;
 &lt;p&gt;Here lies a major source of confusion for the newcomer, I used to be one of them, which is the &lt;strong&gt;distinction between classes and instances, metadata and data, terminological and assertion components&lt;/strong&gt;. This distinction as many others in IT semantic world is artificial, nevertheless it plays an extremely important role in programming, in data retrieval and even in inferencing mechanisms.&lt;/p&gt;
-&lt;p&gt;If you think you can handle this distinction easily, I urge you to think again, because in my opinion these two concepts must be clearly separable and at the same time they have to be related like the &lt;a href=&#34;http://healis.eu/en/post/20190624/&#34;&gt;hand mold and the letter types in typography&lt;/a&gt;. On the contrary I do not see this happening in our modern graph technologies, time does not permit to expand this argument but it is entangled with the following important observation.&lt;/p&gt;
+&lt;p&gt;If you think you can handle this distinction easily, I urge you to think again, because in my opinion these two concepts must be clearly separable and at the same time they have to be related like the &lt;a href=&#34;https://healis.eu/en/post/20190624/&#34;&gt;hand mold and the letter types in typography&lt;/a&gt;. On the contrary I do not see this happening in our modern graph technologies, time does not permit to expand this argument but it is entangled with the following important observation.&lt;/p&gt;
 &lt;h3 id=&#34;by-reference-vs-by-value&#34;&gt;By reference vs. by value&lt;/h3&gt;
 &lt;p&gt;Those of us familiar with programming and the internals of computing know that there is another critical, fundamental distinction in data processing. &lt;strong&gt;How do you access the datum by reference or by value ?&lt;/strong&gt;_ This was the moment in time that RDF/OWL framework presented the first signs of derailment. First they came up with the idea of universal resource locator (URL), then the concept was elevated to the universal resource identifier (URI) and the result was the web identity crisis for those old enough to remember &lt;a href=&#34;https://ontopia.net/topicmaps/materials/identitycrisis.html&#34;&gt;the clash with the proponents of Topic Maps data modeling framework&lt;/a&gt;. If you ask me, &lt;a href=&#34;http://www.semantic-web-journal.net/content/semantic-web-identity-crisis-search-trivialities-never-were&#34;&gt;that crisis has not been resolved yet&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The main reason behind web identity crisis is the use of namespace addressing, to connect, identify and locate data. The notion of web address has been semantically overloaded because of its textual form. On the contrary internet protocol for addressing and usually primary key mechanism of databases are numerical. Perhaps they thought that this way it would have been easier for developers and machines to do the linkage in the same way they use HTML anchoring. But I guess this is more or less a fallacy of TimBL&amp;rsquo;s linked data network where it was designed primarily for documents (html pages) not record-base (relational) data. The origin of this misconception is &lt;a href=&#34;https://en.wikipedia.org/wiki/Memex&#34;&gt;Memex&lt;/a&gt; and it is continued in our days with the invention of many different encodings, including RDFa, Microdata and JSON-LD with the intention of generating manual or semi-automated linked data in semi-structured, hierarchical forms and html documents.&lt;/p&gt;
 &lt;p&gt;Global Giant Graph (GGG) or WWW 3.0 will become a reality only if W3C consortium admit that they have to build likewise IP numerical addressing schema for concepts in data models and for hyperlinked data. It is this new protocol that will permit networking at semantic level, it is going to be the same protocol that we are going to use for identification purposes, the same protocol that will make each data element traceable and connectable, the same protocol that will be used in number-crunching computers. Moreover the whole process of constructing hyperlinked data, especially from structured data resources (databases), will be fully automated and hidden in the same way TCP/IP is hidden from internet users.&lt;/p&gt;
 &lt;p&gt;Epilogue
-The reader may realize that I have only touched various parts of the &amp;ldquo;elephant in the room&amp;rdquo;. But those key points that I tried to make digestible rose from my experience with semantic and database technologies and eventually from my long standing personal effort to develop &lt;a href=&#34;http://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; computational semiotics framework. This way I hope that I managed to enlighten a different path not in theory but in practice. And if there is one thing to remind you something from this article and assist you in following this path then let it be &lt;strong&gt;&lt;a href=&#34;http://healis.eu/en/post/20190624/&#34;&gt;granular computing&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+The reader may realize that I have only touched various parts of the &amp;ldquo;elephant in the room&amp;rdquo;. But those key points that I tried to make digestible rose from my experience with semantic and database technologies and eventually from my long standing personal effort to develop &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; computational semiotics framework. This way I hope that I managed to enlighten a different path not in theory but in practice. And if there is one thing to remind you something from this article and assist you in following this path then let it be &lt;strong&gt;&lt;a href=&#34;https://healis.eu/en/post/20190624/&#34;&gt;granular computing&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/helicopter-view-graph-networks-dbms-athanassios-hatzis/&#34;&gt;LinkedIn - Published Post&lt;/a&gt;&lt;/li&gt;
@@ -98,10 +98,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>About data granularity</title>
-      <link>http://healis.eu/en/post/20190624/</link>
+      <link>https://healis.eu/en/post/20190624/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20190624/</guid>
+      <guid>https://healis.eu/en/post/20190624/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -118,7 +118,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
 &lt;p&gt;And that kind of human interpretation I will call it information, i.e. you put data in a form, in some perspective, so you can get meaning out of them. In that sense data in a computer does not differ much from printed letters in a book, or paint in a canvas, or stone in a sculpture. From that point of view computer is simply an advanced form of a medium, a sophisticated printing press where 0&amp;rsquo;s and 1&amp;rsquo;s take the place of the movable individual metal letters, i.e. a computerized movable type printing.&lt;/p&gt;
 &lt;h2 id=&#34;conceptual-computational-semiotics-framework&#34;&gt;Conceptual, computational semiotics framework&lt;/h2&gt;
-&lt;p&gt;Once again, it&amp;rsquo;s only structured data you have, our mind is doing all the rest because of the power of &lt;a href=&#34;https://en.wikipedia.org/wiki/Semiosis&#34;&gt;semiosis&lt;/a&gt;. One can also ask, is there anything in our universe that is unstructured ? Yes there is, concept is unstructured because it is an abstract thing. When you represent the concept, or you realize, materialize it in our realm then you have structure again. A computational model of representation which is semiotic in its nature is &lt;a href=&#34;http://healis.eu/en/s3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;. And here is a memorable type of formula that describes fully the semiotic nature of this data model.&lt;/p&gt;
+&lt;p&gt;Once again, it&amp;rsquo;s only structured data you have, our mind is doing all the rest because of the power of &lt;a href=&#34;https://en.wikipedia.org/wiki/Semiosis&#34;&gt;semiosis&lt;/a&gt;. One can also ask, is there anything in our universe that is unstructured ? Yes there is, concept is unstructured because it is an abstract thing. When you represent the concept, or you realize, materialize it in our realm then you have structure again. A computational model of representation which is semiotic in its nature is &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;. And here is a memorable type of formula that describes fully the semiotic nature of this data model.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;(R3DM): Representation ↦ Resource + Reference + Referent&lt;/p&gt;
@@ -158,10 +158,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>Where is the gap in data modeling ?</title>
-      <link>http://healis.eu/en/post/20190615/</link>
+      <link>https://healis.eu/en/post/20190615/</link>
       <pubDate>Sat, 15 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20190615/</guid>
+      <guid>https://healis.eu/en/post/20190615/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -179,7 +179,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;li&gt;What about the building blocks, for example in RDF you have triples, in relational you have relations (tables) and tuples. Is that all ? Can we make better building blocks to connect data or information ?&lt;/li&gt;
 &lt;li&gt;And last but not least, at a physical layer, and I believe that is exactly &lt;strong&gt;where the gap lies between pure data modelers/architects and database engineers/developers&lt;/strong&gt;, you have row, column, document, native graph structures. Are you totally convinced that the best way to physically implement a graph data-information model is with a native graph structure on permanent storage ?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;If you ask me to answer these questions I suggest you read more information about &lt;a href=&#34;http://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; conceptual, computational semiotics framework and the related projects &lt;a href=&#34;http://healis.eu/en/hmorph/&#34;&gt;HyperMorph&lt;/a&gt; and &lt;a href=&#34;http://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt;. This is what I have been involved with for the last ten years.&lt;/p&gt;
+&lt;p&gt;If you ask me to answer these questions I suggest you read more information about &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; conceptual, computational semiotics framework and the related projects &lt;a href=&#34;https://healis.eu/en/hmorph/&#34;&gt;HyperMorph&lt;/a&gt; and &lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt;. This is what I have been involved with for the last ten years.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The nice thing with social media is that if you deserve to get some good feedback from professionals and experts of the field in a post like this one you might decide to extend it. That&amp;rsquo;s exactly what I did in the following few paragraphs to respond in a better way to comments in my post.&lt;/em&gt;_&lt;/p&gt;
 &lt;h2 id=&#34;business-vs-technological-factors&#34;&gt;Business vs Technological Factors&lt;/h2&gt;
 &lt;p&gt;I believe the resurgence of no-SQL movement (2009), which is highly related to data modeling, started out of the emergent need of companies-users to deal with the velocity, volume, variety and other properties of distributed data resources. That same movement pushed forward our technological boundaries to create better DBMS and BI, web/desktop applications.&lt;/p&gt;
@@ -199,10 +199,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>Yet another query language, really ?</title>
-      <link>http://healis.eu/en/post/20180403/</link>
+      <link>https://healis.eu/en/post/20180403/</link>
       <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20180403/</guid>
+      <guid>https://healis.eu/en/post/20180403/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -224,8 +224,8 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;li&gt;updates&lt;/li&gt;
 &lt;li&gt;joins&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;That is why in a &lt;a href=&#34;http://healis.eu/en/post/20180310/&#34;&gt;previous article&lt;/a&gt; of mine I have proposed to return back to the roots and investigate better the Relational Algebra and these reasons that made both SQL and NoSQL DBMS to deviate from the original relational model path.&lt;/p&gt;
-&lt;p&gt;For those that follow my posts, they are aware that I am not speaking purely from a theoretical point of view. There is an alternative data model (&lt;a href=&#34;http://healis.eu/en/s3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;) that I propose, a particular software technology based on this (&lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;Associative Semiotic Hypergraph&lt;/a&gt;) and two prototypes (&lt;a href=&#34;http://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt;, &lt;a href=&#34;http://healis.eu/en/project/hypermorph/&#34;&gt;HyperMorph&lt;/a&gt;) implemented and demonstrated with an intuitive functional declarative way to query things. Nevertheless performance is a top priority, and that is what I am currently investigating.&lt;/p&gt;
+&lt;p&gt;That is why in a &lt;a href=&#34;https://healis.eu/en/post/20180310/&#34;&gt;previous article&lt;/a&gt; of mine I have proposed to return back to the roots and investigate better the Relational Algebra and these reasons that made both SQL and NoSQL DBMS to deviate from the original relational model path.&lt;/p&gt;
+&lt;p&gt;For those that follow my posts, they are aware that I am not speaking purely from a theoretical point of view. There is an alternative data model (&lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;) that I propose, a particular software technology based on this (&lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;Associative Semiotic Hypergraph&lt;/a&gt;) and two prototypes (&lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt;, &lt;a href=&#34;https://healis.eu/en/project/hypermorph/&#34;&gt;HyperMorph&lt;/a&gt;) implemented and demonstrated with an intuitive functional declarative way to query things. Nevertheless performance is a top priority, and that is what I am currently investigating.&lt;/p&gt;
 &lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/yet-another-query-language-really-athanassios-hatzis-phd/&#34;&gt;LinkedIn - Published Post&lt;/a&gt;&lt;/li&gt;
@@ -239,10 +239,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>Back to the roots, Relational Data Model</title>
-      <link>http://healis.eu/en/post/20180310/</link>
+      <link>https://healis.eu/en/post/20180310/</link>
       <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20180310/</guid>
+      <guid>https://healis.eu/en/post/20180310/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -254,8 +254,8 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;back-to-the-roots&#34;&gt;Back to the roots&lt;/h2&gt;
-&lt;p&gt;Recently, I realized that the &lt;strong&gt;associative, semiotic, hypergraph&lt;/strong&gt;, or in short the &lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt;, technology framework we propose to be adopted in database management systems can be considered in many ways an extension to &lt;a href=&#34;https://en.wikipedia.org/wiki/Edgar_F._Codd&#34;&gt;Codd&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_model&#34;&gt;Relational Model&lt;/a&gt;. I am aware that this is a big claim and certainly this is not the place or the time to lay down my arguments, suffice it to say how this occurred to me.&lt;/p&gt;
-&lt;p&gt;I have partially implemented &lt;a href=&#34;http://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt; technology twice on top of two different &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_store&#34;&gt;data stores&lt;/a&gt; and I noticed that those &lt;strong&gt;add and get operations&lt;/strong&gt; we defined are closely related to Codd&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_algebra&#34;&gt;relational algebra operations&lt;/a&gt;, while data sets, i.e. domains, and a user defined type system match the &lt;a href=&#34;https://en.wikipedia.org/wiki/Set_(mathematics)&#34;&gt;sets defined in mathematics&lt;/a&gt; and relational theory. Coincidentally Codd&amp;rsquo;s Relational logic goes back to Aristotle and the corner stone of our technology, which is the &lt;a href=&#34;http://healis.eu/en/project/r3dm/#computational-semiotic-triangle&#34;&gt;computational semiotic triangle&lt;/a&gt;, goes back to Aristotle too. I will briefly mention that one basic difference is that both the heading set and the body tuples of the Relation, in fact everything, are transformed and uniformly represented with numerical key references. Therefore it can also be called &lt;strong&gt;Reference Database Management System (RDBMS)&lt;/strong&gt;. All these are simply good indications. I believe we are on the right track.&lt;/p&gt;
+&lt;p&gt;Recently, I realized that the &lt;strong&gt;associative, semiotic, hypergraph&lt;/strong&gt;, or in short the &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt;, technology framework we propose to be adopted in database management systems can be considered in many ways an extension to &lt;a href=&#34;https://en.wikipedia.org/wiki/Edgar_F._Codd&#34;&gt;Codd&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_model&#34;&gt;Relational Model&lt;/a&gt;. I am aware that this is a big claim and certainly this is not the place or the time to lay down my arguments, suffice it to say how this occurred to me.&lt;/p&gt;
+&lt;p&gt;I have partially implemented &lt;a href=&#34;https://healis.eu/en/project/triadb/&#34;&gt;TRIADB&lt;/a&gt; technology twice on top of two different &lt;a href=&#34;https://en.wikipedia.org/wiki/Data_store&#34;&gt;data stores&lt;/a&gt; and I noticed that those &lt;strong&gt;add and get operations&lt;/strong&gt; we defined are closely related to Codd&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Relational_algebra&#34;&gt;relational algebra operations&lt;/a&gt;, while data sets, i.e. domains, and a user defined type system match the &lt;a href=&#34;https://en.wikipedia.org/wiki/Set_(mathematics)&#34;&gt;sets defined in mathematics&lt;/a&gt; and relational theory. Coincidentally Codd&amp;rsquo;s Relational logic goes back to Aristotle and the corner stone of our technology, which is the &lt;a href=&#34;https://healis.eu/en/project/r3dm/#computational-semiotic-triangle&#34;&gt;computational semiotic triangle&lt;/a&gt;, goes back to Aristotle too. I will briefly mention that one basic difference is that both the heading set and the body tuples of the Relation, in fact everything, are transformed and uniformly represented with numerical key references. Therefore it can also be called &lt;strong&gt;Reference Database Management System (RDBMS)&lt;/strong&gt;. All these are simply good indications. I believe we are on the right track.&lt;/p&gt;
 &lt;p&gt;The truth is, and I will quote &lt;a href=&#34;https://en.wikipedia.org/wiki/Christopher_J._Date&#34;&gt;Chris Date&lt;/a&gt; here, that:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;if you are proposing to replace technology A by technology B first is counted on you to understand technology A and then it is counted on you that there is some problem that technology A does not solve and technology B does solve&lt;/em&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
@@ -299,10 +299,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>The wizards of stored computer program and the next generation of programmers</title>
-      <link>http://healis.eu/en/post/20170910/</link>
+      <link>https://healis.eu/en/post/20170910/</link>
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20170910/</guid>
+      <guid>https://healis.eu/en/post/20170910/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -321,7 +321,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;h2 id=&#34;a-programming-language-with-a-built-in-database&#34;&gt;A programming language with a built-in database&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GCOS_intro&#34;&gt;Cache ObjectScript&lt;/a&gt; does make the difference from many aspects. Here I would like to emphasize its strong characteristic of a built-in database with sub-scripted arrays and multi-dimensional keys similar to the variables used by most programming languages to access main memory. Let me repeat this, you get a programming language with a built-in &lt;a href=&#34;https://en.wikipedia.org/wiki/Multi-model_database&#34;&gt;multi-model database&lt;/a&gt;. I think this is a fundamental aspect that software pioneers have been missing when they invented new programming languages or new sql databases. They are missing the innate common characteristic that both databases and programming languages share, which is the pointer, reference based logic. What do you think ?&lt;/p&gt;
 &lt;h2 id=&#34;epilogue&#34;&gt;Epilogue&lt;/h2&gt;
-&lt;p&gt;So I believe it&amp;rsquo;s time to return back and fix this for new generation multi-model databases AND post-modern programming languages too. We have already made a good start and we believe &lt;strong&gt;M&lt;/strong&gt; will make history again in database management and modeling with our &lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;Associative Semiotic Hypergraph Engine&lt;/a&gt; that will be built on top of Intersystems Cache powerful &lt;a href=&#34;http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GGBL_structure&#34;&gt;global data structure&lt;/a&gt; and accompanied with a popular and easy to program client API in Python for data analytics.&lt;/p&gt;
+&lt;p&gt;So I believe it&amp;rsquo;s time to return back and fix this for new generation multi-model databases AND post-modern programming languages too. We have already made a good start and we believe &lt;strong&gt;M&lt;/strong&gt; will make history again in database management and modeling with our &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;Associative Semiotic Hypergraph Engine&lt;/a&gt; that will be built on top of Intersystems Cache powerful &lt;a href=&#34;http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GGBL_structure&#34;&gt;global data structure&lt;/a&gt; and accompanied with a popular and easy to program client API in Python for data analytics.&lt;/p&gt;
 &lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/wizards-stored-computer-program-next-generation-hatzis-phd&#34;&gt;LinkedIn - 20170910 Article&lt;/a&gt;&lt;/li&gt;
@@ -338,10 +338,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>Are our old data model standards out of shape ?</title>
-      <link>http://healis.eu/en/post/20170709/</link>
+      <link>https://healis.eu/en/post/20170709/</link>
       <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20170709/</guid>
+      <guid>https://healis.eu/en/post/20170709/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -362,7 +362,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Both Topic Maps and RDF/OWL exhibit signs of aging. In my opinion these signs do not indicate maturity levels but on the contrary they signal a re-examination of the data modeling, information representation problem. There is an emergent need to unify and exchange transformations between serialization formats (XML, JSON, etc), (graph) DBMS data model standards and semantic web data models.&lt;/p&gt;
-&lt;p&gt;Hence this is my speech at European Wolfram Technology Conference 2017 about a new data modeling framework &lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt; that is implemented on top of OrientDB graph database and coded in Wolfram Mathematica.&lt;/p&gt;
+&lt;p&gt;Hence this is my speech at European Wolfram Technology Conference 2017 about a new data modeling framework &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt; that is implemented on top of OrientDB graph database and coded in Wolfram Mathematica.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/BZleqH7iMng&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -384,7 +384,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;code&gt;tuple instance : 233:1[85:6, 91:2, 34:9]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;The vocabulary of relational model (header) permits to have &lt;strong&gt;ordered tuples&lt;/strong&gt; of values (body), the numerical reference vectors of R3DM/S3DM model permits to have &lt;strong&gt;unordered tuples&lt;/strong&gt; and there is a handle that represents each tuple instance. In RDF to represent a tuple you have to break it down into triples where you repeat the &lt;code&gt;subject&lt;/code&gt;. And values (&lt;code&gt;objects&lt;/code&gt;) &lt;strong&gt;must be semantically accompanied by the predicate&lt;/strong&gt;. Thus R3DM/S3DM associative representation with numerical references is simpler and it proves to be more efficient with indexing too !&lt;/p&gt;
 &lt;h3 id=&#34;separate-abstraction-layers&#34;&gt;Separate abstraction layers&lt;/h3&gt;
-&lt;p&gt;It is important to separate digital information resources, e.g. web pages, files, folders, audio/video recordings, images, text documents etc from real things e.g. humans, organizations, objects, etc. It is also important to distinguish between a flexible model and its instances. But it is equally or more important to separate any abstract concept from data values (numerical, string, bits, etc). Because the first is the vehicle for human thinking and the second is the way computers are processing data. Therefore this gap has to be bridged somehow. R3DM/S3DM achieves this with an extra abstraction layer where everything is connected with &lt;a href=&#34;http://healis.eu/en/post/20150320/&#34;&gt;Atomic Information Resource&lt;/a&gt; (AIR) units. This AIR unit defines also the level of granularity. Instead of building everything with Topics, you use AIR units.&lt;/p&gt;
+&lt;p&gt;It is important to separate digital information resources, e.g. web pages, files, folders, audio/video recordings, images, text documents etc from real things e.g. humans, organizations, objects, etc. It is also important to distinguish between a flexible model and its instances. But it is equally or more important to separate any abstract concept from data values (numerical, string, bits, etc). Because the first is the vehicle for human thinking and the second is the way computers are processing data. Therefore this gap has to be bridged somehow. R3DM/S3DM achieves this with an extra abstraction layer where everything is connected with &lt;a href=&#34;https://healis.eu/en/post/20150320/&#34;&gt;Atomic Information Resource&lt;/a&gt; (AIR) units. This AIR unit defines also the level of granularity. Instead of building everything with Topics, you use AIR units.&lt;/p&gt;
 &lt;h3 id=&#34;granularity-with-air-units&#34;&gt;Granularity with AIR units&lt;/h3&gt;
 &lt;p&gt;But the AIR unit has the advantage that can be indexed easily, it is represented with a numerical vector, an address that can pinpoint the exact location of an Entity-Attribute-Value item. It is similar to an IPv4 address of a machine (e.g. domain, network, server, node/device/machine). My question is the following. &lt;span class=&#34;markup-quote&#34;&gt;If we use such addresses for connecting machines on the internet, why don&amp;rsquo;t we establish a similar standard for connecting data ?&lt;/span&gt; An AIR unit is the fundamental powerful construction unit for smart data. It knows its siblings, its parent, its type, its nexus, its associated AIR units (nodes). A tuple of such units can stand on its own, without a header and its completely meaningful because the context has already been defined.&lt;/p&gt;
 &lt;h3 id=&#34;filtering-instead-of-querying&#34;&gt;Filtering instead of querying&lt;/h3&gt;
@@ -405,10 +405,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>The three dimensions of AI and a fourth one as the key to unlock them</title>
-      <link>http://healis.eu/en/post/20170623/</link>
+      <link>https://healis.eu/en/post/20170623/</link>
       <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20170623/</guid>
+      <guid>https://healis.eu/en/post/20170623/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -432,7 +432,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 
 &lt;p&gt;This is not any perspective on AI, it is a perspective from the founders and pioneers of internet. Although there has been significant progress with first and second generation AI systems in reasoning, learning and perceiving, abstraction has not been part of the game. In fact Launchbury could not say much about this in his talk.&lt;/p&gt;
 &lt;p&gt;Nevertheless he explained clearly where we are heading in the &lt;strong&gt;third generation of AI systems&lt;/strong&gt;. Models and contextual information will play a critical role. But this is a pretty close match with &lt;a href=&#34;https://en.wikipedia.org/wiki/Semiosis&#34;&gt;Aristotle’s theory of semiosis&lt;/a&gt;. The mechanism of abstraction is related to the ideal world of models and the world of real objects. Those two worlds are bridged by symbols, signs and these create meaning in contextual information. So this is the objective of third generation AI.&lt;/p&gt;
-&lt;p&gt;It is not a coincidence that I have been investigating since 2012 how this &lt;a href=&#34;https://en.wikipedia.org/wiki/Triangle_of_reference&#34;&gt;triangle of meaning&lt;/a&gt; can be applied to the problem of information representation. Recently I have presented officially to the public &lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt; data modeling framework in &lt;a href=&#34;http://healis.eu/en/talk/triadb_wolfram/&#34;&gt;European Wolfram Technology Conference&lt;/a&gt;. In one of his talks Conrad Wolfram emphasized how important is abstraction to education and learning. But so far this mechanism of abstraction has not been computable. This is what we anticipate to see in the near future.&lt;/p&gt;
+&lt;p&gt;It is not a coincidence that I have been investigating since 2012 how this &lt;a href=&#34;https://en.wikipedia.org/wiki/Triangle_of_reference&#34;&gt;triangle of meaning&lt;/a&gt; can be applied to the problem of information representation. Recently I have presented officially to the public &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;R3DM/S3DM&lt;/a&gt; data modeling framework in &lt;a href=&#34;https://healis.eu/en/talk/triadb_wolfram/&#34;&gt;European Wolfram Technology Conference&lt;/a&gt;. In one of his talks Conrad Wolfram emphasized how important is abstraction to education and learning. But so far this mechanism of abstraction has not been computable. This is what we anticipate to see in the near future.&lt;/p&gt;
 &lt;p&gt;The mechanism of abstraction can unify these other three processes of perception-interpretation, learning, and reasoning. And it can also &lt;strong&gt;interconnect every thing on the internet, every bit of information, in the very same way our computers are interconnected with IP addresses&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;We are here to &lt;strong&gt;build powerful, meaningful relationships easily&lt;/strong&gt;. This is our mantra after all.&lt;/p&gt;
 &lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
@@ -444,10 +444,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>Data Modelling Topologies of a Graph Database</title>
-      <link>http://healis.eu/en/post/20170228/</link>
+      <link>https://healis.eu/en/post/20170228/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20170228/</guid>
+      <guid>https://healis.eu/en/post/20170228/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -494,12 +494,12 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;p&gt;There are two main differences between &lt;strong&gt;(1)&lt;/strong&gt; and &lt;strong&gt;(2)&lt;/strong&gt;. First, the type of edges in a property graph, by definition, is bidirectional. You can traverse any edge both ways, despite the fact there is a direction on the edge. On the contrary, with RDF, you have to define two labeled edges with opposite directions to achieve bidirectional linking. And secondly, in literal triples, object parts are properties of a subject part, but they are not first-class citizens and they are not embedded inside the structure of Entity nodes of a property graph.&lt;/p&gt;
 &lt;p&gt;I left the associative data model as the last thing to mention. &lt;strong&gt;R3DM/S3DM is the reincarnation of Topic Maps&lt;/strong&gt;, the de facto standard for the representation of associations. The following series of posts on associative data modeling is written with a hands-on practice style. It is an attempt to clear the information glut of many-to-many relationships (a.k.a associations) with a thorough examination of well-known data models and at the same time introduce R3DM/S3DM to the public.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/post/20160825/&#34;&gt;Part 1/6&lt;/a&gt; - Relation, Relationship, and Association&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/post/20160902/&#34;&gt;Part 2/6&lt;/a&gt; - Association in Topic Map Data Model&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/post/20160913/&#34;&gt;Part 3/6&lt;/a&gt; - Association in Property Graph Data Model&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/post/20161220/&#34;&gt;Part 4/6&lt;/a&gt; - Association in RDF Data Model and Sentences associative data model&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/post/20170211/&#34;&gt;Part 5/6&lt;/a&gt; - Qlik Associative Mode&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;Part 6/6&lt;/a&gt; - R3DM/S3DM Associative Semiotic Hypergraph Data Model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20160825/&#34;&gt;Part 1/6&lt;/a&gt; - Relation, Relationship, and Association&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20160902/&#34;&gt;Part 2/6&lt;/a&gt; - Association in Topic Map Data Model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20160913/&#34;&gt;Part 3/6&lt;/a&gt; - Association in Property Graph Data Model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20161220/&#34;&gt;Part 4/6&lt;/a&gt; - Association in RDF Data Model and Sentences associative data model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20170211/&#34;&gt;Part 5/6&lt;/a&gt; - Qlik Associative Mode&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;Part 6/6&lt;/a&gt; - R3DM/S3DM Associative Semiotic Hypergraph Data Model&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;epilogue&#34;&gt;Epilogue&lt;/h2&gt;
 &lt;p&gt;The verdict from this quick review on graph databases is that I have reasons to believe that associative data modeling is far more powerful and expressive than the other two. I foresee that DBMS vendors that will incorporate in their products R3DM/S3DM technology will eventually have a significant competitive advantage.&lt;/p&gt;
@@ -550,10 +550,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>A Quick Guide on How to Prevail in the Graph Database Arena</title>
-      <link>http://healis.eu/en/post/20170213/</link>
+      <link>https://healis.eu/en/post/20170213/</link>
       <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20170213/</guid>
+      <guid>https://healis.eu/en/post/20170213/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -586,7 +586,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;unlike other new database approaches, graphs cannot easily be subsumed by the leading relational database vendors because the architectural constraints of graphs do not fit easily within the relational paradigm - Philip Howard&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;He mentions that the two main variants on entity relationships are labeled property graphs and &lt;code&gt;subject-predicate-object&lt;/code&gt; triples. In practice, although the idea of relationships (associations) between entities is at the heart of Peter Chen&amp;rsquo;s Entity-Relationship model, &lt;a href=&#34;http://healis.eu/en/post/20160825#fig2&#34;&gt;&lt;strong&gt;Fig.2&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;http://healis.eu/en/post/20160825#fig3&#34;&gt;&lt;strong&gt;Fig.3&lt;/strong&gt;&lt;/a&gt;, there are subtle dissimilarities in its implementation on various graph databases. &lt;a href=&#34;http://healis.eu/en/about#athanassios&#34;&gt;A. Hatzis&lt;/a&gt;, in a &lt;a href=&#34;http://healis.eu/en/post/20170420/&#34;&gt;series of posts on associative data modeling&lt;/a&gt;, that is written with a hands-on practice style, attempts to clear the information glut of this topic with a thorough examination of graph data models.&lt;/p&gt;
+&lt;p&gt;He mentions that the two main variants on entity relationships are labeled property graphs and &lt;code&gt;subject-predicate-object&lt;/code&gt; triples. In practice, although the idea of relationships (associations) between entities is at the heart of Peter Chen&amp;rsquo;s Entity-Relationship model, &lt;a href=&#34;https://healis.eu/en/post/20160825#fig2&#34;&gt;&lt;strong&gt;Fig.2&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://healis.eu/en/post/20160825#fig3&#34;&gt;&lt;strong&gt;Fig.3&lt;/strong&gt;&lt;/a&gt;, there are subtle dissimilarities in its implementation on various graph databases. &lt;a href=&#34;https://healis.eu/en/about#athanassios&#34;&gt;A. Hatzis&lt;/a&gt;, in a &lt;a href=&#34;https://healis.eu/en/post/20170420/&#34;&gt;series of posts on associative data modeling&lt;/a&gt;, that is written with a hands-on practice style, attempts to clear the information glut of this topic with a thorough examination of graph data models.&lt;/p&gt;
 &lt;h2 id=&#34;multi-model-database-engine&#34;&gt;Multi-model Database Engine&lt;/h2&gt;
 &lt;p&gt;The graph engine and the type of data model are critical factors for any graph database. Therefore it is not strange that many vendors have started marketing their DBMS as a multi-model. We have extensive and long experience with two such products, &lt;a href=&#34;http://orientdb.com/orientdb/&#34;&gt;OrientDB&lt;/a&gt; and &lt;a href=&#34;http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GIC_intro&#34;&gt;Intersystems Cache&lt;/a&gt;. The former supports Graph, Document, Key/Value, and Object models, the latter is an object database with relational access, integrated support for JSON documents and a multidimensional key-value storage mechanism that can be easily extended to cover Graph data model. Generally speaking, we have reasons to believe that &lt;strong&gt;multi-model DBMS will dominate the database market&lt;/strong&gt;. Currently OrientDB has become a leading player in the graph databases and Intersystems Cache is one of the best operational DBMS according to &lt;a href=&#34;https://www.gartner.com/doc/3467318/magic-quadrant-operational-database-management&#34;&gt;Magic Quadrant report&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;physical-versus-logical-perspective&#34;&gt;Physical versus Logical Perspective&lt;/h2&gt;
@@ -594,7 +594,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Loose_coupling&#34;&gt;loose coupling&lt;/a&gt; can be achieved with associative/multidimensional arrays. No matter what is their physical implementation, i.e. hash tables or trees, based on this abstract data type you can &lt;a href=&#34;http://mgateway.com/docs/universalNoSQL.pdf&#34;&gt;model all four NoSQL database types&lt;/a&gt;, (Key/Value, Tabular/Columnar, Document, Graph). For one reason or another, we are of the opinion that &lt;strong&gt;associative/multidimensional arrays will eventually prevail in the world of databases&lt;/strong&gt;. There is already strong competition for their best physical implementation and sparse, column-family store, databases have proven to be very popular (&lt;a href=&#34;http://hbase.apache.org/book.html#architecture&#34;&gt;HBase&lt;/a&gt;, &lt;a href=&#34;http://www.hypertable.com/documentation/architecture/&#34;&gt;Hypertable&lt;/a&gt;, &lt;a href=&#34;https://cloud.google.com/bigtable/&#34;&gt;BigTable&lt;/a&gt;, &lt;a href=&#34;http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GIC_intro&#34;&gt;Intersystems Cache&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;There are other properties that are crucial for &lt;a href=&#34;https://en.wikipedia.org/wiki/Operational_database&#34;&gt;operational database management systems&lt;/a&gt; such as &lt;a href=&#34;https://en.wikipedia.org/wiki/ACID&#34;&gt;ACID transactions&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/Distributed_database&#34;&gt;distributed data architecture&lt;/a&gt;, and &lt;a href=&#34;https://en.wikipedia.org/wiki/Scalability&#34;&gt;scalability&lt;/a&gt;. Whether we are talking for a multi-model or single model graph databases, there is a tendency to use them for on-line transaction processing therefore these properties are worth having. And again in terms of architectural design there is always the problem of how to achieve a loose coupling between the physical structures of a database and the application logic.&lt;/p&gt;
 &lt;h2 id=&#34;conceptual-framework&#34;&gt;Conceptual Framework&lt;/h2&gt;
-&lt;p&gt;With that said it brings us to the question on what kind of logical/conceptual data model architecture to use. Our R3DM/S3DM framework is based on the powerful theory of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Triangle_of_reference&#34;&gt;semiotic triangle&lt;/a&gt;. We use numerical vectors (signs), to encode abstract things in our mind (signified) to which the sign refers, e.g. Person, name, Car, model. We associate these with  data containers-forms that the sign takes for the storage of data values (signifier), i.e. primitive data types (see also &lt;a href=&#34;https://en.wikipedia.org/wiki/Signified_and_signifier&#34;&gt;Signified and Signifier&lt;/a&gt;). This trilateral principle of our framework permits a uniform treatment of semantics, syntax and storage of information based on a symbolic representation. This way we define a fundamental, atomic information resource unit, &lt;a href=&#34;http://healis.eu/en/post/20150320/&#34;&gt;(AIR)&lt;/a&gt;. Those units, in turn, can be easily shaped to form any tabular, hierarchical, or graph data structure in a unified way. For example, study this &lt;a href=&#34;http://healis.eu/en/post/20170211#r3dm-hypergraph-representation&#34;&gt;R3DM hypergraph representation&lt;/a&gt; of Qlikview associative model. &lt;a href=&#34;https://en.wikipedia.org/wiki/Granularity&#34;&gt;Data granularity&lt;/a&gt; can be also deeply connected and related to the definition of a fundamental unit of processing.&lt;/p&gt;
+&lt;p&gt;With that said it brings us to the question on what kind of logical/conceptual data model architecture to use. Our R3DM/S3DM framework is based on the powerful theory of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Triangle_of_reference&#34;&gt;semiotic triangle&lt;/a&gt;. We use numerical vectors (signs), to encode abstract things in our mind (signified) to which the sign refers, e.g. Person, name, Car, model. We associate these with  data containers-forms that the sign takes for the storage of data values (signifier), i.e. primitive data types (see also &lt;a href=&#34;https://en.wikipedia.org/wiki/Signified_and_signifier&#34;&gt;Signified and Signifier&lt;/a&gt;). This trilateral principle of our framework permits a uniform treatment of semantics, syntax and storage of information based on a symbolic representation. This way we define a fundamental, atomic information resource unit, &lt;a href=&#34;https://healis.eu/en/post/20150320/&#34;&gt;(AIR)&lt;/a&gt;. Those units, in turn, can be easily shaped to form any tabular, hierarchical, or graph data structure in a unified way. For example, study this &lt;a href=&#34;https://healis.eu/en/post/20170211#r3dm-hypergraph-representation&#34;&gt;R3DM hypergraph representation&lt;/a&gt; of Qlikview associative model. &lt;a href=&#34;https://en.wikipedia.org/wiki/Granularity&#34;&gt;Data granularity&lt;/a&gt; can be also deeply connected and related to the definition of a fundamental unit of processing.&lt;/p&gt;
 &lt;p&gt;Based on this single primitive construct as a building block, (AIR), we have implemented seven type systems for an upper level management of any DBMS. These are:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -638,9 +638,9 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;h2 id=&#34;query-language&#34;&gt;Query Language&lt;/h2&gt;
 &lt;p&gt;Yet another decisive norm in databases is the &lt;a href=&#34;https://en.wikipedia.org/wiki/Query_language&#34;&gt;query language&lt;/a&gt;. With RDF directed, labeled graph data format and with &lt;a href=&#34;https://en.wikipedia.org/wiki/Triplestore&#34;&gt;RDF store&lt;/a&gt; databases respectively, e.g. &lt;a href=&#34;https://virtuoso.openlinksw.com/&#34;&gt;OpenLink Virtuoso&lt;/a&gt;, &lt;a href=&#34;http://allegrograph.com/allegrograph/&#34;&gt;AllegroGraph&lt;/a&gt; and &lt;a href=&#34;http://ontotext.com/products/graphdb/&#34;&gt;Ontotext GraphDB&lt;/a&gt;, &lt;a href=&#34;https://www.w3.org/TR/rdf-sparql-query/&#34;&gt;SPARQL&lt;/a&gt; query language is a standard way to retrieve data. On the contrary the query language of property graph databases varies a lot. There are similar to SQL APIs such as those of &lt;a href=&#34;http://orientdb.com/orientdb/&#34;&gt;OrientDB&lt;/a&gt; and &lt;a href=&#34;https://www.arangodb.com/&#34;&gt;ArrangoDB&lt;/a&gt;, &lt;a href=&#34;https://neo4j.com/&#34;&gt;Neo4J&lt;/a&gt; is using its own Cypher declarative graph query language and there is also the Gremlin open-source graph programming language.&lt;/p&gt;
 &lt;p&gt;Another approach is that of &lt;a href=&#34;http://graphql.org/&#34;&gt;GraphQL&lt;/a&gt; which is similar to &lt;a href=&#34;https://en.wikipedia.org/wiki/Freebase#Overview&#34;&gt;Freebase MQL query language&lt;/a&gt;. Queries are shaped in JSON hierarchical format with patterns that follow the schema of the graph database.&lt;/p&gt;
-&lt;p&gt;We have developed a &lt;a href=&#34;http://healis.eu/en/post/20160210/&#34;&gt;functional RESTful API&lt;/a&gt; that can be served as a prototype for a uniform, universal treatment of data language. Commands and their parameters can become more efficient and they can be simplified if we take on account the hierarchical relationship of Server, Database, Class, Property and Record containers. There are five sets of commands for getting, updating, deleting, adding and linking information. Current implementation is built with Wolfram Language and we will expose more details in a forthcoming article where we analyze R3DM/S3DM architecture.&lt;/p&gt;
+&lt;p&gt;We have developed a &lt;a href=&#34;https://healis.eu/en/post/20160210/&#34;&gt;functional RESTful API&lt;/a&gt; that can be served as a prototype for a uniform, universal treatment of data language. Commands and their parameters can become more efficient and they can be simplified if we take on account the hierarchical relationship of Server, Database, Class, Property and Record containers. There are five sets of commands for getting, updating, deleting, adding and linking information. Current implementation is built with Wolfram Language and we will expose more details in a forthcoming article where we analyze R3DM/S3DM architecture.&lt;/p&gt;
 &lt;h2 id=&#34;business-analytics&#34;&gt;Business Analytics&lt;/h2&gt;
-&lt;p&gt;Last but not least, there is an emerging need for databases that can function as both analytic and operational. In particular, the modern data warehouse should unify all client&amp;rsquo;s transactional databases as well as integrate other external data sources that enable data cleansing, validation and enhancement. Not only that, but for quick and smart business analytics the interface should be both user friendly and functionally powerful. We are aware of such a player in this market segment with a technology that possess similar features to our R3DM/S3DM framework. This is the reason that we devoted &lt;a href=&#34;http://healis.eu/en/post/20170211/&#34;&gt;one of our articles&lt;/a&gt; to describe &lt;a href=&#34;http://www.qlik.com/us/products/qlikview&#34;&gt;QlikView&amp;rsquo;s&lt;/a&gt; unique, award-winning, in-memory associative technology.&lt;/p&gt;
+&lt;p&gt;Last but not least, there is an emerging need for databases that can function as both analytic and operational. In particular, the modern data warehouse should unify all client&amp;rsquo;s transactional databases as well as integrate other external data sources that enable data cleansing, validation and enhancement. Not only that, but for quick and smart business analytics the interface should be both user friendly and functionally powerful. We are aware of such a player in this market segment with a technology that possess similar features to our R3DM/S3DM framework. This is the reason that we devoted &lt;a href=&#34;https://healis.eu/en/post/20170211/&#34;&gt;one of our articles&lt;/a&gt; to describe &lt;a href=&#34;http://www.qlik.com/us/products/qlikview&#34;&gt;QlikView&amp;rsquo;s&lt;/a&gt; unique, award-winning, in-memory associative technology.&lt;/p&gt;
 &lt;h2 id=&#34;epilogue&#34;&gt;Epilogue&lt;/h2&gt;
 &lt;p&gt;Make no mistake, relational databases are the past of computer database technology. Graph databases are the present and the future. This quick review on what we considered important criteria for graph database related technology products might leave the reader in more perplexity than satisfaction. This is our perspective, we wanted to share some of our knowledge with experts and chief technology persons on this field so that we could discuss the matter in more detail with them. The future will show in how many of these discussion topics we were right.&lt;/p&gt;
 &lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
@@ -667,10 +667,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>Know-How is How you Know</title>
-      <link>http://healis.eu/en/post/20160729/</link>
+      <link>https://healis.eu/en/post/20160729/</link>
       <pubDate>Fri, 29 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20160729/</guid>
+      <guid>https://healis.eu/en/post/20160729/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -690,7 +690,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/I_know_that_I_know_nothing&#34;&gt;All I know is that I know nothing&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;This is typical of the great gap that exists between &lt;a href=&#34;http://healis.eu/en/post/20150523/&#34;&gt;Eastern and Western way of thinking&lt;/a&gt; about fundamental concepts such as information, knowledge and wisdom. In my opinion we have become too ignorant and arrogant boasting about our knowledge that we cannot even understand the basics of it. This is all too evident in Information/Computer Science fields. The well-known &lt;strong&gt;Data-Information-Knowledge-Wisdom&lt;/strong&gt; (&lt;a href=&#34;https://en.wikipedia.org/wiki/DIKW_pyramid&#34;&gt;DIKW&lt;/a&gt;) pyramid has become a popular shorthand representation for the data to information to knowledge to wisdom transformation. As a result of this we, the information/computer scientists, often hear about knowledge representation and inference, knowledge extraction, knowledge management and knowledge organization.&lt;/p&gt;
+&lt;p&gt;This is typical of the great gap that exists between &lt;a href=&#34;https://healis.eu/en/post/20150523/&#34;&gt;Eastern and Western way of thinking&lt;/a&gt; about fundamental concepts such as information, knowledge and wisdom. In my opinion we have become too ignorant and arrogant boasting about our knowledge that we cannot even understand the basics of it. This is all too evident in Information/Computer Science fields. The well-known &lt;strong&gt;Data-Information-Knowledge-Wisdom&lt;/strong&gt; (&lt;a href=&#34;https://en.wikipedia.org/wiki/DIKW_pyramid&#34;&gt;DIKW&lt;/a&gt;) pyramid has become a popular shorthand representation for the data to information to knowledge to wisdom transformation. As a result of this we, the information/computer scientists, often hear about knowledge representation and inference, knowledge extraction, knowledge management and knowledge organization.&lt;/p&gt;
 
 
 
@@ -713,7 +713,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
-&lt;p&gt;This mechanized perception and realization of knowledge can easily lead people to believe that machines can become wise and they can become wise too by following this transformation process. The main appeal to this common belief is that we are completely ignorant on how these words, i.e. information, knowledge and wisdom were defined and used in the past by our ancestors. Most important is the fact that we have replaced their meaning and definition with other words that are inferior and subservient as symbols. An example of this phenomenon is the definition of the word information. Inform comes from the Latin verb informare, which literally means to give form, or to form an idea of. Where the &lt;strong&gt;ancient and modern Greek word for information is πληροφορία, which transliterates (plērophoria) from πλήρης (plērēs) “fully” and φέρω (phorein) frequentative of (pherein) to carry through&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. You may realize how different becomes your thinking by using one or the other definition of the word and perhaps how narrow is your thinking if you are missing completely the older ancient Greek definition of the word information. But this was the subject of a &lt;a href=&#34;http://healis.eu/en/post/20150523/&#34;&gt;previous post&lt;/a&gt; of mine.&lt;/p&gt;
+&lt;p&gt;This mechanized perception and realization of knowledge can easily lead people to believe that machines can become wise and they can become wise too by following this transformation process. The main appeal to this common belief is that we are completely ignorant on how these words, i.e. information, knowledge and wisdom were defined and used in the past by our ancestors. Most important is the fact that we have replaced their meaning and definition with other words that are inferior and subservient as symbols. An example of this phenomenon is the definition of the word information. Inform comes from the Latin verb informare, which literally means to give form, or to form an idea of. Where the &lt;strong&gt;ancient and modern Greek word for information is πληροφορία, which transliterates (plērophoria) from πλήρης (plērēs) “fully” and φέρω (phorein) frequentative of (pherein) to carry through&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. You may realize how different becomes your thinking by using one or the other definition of the word and perhaps how narrow is your thinking if you are missing completely the older ancient Greek definition of the word information. But this was the subject of a &lt;a href=&#34;https://healis.eu/en/post/20150523/&#34;&gt;previous post&lt;/a&gt; of mine.&lt;/p&gt;
 &lt;h2 id=&#34;about-knowledge&#34;&gt;About Knowledge&lt;/h2&gt;
 &lt;p&gt;In this post we focus on knowledge. How do we define knowledge ? According to &lt;a href=&#34;http://plato.stanford.edu/entries/knowledge-how/&#34;&gt;Stanford Encyclopedia of Philosophy&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -748,10 +748,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>Why Google shuts down Freebase ?</title>
-      <link>http://healis.eu/en/post/20150609/</link>
+      <link>https://healis.eu/en/post/20150609/</link>
       <pubDate>Tue, 09 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20150609/</guid>
+      <guid>https://healis.eu/en/post/20150609/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -802,7 +802,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;p&gt;The most important IT asset is their proprietary &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=1807283&#34;&gt;Graphd&lt;/a&gt; database.  Some information have been disclosed to the public in the past, but of course the database itself is not going to be released or opened for inspection.&lt;/p&gt;
 &lt;p&gt;Graphd encodes everything  as a tuple. Every structure and construct such as entity type, entity instance, property, data types, domain, namespace, ontology you name it, are constructed from tuples. The very first layer of abstraction that is created on top of this is the object-link that implements RDF kind of statements in Freebase. Every item in freebase is either a link or an object. And you can get ALL the links to or from any object. Defining a single primitive construct as a building block is one of my R3DM semiotic principles in data modelling abstraction. Topic Maps data model (&lt;a href=&#34;http://www.isotopicmaps.org/sam/sam-model/#sect-metamodel&#34;&gt;TMDM&lt;/a&gt;) follow the same kind of logic, where everything is a topic and every other construct is built with topics. In RDF/OWL fundamental construct is the triplet, in Graph databases you have the node, in key-value stores you have the key-value primitive.&lt;/p&gt;
 &lt;h3 id=&#34;the-identity-crisis-solution&#34;&gt;The identity crisis solution&lt;/h3&gt;
-&lt;p&gt;The &lt;a href=&#34;http://healis.eu/en/post/20131105/#vvp-and-the-identity-crisis-on-the-web&#34;&gt;identity crisis&lt;/a&gt;, that is still a problem in the linked-data world, has a fair solution in Freebase with not a single URL-based namespace identifier but with three kinds of identifiers that each plays a different role :&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://healis.eu/en/post/20131105/#vvp-and-the-identity-crisis-on-the-web&#34;&gt;identity crisis&lt;/a&gt;, that is still a problem in the linked-data world, has a fair solution in Freebase with not a single URL-based namespace identifier but with three kinds of identifiers that each plays a different role :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Under the hood GUIDs that are written internally in Graphd database&lt;/li&gt;
 &lt;li&gt;Long user friendly, human-readable, IDs&lt;/li&gt;
@@ -817,7 +817,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;li&gt;&lt;strong&gt;Database - Schema -Table -Row (RDBMS)&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Domain - Type -Property -Instance (Ontologies and XML)&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This is not a coincidence, and there is a very good reason that we naturally create abstractions based on this hierarchy. The very first person that came up with this astonishing observation is inventor &lt;a href=&#34;https://www.linkedin.com/in/ron-everett-5134a68a/&#34;&gt;Ron Everett&lt;/a&gt; and &lt;a href=&#34;http://healis.eu/en/post/20150320/#signified-sign-signifier-alternative-paradigm&#34;&gt;AtomicDB&amp;rsquo;s under the hood encoding structure (Environment, System, Context, Item)&lt;/a&gt; is the heart of their system. This is not the space or the time to cover that in more detail, it suffices that &lt;a href=&#34;http://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; semiotic conceptual model can offer an adequate explanation on the abstraction/reference mechanism behind the scenes.&lt;/p&gt;
+&lt;p&gt;This is not a coincidence, and there is a very good reason that we naturally create abstractions based on this hierarchy. The very first person that came up with this astonishing observation is inventor &lt;a href=&#34;https://www.linkedin.com/in/ron-everett-5134a68a/&#34;&gt;Ron Everett&lt;/a&gt; and &lt;a href=&#34;https://healis.eu/en/post/20150320/#signified-sign-signifier-alternative-paradigm&#34;&gt;AtomicDB&amp;rsquo;s under the hood encoding structure (Environment, System, Context, Item)&lt;/a&gt; is the heart of their system. This is not the space or the time to cover that in more detail, it suffices that &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; semiotic conceptual model can offer an adequate explanation on the abstraction/reference mechanism behind the scenes.&lt;/p&gt;
 &lt;h3 id=&#34;type-checking&#34;&gt;Type Checking&lt;/h3&gt;
 &lt;p&gt;In freebase every property, i.e. bidirectional link between two items, by the way this is also a fundamental technology novelty of AtomicDB, stay tuned…., knows exactly what entity types to expect.&lt;/p&gt;
 &lt;h3 id=&#34;included-types&#34;&gt;Included Types&lt;/h3&gt;
@@ -864,10 +864,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>Plerophoria vs Information</title>
-      <link>http://healis.eu/en/post/20150523/</link>
+      <link>https://healis.eu/en/post/20150523/</link>
       <pubDate>Sat, 23 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20150523/</guid>
+      <guid>https://healis.eu/en/post/20150523/</guid>
       <description>&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
 &lt;p&gt;The origin of the word information reveals its use. Inform comes from the Latin verb informare, which literally means to give form, or to form an idea. Form is the mold, the container, that is used to give shape, to molten the content. When computer scientists were designing and constructing the first digital computer, at the same time digital information was given birth and shape. Modern computers operate with memory chips and those are mere containers of storing sequences of 0s and 1s.&lt;/p&gt;
 &lt;h2 id=&#34;plērophoria&#34;&gt;Plērophoria&lt;/h2&gt;
@@ -899,10 +899,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>The number &#39;3&#39; and The Three-Faceted Abstraction Mechanism in R3DM</title>
-      <link>http://healis.eu/en/post/20150523_part3/</link>
+      <link>https://healis.eu/en/post/20150523_part3/</link>
       <pubDate>Sat, 23 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20150523_part3/</guid>
+      <guid>https://healis.eu/en/post/20150523_part3/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -916,7 +916,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;In &lt;a href=&#34;http://healis.eu/en/post/20150320/&#34;&gt;Part 2&lt;/a&gt; of this series we introduced the Atomic Information Resource (AIR) data model of the AtomicDB database management system. In this part we present a simple but extensive example on various representations of number three using the poweful Mathematica functions and the unique features of Mathematica notebooks. We relate these with the three-faceted abstraction mechanism in &lt;a href=&#34;http://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;https://healis.eu/en/post/20150320/&#34;&gt;Part 2&lt;/a&gt; of this series we introduced the Atomic Information Resource (AIR) data model of the AtomicDB database management system. In this part we present a simple but extensive example on various representations of number three using the poweful Mathematica functions and the unique features of Mathematica notebooks. We relate these with the three-faceted abstraction mechanism in &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;1-functional-representation-of-number-3---the-sign-representation&#34;&gt;1. Functional Representation of Number 3 - The Sign (Representation)&lt;/h2&gt;
 &lt;p&gt;Functional representation is the core operation of R3DM. Everything is represented as a function that is mapping values from one domain to another. You may view functions, as transformations. This is also how they operate in Wolfram Language. They transform expressions from one symbolic form to another.&lt;/p&gt;
 &lt;p&gt;In this section we investigate the various forms that a symbol related to number &amp;lsquo;3&amp;rsquo; can take. In R3DM this is the sign that is used to signify something at a higher level and at the same time it is used to symbolize an internal representation, a realization.&lt;/p&gt;
@@ -944,11 +944,11 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;/ul&gt;
 &lt;p&gt;We present an Image container (symbol) realized in Mathematica as a raw array of bytes (visual representation), and a Sound container (symbol) realized in Mathematica as a list of sound amplitude levels samples (aural representation).&lt;/p&gt;
 &lt;h2 id=&#34;mathematica-notebook&#34;&gt;Mathematica Notebook&lt;/h2&gt;
-&lt;p&gt;Here is the full article printed from this &lt;a href=&#34;http://healis.eu/documents/number_3.nb&#34;&gt;Mathematica Notebook&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here is the full article printed from this &lt;a href=&#34;https://healis.eu/documents/number_3.nb&#34;&gt;Mathematica Notebook&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;responsive-wrap&#34;&gt;
 	&lt;object data=&#34;/documents/Towards%20a%20New%20Data%20Modelling%20Architecture%20-%20Part%203.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
-		&lt;embed src=&#34;http://healis.eu/documents/Towards%20a%20New%20Data%20Modelling%20Architecture%20-%20Part%203.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
-			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;http://healis.eu/documents/Towards%20a%20New%20Data%20Modelling%20Architecture%20-%20Part%203.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
+		&lt;embed src=&#34;https://healis.eu/documents/Towards%20a%20New%20Data%20Modelling%20Architecture%20-%20Part%203.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
+			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;https://healis.eu/documents/Towards%20a%20New%20Data%20Modelling%20Architecture%20-%20Part%203.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
 			instead. Thanks!&lt;/em&gt;
 	&lt;/object&gt;
 &lt;/div&gt;
@@ -965,10 +965,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>Atomic Information Resource (AIR)</title>
-      <link>http://healis.eu/en/post/20150320/</link>
+      <link>https://healis.eu/en/post/20150320/</link>
       <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20150320/</guid>
+      <guid>https://healis.eu/en/post/20150320/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -1011,14 +1011,14 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;preface&#34;&gt;Preface&lt;/h2&gt;
-&lt;p&gt;The content of this article is a mixture of these three LinkedIn posts, &lt;a href=&#34;https://www.linkedin.com/pulse/towards-new-data-modelling-architecture-part-2-hatzis-phd&#34;&gt;Towards a New Data Modelling Architecture - Part 2&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/pulse/air-atomic-information-resource-athanassios-i-hatzis-phd&#34;&gt;Atomic Information Resource&lt;/a&gt;, and &lt;a href=&#34;https://www.linkedin.com/pulse/atomicdb-architecture-r3dm-athanassios-i-hatzis-phd&#34;&gt;AtomicDB Architecture in R3DM&lt;/a&gt;. We also used the full content of the original source from this Mathematica &lt;a href=&#34;http://healis.eu/en/post/20150320/R3DM_Part2.nb&#34;&gt;notebook&lt;/a&gt;. It is worth mentioning that the term AtomicDB, at that time, was used to signify both the brand-name and the database engine of a company that is now re-branded as X10SYS. &lt;strong&gt;R3DM&lt;/strong&gt;, a vendor-neutral conceptual framework for data modeling, is sharing several fundamental architectural design principles with AtomicDB.&lt;/p&gt;
-&lt;p&gt;In &lt;a href=&#34;http://healis.eu/en/post/20150317/&#34;&gt;Part 1&lt;/a&gt; of this series we talked about the main constructs of the Relational and Entity-Relationship data model. In this article we present a computational semiotic analysis of AtomicDB that is based on &lt;strong&gt;R3DM&lt;/strong&gt; and we focus on explaining with an example the universal &lt;strong&gt;AIR&lt;/strong&gt; unit that we will meet again on forthcoming posts of this series.&lt;/p&gt;
+&lt;p&gt;The content of this article is a mixture of these three LinkedIn posts, &lt;a href=&#34;https://www.linkedin.com/pulse/towards-new-data-modelling-architecture-part-2-hatzis-phd&#34;&gt;Towards a New Data Modelling Architecture - Part 2&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/pulse/air-atomic-information-resource-athanassios-i-hatzis-phd&#34;&gt;Atomic Information Resource&lt;/a&gt;, and &lt;a href=&#34;https://www.linkedin.com/pulse/atomicdb-architecture-r3dm-athanassios-i-hatzis-phd&#34;&gt;AtomicDB Architecture in R3DM&lt;/a&gt;. We also used the full content of the original source from this Mathematica &lt;a href=&#34;https://healis.eu/en/post/20150320/R3DM_Part2.nb&#34;&gt;notebook&lt;/a&gt;. It is worth mentioning that the term AtomicDB, at that time, was used to signify both the brand-name and the database engine of a company that is now re-branded as X10SYS. &lt;strong&gt;R3DM&lt;/strong&gt;, a vendor-neutral conceptual framework for data modeling, is sharing several fundamental architectural design principles with AtomicDB.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;https://healis.eu/en/post/20150317/&#34;&gt;Part 1&lt;/a&gt; of this series we talked about the main constructs of the Relational and Entity-Relationship data model. In this article we present a computational semiotic analysis of AtomicDB that is based on &lt;strong&gt;R3DM&lt;/strong&gt; and we focus on explaining with an example the universal &lt;strong&gt;AIR&lt;/strong&gt; unit that we will meet again on forthcoming posts of this series.&lt;/p&gt;
 &lt;h2 id=&#34;background-information&#34;&gt;Background Information&lt;/h2&gt;
 &lt;p&gt;The AtomicDB data model we describe has a long history behind it. Searching at Google for patents with the title &amp;ldquo;Data base and knowledge operating system&amp;rdquo; or with the title &amp;ldquo;Data management architecture associating generic data items using reference&amp;rdquo; we find several documents that are &lt;a href=&#34;https://www.google.com/patents/US8051102&#34;&gt;filed in the year 2003&lt;/a&gt; from the inventor Ron Everett. The same year a &amp;ldquo;proof of concept&amp;rdquo; for this invention was successfully demonstrated with a &lt;a href=&#34;https://www.linkedin.com/pulse/case-study-us-navy-jean-michel-letennier-1&#34;&gt;use case of managing a 50+ milion records of spare/repair part requirements for US Navy ships&lt;/a&gt;. Today AtomicDB is a fully fledged database management system that is based on Ron Everett&amp;rsquo;s patented associative data items architecture. According to the vendor several pilots are currently running under big corporations and University research establishments.&lt;/p&gt;
 &lt;h3 id=&#34;atomicdb-evaluation&#34;&gt;AtomicDB Evaluation&lt;/h3&gt;
-&lt;p&gt;The author of this article has been an evaluator of AtomicDB with full access to test GUIs, APIs and web services of their system. In particular he explored their C# API functionality for developers. In order to make tests interactive and efficient most functions of their API have been ported to Wolfram Language using the &lt;a href=&#34;https://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html&#34;&gt;NETLink C#&lt;/a&gt; interconnectivity package. Function calls and other expressions that you see here are based on &lt;a href=&#34;http://healis.eu/en/post/20151009/&#34;&gt;AtomicDB Mathematica API&lt;/a&gt; that is not included with the publication of this article. The Wolfram Language &lt;a href=&#34;http://healis.eu/en/post/20150320/R3DM_Part2.nb&#34;&gt;notebook&lt;/a&gt; is included for reference purposes.&lt;/p&gt;
+&lt;p&gt;The author of this article has been an evaluator of AtomicDB with full access to test GUIs, APIs and web services of their system. In particular he explored their C# API functionality for developers. In order to make tests interactive and efficient most functions of their API have been ported to Wolfram Language using the &lt;a href=&#34;https://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html&#34;&gt;NETLink C#&lt;/a&gt; interconnectivity package. Function calls and other expressions that you see here are based on &lt;a href=&#34;https://healis.eu/en/post/20151009/&#34;&gt;AtomicDB Mathematica API&lt;/a&gt; that is not included with the publication of this article. The Wolfram Language &lt;a href=&#34;https://healis.eu/en/post/20150320/R3DM_Part2.nb&#34;&gt;notebook&lt;/a&gt; is included for reference purposes.&lt;/p&gt;
 &lt;h2 id=&#34;entity-attribute-value-silo-structure&#34;&gt;Entity-Attribute-Value &amp;lsquo;Silo&amp;rsquo; Structure&lt;/h2&gt;
-&lt;p&gt;The Entity-Relationship model is universally accepted as the means to extend the relational model in order to give meaning to relationships. For our &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue/accdb&#34;&gt;database example&lt;/a&gt; in &lt;a href=&#34;http://healis.eu/en/post/20150317/&#34;&gt;Part 1&lt;/a&gt; we can draw the following ER diagram.&lt;/p&gt;
+&lt;p&gt;The Entity-Relationship model is universally accepted as the means to extend the relational model in order to give meaning to relationships. For our &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue/accdb&#34;&gt;database example&lt;/a&gt; in &lt;a href=&#34;https://healis.eu/en/post/20150317/&#34;&gt;Part 1&lt;/a&gt; we can draw the following ER diagram.&lt;/p&gt;
 
 
 
@@ -1027,9 +1027,9 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 
 &lt;figure&gt;
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://healis.eu/en/post/20150320/erdiagram.jpg&#34; data-caption=&#34;depicts an association among the three entities of our database, Parts, Suppliers and Catalog, and shows the datatypes of their attributes. This is the classic many to many relationship between Parts and Suppliers where the Catalog is the associative entity, also known as the bridge table or join table. Primary and foreign keys are also specified for the names of the attributes that play that role&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://healis.eu/en/post/20150320/erdiagram.jpg&#34; data-caption=&#34;depicts an association among the three entities of our database, Parts, Suppliers and Catalog, and shows the datatypes of their attributes. This is the classic many to many relationship between Parts and Suppliers where the Catalog is the associative entity, also known as the bridge table or join table. Primary and foreign keys are also specified for the names of the attributes that play that role&#34;&gt;
 
-&lt;img src=&#34;http://healis.eu/en/post/20150320/erdiagram.jpg&#34; alt=&#34;depicts an association among the three entities of our database, `Parts`, `Suppliers` and `Catalog`, and shows the datatypes of their attributes. This is the classic many to many relationship between `Parts` and `Suppliers` where the `Catalog` is the associative entity, also known as the bridge table or join table. Primary and foreign keys are also specified for the names of the attributes that play that role&#34; &gt;
+&lt;img src=&#34;https://healis.eu/en/post/20150320/erdiagram.jpg&#34; alt=&#34;depicts an association among the three entities of our database, `Parts`, `Suppliers` and `Catalog`, and shows the datatypes of their attributes. This is the classic many to many relationship between `Parts` and `Suppliers` where the `Catalog` is the associative entity, also known as the bridge table or join table. Primary and foreign keys are also specified for the names of the attributes that play that role&#34; &gt;
 &lt;/a&gt;
 
 
@@ -1055,12 +1055,12 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;blockquote&gt;
 &lt;p&gt;Each application is developed with unique and special queries written to each specific database design, table layout and named tables, columns and keys.&lt;sup id=&#34;fnref1:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Rows of &lt;code&gt;Parts&lt;/code&gt; table from a Microsoft Access &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue/accdb&#34;&gt;relational database&lt;/a&gt; that we have used in &lt;a href=&#34;http://healis.eu/en/post/20150317/&#34;&gt;Part 1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rows of &lt;code&gt;Parts&lt;/code&gt; table from a Microsoft Access &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue/accdb&#34;&gt;relational database&lt;/a&gt; that we have used in &lt;a href=&#34;https://healis.eu/en/post/20150317/&#34;&gt;Part 1&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(partsList &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;SQLExecute&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;conn,
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;select pid,pname from Parts where pid&amp;lt;994&amp;#34;&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ShowColumnHeadings&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TableForm&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt; &lt;img alt=&#34;notebook-output-01&#34; src=&#34;http://healis.eu/en/post/20150320/notebook01.jpg&#34;&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt; &lt;img alt=&#34;notebook-output-01&#34; src=&#34;https://healis.eu/en/post/20150320/notebook01.jpg&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;xml-form&#34;&gt;XML Form&lt;/h3&gt;
 &lt;p&gt;Rows of the table above serialized in XML&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span&gt;
@@ -1480,7 +1480,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;p&gt;&lt;strong&gt;A. Relational&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SQLExecute&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;conn, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;select * from Parts&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ShowColumnHeadings&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TableForm&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt;
-&lt;img alt=&#34;notebook-output-parts table&#34; src=&#34;http://healis.eu/en/post/20150320/parts-table-500x200.jpg&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;notebook-output-parts table&#34; src=&#34;https://healis.eu/en/post/20150320/parts-table-500x200.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;B. Associative&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(nexusMemberItems &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; getItemsFromConceptNames&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;modelName, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;NX_Part&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;//&lt;/span&gt; printKVPL2
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
@@ -1550,7 +1550,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
   &lt;iframe src=&#34;https://www.youtube.com/embed/B8A0xiD2gxE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;AIR&lt;/strong&gt; fits perfectly to the duality principle of R3DM conceptual model and the &lt;a href=&#34;http://healis.eu/en/project/r3dm/#symbols-duality-principle&#34;&gt;&lt;strong&gt;Everything is Represented with a Symbol&lt;/strong&gt;&lt;/a&gt; corollary. There is no better example to think about this than digital representations as sequences of binary digits in the internal memory state of our machines. In a digital computer, everything is represented and addressed at the machine level with sequences of 0s and 1s. In order to represent information, Ron Everett managed to conceive in a similar way at a higher abstracted level an identification and addressing schema of information units. He wrapped atomic data types, such as a string or number, and made them the core of these units and he used a four-dimensional space to uniformly address, identify, bind and encode &lt;strong&gt;AIRs&lt;/strong&gt;. Thus in AtomicDB each &lt;strong&gt;AIR&lt;/strong&gt; unit is a self-referenced and uniquely identified item in a 4D space with sets of 4D references to other &lt;strong&gt;AIRs&lt;/strong&gt; for classification purpose, and embedded data values for querying purpose.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AIR&lt;/strong&gt; fits perfectly to the duality principle of R3DM conceptual model and the &lt;a href=&#34;https://healis.eu/en/project/r3dm/#symbols-duality-principle&#34;&gt;&lt;strong&gt;Everything is Represented with a Symbol&lt;/strong&gt;&lt;/a&gt; corollary. There is no better example to think about this than digital representations as sequences of binary digits in the internal memory state of our machines. In a digital computer, everything is represented and addressed at the machine level with sequences of 0s and 1s. In order to represent information, Ron Everett managed to conceive in a similar way at a higher abstracted level an identification and addressing schema of information units. He wrapped atomic data types, such as a string or number, and made them the core of these units and he used a four-dimensional space to uniformly address, identify, bind and encode &lt;strong&gt;AIRs&lt;/strong&gt;. Thus in AtomicDB each &lt;strong&gt;AIR&lt;/strong&gt; unit is a self-referenced and uniquely identified item in a 4D space with sets of 4D references to other &lt;strong&gt;AIRs&lt;/strong&gt; for classification purpose, and embedded data values for querying purpose.&lt;/p&gt;
 &lt;p&gt;According to R3DM we have three layers of abstraction, the semantic, the sign, and the storage-data layer. The 4D reference type of &lt;strong&gt;AIR&lt;/strong&gt; is the implementation of sign layer and it is bridging the semantic with the storage layer in the most semiotic way. This is a fully apprehensive act of responding to the fact that &lt;strong&gt;atomic data types and data structures cannot play sufficiently both the role of encoding and that of representing information&lt;/strong&gt;. You have to make these two roles distinct. This is exactly what we manage in a beautiful way with these references. The symbolic layer is created in this 4D space and instead of having dissimilar atomic data types and abstract complex data types, you have uniform &lt;strong&gt;AIR&lt;/strong&gt; units and aggregates of them e.g. collections, records, sets and multi-sets that are referenced in exactly the same way .&lt;/p&gt;
 &lt;p&gt;This is a completely, new, radical perspective on data modeling. It is a turning point and there has to be ample evidence to support claims that DBMS based on this are superior than their counterparts. We are determined to investigate, enhance, and apply that kind of database technology and connect it to the overall semiotic perspective of R3DM conceptual framework. It is possible that R3DM based on &lt;strong&gt;AIR&lt;/strong&gt; can assimilate all other SQL and noSQL and SPARQL queries and data models in a simpler, more intuitive, faster, more secure, highly consistent, and in a large scale. This uniform structural symmetry based on &lt;strong&gt;AIR&lt;/strong&gt;, both in terms of value representation and bi-directional relationships is perhaps the most innovative feature and what will hopefully make &lt;strong&gt;AIR&lt;/strong&gt; the universal atomic information unit in the whole information science field. If not, I am sure that many other similar paradigms in data modeling will be based on this model, because a whole new unexplored path is now open and unimaginable applications of this technology can be turned into a reality.&lt;/p&gt;
 &lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
@@ -1572,10 +1572,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>Relational/ER Constructs in Wolfram Language</title>
-      <link>http://healis.eu/en/post/20150317/</link>
+      <link>https://healis.eu/en/post/20150317/</link>
       <pubDate>Tue, 17 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20150317/</guid>
+      <guid>https://healis.eu/en/post/20150317/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -1602,9 +1602,9 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;In this series we introduce progressively the art of a new innovative, exhilarating, data modeling methodology that is based on R3DM conceptual framework. We want to engage software developers, architects, data model designers and everyone interested in learning the advantages of applying this method and the main differences from the data models of the past. We start with terms and constructs that most of us are familiar with from the relational database management systems and we dive into some detail of the Atomic Information Resource unit at &lt;a href=&#34;http://healis.eu/en/post/20150317/&#34;&gt;Part 2&lt;/a&gt;. For coding purposes, we picked &lt;a href=&#34;https://www.wolfram.com/language/&#34;&gt;Wolfram Language&lt;/a&gt;, the 25+ years of development programming language of Mathematica. Wolfram Language combines symbolic, functional and rule-based programming with a vast library of built-in functions, a computational knowledge engine (&lt;a href=&#34;http://www.wolframalpha.com/&#34;&gt;Wolfram alpha&lt;/a&gt;) and a huge database of curated data.&lt;/p&gt;
+&lt;p&gt;In this series we introduce progressively the art of a new innovative, exhilarating, data modeling methodology that is based on R3DM conceptual framework. We want to engage software developers, architects, data model designers and everyone interested in learning the advantages of applying this method and the main differences from the data models of the past. We start with terms and constructs that most of us are familiar with from the relational database management systems and we dive into some detail of the Atomic Information Resource unit at &lt;a href=&#34;https://healis.eu/en/post/20150317/&#34;&gt;Part 2&lt;/a&gt;. For coding purposes, we picked &lt;a href=&#34;https://www.wolfram.com/language/&#34;&gt;Wolfram Language&lt;/a&gt;, the 25+ years of development programming language of Mathematica. Wolfram Language combines symbolic, functional and rule-based programming with a vast library of built-in functions, a computational knowledge engine (&lt;a href=&#34;http://www.wolframalpha.com/&#34;&gt;Wolfram alpha&lt;/a&gt;) and a huge database of curated data.&lt;/p&gt;
 &lt;h2 id=&#34;relational-constructs&#34;&gt;Relational Constructs&lt;/h2&gt;
-&lt;p&gt;The entity-relational data model (ERDM) is still the most popular data model in database management systems. You can think many reasons for this fact but from the user perspective the main reason is the simple and natural way of managing data in tables with rows (records) and columns (attributes). On top of that, SQL is a very powerful and easy to learn programming language that covers completely the relational operators on data sets. In this article various methods of representing the basic constructs of the relational model are demonstrated with Wolfram Language powerful transformations. You may download our &lt;a href=&#34;http://healis.eu/en/post/20150317/R3DM_Part1.nb&#34;&gt;Wolfram Notebook&lt;/a&gt; and try our examples in &lt;a href=&#34;https://lab.wolframcloud.com/app/&#34;&gt;Wolfram Programming Lab&lt;/a&gt; or &lt;a href=&#34;https://develop.wolframcloud.com/app/&#34;&gt;Wolfram Development Platform&lt;/a&gt;. The structured data for our example can be found at our &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue&#34;&gt;Github repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The entity-relational data model (ERDM) is still the most popular data model in database management systems. You can think many reasons for this fact but from the user perspective the main reason is the simple and natural way of managing data in tables with rows (records) and columns (attributes). On top of that, SQL is a very powerful and easy to learn programming language that covers completely the relational operators on data sets. In this article various methods of representing the basic constructs of the relational model are demonstrated with Wolfram Language powerful transformations. You may download our &lt;a href=&#34;https://healis.eu/en/post/20150317/R3DM_Part1.nb&#34;&gt;Wolfram Notebook&lt;/a&gt; and try our examples in &lt;a href=&#34;https://lab.wolframcloud.com/app/&#34;&gt;Wolfram Programming Lab&lt;/a&gt; or &lt;a href=&#34;https://develop.wolframcloud.com/app/&#34;&gt;Wolfram Development Platform&lt;/a&gt;. The structured data for our example can be found at our &lt;a href=&#34;https://github.com/healiseu/healiseu.github.io/tree/master/SupplierPartCatalogue&#34;&gt;Github repository&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;product-type&#34;&gt;Product Type&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;In programming languages and type theory, a product of types is another, compounded, type in a structure. The &amp;ldquo;operands&amp;rdquo; of the product are types, and the structure of a product type is determined by the fixed order of the operands in the product. An instance of a product type retains the fixed order, but otherwise may contain all possible instances of its primitive data types. The expression of an instance of a product type will be a tuple, and is called a &amp;ldquo;tuple type&amp;rdquo; of expression. A product of types is a direct product of two or more types - Wikipedia, &lt;a href=&#34;https://en.wikipedia.org/wiki/Product_type&#34;&gt;Product type&lt;/a&gt;&lt;/p&gt;
@@ -1612,7 +1612,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;p&gt;Example: &lt;strong&gt;Integer x String x Colour&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;In Wolfram Language an instance of such a type is represented with the built-in &lt;a href=&#34;http://reference.wolfram.com/language/ref/List.html&#34;&gt;List&lt;/a&gt; symbol:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;In&lt;/span&gt;: partInstanceAsList &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#ae81ff&#34;&gt;991&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Left Handed Bacon Stretcher Cover&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;Red&lt;/span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt; &lt;img alt=&#34;notebook-output-01&#34; src=&#34;http://healis.eu/en/post/20150317/notebook01.png&#34;&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt; &lt;img alt=&#34;notebook-output-01&#34; src=&#34;https://healis.eu/en/post/20150317/notebook01.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;And to check/verify the type for each element of the List we map the function &lt;a href=&#34;http://reference.wolfram.com/language/ref/Head.html&#34;&gt;Head&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;In&lt;/span&gt;:  &lt;span style=&#34;color:#66d9ef&#34;&gt;Head&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;/@ partInstanceAsList
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Out: {Integer, String, RGBColor}
@@ -1674,7 +1674,7 @@ In computer science, tuples are directly implemented as product types in most fu
 &lt;p&gt;A relation consists of a heading and a body. A heading is a set of attributes. A body (of an n-ary relation) is a set of n-tuples. The heading of the relation is also the heading of each of its tuples. The body of a relation is sometimes called its extension. This is because it is to be interpreted as a representation of the extension of some predicate, this being the set of true propositions that can be formed by replacing each free variable in that predicate by a name (a term that designates something). There is a one-to-one correspondence between the free variables of the predicate and the attribute names of the relation heading. Each tuple of the relation body provides attribute values to instantiate the predicate by substituting each of its free variables. The result is a proposition that is deemed, on account of the appearance of the tuple in the relation body, to be true. Contrariwise, every tuple whose heading conforms to that of the relation, but which does not appear in the body is deemed to be false. This assumption is known as the closed world assumption: it is often violated in practical databases, where the absence of a tuple might mean that the truth of the corresponding proposition is unknown - Wikipedia, &lt;a href=&#34;https://en.wikipedia.org/wiki/Relation_(database)&#34;&gt;Relation_(database)&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;In&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;SQLSelect&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;conn, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Parts&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ShowColumnHeadings&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TableForm&lt;/span&gt;  
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt; &lt;img alt=&#34;notebook-output-02&#34; src=&#34;http://healis.eu/en/post/20150317/notebook02.jpg&#34;&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt; &lt;img alt=&#34;notebook-output-02&#34; src=&#34;https://healis.eu/en/post/20150317/notebook02.jpg&#34;&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;In&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;SQLSelect&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;conn, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Parts&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ShowColumnHeadings&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Out&lt;/span&gt;: {
@@ -1708,7 +1708,7 @@ In computer science, tuples are directly implemented as product types in most fu
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SQLExecute&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;conn, queryString, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ShowColumnHeadings&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TableForm&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt;&lt;img alt=&#34;notebook-output-03&#34; src=&#34;http://healis.eu/en/post/20150317/notebook03.jpg&#34;&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt;&lt;img alt=&#34;notebook-output-03&#34; src=&#34;https://healis.eu/en/post/20150317/notebook03.jpg&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;database&#34;&gt;Database&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Each database is a collection of related tables; these are also called relations, hence the name &amp;ldquo;relational database&amp;rdquo;. Each table is a physical representation of an entity or object that is in a tabular format consisting of columns and rows - Wikipedia, &lt;a href=&#34;https://en.wikipedia.org/wiki/Relation_(database)&#34;&gt;Relation_(database)&lt;/a&gt;&lt;/p&gt;
@@ -1721,7 +1721,7 @@ In computer science, tuples are directly implemented as product types in most fu
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;MSysNavPaneObjectIDs&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;MSysObjects&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;MSysQueries&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;MSysRelationships&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Catalog&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Parts&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Suppliers&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;View998Suppliers&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ViewAll&amp;#34;&lt;/span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;In&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;SQLTableInformation&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;conn, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ShowColumnHeadings&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TableForm&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt;&lt;img alt=&#34;notebook-output-04&#34; src=&#34;http://healis.eu/en/post/20150317/notebook04.jpg&#34;&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt;&lt;img alt=&#34;notebook-output-04&#34; src=&#34;https://healis.eu/en/post/20150317/notebook04.jpg&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;entity-relationship-er-constructs&#34;&gt;Entity-Relationship (ER) Constructs&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;ER data model is a systematic way of describing and defining a business process. The process is modeled as components (entities) that are linked with each other by relationships that express the dependencies and requirements between them. Entities may have various properties (attributes) that characterize them. Diagrams created to represent these entities, attributes, and relationships graphically are called ER diagrams&lt;/p&gt;
@@ -1751,15 +1751,15 @@ In computer science, tuples are directly implemented as product types in most fu
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;object &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; partInstanceAsList;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;Transpose&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;{subject, predicate, object}&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TableForm&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt; &lt;img alt=&#34;notebook-output-05&#34; src=&#34;http://healis.eu/en/post/20150317/notebook05.jpg&#34;&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt; &lt;img alt=&#34;notebook-output-05&#34; src=&#34;https://healis.eu/en/post/20150317/notebook05.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3. Directed Graph&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;notebook-output-06&#34; src=&#34;http://healis.eu/en/post/20150317/notebook06.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;notebook-output-06&#34; src=&#34;https://healis.eu/en/post/20150317/notebook06.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;4. Tree&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Wolfram Language functions are tree data structures that are created in the memory as a contiguous array of pointers, the first to the head and the rest to its successive elements. Take for example the &lt;code&gt;List&lt;/code&gt; we defined, we can present it in a tree form with the command :&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;In&lt;/span&gt;: {&lt;span style=&#34;color:#ae81ff&#34;&gt;991&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Left Handed Bacon Stretcher Cover&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;Red&lt;/span&gt;} &lt;span style=&#34;color:#e6db74&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TreeForm&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Similarly we can represent this row of data as a function with three arguments that take values from the Integer, String, and Color domain, e.g. :&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;In&lt;/span&gt;: partFunction&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;991&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Left Handed Bacon Stretcher Cover&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;RGBColor&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TreeForm&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt; &lt;img alt=&#34;notebook-output-07&#34; src=&#34;http://healis.eu/en/post/20150317/notebook07.jpg&#34;&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;Out:&lt;/code&gt; &lt;img alt=&#34;notebook-output-07&#34; src=&#34;https://healis.eu/en/post/20150317/notebook07.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;5. Association&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Associations in Wolfram Language are very similar to the &lt;a href=&#34;http://www.topicmapslab.de/articles/TMDM_in_a_nutshell&#34;&gt;Association Type&lt;/a&gt; construct of the Topic Map data model. Each defined association is an instance of an association type. The keys of the association, association role types according to Topic Maps terminology, describe the role type of each value in the association instance. The values of the association, association role players according to Topic Maps terminology, describe the particular instance of the association type.&lt;/p&gt;
 &lt;p&gt;The command to perform the association of attributes with their values is the following&lt;/p&gt;
@@ -1778,9 +1778,9 @@ In computer science, tuples are directly implemented as product types in most fu
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Out&lt;/span&gt;: {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pid&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;991&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pname&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Left Handed Bacon Stretcher Cover&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pcolor&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;Red&lt;/span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;6. Hypergraph&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;In the following hypergraph representation we keep separate the schema from the data, i.e. the types from instances.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;notebook-output-08&#34; src=&#34;http://healis.eu/en/post/20150317/notebook08.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;notebook-output-08&#34; src=&#34;https://healis.eu/en/post/20150317/notebook08.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In this hypergraph the &lt;code&gt;$Part&lt;/code&gt; plays the role of the hyperedge (red color) that connects three hypernodes that represent the attributes pid, pname, and pcolor (black color). Similarly for the values we have:&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;notebook-output-09&#34; src=&#34;http://healis.eu/en/post/20150317/notebook09.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;notebook-output-09&#34; src=&#34;https://healis.eu/en/post/20150317/notebook09.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In this hypergraph the &lt;code&gt;$Part991&lt;/code&gt; plays the role of a hyperedge (green color) that connects three hypernodes that represent the values 991, &amp;ldquo;Left Handled&amp;hellip;.&amp;rdquo;, RED (blue color).&lt;/p&gt;
 &lt;p&gt;We defined two &lt;code&gt;hyperedges&lt;/code&gt;, one at a layer of concepts to represent the head of the record, and another at the data layer to represent the body of the record.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;7. EntityPropertyAssociation&lt;/strong&gt;&lt;/p&gt;
@@ -1822,7 +1822,7 @@ In computer science, tuples are directly implemented as product types in most fu
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;head &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; partsList&lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;body &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; partsList&lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; ;;&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;AssociationThread&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;head &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#] &amp;amp; /@ body //Dataset&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img alt=&#34;notebook-output-10&#34; src=&#34;http://healis.eu/en/post/20150317/notebook10.jpg&#34;&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img alt=&#34;notebook-output-10&#34; src=&#34;https://healis.eu/en/post/20150317/notebook10.jpg&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;constraints&#34;&gt;Constraints&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Constraints provide one method of implementing business rules in the database. SQL implements constraint functionality in the form of check constraints. Constraints restrict the data that can be stored in relations. These are usually defined using expressions that result in a boolean value, indicating whether or not the data satisfies the constraint - Wikipedia&lt;/p&gt;
@@ -1840,10 +1840,10 @@ In computer science, tuples are directly implemented as product types in most fu
     
     <item>
       <title>S3DM/R3DM</title>
-      <link>http://healis.eu/en/project/r3dm/</link>
+      <link>https://healis.eu/en/project/r3dm/</link>
       <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/project/r3dm/</guid>
+      <guid>https://healis.eu/en/project/r3dm/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -1900,8 +1900,8 @@ In computer science, tuples are directly implemented as product types in most fu
     
     
     
-  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;http://healis.eu/en/project/r3dm/triangles/1.jpg&#34; &gt;
-  &lt;img src=&#34;http://healis.eu/en/project/r3dm/triangles/1_hu36aa7f76864557f3365108584961a105_72807_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;https://healis.eu/en/project/r3dm/triangles/1.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/r3dm/triangles/1_hu36aa7f76864557f3365108584961a105_72807_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1909,8 +1909,8 @@ In computer science, tuples are directly implemented as product types in most fu
     
     
     
-  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;http://healis.eu/en/project/r3dm/triangles/2.jpg&#34; &gt;
-  &lt;img src=&#34;http://healis.eu/en/project/r3dm/triangles/2_hu21e291047e3aff5b1aa1a72857386392_434705_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;https://healis.eu/en/project/r3dm/triangles/2.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/r3dm/triangles/2_hu21e291047e3aff5b1aa1a72857386392_434705_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1918,8 +1918,8 @@ In computer science, tuples are directly implemented as product types in most fu
     
     
     
-  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;http://healis.eu/en/project/r3dm/triangles/3.jpg&#34; &gt;
-  &lt;img src=&#34;http://healis.eu/en/project/r3dm/triangles/3_hu51a099ed62fa0c4ab18c6aa77bd260ce_417813_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;https://healis.eu/en/project/r3dm/triangles/3.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/r3dm/triangles/3_hu51a099ed62fa0c4ab18c6aa77bd260ce_417813_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1927,8 +1927,8 @@ In computer science, tuples are directly implemented as product types in most fu
     
     
     
-  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;http://healis.eu/en/project/r3dm/triangles/4.jpg&#34; &gt;
-  &lt;img src=&#34;http://healis.eu/en/project/r3dm/triangles/4_hu892b8cab1a2bc8a100e1abb73c5314bf_1111011_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;https://healis.eu/en/project/r3dm/triangles/4.jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/r3dm/triangles/4_hu892b8cab1a2bc8a100e1abb73c5314bf_1111011_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1936,8 +1936,8 @@ In computer science, tuples are directly implemented as product types in most fu
     
     
     
-  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;http://healis.eu/en/project/r3dm/triangles/5..jpg&#34; &gt;
-  &lt;img src=&#34;http://healis.eu/en/project/r3dm/triangles/5._hue8fd63799a17e9a13e3af2a06cce3c19_414369_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;a data-fancybox=&#34;gallery-triangles&#34; href=&#34;https://healis.eu/en/project/r3dm/triangles/5..jpg&#34; &gt;
+  &lt;img src=&#34;https://healis.eu/en/project/r3dm/triangles/5._hue8fd63799a17e9a13e3af2a06cce3c19_414369_0x190_resize_q90_lanczos.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/a&gt;
   
 
@@ -2227,10 +2227,10 @@ In computer science, tuples are directly implemented as product types in most fu
     
     <item>
       <title>S3DM/R3DM Q&amp;A</title>
-      <link>http://healis.eu/en/post/20131001/</link>
+      <link>https://healis.eu/en/post/20131001/</link>
       <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20131001/</guid>
+      <guid>https://healis.eu/en/post/20131001/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -2332,10 +2332,10 @@ nulon:isWholeOf and nulon:isPartOf and the roles Whole, Part&lt;/p&gt;
     
     <item>
       <title>Origins of a new theoretical framework on information representation</title>
-      <link>http://healis.eu/en/post/20130403/</link>
+      <link>https://healis.eu/en/post/20130403/</link>
       <pubDate>Wed, 03 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20130403/</guid>
+      <guid>https://healis.eu/en/post/20130403/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;

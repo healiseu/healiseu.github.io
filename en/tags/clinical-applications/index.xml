@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clinical Applications on HEALIS</title>
-    <link>http://healis.eu/en/tags/clinical-applications/</link>
+    <link>https://healis.eu/en/tags/clinical-applications/</link>
     <description>Recent content in Clinical Applications on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
     <lastBuildDate>Thu, 01 Jan 2004 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="http://healis.eu/en/tags/clinical-applications/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://healis.eu/en/tags/clinical-applications/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>STAPTK</title>
-      <link>http://healis.eu/en/project/staptk/</link>
+      <link>https://healis.eu/en/project/staptk/</link>
       <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/project/staptk/</guid>
+      <guid>https://healis.eu/en/project/staptk/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -45,7 +45,7 @@
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://spandh.dcs.shef.ac.uk/projects/staptk/&#34;&gt;STAPTk software&lt;/a&gt; was developed in the Speech and Hearing group, at the department of Computer Science, University of Sheffield. It is the epitome of the research work of Athanassios Hatzis, nine years in total, during his &lt;a href=&#34;http://healis.eu/en/project/vahisom/&#34;&gt;MSc&lt;/a&gt;, &lt;a href=&#34;http://healis.eu/en/project/oltk/&#34;&gt;PhD&lt;/a&gt; and two funded research projects &lt;a href=&#34;http://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt;, NHS-NEAT 275K€ UK project, and OLP&lt;a href=&#34;http://healis.eu/en/project/staptk/&#34;&gt;12&lt;/a&gt;, FP5-Quality of Life 2.67M€ EC project.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://spandh.dcs.shef.ac.uk/projects/staptk/&#34;&gt;STAPTk software&lt;/a&gt; was developed in the Speech and Hearing group, at the department of Computer Science, University of Sheffield. It is the epitome of the research work of Athanassios Hatzis, nine years in total, during his &lt;a href=&#34;https://healis.eu/en/project/vahisom/&#34;&gt;MSc&lt;/a&gt;, &lt;a href=&#34;https://healis.eu/en/project/oltk/&#34;&gt;PhD&lt;/a&gt; and two funded research projects &lt;a href=&#34;https://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt;, NHS-NEAT 275K€ UK project, and OLP&lt;a href=&#34;https://healis.eu/en/project/staptk/&#34;&gt;12&lt;/a&gt;, FP5-Quality of Life 2.67M€ EC project.&lt;/p&gt;
 
 
 
@@ -56,7 +56,7 @@
 
 &lt;figure&gt;
 
-&lt;img src=&#34;http://healis.eu/img/research_timeline.gif&#34; &gt;
+&lt;img src=&#34;https://healis.eu/img/research_timeline.gif&#34; &gt;
 
 
 
@@ -74,7 +74,7 @@
 &lt;h3 id=&#34;optacia-kinematic-maps&#34;&gt;OPTACIA Kinematic Maps&lt;/h3&gt;
 &lt;p&gt;An OPTACIA Kinematic map uses a two-dimensional ANN-trained map as a visual metaphor for isolated sounds and simple utterances. We describe the map as &amp;ldquo;kinematic&amp;rdquo; (i.e. relating to movement) because its visualization technique correlates strongly with articulatory movement during speech production. Visualization of speech sounds is instantaneous, the client can vary the articulators in response to on-screen visual feedback. Speech therapy is based on the evaluation of the quality of speech production and accompanied characteristics i.e. consistency and intelligibility. OPTACIA is meant to assist speech therapists in that role.&lt;/p&gt;
 &lt;h3 id=&#34;publication&#34;&gt;Publication&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;http://healis.eu/documents/oster-fonetic-2003.pdf&#34;&gt;Testing a New Method for Training Fricatives using Visual Maps in the Ortho-Logo-Paedia Project (OLP)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://healis.eu/documents/oster-fonetic-2003.pdf&#34;&gt;Testing a New Method for Training Fricatives using Visual Maps in the Ortho-Logo-Paedia Project (OLP)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This paper concentrates on therapy based on real-time audio-visual feedback of client’s speech and presents results from building and testing visual maps for training hearing-impaired clients using the OPTACIA component. OPTACIA was developed from the Optical Logo-Therapy OLT (Hatzis, 1999; Hatzis and Green, 2001). OPTACIA is based on three basic, well-founded treatment principles: visuomotor tracking, visual contrast, and visual reinforcement. Visuomotor tracking (Ziegler, Vogel, Teiwes, and Ahrndt, 1997) is a special case of biofeedback where some dynamic physical measure of performance is portrayed visually in real-time.&lt;/p&gt;
 &lt;h3 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h3&gt;
 &lt;ul&gt;
@@ -199,21 +199,21 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;publications&#34;&gt;Publications&lt;/h2&gt;
-&lt;p&gt;The paper titled &lt;a href=&#34;http://healis.eu/documents/straptk-eurospeech-2003.pdf&#34;&gt;&amp;ldquo;An Integrated Toolkit Deploying Speech Technology for Computer Based Speech Training with Application to Dysarthric Speakers&amp;rdquo;&lt;/a&gt; summarizes the development and application of STAPTk.&lt;/p&gt;
+&lt;p&gt;The paper titled &lt;a href=&#34;https://healis.eu/documents/straptk-eurospeech-2003.pdf&#34;&gt;&amp;ldquo;An Integrated Toolkit Deploying Speech Technology for Computer Based Speech Training with Application to Dysarthric Speakers&amp;rdquo;&lt;/a&gt; summarizes the development and application of STAPTk.&lt;/p&gt;
 &lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 &lt;p&gt;Computer based speech training systems aim to provide the client with customised tools for improving articulation based on audio-visual stimuli and feedback. They require the integration of various components of speech technology, such as speech recognition and transcription tools, and a database management system which supports multiple on-the-fly configurations of the speech training application. This paper describes the requirements and development of STAPTk from the point of view of developers, clinicians, and clients in the domain of speech training for severely dysarthric speakers. Preliminary results from an extended field trial are presented.&lt;/p&gt;
 &lt;h3 id=&#34;presentation&#34;&gt;Presentation&lt;/h3&gt;
-&lt;p&gt;Eurospeech 2003 – STAPTk (&lt;a href=&#34;http://healis.eu/documents/staptk-poster.ppsx&#34;&gt;ppsx&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Eurospeech 2003 – STAPTk (&lt;a href=&#34;https://healis.eu/documents/staptk-poster.ppsx&#34;&gt;ppsx&lt;/a&gt;)&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>STARDUST</title>
-      <link>http://healis.eu/en/project/stardust/</link>
+      <link>https://healis.eu/en/project/stardust/</link>
       <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/project/stardust/</guid>
-      <description>&lt;p&gt;Two funded research projects: &lt;a href=&#34;http://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;http://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&amp;rsquo; &lt;a href=&#34;http://healis.eu/en/project/oltk/&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://healis.eu/en/project/stardust/</guid>
+      <description>&lt;p&gt;Two funded research projects: &lt;a href=&#34;https://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;https://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&amp;rsquo; &lt;a href=&#34;https://healis.eu/en/project/oltk/&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
 
 
 
@@ -224,7 +224,7 @@
 
 &lt;figure&gt;
 
-&lt;img src=&#34;http://healis.eu/img/research_timeline.gif&#34; &gt;
+&lt;img src=&#34;https://healis.eu/img/research_timeline.gif&#34; &gt;
 
 
 
@@ -239,7 +239,7 @@
 &lt;h3 id=&#34;staptk-in-stardust&#34;&gt;STAPTK in STARDUST&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;http://spandh.dcs.shef.ac.uk/projects/stardust/&#34;&gt;STARDUST NHS project&lt;/a&gt; (2000-2003) integrates computer based visual-feedback for speech training to assist dysarthric speakers to improve the consistency of their utterances, and speech recognition of commands in sequence to control an environmental device.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;In an attempt to reduce speech production inconsistency and hence enhance the success of voice-driven assistive technology, the ASR component in STAPTk is closely coupled with therapy - &lt;a href=&#34;http://healis.eu/documents/Sparse_Data_ES03.pdf&#34;&gt;Eurospeech 2003, Phil Green et al.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In an attempt to reduce speech production inconsistency and hence enhance the success of voice-driven assistive technology, the ASR component in STAPTk is closely coupled with therapy - &lt;a href=&#34;https://healis.eu/documents/Sparse_Data_ES03.pdf&#34;&gt;Eurospeech 2003, Phil Green et al.&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;stardust-aims&#34;&gt;STARDUST Aims&lt;/h4&gt;
 &lt;ul&gt;
@@ -276,16 +276,16 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;eurospeech-2003-presentation&#34;&gt;Eurospeech 2003 Presentation&lt;/h4&gt;
-&lt;p&gt;Eurospeech 2003 – Automatic Speech Recognition with Sparse Training Data for Dysarthric Speakers (&lt;a href=&#34;http://healis.eu/documents/Eurospeech2003_confusability.ppsx&#34;&gt;ppsx&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Eurospeech 2003 – Automatic Speech Recognition with Sparse Training Data for Dysarthric Speakers (&lt;a href=&#34;https://healis.eu/documents/Eurospeech2003_confusability.ppsx&#34;&gt;ppsx&lt;/a&gt;)&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>OLT</title>
-      <link>http://healis.eu/en/project/oltk/</link>
+      <link>https://healis.eu/en/project/oltk/</link>
       <pubDate>Wed, 01 Dec 1999 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/project/oltk/</guid>
+      <guid>https://healis.eu/en/project/oltk/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -308,7 +308,7 @@
 &lt;/nav&gt;
 
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;Two funded research projects: &lt;a href=&#34;http://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;http://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&amp;rsquo; &lt;a href=&#34;http://healis.eu/documents/Hatzis1999.pdf&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Two funded research projects: &lt;a href=&#34;https://healis.eu/en/project/staptk/&#34;&gt;OLP&lt;/a&gt; FP5-Quality of Life 2.67M€ EC project and &lt;a href=&#34;https://healis.eu/en/project/stardust/&#34;&gt;STARDUST&lt;/a&gt; NHS-NEAT 275K€ UK project were based on Athanassios&amp;rsquo; &lt;a href=&#34;https://healis.eu/documents/Hatzis1999.pdf&#34;&gt;Optical Logo-Therapy, PhD thesis&lt;/a&gt;.&lt;/p&gt;
 
 
 
@@ -319,7 +319,7 @@
 
 &lt;figure&gt;
 
-&lt;img src=&#34;http://healis.eu/img/research_timeline.gif&#34; &gt;
+&lt;img src=&#34;https://healis.eu/img/research_timeline.gif&#34; &gt;
 
 
 
@@ -334,7 +334,7 @@
 &lt;h2 id=&#34;phd-thesis-summary&#34;&gt;PhD Thesis Summary&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Optical Logo-Therapy (OLT)&lt;/strong&gt; is about a real-time computer-based audio-visual feedback method that can used in speech training. With this method speech acoustics are transformed into visual events on a two-dimensional display called a ‘phonetic map’. Phonetic maps are created by training a neural network to associate acoustic input vectors with points in a two-dimensional space. The target points on the map can be chosen by the teacher to reflect the relationship between articulatory gestures and acoustics. OLT thus helps the client to become aware of, and to correct, errors in articulation. Phonetic maps can be tailored to different training problems, and to the needs of individual clients. We formulate the theoretical principles and practical requirements for OLT and we describe the design and implementation of a software application, OLTk.  We report on the successful application of OLT in two areas: speech therapy and second language learning.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;PhD Thesis &lt;a href=&#34;http://healis.eu/documents/Hatzis1999.pdf&#34;&gt;In Acrobat pdf format&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PhD Thesis &lt;a href=&#34;https://healis.eu/documents/Hatzis1999.pdf&#34;&gt;In Acrobat pdf format&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;olt-therapy-sesssion&#34;&gt;OLT Therapy Sesssion&lt;/h3&gt;
 
@@ -344,9 +344,9 @@
 
 &lt;h3 id=&#34;presentations&#34;&gt;Presentations&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;1996 Insitute of Acoustics (IOA) &lt;a href=&#34;http://healis.eu/documents/IOA96-Poster.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;1999 Phonetics Teaching &amp;amp; Learning Conference (PTLC) &lt;a href=&#34;http://healis.eu/documents/ptlc-poster.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;2001 Workshop on Innovation in Speech Processing (WISP) &lt;a href=&#34;http://healis.eu/documents/wisp2001-presentation.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;1996 Insitute of Acoustics (IOA) &lt;a href=&#34;https://healis.eu/documents/IOA96-Poster.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;1999 Phonetics Teaching &amp;amp; Learning Conference (PTLC) &lt;a href=&#34;https://healis.eu/documents/ptlc-poster.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2001 Workshop on Innovation in Speech Processing (WISP) &lt;a href=&#34;https://healis.eu/documents/wisp2001-presentation.ppsx&#34;&gt;Poster&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -461,7 +461,7 @@
 
 &lt;figure&gt;
 
-&lt;img src=&#34;http://healis.eu/img/olt_map.gif&#34; &gt;
+&lt;img src=&#34;https://healis.eu/img/olt_map.gif&#34; &gt;
 
 
 
@@ -537,7 +537,7 @@ The settings appear in the pull down menu as follows:&lt;/p&gt;
 
 &lt;figure&gt;
 
-&lt;img src=&#34;http://healis.eu/img/research_dcs_sheffield_university_419x480.jpg&#34; &gt;
+&lt;img src=&#34;https://healis.eu/img/research_dcs_sheffield_university_419x480.jpg&#34; &gt;
 
 
 
@@ -553,10 +553,10 @@ The settings appear in the pull down menu as follows:&lt;/p&gt;
     
     <item>
       <title>VAHISOM</title>
-      <link>http://healis.eu/en/project/vahisom/</link>
+      <link>https://healis.eu/en/project/vahisom/</link>
       <pubDate>Thu, 01 Jun 1995 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/project/vahisom/</guid>
+      <guid>https://healis.eu/en/project/vahisom/</guid>
       <description>&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
 &lt;p&gt;This &lt;a href=&#34;http://www.dai.ed.ac.uk/papers/authors/athanh.html&#34;&gt;MSc project&lt;/a&gt; focuses on place of articulation for a hearing impaired person. Most of the work is based on building an efficient and attractive user interface to explore the use of Kohonen’s Self-Organising-Maps in visualising the phonemic trajectory. Several experiments were done with a hearing-impaired person and normal speakers and the results were analysed and visualised with the VAHISOM program.&lt;/p&gt;
 &lt;p&gt;In parallel with the objectives of that project the user of that software can also explore the use of Kohonen’s Self-Organising-Maps and measure how well they can fit to a similar problem. Thus this makes also VAHISOM a useful tutorial aid.&lt;/p&gt;
@@ -573,7 +573,7 @@ The settings appear in the pull down menu as follows:&lt;/p&gt;
 
 &lt;figure&gt;
 
-&lt;img src=&#34;http://healis.eu/img/vahisom-compare.gif&#34; &gt;
+&lt;img src=&#34;https://healis.eu/img/vahisom-compare.gif&#34; &gt;
 
 
 

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Granular_computing on HEALIS</title>
-    <link>http://healis.eu/en/tags/granular_computing/</link>
+    <link>https://healis.eu/en/tags/granular_computing/</link>
     <description>Recent content in Granular_computing on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
     <lastBuildDate>Wed, 30 Oct 2019 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="http://healis.eu/en/tags/granular_computing/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://healis.eu/en/tags/granular_computing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Helicopter view of Graph Networks in DBMS</title>
-      <link>http://healis.eu/en/post/20191030/</link>
+      <link>https://healis.eu/en/post/20191030/</link>
       <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20191030/</guid>
+      <guid>https://healis.eu/en/post/20191030/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -40,7 +40,7 @@
 &lt;h2 id=&#34;the-new-brave-age-of-hyperlinked-data&#34;&gt;The new brave age of hyperlinked data&lt;/h2&gt;
 &lt;p&gt;But there is another factor more important than technology, the need to provide a business insight, understanding and/or solution to real world problems with increasing complexity. After all many recognize that this was the driving force behind the NoSQL movement that started ten years ago. Out of the three main technological categories of database products, key-value, document-hierarchical and graph networks, the last one emerged with significant importance for the future of IT business for many reasons that will not be analysed here. Suffice to say that WWW, the most advanced and popular information system, is the biggest graph network of documents and other resources in the history of human mankind. Today we reached the point in time that the maturity of NoSQL movement met the evolution of WWW but the question remains on how exactly these two will be married to serve human needs. A quick and sort answer is by &lt;strong&gt;hyperlinking data in the context of information&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;technical-questions-for-hyperlinking-data&#34;&gt;Technical questions for hyperlinking data&lt;/h2&gt;
-&lt;p&gt;Therefore the aim has been set but the competitive database, semantic and web technologies out there makes it too difficult for many to rise above the specifics. That is where a &lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;multi-layer perspective&lt;/a&gt; is needed to embrace the problem of hyperlinking data.&lt;/p&gt;
+&lt;p&gt;Therefore the aim has been set but the competitive database, semantic and web technologies out there makes it too difficult for many to rise above the specifics. That is where a &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;multi-layer perspective&lt;/a&gt; is needed to embrace the problem of hyperlinking data.&lt;/p&gt;
 &lt;p&gt;Does this mean users are going to abandon their favorite popular SQL row-based, column-based, document based or existing triple store and property graph databases ? No, not at all but this new technology should integrate them in the large picture which takes on account the following questions as it concerns the hyperlinked graph data network :&lt;/p&gt;
 &lt;h3 id=&#34;physical-layer&#34;&gt;Physical Layer&lt;/h3&gt;
 &lt;p&gt;Although many vendors consider a native graph network storage layer as an advancement in graph databases, this approach has the following drawbacks:&lt;/p&gt;
@@ -78,13 +78,13 @@
 &lt;h3 id=&#34;conceptual-layer&#34;&gt;Conceptual layer&lt;/h3&gt;
 &lt;p&gt;I think RDF graphs and labeled property graphs and Topic Map graphs (hardly anyone talks anymore about this standard) and even entity-relationship graph in relational theory have varying types of constructs with big differences in meaning and use. Entities, attributes, properties, data resources, relationships, relations, associations, items, instances and many other concepts make the IT babel at the business, end-user level.&lt;/p&gt;
 &lt;p&gt;Here lies a major source of confusion for the newcomer, I used to be one of them, which is the &lt;strong&gt;distinction between classes and instances, metadata and data, terminological and assertion components&lt;/strong&gt;. This distinction as many others in IT semantic world is artificial, nevertheless it plays an extremely important role in programming, in data retrieval and even in inferencing mechanisms.&lt;/p&gt;
-&lt;p&gt;If you think you can handle this distinction easily, I urge you to think again, because in my opinion these two concepts must be clearly separable and at the same time they have to be related like the &lt;a href=&#34;http://healis.eu/en/post/20190624/&#34;&gt;hand mold and the letter types in typography&lt;/a&gt;. On the contrary I do not see this happening in our modern graph technologies, time does not permit to expand this argument but it is entangled with the following important observation.&lt;/p&gt;
+&lt;p&gt;If you think you can handle this distinction easily, I urge you to think again, because in my opinion these two concepts must be clearly separable and at the same time they have to be related like the &lt;a href=&#34;https://healis.eu/en/post/20190624/&#34;&gt;hand mold and the letter types in typography&lt;/a&gt;. On the contrary I do not see this happening in our modern graph technologies, time does not permit to expand this argument but it is entangled with the following important observation.&lt;/p&gt;
 &lt;h3 id=&#34;by-reference-vs-by-value&#34;&gt;By reference vs. by value&lt;/h3&gt;
 &lt;p&gt;Those of us familiar with programming and the internals of computing know that there is another critical, fundamental distinction in data processing. &lt;strong&gt;How do you access the datum by reference or by value ?&lt;/strong&gt;_ This was the moment in time that RDF/OWL framework presented the first signs of derailment. First they came up with the idea of universal resource locator (URL), then the concept was elevated to the universal resource identifier (URI) and the result was the web identity crisis for those old enough to remember &lt;a href=&#34;https://ontopia.net/topicmaps/materials/identitycrisis.html&#34;&gt;the clash with the proponents of Topic Maps data modeling framework&lt;/a&gt;. If you ask me, &lt;a href=&#34;http://www.semantic-web-journal.net/content/semantic-web-identity-crisis-search-trivialities-never-were&#34;&gt;that crisis has not been resolved yet&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The main reason behind web identity crisis is the use of namespace addressing, to connect, identify and locate data. The notion of web address has been semantically overloaded because of its textual form. On the contrary internet protocol for addressing and usually primary key mechanism of databases are numerical. Perhaps they thought that this way it would have been easier for developers and machines to do the linkage in the same way they use HTML anchoring. But I guess this is more or less a fallacy of TimBL&amp;rsquo;s linked data network where it was designed primarily for documents (html pages) not record-base (relational) data. The origin of this misconception is &lt;a href=&#34;https://en.wikipedia.org/wiki/Memex&#34;&gt;Memex&lt;/a&gt; and it is continued in our days with the invention of many different encodings, including RDFa, Microdata and JSON-LD with the intention of generating manual or semi-automated linked data in semi-structured, hierarchical forms and html documents.&lt;/p&gt;
 &lt;p&gt;Global Giant Graph (GGG) or WWW 3.0 will become a reality only if W3C consortium admit that they have to build likewise IP numerical addressing schema for concepts in data models and for hyperlinked data. It is this new protocol that will permit networking at semantic level, it is going to be the same protocol that we are going to use for identification purposes, the same protocol that will make each data element traceable and connectable, the same protocol that will be used in number-crunching computers. Moreover the whole process of constructing hyperlinked data, especially from structured data resources (databases), will be fully automated and hidden in the same way TCP/IP is hidden from internet users.&lt;/p&gt;
 &lt;p&gt;Epilogue
-The reader may realize that I have only touched various parts of the &amp;ldquo;elephant in the room&amp;rdquo;. But those key points that I tried to make digestible rose from my experience with semantic and database technologies and eventually from my long standing personal effort to develop &lt;a href=&#34;http://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; computational semiotics framework. This way I hope that I managed to enlighten a different path not in theory but in practice. And if there is one thing to remind you something from this article and assist you in following this path then let it be &lt;strong&gt;&lt;a href=&#34;http://healis.eu/en/post/20190624/&#34;&gt;granular computing&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+The reader may realize that I have only touched various parts of the &amp;ldquo;elephant in the room&amp;rdquo;. But those key points that I tried to make digestible rose from my experience with semantic and database technologies and eventually from my long standing personal effort to develop &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;S3DM/R3DM&lt;/a&gt; computational semiotics framework. This way I hope that I managed to enlighten a different path not in theory but in practice. And if there is one thing to remind you something from this article and assist you in following this path then let it be &lt;strong&gt;&lt;a href=&#34;https://healis.eu/en/post/20190624/&#34;&gt;granular computing&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/helicopter-view-graph-networks-dbms-athanassios-hatzis/&#34;&gt;LinkedIn - Published Post&lt;/a&gt;&lt;/li&gt;
@@ -98,10 +98,10 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
     
     <item>
       <title>About data granularity</title>
-      <link>http://healis.eu/en/post/20190624/</link>
+      <link>https://healis.eu/en/post/20190624/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20190624/</guid>
+      <guid>https://healis.eu/en/post/20190624/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -118,7 +118,7 @@ The reader may realize that I have only touched various parts of the &amp;ldquo;
 &lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
 &lt;p&gt;And that kind of human interpretation I will call it information, i.e. you put data in a form, in some perspective, so you can get meaning out of them. In that sense data in a computer does not differ much from printed letters in a book, or paint in a canvas, or stone in a sculpture. From that point of view computer is simply an advanced form of a medium, a sophisticated printing press where 0&amp;rsquo;s and 1&amp;rsquo;s take the place of the movable individual metal letters, i.e. a computerized movable type printing.&lt;/p&gt;
 &lt;h2 id=&#34;conceptual-computational-semiotics-framework&#34;&gt;Conceptual, computational semiotics framework&lt;/h2&gt;
-&lt;p&gt;Once again, it&amp;rsquo;s only structured data you have, our mind is doing all the rest because of the power of &lt;a href=&#34;https://en.wikipedia.org/wiki/Semiosis&#34;&gt;semiosis&lt;/a&gt;. One can also ask, is there anything in our universe that is unstructured ? Yes there is, concept is unstructured because it is an abstract thing. When you represent the concept, or you realize, materialize it in our realm then you have structure again. A computational model of representation which is semiotic in its nature is &lt;a href=&#34;http://healis.eu/en/s3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;. And here is a memorable type of formula that describes fully the semiotic nature of this data model.&lt;/p&gt;
+&lt;p&gt;Once again, it&amp;rsquo;s only structured data you have, our mind is doing all the rest because of the power of &lt;a href=&#34;https://en.wikipedia.org/wiki/Semiosis&#34;&gt;semiosis&lt;/a&gt;. One can also ask, is there anything in our universe that is unstructured ? Yes there is, concept is unstructured because it is an abstract thing. When you represent the concept, or you realize, materialize it in our realm then you have structure again. A computational model of representation which is semiotic in its nature is &lt;a href=&#34;https://healis.eu/en/s3dm/&#34;&gt;R3DM/S3DM&lt;/a&gt;. And here is a memorable type of formula that describes fully the semiotic nature of this data model.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;(R3DM): Representation ↦ Resource + Reference + Referent&lt;/p&gt;

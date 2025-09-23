@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software_engineering on HEALIS</title>
-    <link>http://healis.eu/en/categories/software_engineering/</link>
+    <link>https://healis.eu/en/categories/software_engineering/</link>
     <description>Recent content in Software_engineering on HEALIS</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; HEALIS - Athanassios I. Hatzis, {year}</copyright>
     <lastBuildDate>Sun, 10 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="http://healis.eu/en/categories/software_engineering/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://healis.eu/en/categories/software_engineering/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The wizards of stored computer program and the next generation of programmers</title>
-      <link>http://healis.eu/en/post/20170910/</link>
+      <link>https://healis.eu/en/post/20170910/</link>
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://healis.eu/en/post/20170910/</guid>
+      <guid>https://healis.eu/en/post/20170910/</guid>
       <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -36,7 +36,7 @@
 &lt;h2 id=&#34;a-programming-language-with-a-built-in-database&#34;&gt;A programming language with a built-in database&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GCOS_intro&#34;&gt;Cache ObjectScript&lt;/a&gt; does make the difference from many aspects. Here I would like to emphasize its strong characteristic of a built-in database with sub-scripted arrays and multi-dimensional keys similar to the variables used by most programming languages to access main memory. Let me repeat this, you get a programming language with a built-in &lt;a href=&#34;https://en.wikipedia.org/wiki/Multi-model_database&#34;&gt;multi-model database&lt;/a&gt;. I think this is a fundamental aspect that software pioneers have been missing when they invented new programming languages or new sql databases. They are missing the innate common characteristic that both databases and programming languages share, which is the pointer, reference based logic. What do you think ?&lt;/p&gt;
 &lt;h2 id=&#34;epilogue&#34;&gt;Epilogue&lt;/h2&gt;
-&lt;p&gt;So I believe it&amp;rsquo;s time to return back and fix this for new generation multi-model databases AND post-modern programming languages too. We have already made a good start and we believe &lt;strong&gt;M&lt;/strong&gt; will make history again in database management and modeling with our &lt;a href=&#34;http://healis.eu/en/post/20170412/&#34;&gt;Associative Semiotic Hypergraph Engine&lt;/a&gt; that will be built on top of Intersystems Cache powerful &lt;a href=&#34;http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GGBL_structure&#34;&gt;global data structure&lt;/a&gt; and accompanied with a popular and easy to program client API in Python for data analytics.&lt;/p&gt;
+&lt;p&gt;So I believe it&amp;rsquo;s time to return back and fix this for new generation multi-model databases AND post-modern programming languages too. We have already made a good start and we believe &lt;strong&gt;M&lt;/strong&gt; will make history again in database management and modeling with our &lt;a href=&#34;https://healis.eu/en/post/20170412/&#34;&gt;Associative Semiotic Hypergraph Engine&lt;/a&gt; that will be built on top of Intersystems Cache powerful &lt;a href=&#34;http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=GGBL_structure&#34;&gt;global data structure&lt;/a&gt; and accompanied with a popular and easy to program client API in Python for data analytics.&lt;/p&gt;
 &lt;h2 id=&#34;cross-references&#34;&gt;Cross-References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/wizards-stored-computer-program-next-generation-hatzis-phd&#34;&gt;LinkedIn - 20170910 Article&lt;/a&gt;&lt;/li&gt;
