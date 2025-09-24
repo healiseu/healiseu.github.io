@@ -210,12 +210,7 @@
 &lt;/nav&gt;
 
 &lt;h3 id=&#34;at-a-glance&#34;&gt;At a Glance&lt;/h3&gt;
-
-
-&lt;button class=&#34;btn  btn-warning&#34; type=&#34;button&#34;  &gt; We welcome a modern, innovative way of managing medical information &lt;/button&gt;
-
-
-
+&lt;h4 id=&#34;we-welcome-a-modern-innovative-way-of-managing-medical-information&#34;&gt;We welcome a modern, innovative way of managing medical information&lt;/h4&gt;
 &lt;p&gt;Obsidian MEDILIG (Medical Life Guard): An easy-to-use, flexible, secure, cross-platform medical knowledge management system for patient&amp;rsquo;s Electronic Health Record (EHR)  that is built on top of Obsidian software application for the design, implementation  and use of autonomous, multilingual, clinical documents from primary care to continuing care.&lt;/p&gt;
 &lt;h4 id=&#34;for-the-patient-and-the-healthcare-professional&#34;&gt;For the patient and the healthcare professional&lt;/h4&gt;
 &lt;ul&gt;
